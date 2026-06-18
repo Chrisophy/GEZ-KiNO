@@ -102,7 +102,7 @@
                 const promises = QUERIES.map(q => {
                     const payload = {
                         queries: [{ fields: ['topic'], query: q }],
-                        size: 1500,
+                        size: 2000,
                         sortBy: 'timestamp',
                         sortOrder: 'desc'
                     };
@@ -171,7 +171,7 @@
 
         // Parallelisierter Worker-Pool für TMDB
         async function hydrateWithTMDBParallel() {
-            const CONCURRENCY_LIMIT = 15; // 15 Anfragen gleichzeitig abfeuern
+            const CONCURRENCY_LIMIT = 88; // 88 Anfragen gleichzeitig abfeuern
             let movieIndex = 0;
             let loadedCount = 0;
 
