@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>[GEZ] KiNO Web</title>
+    <title>[GEZ] KiNO</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <style>
         body { background-color: #121212; color: #e5e7eb; font-family: 'Roboto', sans-serif; }
@@ -146,7 +146,7 @@
                             video_url: url,
                             plot: 'Lade Filminformationen...',
                             rating: 'N/A',
-                            thumb: 'placeholder.png', // Direkt lokaler Fallback
+                            thumb: 'placeholder.png', 
                             genres_list: ['Sonstige'],
                             channel: m.channel
                         });
@@ -171,7 +171,7 @@
         }
 
         async function hydrateWithTMDBParallel() {
-            const CONCURRENCY_LIMIT = 100;
+            const CONCURRENCY_LIMIT = 50;
             let movieIndex = 0;
             let loadedCount = 0;
 
@@ -366,6 +366,11 @@
             renderGrid(filtered);
         }
 
+        // Hilfsfunktion zum Aufklappen der Beschreibung
+        function togglePlot(element) {
+            element.classList.toggle('line-clamp-3');
+        }
+
         function renderGrid(movies) {
             const grid = document.getElementById('movieGrid');
             grid.innerHTML = '';
@@ -378,9 +383,8 @@
             movies.forEach(m => {
                 const card = document.createElement('div');
                 card.id = `movie-${btoa(encodeURIComponent(m.video_url)).replace(/=/g, '')}`;
-                card.className = "bg-gray-900 rounded-xl overflow-hidden shadow-md border border-gray-800 flex flex-col justify-between hover:border-blue-500 transition-all duration-200 group";
+                card.className = "bg-gray-900 rounded-xl overflow-hidden shadow-md border border-gray-800 flex flex-col justify-between hover:border-blue-500 transition-all duration-200 group h-fit";
                 
-                // alt="" verhindert das Flackern des Textes. onerror nutzt die lokale placeholder.png ohne Loop-Gefahr
                 card.innerHTML = `
                     <div class="relative aspect-[2/3] w-full bg-gray-800 overflow-hidden">
                         <img src="${m.thumb}" alt="" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" 
@@ -393,7 +397,12 @@
                         <div>
                             <h3 class="font-bold text-sm text-gray-100 line-clamp-2 mb-1 group-hover:text-blue-400 transition-colors" title="${m.title}">${m.title}</h3>
                             <p class="text-gray-500 text-[11px] mb-2">${m.channel} ${m.year !== 'None' ? '· ' + m.year : ''}</p>
-                            <p class="text-gray-400 text-xs line-clamp-3 mb-3 font-light">${m.plot}</p>
+                            
+                            <p onclick="togglePlot(this)" 
+                               class="text-gray-400 text-xs line-clamp-3 mb-3 font-light cursor-pointer hover:text-gray-200 transition-colors" 
+                               title="Klicken, um die ganze Beschreibung anzuzeigen">
+                               ${m.plot}
+                            </p>
                         </div>
                         <div class="space-y-2">
                             <div class="flex flex-wrap gap-1 mb-2">
@@ -421,7 +430,8 @@
             const ratingBadge = card.querySelector('.text-yellow-400');
             if (ratingBadge) ratingBadge.innerText = `★ ${m.rating}`;
 
-            const plotText = card.querySelector('.line-clamp-3');
+            // Plot aktualisieren, ohne den onclick-Eventhandler anzufassen
+            const plotText = card.querySelector('.p-3 p.text-gray-400');
             if (plotText) plotText.innerText = m.plot;
 
             const infoText = card.querySelector('.text-gray-500');
