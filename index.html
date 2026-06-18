@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[GEZ] KiNO Web</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+        body { background-color: #121212; color: #e5e7eb; font-family: 'Roboto', sans-serif; }
+    </style>
+</head>
+<body class="p-4 md:p-6">
+
+    <header class="mb-6 flex flex-col md:flex-row justify-between items-center border-b border-gray-800 pb-4 gap-4">
+        <h1 class="text-3xl font-extrabold tracking-wider text-neutral-100">
+            <span class="text-blue-500">[GEZ]</span> KiNO
+        </h1>
+        <div class="flex w-full md:w-1/3 gap-2">
+            <input type="text" id="searchBar" placeholder="Film suchen..." 
+                   class="bg-gray-800 text-white px-4 py-2 rounded-lg w-full focus:outline-none focus:ring-2 focus:ring-blue-500 border border-gray-700">
+        </div>
+    </header>
+
+    <div id="scanner" class="w-full h-1 bg-gray-800 mb-6 relative overflow-hidden hidden">
+        <div class="h-full bg-blue-500 w-1/4 absolute animate-bounce" style="animation: shift 1.5s infinite ease-in-out;"></div>
+    </div>
+    <style>
+        @keyframes shift { 0% { left: -25%; } 50% { left: 100%; } 100% { left: -25%; } }
+    </style>
+
+    <main id="movieGrid" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4">
+        <div id="statusMessage" class="text-center col-span-full py-12 text-gray-400 animate-pulse">
+            Initialisiere Mediathek-Abruf (Große Anfrage)...
+        </div>
+    </main>
+
+    <script>
+        const TMDB_API_KEY = '60b3801a9e76b5706ee2a432f06423e6';
+        const MEDIATHEK_URL = 'https://mediathekviewweb.de/api/query';
+        
+        const GENRES_MAP = {
+            28: 'Action', 12: 'Abenteuer', 16: 'Animation', 35: 'Komödie', 80: 'Krimi', 99: 'Doku',
+            18: 'Drama', 10751: 'Familie', 14: 'Fantasy', 36: 'Historie', 27: 'Horror', 10402: 'Musik', 
+            9648: 'Mystery', 10749: 'Romanze', 878: 'Sci-Fi', 10770: 'TV-Film', 53: 'Thriller', 
+            10752: 'Krieg', 37: 'Western'
+        };
+
+        const QUERIES = ['Spielfilm', 'Spielfilme', 'Spielfilm-Highlights', 'Filme', 'Kino - Filme'];
+        
+        let allMovies = [];
+
+        // 1. Titel-Bereinigung analog zu deinem Python "clean_title"
+        function cleanTitle(title) {
+            let yearMatch = title.match(/(\d{4})/);
+            let year = yearMatch ? yearMatch[1] : 'None';
+            
+            let clean = title;
+            const markers = [
+                ' - Spielfilm', ' – Spielfilm', ' - Spiellfilm', ' – Spiellfilm', ', Spielfilm', 
+                ' Österreich', ', Deutschland', ', Schweiz', ', Belgien', ', Frankreich', ', Spanien',
+                ', Niederlande', ', Irland', ', Luxemburg', ', Italien', ', USA', ', Kosovo', 
+                ', Großbritannien', ', Tschechische Republik', ', Norwegen', ', BRD', ', Dänemark', 
+                ', Australien', ', Schweden', ', Video:', ', Präsentiert:', ', Kurzfilm', ' Fernsehfilm', 
+                ' Heimatfilm', ' - Thriller', ' - Drama', '«', '»'
+            ];
+
+            markers.forEach(marker => {
+                clean = clean.split(new RegExp(marker, 'i'))[0];
+            });
+
+            clean = clean.replace(/^(Spielfilm|Spiellfilm):\s*/i, '');
+            clean = clean.replace(/–/g, '-').replace(/—/g, '-');
+            clean = clean.replace(/\(.*?\)/g, '');
+            clean = clean.trim().replace(/[ \t,.\-_–—»]+$/, '');
+
+            return { cleanName: clean, year: year };
+        }
+
+        // 2. Multi-Query Abruf (Ersetzt deinen ThreadPool / Loops)
+        async function fetchAllData() {
+            document.getElementById('scanner').classList.remove('hidden');
+            const seenUrls = new Set();
+            const seenTitles = new Set();
+            let tempResults = [];
+
+            try {
+                // Alle 5 Anfragen parallel feuern (entspricht size: 2000 pro Begriff)
+                const promises = QUERIES.map(q => {
+                    const payload = {
+                        queries: [{ fields: ['topic'], query: q }],
+                        size: 1500, // Nahe an deinen 2000, um den Browser-Speicher nicht zu sprengen
+                        sortBy: 'timestamp',
+                        sortOrder: 'desc'
+                    };
+                    return fetch(MEDIATHEK_URL, {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'text/plain' },
+                        body: JSON.stringify(payload)
+                    }).then(res => res.json()).catch(() => ({ result: { results: [] } }));
+                });
+
+                const responses = await Promise.all(promises);
+
+                // Daten verarbeiten und filtern wie in deinem Python-Code
+                responses.forEach(data => {
+                    const results = data.result?.results || [];
+                    results.forEach(m => {
+                        const url = m.url_video || '';
+                        const title = m.title || '';
+                        if (!url || !title) return;
+
+                        const lowerTitle = title.toLowerCase();
+                        // Ausschluss von Hörfassungen / Barrierefrei
+                        if (/audiodeskription|audio description|ad version|hörfilm|deskription|barrierefrei/.test(lowerTitle)) return;
+                        if (seenUrls.has(url)) return;
+                        
+                        const { cleanName, year } = cleanTitle(title);
+                        if (!cleanName) return;
+
+                        const normTitle = cleanName.toLowerCase().trim();
+                        if (seenTitles.has(normTitle)) return;
+                        if (m.duration < 4680) return; // Mindestlänge 78 Min
+
+                        seenUrls.add(url);
+                        seenTitles.add(normTitle);
+
+                        tempResults.push({
+                            title: cleanName,
+                            search: cleanName,
+                            year: year,
+                            video_url: url,
+                            plot: 'Lade Filminformationen...',
+                            rating: 'N/A',
+                            thumb: 'placeholder.png', // Fallback
+                            genres_list: ['Sonstige'],
+                            channel: m.channel
+                        });
+                    });
+                });
+
+                allMovies = tempResults.sort((a, b) => a.title.localeCompare(b.title));
+                
+                if (allMovies.length === 0) {
+                    document.getElementById('statusMessage').innerText = "Keine Filme gefunden.";
+                    return;
+                }
+
+                // UI sofort mit Basisinhalten rendern
+                renderGrid(allMovies);
+                
+                // TMDB-Daten asynchron im Hintergrund nachladen (dein load_extra_info)
+                hydrateWithTMDB();
+
+            } catch (err) {
+                console.error(err);
+                document.getElementById('statusMessage').innerText = "Fehler beim API-Abruf.";
+            }
+        }
+
+        // 3. TMDB Hydrierung (Metadaten nachladen)
+        async function hydrateWithTMDB() {
+            // Um die TMDB-Rate-Limits im Browser nicht zu sprengen, laden wir blockweise
+            for (let movie of allMovies) {
+                // Wir fragen TMDB ab
+                let url = `https://api.themoviedb.org/3/search/movie?api_key=${TMDB_API_KEY}&query=${encodeURIComponent(movie.search)}&language=de-DE&include_adult=false`;
+                if (movie.year !== 'None') url += `&year=${movie.year}`;
+
+                try {
+                    const res = await fetch(url);
+                    const data = await res.json();
+                    
+                    if (data.results && data.results.length > 0) {
+                        const tmdb = data.results[0];
+                        movie.plot = tmdb.overview || 'Keine Beschreibung verfügbar.';
+                        movie.rating = tmdb.vote_average ? tmdb.vote_average.toFixed(1) : 'N/A';
+                        movie.thumb = tmdb.poster_path ? `https://image.tmdb.org/t/p/w342${tmdb.poster_path}` : 'placeholder.png';
+                        
+                        if (tmdb.genre_ids) {
+                            movie.genres_list = tmdb.genre_ids
+                                .map(id => GENRES_MAP[id])
+                                .filter(g => g !== undefined);
+                            if (movie.genres_list.length === 0) movie.genres_list = ['Sonstige'];
+                        }
+
+                        // Aktualisiere nur die eine Karte im UI, um Ruckler zu vermeiden
+                        updateMovieCard(movie);
+                    }
+                } catch (e) {
+                    // Falls TMDB fehlschlägt, behalten wir die Mediathek-Basisdaten
+                }
+            }
+            document.getElementById('scanner').classList.add('hidden');
+        }
+
+        // 4. UI Rendering
+        function renderGrid(movies) {
+            const grid = document.getElementById('movieGrid');
+            grid.innerHTML = '';
+
+            movies.forEach(m => {
+                const card = document.createElement('div');
+                card.id = `movie-${btoa(encodeURIComponent(m.video_url)).replace(/=/g, '')}`;
+                card.className = "bg-gray-900 rounded-xl overflow-hidden shadow-md border border-gray-800 flex flex-col justify-between hover:border-blue-500 transition-all duration-200 group";
+                
+                card.innerHTML = `
+                    <div class="relative aspect-[2/3] w-full bg-gray-800 overflow-hidden">
+                        <img src="${m.thumb}" alt="Poster" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" 
+                             onerror="this.src='https://via.placeholder.com/342x513/1f2937/9ca3af?text=Kein+Poster'">
+                        <span class="absolute top-2 right-2 bg-black/70 px-2 py-0.5 text-xs font-bold text-yellow-400 rounded">
+                            ★ ${m.rating}
+                        </span>
+                    </div>
+                    <div class="p-3 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="font-bold text-sm text-gray-100 line-clamp-2 mb-1 group-hover:text-blue-400 transition-colors" title="${m.title}">${m.title}</h3>
+                            <p class="text-gray-500 text-[11px] mb-2">${m.channel} ${m.year !== 'None' ? '· ' + m.year : ''}</p>
+                            <p class="text-gray-400 text-xs line-clamp-3 mb-3 font-light">${m.plot}</p>
+                        </div>
+                        <div class="space-y-2">
+                            <div class="flex flex-wrap gap-1 mb-2">
+                                ${m.genres_list.map(g => `<span class="bg-gray-800 text-gray-400 text-[10px] px-1.5 py-0.5 rounded">${g}</span>`).join('')}
+                            </div>
+                            <button onclick="window.open('${m.video_url}', '_blank')" 
+                                    class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-1.5 px-3 rounded-lg transition-colors text-xs tracking-wide">
+                                ABSPIELEN
+                            </button>
+                        </div>
+                    </div>
+                `;
+                grid.appendChild(card);
+            });
+        }
+
+        // Einzelne Karte updaten, wenn die TMDB-Antwort eintrudelt
+        function updateMovieCard(m) {
+            const cardId = `movie-${btoa(encodeURIComponent(m.video_url)).replace(/=/g, '')}`;
+            const card = document.getElementById(cardId);
+            if (!card) return;
+
+            // Poster aktualisieren
+            const img = card.querySelector('img');
+            if (img && m.thumb !== 'placeholder.png') img.src = m.thumb;
+
+            // Rating aktualisieren
+            const ratingBadge = card.querySelector('.text-yellow-400');
+            if (ratingBadge) ratingBadge.innerText = `★ ${m.rating}`;
+
+            // Plot aktualisieren
+            const plotText = card.querySelector('.line-clamp-3');
+            if (plotText) plotText.innerText = m.plot;
+
+            // Genres aktualisieren
+            const genreBox = card.querySelector('.flex-wrap');
+            if (genreBox) {
+                genreBox.innerHTML = m.genres_list.map(g => `<span class="bg-gray-800 text-gray-400 text-[10px] px-1.5 py-0.5 rounded">${g}</span>`).join('');
+            }
+        }
+
+        // Live-Suche
+        document.getElementById('searchBar').addEventListener('input', (e) => {
+            const query = e.target.value.toLowerCase().trim();
+            const filtered = allMovies.filter(m => m.title.toLowerCase().includes(query) || m.plot.toLowerCase().includes(query));
+            renderGrid(filtered);
+        });
+
+        // Starten
+        fetchAllData();
+    </script>
+</body>
+</html>
