@@ -7,11 +7,14 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <style>
         body { background-color: #121212; color: #e5e7eb; font-family: 'Roboto', sans-serif; }
+        /* Versteckt die Scrollbar in der Genre-Leiste für einen sauberen Look */
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
     </style>
 </head>
 <body class="p-4 md:p-6">
 
-    <header class="mb-6 flex flex-col md:flex-row justify-between items-center border-b border-gray-800 pb-4 gap-4">
+    <header class="mb-4 flex flex-col md:flex-row justify-between items-center border-b border-gray-800 pb-4 gap-4">
         <h1 class="text-3xl font-extrabold tracking-wider text-neutral-100">
             <span class="text-blue-500">[GEZ]</span> KiNO
         </h1>
@@ -21,8 +24,11 @@
         </div>
     </header>
 
-    <div id="scanner" class="w-full h-1 bg-gray-800 mb-6 relative overflow-hidden hidden">
-        <div class="h-full bg-blue-500 w-1/4 absolute animate-bounce" style="animation: shift 1.5s infinite ease-in-out;"></div>
+    <nav id="genreLeiste" class="flex gap-3 overflow-x-auto pb-3 mb-4 no-scrollbar scroll-smooth">
+        </nav>
+
+    <div id="scanner" class="w-full h-1 bg-gray-950 mb-6 relative overflow-hidden hidden">
+        <div class="h-full bg-blue-500 w-1/4 absolute rounded animate-pulse" style="animation: shift 1.5s infinite ease-in-out;"></div>
     </div>
     <style>
         @keyframes shift { 0% { left: -25%; } 50% { left: 100%; } 100% { left: -25%; } }
@@ -33,6 +39,17 @@
             Initialisiere Mediathek-Abruf (Große Anfrage)...
         </div>
     </main>
+
+    <div id="yearsModal" class="fixed inset-0 bg-black/80 hidden z-50 justify-center items-center p-4 backdrop-blur-sm">
+        <div class="bg-gray-900 border border-gray-800 rounded-2xl max-w-lg w-full p-6 flex flex-col max-h-[80vh]">
+            <h2 class="text-xl font-bold mb-4 text-center text-gray-100">Wähle ein Produktionsjahr</h2>
+            <div id="yearsGrid" class="grid grid-cols-3 gap-3 overflow-y-auto pr-2 flex-1 mb-4">
+                </div>
+            <button onclick="closeYearsModal()" class="w-full bg-gray-800 hover:bg-gray-700 text-white font-bold py-3 rounded-xl transition-colors">
+                ZURÜCK
+            </button>
+        </div>
+    </div>
 
     <script>
         const TMDB_API_KEY = '60b3801a9e76b5706ee2a432f06423e6';
@@ -48,8 +65,8 @@
         const QUERIES = ['Spielfilm', 'Spielfilme', 'Spielfilm-Highlights', 'Filme', 'Kino - Filme'];
         
         let allMovies = [];
+        let currentGenre = 'Alle';
 
-        // 1. Titel-Bereinigung analog zu deinem Python "clean_title"
         function cleanTitle(title) {
             let yearMatch = title.match(/(\d{4})/);
             let year = yearMatch ? yearMatch[1] : 'None';
@@ -76,7 +93,6 @@
             return { cleanName: clean, year: year };
         }
 
-        // 2. Multi-Query Abruf (Ersetzt deinen ThreadPool / Loops)
         async function fetchAllData() {
             document.getElementById('scanner').classList.remove('hidden');
             const seenUrls = new Set();
@@ -84,11 +100,10 @@
             let tempResults = [];
 
             try {
-                // Alle 5 Anfragen parallel feuern (entspricht size: 2000 pro Begriff)
                 const promises = QUERIES.map(q => {
                     const payload = {
                         queries: [{ fields: ['topic'], query: q }],
-                        size: 1500, // Nahe an deinen 2000, um den Browser-Speicher nicht zu sprengen
+                        size: 1500,
                         sortBy: 'timestamp',
                         sortOrder: 'desc'
                     };
@@ -101,7 +116,6 @@
 
                 const responses = await Promise.all(promises);
 
-                // Daten verarbeiten und filtern wie in deinem Python-Code
                 responses.forEach(data => {
                     const results = data.result?.results || [];
                     results.forEach(m => {
@@ -110,7 +124,6 @@
                         if (!url || !title) return;
 
                         const lowerTitle = title.toLowerCase();
-                        // Ausschluss von Hörfassungen / Barrierefrei
                         if (/audiodeskription|audio description|ad version|hörfilm|deskription|barrierefrei/.test(lowerTitle)) return;
                         if (seenUrls.has(url)) return;
                         
@@ -119,7 +132,7 @@
 
                         const normTitle = cleanName.toLowerCase().trim();
                         if (seenTitles.has(normTitle)) return;
-                        if (m.duration < 4680) return; // Mindestlänge 78 Min
+                        if (m.duration < 4680) return;
 
                         seenUrls.add(url);
                         seenTitles.add(normTitle);
@@ -131,7 +144,7 @@
                             video_url: url,
                             plot: 'Lade Filminformationen...',
                             rating: 'N/A',
-                            thumb: 'placeholder.png', // Fallback
+                            thumb: 'placeholder.png',
                             genres_list: ['Sonstige'],
                             channel: m.channel
                         });
@@ -145,10 +158,11 @@
                     return;
                 }
 
-                // UI sofort mit Basisinhalten rendern
-                renderGrid(allMovies);
+                // Initialer Render von Menü und Grid
+                renderGenreLeiste();
+                filterResults();
                 
-                // TMDB-Daten asynchron im Hintergrund nachladen (dein load_extra_info)
+                // TMDB-Metadaten im Hintergrund nachladen
                 hydrateWithTMDB();
 
             } catch (err) {
@@ -157,11 +171,8 @@
             }
         }
 
-        // 3. TMDB Hydrierung (Metadaten nachladen)
         async function hydrateWithTMDB() {
-            // Um die TMDB-Rate-Limits im Browser nicht zu sprengen, laden wir blockweise
             for (let movie of allMovies) {
-                // Wir fragen TMDB ab
                 let url = `https://api.themoviedb.org/3/search/movie?api_key=${TMDB_API_KEY}&query=${encodeURIComponent(movie.search)}&language=de-DE&include_adult=false`;
                 if (movie.year !== 'None') url += `&year=${movie.year}`;
 
@@ -175,6 +186,10 @@
                         movie.rating = tmdb.vote_average ? tmdb.vote_average.toFixed(1) : 'N/A';
                         movie.thumb = tmdb.poster_path ? `https://image.tmdb.org/t/p/w342${tmdb.poster_path}` : 'placeholder.png';
                         
+                        if (tmdb.release_date && movie.year === 'None') {
+                            movie.year = tmdb.release_date.split('-')[0];
+                        }
+
                         if (tmdb.genre_ids) {
                             movie.genres_list = tmdb.genre_ids
                                 .map(id => GENRES_MAP[id])
@@ -182,20 +197,165 @@
                             if (movie.genres_list.length === 0) movie.genres_list = ['Sonstige'];
                         }
 
-                        // Aktualisiere nur die eine Karte im UI, um Ruckler zu vermeiden
+                        // UI-Karten und Zähler live updaten
                         updateMovieCard(movie);
+                        updateGenreCounts();
                     }
-                } catch (e) {
-                    // Falls TMDB fehlschlägt, behalten wir die Mediathek-Basisdaten
-                }
+                } catch (e) {}
             }
             document.getElementById('scanner').classList.add('hidden');
         }
 
-        // 4. UI Rendering
+        // 5. Genre-Leiste Generierung & Zähler (entspricht update_genre_counts)
+        function getGenreCounts() {
+            const counts = { "Alle": 0, "Sonstige": 0, "Nach Jahren": 0 };
+            Object.values(GENRES_MAP).forEach(g => counts[g] = 0);
+
+            allMovies.forEach(m => {
+                counts["Alle"]++;
+                if (m.year && m.year !== 'None' && parseInt(m.year) > 1900) {
+                    counts["Nach Jahren"]++;
+                }
+                if (!m.genres_list || m.genres_list.includes('Sonstige')) {
+                    counts["Sonstige"]++;
+                } else {
+                    m.genres_list.forEach(g => { if (g in counts) counts[g]++; });
+                }
+            });
+            return counts;
+        }
+
+        function renderGenreLeiste() {
+            const leiste = document.getElementById('genreLeiste');
+            const counts = getGenreCounts();
+            
+            const sortedGenres = Object.values(GENRES_MAP).sort();
+            const genres = ['Alle', 'Nach Jahren', ...sortedGenres, 'Sonstige'];
+
+            leiste.innerHTML = '';
+            genres.forEach(g => {
+                const btn = document.createElement('button');
+                btn.id = `genre-btn-${g.replace(/\s+/g, '')}`;
+                
+                // Styling an dein Kivy-Design angelehnt (Aktiv = Blau, Inaktiv = Dunkel)
+                const isActive = currentGenre === g || (g === 'Nach Jahren' && currentGenre.startsWith('Jahr: '));
+                btn.className = `flex-shrink-0 min-w-[120px] px-4 py-2 rounded-xl text-center flex flex-col justify-center transition-all cursor-pointer border ${
+                    isActive ? 'bg-blue-600 border-blue-500 text-white font-bold' : 'bg-gray-900 border-gray-800 text-gray-300 hover:border-gray-700'
+                }`;
+
+                btn.innerHTML = `
+                    <span class="text-sm tracking-wide">${g === currentGenre.replace('Jahr: ', 'Jahr ') ? currentGenre : g}</span>
+                    <span class="text-[10px] opacity-60 font-light genre-count">${counts[g] !== undefined ? '(' + counts[g] + ')' : ''}</span>
+                `;
+
+                btn.onclick = () => {
+                    if (g === 'Nach Jahren') {
+                        openYearsMenu();
+                    } else {
+                        currentGenre = g;
+                        setActiveGenreStyling();
+                        filterResults();
+                    }
+                };
+                leiste.appendChild(btn);
+            });
+        }
+
+        function updateGenreCounts() {
+            const counts = getGenreCounts();
+            Object.keys(counts).forEach(g => {
+                const btn = document.getElementById(`genre-btn-${g.replace(/\s+/g, '')}`);
+                if (btn) {
+                    const countSpan = btn.querySelector('.genre-count');
+                    if (countSpan) countSpan.innerText = `(${counts[g]})`;
+                }
+            });
+        }
+
+        function setActiveGenreStyling() {
+            const sortedGenres = Object.values(GENRES_MAP).sort();
+            const genres = ['Alle', 'Nach Jahren', ...sortedGenres, 'Sonstige'];
+            
+            genres.forEach(g => {
+                const btn = document.getElementById(`genre-btn-${g.replace(/\s+/g, '')}`);
+                if (!btn) return;
+                
+                const isActive = currentGenre === g || (g === 'Nach Jahren' && currentGenre.startsWith('Jahr: '));
+                
+                if (isActive) {
+                    btn.className = "flex-shrink-0 min-w-[120px] px-4 py-2 rounded-xl text-center flex flex-col justify-center transition-all cursor-pointer border bg-blue-600 border-blue-500 text-white font-bold";
+                    if (currentGenre.startsWith('Jahr: ')) {
+                        btn.querySelector('span').innerText = currentGenre.replace('Jahr: ', 'Jahr: ');
+                    }
+                } else {
+                    btn.className = "flex-shrink-0 min-w-[120px] px-4 py-2 rounded-xl text-center flex flex-col justify-center transition-all cursor-pointer border bg-gray-900 border-gray-800 text-gray-300 hover:border-gray-700";
+                    if (g === 'Nach Jahren') btn.querySelector('span').innerText = 'Nach Jahren';
+                }
+            });
+        }
+
+        // 6. Jahres-Menü Logik (entspricht show_years_menu)
+        function openYearsMenu() {
+            const yearsSet = new Set();
+            allMovies.forEach(m => {
+                if (m.year && m.year !== 'None' && parseInt(m.year) > 1900) yearsSet.add(m.year);
+            });
+            const sortedYears = Array.from(yearsSet).sort((a, b) => b - a);
+
+            const grid = document.getElementById('yearsGrid');
+            grid.innerHTML = '';
+
+            sortedYears.forEach(yr => {
+                const btn = document.createElement('button');
+                btn.className = "bg-gray-800 hover:bg-blue-600 text-white font-bold py-3 rounded-xl transition-all cursor-pointer text-sm";
+                btn.innerText = yr;
+                btn.onclick = () => {
+                    currentGenre = `Jahr: ${yr}`;
+                    closeYearsModal();
+                    setActiveGenreStyling();
+                    filterResults();
+                };
+                grid.appendChild(btn);
+            });
+
+            document.getElementById('yearsModal').style.display = 'flex';
+        }
+
+        function closeYearsModal() {
+            document.getElementById('yearsModal').style.display = 'none';
+        }
+
+        // 7. Kombinierte Filter-Logik (entspricht filter_results)
+        function filterResults() {
+            const query = document.getElementById('searchBar').value.toLowerCase().trim();
+            
+            const filtered = allMovies.filter(m => {
+                // Suchleisten-Filter
+                if (query && !m.title.toLowerCase().includes(query) && !m.plot.toLowerCase().includes(query)) {
+                    return false;
+                }
+                
+                // Genre/Jahre-Filter
+                if (currentGenre === 'Alle') return true;
+                if (currentGenre === 'Sonstige') return !m.genres_list || m.genres_list.includes('Sonstige');
+                if (currentGenre.startsWith('Jahr: ')) {
+                    return m.year === currentGenre.replace('Jahr: ', '');
+                }
+                return m.genres_list && m.genres_list.includes(currentGenre);
+            });
+
+            renderGrid(filtered);
+        }
+
+        // UI Grid-Rendering
         function renderGrid(movies) {
             const grid = document.getElementById('movieGrid');
             grid.innerHTML = '';
+
+            if(movies.length === 0) {
+                grid.innerHTML = `<div class="text-center col-span-full py-12 text-gray-500">Keine Filme für diese Auswahl vorhanden.</div>`;
+                return;
+            }
 
             movies.forEach(m => {
                 const card = document.createElement('div');
@@ -221,7 +381,7 @@
                                 ${m.genres_list.map(g => `<span class="bg-gray-800 text-gray-400 text-[10px] px-1.5 py-0.5 rounded">${g}</span>`).join('')}
                             </div>
                             <button onclick="window.open('${m.video_url}', '_blank')" 
-                                    class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-1.5 px-3 rounded-lg transition-colors text-xs tracking-wide">
+                                    class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-1.5 px-3 rounded-lg transition-colors text-xs tracking-wide cursor-pointer">
                                 ABSPIELEN
                             </button>
                         </div>
@@ -231,37 +391,30 @@
             });
         }
 
-        // Einzelne Karte updaten, wenn die TMDB-Antwort eintrudelt
         function updateMovieCard(m) {
             const cardId = `movie-${btoa(encodeURIComponent(m.video_url)).replace(/=/g, '')}`;
             const card = document.getElementById(cardId);
             if (!card) return;
 
-            // Poster aktualisieren
             const img = card.querySelector('img');
             if (img && m.thumb !== 'placeholder.png') img.src = m.thumb;
 
-            // Rating aktualisieren
             const ratingBadge = card.querySelector('.text-yellow-400');
             if (ratingBadge) ratingBadge.innerText = `★ ${m.rating}`;
 
-            // Plot aktualisieren
             const plotText = card.querySelector('.line-clamp-3');
             if (plotText) plotText.innerText = m.plot;
 
-            // Genres aktualisieren
+            const infoText = card.querySelector('.text-gray-500');
+            if (infoText) infoText.innerText = `${m.channel} ${m.year !== 'None' ? '· ' + m.year : ''}`;
+
             const genreBox = card.querySelector('.flex-wrap');
             if (genreBox) {
                 genreBox.innerHTML = m.genres_list.map(g => `<span class="bg-gray-800 text-gray-400 text-[10px] px-1.5 py-0.5 rounded">${g}</span>`).join('');
             }
         }
 
-        // Live-Suche
-        document.getElementById('searchBar').addEventListener('input', (e) => {
-            const query = e.target.value.toLowerCase().trim();
-            const filtered = allMovies.filter(m => m.title.toLowerCase().includes(query) || m.plot.toLowerCase().includes(query));
-            renderGrid(filtered);
-        });
+        document.getElementById('searchBar').addEventListener('input', filterResults);
 
         // Starten
         fetchAllData();
