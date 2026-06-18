@@ -27,7 +27,7 @@
     </header>
 
     <nav id="genreLeiste" class="flex gap-3 overflow-x-auto pb-3 mb-4 no-scrollbar scroll-smooth">
-        </nav>
+    </nav>
 
     <div id="scanner" class="w-full h-1 bg-gray-950 mb-6 relative overflow-hidden hidden">
         <div class="h-full bg-blue-500 w-1/4 absolute rounded" style="animation: shift 1.5s infinite ease-in-out;"></div>
@@ -36,6 +36,7 @@
         @keyframes shift { 0% { left: -25%; } 50% { left: 100%; } 100% { left: -25%; } }
     </style>
 
+    <!-- Movie Grid -->
     <main id="movieGrid" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4">
         <div id="statusMessage" class="text-center col-span-full py-12 text-gray-400 animate-pulse">
             Initialisiere Mediathek-Abruf...
@@ -46,7 +47,7 @@
         <div class="bg-gray-900 border border-gray-800 rounded-2xl max-w-lg w-full p-6 flex flex-col max-h-[80vh]">
             <h2 class="text-xl font-bold mb-4 text-center text-gray-100">Wähle ein Produktionsjahr</h2>
             <div id="yearsGrid" class="grid grid-cols-3 gap-3 overflow-y-auto pr-2 flex-1 mb-4">
-                </div>
+            </div>
             <button onclick="closeYearsModal()" class="w-full bg-gray-800 hover:bg-gray-700 text-white font-bold py-3 rounded-xl transition-colors cursor-pointer">
                 ZURÜCK
             </button>
@@ -67,7 +68,10 @@
         const QUERIES = ['Spielfilm', 'Spielfilme', 'Spielfilm-Highlights', 'Filme', 'Kino - Filme'];
         
         let allMovies = [];
+        let moviesToRender = []; // Hält die aktuell gefilterte Liste bereit
         let currentGenre = 'Alle';
+        let chunkObserver = null;
+        const CHUNK_SIZE = 60; // Wie viele Filme pro "Scroll-Schub" geladen werden
 
         function cleanTitle(title) {
             let yearMatch = title.match(/(\d{4})/);
@@ -351,7 +355,7 @@
         function filterResults() {
             const query = document.getElementById('searchBar').value.toLowerCase().trim();
             
-            const filtered = allMovies.filter(m => {
+            moviesToRender = allMovies.filter(m => {
                 if (query && !m.title.toLowerCase().includes(query) && !m.plot.toLowerCase().includes(query)) {
                     return false;
                 }
@@ -363,24 +367,38 @@
                 return m.genres_list && m.genres_list.includes(currentGenre);
             });
 
-            renderGrid(filtered);
-        }
-
-        // Hilfsfunktion zum Aufklappen der Beschreibung
-        function togglePlot(element) {
-            element.classList.toggle('line-clamp-3');
-        }
-
-        function renderGrid(movies) {
             const grid = document.getElementById('movieGrid');
             grid.innerHTML = '';
 
-            if(movies.length === 0) {
+            if(moviesToRender.length === 0) {
                 grid.innerHTML = `<div class="text-center col-span-full py-12 text-gray-500">Keine Filme für diese Auswahl vorhanden.</div>`;
                 return;
             }
 
-            movies.forEach(m => {
+            // Starte das Rendern mit dem ersten Block (Index 0)
+            renderNextChunk(0);
+            setupInfiniteScroll();
+        }
+
+        function togglePlot(element) {
+            element.classList.toggle('line-clamp-3');
+        }
+
+        // Rendersystem für Performance-Schübe (Chunk-by-Chunk)
+        function renderNextChunk(startIndex) {
+            const grid = document.getElementById('movieGrid');
+            
+            // Alten Scroll-Wächter entfernen, falls er existiert
+            const oldSentinel = document.getElementById('scrollSentinel');
+            if (oldSentinel) oldSentinel.remove();
+
+            const endIndex = Math.min(startIndex + CHUNK_SIZE, moviesToRender.length);
+            const chunk = moviesToRender.slice(startIndex, endIndex);
+
+            // Virtuelles Fragment für maximale Rendergeschwindigkeit
+            const fragment = document.createDocumentFragment();
+
+            chunk.forEach(m => {
                 const card = document.createElement('div');
                 card.id = `movie-${btoa(encodeURIComponent(m.video_url)).replace(/=/g, '')}`;
                 card.className = "bg-gray-900 rounded-xl overflow-hidden shadow-md border border-gray-800 flex flex-col justify-between hover:border-blue-500 transition-all duration-200 group h-fit";
@@ -415,14 +433,44 @@
                         </div>
                     </div>
                 `;
-                grid.appendChild(card);
+                fragment.appendChild(card);
             });
+
+            grid.appendChild(fragment);
+
+            // Neuen Scroll-Wächter am Ende einbauen, wenn noch Filme übrig sind
+            if (endIndex < moviesToRender.length) {
+                const sentinel = document.createElement('div');
+                sentinel.id = 'scrollSentinel';
+                sentinel.className = 'w-full h-12 col-span-full flex justify-center items-center';
+                grid.appendChild(sentinel);
+                
+                if (chunkObserver) chunkObserver.observe(sentinel);
+            }
+        }
+
+        // Steuert das automatische Nachladen beim Herunterscrollen
+        function setupInfiniteScroll() {
+            if (chunkObserver) chunkObserver.disconnect();
+
+            chunkObserver = new IntersectionObserver((entries) => {
+                if (entries[0].isIntersecting) {
+                    // Zähle wie viele echte Filmkarten (ohne den Sentinel-Wächter) gerade im Grid liegen
+                    const currentCount = document.querySelectorAll('#movieGrid > div:not(#scrollSentinel)').length;
+                    if (currentCount < moviesToRender.length) {
+                        renderNextChunk(currentCount);
+                    }
+                }
+            }, { rootMargin: '400px' }); // Lädt 400px vor Erreichen des Endes schon nach (nahtloser Übergang)
+
+            const sentinel = document.getElementById('scrollSentinel');
+            if (sentinel) chunkObserver.observe(sentinel);
         }
 
         function updateMovieCard(m) {
             const cardId = `movie-${btoa(encodeURIComponent(m.video_url)).replace(/=/g, '')}`;
             const card = document.getElementById(cardId);
-            if (!card) return;
+            if (!card) return; // Wenn Karte (noch) nicht gescrollt/gerendert wurde, springt er sofort performant raus!
 
             const img = card.querySelector('img');
             if (img && m.thumb !== 'placeholder.png') img.src = m.thumb;
@@ -430,7 +478,6 @@
             const ratingBadge = card.querySelector('.text-yellow-400');
             if (ratingBadge) ratingBadge.innerText = `★ ${m.rating}`;
 
-            // Plot aktualisieren, ohne den onclick-Eventhandler anzufassen
             const plotText = card.querySelector('.p-3 p.text-gray-400');
             if (plotText) plotText.innerText = m.plot;
 
