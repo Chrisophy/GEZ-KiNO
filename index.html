@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>[GEZ] KiNO</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
     <style>
         body { background-color: #121212; color: #e5e7eb; font-family: 'Roboto', sans-serif; }
         .no-scrollbar::-webkit-scrollbar { display: none; }
@@ -14,7 +15,6 @@
     <meta name="theme-color" content="#121212">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    
 </head>
 <body class="p-4 md:p-6 max-w-7xl mx-auto">
 
@@ -23,10 +23,19 @@
             <img src="banner.png" alt="" class="w-full h-full object-contain" onerror="this.style.display='none'">
         </div>
         
-        <div class="flex justify-end w-full">
-            <div class="w-full md:w-1/3">
-                <input type="text" id="searchBar" placeholder="Film suchen..." 
-                       class="bg-gray-900 text-white px-4 py-2 rounded-xl w-full focus:outline-none focus:ring-2 focus:ring-blue-500 border border-gray-800 shadow-inner">
+        <div class="flex flex-col sm:flex-row justify-between items-center gap-4 w-full">
+            <div class="flex gap-2 bg-gray-950 p-1.5 rounded-2xl border border-gray-800 w-full sm:w-auto">
+                <button id="btnMediathek" onclick="switchView('mediathek')" class="px-6 py-2.5 rounded-xl bg-blue-600 text-white font-bold shadow-lg transition-all cursor-pointer text-sm flex-1 sm:flex-none text-center">
+                    🍿 Mediathek
+                </button>
+                <button id="btnLiveTv" onclick="switchView('livetv')" class="px-6 py-2.5 rounded-xl bg-gray-900 border border-gray-800 text-gray-400 hover:text-white transition-all cursor-pointer text-sm flex-1 sm:flex-none text-center">
+                    📺 Live TV
+                </button>
+            </div>
+
+            <div class="w-full sm:w-1/3">
+                <input type="text" id="searchBar" placeholder="Suchen..." 
+                       class="bg-gray-900 text-white px-4 py-2.5 rounded-xl w-full focus:outline-none focus:ring-2 focus:ring-blue-500 border border-gray-800 shadow-inner text-sm">
             </div>
         </div>
     </header>
@@ -41,14 +50,13 @@
         @keyframes shift { 0% { left: -25%; } 50% { left: 100%; } 100% { left: -25%; } }
     </style>
 
-    <!-- Movie Grid -->
     <main id="movieGrid" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4">
         <div id="statusMessage" class="text-center col-span-full py-12 text-gray-400 animate-pulse">
             Initialisiere Mediathek-Abruf...
         </div>
     </main>
 
-    <div id="yearsModal" class="fixed inset-0 bg-black/80 hidden z-50 justify-center items-center p-4 backdrop-blur-sm">
+    <div id="yearsModal" class="fixed inset-0 bg-black/80 hidden z-40 justify-center items-center p-4 backdrop-blur-sm">
         <div class="bg-gray-900 border border-gray-800 rounded-2xl max-w-lg w-full p-6 flex flex-col max-h-[80vh]">
             <h2 class="text-xl font-bold mb-4 text-center text-gray-100">Wähle ein Produktionsjahr</h2>
             <div id="yearsGrid" class="grid grid-cols-3 gap-3 overflow-y-auto pr-2 flex-1 mb-4">
@@ -59,9 +67,24 @@
         </div>
     </div>
 
+    <div id="videoModal" class="fixed inset-0 bg-black/95 hidden z-50 flex flex-col justify-center items-center backdrop-blur-md">
+        <button onclick="closePlayer()" class="absolute top-4 right-4 text-white hover:text-gray-400 p-2 z-50 bg-gray-900/50 rounded-full border border-gray-800 transition-colors cursor-pointer">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+        </button>
+        <div class="w-full max-w-5xl px-4 flex flex-col gap-3">
+            <h3 id="videoTitle" class="text-white text-base md:text-lg font-bold truncate px-1"></h3>
+            <div class="relative w-full aspect-video bg-black rounded-2xl overflow-hidden border border-gray-800 shadow-2xl">
+                <video id="mainVideoPlayer" controls autoplay class="w-full h-full"></video>
+            </div>
+        </div>
+    </div>
+
     <script>
         const TMDB_API_KEY = '60b3801a9e76b5706ee2a432f06423e6';
         const MEDIATHEK_URL = 'https://mediathekviewweb.de/api/query';
+        const IPTV_URL = 'https://raw.githubusercontent.com/jnk22/kodinerds-iptv/refs/heads/master/iptv/clean/clean_tv_main.m3u';
         
         const GENRES_MAP = {
             28: 'Action', 12: 'Abenteuer', 16: 'Animation', 35: 'Komödie', 80: 'Krimi', 99: 'Doku',
@@ -73,10 +96,13 @@
         const QUERIES = ['Spielfilm', 'Spielfilme', 'Spielfilm-Highlights', 'Filme', 'Kino - Filme'];
         
         let allMovies = [];
-        let moviesToRender = []; // Hält die aktuell gefilterte Liste bereit
+        let liveTvChannels = [];
+        let moviesToRender = []; 
         let currentGenre = 'Alle';
+        let currentView = 'mediathek'; // 'mediathek' oder 'livetv'
         let chunkObserver = null;
-        const CHUNK_SIZE = 60; // Wie viele Filme pro "Scroll-Schub" geladen werden
+        let hlsInstance = null;
+        const CHUNK_SIZE = 60; 
 
         function cleanTitle(title) {
             let yearMatch = title.match(/(\d{4})/);
@@ -164,18 +190,95 @@
 
                 allMovies = tempResults.sort((a, b) => a.title.localeCompare(b.title));
                 
-                if (allMovies.length === 0) {
+                if (allMovies.length === 0 && currentView === 'mediathek') {
                     document.getElementById('statusMessage').innerText = "Keine Filme gefunden.";
                     return;
                 }
 
-                renderGenreLeiste();
-                filterResults();
+                if (currentView === 'mediathek') {
+                    renderGenreLeiste();
+                    filterResults();
+                }
                 hydrateWithTMDBParallel();
 
             } catch (err) {
                 console.error(err);
-                document.getElementById('statusMessage').innerText = "Fehler beim API-Abruf.";
+                if (currentView === 'mediathek') {
+                    document.getElementById('statusMessage').innerText = "Fehler beim API-Abruf.";
+                }
+            }
+        }
+
+        async function fetchLiveTvData() {
+            if (liveTvChannels.length > 0) return;
+            document.getElementById('scanner').classList.remove('hidden');
+            
+            try {
+                const res = await fetch(IPTV_URL);
+                const text = await res.text();
+                const lines = text.split(/\r?\n/);
+                let currentChannel = null;
+
+                for (let line of lines) {
+                    line = line.trim();
+                    if (line.startsWith('#EXTINF:')) {
+                        const logoMatch = line.match(/tvg-logo="([^"]+)"/);
+                        const commaIdx = line.indexOf(',');
+                        const name = commaIdx !== -1 ? line.substring(commaIdx + 1).trim() : 'Unbekannter Sender';
+                        
+                        currentChannel = {
+                            title: name,
+                            search: name,
+                            year: 'LIVE',
+                            video_url: '',
+                            plot: 'Live-Stream des öffentlich-rechtlichen Rundfunks über das Kodinerds IPTV-Projekt.',
+                            rating: 'TV',
+                            thumb: logoMatch ? logoMatch[1] : 'placeholder.png',
+                            genres_list: ['Live TV'],
+                            channel: 'ÖRR'
+                        };
+                    } else if (line.startsWith('http') && currentChannel) {
+                        currentChannel.video_url = line;
+                        liveTvChannels.push(currentChannel);
+                        currentChannel = null;
+                    }
+                }
+                liveTvChannels.sort((a, b) => a.title.localeCompare(b.title));
+            } catch (err) {
+                console.error("Fehler beim IPTV-Parsing:", err);
+            } finally {
+                document.getElementById('scanner').classList.add('hidden');
+            }
+        }
+
+        async function switchView(view) {
+            if (currentView === view) return;
+            currentView = view;
+            
+            const btnMedia = document.getElementById('btnMediathek');
+            const btnTv = document.getElementById('btnLiveTv');
+            const genreLeiste = document.getElementById('genreLeiste');
+            const searchBar = document.getElementById('searchBar');
+            
+            searchBar.value = '';
+
+            if (view === 'mediathek') {
+                btnMedia.className = "px-6 py-2.5 rounded-xl bg-blue-600 text-white font-bold shadow-lg transition-all cursor-pointer text-sm flex-1 sm:flex-none text-center";
+                btnTv.className = "px-6 py-2.5 rounded-xl bg-gray-900 border border-gray-800 text-gray-400 hover:text-white transition-all cursor-pointer text-sm flex-1 sm:flex-none text-center";
+                genreLeiste.style.display = 'flex';
+                searchBar.placeholder = "Film suchen...";
+                filterResults();
+            } else {
+                btnTv.className = "px-6 py-2.5 rounded-xl bg-blue-600 text-white font-bold shadow-lg transition-all cursor-pointer text-sm flex-1 sm:flex-none text-center";
+                btnMedia.className = "px-6 py-2.5 rounded-xl bg-gray-900 border border-gray-800 text-gray-400 hover:text-white transition-all cursor-pointer text-sm flex-1 sm:flex-none text-center";
+                genreLeiste.style.display = 'none';
+                searchBar.placeholder = "Sender suchen...";
+                
+                const grid = document.getElementById('movieGrid');
+                grid.innerHTML = `<div id="statusMessage" class="text-center col-span-full py-12 text-gray-400 animate-pulse">Lade Live TV Sender...</div>`;
+                
+                await fetchLiveTvData();
+                filterResults();
             }
         }
 
@@ -221,14 +324,16 @@
                                 if (movie.genres_list.length === 0) movie.genres_list = ['Sonstige'];
                             }
 
-                            updateMovieCard(movie);
+                            if (currentView === 'mediathek') {
+                                updateMovieCard(movie);
+                            }
                         }
                     } catch (e) {
                         console.error("TMDB-Fehler bei: " + movie.search);
                     }
 
                     loadedCount++;
-                    if (loadedCount % 15 === 0) {
+                    if (loadedCount % 15 === 0 && currentView === 'mediathek') {
                         updateGenreCounts();
                     }
                 }
@@ -237,7 +342,7 @@
             const workers = Array.from({ length: CONCURRENCY_LIMIT }, worker);
             await Promise.all(workers);
             
-            updateGenreCounts();
+            if (currentView === 'mediathek') updateGenreCounts();
             document.getElementById('scanner').classList.add('hidden');
         }
 
@@ -360,27 +465,32 @@
         function filterResults() {
             const query = document.getElementById('searchBar').value.toLowerCase().trim();
             
-            moviesToRender = allMovies.filter(m => {
-                if (query && !m.title.toLowerCase().includes(query) && !m.plot.toLowerCase().includes(query)) {
-                    return false;
-                }
-                if (currentGenre === 'Alle') return true;
-                if (currentGenre === 'Sonstige') return !m.genres_list || m.genres_list.includes('Sonstige');
-                if (currentGenre.startsWith('Jahr: ')) {
-                    return m.year === currentGenre.replace('Jahr: ', '');
-                }
-                return m.genres_list && m.genres_list.includes(currentGenre);
-            });
+            if (currentView === 'mediathek') {
+                moviesToRender = allMovies.filter(m => {
+                    if (query && !m.title.toLowerCase().includes(query) && !m.plot.toLowerCase().includes(query)) {
+                        return false;
+                    }
+                    if (currentGenre === 'Alle') return true;
+                    if (currentGenre === 'Sonstige') return !m.genres_list || m.genres_list.includes('Sonstige');
+                    if (currentGenre.startsWith('Jahr: ')) {
+                        return m.year === currentGenre.replace('Jahr: ', '');
+                    }
+                    return m.genres_list && m.genres_list.includes(currentGenre);
+                });
+            } else {
+                moviesToRender = liveTvChannels.filter(m => {
+                    return !query || m.title.toLowerCase().includes(query);
+                });
+            }
 
             const grid = document.getElementById('movieGrid');
             grid.innerHTML = '';
 
-            if(moviesToRender.length === 0) {
-                grid.innerHTML = `<div class="text-center col-span-full py-12 text-gray-500">Keine Filme für diese Auswahl vorhanden.</div>`;
+            if (moviesToRender.length === 0) {
+                grid.innerHTML = `<div class="text-center col-span-full py-12 text-gray-500">Keine Inhalte für diese Auswahl vorhanden.</div>`;
                 return;
             }
 
-            // Starte das Rendern mit dem ersten Block (Index 0)
             renderNextChunk(0);
             setupInfiniteScroll();
         }
@@ -389,18 +499,14 @@
             element.classList.toggle('line-clamp-3');
         }
 
-        // Rendersystem für Performance-Schübe (Chunk-by-Chunk)
         function renderNextChunk(startIndex) {
             const grid = document.getElementById('movieGrid');
             
-            // Alten Scroll-Wächter entfernen, falls er existiert
             const oldSentinel = document.getElementById('scrollSentinel');
             if (oldSentinel) oldSentinel.remove();
 
             const endIndex = Math.min(startIndex + CHUNK_SIZE, moviesToRender.length);
             const chunk = moviesToRender.slice(startIndex, endIndex);
-
-            // Virtuelles Fragment für maximale Rendergeschwindigkeit
             const fragment = document.createDocumentFragment();
 
             chunk.forEach(m => {
@@ -408,12 +514,16 @@
                 card.id = `movie-${btoa(encodeURIComponent(m.video_url)).replace(/=/g, '')}`;
                 card.className = "bg-gray-900 rounded-xl overflow-hidden shadow-md border border-gray-800 flex flex-col justify-between hover:border-blue-500 transition-all duration-200 group h-fit";
                 
+                // Für HTML-Attribute maskieren
+                const escapedTitle = m.title.replace(/'/g, "\\'").replace(/"/g, '&quot;');
+                const isTv = currentView === 'livetv';
+
                 card.innerHTML = `
-                    <div class="relative aspect-[2/3] w-full bg-gray-800 overflow-hidden">
-                        <img src="${m.thumb}" alt="" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" 
+                    <div class="relative aspect-[2/3] w-full bg-gray-950 overflow-hidden flex items-center justify-center p-4">
+                        <img src="${m.thumb}" alt="" class="${isTv ? 'max-w-full max-h-full object-contain' : 'w-full h-full object-cover'} group-hover:scale-105 transition-transform duration-300" 
                              onerror="if(!this.src.includes('placeholder.png'))this.src='placeholder.png';">
-                        <span class="absolute top-2 right-2 bg-black/70 px-2 py-0.5 text-xs font-bold text-yellow-400 rounded">
-                            ★ ${m.rating}
+                        <span class="absolute top-2 right-2 bg-black/70 px-2 py-0.5 text-xs font-bold ${isTv ? 'text-red-500' : 'text-yellow-400'} rounded">
+                            ${isTv ? '🔴 LIVE' : '★ ' + m.rating}
                         </span>
                     </div>
                     <div class="p-3 flex-1 flex flex-col justify-between">
@@ -431,7 +541,7 @@
                             <div class="flex flex-wrap gap-1 mb-2">
                                 ${m.genres_list.map(g => `<span class="bg-gray-800 text-gray-400 text-[10px] px-1.5 py-0.5 rounded">${g}</span>`).join('')}
                             </div>
-                            <button onclick="window.open('${m.video_url}', '_blank')" 
+                            <button onclick="openPlayer('${m.video_url}', '${escapedTitle}')" 
                                     class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-1.5 px-3 rounded-lg transition-colors text-xs tracking-wide cursor-pointer">
                                 ABSPIELEN
                             </button>
@@ -443,7 +553,6 @@
 
             grid.appendChild(fragment);
 
-            // Neuen Scroll-Wächter am Ende einbauen, wenn noch Filme übrig sind
             if (endIndex < moviesToRender.length) {
                 const sentinel = document.createElement('div');
                 sentinel.id = 'scrollSentinel';
@@ -454,19 +563,17 @@
             }
         }
 
-        // Steuert das automatische Nachladen beim Herunterscrollen
         function setupInfiniteScroll() {
             if (chunkObserver) chunkObserver.disconnect();
 
             chunkObserver = new IntersectionObserver((entries) => {
                 if (entries[0].isIntersecting) {
-                    // Zähle wie viele echte Filmkarten (ohne den Sentinel-Wächter) gerade im Grid liegen
                     const currentCount = document.querySelectorAll('#movieGrid > div:not(#scrollSentinel)').length;
                     if (currentCount < moviesToRender.length) {
                         renderNextChunk(currentCount);
                     }
                 }
-            }, { rootMargin: '400px' }); // Lädt 400px vor Erreichen des Endes schon nach (nahtloser Übergang)
+            }, { rootMargin: '400px' });
 
             const sentinel = document.getElementById('scrollSentinel');
             if (sentinel) chunkObserver.observe(sentinel);
@@ -475,7 +582,7 @@
         function updateMovieCard(m) {
             const cardId = `movie-${btoa(encodeURIComponent(m.video_url)).replace(/=/g, '')}`;
             const card = document.getElementById(cardId);
-            if (!card) return; // Wenn Karte (noch) nicht gescrollt/gerendert wurde, springt er sofort performant raus!
+            if (!card) return; 
 
             const img = card.querySelector('img');
             if (img && m.thumb !== 'placeholder.png') img.src = m.thumb;
@@ -495,9 +602,58 @@
             }
         }
 
+        // Steuerung des Vollbild In-App Videoplayers
+        function openPlayer(url, title) {
+            const modal = document.getElementById('videoModal');
+            const video = document.getElementById('mainVideoPlayer');
+            const titleEl = document.getElementById('videoTitle');
+
+            titleEl.innerText = title;
+            modal.classList.remove('hidden');
+            document.body.style.overflow = 'hidden'; 
+
+            // Wenn es ein HLS Live-Stream (.m3u8) ist
+            if (url.includes('.m3u8') || url.endsWith('.m3u8')) {
+                if (Hls.isSupported()) {
+                    if (hlsInstance) hlsInstance.destroy();
+                    hlsInstance = new Hls();
+                    hlsInstance.loadSource(url);
+                    hlsInstance.attachMedia(video);
+                } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
+                    // Native HLS-Unterstützung (z.B. Safari auf iOS/macOS)
+                    video.src = url;
+                } else {
+                    alert("Dieses Gerät unterstützt kein HLS-Streaming.");
+                }
+            } else {
+                // Normales MP4 aus der Mediathek
+                if (hlsInstance) {
+                    hlsInstance.destroy();
+                    hlsInstance = null;
+                }
+                video.src = url;
+            }
+
+            video.play().catch(err => console.log("Autoplay blockiert:", err));
+        }
+
+        function closePlayer() {
+            const modal = document.getElementById('videoModal');
+            const video = document.getElementById('mainVideoPlayer');
+            
+            video.pause();
+            if (hlsInstance) {
+                hlsInstance.destroy();
+                hlsInstance = null;
+            }
+            video.src = ""; // Datenverbindung komplett trennen
+            modal.classList.add('hidden');
+            document.body.style.overflow = 'auto'; 
+        }
+
         document.getElementById('searchBar').addEventListener('input', filterResults);
 
-        // Starten
+        // Init
         fetchAllData();
         
         if ('serviceWorker' in navigator) {
