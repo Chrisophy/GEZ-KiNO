@@ -99,7 +99,7 @@
         let liveTvChannels = [];
         let moviesToRender = []; 
         let currentGenre = 'Alle';
-        let currentView = 'mediathek'; // 'mediathek' oder 'livetv'
+        let currentView = 'mediathek'; 
         let chunkObserver = null;
         let hlsInstance = null;
         const CHUNK_SIZE = 60; 
@@ -514,7 +514,6 @@
                 card.id = `movie-${btoa(encodeURIComponent(m.video_url)).replace(/=/g, '')}`;
                 card.className = "bg-gray-900 rounded-xl overflow-hidden shadow-md border border-gray-800 flex flex-col justify-between hover:border-blue-500 transition-all duration-200 group h-fit";
                 
-                // Für HTML-Attribute maskieren
                 const escapedTitle = m.title.replace(/'/g, "\\'").replace(/"/g, '&quot;');
                 const isTv = currentView === 'livetv';
 
@@ -602,7 +601,7 @@
             }
         }
 
-        // Steuerung des Vollbild In-App Videoplayers
+        // Optimierter Vollbild In-App Videoplayer mit intelligentem Fallback-System
         function openPlayer(url, title) {
             const modal = document.getElementById('videoModal');
             const video = document.getElementById('mainVideoPlayer');
@@ -612,26 +611,49 @@
             modal.classList.remove('hidden');
             document.body.style.overflow = 'hidden'; 
 
-            // Wenn es ein HLS Live-Stream (.m3u8) ist
             if (url.includes('.m3u8') || url.endsWith('.m3u8')) {
                 if (Hls.isSupported()) {
                     if (hlsInstance) hlsInstance.destroy();
-                    hlsInstance = new Hls();
+                    
+                    // Schnelles Timeout setzen (1,5 Sek), damit die App bei CORS-Sperren nicht einfriert
+                    hlsInstance = new Hls({
+                        manifestLoadingTimeOut: 1500,
+                        manifestLoadingMaxRetry: 0
+                    });
+                    
+                    // AUTOMATISCHES FALLBACK: Wenn ein CORS- oder Netzwerkfehler auftritt,
+                    // öffnet die App den Stream blitzschnell im neuen Tab, wo der Browser ihn abspielen darf!
+                    hlsInstance.on(Hls.Events.ERROR, function (event, data) {
+                        if (data.fatal && data.type === Hls.ErrorTypes.NETWORK_ERROR) {
+                            console.log("CORS blockiert In-App-Wiedergabe. Nutze automatischen Tab-Fallback.");
+                            window.open(url, '_blank');
+                            closePlayer();
+                        }
+                    });
+
                     hlsInstance.loadSource(url);
                     hlsInstance.attachMedia(video);
                 } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
-                    // Native HLS-Unterstützung (z.B. Safari auf iOS/macOS)
                     video.src = url;
+                    // Fallback für iOS Safari, falls die native Engine blockiert
+                    video.onerror = function() {
+                        window.open(url, '_blank');
+                        closePlayer();
+                    };
                 } else {
-                    alert("Dieses Gerät unterstützt kein HLS-Streaming.");
+                    window.open(url, '_blank');
+                    closePlayer();
                 }
             } else {
-                // Normales MP4 aus der Mediathek
                 if (hlsInstance) {
                     hlsInstance.destroy();
                     hlsInstance = null;
                 }
                 video.src = url;
+                video.onerror = function() {
+                    window.open(url, '_blank');
+                    closePlayer();
+                };
             }
 
             video.play().catch(err => console.log("Autoplay blockiert:", err));
@@ -646,7 +668,7 @@
                 hlsInstance.destroy();
                 hlsInstance = null;
             }
-            video.src = ""; // Datenverbindung komplett trennen
+            video.src = ""; 
             modal.classList.add('hidden');
             document.body.style.overflow = 'auto'; 
         }
