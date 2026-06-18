@@ -7,7 +7,6 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <style>
         body { background-color: #121212; color: #e5e7eb; font-family: 'Roboto', sans-serif; }
-        /* Versteckt die Scrollbar in der Genre-Leiste für einen sauberen Look */
         .no-scrollbar::-webkit-scrollbar { display: none; }
         .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
     </style>
@@ -28,7 +27,7 @@
         </nav>
 
     <div id="scanner" class="w-full h-1 bg-gray-950 mb-6 relative overflow-hidden hidden">
-        <div class="h-full bg-blue-500 w-1/4 absolute rounded animate-pulse" style="animation: shift 1.5s infinite ease-in-out;"></div>
+        <div class="h-full bg-blue-500 w-1/4 absolute rounded" style="animation: shift 1.5s infinite ease-in-out;"></div>
     </div>
     <style>
         @keyframes shift { 0% { left: -25%; } 50% { left: 100%; } 100% { left: -25%; } }
@@ -45,7 +44,7 @@
             <h2 class="text-xl font-bold mb-4 text-center text-gray-100">Wähle ein Produktionsjahr</h2>
             <div id="yearsGrid" class="grid grid-cols-3 gap-3 overflow-y-auto pr-2 flex-1 mb-4">
                 </div>
-            <button onclick="closeYearsModal()" class="w-full bg-gray-800 hover:bg-gray-700 text-white font-bold py-3 rounded-xl transition-colors">
+            <button onclick="closeYearsModal()" class="w-full bg-gray-800 hover:bg-gray-700 text-white font-bold py-3 rounded-xl transition-colors cursor-pointer">
                 ZURÜCK
             </button>
         </div>
@@ -158,12 +157,11 @@
                     return;
                 }
 
-                // Initialer Render von Menü und Grid
                 renderGenreLeiste();
                 filterResults();
                 
-                // TMDB-Metadaten im Hintergrund nachladen
-                hydrateWithTMDB();
+                // Hier zünden wir jetzt den Turbo
+                hydrateWithTMDBParallel();
 
             } catch (err) {
                 console.error(err);
@@ -171,42 +169,75 @@
             }
         }
 
-        async function hydrateWithTMDB() {
-            for (let movie of allMovies) {
-                let url = `https://api.themoviedb.org/3/search/movie?api_key=${TMDB_API_KEY}&query=${encodeURIComponent(movie.search)}&language=de-DE&include_adult=false`;
-                if (movie.year !== 'None') url += `&year=${movie.year}`;
+        // Parallelisierter Worker-Pool für TMDB
+        async function hydrateWithTMDBParallel() {
+            const CONCURRENCY_LIMIT = 15; // 15 Anfragen gleichzeitig abfeuern
+            let movieIndex = 0;
+            let loadedCount = 0;
 
-                try {
-                    const res = await fetch(url);
-                    const data = await res.json();
-                    
-                    if (data.results && data.results.length > 0) {
-                        const tmdb = data.results[0];
-                        movie.plot = tmdb.overview || 'Keine Beschreibung verfügbar.';
-                        movie.rating = tmdb.vote_average ? tmdb.vote_average.toFixed(1) : 'N/A';
-                        movie.thumb = tmdb.poster_path ? `https://image.tmdb.org/t/p/w342${tmdb.poster_path}` : 'placeholder.png';
+            async function worker() {
+                while (movieIndex < allMovies.length) {
+                    // Hole den nächsten Film aus der Pipeline
+                    const currentIdx = movieIndex++;
+                    const movie = allMovies[currentIdx];
+                    if (!movie) break;
+
+                    let url = `https://api.themoviedb.org/3/search/movie?api_key=${TMDB_API_KEY}&query=${encodeURIComponent(movie.search)}&language=de-DE&include_adult=false`;
+                    if (movie.year !== 'None') url += `&year=${movie.year}`;
+
+                    try {
+                        const res = await fetch(url);
                         
-                        if (tmdb.release_date && movie.year === 'None') {
-                            movie.year = tmdb.release_date.split('-')[0];
+                        // Falls TMDB wegen zu vielen Anfragen meckert (429), kurz warten und wiederholen
+                        if (res.status === 429) {
+                            movieIndex--; // Index zurücksetzen
+                            await new Promise(resolve => setTimeout(resolve, 800));
+                            continue;
                         }
 
-                        if (tmdb.genre_ids) {
-                            movie.genres_list = tmdb.genre_ids
-                                .map(id => GENRES_MAP[id])
-                                .filter(g => g !== undefined);
-                            if (movie.genres_list.length === 0) movie.genres_list = ['Sonstige'];
-                        }
+                        const data = await res.json();
+                        
+                        if (data.results && data.results.length > 0) {
+                            const tmdb = data.results[0];
+                            movie.plot = tmdb.overview || 'Keine Beschreibung verfügbar.';
+                            movie.rating = tmdb.vote_average ? tmdb.vote_average.toFixed(1) : 'N/A';
+                            movie.thumb = tmdb.poster_path ? `https://image.tmdb.org/t/p/w342${tmdb.poster_path}` : 'placeholder.png';
+                            
+                            if (tmdb.release_date && movie.year === 'None') {
+                                movie.year = tmdb.release_date.split('-')[0];
+                            }
 
-                        // UI-Karten und Zähler live updaten
-                        updateMovieCard(movie);
+                            if (tmdb.genre_ids) {
+                                movie.genres_list = tmdb.genre_ids
+                                    .map(id => GENRES_MAP[id])
+                                    .filter(g => g !== undefined);
+                                if (movie.genres_list.length === 0) movie.genres_list = ['Sonstige'];
+                            }
+
+                            // Einzelne Karte sofort visuell im UI updaten
+                            updateMovieCard(movie);
+                        }
+                    } catch (e) {
+                        console.error("TMDB-Fehler bei: " + movie.search);
+                    }
+
+                    // Alle 15 verarbeiteten Filme die globalen Genre-Zähler auffrischen
+                    loadedCount++;
+                    if (loadedCount % 15 === 0) {
                         updateGenreCounts();
                     }
-                } catch (e) {}
+                }
             }
+
+            // Starte die Worker parallel im Pool
+            const workers = Array.from({ length: CONCURRENCY_LIMIT }, worker);
+            await Promise.all(workers);
+            
+            // Finales Update, wenn alles durch ist
+            updateGenreCounts();
             document.getElementById('scanner').classList.add('hidden');
         }
 
-        // 5. Genre-Leiste Generierung & Zähler (entspricht update_genre_counts)
         function getGenreCounts() {
             const counts = { "Alle": 0, "Sonstige": 0, "Nach Jahren": 0 };
             Object.values(GENRES_MAP).forEach(g => counts[g] = 0);
@@ -237,7 +268,6 @@
                 const btn = document.createElement('button');
                 btn.id = `genre-btn-${g.replace(/\s+/g, '')}`;
                 
-                // Styling an dein Kivy-Design angelehnt (Aktiv = Blau, Inaktiv = Dunkel)
                 const isActive = currentGenre === g || (g === 'Nach Jahren' && currentGenre.startsWith('Jahr: '));
                 btn.className = `flex-shrink-0 min-w-[120px] px-4 py-2 rounded-xl text-center flex flex-col justify-center transition-all cursor-pointer border ${
                     isActive ? 'bg-blue-600 border-blue-500 text-white font-bold' : 'bg-gray-900 border-gray-800 text-gray-300 hover:border-gray-700'
@@ -285,7 +315,7 @@
                 if (isActive) {
                     btn.className = "flex-shrink-0 min-w-[120px] px-4 py-2 rounded-xl text-center flex flex-col justify-center transition-all cursor-pointer border bg-blue-600 border-blue-500 text-white font-bold";
                     if (currentGenre.startsWith('Jahr: ')) {
-                        btn.querySelector('span').innerText = currentGenre.replace('Jahr: ', 'Jahr: ');
+                        btn.querySelector('span').innerText = currentGenre;
                     }
                 } else {
                     btn.className = "flex-shrink-0 min-w-[120px] px-4 py-2 rounded-xl text-center flex flex-col justify-center transition-all cursor-pointer border bg-gray-900 border-gray-800 text-gray-300 hover:border-gray-700";
@@ -294,7 +324,6 @@
             });
         }
 
-        // 6. Jahres-Menü Logik (entspricht show_years_menu)
         function openYearsMenu() {
             const yearsSet = new Set();
             allMovies.forEach(m => {
@@ -325,17 +354,13 @@
             document.getElementById('yearsModal').style.display = 'none';
         }
 
-        // 7. Kombinierte Filter-Logik (entspricht filter_results)
         function filterResults() {
             const query = document.getElementById('searchBar').value.toLowerCase().trim();
             
             const filtered = allMovies.filter(m => {
-                // Suchleisten-Filter
                 if (query && !m.title.toLowerCase().includes(query) && !m.plot.toLowerCase().includes(query)) {
                     return false;
                 }
-                
-                // Genre/Jahre-Filter
                 if (currentGenre === 'Alle') return true;
                 if (currentGenre === 'Sonstige') return !m.genres_list || m.genres_list.includes('Sonstige');
                 if (currentGenre.startsWith('Jahr: ')) {
@@ -347,7 +372,6 @@
             renderGrid(filtered);
         }
 
-        // UI Grid-Rendering
         function renderGrid(movies) {
             const grid = document.getElementById('movieGrid');
             grid.innerHTML = '';
