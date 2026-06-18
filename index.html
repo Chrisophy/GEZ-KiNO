@@ -11,15 +11,18 @@
         .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
     </style>
 </head>
-<body class="p-4 md:p-6">
+<body class="p-4 md:p-6 max-w-7xl mx-auto">
 
-    <header class="mb-4 flex flex-col md:flex-row justify-between items-center border-b border-gray-800 pb-4 gap-4">
-        <h1 class="text-3xl font-extrabold tracking-wider text-neutral-100">
-            <span class="text-blue-500">[GEZ]</span> KiNO
-        </h1>
-        <div class="flex w-full md:w-1/3 gap-2">
-            <input type="text" id="searchBar" placeholder="Film suchen..." 
-                   class="bg-gray-800 text-white px-4 py-2 rounded-lg w-full focus:outline-none focus:ring-2 focus:ring-blue-500 border border-gray-700">
+    <header class="mb-4 flex flex-col gap-4">
+        <div class="w-full rounded-2xl overflow-hidden shadow-xl border border-gray-800 bg-gray-950 aspect-[4/1] md:aspect-[6/1] max-h-[180px]">
+            <img src="banner.png" alt="" class="w-full h-full object-cover" onerror="this.style.display='none'">
+        </div>
+        
+        <div class="flex justify-end w-full">
+            <div class="w-full md:w-1/3">
+                <input type="text" id="searchBar" placeholder="Film suchen..." 
+                       class="bg-gray-900 text-white px-4 py-2 rounded-xl w-full focus:outline-none focus:ring-2 focus:ring-blue-500 border border-gray-800 shadow-inner">
+            </div>
         </div>
     </header>
 
@@ -35,7 +38,7 @@
 
     <main id="movieGrid" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4">
         <div id="statusMessage" class="text-center col-span-full py-12 text-gray-400 animate-pulse">
-            Initialisiere Mediathek-Abruf (Große Anfrage)...
+            Initialisiere Mediathek-Abruf...
         </div>
     </main>
 
@@ -143,7 +146,7 @@
                             video_url: url,
                             plot: 'Lade Filminformationen...',
                             rating: 'N/A',
-                            thumb: 'placeholder.png',
+                            thumb: 'placeholder.png', // Direkt lokaler Fallback
                             genres_list: ['Sonstige'],
                             channel: m.channel
                         });
@@ -159,8 +162,6 @@
 
                 renderGenreLeiste();
                 filterResults();
-                
-                // Hier zünden wir jetzt den Turbo
                 hydrateWithTMDBParallel();
 
             } catch (err) {
@@ -169,15 +170,13 @@
             }
         }
 
-        // Parallelisierter Worker-Pool für TMDB
         async function hydrateWithTMDBParallel() {
-            const CONCURRENCY_LIMIT = 88; // 88 Anfragen gleichzeitig abfeuern
+            const CONCURRENCY_LIMIT = 100;
             let movieIndex = 0;
             let loadedCount = 0;
 
             async function worker() {
                 while (movieIndex < allMovies.length) {
-                    // Hole den nächsten Film aus der Pipeline
                     const currentIdx = movieIndex++;
                     const movie = allMovies[currentIdx];
                     if (!movie) break;
@@ -188,9 +187,8 @@
                     try {
                         const res = await fetch(url);
                         
-                        // Falls TMDB wegen zu vielen Anfragen meckert (429), kurz warten und wiederholen
                         if (res.status === 429) {
-                            movieIndex--; // Index zurücksetzen
+                            movieIndex--;
                             await new Promise(resolve => setTimeout(resolve, 800));
                             continue;
                         }
@@ -214,14 +212,12 @@
                                 if (movie.genres_list.length === 0) movie.genres_list = ['Sonstige'];
                             }
 
-                            // Einzelne Karte sofort visuell im UI updaten
                             updateMovieCard(movie);
                         }
                     } catch (e) {
                         console.error("TMDB-Fehler bei: " + movie.search);
                     }
 
-                    // Alle 15 verarbeiteten Filme die globalen Genre-Zähler auffrischen
                     loadedCount++;
                     if (loadedCount % 15 === 0) {
                         updateGenreCounts();
@@ -229,11 +225,9 @@
                 }
             }
 
-            // Starte die Worker parallel im Pool
             const workers = Array.from({ length: CONCURRENCY_LIMIT }, worker);
             await Promise.all(workers);
             
-            // Finales Update, wenn alles durch ist
             updateGenreCounts();
             document.getElementById('scanner').classList.add('hidden');
         }
@@ -386,10 +380,11 @@
                 card.id = `movie-${btoa(encodeURIComponent(m.video_url)).replace(/=/g, '')}`;
                 card.className = "bg-gray-900 rounded-xl overflow-hidden shadow-md border border-gray-800 flex flex-col justify-between hover:border-blue-500 transition-all duration-200 group";
                 
+                // alt="" verhindert das Flackern des Textes. onerror nutzt die lokale placeholder.png ohne Loop-Gefahr
                 card.innerHTML = `
                     <div class="relative aspect-[2/3] w-full bg-gray-800 overflow-hidden">
-                        <img src="${m.thumb}" alt="Poster" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" 
-                             onerror="this.src='https://via.placeholder.com/342x513/1f2937/9ca3af?text=Kein+Poster'">
+                        <img src="${m.thumb}" alt="" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" 
+                             onerror="if(!this.src.includes('placeholder.png'))this.src='placeholder.png';">
                         <span class="absolute top-2 right-2 bg-black/70 px-2 py-0.5 text-xs font-bold text-yellow-400 rounded">
                             ★ ${m.rating}
                         </span>
