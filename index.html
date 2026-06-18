@@ -106,6 +106,7 @@
         let currentView = 'mediathek'; 
         let chunkObserver = null;
         let hlsInstance = null;
+        let deferredPrompt = null; // System-Cockpit Variable nach oben verschoben
         const CHUNK_SIZE = 60; 
 
         function cleanTitle(title) {
@@ -625,7 +626,6 @@
             }
         }
 
-        // Favoriten-Aktionen steuern
         function toggleFavorite(url, event) {
             if (event) event.stopPropagation();
             const index = favoriteUrls.indexOf(url);
@@ -638,7 +638,6 @@
             
             localStorage.setItem('gez_kino_favs', JSON.stringify(favoriteUrls));
             
-            // Lokale UI sofort anpassen
             const cardId = `movie-${btoa(encodeURIComponent(url)).replace(/=/g, '')}`;
             const card = document.getElementById(cardId);
             if (card) {
@@ -652,13 +651,12 @@
             
             updateGenreCounts();
             
-            // Wenn der Nutzer gerade in der Favoritenansicht filtert, Kachel direkt ausblenden
             if (currentGenre === '⭐ Favoriten') {
                 filterResults();
             }
         }
 
-        // Optimierter Vollbild In-App Videoplayer mit intelligentem Fallback-System
+        // Spieler öffnen mit Absicherung gegen asynchrone Geister-Events
         function openPlayer(url, title) {
             const modal = document.getElementById('videoModal');
             const video = document.getElementById('mainVideoPlayer');
@@ -678,8 +676,10 @@
                     });
                     
                     hlsInstance.on(Hls.Events.ERROR, function (event, data) {
+                        // Prüfen, ob die hlsInstance absichtlich beendet wurde, um Fehlalarme zu vermeiden
+                        if (!hlsInstance) return;
                         if (data.fatal && data.type === Hls.ErrorTypes.NETWORK_ERROR) {
-                            console.log("CORS blockiert In-App-Wiedergabe. Nutze automatischen Tab-Fallback.");
+                            console.log("CORS blockiert In-App-Wiedergabe. Fallback-Tab.");
                             window.open(url, '_blank');
                             closePlayer();
                         }
@@ -690,6 +690,7 @@
                 } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
                     video.src = url;
                     video.onerror = function() {
+                        if (!video.src || video.src === "" || video.src === window.location.href) return;
                         window.open(url, '_blank');
                         closePlayer();
                     };
@@ -704,6 +705,8 @@
                 }
                 video.src = url;
                 video.onerror = function() {
+                    // Verhindert den automatischen Tab-Start beim Schließen des Overlays
+                    if (!video.src || video.src === "" || video.src === window.location.href) return;
                     window.open(url, '_blank');
                     closePlayer();
                 };
@@ -712,16 +715,26 @@
             video.play().catch(err => console.log("Autoplay blockiert:", err));
         }
 
+        // Fehlerbereinigte Schließen-Logik
         function closePlayer() {
             const modal = document.getElementById('videoModal');
             const video = document.getElementById('mainVideoPlayer');
             
+            // 1. WICHTIG: Fehler-Handler sofort nullen, BEVOR wir irgendetwas stoppen oder leeren!
+            video.onerror = null;
+            
             video.pause();
+            
             if (hlsInstance) {
+                hlsInstance.off(Hls.Events.ERROR); // Alle HLS Event-Listener abkoppeln
                 hlsInstance.destroy();
                 hlsInstance = null;
             }
+            
+            // 2. Quelle leeren und Player-Zustand im Browser sauber zurücksetzen
             video.src = ""; 
+            try { video.load(); } catch(e) {} 
+            
             modal.classList.add('hidden');
             document.body.style.overflow = 'auto'; 
         }
@@ -738,7 +751,6 @@
                     .catch(err => console.error('Service Worker Fehler:', err));
             });
         }
-        let deferredPrompt;
 
         window.addEventListener('beforeinstallprompt', (e) => {
             e.preventDefault();
