@@ -98,6 +98,7 @@
         let allMovies = [];
         let liveTvChannels = [];
         let moviesToRender = []; 
+        let favoriteUrls = JSON.parse(localStorage.getItem('gez_kino_favs') || '[]');
         let currentGenre = 'Alle';
         let currentView = 'mediathek'; 
         let chunkObserver = null;
@@ -195,10 +196,8 @@
                     return;
                 }
 
-                if (currentView === 'mediathek') {
-                    renderGenreLeiste();
-                    filterResults();
-                }
+                renderGenreLeiste();
+                filterResults();
                 hydrateWithTMDBParallel();
 
             } catch (err) {
@@ -257,27 +256,27 @@
             
             const btnMedia = document.getElementById('btnMediathek');
             const btnTv = document.getElementById('btnLiveTv');
-            const genreLeiste = document.getElementById('genreLeiste');
             const searchBar = document.getElementById('searchBar');
             
             searchBar.value = '';
+            currentGenre = 'Alle';
 
             if (view === 'mediathek') {
                 btnMedia.className = "px-6 py-2.5 rounded-xl bg-blue-600 text-white font-bold shadow-lg transition-all cursor-pointer text-sm flex-1 sm:flex-none text-center";
                 btnTv.className = "px-6 py-2.5 rounded-xl bg-gray-900 border border-gray-800 text-gray-400 hover:text-white transition-all cursor-pointer text-sm flex-1 sm:flex-none text-center";
-                genreLeiste.style.display = 'flex';
                 searchBar.placeholder = "Film suchen...";
+                renderGenreLeiste();
                 filterResults();
             } else {
                 btnTv.className = "px-6 py-2.5 rounded-xl bg-blue-600 text-white font-bold shadow-lg transition-all cursor-pointer text-sm flex-1 sm:flex-none text-center";
                 btnMedia.className = "px-6 py-2.5 rounded-xl bg-gray-900 border border-gray-800 text-gray-400 hover:text-white transition-all cursor-pointer text-sm flex-1 sm:flex-none text-center";
-                genreLeiste.style.display = 'none';
                 searchBar.placeholder = "Sender suchen...";
                 
                 const grid = document.getElementById('movieGrid');
                 grid.innerHTML = `<div id="statusMessage" class="text-center col-span-full py-12 text-gray-400 animate-pulse">Lade Live TV Sender...</div>`;
                 
                 await fetchLiveTvData();
+                renderGenreLeiste();
                 filterResults();
             }
         }
@@ -333,7 +332,7 @@
                     }
 
                     loadedCount++;
-                    if (loadedCount % 15 === 0 && currentView === 'mediathek') {
+                    if (loadedCount % 15 === 0) {
                         updateGenreCounts();
                     }
                 }
@@ -342,23 +341,30 @@
             const workers = Array.from({ length: CONCURRENCY_LIMIT }, worker);
             await Promise.all(workers);
             
-            if (currentView === 'mediathek') updateGenreCounts();
+            updateGenreCounts();
             document.getElementById('scanner').classList.add('hidden');
         }
 
         function getGenreCounts() {
-            const counts = { "Alle": 0, "Sonstige": 0, "Nach Jahren": 0 };
+            const counts = { "Alle": 0, "Sonstige": 0, "Nach Jahren": 0, "⭐ Favoriten": 0 };
             Object.values(GENRES_MAP).forEach(g => counts[g] = 0);
 
-            allMovies.forEach(m => {
+            const currentSet = currentView === 'mediathek' ? allMovies : liveTvChannels;
+
+            currentSet.forEach(m => {
                 counts["Alle"]++;
-                if (m.year && m.year !== 'None' && parseInt(m.year) > 1900) {
-                    counts["Nach Jahren"]++;
+                if (favoriteUrls.includes(m.video_url)) {
+                    counts["⭐ Favoriten"]++;
                 }
-                if (!m.genres_list || m.genres_list.includes('Sonstige')) {
-                    counts["Sonstige"]++;
-                } else {
-                    m.genres_list.forEach(g => { if (g in counts) counts[g]++; });
+                if (currentView === 'mediathek') {
+                    if (m.year && m.year !== 'None' && parseInt(m.year) > 1900) {
+                        counts["Nach Jahren"]++;
+                    }
+                    if (!m.genres_list || m.genres_list.includes('Sonstige')) {
+                        counts["Sonstige"]++;
+                    } else {
+                        m.genres_list.forEach(g => { if (g in counts) counts[g]++; });
+                    }
                 }
             });
             return counts;
@@ -368,13 +374,18 @@
             const leiste = document.getElementById('genreLeiste');
             const counts = getGenreCounts();
             
-            const sortedGenres = Object.values(GENRES_MAP).sort();
-            const genres = ['Alle', 'Nach Jahren', ...sortedGenres, 'Sonstige'];
+            let genres = [];
+            if (currentView === 'mediathek') {
+                const sortedGenres = Object.values(GENRES_MAP).sort();
+                genres = ['Alle', 'Nach Jahren', '⭐ Favoriten', ...sortedGenres, 'Sonstige'];
+            } else {
+                genres = ['Alle', '⭐ Favoriten'];
+            }
 
             leiste.innerHTML = '';
             genres.forEach(g => {
                 const btn = document.createElement('button');
-                btn.id = `genre-btn-${g.replace(/\s+/g, '')}`;
+                btn.id = `genre-btn-${g.replace(/\s+/g, '').replace(/⭐/g, 'Fav')}`;
                 
                 const isActive = currentGenre === g || (g === 'Nach Jahren' && currentGenre.startsWith('Jahr: '));
                 btn.className = `flex-shrink-0 min-w-[120px] px-4 py-2 rounded-xl text-center flex flex-col justify-center transition-all cursor-pointer border ${
@@ -402,7 +413,7 @@
         function updateGenreCounts() {
             const counts = getGenreCounts();
             Object.keys(counts).forEach(g => {
-                const btn = document.getElementById(`genre-btn-${g.replace(/\s+/g, '')}`);
+                const btn = document.getElementById(`genre-btn-${g.replace(/\s+/g, '').replace(/⭐/g, 'Fav')}`);
                 if (btn) {
                     const countSpan = btn.querySelector('.genre-count');
                     if (countSpan) countSpan.innerText = `(${counts[g]})`;
@@ -411,11 +422,16 @@
         }
 
         function setActiveGenreStyling() {
-            const sortedGenres = Object.values(GENRES_MAP).sort();
-            const genres = ['Alle', 'Nach Jahren', ...sortedGenres, 'Sonstige'];
+            let genres = [];
+            if (currentView === 'mediathek') {
+                const sortedGenres = Object.values(GENRES_MAP).sort();
+                genres = ['Alle', 'Nach Jahren', '⭐ Favoriten', ...sortedGenres, 'Sonstige'];
+            } else {
+                genres = ['Alle', '⭐ Favoriten'];
+            }
             
             genres.forEach(g => {
-                const btn = document.getElementById(`genre-btn-${g.replace(/\s+/g, '')}`);
+                const btn = document.getElementById(`genre-btn-${g.replace(/\s+/g, '').replace(/⭐/g, 'Fav')}`);
                 if (!btn) return;
                 
                 const isActive = currentGenre === g || (g === 'Nach Jahren' && currentGenre.startsWith('Jahr: '));
@@ -464,24 +480,24 @@
 
         function filterResults() {
             const query = document.getElementById('searchBar').value.toLowerCase().trim();
+            const currentSet = currentView === 'mediathek' ? allMovies : liveTvChannels;
             
-            if (currentView === 'mediathek') {
-                moviesToRender = allMovies.filter(m => {
-                    if (query && !m.title.toLowerCase().includes(query) && !m.plot.toLowerCase().includes(query)) {
-                        return false;
-                    }
-                    if (currentGenre === 'Alle') return true;
+            moviesToRender = currentSet.filter(m => {
+                if (query && !m.title.toLowerCase().includes(query) && !m.plot.toLowerCase().includes(query)) {
+                    return false;
+                }
+                if (currentGenre === 'Alle') return true;
+                if (currentGenre === '⭐ Favoriten') return favoriteUrls.includes(m.video_url);
+                
+                if (currentView === 'mediathek') {
                     if (currentGenre === 'Sonstige') return !m.genres_list || m.genres_list.includes('Sonstige');
                     if (currentGenre.startsWith('Jahr: ')) {
                         return m.year === currentGenre.replace('Jahr: ', '');
                     }
                     return m.genres_list && m.genres_list.includes(currentGenre);
-                });
-            } else {
-                moviesToRender = liveTvChannels.filter(m => {
-                    return !query || m.title.toLowerCase().includes(query);
-                });
-            }
+                }
+                return true;
+            });
 
             const grid = document.getElementById('movieGrid');
             grid.innerHTML = '';
@@ -516,9 +532,14 @@
                 
                 const escapedTitle = m.title.replace(/'/g, "\\'").replace(/"/g, '&quot;');
                 const isTv = currentView === 'livetv';
+                const isFav = favoriteUrls.includes(m.video_url);
 
                 card.innerHTML = `
                     <div class="relative aspect-[2/3] w-full bg-gray-950 overflow-hidden flex items-center justify-center p-4">
+                        <button onclick="toggleFavorite('${m.video_url}', event)" 
+                                class="fav-btn absolute top-2 left-2 bg-black/70 px-2 py-0.5 text-sm font-bold rounded transition-colors cursor-pointer ${isFav ? 'text-yellow-400 hover:text-gray-400' : 'text-gray-400 hover:text-yellow-400'} z-10">
+                            ${isFav ? '★' : '☆'}
+                        </button>
                         <img src="${m.thumb}" alt="" class="${isTv ? 'max-w-full max-h-full object-contain' : 'w-full h-full object-cover'} group-hover:scale-105 transition-transform duration-300" 
                              onerror="if(!this.src.includes('placeholder.png'))this.src='placeholder.png';">
                         <span class="absolute top-2 right-2 bg-black/70 px-2 py-0.5 text-xs font-bold ${isTv ? 'text-red-500' : 'text-yellow-400'} rounded">
@@ -601,6 +622,39 @@
             }
         }
 
+        // Favoriten-Aktionen steuern
+        function toggleFavorite(url, event) {
+            if (event) event.stopPropagation();
+            const index = favoriteUrls.indexOf(url);
+            
+            if (index > -1) {
+                favoriteUrls.splice(index, 1);
+            } else {
+                favoriteUrls.push(url);
+            }
+            
+            localStorage.setItem('gez_kino_favs', JSON.stringify(favoriteUrls));
+            
+            // Lokale UI sofort anpassen
+            const cardId = `movie-${btoa(encodeURIComponent(url)).replace(/=/g, '')}`;
+            const card = document.getElementById(cardId);
+            if (card) {
+                const btn = card.querySelector('.fav-btn');
+                const isFav = favoriteUrls.includes(url);
+                if (btn) {
+                    btn.innerText = isFav ? '★' : '☆';
+                    btn.className = `fav-btn absolute top-2 left-2 bg-black/70 px-2 py-0.5 text-sm font-bold rounded transition-colors cursor-pointer ${isFav ? 'text-yellow-400 hover:text-gray-400' : 'text-gray-400 hover:text-yellow-400'} z-10`;
+                }
+            }
+            
+            updateGenreCounts();
+            
+            // Wenn der Nutzer gerade in der Favoritenansicht filtert, Kachel direkt ausblenden
+            if (currentGenre === '⭐ Favoriten') {
+                filterResults();
+            }
+        }
+
         // Optimierter Vollbild In-App Videoplayer mit intelligentem Fallback-System
         function openPlayer(url, title) {
             const modal = document.getElementById('videoModal');
@@ -615,14 +669,11 @@
                 if (Hls.isSupported()) {
                     if (hlsInstance) hlsInstance.destroy();
                     
-                    // Schnelles Timeout setzen (1,5 Sek), damit die App bei CORS-Sperren nicht einfriert
                     hlsInstance = new Hls({
                         manifestLoadingTimeOut: 1500,
                         manifestLoadingMaxRetry: 0
                     });
                     
-                    // AUTOMATISCHES FALLBACK: Wenn ein CORS- oder Netzwerkfehler auftritt,
-                    // öffnet die App den Stream blitzschnell im neuen Tab, wo der Browser ihn abspielen darf!
                     hlsInstance.on(Hls.Events.ERROR, function (event, data) {
                         if (data.fatal && data.type === Hls.ErrorTypes.NETWORK_ERROR) {
                             console.log("CORS blockiert In-App-Wiedergabe. Nutze automatischen Tab-Fallback.");
@@ -635,7 +686,6 @@
                     hlsInstance.attachMedia(video);
                 } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
                     video.src = url;
-                    // Fallback für iOS Safari, falls die native Engine blockiert
                     video.onerror = function() {
                         window.open(url, '_blank');
                         closePlayer();
