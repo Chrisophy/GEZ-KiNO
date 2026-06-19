@@ -106,7 +106,8 @@
         let currentView = 'mediathek'; 
         let chunkObserver = null;
         let hlsInstance = null;
-        let deferredPrompt = null; // System-Cockpit Variable nach oben verschoben
+        let activeVideoErrorHandler = null; // Globaler Tracker für den nativen Error-Listener
+        let deferredPrompt = null; 
         const CHUNK_SIZE = 60; 
 
         function cleanTitle(title) {
@@ -656,7 +657,7 @@
             }
         }
 
-        // Spieler öffnen mit Absicherung gegen asynchrone Geister-Events
+        // Spieler öffnen mit sicherem Event-Listener-Management
         function openPlayer(url, title) {
             const modal = document.getElementById('videoModal');
             const video = document.getElementById('mainVideoPlayer');
@@ -665,6 +666,12 @@
             titleEl.innerText = title;
             modal.classList.remove('hidden');
             document.body.style.overflow = 'hidden'; 
+
+            // Alten Event-Listener präventiv entfernen
+            if (activeVideoErrorHandler) {
+                video.removeEventListener('error', activeVideoErrorHandler);
+                activeVideoErrorHandler = null;
+            }
 
             if (url.includes('.m3u8') || url.endsWith('.m3u8')) {
                 if (Hls.isSupported()) {
@@ -676,10 +683,10 @@
                     });
                     
                     hlsInstance.on(Hls.Events.ERROR, function (event, data) {
-                        // Prüfen, ob die hlsInstance absichtlich beendet wurde, um Fehlalarme zu vermeiden
                         if (!hlsInstance) return;
                         if (data.fatal && data.type === Hls.ErrorTypes.NETWORK_ERROR) {
                             console.log("CORS blockiert In-App-Wiedergabe. Fallback-Tab.");
+                            hlsInstance.off(Hls.Events.ERROR); // Listener sofort killen
                             window.open(url, '_blank');
                             closePlayer();
                         }
@@ -689,11 +696,14 @@
                     hlsInstance.attachMedia(video);
                 } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
                     video.src = url;
-                    video.onerror = function() {
+                    activeVideoErrorHandler = function() {
+                        video.removeEventListener('error', activeVideoErrorHandler);
+                        activeVideoErrorHandler = null;
                         if (!video.src || video.src === "" || video.src === window.location.href) return;
                         window.open(url, '_blank');
                         closePlayer();
                     };
+                    video.addEventListener('error', activeVideoErrorHandler);
                 } else {
                     window.open(url, '_blank');
                     closePlayer();
@@ -704,34 +714,40 @@
                     hlsInstance = null;
                 }
                 video.src = url;
-                video.onerror = function() {
-                    // Verhindert den automatischen Tab-Start beim Schließen des Overlays
+                activeVideoErrorHandler = function() {
+                    video.removeEventListener('error', activeVideoErrorHandler);
+                    activeVideoErrorHandler = null;
                     if (!video.src || video.src === "" || video.src === window.location.href) return;
                     window.open(url, '_blank');
                     closePlayer();
                 };
+                video.addEventListener('error', activeVideoErrorHandler);
             }
 
             video.play().catch(err => console.log("Autoplay blockiert:", err));
         }
 
-        // Fehlerbereinigte Schließen-Logik
+        // Zuverlässige Schließen-Logik
         function closePlayer() {
             const modal = document.getElementById('videoModal');
             const video = document.getElementById('mainVideoPlayer');
             
-            // 1. WICHTIG: Fehler-Handler sofort nullen, BEVOR wir irgendetwas stoppen oder leeren!
+            // 1. Alle Event-Listener restlos entfernen, BEVOR manipuliert wird
+            if (activeVideoErrorHandler) {
+                video.removeEventListener('error', activeVideoErrorHandler);
+                activeVideoErrorHandler = null;
+            }
             video.onerror = null;
             
             video.pause();
             
             if (hlsInstance) {
-                hlsInstance.off(Hls.Events.ERROR); // Alle HLS Event-Listener abkoppeln
+                hlsInstance.off(Hls.Events.ERROR);
                 hlsInstance.destroy();
                 hlsInstance = null;
             }
             
-            // 2. Quelle leeren und Player-Zustand im Browser sauber zurücksetzen
+            // 2. Quelle leeren
             video.src = ""; 
             try { video.load(); } catch(e) {} 
             
@@ -770,5 +786,6 @@
             document.getElementById('btnInstallPWA').classList.add('hidden');
         });        
     </script>
+
 </body>
 </html>
