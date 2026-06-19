@@ -2,7 +2,7 @@
 
 Was ist [GEZ] KiNO?
 
-[GEZ] KiNO: Das smarte Film-Upgrade für Kodi und als Android APK.
+[GEZ] KiNO: Das smarte Film-Upgrade für den Browser, für Kodi Mediacenter und als Android APK.
 
 Schluss mit dem Suchen. [GEZ] KiNO zieht sich automatisch die Spielfilme aus den öffentlich-rechtlichen Mediatheken (Mediathekview) und bereitet sie auf.
 
