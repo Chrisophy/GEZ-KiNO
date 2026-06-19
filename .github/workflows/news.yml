@@ -5,6 +5,10 @@ on:
     - cron: '*/30 * * * *'  # Läuft alle 30 Minuten vollautomatisch
   workflow_dispatch:       # Ermöglicht manuellen Start per Knopfdruck auf GitHub
 
+# SCHLÜSSEL ZUM ERFOLG: Schreibrechte für die Action aktivieren
+permissions:
+  contents: write
+
 jobs:
   update-news:
     runs-on: ubuntu-latest
@@ -30,4 +34,5 @@ jobs:
         git config --global user.name 'GitHub Automation'
         git config --global user.email 'actions@github.com'
         git add news.json
+        # Committet und pusht nur, wenn sich inhaltlich etwas an der news.json geändert hat
         git diff --quiet && git diff --staged --quiet || (git commit -m "Update news.json via GitHub Action" && git push)
