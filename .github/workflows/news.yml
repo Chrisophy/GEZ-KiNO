@@ -1,0 +1,33 @@
+name: Automatische News-Aktualisierung
+
+on:
+  schedule:
+    - cron: '*/30 * * * *'  # Läuft alle 30 Minuten vollautomatisch
+  workflow_dispatch:       # Ermöglicht manuellen Start per Knopfdruck auf GitHub
+
+jobs:
+  update-news:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Code auschecken
+      uses: actions/checkout@v4
+
+    - name: Python initialisieren
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.x'
+
+    - name: Abhängigkeiten installieren
+      run: |
+        python -m pip install --upgrade pip
+        pip install requests feedparser beautifulsoup4
+
+    - name: Scraper ausführen
+      run: python fetch_news.py
+
+    - name: Änderungen zurückschreiben
+      run: |
+        git config --global user.name 'GitHub Automation'
+        git config --global user.email 'actions@github.com'
+        git add news.json
+        git diff --quiet && git diff --staged --quiet || (git commit -m "Update news.json via GitHub Action" && git push)
