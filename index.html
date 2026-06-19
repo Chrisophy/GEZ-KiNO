@@ -70,6 +70,7 @@
         </div>
     </div>
 
+    <!-- Video-Modal mit erzwungenem Download-Manager -->
     <div id="videoModal" class="fixed inset-0 bg-black/95 hidden z-50 flex flex-col justify-center items-center backdrop-blur-md">
         <button onclick="closePlayer()" class="absolute top-4 right-4 text-white hover:text-gray-400 p-2 z-50 bg-gray-900/50 rounded-full border border-gray-800 transition-colors cursor-pointer">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -77,7 +78,19 @@
             </svg>
         </button>
         <div class="w-full max-w-5xl px-4 flex flex-col gap-3">
-            <h3 id="videoTitle" class="text-white text-base md:text-lg font-bold truncate px-1"></h3>
+            <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2 px-1">
+                <h3 id="videoTitle" class="text-white text-base md:text-lg font-bold truncate w-full sm:max-w-[60%]"></h3>
+                <div class="flex items-center gap-2 w-full sm:w-auto justify-end">
+                    <button id="modalCopyBtn" onclick="copyVideoUrl()" 
+                            class="hidden bg-gray-800 hover:bg-gray-700 text-gray-300 px-3 py-1.5 rounded-xl text-xs font-bold transition-all items-center gap-1.5 cursor-pointer border border-gray-700 shadow-lg whitespace-nowrap">
+                        🔗 Link kopieren
+                    </button>
+                    <button id="modalDownloadBtn" onclick="triggerNativeDownload()" 
+                       class="hidden bg-emerald-600 hover:bg-emerald-700 text-white px-4 py-1.5 rounded-xl text-xs font-bold transition-all items-center gap-1.5 cursor-pointer shadow-lg whitespace-nowrap">
+                        📥 Download
+                    </button>
+                </div>
+            </div>
             <div class="relative w-full aspect-video bg-black rounded-2xl overflow-hidden border border-gray-800 shadow-2xl">
                 <video id="mainVideoPlayer" controls autoplay class="w-full h-full"></video>
             </div>
@@ -106,8 +119,9 @@
         let currentView = 'mediathek'; 
         let chunkObserver = null;
         let hlsInstance = null;
-        let activeVideoErrorHandler = null; // Globaler Tracker für den nativen Error-Listener
+        let activeVideoErrorHandler = null; 
         let deferredPrompt = null; 
+        let activeDownloadUrl = ''; 
         const CHUNK_SIZE = 60; 
 
         function cleanTitle(title) {
@@ -302,13 +316,11 @@
 
                     try {
                         const res = await fetch(url);
-                        
                         if (res.status === 429) {
                             movieIndex--;
                             await new Promise(resolve => setTimeout(resolve, 800));
                             continue;
                         }
-
                         const data = await res.json();
                         
                         if (data.results && data.results.length > 0) {
@@ -345,7 +357,6 @@
 
             const workers = Array.from({ length: CONCURRENCY_LIMIT }, worker);
             await Promise.all(workers);
-            
             updateGenreCounts();
             document.getElementById('scanner').classList.add('hidden');
         }
@@ -651,47 +662,151 @@
             }
             
             updateGenreCounts();
-            
-            if (currentGenre === '⭐ Favoriten') {
-                filterResults();
+            if (currentGenre === '⭐ Favoriten') filterResults();
+        }
+
+        function copyVideoUrl() {
+            if (!activeDownloadUrl) return;
+            navigator.clipboard.writeText(activeDownloadUrl).then(() => {
+                const btn = document.getElementById('modalCopyBtn');
+                const oldText = btn.innerHTML;
+                btn.innerHTML = '✅ Kopiert!';
+                btn.classList.remove('bg-gray-800', 'text-gray-300');
+                btn.classList.add('bg-blue-600', 'text-white', 'border-blue-500');
+                setTimeout(() => {
+                    btn.innerHTML = oldText;
+                    btn.classList.remove('bg-blue-600', 'text-white', 'border-blue-500');
+                    btn.classList.add('bg-gray-800', 'text-gray-300');
+                }, 2000);
+            }).catch(err => console.error('Fehler beim Kopieren:', err));
+        }
+
+        // NEU: Erfordert die native "Speichern unter..."-Abfrage per API & Fallback
+        async function triggerNativeDownload() {
+            const url = activeDownloadUrl;
+            const title = document.getElementById('videoTitle').innerText;
+            const cleanFilename = `${title.replace(/[^a-zA-Z0-9\s-_]/g, '')}.mp4`;
+            const btn = document.getElementById('modalDownloadBtn');
+            const originalText = btn.innerHTML;
+
+            try {
+                // Methode 1: Moderne File System Access API (Chrome, Edge, Opera auf PC)
+                // Öffnet das Speicher-Fenster SOFORT VOR dem eigentlichen Download!
+                if ('showSaveFilePicker' in window) {
+                    btn.innerHTML = '⏳ Ordner wählen...';
+                    btn.disabled = true;
+
+                    const handle = await window.showSaveFilePicker({
+                        suggestedName: cleanFilename,
+                        types: [{
+                            description: 'Videodatei (MP4)',
+                            accept: { 'video/mp4': ['.mp4'] }
+                        }]
+                    });
+
+                    btn.innerHTML = '📥 Stream läuft...';
+                    const response = await fetch(url);
+                    if (!response.ok) throw new Error('Netzwerkfehler beim Abruf');
+
+                    const writable = await handle.createWritable();
+                    const reader = response.body.getReader();
+
+                    while (true) {
+                        const { done, value } = await reader.read();
+                        if (done) break;
+                        await writable.write(value);
+                    }
+                    await writable.close();
+
+                    btn.innerHTML = '✅ Gespeichert!';
+                    btn.disabled = false;
+                    setTimeout(() => { btn.innerHTML = originalText; }, 3000);
+                    return;
+                }
+
+                // Methode 2: Blob-Fallback (Firefox, Safari & Smartphones)
+                // Lädt die Datei erst im Background-Speicher, erzwingt dann den Download-Dialog
+                btn.innerHTML = '⏳ In Speicher laden...';
+                btn.disabled = true;
+
+                const response = await fetch(url);
+                if (!response.ok) throw new Error('Netzwerkfehler');
+
+                const blob = await response.blob();
+                const blobUrl = URL.createObjectURL(blob);
+
+                const a = document.createElement('a');
+                a.href = blobUrl;
+                a.download = cleanFilename;
+                document.body.appendChild(a);
+                a.click();
+                document.body.removeChild(a);
+                URL.revokeObjectURL(blobUrl);
+
+                btn.innerHTML = '✅ Bereit!';
+                btn.disabled = false;
+                setTimeout(() => { btn.innerHTML = originalText; }, 3000);
+
+            } catch (err) {
+                console.warn('Download-Handling:', err);
+                btn.disabled = false;
+
+                if (err.name === 'AbortError') {
+                    btn.innerHTML = originalText;
+                    return; // Nutzer hat den Abbrechen-Button im Windows-Fenster gedrückt
+                }
+
+                // Methode 3: Letzter Rettungsanker bei CORS-Fehlern
+                btn.innerHTML = '❌ CORS-Schutz!';
+                setTimeout(() => {
+                    btn.innerHTML = originalText;
+                    window.open(url, '_blank');
+                }, 2000);
             }
         }
 
-        // Spieler öffnen mit sicherem Event-Listener-Management
         function openPlayer(url, title) {
             const modal = document.getElementById('videoModal');
             const video = document.getElementById('mainVideoPlayer');
             const titleEl = document.getElementById('videoTitle');
+            const downloadBtn = document.getElementById('modalDownloadBtn');
+            const copyBtn = document.getElementById('modalCopyBtn');
 
+            activeDownloadUrl = url; 
             titleEl.innerText = title;
             modal.classList.remove('hidden');
             document.body.style.overflow = 'hidden'; 
 
-            // Alten Event-Listener präventiv entfernen
+            const isM3u8 = url.includes('.m3u8') || url.endsWith('.m3u8');
+            if (currentView === 'mediathek' && !isM3u8) {
+                downloadBtn.classList.remove('hidden');
+                downloadBtn.classList.add('flex');
+                copyBtn.classList.remove('hidden');
+                copyBtn.classList.add('flex');
+            } else {
+                downloadBtn.classList.add('hidden');
+                downloadBtn.classList.remove('flex');
+                copyBtn.classList.add('hidden');
+                copyBtn.classList.remove('flex');
+            }
+
             if (activeVideoErrorHandler) {
                 video.removeEventListener('error', activeVideoErrorHandler);
                 activeVideoErrorHandler = null;
             }
 
-            if (url.includes('.m3u8') || url.endsWith('.m3u8')) {
+            if (isM3u8) {
                 if (Hls.isSupported()) {
                     if (hlsInstance) hlsInstance.destroy();
-                    
-                    hlsInstance = new Hls({
-                        manifestLoadingTimeOut: 1500,
-                        manifestLoadingMaxRetry: 0
-                    });
-                    
+                    hlsInstance = new Hls({ manifestLoadingTimeOut: 1500, manifestLoadingMaxRetry: 0 });
                     hlsInstance.on(Hls.Events.ERROR, function (event, data) {
                         if (!hlsInstance) return;
                         if (data.fatal && data.type === Hls.ErrorTypes.NETWORK_ERROR) {
-                            console.log("CORS blockiert In-App-Wiedergabe. Fallback-Tab.");
-                            hlsInstance.off(Hls.Events.ERROR); // Listener sofort killen
+                            hlsInstance.off(Hls.Events.ERROR); 
                             window.open(url, '_blank');
                             closePlayer();
                         }
                     });
-
                     hlsInstance.loadSource(url);
                     hlsInstance.attachMedia(video);
                 } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
@@ -727,18 +842,21 @@
             video.play().catch(err => console.log("Autoplay blockiert:", err));
         }
 
-        // Zuverlässige Schließen-Logik
         function closePlayer() {
             const modal = document.getElementById('videoModal');
             const video = document.getElementById('mainVideoPlayer');
+            const downloadBtn = document.getElementById('modalDownloadBtn');
+            const copyBtn = document.getElementById('modalCopyBtn');
             
-            // 1. Alle Event-Listener restlos entfernen, BEVOR manipuliert wird
+            activeDownloadUrl = '';
+            if (downloadBtn) downloadBtn.classList.add('hidden');
+            if (copyBtn) copyBtn.classList.add('hidden');
+
             if (activeVideoErrorHandler) {
                 video.removeEventListener('error', activeVideoErrorHandler);
                 activeVideoErrorHandler = null;
             }
             video.onerror = null;
-            
             video.pause();
             
             if (hlsInstance) {
@@ -747,7 +865,6 @@
                 hlsInstance = null;
             }
             
-            // 2. Quelle leeren
             video.src = ""; 
             try { video.load(); } catch(e) {} 
             
@@ -756,8 +873,6 @@
         }
 
         document.getElementById('searchBar').addEventListener('input', filterResults);
-
-        // Init
         fetchAllData();
         
         if ('serviceWorker' in navigator) {
@@ -777,7 +892,6 @@
             if (!deferredPrompt) return;
             deferredPrompt.prompt();
             const { outcome } = await deferredPrompt.userChoice;
-            console.log(`Nutzer-Auswahl: ${outcome}`);
             deferredPrompt = null;
             document.getElementById('btnInstallPWA').classList.add('hidden');
         });
@@ -786,6 +900,5 @@
             document.getElementById('btnInstallPWA').classList.add('hidden');
         });        
     </script>
-
 </body>
 </html>
