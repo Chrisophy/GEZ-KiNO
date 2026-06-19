@@ -4,7 +4,7 @@ import requests
 import feedparser
 from bs4 import BeautifulSoup
 
-HEADERS = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"}
+HEADERS = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"}
 
 CATEGORIES = {
     "Top-News": "https://www.bild.de/feed/alles.xml",
@@ -55,9 +55,20 @@ def build_news_json():
     
     for category_name, feed_url in CATEGORIES.items():
         print(f"Verarbeite Kategorie: {category_name}")
-        feed = feedparser.parse(feed_url)
+        try:
+            # WICHTIG: Erst per requests mit Browser-Header laden, um 403-Sperren zu umgehen!
+            response = requests.get(feed_url, headers=HEADERS, timeout=8)
+            if response.status_code != 200:
+                print(f" -> Fehler {response.status_code} bei {category_name}, überspringe...")
+                continue
+                
+            # Jetzt den Text-Inhalt an feedparser füttern
+            feed = feedparser.parse(response.text)
+        except Exception as e:
+            print(f" -> Fehler beim Abruf von {category_name}: {e}")
+            continue
         
-        # Um die Actions-Laufzeit flach zu halten, limitieren wir auf max 15 frische Artikel pro Kategorie
+        # Limit auf max 15 Artikel pro Kategorie
         for entry in feed.entries[:15]:
             link = entry.get("link", "")
             if not link or link in seen_links:
@@ -66,17 +77,15 @@ def build_news_json():
             title = entry.get("title", "Ohne Titel")
             summary = entry.get("summary", "")
             
-            # Volltext über deinen Kodi-Scraper holen
             print(f" -> Scrape Text für: {title[:40]}...")
             full_text = get_article_text(link)
             
-            # Struktur exakt an index.html Render-Pipeline anpassen
             article_node = {
                 "title": title,
                 "plot": summary if summary else "Keine Kurzbeschreibung verfügbar.",
                 "text": full_text,
-                "video_url": link,  # Zweckentfremdet als eindeutige ID / Link
-                "thumb": "https://www.bild.de/favicon.ico", # Uniformes Icon für Stabilität
+                "video_url": link,  
+                "thumb": "https://www.bild.de/favicon.ico", 
                 "rating": "BILD",
                 "channel": "BILD",
                 "year": "Heute",
@@ -90,7 +99,7 @@ def build_news_json():
     # Als news.json speichern
     with open("news.json", "w", encoding="utf-8") as f:
         json.dump(compiled_news, f, ensure_ascii=False, indent=2)
-    print("Zusammenfassung erfolgreich! news.json wurde geschrieben.")
+    print(f"Zusammenfassung erfolgreich! {len(compiled_news)} Artikel in news.json geschrieben.")
 
 if __name__ == '__main__':
     build_news_json()
