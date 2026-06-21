@@ -24,14 +24,17 @@
         </div>
         
         <div class="flex flex-col sm:flex-row justify-between items-center gap-4 w-full">
-            <div class="flex gap-2 bg-gray-950 p-1.5 rounded-2xl border border-gray-800 w-full sm:w-auto">
-                <button id="btnMediathek" onclick="switchView('mediathek')" class="px-6 py-2.5 rounded-xl bg-blue-600 text-white font-bold shadow-lg transition-all cursor-pointer text-sm flex-1 sm:flex-none text-center">
+            <div class="flex flex-wrap gap-2 bg-gray-950 p-1.5 rounded-2xl border border-gray-800 w-full sm:w-auto">
+                <button id="btnMediathek" onclick="switchView('mediathek')" class="px-4 py-2.5 rounded-xl bg-blue-600 text-white font-bold shadow-lg transition-all cursor-pointer text-sm flex-1 sm:flex-none text-center">
                     🍿 Mediathek
                 </button>
-                <button id="btnLiveTv" onclick="switchView('livetv')" class="px-6 py-2.5 rounded-xl bg-gray-900 border border-gray-800 text-gray-400 hover:text-white transition-all cursor-pointer text-sm flex-1 sm:flex-none text-center">
+                <button id="btnLiveTv" onclick="switchView('livetv')" class="px-4 py-2.5 rounded-xl bg-gray-900 border border-gray-800 text-gray-400 hover:text-white transition-all cursor-pointer text-sm flex-1 sm:flex-none text-center">
                     📺 Live TV
                 </button>
-                <button id="btnInstallPWA" class="hidden px-6 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold shadow-lg transition-all cursor-pointer text-sm flex-1 sm:flex-none text-center animate-pulse">
+                <button id="btnNews" onclick="switchView('news')" class="px-4 py-2.5 rounded-xl bg-gray-900 border border-gray-800 text-gray-400 hover:text-white transition-all cursor-pointer text-sm flex-1 sm:flex-none text-center">
+                    📰 News
+                </button>
+                <button id="btnInstallPWA" class="hidden px-4 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold shadow-lg transition-all cursor-pointer text-sm flex-1 sm:flex-none text-center animate-pulse">
                     📲 App laden
                 </button>
             </div>
@@ -70,7 +73,6 @@
         </div>
     </div>
 
-    <!-- Video-Modal mit erzwungenem Download-Manager -->
     <div id="videoModal" class="fixed inset-0 bg-black/95 hidden z-50 flex flex-col justify-center items-center backdrop-blur-md">
         <button onclick="closePlayer()" class="absolute top-4 right-4 text-white hover:text-gray-400 p-2 z-50 bg-gray-900/50 rounded-full border border-gray-800 transition-colors cursor-pointer">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -101,6 +103,8 @@
         const TMDB_API_KEY = '60b3801a9e76b5706ee2a432f06423e6';
         const MEDIATHEK_URL = 'https://mediathekviewweb.de/api/query';
         const IPTV_URL = 'https://raw.githubusercontent.com/jnk22/kodinerds-iptv/refs/heads/master/iptv/clean/clean_tv_main.m3u';
+        // NEU: News Quelle
+        const NEWS_URL = 'https://raw.githubusercontent.com/Chrisophy/GEZ-KiNO/refs/heads/main/news.json';
         
         const GENRES_MAP = {
             28: 'Action', 12: 'Abenteuer', 16: 'Animation', 35: 'Komödie', 80: 'Krimi', 99: 'Doku',
@@ -113,6 +117,7 @@
         
         let allMovies = [];
         let liveTvChannels = [];
+        let newsArticles = []; // NEU: News Speicherarray
         let moviesToRender = []; 
         let favoriteUrls = JSON.parse(localStorage.getItem('gez_kino_favs') || '[]');
         let currentGenre = 'Alle';
@@ -269,32 +274,73 @@
             }
         }
 
+        // NEU: News-Daten von GitHub laden
+        async function fetchNewsData() {
+            if (newsArticles.length > 0) return;
+            document.getElementById('scanner').classList.remove('hidden');
+            
+            try {
+                const res = await fetch(NEWS_URL);
+                const data = await res.json();
+                
+                // Flexible Keys abfangen, falls das Python-Skript variiert
+                newsArticles = data.map(item => ({
+                    title: item.title || 'Keine Überschrift',
+                    search: `${item.title || ''} ${item.description || item.plot || item.summary || ''}`.toLowerCase(),
+                    year: item.date || item.published || 'Heute',
+                    video_url: item.link || item.url || '',
+                    plot: item.description || item.plot || item.summary || 'Klicke auf Lesen, um den vollen Artikel zu öffnen.',
+                    rating: 'NEWS',
+                    thumb: item.image || item.thumbnail || item.thumb || 'placeholder.png',
+                    genres_list: ['News'],
+                    channel: item.source || item.channel || 'Nachrichten'
+                }));
+            } catch (err) {
+                console.error("Fehler beim News-Abruf:", err);
+            } finally {
+                document.getElementById('scanner').classList.add('hidden');
+            }
+        }
+
         async function switchView(view) {
             if (currentView === view) return;
             currentView = view;
             
             const btnMedia = document.getElementById('btnMediathek');
             const btnTv = document.getElementById('btnLiveTv');
+            const btnNews = document.getElementById('btnNews'); // NEU
             const searchBar = document.getElementById('searchBar');
             
             searchBar.value = '';
             currentGenre = 'Alle';
 
+            // Klassen Definitionen zur einfachen Wiederverwendung
+            const inactiveClass = "px-4 py-2.5 rounded-xl bg-gray-900 border border-gray-800 text-gray-400 hover:text-white transition-all cursor-pointer text-sm flex-1 sm:flex-none text-center";
+            const activeClass = "px-4 py-2.5 rounded-xl bg-blue-600 text-white font-bold shadow-lg transition-all cursor-pointer text-sm flex-1 sm:flex-none text-center";
+
+            btnMedia.className = inactiveClass;
+            btnTv.className = inactiveClass;
+            btnNews.className = inactiveClass;
+
+            const grid = document.getElementById('movieGrid');
+
             if (view === 'mediathek') {
-                btnMedia.className = "px-6 py-2.5 rounded-xl bg-blue-600 text-white font-bold shadow-lg transition-all cursor-pointer text-sm flex-1 sm:flex-none text-center";
-                btnTv.className = "px-6 py-2.5 rounded-xl bg-gray-900 border border-gray-800 text-gray-400 hover:text-white transition-all cursor-pointer text-sm flex-1 sm:flex-none text-center";
+                btnMedia.className = activeClass;
                 searchBar.placeholder = "Film suchen...";
                 renderGenreLeiste();
                 filterResults();
-            } else {
-                btnTv.className = "px-6 py-2.5 rounded-xl bg-blue-600 text-white font-bold shadow-lg transition-all cursor-pointer text-sm flex-1 sm:flex-none text-center";
-                btnMedia.className = "px-6 py-2.5 rounded-xl bg-gray-900 border border-gray-800 text-gray-400 hover:text-white transition-all cursor-pointer text-sm flex-1 sm:flex-none text-center";
+            } else if (view === 'livetv') {
+                btnTv.className = activeClass;
                 searchBar.placeholder = "Sender suchen...";
-                
-                const grid = document.getElementById('movieGrid');
                 grid.innerHTML = `<div id="statusMessage" class="text-center col-span-full py-12 text-gray-400 animate-pulse">Lade Live TV Sender...</div>`;
-                
                 await fetchLiveTvData();
+                renderGenreLeiste();
+                filterResults();
+            } else if (view === 'news') { // NEU
+                btnNews.className = activeClass;
+                searchBar.placeholder = "News suchen...";
+                grid.innerHTML = `<div id="statusMessage" class="text-center col-span-full py-12 text-gray-400 animate-pulse">Lade aktuelle News...</div>`;
+                await fetchNewsData();
                 renderGenreLeiste();
                 filterResults();
             }
@@ -365,7 +411,10 @@
             const counts = { "Alle": 0, "Sonstige": 0, "Nach Jahren": 0, "⭐ Favoriten": 0 };
             Object.values(GENRES_MAP).forEach(g => counts[g] = 0);
 
-            const currentSet = currentView === 'mediathek' ? allMovies : liveTvChannels;
+            // NEU: Set-Zuweisung erweitert um News
+            let currentSet = allMovies;
+            if (currentView === 'livetv') currentSet = liveTvChannels;
+            if (currentView === 'news') currentSet = newsArticles;
 
             currentSet.forEach(m => {
                 counts["Alle"]++;
@@ -395,6 +444,7 @@
                 const sortedGenres = Object.values(GENRES_MAP).sort();
                 genres = ['Alle', 'Nach Jahren', '⭐ Favoriten', ...sortedGenres, 'Sonstige'];
             } else {
+                // Live TV und News teilen sich die einfache Navigationsleiste
                 genres = ['Alle', '⭐ Favoriten'];
             }
 
@@ -496,7 +546,11 @@
 
         function filterResults() {
             const query = document.getElementById('searchBar').value.toLowerCase().trim();
-            const currentSet = currentView === 'mediathek' ? allMovies : liveTvChannels;
+            
+            // NEU: Daten-Set-Weichenstellung um News erweitert
+            let currentSet = allMovies;
+            if (currentView === 'livetv') currentSet = liveTvChannels;
+            if (currentView === 'news') currentSet = newsArticles;
             
             moviesToRender = currentSet.filter(m => {
                 if (query && !m.title.toLowerCase().includes(query) && !m.plot.toLowerCase().includes(query)) {
@@ -548,7 +602,21 @@
                 
                 const escapedTitle = m.title.replace(/'/g, "\\'").replace(/"/g, '&quot;');
                 const isTv = currentView === 'livetv';
+                const isNews = currentView === 'news'; // NEU
                 const isFav = favoriteUrls.includes(m.video_url);
+
+                // NEU: Klick-Verhalten dynamisch anpassen (Webseite öffnen oder Player starten)
+                const isDirectVideo = m.video_url.match(/\.(mp4|m3u8|mkv|avi)(\?.*)?$/i);
+                const clickAction = (isNews && !isDirectVideo) 
+                    ? `window.open('${m.video_url}', '_blank')` 
+                    : `openPlayer('${m.video_url}', '${escapedTitle}')`;
+                const buttonText = (isNews && !isDirectVideo) ? 'LESEN' : 'ABSPIELEN';
+
+                // NEU: Badge-Farbe & Text variieren
+                let badgeClass = "text-yellow-400";
+                let badgeText = `★ ${m.rating}`;
+                if (isTv) { badgeClass = "text-red-500"; badgeText = "🔴 LIVE"; }
+                if (isNews) { badgeClass = "text-blue-400"; badgeText = "📰 NEWS"; }
 
                 card.innerHTML = `
                     <div class="relative aspect-[2/3] w-full bg-gray-950 overflow-hidden flex items-center justify-center p-4">
@@ -556,10 +624,10 @@
                                 class="fav-btn absolute top-2 left-2 bg-black/70 px-2 py-0.5 text-sm font-bold rounded transition-colors cursor-pointer ${isFav ? 'text-yellow-400 hover:text-gray-400' : 'text-gray-400 hover:text-yellow-400'} z-10">
                             ${isFav ? '★' : '☆'}
                         </button>
-                        <img src="${m.thumb}" alt="" class="${isTv ? 'max-w-full max-h-full object-contain' : 'w-full h-full object-cover'} group-hover:scale-105 transition-transform duration-300" 
+                        <img src="${m.thumb}" alt="" class="${(isTv || isNews) ? 'max-w-full max-h-full object-contain' : 'w-full h-full object-cover'} group-hover:scale-105 transition-transform duration-300" 
                              onerror="if(!this.src.includes('placeholder.png'))this.src='placeholder.png';">
-                        <span class="absolute top-2 right-2 bg-black/70 px-2 py-0.5 text-xs font-bold ${isTv ? 'text-red-500' : 'text-yellow-400'} rounded">
-                            ${isTv ? '🔴 LIVE' : '★ ' + m.rating}
+                        <span class="absolute top-2 right-2 bg-black/70 px-2 py-0.5 text-xs font-bold ${badgeClass} rounded">
+                            ${badgeText}
                         </span>
                     </div>
                     <div class="p-3 flex-1 flex flex-col justify-between">
@@ -577,9 +645,9 @@
                             <div class="flex flex-wrap gap-1 mb-2">
                                 ${m.genres_list.map(g => `<span class="bg-gray-800 text-gray-400 text-[10px] px-1.5 py-0.5 rounded">${g}</span>`).join('')}
                             </div>
-                            <button onclick="openPlayer('${m.video_url}', '${escapedTitle}')" 
+                            <button onclick="${clickAction}" 
                                     class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-1.5 px-3 rounded-lg transition-colors text-xs tracking-wide cursor-pointer">
-                                ABSPIELEN
+                                ${buttonText}
                             </button>
                         </div>
                     </div>
@@ -681,7 +749,6 @@
             }).catch(err => console.error('Fehler beim Kopieren:', err));
         }
 
-        // NEU: Erfordert die native "Speichern unter..."-Abfrage per API & Fallback
         async function triggerNativeDownload() {
             const url = activeDownloadUrl;
             const title = document.getElementById('videoTitle').innerText;
@@ -690,8 +757,6 @@
             const originalText = btn.innerHTML;
 
             try {
-                // Methode 1: Moderne File System Access API (Chrome, Edge, Opera auf PC)
-                // Öffnet das Speicher-Fenster SOFORT VOR dem eigentlichen Download!
                 if ('showSaveFilePicker' in window) {
                     btn.innerHTML = '⏳ Ordner wählen...';
                     btn.disabled = true;
@@ -724,8 +789,6 @@
                     return;
                 }
 
-                // Methode 2: Blob-Fallback (Firefox, Safari & Smartphones)
-                // Lädt die Datei erst im Background-Speicher, erzwingt dann den Download-Dialog
                 btn.innerHTML = '⏳ In Speicher laden...';
                 btn.disabled = true;
 
@@ -753,10 +816,9 @@
 
                 if (err.name === 'AbortError') {
                     btn.innerHTML = originalText;
-                    return; // Nutzer hat den Abbrechen-Button im Windows-Fenster gedrückt
+                    return;
                 }
 
-                // Methode 3: Letzter Rettungsanker bei CORS-Fehlern
                 btn.innerHTML = '❌ CORS-Schutz!';
                 setTimeout(() => {
                     btn.innerHTML = originalText;
