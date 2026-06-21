@@ -41,6 +41,13 @@ def create_android_boilerplate(build_dir, app_name, package_name):
     """
     with open(os.path.join(build_dir, "build.gradle"), "w", encoding="utf-8") as f:
         f.write(root_gradle.strip())
+
+    # 2b. gradle.properties (FIX: Schaltet AndroidX für das Projekt frei)
+    gradle_properties = """
+    android.useAndroidX=true
+    """
+    with open(os.path.join(build_dir, "gradle.properties"), "w", encoding="utf-8") as f:
+        f.write(gradle_properties.strip())
         
     # 3. app/build.gradle
     app_gradle = f"""
@@ -147,7 +154,6 @@ def build_apk(app_name, package_name, html_source_dir):
     
     print("-> Starte Gradle Buildprozess...")
     
-    # Fehlerprüfung erzwingen mit subprocess.run(..., check=True)
     try:
         subprocess.run(["gradle", "assembleDebug"], cwd=build_dir, check=True)
         print("-> Build erfolgreich beendet!")
