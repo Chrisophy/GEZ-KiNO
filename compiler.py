@@ -3,7 +3,7 @@ import shutil
 import subprocess
 
 def create_android_boilerplate(build_dir, app_name, package_name, start_url):
-    """Generiert eine saubere, moderne Android-Projektstruktur nach Gradle 8+ Standard."""
+    """Generiert eine saubere, moderne Android-Projektstruktur nach Gradle 8+ Standard mit Fullscreen-Video Support."""
     package_path = package_name.replace(".", "/")
     java_dir = os.path.join(build_dir, "app", "src", "main", "java", package_path)
     res_val_dir = os.path.join(build_dir, "app", "src", "main", "res", "values")
@@ -79,7 +79,7 @@ def create_android_boilerplate(build_dir, app_name, package_name, start_url):
     with open(os.path.join(build_dir, "app", "build.gradle"), "w", encoding="utf-8") as f:
         f.write(app_gradle.strip())
         
-    # 4. AndroidManifest.xml
+    # 4. AndroidManifest.xml (configChanges hinzugefügt, damit Rotationen den Stream nicht killen)
     manifest = f"""<?xml version="1.0" encoding="utf-8"?>
     <manifest xmlns:android="http://schemas.android.com/apk/res/android"
         package="{package_name}">
@@ -89,7 +89,9 @@ def create_android_boilerplate(build_dir, app_name, package_name, start_url):
             android:icon="@mipmap/ic_launcher"
             android:label="@string/app_name"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-            <activity android:name=".MainActivity" android:exported="true">
+            <activity android:name=".MainActivity" 
+                android:exported="true"
+                android:configChanges="orientation|screenSize|keyboardHidden|screenLayout">
                 <intent-filter>
                     <action android:name="android.intent.action.MAIN" />
                     <category android:name="android.intent.category.LAUNCHER" />
@@ -110,28 +112,107 @@ def create_android_boilerplate(build_dir, app_name, package_name, start_url):
     with open(os.path.join(res_val_dir, "strings.xml"), "w", encoding="utf-8") as f:
         f.write(strings.strip())
         
-    # 6. MainActivity.java (Nutzt jetzt die dynamische URL!)
+    # 6. MainActivity.java (WebChromeClient integriert für dynamischen Fullscreen-Wechsel)
     main_activity = f"""package {package_name};
 
     import android.os.Bundle;
+    import android.view.View;
+    import android.view.ViewGroup;
+    import android.webkit.WebChromeClient;
     import android.webkit.WebSettings;
     import android.webkit.WebView;
     import android.webkit.WebViewClient;
+    import android.widget.FrameLayout;
     import androidx.appcompat.app.AppCompatActivity;
 
     public class MainActivity extends AppCompatActivity {{
+        private WebView webView;
+        private FrameLayout customViewContainer;
+        private View customView;
+        private WebChromeClient.CustomViewCallback customViewCallback;
+
         @Override
         protected void onCreate(Bundle savedInstanceState) {{
             super.onCreate(savedInstanceState);
-            WebView webView = new WebView(this);
+            
+            // Layout-Container für das flexible Umschalten erstellen
+            FrameLayout mainLayout = new FrameLayout(this);
+            
+            webView = new WebView(this);
             WebSettings webSettings = webView.getSettings();
             webSettings.setJavaScriptEnabled(true);
             webSettings.setDomStorageEnabled(true);
             webSettings.setDatabaseEnabled(true);
             
+            // Container für das Vollbild-Video initial unsichtbar machen
+            customViewContainer = new FrameLayout(this);
+            customViewContainer.setVisibility(View.GONE);
+            
+            // Beide Elemente dem Hauptlayout hinzufügen
+            mainLayout.addView(webView, new FrameLayout.LayoutParams(
+                    ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT));
+            mainLayout.addView(customViewContainer, new FrameLayout.LayoutParams(
+                    ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT));
+            
+            setContentView(mainLayout);
+            
             webView.setWebViewClient(new WebViewClient());
+            
+            // Hier passiert die Fullscreen-Magie
+            webView.setWebChromeClient(new WebChromeClient() {{
+                @Override
+                public void onShowCustomView(View view, CustomViewCallback callback) {{
+                    if (customView != null) {{
+                        onHideCustomView();
+                        return;
+                    }}
+                    
+                    customView = view;
+                    customViewContainer.addView(customView, new FrameLayout.LayoutParams(
+                            ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT));
+                    customViewContainer.setVisibility(View.VISIBLE);
+                    customViewCallback = callback;
+                    
+                    // Android-Navigations- und Statusleisten komplett verstecken (Immersive Mode)
+                    getWindow().getDecorView().setSystemUiVisibility(
+                            View.SYSTEM_UI_FLAG_FULLSCREEN |
+                            View.SYSTEM_UI_FLAG_HIDE_NAVIGATION |
+                            View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY
+                    );
+                }}
+
+                @Override
+                public void onHideCustomView() {{
+                    if (customView == null) return;
+                    
+                    customViewContainer.removeView(customView);
+                    customViewContainer.setVisibility(View.GONE);
+                    customView = null;
+                    
+                    if (customViewCallback != null) {{
+                        customViewCallback.onCustomViewHidden();
+                    }}
+                    
+                    // System-UI wieder normal einblenden
+                    getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_VISIBLE);
+                }}
+            }});
+            
             webView.loadUrl("{start_url}");
-            setContentView(webView);
+        }}
+
+        @Override
+        public void onBackPressed() {{
+            // Wenn gerade ein Video im Vollbild läuft, schließt die Zurück-Taste erst das Vollbild
+            if (customView != null) {{
+                if (webView.getWebChromeClient() != null) {{
+                    webView.getWebChromeClient().onHideCustomView();
+                }}
+            }} else if (webView.canGoBack()) {{
+                webView.goBack();
+            }} else {{
+                super.onBackPressed();
+            }}
         }}
     }}
     """
@@ -148,7 +229,6 @@ def build_apk(app_name, package_name, start_url, html_source_dir=None):
     print("-> Erstelle Android-Projektstruktur...")
     create_android_boilerplate(build_dir, app_name, package_name, start_url)
     
-    # Lokale Assets nur kopieren, wenn ein valider Ordner angegeben wurde und die URL lokal ist
     if html_source_dir and os.path.exists(html_source_dir) and start_url.startswith("file:///"):
         print("-> Kopiere HTML-Dateien in die App-Assets...")
         assets_dir = os.path.join(build_dir, "app", "src", "main", "assets")
@@ -158,7 +238,6 @@ def build_apk(app_name, package_name, start_url, html_source_dir=None):
             
         shutil.copytree(html_source_dir, assets_dir, dirs_exist_ok=True, ignore=ignore_folders)
     
-    # Icon-Logik bleibt bestehen, falls ein lokaler Ordner für das Icon genutzt wird
     if html_source_dir and os.path.exists(html_source_dir):
         icon_source = os.path.join(html_source_dir, "icon.png")
         if os.path.exists(icon_source):
@@ -179,18 +258,9 @@ def build_apk(app_name, package_name, start_url, html_source_dir=None):
 
 
 if __name__ == "__main__":
-    # BEISPIEL FÜR LIVE-WEBSEITE:
     build_apk(
-        app_name="GEZ",
-        package_name="GEZ.tele5.wrapper",
+        app_name="[GEZ] KiNO",
+        package_name="gez.kino.world",
         start_url="https://chrisophy.github.io/GEZ-KiNO",
-        html_source_dir="./pagina" # Hier sucht das Skript weiterhin nach 'icon.png'
+        html_source_dir="./pagina"
     )
-    
-    # ODER FÜR LOKALE HTML-PROJEKTE (wie vorher):
-    # build_apk(
-    #     app_name="[GEZ] KiNO",
-    #     package_name="gez.index.kino",
-    #     start_url="file:///android_asset/index.html",
-    #     html_source_dir="./pagina"
-    # )
