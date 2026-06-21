@@ -26,6 +26,9 @@ jobs:
         python -m pip install --upgrade pip
         pip install requests feedparser beautifulsoup4
 
+    - name: Scraper ausführen
+      run: python fetch_news.py
+
     - name: Änderungen zurückschreiben
       run: |
         git config --global user.name 'GitHub Automation'
@@ -33,4 +36,3 @@ jobs:
         git add news.json
         # Fügt [skip ci] hinzu, damit kein automatischer Folge-Build (wie Pages) ausgelöst wird
         git diff --quiet && git diff --staged --quiet || (git commit -m "Update news.json via GitHub Action [skip ci]" && git push)
-
