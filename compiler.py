@@ -79,7 +79,8 @@ def create_android_boilerplate(build_dir, app_name, package_name):
         
     # 4. AndroidManifest.xml
     manifest = f"""<?xml version="1.0" encoding="utf-8"?>
-    <manifest xmlns:android="http://schemas.github.com/apk/res/android">
+    <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+        package="{package_name}">
         <uses-permission android:name="android.permission.INTERNET" />
         <application
             android:allowBackup="true"
