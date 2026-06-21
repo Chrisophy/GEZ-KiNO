@@ -3,7 +3,7 @@ name: HTML to APK Compiler
 on:
   push:
     branches: [ main ]
-  workflow_dispatch: # Erlaubt manuellen Start per Klick
+  workflow_dispatch:
 
 jobs:
   build:
@@ -17,6 +17,12 @@ jobs:
         java-version: '17'
         distribution: 'temurin'
 
+    # Installiert die passende Gradle-Version für den Build
+    - name: Setup Gradle
+      uses: gradle/actions/setup-gradle@v3
+      with:
+        gradle-version: '8.4'
+
     - name: Set up Python
       uses: actions/setup-python@v5
       with:
@@ -25,8 +31,9 @@ jobs:
     - name: Run Python Compiler Script
       run: python compiler.py
 
+    # Lädt die fertige APK unter "Artifacts" hoch
     - name: Upload APK
       uses: actions/upload-artifact@v4
       with:
-        name: my-html-app
+        name: GEZ-KiNO-APK
         path: build_output/app/build/outputs/apk/debug/app-debug.apk
