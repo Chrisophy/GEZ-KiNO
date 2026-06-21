@@ -35,5 +35,5 @@ jobs:
     - name: Upload APK
       uses: actions/upload-artifact@v4
       with:
-        name: [GEZ] KiNO
-        path: build_output/app/build/outputs/apk/debug/[GEZ]_KiNO.apk
+        name: GEZ KiNO
+        path: build_output/app/build/outputs/apk/debug/GEZ-KiNO.apk
