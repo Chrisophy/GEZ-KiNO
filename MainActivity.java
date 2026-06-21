@@ -13,14 +13,13 @@ public class MainActivity extends AppCompatActivity {
         WebView webView = new WebView(this);
         WebSettings webSettings = webView.getSettings();
         
-        // FIX: "set" statt "get" verwenden!
-        webSettings.setJavaScriptEnabled(true); // Wichtig für modernes HTML/JS
+        webSettings.setJavaScriptEnabled(true);
         webSettings.setDomStorageEnabled(true);
         
         webView.setWebViewClient(new WebViewClient());
         
         // HIER die gewünschte URL eintragen:
-        webView.loadUrl("https://tele5.de");
+        webView.loadUrl("https://chrisophy.github.io/GEZ-KiNO");
         
         setContentView(webView);
     }

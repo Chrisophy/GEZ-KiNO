@@ -181,10 +181,10 @@ def build_apk(app_name, package_name, start_url, html_source_dir=None):
 if __name__ == "__main__":
     # BEISPIEL FÜR LIVE-WEBSEITE:
     build_apk(
-        app_name="Tele 5 Mediathek",
-        package_name="kino.tele5.wrapper",
-        start_url="https://tele5.de",
-        html_source_dir="./pagina" # Hier sucht das Skript weiterhin nach deiner 'icon.png'
+        app_name="GEZ",
+        package_name="GEZ.tele5.wrapper",
+        start_url="https://chrisophy.github.io/GEZ-KiNO",
+        html_source_dir="./pagina" # Hier sucht das Skript weiterhin nach 'icon.png'
     )
     
     # ODER FÜR LOKALE HTML-PROJEKTE (wie vorher):
