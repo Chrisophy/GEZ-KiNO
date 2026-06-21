@@ -167,5 +167,5 @@ if __name__ == "__main__":
     build_apk(
         app_name="[GEZ] KiNO",
         package_name="gez.index.kino",
-        html_source_dir="./"
+        html_source_dir="./pagina/"
     )
