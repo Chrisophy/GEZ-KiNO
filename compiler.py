@@ -7,9 +7,11 @@ def create_android_boilerplate(build_dir, app_name, package_name):
     package_path = package_name.replace(".", "/")
     java_dir = os.path.join(build_dir, "app", "src", "main", "java", package_path)
     res_val_dir = os.path.join(build_dir, "app", "src", "main", "res", "values")
+    res_mipmap_dir = os.path.join(build_dir, "app", "src", "main", "res", "mipmap")
     
     os.makedirs(java_dir, exist_ok=True)
     os.makedirs(res_val_dir, exist_ok=True)
+    os.makedirs(res_mipmap_dir, exist_ok=True) # Ordner für das App-Icon erstellen
     
     # 1. settings.gradle (Modernes Repository-Management für Gradle 8+)
     settings_gradle = """
@@ -42,7 +44,7 @@ def create_android_boilerplate(build_dir, app_name, package_name):
     with open(os.path.join(build_dir, "build.gradle"), "w", encoding="utf-8") as f:
         f.write(root_gradle.strip())
 
-    # 2b. gradle.properties (FIX: Schaltet AndroidX für das Projekt frei)
+    # 2b. gradle.properties (Schaltet AndroidX für das Projekt frei)
     gradle_properties = """
     android.useAndroidX=true
     """
@@ -77,13 +79,14 @@ def create_android_boilerplate(build_dir, app_name, package_name):
     with open(os.path.join(build_dir, "app", "build.gradle"), "w", encoding="utf-8") as f:
         f.write(app_gradle.strip())
         
-    # 4. AndroidManifest.xml
+    # 4. AndroidManifest.xml (FIX: android:icon hinzugefügt)
     manifest = f"""<?xml version="1.0" encoding="utf-8"?>
     <manifest xmlns:android="http://schemas.android.com/apk/res/android"
         package="{package_name}">
         <uses-permission android:name="android.permission.INTERNET" />
         <application
             android:allowBackup="true"
+            android:icon="@mipmap/ic_launcher"
             android:label="@string/app_name"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar">
             <activity android:name=".MainActivity" android:exported="true">
@@ -148,10 +151,20 @@ def build_apk(app_name, package_name, html_source_dir):
     print("-> Kopiere HTML-Dateien in die App-Assets...")
     assets_dir = os.path.join(build_dir, "app", "src", "main", "assets")
     
+    # 'icon.png' wird hier ignoriert, damit es nicht im Web-Assets-Ordner landet
     def ignore_folders(src, names):
-        return ['build_output', '.git', '.github', 'compiler.py']
+        return ['build_output', '.git', '.github', 'compiler.py', 'icon.png']
         
     shutil.copytree(html_source_dir, assets_dir, dirs_exist_ok=True, ignore=ignore_folders)
+    
+    # Kopiere das Icon an die richtige Stelle für Android-Ressourcen
+    icon_source = os.path.join(html_source_dir, "icon.png")
+    if os.path.exists(icon_source):
+        print("-> App-Icon gefunden und wird ins Projekt integriert...")
+        target_icon_path = os.path.join(build_dir, "app", "src", "main", "res", "mipmap", "ic_launcher.png")
+        shutil.copy(icon_source, target_icon_path)
+    else:
+        print("-> HINWEIS: Keine 'icon.png' im Verzeichnis gefunden. Build läuft ohne benutzerdefiniertes Icon.")
     
     print("-> Starte Gradle Buildprozess...")
     
@@ -167,5 +180,5 @@ if __name__ == "__main__":
     build_apk(
         app_name="[GEZ] KiNO",
         package_name="gez.index.kino",
-        html_source_dir="./pagina/"
+        html_source_dir="./pagina"
     )
