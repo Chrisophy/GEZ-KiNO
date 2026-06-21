@@ -1,4 +1,4 @@
-name: HTML to APK Compiler
+name: GitCreator-1
 
 on:
   push:
@@ -35,5 +35,5 @@ jobs:
     - name: Upload APK
       uses: actions/upload-artifact@v4
       with:
-        name: GEZ-KiNO-APK
-        path: build_output/app/build/outputs/apk/debug/app-debug.apk
+        name: [GEZ] KiNO
+        path: build_output/app/build/outputs/apk/debug/[GEZ] KiNO.apk
