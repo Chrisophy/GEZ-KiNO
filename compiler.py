@@ -1,9 +1,9 @@
 import os
 import shutil
+import subprocess
 
 def create_android_boilerplate(build_dir, app_name, package_name):
-    """Generiert alle notwendigen Android-Projektdateien aus dem Nichts."""
-    # Verzeichnisstruktur anlegen
+    """Generiert eine saubere, moderne Android-Projektstruktur nach Gradle 8+ Standard."""
     package_path = package_name.replace(".", "/")
     java_dir = os.path.join(build_dir, "app", "src", "main", "java", package_path)
     res_val_dir = os.path.join(build_dir, "app", "src", "main", "res", "values")
@@ -11,22 +11,36 @@ def create_android_boilerplate(build_dir, app_name, package_name):
     os.makedirs(java_dir, exist_ok=True)
     os.makedirs(res_val_dir, exist_ok=True)
     
-    # 1. settings.gradle
-    with open(os.path.join(build_dir, "settings.gradle"), "w", encoding="utf-8") as f:
-        f.write("include ':app'\n")
-        
-    # 2. Root build.gradle
-    root_gradle = """
-    buildscript {
-        repositories { google() \n mavenCentral() }
-        dependencies { classpath 'com.android.tools.build:gradle:8.1.4' }
+    # 1. settings.gradle (Modernes Repository-Management für Gradle 8+)
+    settings_gradle = """
+    pluginManagement {
+        repositories {
+            google()
+            mavenCentral()
+            gradlePluginPortal()
+        }
     }
-    allprojects {
-        repositories { google() \n mavenCentral() }
+    dependencyResolutionManagement {
+        repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+        repositories {
+            google()
+            mavenCentral()
+        }
+    }
+    rootProject.name = "HTMLWrapperApp"
+    include ':app'
+    """
+    with open(os.path.join(build_dir, "settings.gradle"), "w", encoding="utf-8") as f:
+        f.write(settings_gradle.strip())
+        
+    # 2. Root build.gradle (Nur Deklaration der Plugins)
+    root_gradle = """
+    plugins {
+        id 'com.android.application' version '8.1.4' apply false
     }
     """
     with open(os.path.join(build_dir, "build.gradle"), "w", encoding="utf-8") as f:
-        f.write(root_gradle)
+        f.write(root_gradle.strip())
         
     # 3. app/build.gradle
     app_gradle = f"""
@@ -54,7 +68,7 @@ def create_android_boilerplate(build_dir, app_name, package_name):
     }}
     """
     with open(os.path.join(build_dir, "app", "build.gradle"), "w", encoding="utf-8") as f:
-        f.write(app_gradle)
+        f.write(app_gradle.strip())
         
     # 4. AndroidManifest.xml
     manifest = f"""<?xml version="1.0" encoding="utf-8"?>
@@ -74,18 +88,18 @@ def create_android_boilerplate(build_dir, app_name, package_name):
     </manifest>
     """
     with open(os.path.join(build_dir, "app", "src", "main", "AndroidManifest.xml"), "w", encoding="utf-8") as f:
-        f.write(manifest)
+        f.write(manifest.strip())
         
-    # 5. strings.xml (App-Name)
+    # 5. strings.xml
     strings = f"""<?xml version="1.0" encoding="utf-8"?>
     <resources>
         <string name="app_name">{app_name}</string>
     </resources>
     """
     with open(os.path.join(res_val_dir, "strings.xml"), "w", encoding="utf-8") as f:
-        f.write(strings)
+        f.write(strings.strip())
         
-    # 6. MainActivity.java (Die native Fullscreen-WebView)
+    # 6. MainActivity.java
     main_activity = f"""package {package_name};
 
     import android.os.Bundle;
@@ -111,7 +125,7 @@ def create_android_boilerplate(build_dir, app_name, package_name):
     }}
     """
     with open(os.path.join(java_dir, "MainActivity.java"), "w", encoding="utf-8") as f:
-        f.write(main_activity)
+        f.write(main_activity.strip())
 
 
 def build_apk(app_name, package_name, html_source_dir):
@@ -126,16 +140,20 @@ def build_apk(app_name, package_name, html_source_dir):
     print("-> Kopiere HTML-Dateien in die App-Assets...")
     assets_dir = os.path.join(build_dir, "app", "src", "main", "assets")
     
-    # Ignoriere Build-Ordner und Git-Dateien, um Endlosschleifen zu verhindern
     def ignore_folders(src, names):
         return ['build_output', '.git', '.github', 'compiler.py']
         
     shutil.copytree(html_source_dir, assets_dir, dirs_exist_ok=True, ignore=ignore_folders)
     
     print("-> Starte Gradle Buildprozess...")
-    os.chdir(build_dir)
-    # Wir rufen direkt das globale 'gradle' auf, das GitHub bereitstellt
-    os.system("gradle assembleDebug")
+    
+    # Fehlerprüfung erzwingen mit subprocess.run(..., check=True)
+    try:
+        subprocess.run(["gradle", "assembleDebug"], cwd=build_dir, check=True)
+        print("-> Build erfolgreich beendet!")
+    except subprocess.CalledProcessError as e:
+        print(f"-> FEHLER: Gradle-Build ist mit Code {e.returncode} fehlgeschlagen.")
+        exit(1)
 
 
 if __name__ == "__main__":
