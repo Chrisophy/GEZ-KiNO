@@ -11,7 +11,7 @@
         .no-scrollbar::-webkit-scrollbar { display: none; }
         .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
     </style>    
-    <link rel="manifest" href="manifest.json">
+    <link class="manifest" href="manifest.json">
     <meta name="theme-color" content="#121212">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -73,6 +73,7 @@
         </div>
     </div>
 
+    <!-- Video-Modal mit erzwungenem Download-Manager -->
     <div id="videoModal" class="fixed inset-0 bg-black/95 hidden z-50 flex flex-col justify-center items-center backdrop-blur-md">
         <button onclick="closePlayer()" class="absolute top-4 right-4 text-white hover:text-gray-400 p-2 z-50 bg-gray-900/50 rounded-full border border-gray-800 transition-colors cursor-pointer">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -99,11 +100,50 @@
         </div>
     </div>
 
+    <!-- In-App News Reader Modal -->
+    <div id="newsModal" class="fixed inset-0 bg-black/90 hidden z-50 justify-center items-center p-4 backdrop-blur-md">
+        <div class="bg-gray-900 border border-gray-800 rounded-2xl max-w-2xl w-full max-h-[85vh] flex flex-col overflow-hidden shadow-2xl relative">
+            <button onclick="closeNewsModal()" class="absolute top-4 right-4 text-white hover:text-gray-400 p-2 z-50 bg-gray-950/80 rounded-full border border-gray-800 transition-colors cursor-pointer">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+            
+            <div class="overflow-y-auto flex-1 no-scrollbar">
+                <div id="newsModalImageContainer" class="w-full aspect-video bg-gray-950 relative hidden">
+                    <img id="newsModalImage" src="" alt="" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent"></div>
+                </div>
+                
+                <div class="p-5 space-y-4">
+                    <div class="flex items-center gap-2 text-xs font-semibold text-blue-400">
+                        <span id="newsModalMetaChannel"></span>
+                        <span class="text-gray-600">·</span>
+                        <span id="newsModalMetaDate" class="text-gray-500"></span>
+                    </div>
+                    
+                    <h2 id="newsModalTitle" class="text-xl md:text-2xl font-bold text-gray-100 leading-tight"></h2>
+                    <hr class="border-gray-800">
+                    <div id="newsModalContent" class="text-gray-300 text-sm md:text-base leading-relaxed whitespace-pre-line font-light"></div>
+                </div>
+            </div>
+            
+            <div class="p-4 bg-gray-950 border-t border-gray-800 flex justify-between items-center gap-3">
+                <a id="newsModalExternalLink" href="#" target="_blank" rel="noopener noreferrer" 
+                   class="bg-gray-900 hover:bg-gray-800 text-gray-400 hover:text-white px-4 py-2 rounded-xl text-xs font-bold transition-all border border-gray-800 flex items-center gap-1.5 shadow-lg">
+                    🌐 Original-Link
+                </a>
+                <button onclick="closeNewsModal()" class="bg-blue-600 hover:bg-blue-700 text-white px-5 py-2 rounded-xl text-xs font-bold transition-all shadow-lg cursor-pointer">
+                    Schließen
+                </button>
+            </div>
+        </div>
+    </div>
+
     <script>
         const TMDB_API_KEY = '60b3801a9e76b5706ee2a432f06423e6';
         const MEDIATHEK_URL = 'https://mediathekviewweb.de/api/query';
         const IPTV_URL = 'https://raw.githubusercontent.com/jnk22/kodinerds-iptv/refs/heads/master/iptv/clean/clean_tv_main.m3u';
-        // NEU: News Quelle
         const NEWS_URL = 'https://raw.githubusercontent.com/Chrisophy/GEZ-KiNO/refs/heads/main/news.json';
         
         const GENRES_MAP = {
@@ -117,7 +157,7 @@
         
         let allMovies = [];
         let liveTvChannels = [];
-        let newsArticles = []; // NEU: News Speicherarray
+        let newsArticles = []; 
         let moviesToRender = []; 
         let favoriteUrls = JSON.parse(localStorage.getItem('gez_kino_favs') || '[]');
         let currentGenre = 'Alle';
@@ -274,7 +314,6 @@
             }
         }
 
-        // NEU: News-Daten von GitHub laden
         async function fetchNewsData() {
             if (newsArticles.length > 0) return;
             document.getElementById('scanner').classList.remove('hidden');
@@ -283,18 +322,24 @@
                 const res = await fetch(NEWS_URL);
                 const data = await res.json();
                 
-                // Flexible Keys abfangen, falls das Python-Skript variiert
-                newsArticles = data.map(item => ({
-                    title: item.title || 'Keine Überschrift',
-                    search: `${item.title || ''} ${item.description || item.plot || item.summary || ''}`.toLowerCase(),
-                    year: item.date || item.published || 'Heute',
-                    video_url: item.link || item.url || '',
-                    plot: item.description || item.plot || item.summary || 'Klicke auf Lesen, um den vollen Artikel zu öffnen.',
-                    rating: 'NEWS',
-                    thumb: item.image || item.thumbnail || item.thumb || 'placeholder.png',
-                    genres_list: ['News'],
-                    channel: item.source || item.channel || 'Nachrichten'
-                }));
+                newsArticles = data.map((item, index) => {
+                    const teaser = item.description || item.plot || item.summary || '';
+                    const bodyText = item.content || item.body || item.text || teaser || 'Kein Text verfügbar.';
+                    
+                    return {
+                        id: `news-art-${index}`, 
+                        title: item.title || 'Keine Überschrift',
+                        search: `${item.title || ''} ${teaser}`.toLowerCase(),
+                        year: item.date || item.published || 'Heute',
+                        video_url: item.link || item.url || '',
+                        plot: teaser || 'Klicke auf Lesen, um den vollen Artikel zu öffnen.',
+                        full_text: bodyText,
+                        rating: 'NEWS',
+                        thumb: item.image || item.thumbnail || item.thumb || 'placeholder.png',
+                        genres_list: item.genres_list || [item.category || 'News'],
+                        channel: item.source || item.channel || 'Nachrichten'
+                    };
+                });
             } catch (err) {
                 console.error("Fehler beim News-Abruf:", err);
             } finally {
@@ -308,13 +353,12 @@
             
             const btnMedia = document.getElementById('btnMediathek');
             const btnTv = document.getElementById('btnLiveTv');
-            const btnNews = document.getElementById('btnNews'); // NEU
+            const btnNews = document.getElementById('btnNews'); 
             const searchBar = document.getElementById('searchBar');
             
             searchBar.value = '';
             currentGenre = 'Alle';
 
-            // Klassen Definitionen zur einfachen Wiederverwendung
             const inactiveClass = "px-4 py-2.5 rounded-xl bg-gray-900 border border-gray-800 text-gray-400 hover:text-white transition-all cursor-pointer text-sm flex-1 sm:flex-none text-center";
             const activeClass = "px-4 py-2.5 rounded-xl bg-blue-600 text-white font-bold shadow-lg transition-all cursor-pointer text-sm flex-1 sm:flex-none text-center";
 
@@ -336,7 +380,7 @@
                 await fetchLiveTvData();
                 renderGenreLeiste();
                 filterResults();
-            } else if (view === 'news') { // NEU
+            } else if (view === 'news') { 
                 btnNews.className = activeClass;
                 searchBar.placeholder = "News suchen...";
                 grid.innerHTML = `<div id="statusMessage" class="text-center col-span-full py-12 text-gray-400 animate-pulse">Lade aktuelle News...</div>`;
@@ -411,7 +455,6 @@
             const counts = { "Alle": 0, "Sonstige": 0, "Nach Jahren": 0, "⭐ Favoriten": 0 };
             Object.values(GENRES_MAP).forEach(g => counts[g] = 0);
 
-            // NEU: Set-Zuweisung erweitert um News
             let currentSet = allMovies;
             if (currentView === 'livetv') currentSet = liveTvChannels;
             if (currentView === 'news') currentSet = newsArticles;
@@ -430,6 +473,13 @@
                     } else {
                         m.genres_list.forEach(g => { if (g in counts) counts[g]++; });
                     }
+                } else if (currentView === 'news') {
+                    if (m.genres_list) {
+                        m.genres_list.forEach(g => {
+                            if (!counts[g]) counts[g] = 0;
+                            counts[g]++;
+                        });
+                    }
                 }
             });
             return counts;
@@ -443,15 +493,21 @@
             if (currentView === 'mediathek') {
                 const sortedGenres = Object.values(GENRES_MAP).sort();
                 genres = ['Alle', 'Nach Jahren', '⭐ Favoriten', ...sortedGenres, 'Sonstige'];
+            } else if (currentView === 'news') {
+                const newsCats = new Set();
+                newsArticles.forEach(m => {
+                    if (m.genres_list) m.genres_list.forEach(g => newsCats.add(g));
+                });
+                genres = ['Alle', '⭐ Favoriten', ...Array.from(newsCats).sort()];
             } else {
-                // Live TV und News teilen sich die einfache Navigationsleiste
                 genres = ['Alle', '⭐ Favoriten'];
             }
 
             leiste.innerHTML = '';
             genres.forEach(g => {
                 const btn = document.createElement('button');
-                btn.id = `genre-btn-${g.replace(/\s+/g, '').replace(/⭐/g, 'Fav')}`;
+                const cleanId = g.replace(/\s+/g, '').replace(/⭐/g, 'Fav').replace(/[^a-zA-Z0-9]/g, '');
+                btn.id = `genre-btn-${cleanId}`;
                 
                 const isActive = currentGenre === g || (g === 'Nach Jahren' && currentGenre.startsWith('Jahr: '));
                 btn.className = `flex-shrink-0 min-w-[120px] px-4 py-2 rounded-xl text-center flex flex-col justify-center transition-all cursor-pointer border ${
@@ -460,7 +516,7 @@
 
                 btn.innerHTML = `
                     <span class="text-sm tracking-wide">${g === currentGenre.replace('Jahr: ', 'Jahr ') ? currentGenre : g}</span>
-                    <span class="text-[10px] opacity-60 font-light genre-count">${counts[g] !== undefined ? '(' + counts[g] + ')' : ''}</span>
+                    <span class="text-[10px] opacity-60 font-light genre-count">${counts[g] !== undefined ? '(' + counts[g] + ')' : '(0)'}</span>
                 `;
 
                 btn.onclick = () => {
@@ -479,10 +535,11 @@
         function updateGenreCounts() {
             const counts = getGenreCounts();
             Object.keys(counts).forEach(g => {
-                const btn = document.getElementById(`genre-btn-${g.replace(/\s+/g, '').replace(/⭐/g, 'Fav')}`);
+                const cleanId = g.replace(/\s+/g, '').replace(/⭐/g, 'Fav').replace(/[^a-zA-Z0-9]/g, '');
+                const btn = document.getElementById(`genre-btn-${cleanId}`);
                 if (btn) {
                     const countSpan = btn.querySelector('.genre-count');
-                    if (countSpan) countSpan.innerText = `(${counts[g]})`;
+                    if (countSpan) countSpan.innerText = `(${counts[g] || 0})`;
                 }
             });
         }
@@ -492,12 +549,19 @@
             if (currentView === 'mediathek') {
                 const sortedGenres = Object.values(GENRES_MAP).sort();
                 genres = ['Alle', 'Nach Jahren', '⭐ Favoriten', ...sortedGenres, 'Sonstige'];
+            } else if (currentView === 'news') {
+                const newsCats = new Set();
+                newsArticles.forEach(m => {
+                    if (m.genres_list) m.genres_list.forEach(g => newsCats.add(g));
+                });
+                genres = ['Alle', '⭐ Favoriten', ...Array.from(newsCats).sort()];
             } else {
                 genres = ['Alle', '⭐ Favoriten'];
             }
             
             genres.forEach(g => {
-                const btn = document.getElementById(`genre-btn-${g.replace(/\s+/g, '').replace(/⭐/g, 'Fav')}`);
+                const cleanId = g.replace(/\s+/g, '').replace(/⭐/g, 'Fav').replace(/[^a-zA-Z0-9]/g, '');
+                const btn = document.getElementById(`genre-btn-${cleanId}`);
                 if (!btn) return;
                 
                 const isActive = currentGenre === g || (g === 'Nach Jahren' && currentGenre.startsWith('Jahr: '));
@@ -547,7 +611,6 @@
         function filterResults() {
             const query = document.getElementById('searchBar').value.toLowerCase().trim();
             
-            // NEU: Daten-Set-Weichenstellung um News erweitert
             let currentSet = allMovies;
             if (currentView === 'livetv') currentSet = liveTvChannels;
             if (currentView === 'news') currentSet = newsArticles;
@@ -564,6 +627,9 @@
                     if (currentGenre.startsWith('Jahr: ')) {
                         return m.year === currentGenre.replace('Jahr: ', '');
                     }
+                    return m.genres_list && m.genres_list.includes(currentGenre);
+                }
+                if (currentView === 'news') {
                     return m.genres_list && m.genres_list.includes(currentGenre);
                 }
                 return true;
@@ -597,26 +663,29 @@
 
             chunk.forEach(m => {
                 const card = document.createElement('div');
-                card.id = `movie-${btoa(encodeURIComponent(m.video_url)).replace(/=/g, '')}`;
+                const uniqueCardId = m.id || btoa(encodeURIComponent(m.video_url)).replace(/=/g, '');
+                card.id = `movie-${uniqueCardId}`;
                 card.className = "bg-gray-900 rounded-xl overflow-hidden shadow-md border border-gray-800 flex flex-col justify-between hover:border-blue-500 transition-all duration-200 group h-fit";
                 
                 const escapedTitle = m.title.replace(/'/g, "\\'").replace(/"/g, '&quot;');
                 const isTv = currentView === 'livetv';
-                const isNews = currentView === 'news'; // NEU
+                const isNews = currentView === 'news'; 
                 const isFav = favoriteUrls.includes(m.video_url);
 
-                // NEU: Klick-Verhalten dynamisch anpassen (Webseite öffnen oder Player starten)
                 const isDirectVideo = m.video_url.match(/\.(mp4|m3u8|mkv|avi)(\?.*)?$/i);
+                
                 const clickAction = (isNews && !isDirectVideo) 
-                    ? `window.open('${m.video_url}', '_blank')` 
+                    ? `openNewsModal('${m.id}')` 
                     : `openPlayer('${m.video_url}', '${escapedTitle}')`;
                 const buttonText = (isNews && !isDirectVideo) ? 'LESEN' : 'ABSPIELEN';
 
-                // NEU: Badge-Farbe & Text variieren
                 let badgeClass = "text-yellow-400";
                 let badgeText = `★ ${m.rating}`;
                 if (isTv) { badgeClass = "text-red-500"; badgeText = "🔴 LIVE"; }
                 if (isNews) { badgeClass = "text-blue-400"; badgeText = "📰 NEWS"; }
+
+                const plotClickAction = isNews ? `openNewsModal('${m.id}')` : 'togglePlot(this)';
+                const plotTitleHint = isNews ? 'Klicken, um den ganzen Artikel zu lesen' : 'Klicken, um die Beschreibung zu erweitern';
 
                 card.innerHTML = `
                     <div class="relative aspect-[2/3] w-full bg-gray-950 overflow-hidden flex items-center justify-center p-4">
@@ -632,12 +701,12 @@
                     </div>
                     <div class="p-3 flex-1 flex flex-col justify-between">
                         <div>
-                            <h3 class="font-bold text-sm text-gray-100 line-clamp-2 mb-1 group-hover:text-blue-400 transition-colors" title="${m.title}">${m.title}</h3>
-                            <p class="text-gray-500 text-[11px] mb-2">${m.channel} ${m.year !== 'None' ? '· ' + m.year : ''}</p>
+                            <h3 onclick="${isNews ? clickAction : ''}" class="font-bold text-sm text-gray-100 line-clamp-2 mb-1 group-hover:text-blue-400 transition-colors ${isNews ? 'cursor-pointer' : ''}" title="${m.title}">${m.title}</h3>
+                            <p class="text-gray-500 text-[11px] mb-2">${m.channel} · ${m.year}</p>
                             
-                            <p onclick="togglePlot(this)" 
+                            <p onclick="${plotClickAction}" 
                                class="text-gray-400 text-xs line-clamp-3 mb-3 font-light cursor-pointer hover:text-gray-200 transition-colors" 
-                               title="Klicken, um die ganze Beschreibung anzuzeigen">
+                               title="${plotTitleHint}">
                                ${m.plot}
                             </p>
                         </div>
@@ -684,8 +753,8 @@
         }
 
         function updateMovieCard(m) {
-            const cardId = `movie-${btoa(encodeURIComponent(m.video_url)).replace(/=/g, '')}`;
-            const card = document.getElementById(cardId);
+            const uniqueCardId = m.id || btoa(encodeURIComponent(m.video_url)).replace(/=/g, '');
+            const card = document.getElementById(`movie-${uniqueCardId}`);
             if (!card) return; 
 
             const img = card.querySelector('img');
@@ -698,7 +767,7 @@
             if (plotText) plotText.innerText = m.plot;
 
             const infoText = card.querySelector('.text-gray-500');
-            if (infoText) infoText.innerText = `${m.channel} ${m.year !== 'None' ? '· ' + m.year : ''}`;
+            if (infoText) infoText.innerText = `${m.channel} · ${m.year}`;
 
             const genreBox = card.querySelector('.flex-wrap');
             if (genreBox) {
@@ -718,8 +787,8 @@
             
             localStorage.setItem('gez_kino_favs', JSON.stringify(favoriteUrls));
             
-            const cardId = `movie-${btoa(encodeURIComponent(url)).replace(/=/g, '')}`;
-            const card = document.getElementById(cardId);
+            const uniqueCardId = btoa(encodeURIComponent(url)).replace(/=/g, '');
+            const card = document.getElementById(`movie-${uniqueCardId}`);
             if (card) {
                 const btn = card.querySelector('.fav-btn');
                 const isFav = favoriteUrls.includes(url);
@@ -731,6 +800,42 @@
             
             updateGenreCounts();
             if (currentGenre === '⭐ Favoriten') filterResults();
+        }
+
+        function openNewsModal(id) {
+            const article = newsArticles.find(m => m.id === id);
+            if (!article) return;
+
+            document.getElementById('newsModalTitle').innerText = article.title;
+            document.getElementById('newsModalMetaChannel').innerText = article.channel;
+            document.getElementById('newsModalMetaDate').innerText = article.year;
+            document.getElementById('newsModalContent').innerText = article.full_text || article.plot;
+
+            const imgContainer = document.getElementById('newsModalImageContainer');
+            const img = document.getElementById('newsModalImage');
+            
+            if (article.thumb && article.thumb !== 'placeholder.png') {
+                img.src = article.thumb;
+                imgContainer.classList.remove('hidden');
+            } else {
+                imgContainer.classList.add('hidden');
+            }
+
+            const extLink = document.getElementById('newsModalExternalLink');
+            if (article.video_url) {
+                extLink.href = article.video_url;
+                extLink.classList.remove('hidden');
+            } else {
+                extLink.classList.add('hidden');
+            }
+
+            document.getElementById('newsModal').style.display = 'flex';
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeNewsModal() {
+            document.getElementById('newsModal').style.display = 'none';
+            document.body.style.overflow = 'auto';
         }
 
         function copyVideoUrl() {
