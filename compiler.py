@@ -2,7 +2,7 @@ import os
 import shutil
 import subprocess
 
-def create_android_boilerplate(build_dir, app_name, package_name):
+def create_android_boilerplate(build_dir, app_name, package_name, start_url):
     """Generiert eine saubere, moderne Android-Projektstruktur nach Gradle 8+ Standard."""
     package_path = package_name.replace(".", "/")
     java_dir = os.path.join(build_dir, "app", "src", "main", "java", package_path)
@@ -11,9 +11,9 @@ def create_android_boilerplate(build_dir, app_name, package_name):
     
     os.makedirs(java_dir, exist_ok=True)
     os.makedirs(res_val_dir, exist_ok=True)
-    os.makedirs(res_mipmap_dir, exist_ok=True) # Ordner für das App-Icon erstellen
+    os.makedirs(res_mipmap_dir, exist_ok=True)
     
-    # 1. settings.gradle (Modernes Repository-Management für Gradle 8+)
+    # 1. settings.gradle
     settings_gradle = """
     pluginManagement {
         repositories {
@@ -35,7 +35,7 @@ def create_android_boilerplate(build_dir, app_name, package_name):
     with open(os.path.join(build_dir, "settings.gradle"), "w", encoding="utf-8") as f:
         f.write(settings_gradle.strip())
         
-    # 2. Root build.gradle (Nur Deklaration der Plugins)
+    # 2. Root build.gradle
     root_gradle = """
     plugins {
         id 'com.android.application' version '8.1.4' apply false
@@ -44,7 +44,7 @@ def create_android_boilerplate(build_dir, app_name, package_name):
     with open(os.path.join(build_dir, "build.gradle"), "w", encoding="utf-8") as f:
         f.write(root_gradle.strip())
 
-    # 2b. gradle.properties (Schaltet AndroidX für das Projekt frei)
+    # 2b. gradle.properties
     gradle_properties = """
     android.useAndroidX=true
     """
@@ -79,7 +79,7 @@ def create_android_boilerplate(build_dir, app_name, package_name):
     with open(os.path.join(build_dir, "app", "build.gradle"), "w", encoding="utf-8") as f:
         f.write(app_gradle.strip())
         
-    # 4. AndroidManifest.xml (FIX: android:icon hinzugefügt)
+    # 4. AndroidManifest.xml
     manifest = f"""<?xml version="1.0" encoding="utf-8"?>
     <manifest xmlns:android="http://schemas.android.com/apk/res/android"
         package="{package_name}">
@@ -110,7 +110,7 @@ def create_android_boilerplate(build_dir, app_name, package_name):
     with open(os.path.join(res_val_dir, "strings.xml"), "w", encoding="utf-8") as f:
         f.write(strings.strip())
         
-    # 6. MainActivity.java
+    # 6. MainActivity.java (Nutzt jetzt die dynamische URL!)
     main_activity = f"""package {package_name};
 
     import android.os.Bundle;
@@ -130,7 +130,7 @@ def create_android_boilerplate(build_dir, app_name, package_name):
             webSettings.setDatabaseEnabled(true);
             
             webView.setWebViewClient(new WebViewClient());
-            webView.loadUrl("file:///android_asset/index.html");
+            webView.loadUrl("{start_url}");
             setContentView(webView);
         }}
     }}
@@ -139,33 +139,35 @@ def create_android_boilerplate(build_dir, app_name, package_name):
         f.write(main_activity.strip())
 
 
-def build_apk(app_name, package_name, html_source_dir):
+def build_apk(app_name, package_name, start_url, html_source_dir=None):
     build_dir = "build_output"
     
     if os.path.exists(build_dir):
         shutil.rmtree(build_dir)
         
     print("-> Erstelle Android-Projektstruktur...")
-    create_android_boilerplate(build_dir, app_name, package_name)
+    create_android_boilerplate(build_dir, app_name, package_name, start_url)
     
-    print("-> Kopiere HTML-Dateien in die App-Assets...")
-    assets_dir = os.path.join(build_dir, "app", "src", "main", "assets")
-    
-    # 'icon.png' wird hier ignoriert, damit es nicht im Web-Assets-Ordner landet
-    def ignore_folders(src, names):
-        return ['build_output', '.git', '.github', 'compiler.py', 'icon.png']
+    # Lokale Assets nur kopieren, wenn ein valider Ordner angegeben wurde und die URL lokal ist
+    if html_source_dir and os.path.exists(html_source_dir) and start_url.startswith("file:///"):
+        print("-> Kopiere HTML-Dateien in die App-Assets...")
+        assets_dir = os.path.join(build_dir, "app", "src", "main", "assets")
         
-    shutil.copytree(html_source_dir, assets_dir, dirs_exist_ok=True, ignore=ignore_folders)
+        def ignore_folders(src, names):
+            return ['build_output', '.git', '.github', 'compiler.py', 'icon.png']
+            
+        shutil.copytree(html_source_dir, assets_dir, dirs_exist_ok=True, ignore=ignore_folders)
     
-    # Kopiere das Icon an die richtige Stelle für Android-Ressourcen
-    icon_source = os.path.join(html_source_dir, "icon.png")
-    if os.path.exists(icon_source):
-        print("-> App-Icon gefunden und wird ins Projekt integriert...")
-        target_icon_path = os.path.join(build_dir, "app", "src", "main", "res", "mipmap", "ic_launcher.png")
-        shutil.copy(icon_source, target_icon_path)
-    else:
-        print("-> HINWEIS: Keine 'icon.png' im Verzeichnis gefunden. Build läuft ohne benutzerdefiniertes Icon.")
-    
+    # Icon-Logik bleibt bestehen, falls ein lokaler Ordner für das Icon genutzt wird
+    if html_source_dir and os.path.exists(html_source_dir):
+        icon_source = os.path.join(html_source_dir, "icon.png")
+        if os.path.exists(icon_source):
+            print("-> App-Icon gefunden und wird ins Projekt integriert...")
+            target_icon_path = os.path.join(build_dir, "app", "src", "main", "res", "mipmap", "ic_launcher.png")
+            shutil.copy(icon_source, target_icon_path)
+        else:
+            print("-> HINWEIS: Keine 'icon.png' gefunden. Standard-Icon wird verwendet.")
+            
     print("-> Starte Gradle Buildprozess...")
     
     try:
@@ -177,8 +179,18 @@ def build_apk(app_name, package_name, html_source_dir):
 
 
 if __name__ == "__main__":
+    # BEISPIEL FÜR LIVE-WEBSEITE:
     build_apk(
-        app_name="[GEZ] KiNO",
-        package_name="gez.index.kino",
-        html_source_dir="./pagina"
+        app_name="Tele 5 Mediathek",
+        package_name="kino.tele5.wrapper",
+        start_url="https://tele5.de",
+        html_source_dir="./pagina" # Hier sucht das Skript weiterhin nach deiner 'icon.png'
     )
+    
+    # ODER FÜR LOKALE HTML-PROJEKTE (wie vorher):
+    # build_apk(
+    #     app_name="[GEZ] KiNO",
+    #     package_name="gez.index.kino",
+    #     start_url="file:///android_asset/index.html",
+    #     html_source_dir="./pagina"
+    # )

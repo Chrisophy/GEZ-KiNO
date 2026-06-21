@@ -12,11 +12,16 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         WebView webView = new WebView(this);
         WebSettings webSettings = webView.getSettings();
-        webSettings.getJavaScriptEnabled(true); // Wichtig für modernes HTML/JS
+        
+        // FIX: "set" statt "get" verwenden!
+        webSettings.setJavaScriptEnabled(true); // Wichtig für modernes HTML/JS
         webSettings.setDomStorageEnabled(true);
         
         webView.setWebViewClient(new WebViewClient());
-        webView.loadUrl("file:///android_asset/index.html");
+        
+        // HIER die gewünschte URL eintragen:
+        webView.loadUrl("https://tele5.de");
+        
         setContentView(webView);
     }
 }
