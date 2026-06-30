@@ -20,7 +20,6 @@
 </head>
 <body class="p-4 md:p-6 max-w-7xl mx-auto">
     
-    <!-- Scanner -->
     <div id="scanner" class="fixed inset-0 bg-black/50 z-50 flex items-center justify-center hidden">
         <div class="bg-gray-900 p-6 rounded-2xl border border-gray-800 text-white font-bold animate-pulse">
             Lade Daten...
@@ -28,7 +27,7 @@
     </div>
 
     <header class="mb-4 flex flex-col gap-4">
-        <div class="w-full rounded-2xl overflow-hidden shadow-xl border border-gray-800 bg-gray-950 aspect-[4/1] md:aspect-[6/1] max-h-[180px]">
+        <div class="w-full rounded-2xl overflow-hidden shadow-xl border border-gray-800 bg-gray-950 aspect-[9/2] md:aspect-[9/1] max-h-[180px]">
             <img src="banner.png" alt="" class="w-full h-full object-contain" onerror="this.style.display='none'">
         </div>
         
@@ -51,7 +50,6 @@
         <div id="statusMessage" class="text-center col-span-full py-12 text-gray-400 animate-pulse">Initialisiere...</div>
     </main>
 
-    <!-- Rating Modal -->
     <div id="ratingModal" class="fixed inset-0 bg-black/80 hidden z-40 justify-center items-center p-4 backdrop-blur-sm">
         <div class="bg-gray-900 border border-gray-800 rounded-2xl max-w-sm w-full p-6 flex flex-col">
             <h2 class="text-xl font-bold mb-4 text-center text-gray-100">Mindestbewertung</h2>
@@ -72,7 +70,6 @@
         </div>
     </div>
 
-    <!-- Years Modal -->
     <div id="yearsModal" class="fixed inset-0 bg-black/80 hidden z-40 justify-center items-center p-4 backdrop-blur-sm">
         <div class="bg-gray-900 border border-gray-800 rounded-2xl max-w-sm w-full p-6 flex flex-col max-h-[80vh]">
             <h2 class="text-xl font-bold mb-4 text-center text-gray-100">Jahr auswählen</h2>
@@ -171,13 +168,11 @@
         function closeRatingModal() { document.getElementById('ratingModal').style.display = 'none'; }
         
         function applyRatingFilter(min, max) {
-            // Den Bindestrich und die max-Variable hinzufügen:
             currentGenre = `Rating: ${min}-${max}`; 
             document.getElementById('ratingModal').style.display = 'none';
             setActiveGenreStyling();
             filterResults();
         }
-
 
         function cleanTitle(title) {
             let yearMatch = title.match(/(\d{4})/);
@@ -636,11 +631,9 @@
             const query = document.getElementById('searchBar').value.toLowerCase().trim();
             let currentSet = allMovies;
             
-            // Richtiges Array für die Ansichten wählen
             if (currentView === 'livetv') currentSet = liveTvChannels;
             if (currentView === 'news') currentSet = newsArticles;
             
-            // 1. SCHRITT: Filtern
             moviesToRender = currentSet.filter(m => {
                 if (query && !m.title.toLowerCase().includes(query) && !m.plot.toLowerCase().includes(query)) return false;
                 if (currentGenre === 'Alle') return true;
@@ -668,30 +661,14 @@
                 return true;
             });
         
-            // 2. SCHRITT: Sortieren (NEU)
-            if (currentGenre.startsWith('Rating: ')) {
-                // Nach Bewertung absteigend sortieren (Höchste Bewertung zuerst)
+            if (currentGenre.startsWith('Rating: ') || currentGenre.startsWith('Jahr: ')) {
                 moviesToRender.sort((a, b) => {
                     const ratingA = parseFloat(a.rating) || 0;
                     const ratingB = parseFloat(b.rating) || 0;
                     return ratingB - ratingA; 
                 });
-            } else if (currentGenre.startsWith('Jahr: ')) {
-                 // Bonus: Wenn du nach einem Jahr filterst, sortieren wir die Ergebnisse 
-                 // in diesem Jahr ebenfalls nach der besten Bewertung.
-                 moviesToRender.sort((a, b) => {
-                    const ratingA = parseFloat(a.rating) || 0;
-                    const ratingB = parseFloat(b.rating) || 0;
-                    return ratingB - ratingA;
-                });
-            } else {
-                // Bei "Alle" oder "Action", "Drama" etc. belassen wir es bei der 
-                // alphabetischen Sortierung, die wir beim Start festgelegt haben.
-                // Falls du Genres AUCH nach Bewertung sortieren willst, 
-                // lösche das "else if" und packe alles zusammen!
             }
         
-            // 3. SCHRITT: Rendern
             const grid = document.getElementById('movieGrid');
             grid.innerHTML = '';
         
@@ -703,7 +680,6 @@
             renderNextChunk(0);
             setupInfiniteScroll();
         }
-
 
         function togglePlot(element) {
             element.classList.toggle('line-clamp-3');
