@@ -10,6 +10,17 @@
         body { background-color: #121212; color: #e5e7eb; font-family: 'Roboto', sans-serif; }
         .no-scrollbar::-webkit-scrollbar { display: none; }
         .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+        /* Container anpassen */
+        #genreLeiste {
+            scroll-snap-type: x mandatory;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        /* Die Buttons in der Liste anpassen */
+        #genreLeiste button {
+            scroll-snap-align: center;
+        }
     </style>    
     <link class="manifest" href="manifest.json">
     <meta name="theme-color" content="#121212">
@@ -1067,7 +1078,17 @@
         window.addEventListener('appinstalled', () => {
             deferredPrompt = null;
             document.getElementById('btnInstallPWA').classList.add('hidden');
-        });        
+        });   
+        // TV-Fernbedienungs-Navigation für die Genre-Leiste
+        document.getElementById('genreLeiste').addEventListener('focusin', (e) => {
+            if (e.target.tagName === 'BUTTON') {
+                e.target.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'nearest',
+                    inline: 'center' // Bringt den Button in die Mitte des Bildschirms
+                });
+            }
+        });     
     </script>
 </body>
 </html>
