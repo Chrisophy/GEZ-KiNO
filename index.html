@@ -10,17 +10,8 @@
         body { background-color: #121212; color: #e5e7eb; font-family: 'Roboto', sans-serif; }
         .no-scrollbar::-webkit-scrollbar { display: none; }
         .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
-
-        /* Container anpassen */
-        #genreLeiste {
-            scroll-snap-type: x mandatory;
-            -webkit-overflow-scrolling: touch;
-        }
-
-        /* Die Buttons in der Liste anpassen */
-        #genreLeiste button {
-            scroll-snap-align: center;
-        }
+        #genreLeiste { scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch; }
+        #genreLeiste button { scroll-snap-align: center; }
     </style>    
     <link class="manifest" href="manifest.json">
     <meta name="theme-color" content="#121212">
@@ -28,6 +19,13 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 </head>
 <body class="p-4 md:p-6 max-w-7xl mx-auto">
+    
+    <!-- Scanner -->
+    <div id="scanner" class="fixed inset-0 bg-black/50 z-50 flex items-center justify-center hidden">
+        <div class="bg-gray-900 p-6 rounded-2xl border border-gray-800 text-white font-bold animate-pulse">
+            Lade Daten...
+        </div>
+    </div>
 
     <header class="mb-4 flex flex-col gap-4">
         <div class="w-full rounded-2xl overflow-hidden shadow-xl border border-gray-800 bg-gray-950 aspect-[4/1] md:aspect-[6/1] max-h-[180px]">
@@ -36,54 +34,54 @@
         
         <div class="flex flex-col sm:flex-row justify-between items-center gap-4 w-full">
             <div class="flex flex-wrap gap-2 bg-gray-950 p-1.5 rounded-2xl border border-gray-800 w-full sm:w-auto">
-                <button id="btnMediathek" onclick="switchView('mediathek')" class="px-4 py-2.5 rounded-xl bg-blue-600 text-white font-bold shadow-lg transition-all cursor-pointer text-sm flex-1 sm:flex-none text-center">
-                    🍿 Mediathek
-                </button>
-                <button id="btnLiveTv" onclick="switchView('livetv')" class="px-4 py-2.5 rounded-xl bg-gray-900 border border-gray-800 text-gray-400 hover:text-white transition-all cursor-pointer text-sm flex-1 sm:flex-none text-center">
-                    📺 Live TV
-                </button>
-                <button id="btnNews" onclick="switchView('news')" class="px-4 py-2.5 rounded-xl bg-gray-900 border border-gray-800 text-gray-400 hover:text-white transition-all cursor-pointer text-sm flex-1 sm:flex-none text-center">
-                    📰 News
-                </button>
-                <button id="btnInstallPWA" class="hidden px-4 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold shadow-lg transition-all cursor-pointer text-sm flex-1 sm:flex-none text-center animate-pulse">
-                    📲 App laden
-                </button>
+                <button id="btnMediathek" onclick="switchView('mediathek')" class="px-4 py-2.5 rounded-xl bg-blue-600 text-white font-bold shadow-lg transition-all cursor-pointer text-sm flex-1 sm:flex-none text-center">🍿 Mediathek</button>
+                <button id="btnLiveTv" onclick="switchView('livetv')" class="px-4 py-2.5 rounded-xl bg-gray-900 border border-gray-800 text-gray-400 hover:text-white transition-all cursor-pointer text-sm flex-1 sm:flex-none text-center">📺 Live TV</button>
+                <button id="btnNews" onclick="switchView('news')" class="px-4 py-2.5 rounded-xl bg-gray-900 border border-gray-800 text-gray-400 hover:text-white transition-all cursor-pointer text-sm flex-1 sm:flex-none text-center">📰 News</button>
+                <button id="btnInstallPWA" class="hidden px-4 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold shadow-lg transition-all cursor-pointer text-sm flex-1 sm:flex-none text-center animate-pulse">📲 App laden</button>
             </div>
-
             <div class="w-full sm:w-1/3">
-                <input type="text" id="searchBar" placeholder="Suchen..." 
-                       class="bg-gray-900 text-white px-4 py-2.5 rounded-xl w-full focus:outline-none focus:ring-2 focus:ring-blue-500 border border-gray-800 shadow-inner text-sm">
+                <input type="text" id="searchBar" placeholder="Suchen..." class="bg-gray-900 text-white px-4 py-2.5 rounded-xl w-full focus:outline-none focus:ring-2 focus:ring-blue-500 border border-gray-800 shadow-inner text-sm">
             </div>
         </div>
     </header>
 
-    <nav id="genreLeiste" class="flex gap-3 overflow-x-auto pb-3 mb-4 no-scrollbar scroll-smooth">
-    </nav>
-
-    <div id="scanner" class="w-full h-1 bg-gray-950 mb-6 relative overflow-hidden hidden">
-        <div class="h-full bg-blue-500 w-1/4 absolute rounded" style="animation: shift 1.5s infinite ease-in-out;"></div>
-    </div>
-    <style>
-        @keyframes shift { 0% { left: -25%; } 50% { left: 100%; } 100% { left: -25%; } }
-    </style>
+    <nav id="genreLeiste" class="flex gap-3 overflow-x-auto pb-3 mb-4 no-scrollbar scroll-smooth"></nav>
 
     <main id="movieGrid" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4">
-        <div id="statusMessage" class="text-center col-span-full py-12 text-gray-400 animate-pulse">
-            Initialisiere Mediathek-Abruf...
-        </div>
+        <div id="statusMessage" class="text-center col-span-full py-12 text-gray-400 animate-pulse">Initialisiere...</div>
     </main>
 
-    <div id="yearsModal" class="fixed inset-0 bg-black/80 hidden z-40 justify-center items-center p-4 backdrop-blur-sm">
-        <div class="bg-gray-900 border border-gray-800 rounded-2xl max-w-lg w-full p-6 flex flex-col max-h-[80vh]">
-            <h2 class="text-xl font-bold mb-4 text-center text-gray-100">Wähle ein Produktionsjahr</h2>
-            <div id="yearsGrid" class="grid grid-cols-3 gap-3 overflow-y-auto pr-2 flex-1 mb-4">
+    <!-- Rating Modal -->
+    <div id="ratingModal" class="fixed inset-0 bg-black/80 hidden z-40 justify-center items-center p-4 backdrop-blur-sm">
+        <div class="bg-gray-900 border border-gray-800 rounded-2xl max-w-sm w-full p-6 flex flex-col">
+            <h2 class="text-xl font-bold mb-4 text-center text-gray-100">Mindestbewertung</h2>
+            <div class="grid grid-cols-2 gap-2 mb-4">
+                <button onclick="applyRatingFilter(9, 10)" class="bg-gray-800 hover:bg-yellow-600 text-white font-bold py-2 rounded-xl transition-all text-sm">9.0 – 10.0</button>
+                <button onclick="applyRatingFilter(8, 9)" class="bg-gray-800 hover:bg-yellow-600 text-white font-bold py-2 rounded-xl transition-all text-sm">8.0 – 9.0</button>
+                <button onclick="applyRatingFilter(7, 8)" class="bg-gray-800 hover:bg-yellow-600 text-white font-bold py-2 rounded-xl transition-all text-sm">7.0 – 8.0</button>
+                <button onclick="applyRatingFilter(6, 7)" class="bg-gray-800 hover:bg-yellow-600 text-white font-bold py-2 rounded-xl transition-all text-sm">6.0 – 7.0</button>
+                <button onclick="applyRatingFilter(5, 6)" class="bg-gray-800 hover:bg-yellow-600 text-white font-bold py-2 rounded-xl transition-all text-sm">5.0 – 6.0</button>
+                <button onclick="applyRatingFilter(4, 5)" class="bg-gray-800 hover:bg-yellow-600 text-white font-bold py-2 rounded-xl transition-all text-sm">4.0 – 5.0</button>
+                <button onclick="applyRatingFilter(3, 4)" class="bg-gray-800 hover:bg-yellow-600 text-white font-bold py-2 rounded-xl transition-all text-sm">3.0 – 4.0</button>
+                <button onclick="applyRatingFilter(2, 3)" class="bg-gray-800 hover:bg-yellow-600 text-white font-bold py-2 rounded-xl transition-all text-sm">2.0 – 3.0</button>
+                <button onclick="applyRatingFilter(1, 2)" class="bg-gray-800 hover:bg-yellow-600 text-white font-bold py-2 rounded-xl transition-all text-sm">1.0 – 2.0</button>
+                <button onclick="applyRatingFilter(0, 1)" class="bg-gray-800 hover:bg-yellow-600 text-white font-bold py-2 rounded-xl transition-all text-sm">0.0 – 1.0</button>
+                <button onclick="applyRatingFilter(0, 10)" class="bg-gray-800 hover:bg-gray-700 text-white font-bold py-3 rounded-xl transition-all col-span-2 mt-2">Alle anzeigen</button>
             </div>
-            <button onclick="closeYearsModal()" class="w-full bg-gray-800 hover:bg-gray-700 text-white font-bold py-3 rounded-xl transition-colors cursor-pointer">
-                ZURÜCK
-            </button>
+            <button onclick="closeRatingModal()" class="w-full bg-gray-800 hover:bg-gray-700 text-white font-bold py-3 rounded-xl transition-colors">ZURÜCK</button>
         </div>
     </div>
 
+    <!-- Years Modal -->
+    <div id="yearsModal" class="fixed inset-0 bg-black/80 hidden z-40 justify-center items-center p-4 backdrop-blur-sm">
+        <div class="bg-gray-900 border border-gray-800 rounded-2xl max-w-sm w-full p-6 flex flex-col max-h-[80vh]">
+            <h2 class="text-xl font-bold mb-4 text-center text-gray-100">Jahr auswählen</h2>
+            <div id="yearsGrid" class="grid grid-cols-3 gap-2 mb-4 overflow-y-auto no-scrollbar">
+            </div>
+            <button onclick="closeYearsModal()" class="w-full bg-gray-800 hover:bg-gray-700 text-white font-bold py-3 rounded-xl transition-colors">ZURÜCK</button>
+        </div>
+    </div>
+    
     <div id="videoModal" class="fixed inset-0 bg-black/95 hidden z-50 flex flex-col justify-center items-center backdrop-blur-md">
         <button onclick="closePlayer()" class="absolute top-4 right-4 text-white hover:text-gray-400 p-2 z-50 bg-gray-900/50 rounded-full border border-gray-800 transition-colors cursor-pointer">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -94,14 +92,8 @@
             <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2 px-1">
                 <h3 id="videoTitle" class="text-white text-base md:text-lg font-bold truncate w-full sm:max-w-[60%]"></h3>
                 <div class="flex items-center gap-2 w-full sm:w-auto justify-end">
-                    <button id="modalCopyBtn" onclick="copyVideoUrl()" 
-                            class="hidden bg-gray-800 hover:bg-gray-700 text-gray-300 px-3 py-1.5 rounded-xl text-xs font-bold transition-all items-center gap-1.5 cursor-pointer border border-gray-700 shadow-lg whitespace-nowrap">
-                        🔗 Link kopieren
-                    </button>
-                    <button id="modalDownloadBtn" onclick="triggerNativeDownload()" 
-                       class="hidden bg-emerald-600 hover:bg-emerald-700 text-white px-4 py-1.5 rounded-xl text-xs font-bold transition-all items-center gap-1.5 cursor-pointer shadow-lg whitespace-nowrap">
-                        📥 Download
-                    </button>
+                    <button id="modalCopyBtn" onclick="copyVideoUrl()" class="hidden bg-gray-800 hover:bg-gray-700 text-gray-300 px-3 py-1.5 rounded-xl text-xs font-bold transition-all items-center gap-1.5 cursor-pointer border border-gray-700 shadow-lg whitespace-nowrap">🔗 Link kopieren</button>
+                    <button id="modalDownloadBtn" onclick="triggerNativeDownload()" class="hidden bg-emerald-600 hover:bg-emerald-700 text-white px-4 py-1.5 rounded-xl text-xs font-bold transition-all items-center gap-1.5 cursor-pointer shadow-lg whitespace-nowrap">📥 Download</button>
                 </div>
             </div>
             <div class="relative w-full aspect-video bg-black rounded-2xl overflow-hidden border border-gray-800 shadow-2xl">
@@ -117,38 +109,35 @@
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
                 </svg>
             </button>
-            
             <div class="overflow-y-auto flex-1 no-scrollbar">
                 <div id="newsModalImageContainer" class="w-full aspect-video bg-gray-950 relative hidden">
                     <img id="newsModalImage" src="" alt="" class="w-full h-full object-cover">
                     <div class="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent"></div>
                 </div>
-                
                 <div class="p-5 space-y-4">
                     <div class="flex items-center gap-2 text-xs font-semibold text-blue-400">
                         <span id="newsModalMetaChannel"></span>
                         <span class="text-gray-600">·</span>
                         <span id="newsModalMetaDate" class="text-gray-500"></span>
                     </div>
-                    
                     <h2 id="newsModalTitle" class="text-xl md:text-2xl font-bold text-gray-100 leading-tight"></h2>
                     <hr class="border-gray-800">
                     <div id="newsModalContent" class="text-gray-300 text-sm md:text-base leading-relaxed whitespace-pre-line font-light"></div>
                 </div>
             </div>
-            
             <div class="p-4 bg-gray-950 border-t border-gray-800 flex justify-between items-center gap-3">
-                <a id="newsModalExternalLink" href="#" target="_blank" rel="noopener noreferrer" 
-                   class="bg-gray-900 hover:bg-gray-800 text-gray-400 hover:text-white px-4 py-2 rounded-xl text-xs font-bold transition-all border border-gray-800 flex items-center gap-1.5 shadow-lg">
-                    🌐 Original-Link
-                </a>
-                <button onclick="closeNewsModal()" class="bg-blue-600 hover:bg-blue-700 text-white px-5 py-2 rounded-xl text-xs font-bold transition-all shadow-lg cursor-pointer">
-                    Schließen
-                </button>
+                <a id="newsModalExternalLink" href="#" target="_blank" rel="noopener noreferrer" class="bg-gray-900 hover:bg-gray-800 text-gray-400 hover:text-white px-4 py-2 rounded-xl text-xs font-bold transition-all border border-gray-800 flex items-center gap-1.5 shadow-lg">🌐 Original-Link</a>
+                <button onclick="closeNewsModal()" class="bg-blue-600 hover:bg-blue-700 text-white px-5 py-2 rounded-xl text-xs font-bold transition-all shadow-lg cursor-pointer">Schließen</button>
             </div>
         </div>
     </div>
 
+    <button id="btnBackToTop" class="fixed bottom-6 right-6 z-50 hidden bg-blue-600 hover:bg-blue-700 text-white p-3 rounded-full shadow-xl transition-all duration-300 border border-blue-500" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 15l7-7 7 7" />
+        </svg>
+    </button>
+    
     <script>
         const TMDB_API_KEY = '60b3801a9e76b5706ee2a432f06423e6';
         const MEDIATHEK_URL = 'https://mediathekviewweb.de/api/query';
@@ -178,6 +167,16 @@
         let activeDownloadUrl = ''; 
         const CHUNK_SIZE = 60; 
 
+        function openRatingModal() { document.getElementById('ratingModal').style.display = 'flex'; }
+        function closeRatingModal() { document.getElementById('ratingModal').style.display = 'none'; }
+        
+        function applyRatingFilter(min, max) {
+            currentGenre = `Rating: ${min}`;
+            document.getElementById('ratingModal').style.display = 'none';
+            setActiveGenreStyling();
+            filterResults();
+        }
+
         function cleanTitle(title) {
             let yearMatch = title.match(/(\d{4})/);
             let year = yearMatch ? yearMatch[1] : 'None';
@@ -205,7 +204,7 @@
         }
 
         async function fetchAllData() {
-            document.getElementById('scanner').classList.remove('hidden');
+            document.getElementById('scanner')?.classList.remove('hidden');
             const seenUrls = new Set();
             const seenTitles = new Set();
             let tempResults = [];
@@ -283,7 +282,7 @@
 
         async function fetchLiveTvData() {
             if (liveTvChannels.length > 0) return;
-            document.getElementById('scanner').classList.remove('hidden');
+            document.getElementById('scanner')?.classList.remove('hidden');
             
             try {
                 const res = await fetch(IPTV_URL);
@@ -319,13 +318,13 @@
             } catch (err) {
                 console.error("Fehler beim IPTV-Parsing:", err);
             } finally {
-                document.getElementById('scanner').classList.add('hidden');
+                document.getElementById('scanner')?.classList.add('hidden');
             }
         }
 
         async function fetchNewsData() {
             if (newsArticles.length > 0) return;
-            document.getElementById('scanner').classList.remove('hidden');
+            document.getElementById('scanner')?.classList.remove('hidden');
             
             try {
                 const res = await fetch(NEWS_URL);
@@ -334,8 +333,6 @@
                 newsArticles = data.map((item, index) => {
                     const teaser = item.description || item.plot || item.summary || '';
                     const bodyText = item.content || item.body || item.text || teaser || 'Kein Text verfügbar.';
-                    
-                    // Verhindert identische/leere Links bei News-Einträgen
                     const fallbackUrl = item.link || item.url || `#news-art-${index}`;
 
                     return {
@@ -355,7 +352,7 @@
             } catch (err) {
                 console.error("Fehler beim News-Abruf:", err);
             } finally {
-                document.getElementById('scanner').classList.add('hidden');
+                document.getElementById('scanner')?.classList.add('hidden');
             }
         }
 
@@ -460,11 +457,11 @@
             const workers = Array.from({ length: CONCURRENCY_LIMIT }, worker);
             await Promise.all(workers);
             updateGenreCounts();
-            document.getElementById('scanner').classList.add('hidden');
+            document.getElementById('scanner')?.classList.add('hidden');
         }
 
         function getGenreCounts() {
-            const counts = { "Alle": 0, "Sonstige": 0, "Nach Jahren": 0, "⭐ Favoriten": 0 };
+            const counts = { "Alle": 0, "Sonstige": 0, "Nach Jahren": 0, "Bewertung": 0, "⭐ Favoriten": 0 };
             Object.values(GENRES_MAP).forEach(g => counts[g] = 0);
 
             let currentSet = allMovies;
@@ -479,6 +476,9 @@
                 if (currentView === 'mediathek') {
                     if (m.year && m.year !== 'None' && parseInt(m.year) > 1900) {
                         counts["Nach Jahren"]++;
+                    }
+                    if (m.rating && m.rating !== 'N/A' && parseFloat(m.rating) > 0) {
+                         counts["Bewertung"]++;
                     }
                     if (!m.genres_list || m.genres_list.includes('Sonstige')) {
                         counts["Sonstige"]++;
@@ -504,7 +504,7 @@
             let genres = [];
             if (currentView === 'mediathek') {
                 const sortedGenres = Object.values(GENRES_MAP).sort();
-                genres = ['Alle', 'Nach Jahren', '⭐ Favoriten', ...sortedGenres, 'Sonstige'];
+                genres = ['Alle', 'Nach Jahren', 'Bewertung', '⭐ Favoriten', ...sortedGenres, 'Sonstige'];
             } else if (currentView === 'news') {
                 const newsCats = new Set();
                 newsArticles.forEach(m => {
@@ -521,19 +521,26 @@
                 const cleanId = g.replace(/\s+/g, '').replace(/⭐/g, 'Fav').replace(/[^a-zA-Z0-9]/g, '');
                 btn.id = `genre-btn-${cleanId}`;
                 
-                const isActive = currentGenre === g || (g === 'Nach Jahren' && currentGenre.startsWith('Jahr: '));
+                const isActive = currentGenre === g || (g === 'Nach Jahren' && currentGenre.startsWith('Jahr: ')) || (g === 'Bewertung' && currentGenre.startsWith('Rating: '));
+                
                 btn.className = `flex-shrink-0 min-w-[120px] px-4 py-2 rounded-xl text-center flex flex-col justify-center transition-all cursor-pointer border ${
                     isActive ? 'bg-blue-600 border-blue-500 text-white font-bold' : 'bg-gray-900 border-gray-800 text-gray-300 hover:border-gray-700'
                 }`;
 
+                let displayLabel = g;
+                if (g === 'Bewertung' && currentGenre.startsWith('Rating: ')) displayLabel = currentGenre;
+                if (g === 'Nach Jahren' && currentGenre.startsWith('Jahr: ')) displayLabel = currentGenre.replace('Jahr: ', 'Jahr ');
+
                 btn.innerHTML = `
-                    <span class="text-sm tracking-wide">${g === currentGenre.replace('Jahr: ', 'Jahr ') ? currentGenre : g}</span>
+                    <span class="text-sm tracking-wide">${displayLabel}</span>
                     <span class="text-[10px] opacity-60 font-light genre-count">${counts[g] !== undefined ? '(' + counts[g] + ')' : '(0)'}</span>
                 `;
 
                 btn.onclick = () => {
                     if (g === 'Nach Jahren') {
                         openYearsMenu();
+                    } else if (g === 'Bewertung') {
+                        openRatingModal();
                     } else {
                         currentGenre = g;
                         setActiveGenreStyling();
@@ -560,7 +567,7 @@
             let genres = [];
             if (currentView === 'mediathek') {
                 const sortedGenres = Object.values(GENRES_MAP).sort();
-                genres = ['Alle', 'Nach Jahren', '⭐ Favoriten', ...sortedGenres, 'Sonstige'];
+                genres = ['Alle', 'Nach Jahren', 'Bewertung', '⭐ Favoriten', ...sortedGenres, 'Sonstige'];
             } else if (currentView === 'news') {
                 const newsCats = new Set();
                 newsArticles.forEach(m => {
@@ -576,16 +583,19 @@
                 const btn = document.getElementById(`genre-btn-${cleanId}`);
                 if (!btn) return;
                 
-                const isActive = currentGenre === g || (g === 'Nach Jahren' && currentGenre.startsWith('Jahr: '));
+                const isActive = currentGenre === g || (g === 'Nach Jahren' && currentGenre.startsWith('Jahr: ')) || (g === 'Bewertung' && currentGenre.startsWith('Rating: '));
                 
                 if (isActive) {
                     btn.className = "flex-shrink-0 min-w-[120px] px-4 py-2 rounded-xl text-center flex flex-col justify-center transition-all cursor-pointer border bg-blue-600 border-blue-500 text-white font-bold";
                     if (currentGenre.startsWith('Jahr: ')) {
+                        btn.querySelector('span').innerText = currentGenre.replace('Jahr: ', 'Jahr ');
+                    } else if (currentGenre.startsWith('Rating: ')) {
                         btn.querySelector('span').innerText = currentGenre;
                     }
                 } else {
                     btn.className = "flex-shrink-0 min-w-[120px] px-4 py-2 rounded-xl text-center flex flex-col justify-center transition-all cursor-pointer border bg-gray-900 border-gray-800 text-gray-300 hover:border-gray-700";
                     if (g === 'Nach Jahren') btn.querySelector('span').innerText = 'Nach Jahren';
+                    if (g === 'Bewertung') btn.querySelector('span').innerText = 'Bewertung';
                 }
             });
         }
@@ -622,22 +632,28 @@
 
         function filterResults() {
             const query = document.getElementById('searchBar').value.toLowerCase().trim();
-            
             let currentSet = allMovies;
-            if (currentView === 'livetv') currentSet = liveTvChannels;
-            if (currentView === 'news') currentSet = newsArticles;
             
             moviesToRender = currentSet.filter(m => {
-                if (query && !m.title.toLowerCase().includes(query) && !m.plot.toLowerCase().includes(query)) {
-                    return false;
-                }
+                if (query && !m.title.toLowerCase().includes(query) && !m.plot.toLowerCase().includes(query)) return false;
                 if (currentGenre === 'Alle') return true;
+                
+                if (currentGenre.startsWith('Rating: ')) {
+                    const min = parseFloat(currentGenre.replace('Rating: ', ''));
+                    const rat = parseFloat(m.rating);
+                    return !isNaN(rat) && rat >= min;
+                }
                 if (currentGenre === '⭐ Favoriten') return favoriteUrls.includes(m.video_url);
                 
                 if (currentView === 'mediathek') {
                     if (currentGenre === 'Sonstige') return !m.genres_list || m.genres_list.includes('Sonstige');
                     if (currentGenre.startsWith('Jahr: ')) {
                         return m.year === currentGenre.replace('Jahr: ', '');
+                    }
+                    if (currentGenre.startsWith('Rating: ')) {
+                        const min = parseFloat(currentGenre.replace('Rating: ', ''));
+                        const rat = parseFloat(m.rating);
+                        return !isNaN(rat) && rat >= min;
                     }
                     return m.genres_list && m.genres_list.includes(currentGenre);
                 }
@@ -787,7 +803,6 @@
             }
         }
 
-        // Erwartet jetzt zusaetzlich das genaue cardId-Format
         function toggleFavorite(url, cardId, event) {
             if (event) event.stopPropagation();
             const index = favoriteUrls.indexOf(url);
@@ -834,7 +849,6 @@
             }
 
             const extLink = document.getElementById('newsModalExternalLink');
-            // Zeigt den Link nur an, wenn es ein echter externer Link (http) ist
             if (article.video_url && article.video_url.startsWith('http')) {
                 extLink.href = article.video_url;
                 extLink.classList.remove('hidden');
@@ -1079,16 +1093,24 @@
             deferredPrompt = null;
             document.getElementById('btnInstallPWA').classList.add('hidden');
         });   
-        // TV-Fernbedienungs-Navigation für die Genre-Leiste
+        
         document.getElementById('genreLeiste').addEventListener('focusin', (e) => {
             if (e.target.tagName === 'BUTTON') {
                 e.target.scrollIntoView({
                     behavior: 'smooth',
                     block: 'nearest',
-                    inline: 'center' // Bringt den Button in die Mitte des Bildschirms
+                    inline: 'center'
                 });
             }
-        });     
+        });
+        const backToTopBtn = document.getElementById('btnBackToTop');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                backToTopBtn.classList.remove('hidden');
+            } else {
+                backToTopBtn.classList.add('hidden');
+            }
+        });
     </script>
 </body>
 </html>
