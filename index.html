@@ -171,11 +171,13 @@
         function closeRatingModal() { document.getElementById('ratingModal').style.display = 'none'; }
         
         function applyRatingFilter(min, max) {
-            currentGenre = `Rating: ${min}`;
+            // Den Bindestrich und die max-Variable hinzufügen:
+            currentGenre = `Rating: ${min}-${max}`; 
             document.getElementById('ratingModal').style.display = 'none';
             setActiveGenreStyling();
             filterResults();
         }
+
 
         function cleanTitle(title) {
             let yearMatch = title.match(/(\d{4})/);
@@ -634,26 +636,29 @@
             const query = document.getElementById('searchBar').value.toLowerCase().trim();
             let currentSet = allMovies;
             
+            // Richtiges Array für die Ansichten wählen
+            if (currentView === 'livetv') currentSet = liveTvChannels;
+            if (currentView === 'news') currentSet = newsArticles;
+            
+            // 1. SCHRITT: Filtern
             moviesToRender = currentSet.filter(m => {
                 if (query && !m.title.toLowerCase().includes(query) && !m.plot.toLowerCase().includes(query)) return false;
                 if (currentGenre === 'Alle') return true;
                 
                 if (currentGenre.startsWith('Rating: ')) {
-                    const min = parseFloat(currentGenre.replace('Rating: ', ''));
+                    const range = currentGenre.replace('Rating: ', '').split('-');
+                    const min = parseFloat(range[0]);
+                    const max = parseFloat(range[1]);
                     const rat = parseFloat(m.rating);
-                    return !isNaN(rat) && rat >= min;
+                    return !isNaN(rat) && rat >= min && rat <= max;
                 }
+                
                 if (currentGenre === '⭐ Favoriten') return favoriteUrls.includes(m.video_url);
                 
                 if (currentView === 'mediathek') {
                     if (currentGenre === 'Sonstige') return !m.genres_list || m.genres_list.includes('Sonstige');
                     if (currentGenre.startsWith('Jahr: ')) {
                         return m.year === currentGenre.replace('Jahr: ', '');
-                    }
-                    if (currentGenre.startsWith('Rating: ')) {
-                        const min = parseFloat(currentGenre.replace('Rating: ', ''));
-                        const rat = parseFloat(m.rating);
-                        return !isNaN(rat) && rat >= min;
                     }
                     return m.genres_list && m.genres_list.includes(currentGenre);
                 }
@@ -662,18 +667,43 @@
                 }
                 return true;
             });
-
+        
+            // 2. SCHRITT: Sortieren (NEU)
+            if (currentGenre.startsWith('Rating: ')) {
+                // Nach Bewertung absteigend sortieren (Höchste Bewertung zuerst)
+                moviesToRender.sort((a, b) => {
+                    const ratingA = parseFloat(a.rating) || 0;
+                    const ratingB = parseFloat(b.rating) || 0;
+                    return ratingB - ratingA; 
+                });
+            } else if (currentGenre.startsWith('Jahr: ')) {
+                 // Bonus: Wenn du nach einem Jahr filterst, sortieren wir die Ergebnisse 
+                 // in diesem Jahr ebenfalls nach der besten Bewertung.
+                 moviesToRender.sort((a, b) => {
+                    const ratingA = parseFloat(a.rating) || 0;
+                    const ratingB = parseFloat(b.rating) || 0;
+                    return ratingB - ratingA;
+                });
+            } else {
+                // Bei "Alle" oder "Action", "Drama" etc. belassen wir es bei der 
+                // alphabetischen Sortierung, die wir beim Start festgelegt haben.
+                // Falls du Genres AUCH nach Bewertung sortieren willst, 
+                // lösche das "else if" und packe alles zusammen!
+            }
+        
+            // 3. SCHRITT: Rendern
             const grid = document.getElementById('movieGrid');
             grid.innerHTML = '';
-
+        
             if (moviesToRender.length === 0) {
                 grid.innerHTML = `<div class="text-center col-span-full py-12 text-gray-500">Keine Inhalte für diese Auswahl vorhanden.</div>`;
                 return;
             }
-
+        
             renderNextChunk(0);
             setupInfiniteScroll();
         }
+
 
         function togglePlot(element) {
             element.classList.toggle('line-clamp-3');
