@@ -13,3 +13,5 @@ Der Speed-Vorteil: Weil alles in einer lokalen Datenbank zwischengespeichert wir
 ​Alles drin: Neben Spielfilmen (sortiert nach Genre, Jahr oder A–Z) sind auch die wichtigsten Live-TV-Sender direkt am Start.
 
 ​Kurz gesagt: Es nimmt das, wofür du ohnehin bezahlst, und packt es in eine Oberfläche, die am Fernseher endlich richtig Spaß macht.
+
+Beste Grüße an mr-evil1, an Kangool, an Eragon, an Stonetester ....
