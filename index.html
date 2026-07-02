@@ -284,6 +284,7 @@
                         if (!cleanName) return;
 
                         const normTitle = cleanName.toLowerCase().trim();
+                        if (normTitle === 'nö') return; 
                         if (seenTitles.has(normTitle)) return;
                         if (m.duration < 4680) return;
 
