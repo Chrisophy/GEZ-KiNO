@@ -18,7 +18,7 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 </head>
-<body class="p-4 md:p-6 max-w-7xl mx-auto">
+<body class="p-4 md:p-6 max-w-7xl mx-auto flex flex-col min-h-screen">
     
     <div id="scanner" class="fixed inset-0 bg-black/50 z-50 flex items-center justify-center hidden">
         <div class="bg-gray-900 p-6 rounded-2xl border border-gray-800 text-white font-bold animate-pulse">
@@ -26,38 +26,40 @@
         </div>
     </div>
 
-    <header class="mb-4 flex flex-col gap-4">
-        <div id="banner-container" 
-             class="w-full rounded-2xl overflow-hidden shadow-xl border border-gray-800 bg-gray-950 relative block">
-            <img src="banner.png" alt="[GEZ] Kino Banner" class="w-full h-auto block select-none pointer-events-none">
-            <button type="button" 
-                    onclick="playMovieRoulette()" 
-                    id="btnRoulette"
-                    class="absolute inset-0 p-0 m-0 border-none bg-black/30 hover:bg-black/10 cursor-pointer flex flex-col items-center justify-center gap-1 focus:outline-none transition-all group"
-                    aria-label="Film-Roulette starten">
-            </button>
-        </div>
-
-        
-        <div class="flex flex-col sm:flex-row justify-between items-center gap-4 w-full">
-            <div class="flex flex-wrap gap-2 bg-gray-950 p-1.5 rounded-2xl border border-gray-800 w-full sm:w-auto">
-                <button id="btnMediathek" onclick="switchView('mediathek')" class="px-4 py-2.5 rounded-xl bg-blue-600 text-white font-bold shadow-lg transition-all cursor-pointer text-sm flex-1 sm:flex-none text-center">🍿 Filme</button>
-                <button id="btnLiveTv" onclick="switchView('livetv')" class="px-4 py-2.5 rounded-xl bg-gray-900 border border-gray-800 text-gray-400 hover:text-white transition-all cursor-pointer text-sm flex-1 sm:flex-none text-center">📺 Live TV</button>
-                <button id="btnNews" onclick="switchView('news')" class="px-4 py-2.5 rounded-xl bg-gray-900 border border-gray-800 text-gray-400 hover:text-white transition-all cursor-pointer text-sm flex-1 sm:flex-none text-center">📰 News</button>
-                <button id="btnInstallPWA" class="hidden px-4 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold shadow-lg transition-all cursor-pointer text-sm flex-1 sm:flex-none text-center animate-pulse">📲 App laden</button>        
-            </div>            
-            <div class="w-full sm:w-1/2 flex gap-2">
-                <input type="text" id="searchBar" placeholder="Suchen..." class="bg-gray-900 text-white px-4 py-2.5 rounded-xl w-full focus:outline-none focus:ring-2 focus:ring-blue-500 border border-gray-800 shadow-inner text-sm">
+    <div class="flex-grow">
+        <header class="mb-4 flex flex-col gap-4">
+            <div id="banner-container" 
+                 class="w-full rounded-2xl overflow-hidden shadow-xl border border-gray-800 bg-gray-950 relative block">
+                <img src="banner.png" alt="[GEZ] Kino Banner" class="w-full h-auto block select-none pointer-events-none">
+                <button type="button" 
+                        onclick="playMovieRoulette()" 
+                        id="btnRoulette"
+                        class="absolute inset-0 p-0 m-0 border-none bg-black/30 hover:bg-black/10 cursor-pointer flex flex-col items-center justify-center gap-1 focus:outline-none transition-all group"
+                        aria-label="Film-Roulette starten">
+                </button>
             </div>
-        </div>
-    </header>
 
-    <nav id="genreLeiste" class="flex gap-3 overflow-x-auto pb-3 mb-4 no-scrollbar scroll-smooth"></nav>
+            <div class="flex flex-col sm:flex-row justify-between items-center gap-4 w-full">
+                <div class="flex flex-wrap gap-2 bg-gray-950 p-1.5 rounded-2xl border border-gray-800 w-full sm:w-auto">
+                    <button id="btnMediathek" onclick="switchView('mediathek')" class="px-4 py-2.5 rounded-xl bg-blue-600 text-white font-bold shadow-lg transition-all cursor-pointer text-sm flex-1 sm:flex-none text-center">🍿 Filme</button>
+                    <button id="btnLiveTv" onclick="switchView('livetv')" class="px-4 py-2.5 rounded-xl bg-gray-900 border border-gray-800 text-gray-400 hover:text-white transition-all cursor-pointer text-sm flex-1 sm:flex-none text-center">📺 Live TV</button>
+                    <button id="btnNews" onclick="switchView('news')" class="px-4 py-2.5 rounded-xl bg-gray-900 border border-gray-800 text-gray-400 hover:text-white transition-all cursor-pointer text-sm flex-1 sm:flex-none text-center">📰 News</button>
+                    <button id="btnInstallPWA" class="hidden px-4 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold shadow-lg transition-all cursor-pointer text-sm flex-1 sm:flex-none text-center animate-pulse">📲 App laden</button>        
+                </div>            
+                <div class="w-full sm:w-1/2 flex gap-2">
+                    <input type="text" id="searchBar" placeholder="Film | Regie | Schauspieler suchen..." class="bg-gray-900 text-white px-4 py-2.5 rounded-xl w-full focus:outline-none focus:ring-2 focus:ring-blue-500 border border-gray-800 shadow-inner text-sm">
+                </div>
+            </div>
+        </header>
 
-    <main id="movieGrid" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4">
-        <div id="statusMessage" class="text-center col-span-full py-12 text-gray-400 animate-pulse">Initialisiere...</div>
-    </main>
+        <nav id="genreLeiste" class="flex gap-3 overflow-x-auto pb-3 mb-4 no-scrollbar scroll-smooth"></nav>
 
+        <main id="movieGrid" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4">
+            <div id="statusMessage" class="text-center col-span-full py-12 text-gray-400 animate-pulse">Initialisiere...</div>
+        </main>
+    </div>
+
+    <!-- Modals -->
     <div id="ratingModal" class="fixed inset-0 bg-black/80 hidden z-40 justify-center items-center p-4 backdrop-blur-sm">
         <div class="bg-gray-900 border border-gray-800 rounded-2xl max-w-sm w-full p-6 flex flex-col">
             <h2 class="text-xl font-bold mb-4 text-center text-gray-100">Mindestbewertung</h2>
@@ -123,9 +125,13 @@
                     <div id="rouletteModalGenres" class="flex flex-wrap gap-1 mt-2"></div>
                 </div> 
             </div> 
-            <hr class="border-gray-800 mb-4">
+            <hr class="border-gray-800 mb-3">
             
-            <p id="rouletteModalPlot" class="text-gray-300 text-sm leading-relaxed max-h-40 overflow-y-auto no-scrollbar font-light mb-5 whitespace-pre-line"></p>
+            <div class="max-h-48 overflow-y-auto no-scrollbar space-y-3 pr-1 mb-5">
+                <p id="rouletteModalPlot" class="text-gray-300 text-sm leading-relaxed font-light whitespace-pre-line"></p>
+                <div id="rouletteModalCredits" class="text-[11px] bg-gray-950 p-2 rounded-xl border border-gray-800/60 space-y-1"></div>
+            </div>
+
             <div class="flex gap-3">
                 <button onclick="closeRouletteModal(); playMovieRoulette();" class="flex-1 bg-gray-800 hover:bg-gray-700 text-white font-bold py-3 rounded-xl transition-colors text-sm cursor-pointer">
                     🔄 NOCHMAL
@@ -266,17 +272,12 @@
                     results.forEach(m => {
                         const url = m.url_video || '';
                         const title = m.title || '';
-                        const channel = m.channel || ''; // Den Sender laden
+                        const channel = m.channel || '';
                         if (!url || !title) return;
 
-                        // 1. Sender-Filter (zdf-tivi komplett ausschließen)
                         if (channel.toLowerCase().includes('zdf-tivi')) return;
-
-                        const lowerTitle = title.toLowerCase();
-                        // Alternativ: Falls "tivi" im Titel steht, auch kicken
-                        if (lowerTitle.includes('zdf-tivi') || lowerTitle.includes('tivi')) return;
-
-                        if (/audiodeskription|audio description|ad version|hörfilm|deskription|barrierefrei/.test(lowerTitle)) return;
+                        if (title.toLowerCase().includes('zdf-tivi') || title.toLowerCase().includes('tivi')) return;
+                        if (/audiodeskription|audio description|ad version|hörfilm|deskription|barrierefrei/.test(title.toLowerCase())) return;
 
                         if (seenUrls.has(url)) return;
                         
@@ -297,6 +298,8 @@
                             year: year,
                             video_url: url,
                             plot: 'Lade Filminformationen...',
+                            director: '',
+                            actors: [],
                             rating: 'N/A',
                             thumb: 'placeholder.png', 
                             genres_list: ['Sonstige'],
@@ -347,6 +350,7 @@
                             year: 'LIVE',
                             video_url: '',
                             plot: 'Live-Stream des öffentlich-rechtlichen Rundfunks über das Kodinerds IPTV-Projekt.',
+                            director: '', actors: [],
                             rating: 'TV',
                             thumb: logoMatch ? logoMatch[1] : 'placeholder.png',
                             genres_list: ['Live TV'],
@@ -387,6 +391,7 @@
                         video_url: fallbackUrl,
                         plot: teaser || 'Klicke auf Lesen, um den vollen Artikel zu öffnen.',
                         full_text: bodyText,
+                        director: '', actors: [],
                         rating: 'NEWS',
                         thumb: item.image || item.thumbnail || item.thumb || 'placeholder.png',
                         genres_list: item.genres_list || [item.category || 'News'],
@@ -423,7 +428,7 @@
 
             if (view === 'mediathek') {
                 btnMedia.className = activeClass;
-                searchBar.placeholder = "Film suchen...";
+                searchBar.placeholder = "Film | Regie | Schauspieler suchen...";
                 renderGenreLeiste();
                 filterResults();
             } else if (view === 'livetv') {
@@ -454,7 +459,7 @@
                     const movie = allMovies[currentIdx];
                     if (!movie) break;
 
-                    let url = `https://api.themoviedb.org/3/search/movie?api_key=${TMDB_API_KEY}&query=${encodeURIComponent(movie.search)}&language=de-DE&include_adult=false`;
+                    let url = `https://api.themoviedb.org/3/search/movie?api_key=${TMDB_API_KEY}&query=${encodeURIComponent(movie.search)}&language=de-DE&include_adult=false&append_to_response=credits`;
                     if (movie.year !== 'None') url += `&year=${movie.year}`;
 
                     try {
@@ -468,10 +473,21 @@
                         
                         if (data.results && data.results.length > 0) {
                             const tmdb = data.results[0];
+                            
+                            let creditsUrl = `https://api.themoviedb.org/3/movie/${tmdb.id}?api_key=${TMDB_API_KEY}&language=de-DE&append_to_response=credits`;
+                            const detailsRes = await fetch(creditsUrl);
+                            const detailsData = await detailsRes.json();
+
                             movie.plot = tmdb.overview || 'Keine Beschreibung verfügbar.';
                             movie.rating = tmdb.vote_average ? tmdb.vote_average.toFixed(1) : 'N/A';
                             movie.thumb = tmdb.poster_path ? `https://image.tmdb.org/t/p/w342${tmdb.poster_path}` : 'placeholder.png';
                             
+                            if (detailsData.credits) {
+                                const dir = detailsData.credits.crew.find(c => c.job === 'Director');
+                                movie.director = dir ? dir.name : '';
+                                movie.actors = detailsData.credits.cast.slice(0, 3).map(a => a.name);
+                            }
+
                             if (tmdb.release_date && movie.year === 'None') {
                                 movie.year = tmdb.release_date.split('-')[0];
                             }
@@ -586,6 +602,8 @@
                     } else if (g === 'Bewertung') {
                         openRatingModal();
                     } else {
+                        currentGenre = 'Alle';
+                        document.getElementById('searchBar').value = '';
                         currentGenre = g;
                         setActiveGenreStyling();
                         filterResults();
@@ -674,6 +692,34 @@
             document.getElementById('yearsModal').style.display = 'none';
         }
 
+        function searchPerson(name) {
+            closeRouletteModal();
+            if (currentView !== 'mediathek') {
+                switchView('mediathek');
+            }
+            currentGenre = 'Alle';
+            setActiveGenreStyling();
+            const searchBar = document.getElementById('searchBar');
+            searchBar.value = name;
+            filterResults();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        function generateCreditsHtml(director, actors) {
+            if (!director && (!actors || actors.length === 0)) return '';
+            
+            let html = '<div class="space-y-0.5">';
+            if (director) {
+                html += `<div><span class="text-gray-500">Regie:</span> <button onclick="searchPerson('${director.replace(/'/g, "\\'")}')" class="text-blue-400 hover:underline cursor-pointer text-left focus:outline-none">${director}</button></div>`;
+            }
+            if (actors && actors.length > 0) {
+                const actorsLinks = actors.map(a => `<button onclick="searchPerson('${a.replace(/'/g, "\\'")}')" class="text-blue-400 hover:underline cursor-pointer text-left focus:outline-none">${a}</button>`).join(', ');
+                html += `<div><span class="text-gray-500">Besetzung:</span> ${actorsLinks}</div>`;
+            }
+            html += '</div>';
+            return html;
+        }
+
         function filterResults() {
             const query = document.getElementById('searchBar').value.toLowerCase().trim();
             let currentSet = allMovies;
@@ -682,7 +728,15 @@
             if (currentView === 'news') currentSet = newsArticles;
             
             moviesToRender = currentSet.filter(m => {
-                if (query && !m.title.toLowerCase().includes(query) && !m.plot.toLowerCase().includes(query)) return false;
+                let matchQuery = true;
+                if (query) {
+                    const matchesTitle = m.title.toLowerCase().includes(query);
+                    const matchesPlot = m.plot.toLowerCase().includes(query);
+                    const matchesDirector = m.director ? m.director.toLowerCase().includes(query) : false;
+                    const matchesActors = m.actors ? m.actors.some(a => a.toLowerCase().includes(query)) : false;
+                    matchQuery = matchesTitle || matchesPlot || matchesDirector || matchesActors;
+                }
+                if (!matchQuery) return false;
                 if (currentGenre === 'Alle') return true;
                 
                 if (currentGenre.startsWith('Rating: ')) {
@@ -730,6 +784,10 @@
 
         function togglePlot(element) {
             element.classList.toggle('line-clamp-3');
+            const inlineCredits = element.nextElementSibling;
+            if(inlineCredits && inlineCredits.classList.contains('movie-credits-box')) {
+                inlineCredits.classList.toggle('hidden');
+            }
         }
 
         function renderNextChunk(startIndex) {
@@ -766,7 +824,16 @@
                 if (isNews) { badgeClass = "text-blue-400"; badgeText = "📰 NEWS"; }
 
                 const plotClickAction = isNews ? `openNewsModal('${m.id}')` : 'togglePlot(this)';
-                const plotTitleHint = isNews ? 'Klicken, um den ganzen Artikel zu lesen' : 'Klicken, um die Beschreibung zu erweitern';
+                const plotTitleHint = isNews ? 'Klicken, um den ganzen Artikel zu lesen' : 'Klicken, um die Beschreibung & Credits zu erweitern';
+
+                let creditsHtml = '';
+                if (!isTv && !isNews && (m.director || (m.actors && m.actors.length > 0))) {
+                    creditsHtml = `
+                        <div class="movie-credits-box hidden text-[10px] text-gray-400 bg-gray-950 p-1.5 rounded mt-2 border border-gray-800/40">
+                            ${generateCreditsHtml(m.director, m.actors)}
+                        </div>
+                    `;
+                }
 
                 card.innerHTML = `
                     <div class="relative aspect-[2/3] w-full bg-gray-950 overflow-hidden flex items-center justify-center p-4">
@@ -786,12 +853,13 @@
                             <p class="text-gray-500 text-[11px] mb-2">${m.channel} · ${m.year}</p>
                             
                             <p onclick="${plotClickAction}" 
-                               class="text-gray-400 text-xs line-clamp-3 mb-3 font-light cursor-pointer hover:text-gray-200 transition-colors" 
+                               class="text-gray-400 text-xs line-clamp-3 mb-1 font-light cursor-pointer hover:text-gray-200 transition-colors" 
                                title="${plotTitleHint}">
                                ${m.plot}
                             </p>
+                            ${creditsHtml}
                         </div>
-                        <div class="space-y-2">
+                        <div class="space-y-2 mt-3">
                             <div class="flex flex-wrap gap-1 mb-2">
                                 ${m.genres_list.map(g => `<span class="bg-gray-800 text-gray-400 text-[10px] px-1.5 py-0.5 rounded">${g}</span>`).join('')}
                             </div>
@@ -853,6 +921,16 @@
             const genreBox = card.querySelector('.flex-wrap');
             if (genreBox) {
                 genreBox.innerHTML = m.genres_list.map(g => `<span class="bg-gray-800 text-gray-400 text-[10px] px-1.5 py-0.5 rounded">${g}</span>`).join('');
+            }
+
+            if (m.director || (m.actors && m.actors.length > 0)) {
+                let creditsBox = card.querySelector('.movie-credits-box');
+                if(!creditsBox) {
+                    creditsBox = document.createElement('div');
+                    creditsBox.className = "movie-credits-box hidden text-[10px] text-gray-400 bg-gray-950 p-1.5 rounded mt-2 border border-gray-800/40";
+                    plotText.parentNode.insertBefore(creditsBox, plotText.nextSibling);
+                }
+                creditsBox.innerHTML = generateCreditsHtml(m.director, m.actors);
             }
         }
 
@@ -1059,6 +1137,14 @@
                     document.getElementById('rouletteModalRating').innerText = `★ ${luckyMovie.rating}`;
                     document.getElementById('rouletteModalMeta').innerText = `${luckyMovie.channel} · ${luckyMovie.year}`;
                     document.getElementById('rouletteModalPlot').innerText = luckyMovie.plot || 'Keine Beschreibung verfügbar.';
+
+                    const creditsContainer = document.getElementById('rouletteModalCredits');
+                    if (luckyMovie.director || (luckyMovie.actors && luckyMovie.actors.length > 0)) {
+                        creditsContainer.classList.remove('hidden');
+                        creditsContainer.innerHTML = generateCreditsHtml(luckyMovie.director, luckyMovie.actors);
+                    } else {
+                        creditsContainer.classList.add('hidden');
+                    }
 
                     const genreContainer = document.getElementById('rouletteModalGenres');
                     if (luckyMovie.genres_list && luckyMovie.genres_list.length > 0) {
