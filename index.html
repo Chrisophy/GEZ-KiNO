@@ -871,7 +871,7 @@
                 let badgeClass = "text-yellow-400";
                 let badgeText = `★ ${m.rating}`;
                 if (isTv) { badgeClass = "text-red-500"; badgeText = "🔴 LIVE"; }
-                if (isNews) { badgeClass = "text-blue-400"; badgeText = "?? NEWS"; }
+                if (isNews) { badgeClass = "text-blue-400"; badgeText = "Bild.de NEWS"; }
 
                 const plotClickAction = isNews ? `openNewsModal('${m.id}')` : 'togglePlot(this)';
                 const plotTitleHint = isNews ? 'Klicken, um den ganzen Artikel zu lesen' : 'Klicken, um die Beschreibung & Credits zu erweitern';
