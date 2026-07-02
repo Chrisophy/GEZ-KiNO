@@ -274,24 +274,31 @@
                         const title = m.title || '';
                         const channel = m.channel || '';
                         if (!url || !title) return;
-
+                
                         if (channel.toLowerCase().includes('zdf-tivi')) return;
                         if (title.toLowerCase().includes('zdf-tivi') || title.toLowerCase().includes('tivi')) return;
                         if (/audiodeskription|audio description|ad version|hörfilm|deskription|barrierefrei/.test(title.toLowerCase())) return;
-
+                
+                        if (/\b(folge|staffel|episode|ep\.|teil)\b/i.test(title)) return;
+                        
+                        if (/\(\d+(\s*[\/\-]\s*\d+)?\)/.test(title)) return; // Filtert (1) oder (1/3)
+                        if (/\b\d{1,2}\/\d{1,2}\b/.test(title)) return;
+                
                         if (seenUrls.has(url)) return;
                         
                         const { cleanName, year } = cleanTitle(title);
                         if (!cleanName) return;
-
+                
                         const normTitle = cleanName.toLowerCase().trim();
                         if (normTitle === 'nö') return; 
                         if (seenTitles.has(normTitle)) return;
+                        
+                        // Mindestlänge für Spielfilme (ca. 78 Minuten)
                         if (m.duration < 4680) return;
-
+                
                         seenUrls.add(url);
                         seenTitles.add(normTitle);
-
+                
                         tempResults.push({
                             title: cleanName,
                             search: cleanName,
@@ -307,6 +314,7 @@
                         });
                     });
                 });
+
 
                 allMovies = tempResults.sort((a, b) => a.title.localeCompare(b.title));
                 
@@ -447,9 +455,9 @@
                 filterResults();
             }
         }
-
+        
         async function hydrateWithTMDBParallel() {
-            const CONCURRENCY_LIMIT = 50;
+            const CONCURRENCY_LIMIT = 25;
             let movieIndex = 0;
             let loadedCount = 0;
 
@@ -459,22 +467,63 @@
                     const movie = allMovies[currentIdx];
                     if (!movie) break;
 
-                    let url = `https://api.themoviedb.org/3/search/movie?api_key=${TMDB_API_KEY}&query=${encodeURIComponent(movie.search)}&language=de-DE&include_adult=false&append_to_response=credits`;
-                    if (movie.year !== 'None') url += `&year=${movie.year}`;
-
+                    // 1. Versuch: Mit Jahr suchen (falls vorhanden)
+                    let movieUrl = `https://api.themoviedb.org/3/search/movie?api_key=${TMDB_API_KEY}&query=${encodeURIComponent(movie.search)}&language=de-DE&include_adult=false`;
+                    if (movie.year !== 'None') movieUrl += `&year=${movie.year}`;
+                    
                     try {
-                        const res = await fetch(url);
+                        let res = await fetch(movieUrl);
                         if (res.status === 429) {
                             movieIndex--;
                             await new Promise(resolve => setTimeout(resolve, 800));
                             continue;
                         }
-                        const data = await res.json();
-                        
-                        if (data.results && data.results.length > 0) {
-                            const tmdb = data.results[0];
-                            
-                            let creditsUrl = `https://api.themoviedb.org/3/movie/${tmdb.id}?api_key=${TMDB_API_KEY}&language=de-DE&append_to_response=credits`;
+                        let data = await res.json();
+                        let tmdb = null;
+                        let isTvShow = false;
+
+                        if ((!data.results || data.results.length === 0) && movie.year !== 'None') {
+                            let fallbackUrl = `https://api.themoviedb.org/3/search/movie?api_key=${TMDB_API_KEY}&query=${encodeURIComponent(movie.search)}&language=de-DE&include_adult=false`;
+                            const fallbackRes = await fetch(fallbackUrl);
+                            data = await fallbackRes.json();
+                        }
+
+                        if (!data.results || data.results.length === 0) {
+                            let tvUrl = `https://api.themoviedb.org/3/search/tv?api_key=${TMDB_API_KEY}&query=${encodeURIComponent(movie.search)}&language=de-DE&include_adult=false`;
+                            if (movie.year !== 'None') tvUrl += `&first_air_date_year=${movie.year}`;
+    
+                            const tvRes = await fetch(tvUrl);
+                            const tvData = await tvRes.json();
+                            if (tvData.results && tvData.results.length > 0) {
+                                tmdb = tvData.results[0];
+                                isTvShow = true;
+                            }
+                        }
+
+
+                        if (!tmdb && data.results && data.results.length > 0) {
+                            tmdb = data.results[0];
+                        }
+
+                        if (tmdb) {
+                            // --- ANTI-FALSCHZUORDNUNG-LOGIK (Speziell für Animation / Realfilme) ---
+                            // Falls TMDB "Animation" (16) liefert, wir aber im Titel/Plot klare Indizien für Realfilm haben
+                            if (tmdb.genre_ids && tmdb.genre_ids.includes(16)) {
+                                const lowerTitle = movie.title.toLowerCase();
+                                const lowerOverview = (tmdb.overview || "").toLowerCase();
+                                
+                                // Typische ARD/ZDF-Krimis/Dramen, die TMDB fälschlicherweise matcht
+                                const realFilmKeywords = ['tatort', 'polizeiruf', 'in aller freundschaft', 'rosenheim-cops', 'krimi', 'fernsehfilm', 'kommissar'];
+                                const isStrictlyRealfilm = realFilmKeywords.some(keyword => lowerTitle.includes(keyword) || lowerOverview.includes(keyword));
+                                
+                                if (isStrictlyRealfilm) {
+                                    tmdb.genre_ids = tmdb.genre_ids.filter(id => id !== 16);
+                                }
+                            }
+                            // -----------------------------------------------------------------------
+
+                            const mediaType = isTvShow ? 'tv' : 'movie';
+                            let creditsUrl = `https://api.themoviedb.org/3/${mediaType}/${tmdb.id}?api_key=${TMDB_API_KEY}&language=de-DE&append_to_response=credits`;
                             const detailsRes = await fetch(creditsUrl);
                             const detailsData = await detailsRes.json();
 
@@ -483,13 +532,14 @@
                             movie.thumb = tmdb.poster_path ? `https://image.tmdb.org/t/p/w342${tmdb.poster_path}` : 'placeholder.png';
                             
                             if (detailsData.credits) {
-                                const dir = detailsData.credits.crew.find(c => c.job === 'Director');
+                                const dir = detailsData.credits.crew.find(c => c.job === 'Director' || c.job === 'Executive Producer');
                                 movie.director = dir ? dir.name : '';
                                 movie.actors = detailsData.credits.cast.slice(0, 3).map(a => a.name);
                             }
 
-                            if (tmdb.release_date && movie.year === 'None') {
-                                movie.year = tmdb.release_date.split('-')[0];
+                            const dateStr = tmdb.release_date || tmdb.first_air_date;
+                            if (dateStr && movie.year === 'None') {
+                                movie.year = dateStr.split('-')[0];
                             }
 
                             if (tmdb.genre_ids) {
@@ -504,7 +554,7 @@
                             }
                         }
                     } catch (e) {
-                        console.error("TMDB-Fehler bei: " + movie.search);
+                        console.error("TMDB-Fehler bei: " + movie.search, e);
                     }
 
                     loadedCount++;
@@ -821,7 +871,7 @@
                 let badgeClass = "text-yellow-400";
                 let badgeText = `★ ${m.rating}`;
                 if (isTv) { badgeClass = "text-red-500"; badgeText = "🔴 LIVE"; }
-                if (isNews) { badgeClass = "text-blue-400"; badgeText = "📰 NEWS"; }
+                if (isNews) { badgeClass = "text-blue-400"; badgeText = "?? NEWS"; }
 
                 const plotClickAction = isNews ? `openNewsModal('${m.id}')` : 'togglePlot(this)';
                 const plotTitleHint = isNews ? 'Klicken, um den ganzen Artikel zu lesen' : 'Klicken, um die Beschreibung & Credits zu erweitern';
