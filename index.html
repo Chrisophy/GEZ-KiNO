@@ -27,18 +27,26 @@
     </div>
 
     <header class="mb-4 flex flex-col gap-4">
-        <div class="w-full rounded-2xl overflow-hidden shadow-xl border border-gray-800 bg-gray-950 aspect-[9/2] md:aspect-[9/1] max-h-[180px]">
-            <img src="banner.png" alt="" class="w-full h-full object-contain" onerror="this.style.display='none'">
+        <div id="banner-container" 
+             class="w-full rounded-2xl overflow-hidden shadow-xl border border-gray-800 bg-gray-950 relative block">
+            <img src="banner.png" alt="[GEZ] Kino Banner" class="w-full h-auto block select-none pointer-events-none">
+            <button type="button" 
+                    onclick="playMovieRoulette()" 
+                    id="btnRoulette"
+                    class="absolute inset-0 p-0 m-0 border-none bg-black/30 hover:bg-black/10 cursor-pointer flex flex-col items-center justify-center gap-1 focus:outline-none transition-all group"
+                    aria-label="Film-Roulette starten">
+            </button>
         </div>
+
         
         <div class="flex flex-col sm:flex-row justify-between items-center gap-4 w-full">
             <div class="flex flex-wrap gap-2 bg-gray-950 p-1.5 rounded-2xl border border-gray-800 w-full sm:w-auto">
-                <button id="btnMediathek" onclick="switchView('mediathek')" class="px-4 py-2.5 rounded-xl bg-blue-600 text-white font-bold shadow-lg transition-all cursor-pointer text-sm flex-1 sm:flex-none text-center">🍿 Mediathek</button>
+                <button id="btnMediathek" onclick="switchView('mediathek')" class="px-4 py-2.5 rounded-xl bg-blue-600 text-white font-bold shadow-lg transition-all cursor-pointer text-sm flex-1 sm:flex-none text-center">🍿 Filme</button>
                 <button id="btnLiveTv" onclick="switchView('livetv')" class="px-4 py-2.5 rounded-xl bg-gray-900 border border-gray-800 text-gray-400 hover:text-white transition-all cursor-pointer text-sm flex-1 sm:flex-none text-center">📺 Live TV</button>
                 <button id="btnNews" onclick="switchView('news')" class="px-4 py-2.5 rounded-xl bg-gray-900 border border-gray-800 text-gray-400 hover:text-white transition-all cursor-pointer text-sm flex-1 sm:flex-none text-center">📰 News</button>
-                <button id="btnInstallPWA" class="hidden px-4 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold shadow-lg transition-all cursor-pointer text-sm flex-1 sm:flex-none text-center animate-pulse">📲 App laden</button>
-            </div>
-            <div class="w-full sm:w-1/3">
+                <button id="btnInstallPWA" class="hidden px-4 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold shadow-lg transition-all cursor-pointer text-sm flex-1 sm:flex-none text-center animate-pulse">📲 App laden</button>        
+            </div>            
+            <div class="w-full sm:w-1/2 flex gap-2">
                 <input type="text" id="searchBar" placeholder="Suchen..." class="bg-gray-900 text-white px-4 py-2.5 rounded-xl w-full focus:outline-none focus:ring-2 focus:ring-blue-500 border border-gray-800 shadow-inner text-sm">
             </div>
         </div>
@@ -73,8 +81,7 @@
     <div id="yearsModal" class="fixed inset-0 bg-black/80 hidden z-40 justify-center items-center p-4 backdrop-blur-sm">
         <div class="bg-gray-900 border border-gray-800 rounded-2xl max-w-sm w-full p-6 flex flex-col max-h-[80vh]">
             <h2 class="text-xl font-bold mb-4 text-center text-gray-100">Jahr auswählen</h2>
-            <div id="yearsGrid" class="grid grid-cols-3 gap-2 mb-4 overflow-y-auto no-scrollbar">
-            </div>
+            <div id="yearsGrid" class="grid grid-cols-3 gap-2 mb-4 overflow-y-auto no-scrollbar"></div>
             <button onclick="closeYearsModal()" class="w-full bg-gray-800 hover:bg-gray-700 text-white font-bold py-3 rounded-xl transition-colors">ZURÜCK</button>
         </div>
     </div>
@@ -95,6 +102,37 @@
             </div>
             <div class="relative w-full aspect-video bg-black rounded-2xl overflow-hidden border border-gray-800 shadow-2xl">
                 <video id="mainVideoPlayer" controls autoplay class="w-full h-full"></video>
+            </div>
+        </div>
+    </div>
+
+    <div id="rouletteModal" class="fixed inset-0 bg-black/90 hidden z-50 justify-center items-center p-4 backdrop-blur-md">
+        <div class="bg-gray-900 border border-gray-800 rounded-2xl max-w-md w-full p-6 flex flex-col shadow-2xl relative">
+            <button onclick="closeRouletteModal()" class="absolute top-4 right-4 text-white hover:text-gray-400 p-2 z-50 bg-gray-950/80 rounded-full border border-gray-800 transition-colors cursor-pointer">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+            
+            <div class="flex gap-4 mb-4 items-start">
+                <img id="rouletteModalThumb" src="" alt="" class="w-24 aspect-[2/3] object-cover rounded-lg border border-gray-800 bg-gray-950 shadow">
+                <div class="flex-1 min-w-0">
+                    <span id="rouletteModalRating" class="inline-block bg-black/70 px-2 py-0.5 text-xs font-bold text-yellow-400 rounded mb-1.5"></span>
+                    <h2 id="rouletteModalTitle" class="text-lg font-bold text-gray-100 leading-tight truncate"></h2>
+                    <p id="rouletteModalMeta" class="text-gray-500 text-xs mt-1"></p>
+                    <div id="rouletteModalGenres" class="flex flex-wrap gap-1 mt-2"></div>
+                </div> 
+            </div> 
+            <hr class="border-gray-800 mb-4">
+            
+            <p id="rouletteModalPlot" class="text-gray-300 text-sm leading-relaxed max-h-40 overflow-y-auto no-scrollbar font-light mb-5 whitespace-pre-line"></p>
+            <div class="flex gap-3">
+                <button onclick="closeRouletteModal(); playMovieRoulette();" class="flex-1 bg-gray-800 hover:bg-gray-700 text-white font-bold py-3 rounded-xl transition-colors text-sm cursor-pointer">
+                    🔄 NOCHMAL
+                </button>
+                <button id="rouletteModalPlayBtn" onclick="" class="flex-1 bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 rounded-xl transition-colors text-sm tracking-wide cursor-pointer shadow-lg">
+                    🍿 STARTEN
+                </button>
             </div>
         </div>
     </div>
@@ -228,10 +266,18 @@
                     results.forEach(m => {
                         const url = m.url_video || '';
                         const title = m.title || '';
+                        const channel = m.channel || ''; // Den Sender laden
                         if (!url || !title) return;
 
+                        // 1. Sender-Filter (zdf-tivi komplett ausschließen)
+                        if (channel.toLowerCase().includes('zdf-tivi')) return;
+
                         const lowerTitle = title.toLowerCase();
+                        // Alternativ: Falls "tivi" im Titel steht, auch kicken
+                        if (lowerTitle.includes('zdf-tivi') || lowerTitle.includes('tivi')) return;
+
                         if (/audiodeskription|audio description|ad version|hörfilm|deskription|barrierefrei/.test(lowerTitle)) return;
+
                         if (seenUrls.has(url)) return;
                         
                         const { cleanName, year } = cleanTitle(title);
@@ -963,6 +1009,80 @@
                     window.open(url, '_blank');
                 }, 2000);
             }
+        }
+
+        function closeRouletteModal() {
+            document.getElementById('rouletteModal').style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+
+        function playMovieRoulette() {
+            if (currentView !== 'mediathek') {
+                switchView('mediathek');
+            }
+
+            const validMovies = allMovies.filter(movie => {
+                const r = parseFloat(movie.rating);
+                return !isNaN(r) && r >= 4.0 && r <= 10.0;
+            });
+
+            if (validMovies.length === 0) {
+                alert("Gerade keine Filme mit einer Bewertung zwischen 4 und 10 geladen.");
+                return;
+            }
+
+            const btn = document.getElementById('btnRoulette');
+            const searchBar = document.getElementById('searchBar');
+            const originalBtnText = btn.innerHTML;
+            let counter = 0;
+    
+            btn.disabled = true;
+            btn.classList.add('animate-pulse');
+
+            const interval = setInterval(() => {
+                const randomTickerMovie = validMovies[Math.floor(Math.random() * validMovies.length)];
+                searchBar.value = `🎲 ${randomTickerMovie.title}...`;
+                counter++;
+
+                if (counter > 12) { 
+                    clearInterval(interval);
+            
+                    const luckyMovie = validMovies[Math.floor(Math.random() * validMovies.length)];
+                    searchBar.value = '';
+            
+                    btn.innerHTML = originalBtnText;
+                    btn.disabled = false;
+                    btn.classList.remove('animate-pulse');
+            
+                    document.getElementById('rouletteModalTitle').innerText = luckyMovie.title;
+                    document.getElementById('rouletteModalRating').innerText = `★ ${luckyMovie.rating}`;
+                    document.getElementById('rouletteModalMeta').innerText = `${luckyMovie.channel} · ${luckyMovie.year}`;
+                    document.getElementById('rouletteModalPlot').innerText = luckyMovie.plot || 'Keine Beschreibung verfügbar.';
+
+                    const genreContainer = document.getElementById('rouletteModalGenres');
+                    if (luckyMovie.genres_list && luckyMovie.genres_list.length > 0) {
+                        genreContainer.innerHTML = luckyMovie.genres_list
+                            .map(g => `<span class="bg-gray-800 text-gray-400 text-[10px] px-1.5 py-0.5 rounded">#${g}</span>`)
+                            .join('');
+                    } else {
+                        genreContainer.innerHTML = '<span class="bg-gray-800 text-gray-400 text-[10px] px-1.5 py-0.5 rounded">Sonstige</span>';
+                    }
+
+                    const thumbImg = document.getElementById('rouletteModalThumb');
+                    thumbImg.src = luckyMovie.thumb;
+                    thumbImg.onerror = () => { thumbImg.src = 'placeholder.png'; };
+
+                    const escapedTitle = luckyMovie.title.replace(/'/g, "\\'").replace(/"/g, '&quot;');
+                    const playBtn = document.getElementById('rouletteModalPlayBtn');
+                    playBtn.onclick = () => {
+                        closeRouletteModal();
+                        openPlayer(luckyMovie.video_url, escapedTitle);
+                    };
+
+                    document.getElementById('rouletteModal').style.display = 'flex';
+                    document.body.style.overflow = 'hidden';
+                }
+            }, 80); 
         }
 
         function openPlayer(url, title) {
