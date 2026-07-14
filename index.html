@@ -309,11 +309,22 @@
                             rating: 'N/A',
                             thumb: 'placeholder.png', 
                             genres_list: ['Sonstige'],
-                            channel: m.channel
+                            channel: m.channel,
+                            timestamp: m.timestamp || 0,
+                            isNew: false
                         });
                     });
                 });
 
+                // Top 100 nach Timestamp (neueste zuerst) ermitteln und als "isNew" markieren
+                const sortedByTime = [...tempResults].sort((a, b) => b.timestamp - a.timestamp);
+                const newestUrls = new Set(sortedByTime.slice(0, 100).map(m => m.video_url));
+                
+                tempResults.forEach(m => {
+                    if (newestUrls.has(m.video_url)) {
+                        m.isNew = true;
+                    }
+                });
 
                 allMovies = tempResults.sort((a, b) => a.title.localeCompare(b.title));
                 
@@ -456,7 +467,7 @@
         }
         
         async function hydrateWithTMDBParallel() {
-            const CONCURRENCY_LIMIT = 51;
+            const CONCURRENCY_LIMIT = 25;
             let movieIndex = 0;
             let loadedCount = 0;
 
@@ -570,7 +581,7 @@
         }
 
         function getGenreCounts() {
-            const counts = { "Alle": 0, "Sonstige": 0, "Nach Jahren": 0, "Bewertung": 0, "⭐ Favoriten": 0 };
+            const counts = { "Alle": 0, "Neu hinzugefügt": 0, "Sonstige": 0, "Nach Jahren": 0, "Nach Bewertung": 0, "⭐ Favoriten": 0 };
             Object.values(GENRES_MAP).forEach(g => counts[g] = 0);
 
             let currentSet = allMovies;
@@ -583,11 +594,14 @@
                     counts["⭐ Favoriten"]++;
                 }
                 if (currentView === 'mediathek') {
+                    if (m.isNew) {
+                        counts["Neu hinzugefügt"]++;
+                    }
                     if (m.year && m.year !== 'None' && parseInt(m.year) > 1900) {
                         counts["Nach Jahren"]++;
                     }
                     if (m.rating && m.rating !== 'N/A' && parseFloat(m.rating) > 0) {
-                         counts["Bewertung"]++;
+                         counts["Nach Bewertung"]++;
                     }
                     if (!m.genres_list || m.genres_list.includes('Sonstige')) {
                         counts["Sonstige"]++;
@@ -613,7 +627,7 @@
             let genres = [];
             if (currentView === 'mediathek') {
                 const sortedGenres = Object.values(GENRES_MAP).sort();
-                genres = ['Alle', 'Nach Jahren', 'Bewertung', '⭐ Favoriten', ...sortedGenres, 'Sonstige'];
+                genres = ['Alle', 'Neu hinzugefügt', 'Nach Jahren', 'Nach Bewertung', '⭐ Favoriten', ...sortedGenres, 'Sonstige'];
             } else if (currentView === 'news') {
                 const newsCats = new Set();
                 newsArticles.forEach(m => {
@@ -627,17 +641,17 @@
             leiste.innerHTML = '';
             genres.forEach(g => {
                 const btn = document.createElement('button');
-                const cleanId = g.replace(/\s+/g, '').replace(/⭐/g, 'Fav').replace(/[^a-zA-Z0-9]/g, '');
+                const cleanId = g.replace(/\s+/g, '').replace(/⭐/g, 'Fav').replace(/🆕/g, 'Neu').replace(/[^a-zA-Z0-9]/g, '');
                 btn.id = `genre-btn-${cleanId}`;
                 
-                const isActive = currentGenre === g || (g === 'Nach Jahren' && currentGenre.startsWith('Jahr: ')) || (g === 'Bewertung' && currentGenre.startsWith('Rating: '));
+                const isActive = currentGenre === g || (g === 'Nach Jahren' && currentGenre.startsWith('Jahr: ')) || (g === 'Nach Bewertung' && currentGenre.startsWith('Rating: '));
                 
                 btn.className = `flex-shrink-0 min-w-[120px] px-4 py-2 rounded-xl text-center flex flex-col justify-center transition-all cursor-pointer border ${
                     isActive ? 'bg-blue-600 border-blue-500 text-white font-bold' : 'bg-gray-900 border-gray-800 text-gray-300 hover:border-gray-700'
                 }`;
 
                 let displayLabel = g;
-                if (g === 'Bewertung' && currentGenre.startsWith('Rating: ')) displayLabel = currentGenre;
+                if (g === 'Nach Bewertung' && currentGenre.startsWith('Rating: ')) displayLabel = currentGenre;
                 if (g === 'Nach Jahren' && currentGenre.startsWith('Jahr: ')) displayLabel = currentGenre.replace('Jahr: ', 'Jahr ');
 
                 btn.innerHTML = `
@@ -648,7 +662,7 @@
                 btn.onclick = () => {
                     if (g === 'Nach Jahren') {
                         openYearsMenu();
-                    } else if (g === 'Bewertung') {
+                    } else if (g === 'Nach Bewertung') {
                         openRatingModal();
                     } else {
                         currentGenre = 'Alle';
@@ -665,7 +679,7 @@
         function updateGenreCounts() {
             const counts = getGenreCounts();
             Object.keys(counts).forEach(g => {
-                const cleanId = g.replace(/\s+/g, '').replace(/⭐/g, 'Fav').replace(/[^a-zA-Z0-9]/g, '');
+                const cleanId = g.replace(/\s+/g, '').replace(/⭐/g, 'Fav').replace(/🆕/g, 'Neu').replace(/[^a-zA-Z0-9]/g, '');
                 const btn = document.getElementById(`genre-btn-${cleanId}`);
                 if (btn) {
                     const countSpan = btn.querySelector('.genre-count');
@@ -678,7 +692,7 @@
             let genres = [];
             if (currentView === 'mediathek') {
                 const sortedGenres = Object.values(GENRES_MAP).sort();
-                genres = ['Alle', 'Nach Jahren', 'Bewertung', '⭐ Favoriten', ...sortedGenres, 'Sonstige'];
+                genres = ['Alle', 'Neu hinzugefügt', 'Nach Jahren', 'Nach Bewertung', '⭐ Favoriten', ...sortedGenres, 'Sonstige'];
             } else if (currentView === 'news') {
                 const newsCats = new Set();
                 newsArticles.forEach(m => {
@@ -690,11 +704,11 @@
             }
             
             genres.forEach(g => {
-                const cleanId = g.replace(/\s+/g, '').replace(/⭐/g, 'Fav').replace(/[^a-zA-Z0-9]/g, '');
+                const cleanId = g.replace(/\s+/g, '').replace(/⭐/g, 'Fav').replace(/🆕/g, 'Neu').replace(/[^a-zA-Z0-9]/g, '');
                 const btn = document.getElementById(`genre-btn-${cleanId}`);
                 if (!btn) return;
                 
-                const isActive = currentGenre === g || (g === 'Nach Jahren' && currentGenre.startsWith('Jahr: ')) || (g === 'Bewertung' && currentGenre.startsWith('Rating: '));
+                const isActive = currentGenre === g || (g === 'Nach Jahren' && currentGenre.startsWith('Jahr: ')) || (g === 'Nach Bewertung' && currentGenre.startsWith('Rating: '));
                 
                 if (isActive) {
                     btn.className = "flex-shrink-0 min-w-[120px] px-4 py-2 rounded-xl text-center flex flex-col justify-center transition-all cursor-pointer border bg-blue-600 border-blue-500 text-white font-bold";
@@ -706,7 +720,7 @@
                 } else {
                     btn.className = "flex-shrink-0 min-w-[120px] px-4 py-2 rounded-xl text-center flex flex-col justify-center transition-all cursor-pointer border bg-gray-900 border-gray-800 text-gray-300 hover:border-gray-700";
                     if (g === 'Nach Jahren') btn.querySelector('span').innerText = 'Nach Jahren';
-                    if (g === 'Bewertung') btn.querySelector('span').innerText = 'Bewertung';
+                    if (g === 'Nach Bewertung') btn.querySelector('span').innerText = 'Nach Bewertung';
                 }
             });
         }
@@ -797,6 +811,7 @@
                 }
                 
                 if (currentGenre === '⭐ Favoriten') return favoriteUrls.includes(m.video_url);
+                if (currentGenre === 'Neu hinzugefügt') return m.isNew;
                 
                 if (currentView === 'mediathek') {
                     if (currentGenre === 'Sonstige') return !m.genres_list || m.genres_list.includes('Sonstige');
@@ -811,12 +826,18 @@
                 return true;
             });
         
-            if (currentGenre.startsWith('Rating: ') || currentGenre.startsWith('Jahr: ')) {
+            if (currentGenre === 'Neu hinzugefügt') {
+                // Bei "Neue Filme" sortieren wir direkt nach Timestamp absteigend
+                moviesToRender.sort((a, b) => b.timestamp - a.timestamp);
+            } else if (currentGenre.startsWith('Rating: ') || currentGenre.startsWith('Jahr: ')) {
                 moviesToRender.sort((a, b) => {
                     const ratingA = parseFloat(a.rating) || 0;
                     const ratingB = parseFloat(b.rating) || 0;
                     return ratingB - ratingA; 
                 });
+            } else if (currentView === 'mediathek') {
+                // Standard: Alphabetisch
+                moviesToRender.sort((a, b) => a.title.localeCompare(b.title));
             }
         
             const grid = document.getElementById('movieGrid');
