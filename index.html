@@ -277,6 +277,8 @@
                         if (channel.toLowerCase().includes('zdf-tivi')) return;
                         if (title.toLowerCase().includes('zdf-tivi') || title.toLowerCase().includes('tivi')) return;
                         if (/audiodeskription|audio description|ad version|hörfilm|deskription|barrierefrei/.test(title.toLowerCase())) return;
+                        
+                        if (title.includes('(Englisch)')) return;
                 
                         if (/\b(folge|staffel|episode|ep\.|teil)\b/i.test(title)) return;
                         
