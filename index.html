@@ -191,7 +191,7 @@
             10752: 'Krieg', 37: 'Western'
         };
 
-        const QUERIES = ['Spielfilm', 'Spielfilme', 'Spielfilm-Highlights', 'Filme', 'Kino - Filme'];
+        const QUERIES = ['Spielfilm', 'Spielfilme', 'Spielfilm-Highlights', 'Filme', 'Kino - Filme', 'Filme in der ARD'];
         
         let allMovies = [];
         let liveTvChannels = [];
@@ -279,6 +279,11 @@
                         if (/audiodeskription|audio description|ad version|hörfilm|deskription|barrierefrei/.test(title.toLowerCase())) return;
                         
                         if (title.includes('(Englisch)')) return;
+                        
+                        if (title.includes('(Originalversion mit Untertitel)')) return;
+                        if (title.includes('(mit Untertitel)')) return;
+                        
+                        if (title.includes('(Originalversion)')) return;
                 
                         if (/\b(folge|staffel|episode|ep\.|teil)\b/i.test(title)) return;
                         
@@ -469,7 +474,7 @@
         }
         
         async function hydrateWithTMDBParallel() {
-            const CONCURRENCY_LIMIT = 25;
+            const CONCURRENCY_LIMIT = 10;
             let movieIndex = 0;
             let loadedCount = 0;
 
@@ -830,7 +835,7 @@
         
             if (currentGenre === 'Neu hinzugefügt') {
                 // Bei "Neue Filme" sortieren wir direkt nach Timestamp absteigend
-                moviesToRender.sort((a, b) => b.timestamp - a.timestamp);
+                moviesToRender.sort((a, b) => a.timestamp - b.timestamp);
             } else if (currentGenre.startsWith('Rating: ') || currentGenre.startsWith('Jahr: ')) {
                 moviesToRender.sort((a, b) => {
                     const ratingA = parseFloat(a.rating) || 0;
@@ -876,7 +881,7 @@
                 const card = document.createElement('div');
                 const uniqueCardId = m.id || btoa(encodeURIComponent(m.video_url)).replace(/=/g, '');
                 card.id = `movie-${uniqueCardId}`;
-                card.className = "bg-gray-900 rounded-xl overflow-hidden shadow-md border border-gray-800 flex flex-col justify-between hover:border-blue-500 transition-all duration-200 group h-fit";
+                card.className = "bg-gray-900 rounded-xl overflow-hidden shadow-md border border-gray-800 flex flex-col justify-between hover:border-blue-500 transition-all duration-200 group h-full";
                 
                 const escapedTitle = m.title.replace(/'/g, "\\'").replace(/"/g, '&quot;');
                 const isTv = currentView === 'livetv';
