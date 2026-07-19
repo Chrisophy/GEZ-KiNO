@@ -311,6 +311,7 @@
                             year: year,
                             video_url: url,
                             plot: 'Lade Filminformationen...',
+                            mediathek_desc: m.description || '',
                             director: '',
                             actors: [],
                             rating: 'N/A',
@@ -484,7 +485,6 @@
                     const movie = allMovies[currentIdx];
                     if (!movie) break;
 
-                    // 1. Versuch: Mit Jahr suchen (falls vorhanden)
                     let movieUrl = `https://api.themoviedb.org/3/search/movie?api_key=${TMDB_API_KEY}&query=${encodeURIComponent(movie.search)}&language=de-DE&include_adult=false`;
                     if (movie.year !== 'None') movieUrl += `&year=${movie.year}`;
                     
@@ -505,7 +505,67 @@
                             data = await fallbackRes.json();
                         }
 
-                        if (!data.results || data.results.length === 0) {
+                        // --- SMART MATCHING LOGIK ---
+                        if (data.results && data.results.length > 0) {
+                            if (movie.year === 'None' && data.results.length > 1) {
+                                // Wenn kein Jahr bekannt ist, prüfen wir die Top 5 Treffer auf Übereinstimmungen
+                                let bestMatch = data.results[0];
+                                let highestScore = 0;
+                                const mDesc = movie.mediathek_desc.toLowerCase();
+
+                                // Wir testen die ersten 5 Ergebnisse parallel auf Credits-Übereinstimmung
+                                const candidates = data.results.slice(0, 5);
+                                const scoredCandidates = await Promise.all(candidates.map(async (candidate) => {
+                                    let score = 0;
+                                    const cTitle = (candidate.title || '').toLowerCase();
+                                    const cOrigTitle = (candidate.original_title || '').toLowerCase();
+                                    const cOverview = (candidate.overview || '').toLowerCase();
+
+                                    // 1. Textbasierte Übereinstimmungen im Plot
+                                    if (cOverview && mDesc) {
+                                        // Gemeinsame prägnante Wörter zählen (Länge > 4)
+                                        const words = cOverview.split(/\s+/).filter(w => w.length > 4);
+                                        words.forEach(w => {
+                                            if (mDesc.includes(w)) score += 2;
+                                        });
+                                    }
+
+                                    // 2. Credits abrufen für Regie/Cast-Abgleich (Der stärkste Indikator!)
+                                    try {
+                                        const credRes = await fetch(`https://api.themoviedb.org/3/movie/${candidate.id}?api_key=${TMDB_API_KEY}&language=de-DE&append_to_response=credits`);
+                                        const credData = await credRes.json();
+                                        if (credData.credits) {
+                                            // Regisseur prüfen
+                                            const directors = credData.credits.crew.filter(c => c.job === 'Director').map(d => d.name.toLowerCase());
+                                            directors.forEach(d => {
+                                                if (mDesc.includes(d) || d.split(' ').every(part => mDesc.includes(part))) score += 50; // Massiver Boost bei Regie-Treffer
+                                            });
+                                            // Top 5 Schauspieler prüfen
+                                            const actors = credData.credits.cast.slice(0, 5).map(a => a.name.toLowerCase());
+                                            actors.forEach(a => {
+                                                if (mDesc.includes(a)) score += 15;
+                                            });
+                                        }
+                                    } catch(e) {}
+
+                                    return { candidate, score };
+                                }));
+
+                                // Höchsten Score ermitteln
+                                scoredCandidates.forEach(item => {
+                                    if (item.score > highestScore) {
+                                        highestScore = item.score;
+                                        bestMatch = item.candidate;
+                                    }
+                                });
+                                tmdb = bestMatch;
+                            } else {
+                                tmdb = data.results[0];
+                            }
+                        }
+
+                        // Fallback auf Serien, falls kein Film gefunden wurde
+                        if (!tmdb) {
                             let tvUrl = `https://api.themoviedb.org/3/search/tv?api_key=${TMDB_API_KEY}&query=${encodeURIComponent(movie.search)}&language=de-DE&include_adult=false`;
                             if (movie.year !== 'None') tvUrl += `&first_air_date_year=${movie.year}`;
     
@@ -517,34 +577,26 @@
                             }
                         }
 
-
-                        if (!tmdb && data.results && data.results.length > 0) {
-                            tmdb = data.results[0];
-                        }
-
                         if (tmdb) {
-                            // --- ANTI-FALSCHZUORDNUNG-LOGIK (Speziell für Animation / Realfilme) ---
-                            // Falls TMDB "Animation" (16) liefert, wir aber im Titel/Plot klare Indizien für Realfilm haben
+                            // Anti-Animations-Fehlzuordnungsschutz für öffentlich-rechtliche Sender
                             if (tmdb.genre_ids && tmdb.genre_ids.includes(16)) {
                                 const lowerTitle = movie.title.toLowerCase();
                                 const lowerOverview = (tmdb.overview || "").toLowerCase();
-                                
-                                // Typische ARD/ZDF-Krimis/Dramen, die TMDB fälschlicherweise matcht
-                                const realFilmKeywords = ['tatort', 'polizeiruf', 'in aller freundschaft', 'rosenheim-cops', 'krimi', 'fernsehfilm', 'kommissar'];
-                                const isStrictlyRealfilm = realFilmKeywords.some(keyword => lowerTitle.includes(keyword) || lowerOverview.includes(keyword));
+                                const realFilmKeywords = ['tatort', 'polizeiruf', 'in aller freundschaft', 'rosenheim-cops', 'krimi', 'fernsehfilm', 'kommissar', 'drama', 'spielfilm'];
+                                const isStrictlyRealfilm = realFilmKeywords.some(keyword => lowerTitle.includes(keyword) || lowerOverview.includes(keyword) || movie.mediathek_desc.toLowerCase().includes(keyword));
                                 
                                 if (isStrictlyRealfilm) {
                                     tmdb.genre_ids = tmdb.genre_ids.filter(id => id !== 16);
                                 }
                             }
-                            // -----------------------------------------------------------------------
 
                             const mediaType = isTvShow ? 'tv' : 'movie';
                             let creditsUrl = `https://api.themoviedb.org/3/${mediaType}/${tmdb.id}?api_key=${TMDB_API_KEY}&language=de-DE&append_to_response=credits`;
                             const detailsRes = await fetch(creditsUrl);
                             const detailsData = await detailsRes.json();
 
-                            movie.plot = tmdb.overview || 'Keine Beschreibung verfügbar.';
+                            // Falls TMDB keine Beschreibung hat, nutzen wir die originale Mediathek-Beschreibung als Fallback
+                            movie.plot = tmdb.overview || movie.mediathek_desc || 'Keine Beschreibung verfügbar.';
                             movie.rating = tmdb.vote_average ? tmdb.vote_average.toFixed(1) : 'N/A';
                             movie.thumb = tmdb.poster_path ? `https://image.tmdb.org/t/p/w342${tmdb.poster_path}` : 'placeholder.png';
                             
@@ -586,6 +638,7 @@
             updateGenreCounts();
             document.getElementById('scanner')?.classList.add('hidden');
         }
+
 
         function getGenreCounts() {
             const counts = { "Alle": 0, "Neu hinzugefügt": 0, "Sonstige": 0, "Nach Jahren": 0, "Nach Bewertung": 0, "⭐ Favoriten": 0 };
