@@ -52,7 +52,8 @@
             </div>
         </header>
 
-        <nav id="genreLeiste" class="flex gap-3 overflow-x-auto pb-3 mb-4 no-scrollbar scroll-smooth"></nav>
+        <!-- Fix: Breiten- und Höhenstabilität für das PWA-Layout unter Tailwind v4 -->
+        <nav id="genreLeiste" class="w-full flex gap-3 overflow-x-auto pb-3 mb-4 no-scrollbar scroll-smooth min-h-[50px]"></nav>
 
         <main id="movieGrid" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4">
             <div id="statusMessage" class="text-center col-span-full py-12 text-gray-400 animate-pulse">Initialisiere...</div>
@@ -681,7 +682,7 @@
             } else {
                 genres = ['Alle', '⭐ Favoriten'];
             }
-        
+
             leiste.innerHTML = '';
             genres.forEach(g => {
                 const btn = document.createElement('button');
@@ -713,28 +714,28 @@
                     const cleanId = g.replace(/\s+/g, '').replace(/⭐/g, 'Fav').replace(/🆕/g, 'Neu').replace(/[^a-zA-Z0-9]/g, '');
                     btn.id = `genre-btn-${cleanId}`;
                     
-                    // Die CSS-Klassen werden direkt auf das gerade erstellte 'btn'-Objekt angewendet
                     const isActive = currentGenre === g || (g === 'Nach Jahren' && currentGenre.startsWith('Jahr: ')) || (g === 'Nach Bewertung' && currentGenre.startsWith('Rating: '));
                     
                     btn.className = `flex-shrink-0 min-w-[120px] px-4 py-2 rounded-xl text-center flex flex-col justify-center transition-all cursor-pointer border ${
                         isActive ? 'bg-blue-600 border-blue-500 text-white font-bold' : 'bg-gray-900 border-gray-800 text-gray-300 hover:border-gray-700'
                     }`;
-        
+
                     let displayLabel = g;
                     if (g === 'Nach Bewertung' && currentGenre.startsWith('Rating: ')) displayLabel = currentGenre;
                     if (g === 'Nach Jahren' && currentGenre.startsWith('Jahr: ')) displayLabel = currentGenre.replace('Jahr: ', 'Jahr ');
-        
+
                     btn.innerHTML = `
                         <span class="text-sm tracking-wide font-bold">${displayLabel}</span>
                         <span class="text-[10px] opacity-60 font-bold genre-count">${counts[g] !== undefined ? '(' + counts[g] + ')' : '(0)'}</span>
                     `;
-        
+
                     btn.onclick = () => {
                         if (g === 'Nach Jahren') {
                             openYearsMenu();
                         } else if (g === 'Nach Bewertung') {
                             openRatingModal();
                         } else {
+                            currentGenre = 'Alle';
                             document.getElementById('searchBar').value = '';
                             currentGenre = g;
                             setActiveGenreStyling();
@@ -1313,15 +1314,13 @@
                 video.addEventListener('error', activeVideoErrorHandler);
             }
 
-            // Startet das Video und fordert zeitgleich das native Vollbild an
             video.play()
                 .then(() => {
-                    // Nativer Vollbild-Trigger für Android/Browser
                     if (video.requestFullscreen) {
                         video.requestFullscreen();
-                    } else if (video.webkitRequestFullscreen) { /* Safari / ältere Browser */
+                    } else if (video.webkitRequestFullscreen) { 
                         video.webkitRequestFullscreen();
-                    } else if (video.msRequestFullscreen) { /* IE11 */
+                    } else if (video.msRequestFullscreen) { 
                         video.msRequestFullscreen();
                     }
                 })
@@ -1334,7 +1333,6 @@
             
             activeDownloadUrl = '';
 
-            // Schließt das native Vollbild, falls es noch aktiv ist
             if (document.fullscreenElement || document.webkitFullscreenElement || document.msFullscreenElement) {
                 if (document.exitFullscreen) {
                     document.exitFullscreen();
