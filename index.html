@@ -198,6 +198,7 @@
         let newsArticles = []; 
         let moviesToRender = []; 
         let favoriteUrls = JSON.parse(localStorage.getItem('gez_kino_favs') || '[]');
+        let hideTvMovies = localStorage.getItem('gez_kino_hide_tv') === 'true';
         let currentGenre = 'Alle';
         let currentView = 'mediathek'; 
         let chunkObserver = null;
@@ -287,7 +288,7 @@
                 
                         if (/\b(folge|staffel|episode|ep\.|teil)\b/i.test(title)) return;
                         
-                        if (/\(\d+(\s*[\/\-]\s*\d+)?\)/.test(title)) return; // Filtert (1) oder (1/3)
+                        if (/\(\d+(\s*[\/\-]\s*\d+)?\)/.test(title)) return;
                         if (/\b\d{1,2}\/\d{1,2}\b/.test(title)) return;
                 
                         if (seenUrls.has(url)) return;
@@ -299,7 +300,6 @@
                         if (normTitle === 'nö') return; 
                         if (seenTitles.has(normTitle)) return;
                         
-                        // Mindestlänge für Spielfilme (ca. 78 Minuten)
                         if (m.duration < 4680) return;
                 
                         seenUrls.add(url);
@@ -324,7 +324,6 @@
                     });
                 });
 
-                // Top 100 nach Timestamp (neueste zuerst) ermitteln und als "isNew" markieren
                 const sortedByTime = [...tempResults].sort((a, b) => b.timestamp - a.timestamp);
                 const newestUrls = new Set(sortedByTime.slice(0, 100).map(m => m.video_url));
                 
@@ -505,15 +504,11 @@
                             data = await fallbackRes.json();
                         }
 
-                        // --- SMART MATCHING LOGIK ---
                         if (data.results && data.results.length > 0) {
                             if (movie.year === 'None' && data.results.length > 1) {
-                                // Wenn kein Jahr bekannt ist, prüfen wir die Top 5 Treffer auf Übereinstimmungen
                                 let bestMatch = data.results[0];
                                 let highestScore = 0;
                                 const mDesc = movie.mediathek_desc.toLowerCase();
-
-                                // Wir testen die ersten 5 Ergebnisse parallel auf Credits-Übereinstimmung
                                 const candidates = data.results.slice(0, 5);
                                 const scoredCandidates = await Promise.all(candidates.map(async (candidate) => {
                                     let score = 0;
@@ -521,26 +516,20 @@
                                     const cOrigTitle = (candidate.original_title || '').toLowerCase();
                                     const cOverview = (candidate.overview || '').toLowerCase();
 
-                                    // 1. Textbasierte Übereinstimmungen im Plot
                                     if (cOverview && mDesc) {
-                                        // Gemeinsame prägnante Wörter zählen (Länge > 4)
                                         const words = cOverview.split(/\s+/).filter(w => w.length > 4);
                                         words.forEach(w => {
                                             if (mDesc.includes(w)) score += 2;
                                         });
                                     }
-
-                                    // 2. Credits abrufen für Regie/Cast-Abgleich (Der stärkste Indikator!)
                                     try {
                                         const credRes = await fetch(`https://api.themoviedb.org/3/movie/${candidate.id}?api_key=${TMDB_API_KEY}&language=de-DE&append_to_response=credits`);
                                         const credData = await credRes.json();
                                         if (credData.credits) {
-                                            // Regisseur prüfen
                                             const directors = credData.credits.crew.filter(c => c.job === 'Director').map(d => d.name.toLowerCase());
                                             directors.forEach(d => {
-                                                if (mDesc.includes(d) || d.split(' ').every(part => mDesc.includes(part))) score += 50; // Massiver Boost bei Regie-Treffer
+                                                if (mDesc.includes(d) || d.split(' ').every(part => mDesc.includes(part))) score += 50;
                                             });
-                                            // Top 5 Schauspieler prüfen
                                             const actors = credData.credits.cast.slice(0, 5).map(a => a.name.toLowerCase());
                                             actors.forEach(a => {
                                                 if (mDesc.includes(a)) score += 15;
@@ -551,7 +540,6 @@
                                     return { candidate, score };
                                 }));
 
-                                // Höchsten Score ermitteln
                                 scoredCandidates.forEach(item => {
                                     if (item.score > highestScore) {
                                         highestScore = item.score;
@@ -564,7 +552,6 @@
                             }
                         }
 
-                        // Fallback auf Serien, falls kein Film gefunden wurde
                         if (!tmdb) {
                             let tvUrl = `https://api.themoviedb.org/3/search/tv?api_key=${TMDB_API_KEY}&query=${encodeURIComponent(movie.search)}&language=de-DE&include_adult=false`;
                             if (movie.year !== 'None') tvUrl += `&first_air_date_year=${movie.year}`;
@@ -578,7 +565,6 @@
                         }
 
                         if (tmdb) {
-                            // Anti-Animations-Fehlzuordnungsschutz für öffentlich-rechtliche Sender
                             if (tmdb.genre_ids && tmdb.genre_ids.includes(16)) {
                                 const lowerTitle = movie.title.toLowerCase();
                                 const lowerOverview = (tmdb.overview || "").toLowerCase();
@@ -594,8 +580,6 @@
                             let creditsUrl = `https://api.themoviedb.org/3/${mediaType}/${tmdb.id}?api_key=${TMDB_API_KEY}&language=de-DE&append_to_response=credits`;
                             const detailsRes = await fetch(creditsUrl);
                             const detailsData = await detailsRes.json();
-
-                            // Falls TMDB keine Beschreibung hat, nutzen wir die originale Mediathek-Beschreibung als Fallback
                             movie.plot = tmdb.overview || movie.mediathek_desc || 'Keine Beschreibung verfügbar.';
                             movie.rating = tmdb.vote_average ? tmdb.vote_average.toFixed(1) : 'N/A';
                             movie.thumb = tmdb.poster_path ? `https://image.tmdb.org/t/p/w342${tmdb.poster_path}` : 'placeholder.png';
@@ -643,12 +627,24 @@
         function getGenreCounts() {
             const counts = { "Alle": 0, "Neu hinzugefügt": 0, "Sonstige": 0, "Nach Jahren": 0, "Nach Bewertung": 0, "⭐ Favoriten": 0 };
             Object.values(GENRES_MAP).forEach(g => counts[g] = 0);
-
+        
             let currentSet = allMovies;
             if (currentView === 'livetv') currentSet = liveTvChannels;
             if (currentView === 'news') currentSet = newsArticles;
-
+        
             currentSet.forEach(m => {
+                if (hideTvMovies && currentView === 'mediathek') {
+                    const titleLower = m.title.toLowerCase();
+                    const descLower = m.mediathek_desc ? m.mediathek_desc.toLowerCase() : '';
+                    const genresLower = m.genres_list ? m.genres_list.map(g => g.toLowerCase()) : [];
+        
+                    if (titleLower.includes('tv-film') || titleLower.includes('tv film') || 
+                        descLower.includes('tv-film') || descLower.includes('tv film') || 
+                        genresLower.includes('tv-film')) {
+                        return;
+                    }
+                }                
+        
                 counts["Alle"]++;
                 if (favoriteUrls.includes(m.video_url)) {
                     counts["⭐ Favoriten"]++;
@@ -680,6 +676,7 @@
             return counts;
         }
 
+
         function renderGenreLeiste() {
             const leiste = document.getElementById('genreLeiste');
             const counts = getGenreCounts();
@@ -687,7 +684,7 @@
             let genres = [];
             if (currentView === 'mediathek') {
                 const sortedGenres = Object.values(GENRES_MAP).sort();
-                genres = ['Alle', 'Neu hinzugefügt', 'Nach Jahren', 'Nach Bewertung', '⭐ Favoriten', ...sortedGenres, 'Sonstige'];
+                genres = ['Alle', 'Neu hinzugefügt', 'Nach Jahren', 'Nach Bewertung', 'TV-Filme-Umschalter', '⭐ Favoriten', ...sortedGenres, 'Sonstige'];
             } else if (currentView === 'news') {
                 const newsCats = new Set();
                 newsArticles.forEach(m => {
@@ -701,40 +698,67 @@
             leiste.innerHTML = '';
             genres.forEach(g => {
                 const btn = document.createElement('button');
-                const cleanId = g.replace(/\s+/g, '').replace(/⭐/g, 'Fav').replace(/🆕/g, 'Neu').replace(/[^a-zA-Z0-9]/g, '');
-                btn.id = `genre-btn-${cleanId}`;
                 
-                const isActive = currentGenre === g || (g === 'Nach Jahren' && currentGenre.startsWith('Jahr: ')) || (g === 'Nach Bewertung' && currentGenre.startsWith('Rating: '));
-                
-                btn.className = `flex-shrink-0 min-w-[120px] px-4 py-2 rounded-xl text-center flex flex-col justify-center transition-all cursor-pointer border ${
-                    isActive ? 'bg-blue-600 border-blue-500 text-white font-bold' : 'bg-gray-900 border-gray-800 text-gray-300 hover:border-gray-700'
-                }`;
-
-                let displayLabel = g;
-                if (g === 'Nach Bewertung' && currentGenre.startsWith('Rating: ')) displayLabel = currentGenre;
-                if (g === 'Nach Jahren' && currentGenre.startsWith('Jahr: ')) displayLabel = currentGenre.replace('Jahr: ', 'Jahr ');
-
-                btn.innerHTML = `
-                    <span class="text-sm tracking-wide font-bold">${displayLabel}</span>
-                    <span class="text-[10px] opacity-60 font-bold genre-count">${counts[g] !== undefined ? '(' + counts[g] + ')' : '(0)'}</span>
-                `;
-
-                btn.onclick = () => {
-                    if (g === 'Nach Jahren') {
-                        openYearsMenu();
-                    } else if (g === 'Nach Bewertung') {
-                        openRatingModal();
+                if (g === 'TV-Filme-Umschalter') {
+                    btn.id = "btnToggleTvMovies";
+                    btn.className = "flex-shrink-0 min-w-[120px] px-4 py-2 rounded-xl text-center flex flex-col justify-center transition-all cursor-pointer border font-bold shadow-md";
+                    btn.onclick = toggleTvMoviesFilter;
+                    
+                    const spanLabel = document.createElement('span');
+                    spanLabel.id = "lblTvMovies";
+                    spanLabel.className = "text-sm tracking-wide font-bold";
+                    
+                    const spanSub = document.createElement('span');
+                    spanSub.className = "text-[10px] opacity-60 font-bold";
+                    spanSub.innerText = hideTvMovies ? "(Inaktiv)" : "(Aktiv)";
+                    
+                    if (hideTvMovies) {
+                        spanLabel.innerText = "TV-Filme";
+                        btn.classList.add('bg-amber-600/20', 'border-amber-500/50', 'text-amber-400');
                     } else {
-                        currentGenre = 'Alle';
-                        document.getElementById('searchBar').value = '';
-                        currentGenre = g;
-                        setActiveGenreStyling();
-                        filterResults();
+                        spanLabel.innerText = "TV-Filme";
+                        btn.classList.add('bg-gray-900', 'border-gray-800', 'text-gray-400', 'hover:border-gray-700');
                     }
-                };
+                    
+                    btn.appendChild(spanLabel);
+                    btn.appendChild(spanSub);
+                } else {
+                    const cleanId = g.replace(/\s+/g, '').replace(/⭐/g, 'Fav').replace(/🆕/g, 'Neu').replace(/[^a-zA-Z0-9]/g, '');
+                    btn.id = `genre-btn-${cleanId}`;
+                    
+                    const isActive = currentGenre === g || (g === 'Nach Jahren' && currentGenre.startsWith('Jahr: ')) || (g === 'Nach Bewertung' && currentGenre.startsWith('Rating: '));
+                    
+                    btn.className = `flex-shrink-0 min-w-[120px] px-4 py-2 rounded-xl text-center flex flex-col justify-center transition-all cursor-pointer border ${
+                        isActive ? 'bg-blue-600 border-blue-500 text-white font-bold' : 'bg-gray-900 border-gray-800 text-gray-300 hover:border-gray-700'
+                    }`;
+
+                    let displayLabel = g;
+                    if (g === 'Nach Bewertung' && currentGenre.startsWith('Rating: ')) displayLabel = currentGenre;
+                    if (g === 'Nach Jahren' && currentGenre.startsWith('Jahr: ')) displayLabel = currentGenre.replace('Jahr: ', 'Jahr ');
+
+                    btn.innerHTML = `
+                        <span class="text-sm tracking-wide font-bold">${displayLabel}</span>
+                        <span class="text-[10px] opacity-60 font-bold genre-count">${counts[g] !== undefined ? '(' + counts[g] + ')' : '(0)'}</span>
+                    `;
+
+                    btn.onclick = () => {
+                        if (g === 'Nach Jahren') {
+                            openYearsMenu();
+                        } else if (g === 'Nach Bewertung') {
+                            openRatingModal();
+                        } else {
+                            currentGenre = 'Alle';
+                            document.getElementById('searchBar').value = '';
+                            currentGenre = g;
+                            setActiveGenreStyling();
+                            filterResults();
+                        }
+                    };
+                }
                 leiste.appendChild(btn);
             });
         }
+
 
         function updateGenreCounts() {
             const counts = getGenreCounts();
@@ -746,6 +770,12 @@
                     if (countSpan) countSpan.innerText = `(${counts[g] || 0})`;
                 }
             });
+
+            const tvBtn = document.getElementById('btnToggleTvMovies');
+            if (tvBtn) {
+                const subSpan = tvBtn.querySelector('span:not(#lblTvMovies)');
+                if (subSpan) subSpan.innerText = hideTvMovies ? "(Inaktiv)" : "(Aktiv)";
+            }
         }
 
         function setActiveGenreStyling() {
@@ -851,7 +881,20 @@
             if (currentView === 'news') currentSet = newsArticles;
             
             moviesToRender = currentSet.filter(m => {
+                if (hideTvMovies && currentView === 'mediathek') {
+                    const titleLower = m.title.toLowerCase();
+                    const descLower = m.mediathek_desc ? m.mediathek_desc.toLowerCase() : '';
+                    const genresLower = m.genres_list ? m.genres_list.map(g => g.toLowerCase()) : [];
+
+                    if (titleLower.includes('tv-film') || titleLower.includes('tv film') || 
+                        descLower.includes('tv-film') || descLower.includes('tv film') || 
+                        genresLower.includes('tv-film')) {
+                        return false;
+                    }
+                }
+
                 let matchQuery = true;
+
                 if (query) {
                     const matchesTitle = m.title.toLowerCase().includes(query);
                     const matchesPlot = m.plot.toLowerCase().includes(query);
@@ -887,7 +930,6 @@
             });
         
             if (currentGenre === 'Neu hinzugefügt') {
-                // Bei "Neue Filme" sortieren wir direkt nach Timestamp absteigend
                 moviesToRender.sort((a, b) => a.timestamp - b.timestamp);
             } else if (currentGenre.startsWith('Rating: ') || currentGenre.startsWith('Jahr: ')) {
                 moviesToRender.sort((a, b) => {
@@ -896,7 +938,6 @@
                     return ratingB - ratingA; 
                 });
             } else if (currentView === 'mediathek') {
-                // Standard: Alphabetisch
                 moviesToRender.sort((a, b) => a.title.localeCompare(b.title));
             }
         
@@ -1235,11 +1276,11 @@
 
             const validMovies = allMovies.filter(movie => {
                 const r = parseFloat(movie.rating);
-                return !isNaN(r) && r >= 4.0 && r <= 10.0;
+                return !isNaN(r) && r >= 5.0 && r <= 10.0;
             });
 
             if (validMovies.length === 0) {
-                alert("Gerade keine Filme mit einer Bewertung zwischen 4 und 10 geladen.");
+                alert("Gerade keine Filme mit einer Bewertung zwischen 5 und 10 geladen.");
                 return;
             }
 
@@ -1457,6 +1498,16 @@
                 backToTopBtn.classList.add('hidden');
             }
         });
+
+        function toggleTvMoviesFilter() {
+            hideTvMovies = !hideTvMovies;
+            localStorage.setItem('gez_kino_hide_tv', hideTvMovies);
+            
+            renderGenreLeiste();
+            setActiveGenreStyling();            
+            updateGenreCounts();
+            filterResults();
+        }
     </script>
 </body>
 </html>
