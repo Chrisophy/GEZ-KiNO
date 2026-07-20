@@ -666,10 +666,6 @@
 
         function renderGenreLeiste() {
             const leiste = document.getElementById('genreLeiste');
-            
-            // RETTUNG FÜR DIE FERNBEDIENUNG: Aktuell fokussiertes Element merken
-            const activeElementId = document.activeElement ? document.activeElement.id : null;
-            
             const counts = getGenreCounts();
             
             let genres = [];
@@ -689,11 +685,10 @@
             leiste.innerHTML = '';
             genres.forEach(g => {
                 const btn = document.createElement('button');
-                btn.setAttribute('tabindex', '0'); // Für Android WebViews zwingend erforderlich
                 
                 if (g === 'TV-Filme-Umschalter') {
                     btn.id = "btnToggleTvMovies";
-                    btn.className = "flex-shrink-0 min-w-[120px] px-4 py-2 rounded-xl text-center flex flex-col justify-center transition-all cursor-pointer border font-bold shadow-md focus:outline-none focus:ring-2 focus:ring-blue-500";
+                    btn.className = "flex-shrink-0 min-w-[120px] px-4 py-2 rounded-xl text-center flex flex-col justify-center transition-all cursor-pointer border font-bold shadow-md";
                     btn.onclick = toggleTvMoviesFilter;
                     
                     const spanLabel = document.createElement('span');
@@ -718,9 +713,10 @@
                     const cleanId = g.replace(/\s+/g, '').replace(/⭐/g, 'Fav').replace(/🆕/g, 'Neu').replace(/[^a-zA-Z0-9]/g, '');
                     btn.id = `genre-btn-${cleanId}`;
                     
+                    // Die CSS-Klassen werden direkt auf das gerade erstellte 'btn'-Objekt angewendet
                     const isActive = currentGenre === g || (g === 'Nach Jahren' && currentGenre.startsWith('Jahr: ')) || (g === 'Nach Bewertung' && currentGenre.startsWith('Rating: '));
                     
-                    btn.className = `flex-shrink-0 min-w-[120px] px-4 py-2 rounded-xl text-center flex flex-col justify-center transition-all cursor-pointer border focus:outline-none focus:ring-2 focus:ring-blue-500 ${
+                    btn.className = `flex-shrink-0 min-w-[120px] px-4 py-2 rounded-xl text-center flex flex-col justify-center transition-all cursor-pointer border ${
                         isActive ? 'bg-blue-600 border-blue-500 text-white font-bold' : 'bg-gray-900 border-gray-800 text-gray-300 hover:border-gray-700'
                     }`;
         
@@ -739,7 +735,6 @@
                         } else if (g === 'Nach Bewertung') {
                             openRatingModal();
                         } else {
-                            currentGenre = 'Alle';
                             document.getElementById('searchBar').value = '';
                             currentGenre = g;
                             setActiveGenreStyling();
@@ -749,16 +744,7 @@
                 }
                 leiste.appendChild(btn);
             });
-        
-            // FOKUS-WIEDERHERSTELLUNG: Wenn die ID vor dem Wipe existierte, setzen wir den Fokus wieder darauf
-            if (activeElementId) {
-                const restoredButton = document.getElementById(activeElementId);
-                if (restoredButton) {
-                    restoredButton.focus();
-                }
-            }
         }
-
 
         function updateGenreCounts() {
             const counts = getGenreCounts();
