@@ -87,24 +87,13 @@
         </div>
     </div>
     
-    <div id="videoModal" class="fixed inset-0 bg-black/95 hidden z-50 flex flex-col justify-center items-center backdrop-blur-md">
-        <button onclick="closePlayer()" class="absolute top-4 right-4 text-white hover:text-gray-400 p-2 z-50 bg-gray-900/50 rounded-full border border-gray-800 transition-colors cursor-pointer">
+    <div id="videoModal" class="fixed inset-0 bg-black hidden z-50 flex flex-col justify-center items-center">
+        <button onclick="closePlayer()" class="absolute top-4 right-4 text-white hover:text-gray-400 p-3 z-50 bg-black/60 rounded-full border border-gray-800 transition-colors cursor-pointer" aria-label="Schließen">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
             </svg>
         </button>
-        <div class="w-full max-w-5xl px-4 flex flex-col gap-3">
-            <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2 px-1">
-                <h3 id="videoTitle" class="text-white text-base md:text-lg font-bold truncate w-full sm:max-w-[60%]"></h3>
-                <div class="flex items-center gap-2 w-full sm:w-auto justify-end">
-                    <button id="modalCopyBtn" onclick="copyVideoUrl()" class="hidden bg-gray-800 hover:bg-gray-700 text-gray-300 px-3 py-1.5 rounded-xl text-xs font-bold transition-all items-center gap-1.5 cursor-pointer border border-gray-700 shadow-lg whitespace-nowrap">🔗 Link kopieren</button>
-                    <button id="modalDownloadBtn" onclick="triggerNativeDownload()" class="hidden bg-emerald-600 hover:bg-emerald-700 text-white px-4 py-1.5 rounded-xl text-xs font-bold transition-all items-center gap-1.5 cursor-pointer shadow-lg whitespace-nowrap">📥 Download</button>
-                </div>
-            </div>
-            <div class="relative w-full aspect-video bg-black rounded-2xl overflow-hidden border border-gray-800 shadow-2xl">
-                <video id="mainVideoPlayer" controls autoplay class="w-full h-full"></video>
-            </div>
-        </div>
+        <video id="mainVideoPlayer" controls autoplay class="w-full h-full object-contain bg-black"></video>
     </div>
 
     <div id="rouletteModal" class="fixed inset-0 bg-black/90 hidden z-50 justify-center items-center p-4 backdrop-blur-md">
@@ -623,7 +612,6 @@
             document.getElementById('scanner')?.classList.add('hidden');
         }
 
-
         function getGenreCounts() {
             const counts = { "Alle": 0, "Neu hinzugefügt": 0, "Sonstige": 0, "Nach Jahren": 0, "Nach Bewertung": 0, "⭐ Favoriten": 0 };
             Object.values(GENRES_MAP).forEach(g => counts[g] = 0);
@@ -675,7 +663,6 @@
             });
             return counts;
         }
-
 
         function renderGenreLeiste() {
             const leiste = document.getElementById('genreLeiste');
@@ -758,7 +745,6 @@
                 leiste.appendChild(btn);
             });
         }
-
 
         function updateGenreCounts() {
             const counts = getGenreCounts();
@@ -992,7 +978,7 @@
                 let badgeClass = "text-yellow-400";
                 let badgeText = `★ ${m.rating}`;
                 if (isTv) { badgeClass = "text-red-500"; badgeText = "🔴 LIVE"; }
-                if (isNews) { badgeClass = "text-blue-400"; badgeText = "Bild.de NEWS"; }
+                if (isNews) { badgeClass = "text-blue-400"; badgeText = "News"; }
 
                 const plotClickAction = isNews ? `openNewsModal('${m.id}')` : 'togglePlot(this)';
                 const plotTitleHint = isNews ? 'Klicken, um den ganzen Artikel zu lesen' : 'Klicken, um die Beschreibung & Credits zu erweitern';
@@ -1012,7 +998,8 @@
                                 class="fav-btn absolute top-2 left-2 bg-black/70 px-2 py-0.5 text-sm font-bold rounded transition-colors cursor-pointer ${isFav ? 'text-yellow-400 hover:text-gray-400' : 'text-gray-400 hover:text-yellow-400'} z-10">
                             ${isFav ? '★' : '☆'}
                         </button>
-                        <img src="${m.thumb}" alt="" class="${(isTv || isNews) ? 'max-w-full max-h-full object-contain' : 'w-full h-full object-cover'} group-hover:scale-105 transition-transform duration-300" 
+                        <img src="${m.thumb}" alt="" class="${(isTv || isNews) ? 'max-w-full max-h-full object-contain' : 'w-full h-full object-cover'} cursor-pointer group-hover:scale-105 transition-transform duration-300" 
+                             onclick="${clickAction}"
                              onerror="if(!this.src.includes('placeholder.png'))this.src='placeholder.png';">
                         <span class="absolute top-2 right-2 bg-black/70 px-2 py-0.5 text-xs font-bold ${badgeClass} rounded">
                             ${badgeText}
@@ -1020,7 +1007,7 @@
                     </div>
                     <div class="p-3 flex-1 flex flex-col justify-between">
                         <div>
-                            <h3 onclick="${isNews ? clickAction : ''}" class="font-bold text-sm text-gray-100 line-clamp-2 mb-1 group-hover:text-blue-400 transition-colors ${isNews ? 'cursor-pointer' : ''}" title="${m.title}">${m.title}</h3>
+                            <h3 onclick="${clickAction}" class="font-bold text-sm text-gray-100 line-clamp-2 mb-1 group-hover:text-blue-400 transition-colors cursor-pointer" title="${m.title}">${m.title}</h3>
                             <p class="text-gray-500 text-[11px] mb-2 font-bold">${m.channel} · ${m.year}</p>
                             
                             <p onclick="${plotClickAction}" 
@@ -1186,84 +1173,6 @@
             }).catch(err => console.error('Fehler beim Kopieren:', err));
         }
 
-        async function triggerNativeDownload() {
-            const url = activeDownloadUrl;
-            const title = document.getElementById('videoTitle').innerText;
-            const cleanFilename = `${title.replace(/[^a-zA-Z0-9\s-_]/g, '')}.mp4`;
-            const btn = document.getElementById('modalDownloadBtn');
-            const originalText = btn.innerHTML;
-
-            try {
-                if ('showSaveFilePicker' in window) {
-                    btn.innerHTML = '⏳ Ordner wählen...';
-                    btn.disabled = true;
-
-                    const handle = await window.showSaveFilePicker({
-                        suggestedName: cleanFilename,
-                        types: [{
-                            description: 'Videodatei (MP4)',
-                            accept: { 'video/mp4': ['.mp4'] }
-                        }]
-                    });
-
-                    btn.innerHTML = '📥 Stream läuft...';
-                    const response = await fetch(url);
-                    if (!response.ok) throw new Error('Netzwerkfehler beim Abruf');
-
-                    const writable = await handle.createWritable();
-                    const reader = response.body.getReader();
-
-                    while (true) {
-                        const { done, value } = await reader.read();
-                        if (done) break;
-                        await writable.write(value);
-                    }
-                    await writable.close();
-
-                    btn.innerHTML = '✅ Gespeichert!';
-                    btn.disabled = false;
-                    setTimeout(() => { btn.innerHTML = originalText; }, 3000);
-                    return;
-                }
-
-                btn.innerHTML = '⏳ In Speicher laden...';
-                btn.disabled = true;
-
-                const response = await fetch(url);
-                if (!response.ok) throw new Error('Netzwerkfehler');
-
-                const blob = await response.blob();
-                const blobUrl = URL.createObjectURL(blob);
-
-                const a = document.createElement('a');
-                a.href = blobUrl;
-                a.download = cleanFilename;
-                document.body.appendChild(a);
-                a.click();
-                document.body.removeChild(a);
-                URL.revokeObjectURL(blobUrl);
-
-                btn.innerHTML = '✅ Bereit!';
-                btn.disabled = false;
-                setTimeout(() => { btn.innerHTML = originalText; }, 3000);
-
-            } catch (err) {
-                console.warn('Download-Handling:', err);
-                btn.disabled = false;
-
-                if (err.name === 'AbortError') {
-                    btn.innerHTML = originalText;
-                    return;
-                }
-
-                btn.innerHTML = '❌ CORS-Schutz!';
-                setTimeout(() => {
-                    btn.innerHTML = originalText;
-                    window.open(url, '_blank');
-                }, 2000);
-            }
-        }
-
         function closeRouletteModal() {
             document.getElementById('rouletteModal').style.display = 'none';
             document.body.style.overflow = 'auto';
@@ -1349,33 +1258,17 @@
         function openPlayer(url, title) {
             const modal = document.getElementById('videoModal');
             const video = document.getElementById('mainVideoPlayer');
-            const titleEl = document.getElementById('videoTitle');
-            const downloadBtn = document.getElementById('modalDownloadBtn');
-            const copyBtn = document.getElementById('modalCopyBtn');
 
             activeDownloadUrl = url; 
-            titleEl.innerText = title;
             modal.classList.remove('hidden');
             document.body.style.overflow = 'hidden'; 
-
-            const isM3u8 = url.includes('.m3u8') || url.endsWith('.m3u8');
-            if (currentView === 'mediathek' && !isM3u8) {
-                downloadBtn.classList.remove('hidden');
-                downloadBtn.classList.add('flex');
-                copyBtn.classList.remove('hidden');
-                copyBtn.classList.add('flex');
-            } else {
-                downloadBtn.classList.add('hidden');
-                downloadBtn.classList.remove('flex');
-                copyBtn.classList.add('hidden');
-                copyBtn.classList.remove('flex');
-            }
 
             if (activeVideoErrorHandler) {
                 video.removeEventListener('error', activeVideoErrorHandler);
                 activeVideoErrorHandler = null;
             }
 
+            const isM3u8 = url.includes('.m3u8') || url.endsWith('.m3u8');
             if (isM3u8) {
                 if (Hls.isSupported()) {
                     if (hlsInstance) hlsInstance.destroy();
@@ -1420,18 +1313,37 @@
                 video.addEventListener('error', activeVideoErrorHandler);
             }
 
-            video.play().catch(err => console.log("Autoplay blockiert:", err));
+            // Startet das Video und fordert zeitgleich das native Vollbild an
+            video.play()
+                .then(() => {
+                    // Nativer Vollbild-Trigger für Android/Browser
+                    if (video.requestFullscreen) {
+                        video.requestFullscreen();
+                    } else if (video.webkitRequestFullscreen) { /* Safari / ältere Browser */
+                        video.webkitRequestFullscreen();
+                    } else if (video.msRequestFullscreen) { /* IE11 */
+                        video.msRequestFullscreen();
+                    }
+                })
+                .catch(err => console.log("Autoplay blockiert:", err));
         }
 
         function closePlayer() {
             const modal = document.getElementById('videoModal');
             const video = document.getElementById('mainVideoPlayer');
-            const downloadBtn = document.getElementById('modalDownloadBtn');
-            const copyBtn = document.getElementById('modalCopyBtn');
             
             activeDownloadUrl = '';
-            if (downloadBtn) downloadBtn.classList.add('hidden');
-            if (copyBtn) copyBtn.classList.add('hidden');
+
+            // Schließt das native Vollbild, falls es noch aktiv ist
+            if (document.fullscreenElement || document.webkitFullscreenElement || document.msFullscreenElement) {
+                if (document.exitFullscreen) {
+                    document.exitFullscreen();
+                } else if (document.webkitExitFullscreen) {
+                    document.webkitExitFullscreen();
+                } else if (document.msExitFullscreen) {
+                    document.msExitFullscreen();
+                }
+            }
 
             if (activeVideoErrorHandler) {
                 video.removeEventListener('error', activeVideoErrorHandler);
