@@ -9,7 +9,6 @@
     <style>
         body { background-color: #121212; color: #e5e7eb; font-family: 'Roboto', sans-serif; }
         
-        /* Korrigierte Genre-Leiste: Verhindert Blockaden und erlaubt horizontales Scrollen per Drag/Maus/Touch */
         #genreLeiste { 
             scroll-snap-type: x mandatory; 
             -webkit-overflow-scrolling: touch; 
@@ -22,7 +21,6 @@
         #genreLeiste button { scroll-snap-align: start; flex-shrink: 0; }
         #genreLeiste button:focus { outline: 2px solid #3b82f6; border-color: transparent; }
         
-        /* Versteckt die Scrollbar dezent, ohne die Funktionalität zu killen */
         #genreLeiste::-webkit-scrollbar { height: 4px; }
         #genreLeiste::-webkit-scrollbar-track { background: #1f2937; }
         #genreLeiste::-webkit-scrollbar-thumb { background: #3b82f6; border-radius: 2px; }
@@ -1342,14 +1340,21 @@
             document.body.style.overflow = 'auto'; 
         }
 
-        document.getElementById('searchBar').addEventListener('keydown', (e) => {
-            if (e.key === 'ArrowDown') {
-                e.preventDefault();
-                // Ersten Button in der Genre-Leiste fokussieren
-                const firstGenreBtn = document.querySelector('#genreLeiste button');
-                if (firstGenreBtn) {
-                    firstGenreBtn.focus();
-                }
+        // NEU: Reagiert auf Suchleiste UND die Navigations-Buttons
+        const topElements = ['searchBar', 'btnMediathek', 'btnLiveTv', 'btnNews'];
+
+        topElements.forEach(id => {
+            const el = document.getElementById(id);
+            if (el) {
+                el.addEventListener('keydown', (e) => {
+                    if (e.key === 'ArrowDown') {
+                        e.preventDefault();
+                        const firstGenreBtn = document.querySelector('#genreLeiste button');
+                        if (firstGenreBtn) {
+                            firstGenreBtn.focus();
+                        }
+                    }
+                });
             }
         });
 
