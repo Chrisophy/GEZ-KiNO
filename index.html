@@ -136,6 +136,7 @@
         </div>
     </div>
 
+    <!-- News Modal mit virtuellen Scroll-Buttons -->
     <div id="newsModal" class="fixed inset-0 bg-black/90 hidden z-50 justify-center items-center p-4 backdrop-blur-md">
         <div class="bg-gray-900 border border-gray-800 rounded-2xl max-w-2xl w-full max-h-[85vh] flex flex-col overflow-hidden shadow-2xl relative">
             <button onclick="closeNewsModal()" class="absolute top-4 right-4 text-white hover:text-gray-400 p-2 z-50 bg-gray-950/80 rounded-full border border-gray-800 transition-colors cursor-pointer">
@@ -143,6 +144,21 @@
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
                 </svg>
             </button>
+
+            <!-- Virtuelle Scroll-Buttons für Maus/Fernbedienung -->
+            <div class="absolute right-4 bottom-20 flex flex-col gap-2 z-50">
+                <button onclick="scrollNewsModal(-200)" class="bg-blue-600/80 hover:bg-blue-600 text-white p-3 rounded-full shadow-lg border border-blue-400 active:scale-95 transition-all cursor-pointer" aria-label="Hochscrollen">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 15l7-7 7 7" />
+                    </svg>
+                </button>
+                <button onclick="scrollNewsModal(200)" class="bg-blue-600/80 hover:bg-blue-600 text-white p-3 rounded-full shadow-lg border border-blue-400 active:scale-95 transition-all cursor-pointer" aria-label="Runterscrollen">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M19 9l-7 7-7-7" />
+                    </svg>
+                </button>
+            </div>
+
             <div id="newsModalScrollContainer" tabindex="0" class="overflow-y-auto flex-1 focus:outline-none">
                 <div id="newsModalImageContainer" class="w-full aspect-video bg-gray-950 relative hidden">
                     <img id="newsModalImage" src="" alt="" class="w-full h-full object-cover">
@@ -192,7 +208,7 @@
         let moviesToRender = []; 
         let favoriteUrls = JSON.parse(localStorage.getItem('gez_kino_favs') || '[]');
         let hideTvMovies = localStorage.getItem('gez_kino_hide_tv') === 'true';
-        let currentNewsSource = 'ÖRR'; // 'ÖRR' oder 'BILD'
+        let currentNewsSource = 'ÖRR';
         let currentGenre = 'Alle';
         let currentView = 'mediathek'; 
         let chunkObserver = null;
@@ -1143,6 +1159,13 @@
             if (currentGenre === '⭐ Favoriten') filterResults();
         }
 
+        function scrollNewsModal(amount) {
+            const container = document.getElementById('newsModalScrollContainer');
+            if (container) {
+                container.scrollBy({ top: amount, behavior: 'smooth' });
+            }
+        }
+
         function openNewsModal(id) {
             const article = newsArticles.find(m => m.id === id);
             if (!article) return;
@@ -1166,11 +1189,10 @@
             const scrollContainer = document.getElementById('newsModalScrollContainer');
 
             modal.style.display = 'flex';
-            document.body.style.overflow = 'hidden'; // Verhindert Scrollen der Hauptseite im Hintergrund
+            document.body.style.overflow = 'hidden'; 
 
             if (scrollContainer) {
                 scrollContainer.scrollTop = 0;
-                // Kurzes Delay stellt sicher, dass das Element im DOM sichtbar ist, bevor gefokust wird
                 requestAnimationFrame(() => {
                     scrollContainer.focus();
                 });
@@ -1459,23 +1481,25 @@
             filterResults();
         }
         
+        // Keydown EventListener erweitert für FB & Steuerkreuz
         window.addEventListener('keydown', (e) => {
             const newsModal = document.getElementById('newsModal');
             if (newsModal && newsModal.style.display === 'flex') {
                 const container = document.getElementById('newsModalScrollContainer');
                 if (!container) return;
 
-                if (e.key === 'ArrowDown') {
+                if (e.key === 'ArrowDown' || e.key === 'PageDown' || e.key === ' ') {
                     e.preventDefault();
-                    container.scrollBy({ top: 80, behavior: 'smooth' });
-                } else if (e.key === 'ArrowUp') {
+                    container.scrollBy({ top: 180, behavior: 'smooth' });
+                } else if (e.key === 'ArrowUp' || e.key === 'PageUp') {
                     e.preventDefault();
-                    container.scrollBy({ top: -80, behavior: 'smooth' });
-                } else if (e.key === 'Escape') {
+                    container.scrollBy({ top: -180, behavior: 'smooth' });
+                } else if (e.key === 'Escape' || e.key === 'BackSpace') {
                     closeNewsModal();
                 }
             }
         });
+
         document.getElementById('searchBar').addEventListener('input', filterResults);
     </script>
 </body>
