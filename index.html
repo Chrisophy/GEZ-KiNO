@@ -193,6 +193,7 @@
         let moviesToRender = []; 
         let favoriteUrls = JSON.parse(localStorage.getItem('gez_kino_favs') || '[]');
         let hideTvMovies = localStorage.getItem('gez_kino_hide_tv') === 'true';
+        let currentNewsSource = 'ÖRR'; // 'ÖRR' oder 'BILD'
         let currentGenre = 'Alle';
         let currentView = 'mediathek'; 
         let chunkObserver = null;
@@ -391,23 +392,24 @@
                 const data = await res.json();
                 
                 newsArticles = data.map((item, index) => {
-                    const teaser = item.description || item.plot || item.summary || '';
-                    const bodyText = item.content || item.body || item.text || teaser || 'Kein Text verfügbar.';
-                    const fallbackUrl = item.link || item.url || `#news-art-${index}`;
+                    const teaser = item.plot || item.description || item.summary || '';
+                    const bodyText = item.text || item.content || item.body || teaser || 'Kein Text verfügbar.';
+                    const fallbackUrl = item.video_url || item.link || item.url || `#news-art-${index}`;
 
                     return {
                         id: `news-art-${index}`, 
                         title: item.title || 'Keine Überschrift',
                         search: `${item.title || ''} ${teaser}`.toLowerCase(),
-                        year: item.date || item.published || 'Heute',
+                        year: item.year || item.date || 'Heute',
                         video_url: fallbackUrl,
                         plot: teaser || 'Klicke auf Lesen, um den vollen Artikel zu öffnen.',
                         full_text: bodyText,
                         director: '', actors: [],
                         rating: 'NEWS',
-                        thumb: item.image || item.thumbnail || item.thumb || 'placeholder.png',
+                        thumb: item.thumb || item.image || 'placeholder.png',
                         genres_list: item.genres_list || [item.category || 'News'],
-                        channel: item.source || item.channel || 'Nachrichten'
+                        channel: item.channel || 'Nachrichten',
+                        source: item.source || item.channel || 'ÖRR'
                     };
                 });
             } catch (err) {
@@ -629,31 +631,39 @@
                     }
                 }                
         
-                counts["Alle"]++;
-                if (favoriteUrls.includes(m.video_url)) {
-                    counts["⭐ Favoriten"]++;
-                }
-                if (currentView === 'mediathek') {
-                    if (m.isNew) {
-                        counts["Neu hinzugefügt"]++;
-                    }
-                    if (m.year && m.year !== 'None' && parseInt(m.year) > 1900) {
-                        counts["Nach Jahren"]++;
-                    }
-                    if (m.rating && m.rating !== 'N/A' && parseFloat(m.rating) > 0) {
-                         counts["Nach Bewertung"]++;
-                    }
-                    if (!m.genres_list || m.genres_list.includes('Sonstige')) {
-                        counts["Sonstige"]++;
-                    } else {
-                        m.genres_list.forEach(g => { if (g in counts) counts[g]++; });
-                    }
-                } else if (currentView === 'news') {
+                if (currentView === 'news') {
+                    const source = m.source || m.channel;
+                    if (source !== currentNewsSource) return;
+
+                    counts["Alle"]++;
+                    if (favoriteUrls.includes(m.video_url)) counts["⭐ Favoriten"]++;
+
                     if (m.genres_list) {
                         m.genres_list.forEach(g => {
                             if (!counts[g]) counts[g] = 0;
                             counts[g]++;
                         });
+                    }
+                } else {
+                    counts["Alle"]++;
+                    if (favoriteUrls.includes(m.video_url)) {
+                        counts["⭐ Favoriten"]++;
+                    }
+                    if (currentView === 'mediathek') {
+                        if (m.isNew) {
+                            counts["Neu hinzugefügt"]++;
+                        }
+                        if (m.year && m.year !== 'None' && parseInt(m.year) > 1900) {
+                            counts["Nach Jahren"]++;
+                        }
+                        if (m.rating && m.rating !== 'N/A' && parseFloat(m.rating) > 0) {
+                             counts["Nach Bewertung"]++;
+                        }
+                        if (!m.genres_list || m.genres_list.includes('Sonstige')) {
+                            counts["Sonstige"]++;
+                        } else {
+                            m.genres_list.forEach(g => { if (g in counts) counts[g]++; });
+                        }
                     }
                 }
             });
@@ -671,9 +681,12 @@
             } else if (currentView === 'news') {
                 const newsCats = new Set();
                 newsArticles.forEach(m => {
-                    if (m.genres_list) m.genres_list.forEach(g => newsCats.add(g));
+                    const source = m.source || m.channel;
+                    if (source === currentNewsSource && m.genres_list) {
+                        m.genres_list.forEach(g => newsCats.add(g));
+                    }
                 });
-                genres = ['Alle', '⭐ Favoriten', ...Array.from(newsCats).sort()];
+                genres = ['News-Quelle-Umschalter', 'Alle', '⭐ Favoriten', ...Array.from(newsCats).sort()];
             } else {
                 genres = ['Alle', '⭐ Favoriten'];
             }
@@ -681,10 +694,18 @@
             leiste.innerHTML = '';
             genres.forEach(g => {
                 const btn = document.createElement('button');
-                
                 btn.setAttribute('tabindex', '0');
 
-                if (g === 'TV-Filme-Umschalter') {
+                if (g === 'News-Quelle-Umschalter') {
+                    btn.id = "btnToggleNewsSource";
+                    btn.className = "flex-shrink-0 min-w-[120px] px-4 py-2 rounded-xl text-center flex flex-col justify-center transition-all cursor-pointer border font-bold shadow-md bg-gray-900 border-gray-800 text-blue-400 hover:border-blue-500";
+                    btn.onclick = toggleNewsSource;
+                    
+                    btn.innerHTML = `
+                        <span class="text-sm tracking-wide font-bold">Quelle: ${currentNewsSource}</span>
+                        <span class="text-[10px] opacity-60 font-bold">(Klick zum Wechseln)</span>
+                    `;
+                } else if (g === 'TV-Filme-Umschalter') {
                     btn.id = "btnToggleTvMovies";
                     btn.className = "flex-shrink-0 min-w-[120px] px-4 py-2 rounded-xl text-center flex flex-col justify-center transition-all cursor-pointer border font-bold shadow-md";
                     btn.onclick = toggleTvMoviesFilter;
@@ -770,7 +791,10 @@
             } else if (currentView === 'news') {
                 const newsCats = new Set();
                 newsArticles.forEach(m => {
-                    if (m.genres_list) m.genres_list.forEach(g => newsCats.add(g));
+                    const source = m.source || m.channel;
+                    if (source === currentNewsSource && m.genres_list) {
+                        m.genres_list.forEach(g => newsCats.add(g));
+                    }
                 });
                 genres = ['Alle', '⭐ Favoriten', ...Array.from(newsCats).sort()];
             } else {
@@ -878,6 +902,11 @@
                     }
                 }
 
+                if (currentView === 'news') {
+                    const source = m.source || m.channel;
+                    if (source !== currentNewsSource) return false;
+                }
+
                 let matchQuery = true;
 
                 if (query) {
@@ -975,7 +1004,7 @@
                 let badgeClass = "text-yellow-400";
                 let badgeText = `★ ${m.rating}`;
                 if (isTv) { badgeClass = "text-red-500"; badgeText = "🔴 LIVE"; }
-                if (isNews) { badgeClass = "text-blue-400"; badgeText = "News"; }
+                if (isNews) { badgeClass = "text-blue-400"; badgeText = m.source || m.channel || "News"; }
 
                 const plotClickAction = isNews ? `openNewsModal('${m.id}')` : 'togglePlot(this)';
                 const plotTitleHint = isNews ? 'Klicken, um den ganzen Artikel zu lesen' : 'Klicken, um die Beschreibung & Credits zu erweitern';
@@ -1340,7 +1369,6 @@
             document.body.style.overflow = 'auto'; 
         }
 
-        // NEU: Reagiert auf Suchleiste UND die Navigations-Buttons
         const topElements = ['searchBar', 'btnMediathek', 'btnLiveTv', 'btnNews'];
 
         topElements.forEach(id => {
@@ -1411,6 +1439,16 @@
             
             renderGenreLeiste();
             setActiveGenreStyling();            
+            updateGenreCounts();
+            filterResults();
+        }
+
+        function toggleNewsSource() {
+            currentNewsSource = (currentNewsSource === 'ÖRR') ? 'BILD' : 'ÖRR';
+            currentGenre = 'Alle';
+            
+            renderGenreLeiste();
+            setActiveGenreStyling();
             updateGenreCounts();
             filterResults();
         }
