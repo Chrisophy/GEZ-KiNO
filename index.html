@@ -143,7 +143,7 @@
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
                 </svg>
             </button>
-            <div class="overflow-y-auto flex-1">
+            <div id="newsModalScrollContainer" tabindex="0" class="overflow-y-auto flex-1 focus:outline-none">
                 <div id="newsModalImageContainer" class="w-full aspect-video bg-gray-950 relative hidden">
                     <img id="newsModalImage" src="" alt="" class="w-full h-full object-cover">
                     <div class="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent"></div>
@@ -159,8 +159,7 @@
                     <div id="newsModalContent" class="text-gray-300 text-sm md:text-base leading-relaxed whitespace-pre-line font-bold"></div>
                 </div>
             </div>
-            <div class="p-4 bg-gray-950 border-t border-gray-800 flex justify-between items-center gap-3">
-                <a id="newsModalExternalLink" href="#" target="_blank" rel="noopener noreferrer" class="bg-gray-900 hover:bg-gray-800 text-gray-400 hover:text-white px-4 py-2 rounded-xl text-xs font-bold transition-all border border-gray-800 flex items-center gap-1.5 shadow-lg">🌐 Original-Link</a>
+            <div class="p-4 bg-gray-950 border-t border-gray-800 flex justify-end items-center">
                 <button onclick="closeNewsModal()" class="bg-blue-600 hover:bg-blue-700 text-white px-5 py-2 rounded-xl text-xs font-bold transition-all shadow-lg cursor-pointer">Schließen</button>
             </div>
         </div>
@@ -1147,12 +1146,12 @@
         function openNewsModal(id) {
             const article = newsArticles.find(m => m.id === id);
             if (!article) return;
-
+        
             document.getElementById('newsModalTitle').innerText = article.title;
             document.getElementById('newsModalMetaChannel').innerText = article.channel;
             document.getElementById('newsModalMetaDate').innerText = article.year;
             document.getElementById('newsModalContent').innerText = article.full_text || article.plot;
-
+        
             const imgContainer = document.getElementById('newsModalImageContainer');
             const img = document.getElementById('newsModalImage');
             
@@ -1162,22 +1161,24 @@
             } else {
                 imgContainer.classList.add('hidden');
             }
-
-            const extLink = document.getElementById('newsModalExternalLink');
-            if (article.video_url && article.video_url.startsWith('http')) {
-                extLink.href = article.video_url;
-                extLink.classList.remove('hidden');
-            } else {
-                extLink.classList.add('hidden');
-            }
-
-            document.getElementById('newsModal').style.display = 'flex';
+        
+            const modal = document.getElementById('newsModal');
+            const scrollContainer = document.getElementById('newsModalScrollContainer');
+        
+            modal.style.display = 'flex';
             document.body.style.overflow = 'hidden';
+            if (scrollContainer) {
+                scrollContainer.scrollTop = 0;
+                setTimeout(() => scrollContainer.focus(), 50);
+            }
         }
-
+        
         function closeNewsModal() {
             document.getElementById('newsModal').style.display = 'none';
             document.body.style.overflow = 'auto';
+        
+            const scrollContainer = document.getElementById('newsModalScrollContainer');
+            if (scrollContainer) scrollContainer.blur();
         }
 
         function closeRouletteModal() {
