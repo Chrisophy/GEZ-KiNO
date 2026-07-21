@@ -59,7 +59,7 @@
                     <button id="btnInstallPWA" class="hidden px-4 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold shadow-lg transition-all cursor-pointer text-sm flex-1 sm:flex-none text-center animate-pulse">📲 App laden</button>        
                 </div>            
                 <div class="w-full sm:w-1/2 flex gap-2">
-                    <input type="text" id="searchBar" placeholder="Film | Regie | Schauspieler suchen..." class="bg-gray-900 text-white px-4 py-2.5 rounded-xl w-full focus:outline-none focus:ring-2 focus:ring-blue-500 border border-gray-800 shadow-inner text-sm">
+                    <input type="text" id="searchBar" oninput="filterResults()" placeholder="Film | Regie | Schauspieler suchen..." class="bg-gray-900 text-white px-4 py-2.5 rounded-xl w-full focus:outline-none focus:ring-2 focus:ring-blue-500 border border-gray-800 shadow-inner text-sm">
                 </div>
             </div>
         </header>
@@ -1146,30 +1146,34 @@
         function openNewsModal(id) {
             const article = newsArticles.find(m => m.id === id);
             if (!article) return;
-        
+
             document.getElementById('newsModalTitle').innerText = article.title;
             document.getElementById('newsModalMetaChannel').innerText = article.channel;
             document.getElementById('newsModalMetaDate').innerText = article.year;
             document.getElementById('newsModalContent').innerText = article.full_text || article.plot;
-        
+
             const imgContainer = document.getElementById('newsModalImageContainer');
             const img = document.getElementById('newsModalImage');
-            
+    
             if (article.thumb && article.thumb !== 'placeholder.png') {
                 img.src = article.thumb;
                 imgContainer.classList.remove('hidden');
             } else {
                 imgContainer.classList.add('hidden');
             }
-        
+
             const modal = document.getElementById('newsModal');
             const scrollContainer = document.getElementById('newsModalScrollContainer');
-        
+
             modal.style.display = 'flex';
-            document.body.style.overflow = 'hidden';
+            document.body.style.overflow = 'hidden'; // Verhindert Scrollen der Hauptseite im Hintergrund
+
             if (scrollContainer) {
                 scrollContainer.scrollTop = 0;
-                setTimeout(() => scrollContainer.focus(), 50);
+                // Kurzes Delay stellt sicher, dass das Element im DOM sichtbar ist, bevor gefokust wird
+                requestAnimationFrame(() => {
+                    scrollContainer.focus();
+                });
             }
         }
         
@@ -1388,9 +1392,8 @@
         });
 
         fetchAllData();
-        
-        if ('serviceWorker' in navigator) {
 
+        if ('serviceWorker' in navigator) {
             window.addEventListener('load', () => {
                 navigator.serviceWorker.register('./sw.js')
                     .then(reg => console.log('Service Worker registriert!', reg))
@@ -1403,6 +1406,7 @@
             deferredPrompt = e;            
             document.getElementById('btnInstallPWA').classList.remove('hidden');
         });
+
         document.getElementById('btnInstallPWA').addEventListener('click', async () => {
             if (!deferredPrompt) return;
             deferredPrompt.prompt();
@@ -1410,6 +1414,7 @@
             deferredPrompt = null;
             document.getElementById('btnInstallPWA').classList.add('hidden');
         });
+
         window.addEventListener('appinstalled', () => {
             deferredPrompt = null;
             document.getElementById('btnInstallPWA').classList.add('hidden');
@@ -1453,6 +1458,25 @@
             updateGenreCounts();
             filterResults();
         }
+        
+        window.addEventListener('keydown', (e) => {
+            const newsModal = document.getElementById('newsModal');
+            if (newsModal && newsModal.style.display === 'flex') {
+                const container = document.getElementById('newsModalScrollContainer');
+                if (!container) return;
+
+                if (e.key === 'ArrowDown') {
+                    e.preventDefault();
+                    container.scrollBy({ top: 80, behavior: 'smooth' });
+                } else if (e.key === 'ArrowUp') {
+                    e.preventDefault();
+                    container.scrollBy({ top: -80, behavior: 'smooth' });
+                } else if (e.key === 'Escape') {
+                    closeNewsModal();
+                }
+            }
+        });
+        document.getElementById('searchBar').addEventListener('input', filterResults);
     </script>
 </body>
 </html>
