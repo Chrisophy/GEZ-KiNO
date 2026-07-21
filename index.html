@@ -136,7 +136,6 @@
         </div>
     </div>
 
-    <!-- News Modal mit virtuellen Scroll-Buttons -->
     <div id="newsModal" class="fixed inset-0 bg-black/90 hidden z-50 justify-center items-center p-4 backdrop-blur-md">
         <div class="bg-gray-900 border border-gray-800 rounded-2xl max-w-2xl w-full max-h-[85vh] flex flex-col overflow-hidden shadow-2xl relative">
             <button onclick="closeNewsModal()" class="absolute top-4 right-4 text-white hover:text-gray-400 p-2 z-50 bg-gray-950/80 rounded-full border border-gray-800 transition-colors cursor-pointer">
@@ -145,7 +144,6 @@
                 </svg>
             </button>
 
-            <!-- Virtuelle Scroll-Buttons für Maus/Fernbedienung -->
             <div class="absolute right-4 bottom-20 flex flex-col gap-2 z-50">
                 <button onclick="scrollNewsModal(-200)" class="bg-blue-600/80 hover:bg-blue-600 text-white p-3 rounded-full shadow-lg border border-blue-400 active:scale-95 transition-all cursor-pointer" aria-label="Hochscrollen">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -253,13 +251,48 @@
 
             return { cleanName: clean, year: year };
         }
+        function getLatestUpdateSlot() {
+            const now = new Date();
+            const today4AM = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 4, 0, 0, 0);
+            const today4PM = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 16, 0, 0, 0);
+
+            if (now >= today4PM) {
+                return today4PM.getTime();
+            } else if (now >= today4AM) {
+                return today4AM.getTime();
+            } else {
+                const yesterday4PM = new Date(now.getFullYear(), now.getMonth(), now.getDate() - 1, 16, 0, 0, 0);
+                return yesterday4PM.getTime();
+            }
+        }
+
+        function shouldFetchFreshData() {
+            const lastFetch = parseInt(localStorage.getItem('gez_kino_last_fetch') || '0', 10);
+            const latestSlot = getLatestUpdateSlot();
+            return lastFetch < latestSlot;
+        }
 
         async function fetchAllData() {
+            const cachedData = localStorage.getItem('gez_kino_movies_cache');
+            
+            if (cachedData && !shouldFetchFreshData()) {
+                try {
+                    allMovies = JSON.parse(cachedData);
+                    document.getElementById('scanner')?.classList.add('hidden');
+                    renderGenreLeiste();
+                    filterResults();
+                    console.log("Filme aus Cache geladen (Nächstes Update um 04:00 / 16:00 Uhr).");
+                    return;
+                } catch (e) {
+                    console.warn("Cache konnte nicht gelesen werden, lade neu...");
+                }
+            }
+        
             document.getElementById('scanner')?.classList.remove('hidden');
             const seenUrls = new Set();
             const seenTitles = new Set();
             let tempResults = [];
-
+        
             try {
                 const promises = QUERIES.map(q => {
                     const payload = {
@@ -274,9 +307,9 @@
                         body: JSON.stringify(payload)
                     }).then(res => res.json()).catch(() => ({ result: { results: [] } }));
                 });
-
+        
                 const responses = await Promise.all(promises);
-
+        
                 responses.forEach(data => {
                     const results = data.result?.results || [];
                     results.forEach(m => {
@@ -326,7 +359,7 @@
                         });
                     });
                 });
-
+        
                 const sortedByTime = [...tempResults].sort((a, b) => b.timestamp - a.timestamp);
                 const newestUrls = new Set(sortedByTime.slice(0, 100).map(m => m.video_url));
                 
@@ -335,18 +368,21 @@
                         m.isNew = true;
                     }
                 });
-
+        
                 allMovies = tempResults.sort((a, b) => a.title.localeCompare(b.title));
                 
                 if (allMovies.length === 0 && currentView === 'mediathek') {
                     document.getElementById('statusMessage').innerText = "Keine Filme gefunden.";
                     return;
                 }
-
+        
                 renderGenreLeiste();
-                filterResults();
-                hydrateWithTMDBParallel();
-
+                filterResults();                
+                await hydrateWithTMDBParallel();
+        
+                localStorage.setItem('gez_kino_last_fetch', Date.now().toString());
+                localStorage.setItem('gez_kino_movies_cache', JSON.stringify(allMovies));
+        
             } catch (err) {
                 console.error(err);
                 if (currentView === 'mediathek') {
@@ -1481,7 +1517,6 @@
             filterResults();
         }
         
-        // Keydown EventListener erweitert für FB & Steuerkreuz
         window.addEventListener('keydown', (e) => {
             const newsModal = document.getElementById('newsModal');
             if (newsModal && newsModal.style.display === 'flex') {
