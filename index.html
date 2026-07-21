@@ -66,15 +66,13 @@
             </div>
         </header>
 
-        <!-- Fix: tabindex="0" hinzugefügt und Standard-Flex-Layout via Tailwind erzwungen, damit die Leiste im Fokus-Baum existiert -->
-        <nav id="genreLeiste" tabindex="0" class="flex flex-row items-center gap-3 pb-3 mb-4 scroll-smooth min-h-[50px] w-full overflow-x-auto"></nav>
+        <nav id="genreLeiste" class="flex flex-row items-center gap-3 pb-3 mb-4 scroll-smooth min-h-[50px] w-full overflow-x-auto"></nav>
 
         <main id="movieGrid" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4">
             <div id="statusMessage" class="text-center col-span-full py-12 text-gray-400 animate-pulse">Initialisiere...</div>
         </main>
     </div>
 
-    <!-- Restliche Modals (Rating, Years, Video, Roulette, News) unverändert ... -->
     <div id="ratingModal" class="fixed inset-0 bg-black/80 hidden z-40 justify-center items-center p-4 backdrop-blur-sm">
         <div class="bg-gray-900 border border-gray-800 rounded-2xl max-w-sm w-full p-6 flex flex-col">
             <h2 class="text-xl font-bold mb-4 text-center text-gray-100">Mindestbewertung</h2>
@@ -686,7 +684,6 @@
             genres.forEach(g => {
                 const btn = document.createElement('button');
                 
-                // Fix: Jedem Button explizit tabindex verleihen, um Fernbedienungs-Fokus-Probleme auf Android/TV-Geräten zu unterbinden
                 btn.setAttribute('tabindex', '0');
 
                 if (g === 'TV-Filme-Umschalter') {
@@ -1000,8 +997,7 @@
                                 class="fav-btn absolute top-2 left-2 bg-black/70 px-2 py-0.5 text-sm font-bold rounded transition-colors cursor-pointer ${isFav ? 'text-yellow-400 hover:text-gray-400' : 'text-gray-400 hover:text-yellow-400'} z-10">
                             ${isFav ? '★' : '☆'}
                         </button>
-                        <img src="${m.thumb}" alt="" class="${(isTv || isNews) ? 'max-w-full max-h-full object-contain' : 'w-full h-full object-cover'} cursor-pointer group-hover:scale-105 transition-transform duration-300" 
-                             onclick="${clickAction}"
+                        <img src="${m.thumb}" alt="" class="${(isTv || isNews) ? 'max-w-full max-h-full object-contain' : 'w-full h-full object-cover'} group-hover:scale-105 transition-transform duration-300"                                  
                              onerror="if(!this.src.includes('placeholder.png'))this.src='placeholder.png';">
                         <span class="absolute top-2 right-2 bg-black/70 px-2 py-0.5 text-xs font-bold ${badgeClass} rounded">
                             ${badgeText}
@@ -1009,7 +1005,7 @@
                     </div>
                     <div class="p-3 flex-1 flex flex-col justify-between">
                         <div>
-                            <h3 tabindex="0" onclick="${clickAction}" class="font-bold text-sm text-gray-100 line-clamp-2 mb-1 group-hover:text-blue-400 transition-colors cursor-pointer" title="${m.title}">${m.title}</h3>
+                            <h3 class="font-bold text-sm text-gray-100 line-clamp-2 mb-1" title="${m.title}">${m.title}</h3>
                             <p class="text-gray-500 text-[11px] mb-2 font-bold">${m.channel} · ${m.year}</p>
                             <p tabindex="0" onclick="${plotClickAction}" 
                                class="text-gray-400 text-xs line-clamp-3 mb-1 font-bold cursor-pointer hover:text-gray-200 transition-colors" 
@@ -1385,7 +1381,6 @@
             document.getElementById('btnInstallPWA').classList.add('hidden');
         });   
         
-        // Stellt sicher, dass fokussierte Buttons innerhalb der Leiste automatisch ins Sichtfeld scrollen
         document.getElementById('genreLeiste').addEventListener('focusin', (e) => {
             if (e.target.tagName === 'BUTTON') {
                 e.target.scrollIntoView({
