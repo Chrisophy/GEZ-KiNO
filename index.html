@@ -940,11 +940,16 @@
         function filterResults() {
             const query = document.getElementById('searchBar').value.toLowerCase().trim();
             let currentSet = allMovies;
-            
+    
             if (currentView === 'livetv') currentSet = liveTvChannels;
             if (currentView === 'news') currentSet = newsArticles;
-            
+
+            // Status-Nachricht zurücksetzen/entfernen
+            const statusMsg = document.getElementById('statusMessage');
+            if (statusMsg) statusMsg.remove();
+
             moviesToRender = currentSet.filter(m => {
+
                 if (hideTvMovies && currentView === 'mediathek') {
                     const titleLower = m.title.toLowerCase();
                     const descLower = m.mediathek_desc ? m.mediathek_desc.toLowerCase() : '';
@@ -1482,7 +1487,10 @@
             }
         });
 
-        fetchAllData();
+        // NEU: Garantiert, dass das HTML geladen ist, bevor Daten geholt werden
+        document.addEventListener('DOMContentLoaded', () => {
+            fetchAllData();
+        });
 
         if ('serviceWorker' in navigator) {
             window.addEventListener('load', () => {
