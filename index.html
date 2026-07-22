@@ -1383,23 +1383,23 @@
                 video.addEventListener('error', activeVideoErrorHandler);
             }
 
-            // Startet die Wiedergabe und fordert sofort echten Video-Vollbildmodus an
+            // Android TV Focus & Play Handling
+            video.focus();
+
             video.play().then(() => {
                 requestElementFullscreen(video);
             }).catch(err => {
                 console.log("Autoplay blockiert:", err);
-                // Fallback: Wenn Autoplay verzögert, trotzdem Vollbild versuchen
                 requestElementFullscreen(video);
             });
         }
 
-        // Hilfsfunktion für sauberen Vollbildaufruf auf allen Plattformen / iOS / Android
         function requestElementFullscreen(el) {
             if (el.requestFullscreen) {
                 el.requestFullscreen().catch(() => {});
             } else if (el.webkitRequestFullscreen) {
                 el.webkitRequestFullscreen();
-            } else if (el.webkitEnterFullscreen) { // Speziell für iOS Safari / WebKit Video
+            } else if (el.webkitEnterFullscreen) {
                 el.webkitEnterFullscreen();
             } else if (el.msRequestFullscreen) {
                 el.msRequestFullscreen();
@@ -1412,12 +1412,10 @@
             
             activeDownloadUrl = '';
 
-            // Beendet iOS-Video-Vollbild, falls aktiv
             if (video.webkitExitFullscreen) {
                 try { video.webkitExitFullscreen(); } catch(e) {}
             }
 
-            // Beendet Standard-Vollbild
             if (document.fullscreenElement || document.webkitFullscreenElement || document.msFullscreenElement) {
                 if (document.exitFullscreen) {
                     document.exitFullscreen().catch(() => {});
@@ -1464,6 +1462,51 @@
                 });
             }
         });
+
+        // D-Pad / Fernbedienung Steuerung für den Video Player
+        window.addEventListener('keydown', (e) => {
+            const modal = document.getElementById('videoModal');
+            const video = document.getElementById('mainVideoPlayer');
+
+            // Nur ausführen, wenn der Player sichtbar ist
+            if (modal && !modal.classList.contains('hidden')) {
+                switch (e.key) {
+                    case 'ArrowLeft':
+                        e.preventDefault();
+                        video.currentTime = Math.max(0, video.currentTime - 10); // 10s zurückspulen
+                        break;
+                    case 'ArrowRight':
+                        e.preventDefault();
+                        video.currentTime = Math.min(video.duration || 0, video.currentTime + 10); // 10s vorspulen
+                        break;
+                    case 'ArrowUp':
+                        e.preventDefault();
+                        video.volume = Math.min(1, video.volume + 0.1); // Lauter
+                        break;
+                    case 'ArrowDown':
+                        e.preventDefault();
+                        video.volume = Math.max(0, video.volume - 0.1); // Leiser
+                        break;
+                    case 'Enter':
+                    case ' ':
+                    case 'MediaPlayPause':
+                        e.preventDefault();
+                        if (video.paused) {
+                            video.play();
+                        } else {
+                            video.pause();
+                        }
+                        break;
+                    case 'Escape':
+                    case 'BackSpace':
+                    case 'GoBack':
+                        e.preventDefault();
+                        closePlayer();
+                        break;
+                }
+            }
+        });
+
 
         fetchAllData();
 
