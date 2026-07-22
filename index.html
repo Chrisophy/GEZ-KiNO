@@ -99,16 +99,8 @@
         </div>
     </div>
     
-    <div id="videoModal" class="fixed inset-0 bg-black hidden z-[100] flex flex-col justify-center items-center w-full h-full">
-        <!-- Schließen Button (Groß, immer im Vordergrund) -->
-        <button type="button" onclick="closePlayer()" class="absolute top-4 right-4 text-white hover:text-gray-300 p-3 z-[110] bg-black/70 hover:bg-black rounded-full border border-gray-700 transition-all cursor-pointer shadow-2xl" aria-label="Player schließen">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M6 18L18 6M6 6l12 12" />
-            </svg>
-        </button>
-    
-        <!-- Video Player mit vollen Controls inkl. Download-Option -->
-        <video id="mainVideoPlayer" controls controlslist="download" autoplay playsinline class="w-full h-full object-contain bg-black"></video>
+    <div id="videoModal" class="fixed inset-0 bg-black hidden z-50 flex flex-col justify-center items-center w-full h-full">
+        <video id="mainVideoPlayer" controls autoplay playsinline class="w-full h-full object-contain bg-black"></video>
     </div>
 
     <div id="rouletteModal" class="fixed inset-0 bg-black/90 hidden z-50 justify-center items-center p-4 backdrop-blur-md">
@@ -1328,30 +1320,6 @@
             }, 80); 
         }
 
-        // Vollbild anfordern
-        function requestFullscreen(element) {
-            if (element.requestFullscreen) {
-                element.requestFullscreen().catch(() => {});
-            } else if (element.webkitRequestFullscreen) {
-                element.webkitRequestFullscreen();
-            } else if (element.msRequestFullscreen) {
-                element.msRequestFullscreen();
-            }
-        }
-        
-        // Vollbild beenden
-        function exitFullscreen() {
-            if (document.fullscreenElement || document.webkitFullscreenElement || document.msFullscreenElement) {
-                if (document.exitFullscreen) {
-                    document.exitFullscreen().catch(() => {});
-                } else if (document.webkitExitFullscreen) {
-                    document.webkitExitFullscreen();
-                } else if (document.msExitFullscreen) {
-                    document.msExitFullscreen();
-                }
-            }
-        }
-        
         function openPlayer(url, title) {
             const modal = document.getElementById('videoModal');
             const video = document.getElementById('mainVideoPlayer');
@@ -1360,7 +1328,9 @@
             modal.classList.remove('hidden');
             document.body.style.overflow = 'hidden'; 
         
-            // Abfangen der Android-Zurück-Geste, damit sie nur den Player schließt und NICHT die PWA beendet
+            // PWA-Sperre & Zurück-Taste Abfangen: 
+            // Wir fügen einen Dummy-Eintrag in den Browser-Verlauf ein.
+            // Wenn der User "Zurück" wischt/drückt, schließt das nur den Player.
             history.pushState({ playerOpen: true }, '');
         
             if (activeVideoErrorHandler) {
@@ -1369,7 +1339,6 @@
             }
         
             const isM3u8 = url.includes('.m3u8') || url.endsWith('.m3u8');
-            
             if (isM3u8) {
                 if (Hls.isSupported()) {
                     if (hlsInstance) hlsInstance.destroy();
@@ -1387,13 +1356,14 @@
                 video.src = url;
             }
         
-            // Video abspielen und direkt in echten Vollbildmodus versetzen
+            // Video starten und den Modal-Container (nicht nur das Video) in den Vollbildmodus setzen
             video.play().then(() => {
-                requestFullscreen(modal);
-            }).catch(err => {
-                console.log("Autoplay blockiert:", err);
-                requestFullscreen(modal);
-            });
+                if (modal.requestFullscreen) {
+                    modal.requestFullscreen().catch(() => {});
+                } else if (modal.webkitRequestFullscreen) {
+                    modal.webkitRequestFullscreen();
+                }
+            }).catch(err => console.log("Autoplay blockiert:", err));
         
             video.focus();
         }
@@ -1404,8 +1374,14 @@
             
             activeDownloadUrl = '';
         
-            // Vollbild verlassen
-            exitFullscreen();
+            // Echten Vollbildmodus beenden (falls aktiv)
+            if (document.fullscreenElement || document.webkitFullscreenElement || document.msFullscreenElement) {
+                if (document.exitFullscreen) {
+                    document.exitFullscreen().catch(() => {});
+                } else if (document.webkitExitFullscreen) {
+                    document.webkitExitFullscreen();
+                }
+            }
         
             if (activeVideoErrorHandler) {
                 video.removeEventListener('error', activeVideoErrorHandler);
@@ -1424,39 +1400,33 @@
             try { video.load(); } catch(e) {} 
             
             modal.classList.add('hidden');
-            document.body.style.overflow = 'auto'; 
+            document.body.style.overflow = 'auto';
         
-            // Zurück-Verlauf der PWA bereinigen
+            // Falls die Player-Schließung manuell aufgerufen wurde, Verlauf wieder aufräumen
             if (history.state && history.state.playerOpen) {
                 history.back();
             }
-        
-            if (document.activeElement) {
-                document.activeElement.blur();
-            }
         }
         
-        // Globaler History-Listener für die Android "Zurück"-Taste / Wischgeste
+        // 1. Reagiert auf die Android-Zurück-Geste / Zurück-Taste der TV-Fernbedienung / Browser-Back
         window.addEventListener('popstate', (e) => {
             const modal = document.getElementById('videoModal');
             if (modal && !modal.classList.contains('hidden')) {
+                // Schließt das Video sauber, wenn die Zurück-Aktion ausgelöst wird
                 closePlayer();
             }
         });
         
-        // Tastatur & D-Pad Steuerung
+        // 2. Reagiert auf Tastatur-Eingaben (Escape, Backspace, Fernbedienungs-Back-Keys)
         window.addEventListener('keydown', (e) => {
             const modal = document.getElementById('videoModal');
-            const video = document.getElementById('mainVideoPlayer');
-        
             if (modal && !modal.classList.contains('hidden')) {
-                if (e.key === 'Escape' || e.key === 'BackSpace' || e.key === 'GoBack') {
+                if (e.key === 'Escape' || e.key === 'BackSpace' || e.key === 'GoBack' || e.keyCode === 10009 || e.keyCode === 461) {
                     e.preventDefault();
                     closePlayer();
                 }
             }
-        });
-
+        });        
 
         const topElements = ['searchBar', 'btnMediathek', 'btnLiveTv', 'btnNews'];
 
@@ -1474,69 +1444,6 @@
                 });
             }
         });
-
-        // D-Pad / Fernbedienung Steuerung für den Video Player
-        window.addEventListener('keydown', (e) => {
-            const modal = document.getElementById('videoModal');
-            const video = document.getElementById('mainVideoPlayer');
-        
-            // Nur ausführen, wenn der Player sichtbar ist
-            if (modal && !modal.classList.contains('hidden')) {
-        
-                // Wenn der Fokus direkt auf dem Close-Button liegt, dem Button die normale Enter/Click-Steuerung überlassen
-                if (document.activeElement === document.querySelector('#videoModal button')) {
-                    if (e.key === 'Escape' || e.key === 'BackSpace' || e.key === 'GoBack') {
-                        e.preventDefault();
-                        closePlayer();
-                    }
-                    return;
-                }
-        
-                // Falls Fokus auf dem Video-Element liegt
-                switch (e.key) {
-                    case 'ArrowLeft':
-                        // Nur spulen, wenn der Fokus direkt auf dem Video liegt
-                        if (document.activeElement === video) {
-                            e.preventDefault();
-                            video.currentTime = Math.max(0, video.currentTime - 10);
-                        }
-                        break;
-                    case 'ArrowRight':
-                        if (document.activeElement === video) {
-                            e.preventDefault();
-                            video.currentTime = Math.min(video.duration || 0, video.currentTime + 10);
-                        }
-                        break;
-                    case 'ArrowUp':
-                        // Erlaubt das Hoch-Navigieren zum X-Button oben rechts!
-                        // Wenn wir Pfeil-Nach-Oben drücken, fokussieren wir den X-Button:
-                        e.preventDefault();
-                        document.querySelector('#videoModal button').focus();
-                        break;
-                    case 'ArrowDown':
-                        // Zurück zum Video-Player fokussieren
-                        e.preventDefault();
-                        video.focus();
-                        break;
-                    case 'Enter':
-                    case ' ':
-                    case 'MediaPlayPause':
-                        if (document.activeElement === video) {
-                            e.preventDefault();
-                            if (video.paused) video.play(); else video.pause();
-                        }
-                        break;
-                    case 'Escape':
-                    case 'BackSpace':
-                    case 'GoBack':
-                        e.preventDefault();
-                        closePlayer();
-                        break;
-                }
-            }
-        });
-
-
 
         fetchAllData();
 
