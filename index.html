@@ -99,13 +99,16 @@
         </div>
     </div>
     
-    <div id="videoModal" class="fixed inset-0 bg-black hidden z-[60] flex flex-col justify-center items-center">
-        <button onclick="closePlayer()" class="absolute top-4 right-4 text-white hover:text-gray-400 p-3 z-50 bg-black/60 rounded-full border border-gray-800 transition-colors cursor-pointer" aria-label="Schließen">
+    <div id="videoModal" class="fixed inset-0 bg-black hidden z-[100] flex flex-col justify-center items-center w-full h-full">
+        <!-- Schließen Button (Groß, immer im Vordergrund) -->
+        <button type="button" onclick="closePlayer()" class="absolute top-4 right-4 text-white hover:text-gray-300 p-3 z-[110] bg-black/70 hover:bg-black rounded-full border border-gray-700 transition-all cursor-pointer shadow-2xl" aria-label="Player schließen">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M6 18L18 6M6 6l12 12" />
             </svg>
         </button>
-        <video id="mainVideoPlayer" controls autoplay playsinline webkit-playsinline class="w-full h-full object-contain bg-black"></video>
+    
+        <!-- Video Player mit vollen Controls inkl. Download-Option -->
+        <video id="mainVideoPlayer" controls controlslist="download" autoplay playsinline class="w-full h-full object-contain bg-black"></video>
     </div>
 
     <div id="rouletteModal" class="fixed inset-0 bg-black/90 hidden z-50 justify-center items-center p-4 backdrop-blur-md">
@@ -1325,47 +1328,56 @@
             }, 80); 
         }
 
+        // Vollbild anfordern
+        function requestFullscreen(element) {
+            if (element.requestFullscreen) {
+                element.requestFullscreen().catch(() => {});
+            } else if (element.webkitRequestFullscreen) {
+                element.webkitRequestFullscreen();
+            } else if (element.msRequestFullscreen) {
+                element.msRequestFullscreen();
+            }
+        }
+        
+        // Vollbild beenden
+        function exitFullscreen() {
+            if (document.fullscreenElement || document.webkitFullscreenElement || document.msFullscreenElement) {
+                if (document.exitFullscreen) {
+                    document.exitFullscreen().catch(() => {});
+                } else if (document.webkitExitFullscreen) {
+                    document.webkitExitFullscreen();
+                } else if (document.msExitFullscreen) {
+                    document.msExitFullscreen();
+                }
+            }
+        }
+        
         function openPlayer(url, title) {
             const modal = document.getElementById('videoModal');
             const video = document.getElementById('mainVideoPlayer');
-
+        
             activeDownloadUrl = url; 
             modal.classList.remove('hidden');
             document.body.style.overflow = 'hidden'; 
-
+        
+            // Abfangen der Android-Zurück-Geste, damit sie nur den Player schließt und NICHT die PWA beendet
+            history.pushState({ playerOpen: true }, '');
+        
             if (activeVideoErrorHandler) {
                 video.removeEventListener('error', activeVideoErrorHandler);
                 activeVideoErrorHandler = null;
             }
-
+        
             const isM3u8 = url.includes('.m3u8') || url.endsWith('.m3u8');
+            
             if (isM3u8) {
                 if (Hls.isSupported()) {
                     if (hlsInstance) hlsInstance.destroy();
-                    hlsInstance = new Hls({ manifestLoadingTimeOut: 1500, manifestLoadingMaxRetry: 0 });
-                    hlsInstance.on(Hls.Events.ERROR, function (event, data) {
-                        if (!hlsInstance) return;
-                        if (data.fatal && data.type === Hls.ErrorTypes.NETWORK_ERROR) {
-                            hlsInstance.off(Hls.Events.ERROR); 
-                            window.open(url, '_blank');
-                            closePlayer();
-                        }
-                    });
+                    hlsInstance = new Hls({ manifestLoadingTimeOut: 5000, manifestLoadingMaxRetry: 2 });
                     hlsInstance.loadSource(url);
                     hlsInstance.attachMedia(video);
                 } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
                     video.src = url;
-                    activeVideoErrorHandler = function() {
-                        video.removeEventListener('error', activeVideoErrorHandler);
-                        activeVideoErrorHandler = null;
-                        if (!video.src || video.src === "" || video.src === window.location.href) return;
-                        window.open(url, '_blank');
-                        closePlayer();
-                    };
-                    video.addEventListener('error', activeVideoErrorHandler);
-                } else {
-                    window.open(url, '_blank');
-                    closePlayer();
                 }
             } else {
                 if (hlsInstance) {
@@ -1373,40 +1385,27 @@
                     hlsInstance = null;
                 }
                 video.src = url;
-                activeVideoErrorHandler = function() {
-                    video.removeEventListener('error', activeVideoErrorHandler);
-                    activeVideoErrorHandler = null;
-                    if (!video.src || video.src === "" || video.src === window.location.href) return;
-                    window.open(url, '_blank');
-                    closePlayer();
-                };
-                video.addEventListener('error', activeVideoErrorHandler);
             }
-
-            // === HIER GEHÖRT ES HIN ===
-            video.focus();
-
+        
+            // Video abspielen und direkt in echten Vollbildmodus versetzen
             video.play().then(() => {
-                requestElementFullscreen(video);
+                requestFullscreen(modal);
             }).catch(err => {
                 console.log("Autoplay blockiert:", err);
-                requestElementFullscreen(video);
+                requestFullscreen(modal);
             });
+        
+            video.focus();
         }
-
+        
         function closePlayer() {
             const modal = document.getElementById('videoModal');
             const video = document.getElementById('mainVideoPlayer');
             
             activeDownloadUrl = '';
         
-            if (document.fullscreenElement || document.webkitFullscreenElement || document.msFullscreenElement) {
-                if (document.exitFullscreen) {
-                    document.exitFullscreen().catch(() => {});
-                } else if (document.webkitExitFullscreen) {
-                    document.webkitExitFullscreen();
-                }
-            }
+            // Vollbild verlassen
+            exitFullscreen();
         
             if (activeVideoErrorHandler) {
                 video.removeEventListener('error', activeVideoErrorHandler);
@@ -1427,12 +1426,37 @@
             modal.classList.add('hidden');
             document.body.style.overflow = 'auto'; 
         
-            // Entferne Fokus-Rahmen auf dem geschlossenen Element
+            // Zurück-Verlauf der PWA bereinigen
+            if (history.state && history.state.playerOpen) {
+                history.back();
+            }
+        
             if (document.activeElement) {
                 document.activeElement.blur();
             }
         }
         
+        // Globaler History-Listener für die Android "Zurück"-Taste / Wischgeste
+        window.addEventListener('popstate', (e) => {
+            const modal = document.getElementById('videoModal');
+            if (modal && !modal.classList.contains('hidden')) {
+                closePlayer();
+            }
+        });
+        
+        // Tastatur & D-Pad Steuerung
+        window.addEventListener('keydown', (e) => {
+            const modal = document.getElementById('videoModal');
+            const video = document.getElementById('mainVideoPlayer');
+        
+            if (modal && !modal.classList.contains('hidden')) {
+                if (e.key === 'Escape' || e.key === 'BackSpace' || e.key === 'GoBack') {
+                    e.preventDefault();
+                    closePlayer();
+                }
+            }
+        });
+
 
         const topElements = ['searchBar', 'btnMediathek', 'btnLiveTv', 'btnNews'];
 
