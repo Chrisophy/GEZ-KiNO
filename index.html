@@ -1383,7 +1383,7 @@
                 video.addEventListener('error', activeVideoErrorHandler);
             }
 
-            // Android TV Focus & Play Handling
+            // === HIER GEHÖRT ES HIN ===
             video.focus();
 
             video.play().then(() => {
@@ -1394,38 +1394,20 @@
             });
         }
 
-        function requestElementFullscreen(el) {
-            if (el.requestFullscreen) {
-                el.requestFullscreen().catch(() => {});
-            } else if (el.webkitRequestFullscreen) {
-                el.webkitRequestFullscreen();
-            } else if (el.webkitEnterFullscreen) {
-                el.webkitEnterFullscreen();
-            } else if (el.msRequestFullscreen) {
-                el.msRequestFullscreen();
-            }
-        }
-
         function closePlayer() {
             const modal = document.getElementById('videoModal');
             const video = document.getElementById('mainVideoPlayer');
             
             activeDownloadUrl = '';
-
-            if (video.webkitExitFullscreen) {
-                try { video.webkitExitFullscreen(); } catch(e) {}
-            }
-
+        
             if (document.fullscreenElement || document.webkitFullscreenElement || document.msFullscreenElement) {
                 if (document.exitFullscreen) {
                     document.exitFullscreen().catch(() => {});
                 } else if (document.webkitExitFullscreen) {
                     document.webkitExitFullscreen();
-                } else if (document.msExitFullscreen) {
-                    document.msExitFullscreen();
                 }
             }
-
+        
             if (activeVideoErrorHandler) {
                 video.removeEventListener('error', activeVideoErrorHandler);
                 activeVideoErrorHandler = null;
@@ -1444,7 +1426,13 @@
             
             modal.classList.add('hidden');
             document.body.style.overflow = 'auto'; 
+        
+            // Entferne Fokus-Rahmen auf dem geschlossenen Element
+            if (document.activeElement) {
+                document.activeElement.blur();
+            }
         }
+        
 
         const topElements = ['searchBar', 'btnMediathek', 'btnLiveTv', 'btnNews'];
 
@@ -1467,34 +1455,51 @@
         window.addEventListener('keydown', (e) => {
             const modal = document.getElementById('videoModal');
             const video = document.getElementById('mainVideoPlayer');
-
+        
             // Nur ausführen, wenn der Player sichtbar ist
             if (modal && !modal.classList.contains('hidden')) {
+        
+                // Wenn der Fokus direkt auf dem Close-Button liegt, dem Button die normale Enter/Click-Steuerung überlassen
+                if (document.activeElement === document.querySelector('#videoModal button')) {
+                    if (e.key === 'Escape' || e.key === 'BackSpace' || e.key === 'GoBack') {
+                        e.preventDefault();
+                        closePlayer();
+                    }
+                    return;
+                }
+        
+                // Falls Fokus auf dem Video-Element liegt
                 switch (e.key) {
                     case 'ArrowLeft':
-                        e.preventDefault();
-                        video.currentTime = Math.max(0, video.currentTime - 10); // 10s zurückspulen
+                        // Nur spulen, wenn der Fokus direkt auf dem Video liegt
+                        if (document.activeElement === video) {
+                            e.preventDefault();
+                            video.currentTime = Math.max(0, video.currentTime - 10);
+                        }
                         break;
                     case 'ArrowRight':
-                        e.preventDefault();
-                        video.currentTime = Math.min(video.duration || 0, video.currentTime + 10); // 10s vorspulen
+                        if (document.activeElement === video) {
+                            e.preventDefault();
+                            video.currentTime = Math.min(video.duration || 0, video.currentTime + 10);
+                        }
                         break;
                     case 'ArrowUp':
+                        // Erlaubt das Hoch-Navigieren zum X-Button oben rechts!
+                        // Wenn wir Pfeil-Nach-Oben drücken, fokussieren wir den X-Button:
                         e.preventDefault();
-                        video.volume = Math.min(1, video.volume + 0.1); // Lauter
+                        document.querySelector('#videoModal button').focus();
                         break;
                     case 'ArrowDown':
+                        // Zurück zum Video-Player fokussieren
                         e.preventDefault();
-                        video.volume = Math.max(0, video.volume - 0.1); // Leiser
+                        video.focus();
                         break;
                     case 'Enter':
                     case ' ':
                     case 'MediaPlayPause':
-                        e.preventDefault();
-                        if (video.paused) {
-                            video.play();
-                        } else {
-                            video.pause();
+                        if (document.activeElement === video) {
+                            e.preventDefault();
+                            if (video.paused) video.play(); else video.pause();
                         }
                         break;
                     case 'Escape':
@@ -1506,6 +1511,7 @@
                 }
             }
         });
+
 
 
         fetchAllData();
