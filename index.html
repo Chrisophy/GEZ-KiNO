@@ -7,6 +7,12 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
     <style>
+        /* Verhindert den orangenen/blauen Focus-Rahmen bei Videos */
+        video:focus, video:active, #videoModal:focus {
+            outline: none !important;
+            -webkit-tap-highlight-color: transparent !important;
+        }
+        
         body { background-color: #121212; color: #e5e7eb; font-family: 'Roboto', sans-serif; }
         
         #genreLeiste { 
@@ -1328,9 +1334,7 @@
             modal.classList.remove('hidden');
             document.body.style.overflow = 'hidden'; 
         
-            // PWA-Sperre & Zurück-Taste Abfangen: 
-            // Wir fügen einen Dummy-Eintrag in den Browser-Verlauf ein.
-            // Wenn der User "Zurück" wischt/drückt, schließt das nur den Player.
+            // PWA Back-Button Handling
             history.pushState({ playerOpen: true }, '');
         
             if (activeVideoErrorHandler) {
@@ -1356,17 +1360,24 @@
                 video.src = url;
             }
         
-            // Video starten und den Modal-Container (nicht nur das Video) in den Vollbildmodus setzen
+            // SICHERSTELLEN DASS STEUERUNG AKTIV IST
+            video.controls = true;
+        
+            // Video abspielen
             video.play().then(() => {
+                // Zerstöre den orangenen Fokus-Bug: Fokus auf das übergeordnete Modal setzen, nicht auf das Video selbst!
+                modal.tabIndex = -1;
+                modal.focus();
+        
+                // Vollbild erzwingen
                 if (modal.requestFullscreen) {
                     modal.requestFullscreen().catch(() => {});
                 } else if (modal.webkitRequestFullscreen) {
                     modal.webkitRequestFullscreen();
                 }
             }).catch(err => console.log("Autoplay blockiert:", err));
-        
-            video.focus();
         }
+
         
         function closePlayer() {
             const modal = document.getElementById('videoModal');
@@ -1427,6 +1438,29 @@
                 }
             }
         });        
+
+        window.addEventListener('keydown', (e) => {
+            const modal = document.getElementById('videoModal');
+            const video = document.getElementById('mainVideoPlayer');
+        
+            if (modal && !modal.classList.contains('hidden')) {
+                // Space / OK-Taste toggelt Play/Pause
+                if (e.key === ' ' || e.key === 'Enter' || e.keyCode === 13) {
+                    e.preventDefault();
+                    if (video.paused) video.play(); else video.pause();
+                }
+                // Pfeil Links: 10 Sekunden zurück
+                else if (e.key === 'ArrowLeft') {
+                    e.preventDefault();
+                    video.currentTime = Math.max(0, video.currentTime - 10);
+                }
+                // Pfeil Rechts: 10 Sekunden vor
+                else if (e.key === 'ArrowRight') {
+                    e.preventDefault();
+                    video.currentTime = Math.min(video.duration, video.currentTime + 10);
+                }
+            }
+        });
 
         const topElements = ['searchBar', 'btnMediathek', 'btnLiveTv', 'btnNews'];
 
