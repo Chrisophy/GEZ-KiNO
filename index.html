@@ -99,13 +99,13 @@
         </div>
     </div>
     
-    <div id="videoModal" class="fixed inset-0 bg-black hidden z-50 flex flex-col justify-center items-center">
+    <div id="videoModal" class="fixed inset-0 bg-black hidden z-[60] flex flex-col justify-center items-center">
         <button onclick="closePlayer()" class="absolute top-4 right-4 text-white hover:text-gray-400 p-3 z-50 bg-black/60 rounded-full border border-gray-800 transition-colors cursor-pointer" aria-label="Schließen">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
             </svg>
         </button>
-        <video id="mainVideoPlayer" controls autoplay class="w-full h-full object-contain bg-black"></video>
+        <video id="mainVideoPlayer" controls autoplay playsinline webkit-playsinline class="w-full h-full object-contain bg-black"></video>
     </div>
 
     <div id="rouletteModal" class="fixed inset-0 bg-black/90 hidden z-50 justify-center items-center p-4 backdrop-blur-md">
@@ -1383,17 +1383,27 @@
                 video.addEventListener('error', activeVideoErrorHandler);
             }
 
-            video.play()
-                .then(() => {
-                    if (video.requestFullscreen) {
-                        video.requestFullscreen();
-                    } else if (video.webkitRequestFullscreen) { 
-                        video.webkitRequestFullscreen();
-                    } else if (video.msRequestFullscreen) { 
-                        video.msRequestFullscreen();
-                    }
-                })
-                .catch(err => console.log("Autoplay blockiert:", err));
+            // Startet die Wiedergabe und fordert sofort echten Video-Vollbildmodus an
+            video.play().then(() => {
+                requestElementFullscreen(video);
+            }).catch(err => {
+                console.log("Autoplay blockiert:", err);
+                // Fallback: Wenn Autoplay verzögert, trotzdem Vollbild versuchen
+                requestElementFullscreen(video);
+            });
+        }
+
+        // Hilfsfunktion für sauberen Vollbildaufruf auf allen Plattformen / iOS / Android
+        function requestElementFullscreen(el) {
+            if (el.requestFullscreen) {
+                el.requestFullscreen().catch(() => {});
+            } else if (el.webkitRequestFullscreen) {
+                el.webkitRequestFullscreen();
+            } else if (el.webkitEnterFullscreen) { // Speziell für iOS Safari / WebKit Video
+                el.webkitEnterFullscreen();
+            } else if (el.msRequestFullscreen) {
+                el.msRequestFullscreen();
+            }
         }
 
         function closePlayer() {
@@ -1402,9 +1412,15 @@
             
             activeDownloadUrl = '';
 
+            // Beendet iOS-Video-Vollbild, falls aktiv
+            if (video.webkitExitFullscreen) {
+                try { video.webkitExitFullscreen(); } catch(e) {}
+            }
+
+            // Beendet Standard-Vollbild
             if (document.fullscreenElement || document.webkitFullscreenElement || document.msFullscreenElement) {
                 if (document.exitFullscreen) {
-                    document.exitFullscreen();
+                    document.exitFullscreen().catch(() => {});
                 } else if (document.webkitExitFullscreen) {
                     document.webkitExitFullscreen();
                 } else if (document.msExitFullscreen) {
