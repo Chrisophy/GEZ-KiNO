@@ -254,16 +254,16 @@
 
         function getLatestUpdateSlot() {
             const now = new Date();
-            const today4AM = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 4, 0, 0, 0);
-            const today4PM = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 16, 0, 0, 0);
+            const today615AM = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 6, 15, 0, 0);
+            const today615PM = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 18, 15, 0, 0);
 
-            if (now >= today4PM) {
-                return today4PM.getTime();
-            } else if (now >= today4AM) {
-                return today4AM.getTime();
+            if (now >= today615PM) {
+                return today615PM.getTime();
+            } else if (now >= today615AM) {
+                return today615AM.getTime();
             } else {
-                const yesterday4PM = new Date(now.getFullYear(), now.getMonth(), now.getDate() - 1, 16, 0, 0, 0);
-                return yesterday4PM.getTime();
+                const yesterday615PM = new Date(now.getFullYear(), now.getMonth(), now.getDate() - 1, 18, 15, 0, 0);
+                return yesterday615PM.getTime();
             }
         }
 
@@ -282,7 +282,7 @@
                     document.getElementById('scanner')?.classList.add('hidden');
                     renderGenreLeiste();
                     filterResults();
-                    console.log("Filme aus Cache geladen (Nächstes Update um 04:00 / 16:00 Uhr).");
+                    console.log("Filme aus Cache geladen (Nächstes Update um 06:15 / 18:15 Uhr).");
                     return;
                 } catch (e) {
                     console.warn("Cache konnte nicht gelesen werden, lade neu...");
