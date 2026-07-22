@@ -23,7 +23,10 @@
             display: flex;
             white-space: nowrap;
             outline: none;
+            /* NEU: Etwas Platz oben hinzufügen, damit der Focus-Outline Platz hat */
+            padding-top: 6px; 
         }
+
         #genreLeiste button { scroll-snap-align: start; flex-shrink: 0; }
         #genreLeiste button:focus { outline: 2px solid #3b82f6; border-color: transparent; }
         
@@ -70,7 +73,7 @@
             </div>
         </header>
 
-        <nav id="genreLeiste" class="flex flex-row items-center gap-3 pb-3 mb-4 scroll-smooth min-h-[50px] w-full overflow-x-auto"></nav>
+        <nav id="genreLeiste" class="flex flex-row items-center gap-3 pt-2 pb-3 mb-4 scroll-smooth min-h-[50px] w-full overflow-x-auto"></nav>
 
         <main id="movieGrid" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4">
             <div id="statusMessage" class="text-center col-span-full py-12 text-gray-400 animate-pulse">Initialisiere...</div>
@@ -854,7 +857,7 @@
             }
             
             genres.forEach(g => {
-                const cleanId = g.replace(/\s+/g, '').replace(/⭐/g, 'Fav').replace(/🆕/g, 'Neu').replace(/[^a-zA-Z0-9]/g, '');
+                const cleanId = g.replace(/\s+/g, '').replace(/⭐/g, 'Fav').replace(/??/g, 'Neu').replace(/[^a-zA-Z0-9]/g, '');
                 const btn = document.getElementById(`genre-btn-${cleanId}`);
                 if (!btn) return;
                 
