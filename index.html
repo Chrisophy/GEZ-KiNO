@@ -1360,14 +1360,15 @@
                 video.src = url;
             }
         
-            // SICHERSTELLEN DASS STEUERUNG AKTIV IST
             video.controls = true;
         
-            // Video abspielen
             video.play().then(() => {
-                // Zerstöre den orangenen Fokus-Bug: Fokus auf das übergeordnete Modal setzen, nicht auf das Video selbst!
-                modal.tabIndex = -1;
-                modal.focus();
+                // Fokus auf das Video setzen und direkt den Fokus 'bluren', damit 
+                // das OS/der Browser erkennt, dass keine aktive Maus/Tasten-Eingabe anliegt.
+                video.focus();
+                setTimeout(() => {
+                    video.blur();
+                }, 100);
         
                 // Vollbild erzwingen
                 if (modal.requestFullscreen) {
@@ -1377,7 +1378,6 @@
                 }
             }).catch(err => console.log("Autoplay blockiert:", err));
         }
-
         
         function closePlayer() {
             const modal = document.getElementById('videoModal');
