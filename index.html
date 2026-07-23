@@ -5,13 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>[GEZ] KiNO</title>
     
-    <!-- External Scripts & Libraries (KORRIGIERT: Tailwind v3 CDN) -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            darkMode: 'class'
-        }
-    </script>
+    <!-- External Scripts & Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
 
     <!-- Custom Tweaks for Cinema Theme & TV Remote Focus -->
@@ -144,7 +139,6 @@
     </div>
     
     <!-- Video Player Modal -->
-    
     <div id="videoModal" class="fixed inset-0 bg-black hidden z-50 flex flex-col justify-center items-center w-full h-full select-none cursor-pointer">
         <video id="mainVideoPlayer" autoplay playsinline class="w-full h-full object-contain bg-black"></video>
 
@@ -871,9 +865,8 @@
             genres.forEach(g => {
                 const btn = document.createElement('button');
                 btn.setAttribute('tabindex', '0');
-                btn.setAttribute('data-genre', g); // WICHTIG: Eindeutiges Attribut für verlässliches Styling & TV-Focus!
+                btn.setAttribute('data-genre', g);
         
-                // Automatisch ins Sichtfeld scrollen, wenn Button per TV-Fernbedienung fokussiert wird
                 btn.addEventListener('focus', () => {
                     btn.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
                 });
@@ -941,7 +934,6 @@
                 leiste.appendChild(btn);
             });
         }
-
 
         function updateGenreCounts() {
             const counts = getGenreCounts();
@@ -1057,7 +1049,6 @@
             if (currentView === 'news') currentSet = newsArticles;
             
             moviesToRender = currentSet.filter(m => {
-                // 1. TV-Filme Filter für die Mediathek
                 if (hideTvMovies && currentView === 'mediathek') {
                     const titleLower = m.title.toLowerCase();
                     const descLower = m.mediathek_desc ? m.mediathek_desc.toLowerCase() : '';
@@ -1070,7 +1061,6 @@
                     }
                 }
         
-                // 2. NEWS-FILTER
                 if (currentView === 'news') {
                     const itemSource = (m.source || m.channel || '').trim();
     
@@ -1090,7 +1080,6 @@
                     }
                 }
         
-                // 3. Textsuche
                 let matchQuery = true;
                 if (query) {
                     const matchesTitle = m.title.toLowerCase().includes(query);
@@ -1101,7 +1090,6 @@
                 }
                 if (!matchQuery) return false;
         
-                // 4. Genre- und Spezialfilter
                 if (currentGenre === 'Alle') return true;
                 
                 if (currentGenre.startsWith('Rating: ')) {
@@ -1126,7 +1114,6 @@
                 return true;
             });
         
-            // Sortierung
             if (currentGenre === 'Neu hinzugefügt') {
                 moviesToRender.sort((a, b) => a.timestamp - b.timestamp);
             } else if (currentGenre.startsWith('Rating: ') || currentGenre.startsWith('Jahr: ')) {
@@ -1634,6 +1621,18 @@
                         if (firstGenreBtn) firstGenreBtn.focus();
                     }
                 });
+            }
+        });
+
+        // Back To Top Button Sichtbarkeit steuern
+        window.addEventListener('scroll', () => {
+            const btn = document.getElementById('btnBackToTop');
+            if (btn) {
+                if (window.scrollY > 300) {
+                    btn.classList.remove('hidden');
+                } else {
+                    btn.classList.add('hidden');
+                }
             }
         });
 
