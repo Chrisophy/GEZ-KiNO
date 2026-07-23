@@ -841,6 +841,10 @@
             return counts;
         }
 
+        function getCleanGenreId(g) {
+            return 'genre-btn-' + g.replace(/\s+/g, '').replace(/⭐/g, 'Fav').replace(/🆕/g, 'Neu').replace(/[^a-zA-Z0-9]/g, '');
+        }
+
         function renderGenreLeiste() {
             const leiste = document.getElementById('genreLeiste');
             const counts = getGenreCounts();
@@ -866,6 +870,7 @@
                 const btn = document.createElement('button');
                 btn.setAttribute('tabindex', '0');
                 btn.setAttribute('data-genre', g);
+                btn.id = getCleanGenreId(g);
         
                 btn.addEventListener('focus', () => {
                     btn.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
@@ -938,8 +943,7 @@
         function updateGenreCounts() {
             const counts = getGenreCounts();
             Object.keys(counts).forEach(g => {
-                const cleanId = g.replace(/\s+/g, '').replace(/⭐/g, 'Fav').replace(/🆕/g, 'Neu').replace(/[^a-zA-Z0-9]/g, '');
-                const btn = document.getElementById(`genre-btn-${cleanId}`);
+                const btn = document.getElementById(getCleanGenreId(g));
                 if (btn) {
                     const countSpan = btn.querySelector('.genre-count');
                     if (countSpan) countSpan.innerText = `(${counts[g] || 0})`;
