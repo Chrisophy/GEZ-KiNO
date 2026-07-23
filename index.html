@@ -1625,13 +1625,12 @@
                 } else if (e.key === 'ArrowUp' || e.key === 'PageUp') {
                     e.preventDefault();
                     container.scrollBy({ top: -180, behavior: 'smooth' });
-                } else if (e.key === 'Escape' || e.key === 'BackSpace') {
+                } else if (e.key === 'Escape' || e.key === 'BackSpace' || e.key === 'GoBack' || e.keyCode === 10009 || e.keyCode === 461) {
+                    e.preventDefault();
                     closeNewsModal();
                 }
             }
         });
-
-        document.getElementById('searchBar').addEventListener('input', filterResults);
     </script>
 </body>
 </html>
