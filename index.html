@@ -1491,8 +1491,26 @@
         
             if (modal && !modal.classList.contains('hidden')) {
                 
+                // PFEIL NACH OBEN: Blendet das Player-Menü aus (simuliert Mausbewegung & nimmt Fokus)
                 if (e.key === 'ArrowUp') {
                     e.preventDefault();
+                    
+                    // 1. Fokus vom Video entfernen (viele Browser verbergen das Menü nur bei Blur)
+                    if (document.activeElement) {
+                        document.activeElement.blur();
+                    }
+                    
+                    // 2. Ein echtes Maus-Movement-Event an das Video schicken
+                    const mouseEvent = new MouseEvent('mousemove', {
+                        bubbles: true,
+                        cancelable: true,
+                        view: window,
+                        clientX: 10,
+                        clientY: 10
+                    });
+                    video.dispatchEvent(mouseEvent);
+                    
+                    // Optionale Logik: Falls du die Modus-Umschaltung noch nutzen willst
                     playerControlMode = (playerControlMode + 1) % 2;
                     return;
                 }
