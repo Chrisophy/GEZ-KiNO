@@ -1609,6 +1609,41 @@
             }
         });
 
+        // Zusätzliche Logik für die "Down"-Navigation
+        window.addEventListener('keydown', (e) => {
+            // Wenn 'ArrowDown' gedrückt wird
+            if (e.key === 'ArrowDown') {
+                const activeElement = document.activeElement;
+                
+                // Prüfen, ob der Fokus gerade in einem Header-Bereich ist (Buttons oder Suchfeld)
+                // Wir springen dann direkt zur Genre-Leiste
+                const headerElements = ['searchBar', 'btnMediathek', 'btnLiveTv', 'btnNews', 'btnInstallPWA', 'btnRoulette'];
+                
+                if (headerElements.includes(activeElement.id) || activeElement.tagName === 'BODY') {
+                    e.preventDefault();
+                    const firstGenreBtn = document.querySelector('#genreLeiste button');
+                    if (firstGenreBtn) {
+                        firstGenreBtn.focus();
+                        firstGenreBtn.scrollIntoView({ behavior: 'smooth', inline: 'center' });
+                    }
+                }
+            }
+        });
+
+
+        // Scroll-to-Top Button Logik
+        window.addEventListener('scroll', () => {
+            const btn = document.getElementById('btnBackToTop');
+            if (!btn) return;
+    
+            // Button einblenden, wenn mehr als 300px gescrollt wurde
+            if (window.scrollY > 300) {
+                btn.classList.remove('hidden');
+            } else {
+                btn.classList.add('hidden');
+            }
+        });
+
         // App-Start
         fetchAllData();
     </script>
