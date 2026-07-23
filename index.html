@@ -100,7 +100,7 @@
         </header>
 
         <!-- Genre Bar Ribbon -->
-        <nav id="genreLeiste" tabindex="-1" class="flex flex-row items-center gap-2 pt-1 pb-2 mb-5 scroll-smooth min-h-[52px] w-full overflow-x-auto focus:outline-none"></nav>
+        <nav id="genreLeiste" class="flex flex-row items-center gap-2 pt-1 pb-2 mb-5 scroll-smooth min-h-[52px] w-full overflow-x-auto focus:outline-none"></nav>
 
         <!-- Grid Container -->
         <main id="movieGrid" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-3.5 sm:gap-4">
@@ -865,17 +865,17 @@
             genres.forEach(g => {
                 const btn = document.createElement('button');
                 btn.setAttribute('type', 'button');
-                btn.setAttribute('tabindex', '0'); // Garantiert Steuerbarkeit per Fernbedienung/Pfeiltasten
+                btn.setAttribute('tabindex', '0'); // Garantiert die Ansteuerbarkeit per Tastatur/D-Pad
                 btn.setAttribute('data-genre', g);
-        
-                // ID-Vergabe für genaue Fokus- und Scroll-Adressierung
+            
                 const cleanId = g.replace(/\s+/g, '').replace(/⭐/g, 'Fav').replace(/🆕/g, 'Neu').replace(/[^a-zA-Z0-9]/g, '');
                 btn.id = `genre-btn-${cleanId}`;
-        
+            
+                // Auto-Scroll zur Mitte des Bildschirms, wenn der Button per Tastatur fokussiert wird
                 btn.addEventListener('focus', () => {
                     btn.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
                 });
-        
+            
                 if (g === 'News-Quelle-Umschalter') {
                     btn.className = "flex-shrink-0 min-w-[120px] px-3.5 py-1.5 rounded-xl text-center flex flex-col justify-center transition-all cursor-pointer border font-semibold shadow-sm bg-gray-900 border-gray-800 text-blue-400 hover:border-blue-500/50 focus:outline-none focus:ring-2 focus:ring-blue-500";
                     btn.onclick = toggleNewsSource;
@@ -911,16 +911,16 @@
                     btn.className = `flex-shrink-0 min-w-[110px] px-3.5 py-1.5 rounded-xl text-center flex flex-col justify-center transition-all cursor-pointer border focus:outline-none focus:ring-2 focus:ring-blue-500 ${
                         isActive ? 'bg-blue-600 border-blue-500 text-white font-bold shadow-md active-glow' : 'bg-gray-900/90 border-gray-800 text-gray-300 hover:border-gray-700'
                     }`;
-        
+            
                     let displayLabel = g;
                     if (g === 'Nach Bewertung' && currentGenre.startsWith('Rating: ')) displayLabel = currentGenre;
                     if (g === 'Nach Jahren' && currentGenre.startsWith('Jahr: ')) displayLabel = currentGenre.replace('Jahr: ', 'Jahr ');
-        
+            
                     btn.innerHTML = `
                         <span class="text-xs tracking-wide font-bold">${displayLabel}</span>
                         <span class="text-[9px] opacity-60 font-medium genre-count">${counts[g] !== undefined ? '(' + counts[g] + ')' : '(0)'}</span>
                     `;
-        
+            
                     btn.onclick = () => {
                         if (g === 'Nach Jahren') {
                             openYearsMenu();
@@ -937,7 +937,6 @@
                 leiste.appendChild(btn);
             });
         }
-
 
         function updateGenreCounts() {
             const counts = getGenreCounts();
