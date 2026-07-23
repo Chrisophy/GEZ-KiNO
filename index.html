@@ -5,11 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>[GEZ] KiNO</title>
     
-    <!-- External Scripts & Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
 
-    <!-- Custom Tweaks for Cinema Theme & TV Remote Focus -->
     <style>
         video:focus, video:active, #videoModal:focus {
             outline: none !important;
@@ -23,7 +21,6 @@
             -webkit-font-smoothing: antialiased;
         }
         
-        /* Smooth Scrollbar for Genre Ribbon */
         #genreLeiste { 
             scroll-snap-type: x mandatory; 
             -webkit-overflow-scrolling: touch; 
@@ -40,7 +37,6 @@
         #genreLeiste::-webkit-scrollbar-track { background: #111827; }
         #genreLeiste::-webkit-scrollbar-thumb { background: #3b82f6; border-radius: 9999px; }
         
-        /* Subtle Glow Animation for Active Items */
         .active-glow {
             box-shadow: 0 0 15px rgba(59, 130, 246, 0.35);
         }
@@ -53,23 +49,18 @@
 </head>
 <body class="p-3 sm:p-5 max-w-[1600px] mx-auto flex flex-col min-h-screen selection:bg-blue-600 selection:text-white">
     
-    <!-- Loading Overlay -->
     <div id="scanner" class="fixed inset-0 bg-black/70 backdrop-blur-md z-50 flex flex-col items-center justify-center gap-3 hidden transition-opacity duration-300">
         <div class="relative flex items-center justify-center">
             <div class="w-16 h-16 border-4 border-blue-500/20 border-t-blue-500 rounded-full animate-spin"></div>
-            <!-- Prozentanzeige mittig im Spinner -->
             <span id="scanner-percent" class="absolute text-xs font-bold text-blue-400">0%</span>
         </div>
         <div id="scanner-text" class="bg-gray-900/90 px-5 py-2.5 rounded-xl border border-gray-800 text-gray-200 font-semibold shadow-2xl tracking-wide text-sm">
-            Lade Mediathek-Daten (0%)...
+            Lade Mediathek-Daten...
         </div>
     </div>
 
-    <!-- Main Container -->
     <div class="flex-grow">
-        <!-- Header Zone -->
         <header class="mb-5 flex flex-col gap-4">
-            <!-- Hero / Roulette Banner -->
             <div id="banner-container" class="w-full rounded-2xl overflow-hidden shadow-2xl border border-gray-800/80 bg-gray-950 relative group">
                 <img src="banner.png" alt="[GEZ] Kino Banner" class="w-full h-auto block select-none pointer-events-none object-cover max-h-48 sm:max-h-64 md:max-h-80">
                 <button type="button" 
@@ -80,9 +71,7 @@
                 </button>
             </div>
 
-            <!-- Main Controls Bar -->
             <div class="flex flex-col sm:flex-row justify-between items-center gap-3 w-full">
-                <!-- Navigation Tabs -->
                 <div class="flex flex-wrap gap-1.5 bg-gray-900/90 p-1.5 rounded-2xl border border-gray-800/80 w-full sm:w-auto backdrop-blur-md shadow-inner">
                     <button id="btnMediathek" onclick="switchView('mediathek')" class="px-4 py-2 rounded-xl bg-blue-600 text-white font-bold shadow-md transition-all cursor-pointer text-xs sm:text-sm flex-1 sm:flex-none text-center active-glow">🍿 Filme</button>
                     <button id="btnLiveTv" onclick="switchView('livetv')" class="px-4 py-2 rounded-xl bg-gray-950/50 border border-transparent text-gray-400 hover:text-white hover:bg-gray-800 transition-all cursor-pointer text-xs sm:text-sm flex-1 sm:flex-none text-center">📺 Live TV</button>
@@ -90,7 +79,6 @@
                     <button id="btnInstallPWA" class="hidden px-4 py-2 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold shadow-lg transition-all cursor-pointer text-xs sm:text-sm flex-1 sm:flex-none text-center animate-pulse">📲 App laden</button>        
                 </div>            
                 
-                <!-- Search Input -->
                 <div class="w-full sm:w-80 md:w-96 flex gap-2">
                     <div class="relative w-full">
                         <input type="text" id="searchBar" oninput="filterResults()" placeholder="Film | Regie | Schauspieler..." class="bg-gray-900/90 text-white pl-4 pr-10 py-2.5 rounded-2xl w-full focus:outline-none focus:ring-2 focus:ring-blue-500 border border-gray-800 shadow-inner text-xs sm:text-sm transition-all placeholder:text-gray-500">
@@ -99,16 +87,13 @@
             </div>
         </header>
 
-        <!-- Genre Bar Ribbon -->
         <nav id="genreLeiste" class="flex flex-row items-center gap-2 pt-1 pb-2 mb-5 scroll-smooth min-h-[52px] w-full overflow-x-auto no-scrollbar"></nav>
 
-        <!-- Grid Container -->
         <main id="movieGrid" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-3.5 sm:gap-4">
             <div id="statusMessage" class="text-center col-span-full py-20 text-gray-500 font-medium animate-pulse">Initialisiere Mediathek...</div>
         </main>
     </div>
 
-    <!-- Rating Modal -->
     <div id="ratingModal" class="fixed inset-0 bg-black/80 hidden z-50 justify-center items-center p-4 backdrop-blur-md">
         <div class="bg-gray-900 border border-gray-800 rounded-3xl max-w-sm w-full p-6 flex flex-col shadow-2xl">
             <h2 class="text-lg font-bold mb-4 text-center text-gray-100 tracking-wide">Mindestbewertung</h2>
@@ -129,7 +114,6 @@
         </div>
     </div>
 
-    <!-- Years Modal -->
     <div id="yearsModal" class="fixed inset-0 bg-black/80 hidden z-50 justify-center items-center p-4 backdrop-blur-md">
         <div class="bg-gray-900 border border-gray-800 rounded-3xl max-w-sm w-full p-6 flex flex-col max-h-[80vh] shadow-2xl">
             <h2 class="text-lg font-bold mb-4 text-center text-gray-100 tracking-wide">Jahr auswählen</h2>
@@ -138,27 +122,20 @@
         </div>
     </div>
     
-    <!-- Video Player Modal -->
     <div id="videoModal" class="fixed inset-0 bg-black hidden z-50 flex flex-col justify-center items-center w-full h-full select-none cursor-pointer">
         <video id="mainVideoPlayer" autoplay playsinline class="w-full h-full object-contain bg-black"></video>
 
-        <!-- Invisible Touch Overlay Zones -->
         <div class="absolute inset-0 grid grid-cols-3 z-10 pointer-events-auto">
-            <!-- Links: Zurückspulen -->
             <div onclick="seekPlayer(-60, event)" class="h-full flex items-center justify-center group active:bg-white/10 transition-colors">
                 <span class="text-white/80 font-bold text-xl sm:text-2xl opacity-0 group-active:opacity-100 transition-opacity bg-black/60 px-4 py-2 rounded-2xl backdrop-blur-md">⏪ -60s</span>
             </div>
-        
-            <!-- Mitte: Play / Pause -->
             <div onclick="togglePlayerTouch(event)" class="h-full"></div>
         
-            <!-- Rechts: Vorspulen -->
             <div onclick="seekPlayer(60, event)" class="h-full flex items-center justify-center group active:bg-white/10 transition-colors">
                 <span class="text-white/80 font-bold text-xl sm:text-2xl opacity-0 group-active:opacity-100 transition-opacity bg-black/60 px-4 py-2 rounded-2xl backdrop-blur-md">⏩ +60s</span>
             </div>
         </div>
 
-        <!-- Minimalistisches Smart-TV / Touch HUD -->
         <div id="playerHUD" class="absolute bottom-10 left-1/2 -translate-x-1/2 bg-gray-950/90 border border-gray-800 px-6 py-3 rounded-2xl backdrop-blur-md flex items-center gap-6 opacity-0 transition-opacity duration-300 pointer-events-none z-20 shadow-2xl">
             <span id="hudStatus" class="text-blue-400 font-bold text-sm">▶ PLAY</span>
             <span id="hudTime" class="text-gray-300 text-xs font-mono">00:00 / 00:00</span>
@@ -166,7 +143,6 @@
         </div>
     </div>
 
-    <!-- Roulette Result Modal -->
     <div id="rouletteModal" class="fixed inset-0 bg-black/80 hidden z-50 justify-center items-center p-4 backdrop-blur-md">
         <div class="bg-gray-900 border border-gray-800 rounded-3xl max-w-md w-full p-6 flex flex-col shadow-2xl relative">
             <button onclick="closeRouletteModal()" class="absolute top-4 right-4 text-gray-400 hover:text-white p-2 z-50 bg-gray-950/80 rounded-full border border-gray-800 transition-colors cursor-pointer">
@@ -195,7 +171,6 @@
         </div>
     </div>
 
-    <!-- News Article Reader Modal -->
     <div id="newsModal" class="fixed inset-0 bg-black/80 hidden z-50 justify-center items-center p-4 backdrop-blur-md">
         <div class="bg-gray-900 border border-gray-800 rounded-3xl max-w-2xl w-full max-h-[85vh] flex flex-col overflow-hidden shadow-2xl relative">
             <button onclick="closeNewsModal()" class="absolute top-4 right-4 text-gray-400 hover:text-white p-2 z-50 bg-gray-950/80 rounded-full border border-gray-800 transition-colors cursor-pointer">
@@ -204,7 +179,6 @@
                 </svg>
             </button>
 
-            <!-- Quick Scroll Controls for Touch/Remote -->
             <div class="absolute right-4 bottom-20 flex flex-col gap-2 z-40">
                 <button onclick="scrollNewsModal(-200)" class="bg-blue-600/80 hover:bg-blue-600 text-white p-2.5 rounded-full shadow-lg border border-blue-400/30 active:scale-95 transition-all cursor-pointer" aria-label="Hochscrollen">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -240,14 +214,12 @@
         </div>
     </div>
 
-    <!-- Scroll To Top Button -->
     <button id="btnBackToTop" class="fixed bottom-6 right-6 z-40 hidden bg-blue-600/90 hover:bg-blue-600 text-white p-3 rounded-2xl shadow-2xl transition-all duration-300 border border-blue-400/30 backdrop-blur-sm active:scale-95" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 15l7-7 7 7" />
         </svg>
     </button>
 
-    <!-- App JavaScript Logic -->
     <script>
         const TMDB_API_KEY = '60b3801a9e76b5706ee2a432f06423e6';
         const MEDIATHEK_URL = 'https://mediathekviewweb.de/api/query';
@@ -277,9 +249,8 @@
         let activeVideoErrorHandler = null; 
         let deferredPrompt = null; 
         let activeDownloadUrl = ''; 
-        const CHUNK_SIZE = 60; 
+        const CHUNK_SIZE = 50; 
 
-        /* Ergänzte Steuerungsfunktionen */
         function toggleTvMoviesFilter() {
             hideTvMovies = !hideTvMovies;
             localStorage.setItem('gez_kino_hide_tv', hideTvMovies ? 'true' : 'false');
@@ -1189,7 +1160,6 @@
                     `;
                 }
 
-                // Download-Button für Karten
                 const downloadBtnHtml = (!isTv && !isNews && m.video_url) ? `
                     <a href="${m.video_url}" download target="_blank" onclick="event.stopPropagation();" 
                        title="Film herunterladen" 
@@ -1556,7 +1526,6 @@
             }
         });
         
-        // HUD Anzeigen Funktion
         let hudTimeout;
         function showHUD(text) {
             const hud = document.getElementById('playerHUD');
@@ -1584,7 +1553,6 @@
             }, 2500);
         }
 
-        // Keydown Listener für Videoplayer
         window.addEventListener('keydown', (e) => {
             const modal = document.getElementById('videoModal');
             const video = document.getElementById('mainVideoPlayer');
@@ -1609,14 +1577,10 @@
             }
         });
 
-        // Zusätzliche Logik für die "Down"-Navigation
         window.addEventListener('keydown', (e) => {
-            // Wenn 'ArrowDown' gedrückt wird
             if (e.key === 'ArrowDown') {
                 const activeElement = document.activeElement;
                 
-                // Prüfen, ob der Fokus gerade in einem Header-Bereich ist (Buttons oder Suchfeld)
-                // Wir springen dann direkt zur Genre-Leiste
                 const headerElements = ['searchBar', 'btnMediathek', 'btnLiveTv', 'btnNews', 'btnInstallPWA', 'btnRoulette'];
                 
                 if (headerElements.includes(activeElement.id) || activeElement.tagName === 'BODY') {
@@ -1630,21 +1594,15 @@
             }
         });
 
-
-        // Scroll-to-Top Button Logik
         window.addEventListener('scroll', () => {
             const btn = document.getElementById('btnBackToTop');
             if (!btn) return;
-    
-            // Button einblenden, wenn mehr als 300px gescrollt wurde
             if (window.scrollY > 300) {
                 btn.classList.remove('hidden');
             } else {
                 btn.classList.add('hidden');
             }
         });
-
-        // App-Start
         fetchAllData();
     </script>
 </body>
