@@ -56,10 +56,12 @@
     <!-- Loading Overlay -->
     <div id="scanner" class="fixed inset-0 bg-black/70 backdrop-blur-md z-50 flex flex-col items-center justify-center gap-3 hidden transition-opacity duration-300">
         <div class="relative flex items-center justify-center">
-            <div class="w-12 h-12 border-4 border-blue-500/20 border-t-blue-500 rounded-full animate-spin"></div>
+            <div class="w-16 h-16 border-4 border-blue-500/20 border-t-blue-500 rounded-full animate-spin"></div>
+            <!-- Prozentanzeige mittig im Spinner -->
+            <span id="scanner-percent" class="absolute text-xs font-bold text-blue-400">0%</span>
         </div>
-        <div class="bg-gray-900/90 px-5 py-2.5 rounded-xl border border-gray-800 text-gray-200 font-semibold shadow-2xl tracking-wide text-sm">
-            Lade Mediathek-Daten...
+        <div id="scanner-text" class="bg-gray-900/90 px-5 py-2.5 rounded-xl border border-gray-800 text-gray-200 font-semibold shadow-2xl tracking-wide text-sm">
+            Lade Mediathek-Daten (0%)...
         </div>
     </div>
 
@@ -559,6 +561,10 @@
             const CONCURRENCY_LIMIT = 10;
             let movieIndex = 0;
             let loadedCount = 0;
+            const totalMovies = allMovies.length;
+
+            const scannerText = document.getElementById('scanner-text');
+            const scannerPercent = document.getElementById('scanner-percent');
 
             async function worker() {
                 while (movieIndex < allMovies.length) {
@@ -691,6 +697,13 @@
                     }
 
                     loadedCount++;
+                    
+                    if (totalMovies > 0) {
+                        const percent = Math.round((loadedCount / totalMovies) * 100);
+                        if (scannerText) scannerText.innerText = `Lade Mediathek-Daten (${percent}%)...`;
+                        if (scannerPercent) scannerPercent.innerText = `${percent}%`;
+                    }
+
                     if (loadedCount % 15 === 0) {
                         updateGenreCounts();
                     }
