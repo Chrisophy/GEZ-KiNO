@@ -294,7 +294,7 @@
         }
 
         function toggleNewsSource() {
-            currentNewsSource = currentNewsSource === 'ÖRR' ? 'Sonstige' : 'ÖRR';
+            currentNewsSource = currentNewsSource === 'ÖRR' ? 'Bild.de' : 'ÖRR';
             renderGenreLeiste();
             filterResults();
         }
@@ -806,13 +806,16 @@
                 }                
         
                 if (currentView === 'news') {
-                    const source = m.source || m.channel;
-                    if (source !== currentNewsSource) return;
+                    const source = (m.source || m.channel || '').trim().toLowerCase();
+                    const isBild = source.includes('bild');
+    
+                    if (currentNewsSource === 'Bild.de' && !isBild) return;
+                    if (currentNewsSource === 'ÖRR' && isBild) return;
 
                     counts["Alle"]++;
                     if (favoriteUrls.includes(m.video_url)) counts["⭐ Favoriten"]++;
 
-                    if (m.genres_list) {
+                    if (m.genres_list && Array.isArray(m.genres_list)) {
                         m.genres_list.forEach(g => {
                             if (!counts[g]) counts[g] = 0;
                             counts[g]++;
@@ -855,8 +858,7 @@
             } else if (currentView === 'news') {
                 const newsCats = new Set();
                 newsArticles.forEach(m => {
-                    const source = m.source || m.channel;
-                    if (source === currentNewsSource && m.genres_list) {
+                    if (m.genres_list && Array.isArray(m.genres_list)) {
                         m.genres_list.forEach(g => newsCats.add(g));
                     }
                 });
@@ -864,24 +866,29 @@
             } else {
                 genres = ['Alle', '⭐ Favoriten'];
             }
-
+        
             leiste.innerHTML = '';
             genres.forEach(g => {
                 const btn = document.createElement('button');
                 btn.setAttribute('tabindex', '0');
-
+                btn.setAttribute('data-genre', g); // WICHTIG: Eindeutiges Attribut für verlässliches Styling & TV-Focus!
+        
+                // Automatisch ins Sichtfeld scrollen, wenn Button per TV-Fernbedienung fokussiert wird
+                btn.addEventListener('focus', () => {
+                    btn.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
+                });
+        
                 if (g === 'News-Quelle-Umschalter') {
                     btn.id = "btnToggleNewsSource";
-                    btn.className = "flex-shrink-0 min-w-[120px] px-3.5 py-1.5 rounded-xl text-center flex flex-col justify-center transition-all cursor-pointer border font-semibold shadow-sm bg-gray-900 border-gray-800 text-blue-400 hover:border-blue-500/50";
+                    btn.className = "flex-shrink-0 min-w-[120px] px-3.5 py-1.5 rounded-xl text-center flex flex-col justify-center transition-all cursor-pointer border font-semibold shadow-sm bg-gray-900 border-gray-800 text-blue-400 hover:border-blue-500/50 focus:outline-none focus:ring-2 focus:ring-blue-500";
                     btn.onclick = toggleNewsSource;
-                    
                     btn.innerHTML = `
                         <span class="text-xs tracking-wide font-bold">Quelle: ${currentNewsSource}</span>
                         <span class="text-[9px] opacity-60 font-medium">(Klick zum Wechseln)</span>
                     `;
                 } else if (g === 'TV-Filme-Umschalter') {
                     btn.id = "btnToggleTvMovies";
-                    btn.className = "flex-shrink-0 min-w-[110px] px-3.5 py-1.5 rounded-xl text-center flex flex-col justify-center transition-all cursor-pointer border font-semibold shadow-sm";
+                    btn.className = "flex-shrink-0 min-w-[110px] px-3.5 py-1.5 rounded-xl text-center flex flex-col justify-center transition-all cursor-pointer border font-semibold shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500";
                     btn.onclick = toggleTvMoviesFilter;
                     
                     const spanLabel = document.createElement('span');
@@ -903,24 +910,21 @@
                     btn.appendChild(spanLabel);
                     btn.appendChild(spanSub);
                 } else {
-                    const cleanId = g.replace(/\s+/g, '').replace(/⭐/g, 'Fav').replace(/🆕/g, 'Neu').replace(/[^a-zA-Z0-9]/g, '');
-                    btn.id = `genre-btn-${cleanId}`;
-                    
                     const isActive = currentGenre === g || (g === 'Nach Jahren' && currentGenre.startsWith('Jahr: ')) || (g === 'Nach Bewertung' && currentGenre.startsWith('Rating: '));
                     
-                    btn.className = `flex-shrink-0 min-w-[110px] px-3.5 py-1.5 rounded-xl text-center flex flex-col justify-center transition-all cursor-pointer border ${
+                    btn.className = `flex-shrink-0 min-w-[110px] px-3.5 py-1.5 rounded-xl text-center flex flex-col justify-center transition-all cursor-pointer border focus:outline-none focus:ring-2 focus:ring-blue-500 ${
                         isActive ? 'bg-blue-600 border-blue-500 text-white font-bold shadow-md active-glow' : 'bg-gray-900/90 border-gray-800 text-gray-300 hover:border-gray-700'
                     }`;
-
+        
                     let displayLabel = g;
                     if (g === 'Nach Bewertung' && currentGenre.startsWith('Rating: ')) displayLabel = currentGenre;
                     if (g === 'Nach Jahren' && currentGenre.startsWith('Jahr: ')) displayLabel = currentGenre.replace('Jahr: ', 'Jahr ');
-
+        
                     btn.innerHTML = `
                         <span class="text-xs tracking-wide font-bold">${displayLabel}</span>
                         <span class="text-[9px] opacity-60 font-medium genre-count">${counts[g] !== undefined ? '(' + counts[g] + ')' : '(0)'}</span>
                     `;
-
+        
                     btn.onclick = () => {
                         if (g === 'Nach Jahren') {
                             openYearsMenu();
@@ -937,6 +941,7 @@
                 leiste.appendChild(btn);
             });
         }
+
 
         function updateGenreCounts() {
             const counts = getGenreCounts();
@@ -957,41 +962,30 @@
         }
 
         function setActiveGenreStyling() {
-            let genres = [];
-            if (currentView === 'mediathek') {
-                const sortedGenres = Object.values(GENRES_MAP).sort();
-                genres = ['Alle', 'Neu hinzugefügt', 'Nach Jahren', 'Nach Bewertung', '⭐ Favoriten', ...sortedGenres, 'Sonstige'];
-            } else if (currentView === 'news') {
-                const newsCats = new Set();
-                newsArticles.forEach(m => {
-                    const source = m.source || m.channel;
-                    if (source === currentNewsSource && m.genres_list) {
-                        m.genres_list.forEach(g => newsCats.add(g));
-                    }
-                });
-                genres = ['Alle', '⭐ Favoriten', ...Array.from(newsCats).sort()];
-            } else {
-                genres = ['Alle', '⭐ Favoriten'];
-            }
+            const genreButtons = document.querySelectorAll('#genreLeiste button[data-genre]');
             
-            genres.forEach(g => {
-                const cleanId = g.replace(/\s+/g, '').replace(/⭐/g, 'Fav').replace(/🆕/g, 'Neu').replace(/[^a-zA-Z0-9]/g, '');
-                const btn = document.getElementById(`genre-btn-${cleanId}`);
-                if (!btn) return;
-                
+            genreButtons.forEach(btn => {
+                const g = btn.getAttribute('data-genre');
                 const isActive = currentGenre === g || (g === 'Nach Jahren' && currentGenre.startsWith('Jahr: ')) || (g === 'Nach Bewertung' && currentGenre.startsWith('Rating: '));
-                
+                const labelSpan = btn.querySelector('span');
+        
                 if (isActive) {
-                    btn.className = "flex-shrink-0 min-w-[110px] px-3.5 py-1.5 rounded-xl text-center flex flex-col justify-center transition-all cursor-pointer border bg-blue-600 border-blue-500 text-white font-bold shadow-md active-glow";
-                    if (currentGenre.startsWith('Jahr: ')) {
-                        btn.querySelector('span').innerText = currentGenre.replace('Jahr: ', 'Jahr ');
-                    } else if (currentGenre.startsWith('Rating: ')) {
-                        btn.querySelector('span').innerText = currentGenre;
+                    btn.className = "flex-shrink-0 min-w-[110px] px-3.5 py-1.5 rounded-xl text-center flex flex-col justify-center transition-all cursor-pointer border bg-blue-600 border-blue-500 text-white font-bold shadow-md active-glow focus:outline-none focus:ring-2 focus:ring-blue-500";
+                    if (labelSpan) {
+                        if (currentGenre.startsWith('Jahr: ')) {
+                            labelSpan.innerText = currentGenre.replace('Jahr: ', 'Jahr ');
+                        } else if (currentGenre.startsWith('Rating: ')) {
+                            labelSpan.innerText = currentGenre;
+                        } else {
+                            labelSpan.innerText = g;
+                        }
                     }
                 } else {
-                    btn.className = "flex-shrink-0 min-w-[110px] px-3.5 py-1.5 rounded-xl text-center flex flex-col justify-center transition-all cursor-pointer border bg-gray-900/90 border-gray-800 text-gray-300 hover:border-gray-700";
-                    if (g === 'Nach Jahren') btn.querySelector('span').innerText = 'Nach Jahren';
-                    if (g === 'Nach Bewertung') btn.querySelector('span').innerText = 'Nach Bewertung';
+                    btn.className = "flex-shrink-0 min-w-[110px] px-3.5 py-1.5 rounded-xl text-center flex flex-col justify-center transition-all cursor-pointer border bg-gray-900/90 border-gray-800 text-gray-300 hover:border-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500";
+                    if (labelSpan) {
+                        if (g === 'Nach Jahren') labelSpan.innerText = 'Nach Jahren';
+                        if (g === 'Nach Bewertung') labelSpan.innerText = 'Nach Bewertung';
+                    }
                 }
             });
         }
@@ -1063,25 +1057,41 @@
             if (currentView === 'news') currentSet = newsArticles;
             
             moviesToRender = currentSet.filter(m => {
+                // 1. TV-Filme Filter für die Mediathek
                 if (hideTvMovies && currentView === 'mediathek') {
                     const titleLower = m.title.toLowerCase();
                     const descLower = m.mediathek_desc ? m.mediathek_desc.toLowerCase() : '';
                     const genresLower = m.genres_list ? m.genres_list.map(g => g.toLowerCase()) : [];
-
+        
                     if (titleLower.includes('tv-film') || titleLower.includes('tv film') || 
                         descLower.includes('tv-film') || descLower.includes('tv film') || 
                         genresLower.includes('tv-film')) {
                         return false;
                     }
                 }
-
+        
+                // 2. NEWS-FILTER
                 if (currentView === 'news') {
-                    const source = m.source || m.channel;
-                    if (source !== currentNewsSource) return false;
+                    const itemSource = (m.source || m.channel || '').trim();
+    
+                    if (currentNewsSource === 'Bild.de') {
+                        if (!itemSource.toLowerCase().includes('bild')) return false;
+                    } else {
+                        if (itemSource.toLowerCase().includes('bild')) return false;
+                    }
+
+                    if (currentGenre !== 'Alle' && currentGenre !== '⭐ Favoriten') {
+                        if (!m.genres_list || !Array.isArray(m.genres_list)) return false;
+        
+                        const targetGenre = currentGenre.trim().toLowerCase();
+                        const hasGenre = m.genres_list.some(g => g.trim().toLowerCase() === targetGenre);
+        
+                        if (!hasGenre) return false;
+                    }
                 }
-
+        
+                // 3. Textsuche
                 let matchQuery = true;
-
                 if (query) {
                     const matchesTitle = m.title.toLowerCase().includes(query);
                     const matchesPlot = m.plot.toLowerCase().includes(query);
@@ -1090,6 +1100,8 @@
                     matchQuery = matchesTitle || matchesPlot || matchesDirector || matchesActors;
                 }
                 if (!matchQuery) return false;
+        
+                // 4. Genre- und Spezialfilter
                 if (currentGenre === 'Alle') return true;
                 
                 if (currentGenre.startsWith('Rating: ')) {
@@ -1110,20 +1122,15 @@
                     }
                     return m.genres_list && m.genres_list.includes(currentGenre);
                 }
-                if (currentView === 'news') {
-                    return m.genres_list && m.genres_list.includes(currentGenre);
-                }
+        
                 return true;
             });
         
+            // Sortierung
             if (currentGenre === 'Neu hinzugefügt') {
                 moviesToRender.sort((a, b) => a.timestamp - b.timestamp);
             } else if (currentGenre.startsWith('Rating: ') || currentGenre.startsWith('Jahr: ')) {
-                moviesToRender.sort((a, b) => {
-                    const ratingA = parseFloat(a.rating) || 0;
-                    const ratingB = parseFloat(b.rating) || 0;
-                    return ratingB - ratingA; 
-                });
+                moviesToRender.sort((a, b) => (parseFloat(b.rating) || 0) - (parseFloat(a.rating) || 0));
             } else if (currentView === 'mediathek') {
                 moviesToRender.sort((a, b) => a.title.localeCompare(b.title));
             }
