@@ -100,7 +100,7 @@
         </header>
 
         <!-- Genre Bar Ribbon -->
-        <nav id="genreLeiste" class="flex flex-row items-center gap-2 pt-1 pb-2 mb-5 scroll-smooth min-h-[52px] w-full overflow-x-auto no-scrollbar"></nav>
+        <nav id="genreLeiste" tabindex="-1" class="flex flex-row items-center gap-2 pt-1 pb-2 mb-5 scroll-smooth min-h-[52px] w-full overflow-x-auto focus:outline-none"></nav>
 
         <!-- Grid Container -->
         <main id="movieGrid" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-3.5 sm:gap-4">
@@ -864,15 +864,19 @@
             leiste.innerHTML = '';
             genres.forEach(g => {
                 const btn = document.createElement('button');
-                btn.setAttribute('tabindex', '0');
+                btn.setAttribute('type', 'button');
+                btn.setAttribute('tabindex', '0'); // Garantiert Steuerbarkeit per Fernbedienung/Pfeiltasten
                 btn.setAttribute('data-genre', g);
+        
+                // ID-Vergabe für genaue Fokus- und Scroll-Adressierung
+                const cleanId = g.replace(/\s+/g, '').replace(/⭐/g, 'Fav').replace(/🆕/g, 'Neu').replace(/[^a-zA-Z0-9]/g, '');
+                btn.id = `genre-btn-${cleanId}`;
         
                 btn.addEventListener('focus', () => {
                     btn.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
                 });
         
                 if (g === 'News-Quelle-Umschalter') {
-                    btn.id = "btnToggleNewsSource";
                     btn.className = "flex-shrink-0 min-w-[120px] px-3.5 py-1.5 rounded-xl text-center flex flex-col justify-center transition-all cursor-pointer border font-semibold shadow-sm bg-gray-900 border-gray-800 text-blue-400 hover:border-blue-500/50 focus:outline-none focus:ring-2 focus:ring-blue-500";
                     btn.onclick = toggleNewsSource;
                     btn.innerHTML = `
@@ -880,7 +884,6 @@
                         <span class="text-[9px] opacity-60 font-medium">(Klick zum Wechseln)</span>
                     `;
                 } else if (g === 'TV-Filme-Umschalter') {
-                    btn.id = "btnToggleTvMovies";
                     btn.className = "flex-shrink-0 min-w-[110px] px-3.5 py-1.5 rounded-xl text-center flex flex-col justify-center transition-all cursor-pointer border font-semibold shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500";
                     btn.onclick = toggleTvMoviesFilter;
                     
@@ -934,6 +937,7 @@
                 leiste.appendChild(btn);
             });
         }
+
 
         function updateGenreCounts() {
             const counts = getGenreCounts();
