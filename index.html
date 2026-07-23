@@ -100,7 +100,7 @@
         </header>
 
         <!-- Genre Bar Ribbon -->
-        <nav id="genreLeiste" class="flex flex-row items-center gap-2 pt-1 pb-2 mb-5 scroll-smooth min-h-[52px] w-full overflow-x-auto focus:outline-none"></nav>
+        <nav id="genreLeiste" class="flex flex-row items-center gap-2 pt-1 pb-2 mb-5 scroll-smooth min-h-[52px] w-full overflow-x-auto no-scrollbar"></nav>
 
         <!-- Grid Container -->
         <main id="movieGrid" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-3.5 sm:gap-4">
@@ -864,19 +864,15 @@
             leiste.innerHTML = '';
             genres.forEach(g => {
                 const btn = document.createElement('button');
-                btn.setAttribute('type', 'button');
-                btn.setAttribute('tabindex', '0'); // Garantiert die Ansteuerbarkeit per Tastatur/D-Pad
+                btn.setAttribute('tabindex', '0');
                 btn.setAttribute('data-genre', g);
-            
-                const cleanId = g.replace(/\s+/g, '').replace(/⭐/g, 'Fav').replace(/🆕/g, 'Neu').replace(/[^a-zA-Z0-9]/g, '');
-                btn.id = `genre-btn-${cleanId}`;
-            
-                // Auto-Scroll zur Mitte des Bildschirms, wenn der Button per Tastatur fokussiert wird
+        
                 btn.addEventListener('focus', () => {
                     btn.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
                 });
-            
+        
                 if (g === 'News-Quelle-Umschalter') {
+                    btn.id = "btnToggleNewsSource";
                     btn.className = "flex-shrink-0 min-w-[120px] px-3.5 py-1.5 rounded-xl text-center flex flex-col justify-center transition-all cursor-pointer border font-semibold shadow-sm bg-gray-900 border-gray-800 text-blue-400 hover:border-blue-500/50 focus:outline-none focus:ring-2 focus:ring-blue-500";
                     btn.onclick = toggleNewsSource;
                     btn.innerHTML = `
@@ -884,6 +880,7 @@
                         <span class="text-[9px] opacity-60 font-medium">(Klick zum Wechseln)</span>
                     `;
                 } else if (g === 'TV-Filme-Umschalter') {
+                    btn.id = "btnToggleTvMovies";
                     btn.className = "flex-shrink-0 min-w-[110px] px-3.5 py-1.5 rounded-xl text-center flex flex-col justify-center transition-all cursor-pointer border font-semibold shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500";
                     btn.onclick = toggleTvMoviesFilter;
                     
@@ -911,16 +908,16 @@
                     btn.className = `flex-shrink-0 min-w-[110px] px-3.5 py-1.5 rounded-xl text-center flex flex-col justify-center transition-all cursor-pointer border focus:outline-none focus:ring-2 focus:ring-blue-500 ${
                         isActive ? 'bg-blue-600 border-blue-500 text-white font-bold shadow-md active-glow' : 'bg-gray-900/90 border-gray-800 text-gray-300 hover:border-gray-700'
                     }`;
-            
+        
                     let displayLabel = g;
                     if (g === 'Nach Bewertung' && currentGenre.startsWith('Rating: ')) displayLabel = currentGenre;
                     if (g === 'Nach Jahren' && currentGenre.startsWith('Jahr: ')) displayLabel = currentGenre.replace('Jahr: ', 'Jahr ');
-            
+        
                     btn.innerHTML = `
                         <span class="text-xs tracking-wide font-bold">${displayLabel}</span>
                         <span class="text-[9px] opacity-60 font-medium genre-count">${counts[g] !== undefined ? '(' + counts[g] + ')' : '(0)'}</span>
                     `;
-            
+        
                     btn.onclick = () => {
                         if (g === 'Nach Jahren') {
                             openYearsMenu();
@@ -1214,19 +1211,11 @@
                         <div class="space-y-2 mt-3">
                             <div class="flex flex-wrap gap-1 mb-2">
                                 ${m.genres_list.map(g => `<span class="bg-gray-800/80 text-gray-400 text-[9px] px-1.5 py-0.5 rounded-md font-medium border border-gray-700/30">${g}</span>`).join('')}
-                                            </div>
-                            <div class="flex gap-1.5">
-                                <button tabindex="0" onclick="${clickAction}" 
-                                        class="flex-1 bg-blue-600 hover:bg-blue-500 text-white font-bold py-2 px-3 rounded-xl transition-all text-xs tracking-wider cursor-pointer shadow-md active-glow">
-                                    ${buttonText}
-                                </button>
-                                ${!isTv && !isNews ? `
-                                <button tabindex="0" onclick="downloadVideo('${m.video_url}', '${escapedTitle}', event)" 
-                                        title="Film herunterladen"
-                                        class="bg-gray-800 hover:bg-gray-700 text-gray-200 font-bold py-2 px-3 rounded-xl transition-all text-xs border border-gray-700/60 cursor-pointer flex items-center justify-center">
-                                    ⬇
-                                </button>` : ''}
                             </div>
+                            <button tabindex="0" onclick="${clickAction}" 
+                                    class="w-full bg-blue-600 hover:bg-blue-500 text-white font-bold py-2 px-3 rounded-xl transition-all text-xs tracking-wider cursor-pointer shadow-md active-glow">
+                                ${buttonText}
+                            </button>
                         </div>
                     </div>
                 `;
@@ -1452,17 +1441,6 @@
             }, 80); 
         }
 
-        function downloadVideo(url, title, event) {
-            if (event) event.stopPropagation();
-            const a = document.createElement('a');
-            a.href = url;
-            a.target = '_blank';
-            a.download = `${title}.mp4`;
-            document.body.appendChild(a);
-            a.click();
-            document.body.removeChild(a);
-        }
-
         function openPlayer(url, title) {
             const modal = document.getElementById('videoModal');
             const video = document.getElementById('mainVideoPlayer');
@@ -1585,7 +1563,7 @@
             }, 2500);
         }
 
-        // Keydown Listener für Videoplayer & Smart-TV Fernbedienungen
+        // Keydown Listener für Videoplayer
         window.addEventListener('keydown', (e) => {
             const modal = document.getElementById('videoModal');
             const video = document.getElementById('mainVideoPlayer');
@@ -1618,46 +1596,48 @@
 
             if (e.key === 'ArrowLeft') {
                 e.preventDefault();
-                seekPlayer(-10);
+                video.currentTime = Math.max(0, video.currentTime - 60);
+                showHUD("⏪ -60s");
                 return;
             }
 
             if (e.key === 'ArrowRight') {
                 e.preventDefault();
-                seekPlayer(10);
+                video.currentTime = Math.min(video.duration || 0, video.currentTime + 60);
+                showHUD("⏩ +60s");
                 return;
             }
         });
 
-        // PWA Installation & Scroll-To-Top Event Handler
-        window.addEventListener('beforeinstallprompt', (e) => {
-            e.preventDefault();
-            deferredPrompt = e;
-            const btnPWA = document.getElementById('btnInstallPWA');
-            if (btnPWA) {
-                btnPWA.classList.remove('hidden');
-                btnPWA.onclick = () => {
-                    deferredPrompt.prompt();
-                    deferredPrompt.userChoice.then(() => {
-                        btnPWA.classList.add('hidden');
-                        deferredPrompt = null;
-                    });
-                };
+        // Smart-TV Navigation
+        const topElements = ['searchBar', 'btnMediathek', 'btnLiveTv', 'btnNews'];
+        topElements.forEach(id => {
+            const el = document.getElementById(id);
+            if (el) {
+                el.addEventListener('keydown', (e) => {
+                    if (e.key === 'ArrowDown') {
+                        e.preventDefault();
+                        const firstGenreBtn = document.querySelector('#genreLeiste button');
+                        if (firstGenreBtn) firstGenreBtn.focus();
+                    }
+                });
             }
         });
 
+        // Back To Top Button Sichtbarkeit steuern
         window.addEventListener('scroll', () => {
-            const btnBackToTop = document.getElementById('btnBackToTop');
-            if (!btnBackToTop) return;
-            if (window.scrollY > 400) {
-                btnBackToTop.classList.remove('hidden');
-            } else {
-                btnBackToTop.classList.add('hidden');
+            const btn = document.getElementById('btnBackToTop');
+            if (btn) {
+                if (window.scrollY > 300) {
+                    btn.classList.remove('hidden');
+                } else {
+                    btn.classList.add('hidden');
+                }
             }
         });
 
-        // Initialisierung beim Laden der Seite
-        window.addEventListener('DOMContentLoaded', () => {
+        // App Initialisierung
+        document.addEventListener('DOMContentLoaded', () => {
             fetchAllData();
         });
     </script>
