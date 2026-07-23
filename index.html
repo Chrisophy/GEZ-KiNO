@@ -142,14 +142,6 @@
     <div id="videoModal" class="fixed inset-0 bg-black hidden z-50 flex flex-col justify-center items-center w-full h-full select-none cursor-pointer">
         <video id="mainVideoPlayer" autoplay playsinline class="w-full h-full object-contain bg-black"></video>
 
-        <!-- Direct Download Button Overlay im Player -->
-        <a id="playerDownloadBtn" href="" download target="_blank" onclick="event.stopPropagation();" class="absolute top-4 right-4 z-30 bg-black/60 hover:bg-blue-600 text-white p-3 rounded-2xl backdrop-blur-md border border-white/20 transition-all flex items-center gap-2 text-xs font-bold shadow-2xl">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-            </svg>
-            <span class="hidden sm:inline">Download</span>
-        </a>
-
         <!-- Invisible Touch Overlay Zones -->
         <div class="absolute inset-0 grid grid-cols-3 z-10 pointer-events-auto">
             <!-- Links: Zurückspulen -->
