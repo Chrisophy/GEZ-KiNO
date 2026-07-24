@@ -8,6 +8,18 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
 
+    <script>
+        // Frühe Theme-Initialisierung gegen Flackern beim Laden
+        (function() {
+            const savedTheme = localStorage.getItem('gez_kino_theme');
+            if (savedTheme === 'light') {
+                document.documentElement.classList.remove('dark');
+            } else {
+                document.documentElement.classList.add('dark');
+            }
+        })();
+    </script>
+
     <style>
         video:focus, video:active, #videoModal:focus {
             outline: none !important;
@@ -19,6 +31,7 @@
             color: #f3f4f6; 
             font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
             -webkit-font-smoothing: antialiased;
+            transition: background-color 0.3s ease, color 0.3s ease;
         }
         
         #genreLeiste { 
@@ -97,6 +110,94 @@
             -webkit-backdrop-filter: none !important;
             transform: none !important;
         }
+
+        /* ==========================================
+           TAG-MODUS / LIGHT MODE ANPASSUNGEN
+           ========================================== */
+        html:not(.dark) body {
+            background-color: #f1f5f9;
+            color: #0f172a;
+        }
+
+        html:not(.dark) #genreLeiste::-webkit-scrollbar-track {
+            background: #e2e8f0;
+        }
+
+        html:not(.dark) .bg-gray-900,
+        html:not(.dark) .bg-gray-900\/90,
+        html:not(.dark) .bg-gray-950,
+        html:not(.dark) .bg-gray-950\/50,
+        html:not(.dark) .bg-gray-950\/80,
+        html:not(.dark) .bg-gray-950\/90,
+        html:not(.dark) .bg-gray-800,
+        html:not(.dark) .bg-gray-800\/80 {
+            background-color: rgba(255, 255, 255, 0.9) !important;
+            color: #0f172a !important;
+        }
+
+        html:not(.dark) .border-gray-800,
+        html:not(.dark) .border-gray-800\/80,
+        html:not(.dark) .border-gray-800\/60,
+        html:not(.dark) .border-gray-700,
+        html:not(.dark) .border-gray-700\/50,
+        html:not(.dark) .border-gray-700\/30 {
+            border-color: rgba(0, 0, 0, 0.12) !important;
+        }
+
+        html:not(.dark) .text-gray-100,
+        html:not(.dark) .text-gray-200,
+        html:not(.dark) .text-gray-300 {
+            color: #0f172a !important;
+        }
+
+        html:not(.dark) .text-gray-400 {
+            color: #334155 !important;
+        }
+
+        html:not(.dark) .text-gray-500 {
+            color: #64748b !important;
+        }
+
+        html:not(.dark) button {
+            border-color: rgba(0, 0, 0, 0.12) !important;
+            box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.8), 0 4px 12px rgba(0, 0, 0, 0.06) !important;
+        }
+
+        html:not(.dark) button.bg-gray-800:hover, 
+        html:not(.dark) button.bg-gray-800\/80:hover, 
+        html:not(.dark) button.bg-gray-900:hover {
+            background-color: rgba(226, 232, 240, 0.95) !important;
+        }
+
+        html:not(.dark) #searchBar {
+            background-color: rgba(255, 255, 255, 0.95) !important;
+            color: #0f172a !important;
+            border-color: rgba(0, 0, 0, 0.15) !important;
+        }
+
+        html:not(.dark) #searchBar::placeholder {
+            color: #64748b !important;
+        }
+
+        html:not(.dark) .fav-btn {
+            background-color: rgba(255, 255, 255, 0.85) !important;
+            border-color: rgba(0, 0, 0, 0.15) !important;
+        }
+
+        html:not(.dark) .movie-credits-box,
+        html:not(.dark) #rouletteModalCredits {
+            background-color: #f8fafc !important;
+            border-color: #e2e8f0 !important;
+        }
+
+        html:not(.dark) #statusMessage {
+            color: #64748b !important;
+        }
+
+        html:not(.dark) .bg-black\/80,
+        html:not(.dark) .bg-black\/70 {
+            background-color: rgba(15, 23, 42, 0.6) !important;
+        }
     </style>    
 
     <link rel="manifest" href="manifest.json">
@@ -140,6 +241,9 @@
                     <div class="relative w-full">
                         <input type="text" id="searchBar" oninput="filterResults()" placeholder="Film | Regie | Schauspieler..." class="bg-gray-900/90 text-white pl-4 pr-10 py-2.5 rounded-2xl w-full focus:outline-none focus:ring-2 focus:ring-blue-500 border border-gray-800 shadow-inner text-xs sm:text-sm transition-all placeholder:text-gray-500">
                     </div>
+                    <button id="btnThemeToggle" onclick="toggleTheme()" type="button" aria-label="Design-Modus wechseln" title="Tag / Nacht Modus umschalten" class="px-3 py-2.5 rounded-2xl bg-gray-900/90 border border-gray-800 text-yellow-400 hover:text-yellow-300 transition-all cursor-pointer flex items-center justify-center shadow-inner flex-shrink-0">
+                        <span id="themeToggleIcon" class="text-base sm:text-lg select-none">☀️</span>
+                    </button>
                 </div>
             </div>
         </header>
@@ -307,6 +411,32 @@
         let deferredPrompt = null; 
         let activeDownloadUrl = ''; 
         const CHUNK_SIZE = 50; 
+
+        function toggleTheme() {
+            const html = document.documentElement;
+            const isDark = html.classList.contains('dark');
+            if (isDark) {
+                html.classList.remove('dark');
+                localStorage.setItem('gez_kino_theme', 'light');
+            } else {
+                html.classList.add('dark');
+                localStorage.setItem('gez_kino_theme', 'dark');
+            }
+            updateThemeUI();
+        }
+
+        function updateThemeUI() {
+            const isDark = document.documentElement.classList.contains('dark');
+            const icon = document.getElementById('themeToggleIcon');
+            const themeMeta = document.querySelector('meta[name="theme-color"]');
+            
+            if (icon) {
+                icon.innerText = isDark ? '☀️' : '🌙';
+            }
+            if (themeMeta) {
+                themeMeta.setAttribute('content', isDark ? '#0b0f17' : '#f1f5f9');
+            }
+        }
 
         function toggleTvMoviesFilter() {
             hideTvMovies = !hideTvMovies;
@@ -1473,115 +1603,154 @@
                     thumbImg.src = luckyMovie.thumb;
                     thumbImg.onerror = () => { thumbImg.src = 'placeholder.png'; };
 
-                    const escapedTitle = luckyMovie.title.replace(/'/g, "\\'").replace(/"/g, '&quot;');
                     const playBtn = document.getElementById('rouletteModalPlayBtn');
                     playBtn.onclick = () => {
                         closeRouletteModal();
-                        openPlayer(luckyMovie.video_url, escapedTitle);
+                        openPlayer(luckyMovie.video_url, luckyMovie.title);
                     };
 
                     document.getElementById('rouletteModal').style.display = 'flex';
                     document.body.style.overflow = 'hidden';
                 }
-            }, 80); 
+            }, 100);
         }
+
+        // ==========================================
+        // VIDEO PLAYER & HISTORY HANDLING
+        // ==========================================
+        let isPlayerOpen = false;
 
         function openPlayer(url, title) {
+            if (!url) return;
             const modal = document.getElementById('videoModal');
             const video = document.getElementById('mainVideoPlayer');
-            const dlBtn = document.getElementById('playerDownloadBtn');
-        
-            activeDownloadUrl = url; 
-            if (dlBtn) dlBtn.href = url;
+            if (!modal || !video) return;
 
             modal.classList.remove('hidden');
-            document.body.style.overflow = 'hidden'; 
-        
-            history.pushState({ playerOpen: true }, '');
-        
-            if (activeVideoErrorHandler) {
-                video.removeEventListener('error', activeVideoErrorHandler);
-                activeVideoErrorHandler = null;
+            isPlayerOpen = true;
+
+            // Verlaufeintrag hinzufügen, damit die Zurück-Taste das Video schließt
+            if (window.location.hash !== '#player') {
+                history.pushState({ playerOpen: true }, '', '#player');
             }
-        
-            const isM3u8 = url.includes('.m3u8') || url.endsWith('.m3u8');
-            if (isM3u8) {
-                if (Hls.isSupported()) {
-                    if (hlsInstance) hlsInstance.destroy();
-                    hlsInstance = new Hls({ manifestLoadingTimeOut: 5000, manifestLoadingMaxRetry: 2 });
-                    hlsInstance.loadSource(url);
-                    hlsInstance.attachMedia(video);
-                } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
-                    video.src = url;
-                }
+
+            // HLS.js oder direktes HTML5 Video laden
+            if (url.includes('.m3u8') && typeof Hls !== 'undefined' && Hls.isSupported()) {
+                if (hlsInstance) hlsInstance.destroy();
+                hlsInstance = new Hls({ maxBufferLength: 30 });
+                hlsInstance.loadSource(url);
+                hlsInstance.attachMedia(video);
+                hlsInstance.on(Hls.Events.MANIFEST_PARSED, () => {
+                    video.play().catch(() => {});
+                });
             } else {
-                if (hlsInstance) {
-                    hlsInstance.destroy();
-                    hlsInstance = null;
-                }
                 video.src = url;
+                video.play().catch(() => {});
             }
-        
-            video.controls = false;
-        
-            video.play().then(() => {
-                video.focus();
-                setTimeout(() => {
-                    video.blur();
-                }, 100);
-        
-                if (modal.requestFullscreen) {
-                    modal.requestFullscreen().catch(() => {});
-                } else if (modal.webkitRequestFullscreen) {
-                    modal.webkitRequestFullscreen();
-                }
-            }).catch(err => console.log("Autoplay blockiert:", err));
+
+            showHUD(`▶ ${title || 'Spiele Video...'}`);
         }
-        
-        function closePlayer() {
+
+        function closePlayer(fromPopState = false) {
             const modal = document.getElementById('videoModal');
             const video = document.getElementById('mainVideoPlayer');
-            
-            activeDownloadUrl = '';
-        
-            if (document.fullscreenElement || document.webkitFullscreenElement || document.msFullscreenElement) {
-                if (document.exitFullscreen) {
-                    document.exitFullscreen().catch(() => {});
-                } else if (document.webkitExitFullscreen) {
-                    document.webkitExitFullscreen();
-                }
-            }
-        
-            if (activeVideoErrorHandler) {
-                video.removeEventListener('error', activeVideoErrorHandler);
-                activeVideoErrorHandler = null;
-            }
-            video.onerror = null;
+            if (!modal || !video) return;
+
+            // Video stoppen und Speicher freigeben
             video.pause();
-            
             if (hlsInstance) {
-                hlsInstance.off(Hls.Events.ERROR);
                 hlsInstance.destroy();
                 hlsInstance = null;
             }
-            
-            video.src = ""; 
-            try { video.load(); } catch(e) {} 
+            video.removeAttribute('src');
+            video.load();
+
+            modal.classList.add('hidden');
+
+            if (isPlayerOpen) {
+                isPlayerOpen = false;
+                // Nur zur vorherigen History springen, wenn der Aufruf NICHT bereits über die Zurück-Taste kam
+                if (!fromPopState && window.location.hash === '#player') {
+                    history.back();
+                }
+            }
         }
 
-        window.addEventListener('load', () => {
-            fetchAllData();
+        // Fängt den Zurück-Button des Browsers/Smartphones ab
+        window.addEventListener('popstate', () => {
+            if (isPlayerOpen) {
+                closePlayer(true);
+            }
+        });
+
+        // Tastatur-Steuerung (ESC schließt den Player, Leertaste für Pause)
+        window.addEventListener('keydown', (e) => {
+            if (!isPlayerOpen) return;
             
-            window.addEventListener('scroll', () => {
-                const btn = document.getElementById('btnBackToTop');
-                if (btn) {
-                    if (window.scrollY > 300) {
-                        btn.classList.remove('hidden');
-                    } else {
-                        btn.classList.add('hidden');
-                    }
+            if (e.key === 'Escape' || e.key === 'BackSpace') {
+                closePlayer();
+            } else if (e.key === ' ') {
+                e.preventDefault();
+                togglePlayerTouch();
+            } else if (e.key === 'ArrowRight') {
+                seekPlayer(10);
+            } else if (e.key === 'ArrowLeft') {
+                seekPlayer(-10);
+            }
+        });
+
+        // HUD / Statusanzeige im Player
+        function showHUD(text) {
+            const hud = document.getElementById('playerHUD');
+            const hudStatus = document.getElementById('hudStatus');
+            if (!hud || !hudStatus) return;
+
+            hudStatus.innerText = text;
+            hud.classList.remove('opacity-0');
+            
+            clearTimeout(window.hudTimeout);
+            window.hudTimeout = setTimeout(() => {
+                hud.classList.add('opacity-0');
+            }, 2500);
+        }
+
+        // Klick auf das Video schließt den Player, wenn kein Seek/Pause getriggert wurde
+        document.getElementById('videoModal')?.addEventListener('click', (e) => {
+            // Wenn direkt auf den dunklen Hintergrund oder den Player geklickt wird
+            if (e.target.id === 'videoModal') {
+                closePlayer();
+            }
+        });
+        window.addEventListener('scroll', () => {
+            const btn = document.getElementById('btnBackToTop');
+            if (window.scrollY > 300) {
+                btn.classList.remove('hidden');
+            } else {
+                btn.classList.add('hidden');
+            }
+        });
+
+        window.addEventListener('beforeinstallprompt', (e) => {
+            e.preventDefault();
+            deferredPrompt = e;
+            const pwaBtn = document.getElementById('btnInstallPWA');
+            if (pwaBtn) pwaBtn.classList.remove('hidden');
+        });
+
+        document.getElementById('btnInstallPWA')?.addEventListener('click', async () => {
+            if (deferredPrompt) {
+                deferredPrompt.prompt();
+                const { outcome } = await deferredPrompt.userChoice;
+                if (outcome === 'accepted') {
+                    document.getElementById('btnInstallPWA').classList.add('hidden');
                 }
-            });
+                deferredPrompt = null;
+            }
+        });
+
+        document.addEventListener('DOMContentLoaded', () => {
+            updateThemeUI();
+            fetchAllData();
         });
     </script>
 </body>
