@@ -41,9 +41,16 @@
             scrollbar-color: #3b82f6 #1f2937;
         }
 
-        #genreLeiste button { 
-            scroll-snap-align: start; 
-            flex-shrink: 0; 
+        /* Ersetze oder ergänze deine Genre-Button Klassen hiermit */
+        #genreLeiste button:focus {
+            outline: none !important;
+            border-color: #3b82f6 !important; /* Blaues Border bei Fokus */
+            box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.5) !important;
+        }
+
+        /* Sicherstellen, dass der Button auch bei Tastatur-Navigation hervorgehoben bleibt */
+        #genreLeiste button:focus-visible {
+            transform: scale(1.05);
         }
 
         #genreLeiste::-webkit-scrollbar { height: 4px; }
@@ -248,7 +255,7 @@
             </div>
         </header>
 
-        <nav id="genreLeiste" class="flex flex-row items-center gap-2 pt-1 pb-2 mb-5 scroll-smooth min-h-[52px] w-full overflow-x-auto no-scrollbar"></nav>
+        <nav id="genreLeiste" class="relative z-10 flex flex-row items-center gap-2 pt-1 pb-2 mb-5 scroll-smooth min-h-[52px] w-full overflow-x-auto no-scrollbar"></nav>
 
         <main id="movieGrid" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-3.5 sm:gap-4">
             <div id="statusMessage" class="text-center col-span-full py-20 text-gray-500 font-medium animate-pulse">Initialisiere Mediathek...</div>
@@ -1030,22 +1037,22 @@
                 btn.setAttribute('data-genre', g);
                 btn.id = getCleanGenreId(g);
         
-                btn.addEventListener('focus', () => {
-                    btn.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
-                });
+                // HINWEIS: Der fehlerhafte 'focus' Event-Listener wurde hier komplett entfernt.
         
                 if (g === 'News-Quelle-Umschalter') {
                     btn.id = "btnToggleNewsSource";
                     btn.className = "flex-shrink-0 min-w-[120px] px-3.5 py-1.5 rounded-xl text-center flex flex-col justify-center transition-all cursor-pointer border font-semibold shadow-sm bg-gray-900 border-gray-800 text-blue-400 hover:border-blue-500/50 focus:outline-none focus:ring-2 focus:ring-blue-500";
-                    btn.onclick = toggleNewsSource;
                     btn.innerHTML = `
                         <span class="text-xs tracking-wide font-bold">Quelle: ${currentNewsSource}</span>
                         <span class="text-[9px] opacity-60 font-medium">(Klick zum Wechseln)</span>
                     `;
+                    btn.onclick = () => {
+                        btn.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
+                        toggleNewsSource();
+                    };
                 } else if (g === 'TV-Filme-Umschalter') {
                     btn.id = "btnToggleTvMovies";
                     btn.className = "flex-shrink-0 min-w-[110px] px-3.5 py-1.5 rounded-xl text-center flex flex-col justify-center transition-all cursor-pointer border font-semibold shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500";
-                    btn.onclick = toggleTvMoviesFilter;
                     
                     const spanLabel = document.createElement('span');
                     spanLabel.id = "lblTvMovies";
@@ -1065,6 +1072,11 @@
                     
                     btn.appendChild(spanLabel);
                     btn.appendChild(spanSub);
+                    
+                    btn.onclick = () => {
+                        btn.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
+                        toggleTvMoviesFilter();
+                    };
                 } else {
                     const isActive = currentGenre === g || (g === 'Nach Jahren' && currentGenre.startsWith('Jahr: ')) || (g === 'Nach Bewertung' && currentGenre.startsWith('Rating: '));
                     
@@ -1082,6 +1094,7 @@
                     `;
         
                     btn.onclick = () => {
+                        btn.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
                         if (g === 'Nach Jahren') {
                             openYearsMenu();
                         } else if (g === 'Nach Bewertung') {
@@ -1681,7 +1694,7 @@
             if (isPlayerOpen) {
                 closePlayer(true);
             }
-        });
+        });       
 
         // Tastatur-Steuerung (ESC schließt den Player, Leertaste für Pause)
         window.addEventListener('keydown', (e) => {
@@ -1745,6 +1758,26 @@
                     document.getElementById('btnInstallPWA').classList.add('hidden');
                 }
                 deferredPrompt = null;
+            }
+        });
+
+        window.addEventListener('keydown', (e) => {
+            // Nur bei Pfeiltasten reagieren
+            if (e.key === 'ArrowDown') {
+                const activeElement = document.activeElement;
+        
+                // Wenn wir im Header sind oder auf dem Body, springe in die Genre-Leiste
+                const headerElements = ['searchBar', 'btnThemeToggle', 'btnMediathek', 'btnLiveTv', 'btnNews', 'btnInstallPWA', 'btnRoulette'];
+        
+                if (headerElements.includes(activeElement.id) || activeElement.tagName === 'BODY') {
+                    e.preventDefault();
+                    const firstGenreBtn = document.querySelector('#genreLeiste button');
+                    if (firstGenreBtn) {
+                        firstGenreBtn.focus();
+                        // Scrollen zur Mitte, damit man sieht, wo man ist
+                        firstGenreBtn.scrollIntoView({ behavior: 'smooth', inline: 'center' });
+                    }
+                }
             }
         });
 
