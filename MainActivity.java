@@ -1,8 +1,6 @@
 package com.template.htmlwrapper;
 
-import android.os.Build;
 import android.os.Bundle;
-import android.view.WindowManager;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
@@ -16,14 +14,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        // 1. Inhalt erlauben, bis unter die Systemleisten zu rendern
-        WindowCompat.setDecorFitsSystemWindows(getWindow(), false);
-
-        // 2. Kamera-Notch/Ausschnitt oben aktiv für Content freigeben (Android 9+)
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.P) {
-            getWindow().getAttributes().layoutInDisplayCutoutMode =
-                    WindowManager.LayoutParams.LAYOUT_IN_DISPLAY_CUTOUT_MODE_SHORT_EDGES;
-        }
+        // Vollbildmodus aktivieren
+        hideSystemUI();
 
         WebView webView = new WebView(this);
         WebSettings webSettings = webView.getSettings();
@@ -32,21 +24,27 @@ public class MainActivity extends AppCompatActivity {
         webSettings.setDomStorageEnabled(true);
         
         webView.setWebViewClient(new WebViewClient());
+        
+        // HIER die gewünschte URL eintragen:
         webView.loadUrl("https://chrisophy.github.io/GEZ-KiNO");
         
         setContentView(webView);
+    }
 
-        // 3. Statusleiste (Uhrzeit, Benachrichtigungen) ausblenden
-        WindowInsetsControllerCompat controller = 
-                WindowCompat.getInsetsController(getWindow(), getWindow().getDecorView());
-        if (controller != null) {
-            controller.hide(WindowInsetsCompat.Type.statusBars());
-            // Tipp: Wenn auch die untere Gesten-/Navigationsleiste weg soll:
-            // controller.hide(WindowInsetsCompat.Type.systemBars());
-            
-            controller.setSystemBarsBehavior(
-                    WindowInsetsControllerCompat.BEHAVIOR_SHOW_TRANSIENT_BARS_BY_SWIPE
-            );
+    private void hideSystemUI() {
+        // 1. App-Titelzeile ausblenden (falls im Theme vorhanden)
+        if (getSupportActionBar() != null) {
+            getSupportActionBar().hide();
         }
+
+        // 2. Status- und Navigationsleiste ausblenden
+        WindowCompat.setDecorFitsSystemWindows(getWindow(), false);
+        WindowInsetsControllerCompat controller = new WindowInsetsControllerCompat(getWindow(), getWindow().getDecorView());
+        
+        // Versteckt Statusbar und Navigationbar
+        controller.hide(WindowInsetsCompat.Type.statusBars() | WindowInsetsCompat.Type.navigationBars());
+        
+        // Reagiert auf Wischgesten: Leisten werden bei Wischen kurz halbtransparent eingeblendet und verschwinden automatisch wieder
+        controller.setSystemBarsBehavior(WindowInsetsControllerCompat.BEHAVIOR_SHOW_TRANSIENT_BARS_BY_SWIPE);
     }
 }
