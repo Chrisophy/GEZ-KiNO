@@ -5,12 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>[GEZ] KiNO</title>
     
-    <!-- External Scripts & Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
 
-    <!-- Custom Tweaks for Cinema Theme & TV Remote Focus -->
+    <script>
+        // Frühe Theme-Initialisierung gegen Flackern beim Laden
+        (function() {
+            const savedTheme = localStorage.getItem('gez_kino_theme');
+            if (savedTheme === 'light') {
+                document.documentElement.classList.remove('dark');
+            } else {
+                document.documentElement.classList.add('dark');
+            }
+        })();
+    </script>
+
     <style>
+        /* Rahmen von den Overlay-Buttons entfernen */
+        #videoModal .grid > div:focus {
+            outline: none !important;
+            box-shadow: none !important;
+        }        
+        
         video:focus, video:active, #videoModal:focus {
             outline: none !important;
             -webkit-tap-highlight-color: transparent !important;
@@ -21,9 +37,9 @@
             color: #f3f4f6; 
             font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
             -webkit-font-smoothing: antialiased;
+            transition: background-color 0.3s ease, color 0.3s ease;
         }
         
-        /* Smooth Scrollbar for Genre Ribbon */
         #genreLeiste { 
             scroll-snap-type: x mandatory; 
             -webkit-overflow-scrolling: touch; 
@@ -31,18 +47,169 @@
             scrollbar-color: #3b82f6 #1f2937;
         }
 
-        #genreLeiste button { 
-            scroll-snap-align: start; 
-            flex-shrink: 0; 
+        /* Ersetze oder ergänze deine Genre-Button Klassen hiermit */
+        #genreLeiste button:focus {
+            outline: none !important;
+            border-color: #3b82f6 !important; /* Blaues Border bei Fokus */
+            box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.5) !important;
+        }
+
+        /* Sicherstellen, dass der Button auch bei Tastatur-Navigation hervorgehoben bleibt */
+        #genreLeiste button:focus-visible {
+            transform: scale(1.05);
         }
 
         #genreLeiste::-webkit-scrollbar { height: 4px; }
         #genreLeiste::-webkit-scrollbar-track { background: #111827; }
         #genreLeiste::-webkit-scrollbar-thumb { background: #3b82f6; border-radius: 9999px; }
         
-        /* Subtle Glow Animation for Active Items */
+        /* ==========================================
+           GLASMORPHISM / GLAS-EFFEKT FÜR BUTTONS
+           ========================================== */
+        button {
+            backdrop-filter: blur(12px) !important;
+            -webkit-backdrop-filter: blur(12px) !important;
+            border: 1px solid rgba(255, 255, 255, 0.15) !important;
+            box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.25), 0 4px 15px rgba(0, 0, 0, 0.3) !important;
+            transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1) !important;
+        }
+
+        button:hover {
+            border-color: rgba(255, 255, 255, 0.35) !important;
+            box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.4), 0 6px 20px rgba(0, 0, 0, 0.4) !important;
+            transform: translateY(-1px);
+        }
+
+        button:active {
+            transform: translateY(0);
+            box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.5) !important;
+        }
+
+        /* Glas-Anpassung für blaue Primär-Buttons */
+        .bg-blue-600, button.bg-blue-600 {
+            background-color: rgba(37, 99, 235, 0.55) !important;
+        }
+        .bg-blue-600:hover, button.bg-blue-600:hover {
+            background-color: rgba(37, 99, 235, 0.75) !important;
+            box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.5), 0 0 20px rgba(59, 130, 246, 0.5) !important;
+        }
+
+        /* Glas-Anpassung für neutrale & dunkle Buttons */
+        .bg-gray-900, button.bg-gray-900,
+        .bg-gray-950\/50, button.bg-gray-950\/50,
+        .bg-gray-800, button.bg-gray-800,
+        .bg-gray-800\/80, button.bg-gray-800\/80 {
+            background-color: rgba(17, 24, 39, 0.6) !important;
+        }
+        button.bg-gray-800:hover, button.bg-gray-800\/80:hover, button.bg-gray-900:hover {
+            background-color: rgba(31, 41, 55, 0.8) !important;
+        }
+
+        /* Glas-Anpassung für den grünen App-Button */
+        .bg-emerald-600, button.bg-emerald-600 {
+            background-color: rgba(5, 150, 105, 0.55) !important;
+        }
+
+        /* Glow-Effekt für aktive Elemente */
         .active-glow {
-            box-shadow: 0 0 15px rgba(59, 130, 246, 0.35);
+            box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.4), 0 0 20px rgba(59, 130, 246, 0.45) !important;
+        }
+
+        /* Ausnahme: Roulette-Overlay auf dem Banner soll keinen Rahmen haben */
+        #btnRoulette {
+            border: none !important;
+            box-shadow: none !important;
+            backdrop-filter: none !important;
+            -webkit-backdrop-filter: none !important;
+            transform: none !important;
+        }
+
+        /* ==========================================
+           TAG-MODUS / LIGHT MODE ANPASSUNGEN
+           ========================================== */
+        html:not(.dark) body {
+            background-color: #f1f5f9;
+            color: #0f172a;
+        }
+
+        html:not(.dark) #genreLeiste::-webkit-scrollbar-track {
+            background: #e2e8f0;
+        }
+
+        html:not(.dark) .bg-gray-900,
+        html:not(.dark) .bg-gray-900\/90,
+        html:not(.dark) .bg-gray-950,
+        html:not(.dark) .bg-gray-950\/50,
+        html:not(.dark) .bg-gray-950\/80,
+        html:not(.dark) .bg-gray-950\/90,
+        html:not(.dark) .bg-gray-800,
+        html:not(.dark) .bg-gray-800\/80 {
+            background-color: rgba(255, 255, 255, 0.9) !important;
+            color: #0f172a !important;
+        }
+
+        html:not(.dark) .border-gray-800,
+        html:not(.dark) .border-gray-800\/80,
+        html:not(.dark) .border-gray-800\/60,
+        html:not(.dark) .border-gray-700,
+        html:not(.dark) .border-gray-700\/50,
+        html:not(.dark) .border-gray-700\/30 {
+            border-color: rgba(0, 0, 0, 0.12) !important;
+        }
+
+        html:not(.dark) .text-gray-100,
+        html:not(.dark) .text-gray-200,
+        html:not(.dark) .text-gray-300 {
+            color: #0f172a !important;
+        }
+
+        html:not(.dark) .text-gray-400 {
+            color: #334155 !important;
+        }
+
+        html:not(.dark) .text-gray-500 {
+            color: #64748b !important;
+        }
+
+        html:not(.dark) button {
+            border-color: rgba(0, 0, 0, 0.12) !important;
+            box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.8), 0 4px 12px rgba(0, 0, 0, 0.06) !important;
+        }
+
+        html:not(.dark) button.bg-gray-800:hover, 
+        html:not(.dark) button.bg-gray-800\/80:hover, 
+        html:not(.dark) button.bg-gray-900:hover {
+            background-color: rgba(226, 232, 240, 0.95) !important;
+        }
+
+        html:not(.dark) #searchBar {
+            background-color: rgba(255, 255, 255, 0.95) !important;
+            color: #0f172a !important;
+            border-color: rgba(0, 0, 0, 0.15) !important;
+        }
+
+        html:not(.dark) #searchBar::placeholder {
+            color: #64748b !important;
+        }
+
+        html:not(.dark) .fav-btn {
+            background-color: rgba(255, 255, 255, 0.85) !important;
+            border-color: rgba(0, 0, 0, 0.15) !important;
+        }
+
+        html:not(.dark) .movie-credits-box,
+        html:not(.dark) #rouletteModalCredits {
+            background-color: #f8fafc !important;
+            border-color: #e2e8f0 !important;
+        }
+
+        html:not(.dark) #statusMessage {
+            color: #64748b !important;
+        }
+
+        html:not(.dark) .bg-black\/80,
+        html:not(.dark) .bg-black\/70 {
+            background-color: rgba(15, 23, 42, 0.6) !important;
         }
     </style>    
 
@@ -53,23 +220,18 @@
 </head>
 <body class="p-3 sm:p-5 max-w-[1600px] mx-auto flex flex-col min-h-screen selection:bg-blue-600 selection:text-white">
     
-    <!-- Loading Overlay -->
     <div id="scanner" class="fixed inset-0 bg-black/70 backdrop-blur-md z-50 flex flex-col items-center justify-center gap-3 hidden transition-opacity duration-300">
         <div class="relative flex items-center justify-center">
             <div class="w-16 h-16 border-4 border-blue-500/20 border-t-blue-500 rounded-full animate-spin"></div>
-            <!-- Prozentanzeige mittig im Spinner -->
             <span id="scanner-percent" class="absolute text-xs font-bold text-blue-400">0%</span>
         </div>
         <div id="scanner-text" class="bg-gray-900/90 px-5 py-2.5 rounded-xl border border-gray-800 text-gray-200 font-semibold shadow-2xl tracking-wide text-sm">
-            Lade Mediathek-Daten (0%)...
+            Lade Mediathek-Daten...
         </div>
     </div>
 
-    <!-- Main Container -->
     <div class="flex-grow">
-        <!-- Header Zone -->
         <header class="mb-5 flex flex-col gap-4">
-            <!-- Hero / Roulette Banner -->
             <div id="banner-container" class="w-full rounded-2xl overflow-hidden shadow-2xl border border-gray-800/80 bg-gray-950 relative group">
                 <img src="banner.png" alt="[GEZ] Kino Banner" class="w-full h-auto block select-none pointer-events-none object-cover max-h-48 sm:max-h-64 md:max-h-80">
                 <button type="button" 
@@ -80,9 +242,7 @@
                 </button>
             </div>
 
-            <!-- Main Controls Bar -->
             <div class="flex flex-col sm:flex-row justify-between items-center gap-3 w-full">
-                <!-- Navigation Tabs -->
                 <div class="flex flex-wrap gap-1.5 bg-gray-900/90 p-1.5 rounded-2xl border border-gray-800/80 w-full sm:w-auto backdrop-blur-md shadow-inner">
                     <button id="btnMediathek" onclick="switchView('mediathek')" class="px-4 py-2 rounded-xl bg-blue-600 text-white font-bold shadow-md transition-all cursor-pointer text-xs sm:text-sm flex-1 sm:flex-none text-center active-glow">🍿 Filme</button>
                     <button id="btnLiveTv" onclick="switchView('livetv')" class="px-4 py-2 rounded-xl bg-gray-950/50 border border-transparent text-gray-400 hover:text-white hover:bg-gray-800 transition-all cursor-pointer text-xs sm:text-sm flex-1 sm:flex-none text-center">📺 Live TV</button>
@@ -90,25 +250,24 @@
                     <button id="btnInstallPWA" class="hidden px-4 py-2 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold shadow-lg transition-all cursor-pointer text-xs sm:text-sm flex-1 sm:flex-none text-center animate-pulse">📲 App laden</button>        
                 </div>            
                 
-                <!-- Search Input -->
                 <div class="w-full sm:w-80 md:w-96 flex gap-2">
                     <div class="relative w-full">
                         <input type="text" id="searchBar" oninput="filterResults()" placeholder="Film | Regie | Schauspieler..." class="bg-gray-900/90 text-white pl-4 pr-10 py-2.5 rounded-2xl w-full focus:outline-none focus:ring-2 focus:ring-blue-500 border border-gray-800 shadow-inner text-xs sm:text-sm transition-all placeholder:text-gray-500">
                     </div>
+                    <button id="btnThemeToggle" onclick="toggleTheme()" type="button" aria-label="Design-Modus wechseln" title="Tag / Nacht Modus umschalten" class="px-3 py-2.5 rounded-2xl bg-gray-900/90 border border-gray-800 text-yellow-400 hover:text-yellow-300 transition-all cursor-pointer flex items-center justify-center shadow-inner flex-shrink-0">
+                        <span id="themeToggleIcon" class="text-base sm:text-lg select-none">☀️</span>
+                    </button>
                 </div>
             </div>
         </header>
 
-        <!-- Genre Bar Ribbon -->
-        <nav id="genreLeiste" class="flex flex-row items-center gap-2 pt-1 pb-2 mb-5 scroll-smooth min-h-[52px] w-full overflow-x-auto no-scrollbar"></nav>
+        <nav id="genreLeiste" class="relative z-10 flex flex-row items-center gap-2 pt-1 pb-2 mb-5 scroll-smooth min-h-[52px] w-full overflow-x-auto no-scrollbar"></nav>
 
-        <!-- Grid Container -->
         <main id="movieGrid" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-3.5 sm:gap-4">
             <div id="statusMessage" class="text-center col-span-full py-20 text-gray-500 font-medium animate-pulse">Initialisiere Mediathek...</div>
         </main>
     </div>
 
-    <!-- Rating Modal -->
     <div id="ratingModal" class="fixed inset-0 bg-black/80 hidden z-50 justify-center items-center p-4 backdrop-blur-md">
         <div class="bg-gray-900 border border-gray-800 rounded-3xl max-w-sm w-full p-6 flex flex-col shadow-2xl">
             <h2 class="text-lg font-bold mb-4 text-center text-gray-100 tracking-wide">Mindestbewertung</h2>
@@ -129,7 +288,6 @@
         </div>
     </div>
 
-    <!-- Years Modal -->
     <div id="yearsModal" class="fixed inset-0 bg-black/80 hidden z-50 justify-center items-center p-4 backdrop-blur-md">
         <div class="bg-gray-900 border border-gray-800 rounded-3xl max-w-sm w-full p-6 flex flex-col max-h-[80vh] shadow-2xl">
             <h2 class="text-lg font-bold mb-4 text-center text-gray-100 tracking-wide">Jahr auswählen</h2>
@@ -138,27 +296,24 @@
         </div>
     </div>
     
-    <!-- Video Player Modal -->
     <div id="videoModal" class="fixed inset-0 bg-black hidden z-50 flex flex-col justify-center items-center w-full h-full select-none cursor-pointer">
         <video id="mainVideoPlayer" autoplay playsinline class="w-full h-full object-contain bg-black"></video>
 
-        <!-- Invisible Touch Overlay Zones -->
-        <div class="absolute inset-0 grid grid-cols-3 z-10 pointer-events-auto">
-            <!-- Links: Zurückspulen -->
-            <div onclick="seekPlayer(-60, event)" class="h-full flex items-center justify-center group active:bg-white/10 transition-colors">
-                <span class="text-white/80 font-bold text-xl sm:text-2xl opacity-0 group-active:opacity-100 transition-opacity bg-black/60 px-4 py-2 rounded-2xl backdrop-blur-md">⏪ -60s</span>
-            </div>
-        
-            <!-- Mitte: Play / Pause -->
-            <div onclick="togglePlayerTouch(event)" class="h-full"></div>
-        
-            <!-- Rechts: Vorspulen -->
-            <div onclick="seekPlayer(60, event)" class="h-full flex items-center justify-center group active:bg-white/10 transition-colors">
-                <span class="text-white/80 font-bold text-xl sm:text-2xl opacity-0 group-active:opacity-100 transition-opacity bg-black/60 px-4 py-2 rounded-2xl backdrop-blur-md">⏩ +60s</span>
-            </div>
+    <div class="absolute inset-0 grid grid-cols-3 z-10 pointer-events-auto">
+        <!-- Links -->
+        <div tabindex="-1" onclick="seekPlayer(-60, event)" class="h-full flex items-center justify-center group active:bg-white/10 transition-colors">
+            <span class="text-white/80 font-bold text-xl sm:text-2xl opacity-0 group-active:opacity-100 transition-opacity bg-black/60 px-4 py-2 rounded-2xl backdrop-blur-md">⏪ -60s</span>
         </div>
+    
+        <!-- Mitte -->
+        <div tabindex="-1" onclick="togglePlayerTouch(event)" class="h-full"></div>
 
-        <!-- Minimalistisches Smart-TV / Touch HUD -->
+        <!-- Rechts -->
+        <div tabindex="-1" onclick="seekPlayer(60, event)" class="h-full flex items-center justify-center group active:bg-white/10 transition-colors">
+            <span class="text-white/80 font-bold text-xl sm:text-2xl opacity-0 group-active:opacity-100 transition-opacity bg-black/60 px-4 py-2 rounded-2xl backdrop-blur-md">⏩ +60s</span>
+        </div>
+    </div>
+
         <div id="playerHUD" class="absolute bottom-10 left-1/2 -translate-x-1/2 bg-gray-950/90 border border-gray-800 px-6 py-3 rounded-2xl backdrop-blur-md flex items-center gap-6 opacity-0 transition-opacity duration-300 pointer-events-none z-20 shadow-2xl">
             <span id="hudStatus" class="text-blue-400 font-bold text-sm">▶ PLAY</span>
             <span id="hudTime" class="text-gray-300 text-xs font-mono">00:00 / 00:00</span>
@@ -166,7 +321,6 @@
         </div>
     </div>
 
-    <!-- Roulette Result Modal -->
     <div id="rouletteModal" class="fixed inset-0 bg-black/80 hidden z-50 justify-center items-center p-4 backdrop-blur-md">
         <div class="bg-gray-900 border border-gray-800 rounded-3xl max-w-md w-full p-6 flex flex-col shadow-2xl relative">
             <button onclick="closeRouletteModal()" class="absolute top-4 right-4 text-gray-400 hover:text-white p-2 z-50 bg-gray-950/80 rounded-full border border-gray-800 transition-colors cursor-pointer">
@@ -195,7 +349,6 @@
         </div>
     </div>
 
-    <!-- News Article Reader Modal -->
     <div id="newsModal" class="fixed inset-0 bg-black/80 hidden z-50 justify-center items-center p-4 backdrop-blur-md">
         <div class="bg-gray-900 border border-gray-800 rounded-3xl max-w-2xl w-full max-h-[85vh] flex flex-col overflow-hidden shadow-2xl relative">
             <button onclick="closeNewsModal()" class="absolute top-4 right-4 text-gray-400 hover:text-white p-2 z-50 bg-gray-950/80 rounded-full border border-gray-800 transition-colors cursor-pointer">
@@ -204,7 +357,6 @@
                 </svg>
             </button>
 
-            <!-- Quick Scroll Controls for Touch/Remote -->
             <div class="absolute right-4 bottom-20 flex flex-col gap-2 z-40">
                 <button onclick="scrollNewsModal(-200)" class="bg-blue-600/80 hover:bg-blue-600 text-white p-2.5 rounded-full shadow-lg border border-blue-400/30 active:scale-95 transition-all cursor-pointer" aria-label="Hochscrollen">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -240,14 +392,12 @@
         </div>
     </div>
 
-    <!-- Scroll To Top Button -->
-    <button id="btnBackToTop" class="fixed bottom-6 right-6 z-40 hidden bg-blue-600/90 hover:bg-blue-600 text-white p-3 rounded-2xl shadow-2xl transition-all duration-300 border border-blue-400/30 backdrop-blur-sm active:scale-95" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+    <button id="btnBackToTop" class="fixed bottom-6 right-6 z-40 hidden bg-blue-600 text-white p-3 rounded-2xl shadow-2xl transition-all duration-300 border border-white/20 active:scale-95" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 15l7-7 7 7" />
         </svg>
     </button>
 
-    <!-- App JavaScript Logic -->
     <script>
         const TMDB_API_KEY = '60b3801a9e76b5706ee2a432f06423e6';
         const MEDIATHEK_URL = 'https://mediathekviewweb.de/api/query';
@@ -277,9 +427,34 @@
         let activeVideoErrorHandler = null; 
         let deferredPrompt = null; 
         let activeDownloadUrl = ''; 
-        const CHUNK_SIZE = 60; 
+        const CHUNK_SIZE = 50; 
 
-        /* Ergänzte Steuerungsfunktionen */
+        function toggleTheme() {
+            const html = document.documentElement;
+            const isDark = html.classList.contains('dark');
+            if (isDark) {
+                html.classList.remove('dark');
+                localStorage.setItem('gez_kino_theme', 'light');
+            } else {
+                html.classList.add('dark');
+                localStorage.setItem('gez_kino_theme', 'dark');
+            }
+            updateThemeUI();
+        }
+
+        function updateThemeUI() {
+            const isDark = document.documentElement.classList.contains('dark');
+            const icon = document.getElementById('themeToggleIcon');
+            const themeMeta = document.querySelector('meta[name="theme-color"]');
+            
+            if (icon) {
+                icon.innerText = isDark ? '☀️' : '🌙';
+            }
+            if (themeMeta) {
+                themeMeta.setAttribute('content', isDark ? '#0b0f17' : '#f1f5f9');
+            }
+        }
+
         function toggleTvMoviesFilter() {
             hideTvMovies = !hideTvMovies;
             localStorage.setItem('gez_kino_hide_tv', hideTvMovies ? 'true' : 'false');
@@ -762,7 +937,7 @@
                     
                     if (totalMovies > 0) {
                         const percent = Math.round((loadedCount / totalMovies) * 100);
-                        if (scannerText) scannerText.innerText = `Lade Mediathek-Daten (${percent}%)...`;
+                        if (scannerText) scannerText.innerText = `Lade Mediathek-Daten...`;
                         if (scannerPercent) scannerPercent.innerText = `${percent}%`;
                     }
 
@@ -841,6 +1016,10 @@
             return counts;
         }
 
+        function getCleanGenreId(g) {
+            return 'genre-btn-' + g.replace(/\s+/g, '').replace(/⭐/g, 'Fav').replace(/🆕/g, 'Neu').replace(/[^a-zA-Z0-9]/g, '');
+        }
+
         function renderGenreLeiste() {
             const leiste = document.getElementById('genreLeiste');
             const counts = getGenreCounts();
@@ -866,23 +1045,24 @@
                 const btn = document.createElement('button');
                 btn.setAttribute('tabindex', '0');
                 btn.setAttribute('data-genre', g);
+                btn.id = getCleanGenreId(g);
         
-                btn.addEventListener('focus', () => {
-                    btn.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
-                });
+                // HINWEIS: Der fehlerhafte 'focus' Event-Listener wurde hier komplett entfernt.
         
                 if (g === 'News-Quelle-Umschalter') {
                     btn.id = "btnToggleNewsSource";
                     btn.className = "flex-shrink-0 min-w-[120px] px-3.5 py-1.5 rounded-xl text-center flex flex-col justify-center transition-all cursor-pointer border font-semibold shadow-sm bg-gray-900 border-gray-800 text-blue-400 hover:border-blue-500/50 focus:outline-none focus:ring-2 focus:ring-blue-500";
-                    btn.onclick = toggleNewsSource;
                     btn.innerHTML = `
                         <span class="text-xs tracking-wide font-bold">Quelle: ${currentNewsSource}</span>
                         <span class="text-[9px] opacity-60 font-medium">(Klick zum Wechseln)</span>
                     `;
+                    btn.onclick = () => {
+                        btn.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
+                        toggleNewsSource();
+                    };
                 } else if (g === 'TV-Filme-Umschalter') {
                     btn.id = "btnToggleTvMovies";
                     btn.className = "flex-shrink-0 min-w-[110px] px-3.5 py-1.5 rounded-xl text-center flex flex-col justify-center transition-all cursor-pointer border font-semibold shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500";
-                    btn.onclick = toggleTvMoviesFilter;
                     
                     const spanLabel = document.createElement('span');
                     spanLabel.id = "lblTvMovies";
@@ -902,6 +1082,11 @@
                     
                     btn.appendChild(spanLabel);
                     btn.appendChild(spanSub);
+                    
+                    btn.onclick = () => {
+                        btn.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
+                        toggleTvMoviesFilter();
+                    };
                 } else {
                     const isActive = currentGenre === g || (g === 'Nach Jahren' && currentGenre.startsWith('Jahr: ')) || (g === 'Nach Bewertung' && currentGenre.startsWith('Rating: '));
                     
@@ -919,6 +1104,7 @@
                     `;
         
                     btn.onclick = () => {
+                        btn.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
                         if (g === 'Nach Jahren') {
                             openYearsMenu();
                         } else if (g === 'Nach Bewertung') {
@@ -938,8 +1124,7 @@
         function updateGenreCounts() {
             const counts = getGenreCounts();
             Object.keys(counts).forEach(g => {
-                const cleanId = g.replace(/\s+/g, '').replace(/⭐/g, 'Fav').replace(/🆕/g, 'Neu').replace(/[^a-zA-Z0-9]/g, '');
-                const btn = document.getElementById(`genre-btn-${cleanId}`);
+                const btn = document.getElementById(getCleanGenreId(g));
                 if (btn) {
                     const countSpan = btn.querySelector('.genre-count');
                     if (countSpan) countSpan.innerText = `(${counts[g] || 0})`;
@@ -1185,6 +1370,16 @@
                     `;
                 }
 
+                const downloadBtnHtml = (!isTv && !isNews && m.video_url) ? `
+                    <a href="${m.video_url}" download target="_blank" onclick="event.stopPropagation();" 
+                       title="Film herunterladen" 
+                       class="bg-gray-800 hover:bg-gray-700 text-gray-300 hover:text-white font-bold p-2 rounded-xl transition-all text-xs flex items-center justify-center border border-gray-700 active:scale-95">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                        </svg>
+                    </a>
+                ` : '';
+
                 card.innerHTML = `
                     <div class="relative aspect-[2/3] w-full bg-gray-950 overflow-hidden flex items-center justify-center p-2">
                         <button tabindex="0" onclick="toggleFavorite('${m.video_url}', '${uniqueCardId}', event)" 
@@ -1212,10 +1407,13 @@
                             <div class="flex flex-wrap gap-1 mb-2">
                                 ${m.genres_list.map(g => `<span class="bg-gray-800/80 text-gray-400 text-[9px] px-1.5 py-0.5 rounded-md font-medium border border-gray-700/30">${g}</span>`).join('')}
                             </div>
-                            <button tabindex="0" onclick="${clickAction}" 
-                                    class="w-full bg-blue-600 hover:bg-blue-500 text-white font-bold py-2 px-3 rounded-xl transition-all text-xs tracking-wider cursor-pointer shadow-md active-glow">
-                                ${buttonText}
-                            </button>
+                            <div class="flex gap-1.5">
+                                <button tabindex="0" onclick="${clickAction}" 
+                                        class="flex-1 bg-blue-600 hover:bg-blue-500 text-white font-bold py-2 px-3 rounded-xl transition-all text-xs tracking-wider cursor-pointer shadow-md active-glow">
+                                    ${buttonText}
+                                </button>
+                                ${downloadBtnHtml}
+                            </div>
                         </div>
                     </div>
                 `;
@@ -1428,216 +1626,200 @@
                     thumbImg.src = luckyMovie.thumb;
                     thumbImg.onerror = () => { thumbImg.src = 'placeholder.png'; };
 
-                    const escapedTitle = luckyMovie.title.replace(/'/g, "\\'").replace(/"/g, '&quot;');
                     const playBtn = document.getElementById('rouletteModalPlayBtn');
                     playBtn.onclick = () => {
                         closeRouletteModal();
-                        openPlayer(luckyMovie.video_url, escapedTitle);
+                        openPlayer(luckyMovie.video_url, luckyMovie.title);
                     };
 
                     document.getElementById('rouletteModal').style.display = 'flex';
                     document.body.style.overflow = 'hidden';
                 }
-            }, 80); 
+            }, 100);
         }
 
-        function openPlayer(url, title) {
-            const modal = document.getElementById('videoModal');
+        // Hilfsfunktion zur Formatierung der Zeit
+        function formatTime(seconds) {
+            if (isNaN(seconds) || !isFinite(seconds)) return "00:00";
+            const h = Math.floor(seconds / 3600);
+            const m = Math.floor((seconds % 3600) / 60);
+            const s = Math.floor(seconds % 60);
+    
+            return h > 0 
+                ? `${h}:${m.toString().padStart(2, '0')}:${s.toString().padStart(2, '0')}`
+                : `${m.toString().padStart(2, '0')}:${s.toString().padStart(2, '0')}`;
+        }
+
+        // Handler für das Zeit-Update
+        function updateHudTime() {
             const video = document.getElementById('mainVideoPlayer');
-        
-            activeDownloadUrl = url; 
-            modal.classList.remove('hidden');
-            document.body.style.overflow = 'hidden'; 
-        
-            history.pushState({ playerOpen: true }, '');
-        
-            if (activeVideoErrorHandler) {
-                video.removeEventListener('error', activeVideoErrorHandler);
-                activeVideoErrorHandler = null;
-            }
-        
-            const isM3u8 = url.includes('.m3u8') || url.endsWith('.m3u8');
-            if (isM3u8) {
-                if (Hls.isSupported()) {
-                    if (hlsInstance) hlsInstance.destroy();
-                    hlsInstance = new Hls({ manifestLoadingTimeOut: 5000, manifestLoadingMaxRetry: 2 });
-                    hlsInstance.loadSource(url);
-                    hlsInstance.attachMedia(video);
-                } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
-                    video.src = url;
-                }
-            } else {
-                if (hlsInstance) {
-                    hlsInstance.destroy();
-                    hlsInstance = null;
-                }
-                video.src = url;
-            }
-        
-            video.controls = false;
-        
-            video.play().then(() => {
-                video.focus();
-                setTimeout(() => {
-                    video.blur();
-                }, 100);
-        
-                if (modal.requestFullscreen) {
-                    modal.requestFullscreen().catch(() => {});
-                } else if (modal.webkitRequestFullscreen) {
-                    modal.webkitRequestFullscreen();
-                }
-            }).catch(err => console.log("Autoplay blockiert:", err));
+            const hudTime = document.getElementById('hudTime');
+            if (!video || !hudTime) return;
+
+            hudTime.innerText = `${formatTime(video.currentTime)} / ${formatTime(video.duration)}`;
         }
         
-        function closePlayer() {
+        // ==========================================
+        // VIDEO PLAYER & HISTORY HANDLING
+        // ==========================================
+        let isPlayerOpen = false;
+
+        function openPlayer(url, title) {
+            if (!url) return;
             const modal = document.getElementById('videoModal');
             const video = document.getElementById('mainVideoPlayer');
+            // NEU: Event-Listener für Zeit-Updates
+            video.addEventListener('timeupdate', updateHudTime);
+            video.addEventListener('loadedmetadata', updateHudTime);
             
-            activeDownloadUrl = '';
-        
-            if (document.fullscreenElement || document.webkitFullscreenElement || document.msFullscreenElement) {
-                if (document.exitFullscreen) {
-                    document.exitFullscreen().catch(() => {});
-                } else if (document.webkitExitFullscreen) {
-                    document.webkitExitFullscreen();
-                }
+            if (!modal || !video) return;
+
+            modal.classList.remove('hidden');
+            isPlayerOpen = true;
+
+            // Verlaufeintrag hinzufügen, damit die Zurück-Taste das Video schließt
+            if (window.location.hash !== '#player') {
+                history.pushState({ playerOpen: true }, '', '#player');
             }
-        
-            if (activeVideoErrorHandler) {
-                video.removeEventListener('error', activeVideoErrorHandler);
-                activeVideoErrorHandler = null;
+
+            // HLS.js oder direktes HTML5 Video laden
+            if (url.includes('.m3u8') && typeof Hls !== 'undefined' && Hls.isSupported()) {
+                if (hlsInstance) hlsInstance.destroy();
+                hlsInstance = new Hls({ maxBufferLength: 30 });
+                hlsInstance.loadSource(url);
+                hlsInstance.attachMedia(video);
+                hlsInstance.on(Hls.Events.MANIFEST_PARSED, () => {
+                    video.play().catch(() => {});
+                });
+            } else {
+                video.src = url;
+                video.play().catch(() => {});
             }
-            video.onerror = null;
+
+            showHUD(`▶ ${title || 'Spiele Video...'}`);
+        }
+
+        function closePlayer(fromPopState = false) {
+            const modal = document.getElementById('videoModal');
+            const video = document.getElementById('mainVideoPlayer');
+            video.removeEventListener('timeupdate', updateHudTime);
+            video.removeEventListener('loadedmetadata', updateHudTime);            
+            if (!modal || !video) return;
+
+            // Video stoppen und Speicher freigeben
             video.pause();
-            
             if (hlsInstance) {
-                hlsInstance.off(Hls.Events.ERROR);
                 hlsInstance.destroy();
                 hlsInstance = null;
             }
-            
-            video.src = ""; 
-            try { video.load(); } catch(e) {} 
-            
+            video.removeAttribute('src');
+            video.load();
+
             modal.classList.add('hidden');
-            document.body.style.overflow = 'auto';
-        
-            if (history.state && history.state.playerOpen) {
-                history.back();
+
+            if (isPlayerOpen) {
+                isPlayerOpen = false;
+                // Nur zur vorherigen History springen, wenn der Aufruf NICHT bereits über die Zurück-Taste kam
+                if (!fromPopState && window.location.hash === '#player') {
+                    history.back();
+                }
             }
         }
-        
-        window.addEventListener('popstate', (e) => {
-            const modal = document.getElementById('videoModal');
-            if (modal && !modal.classList.contains('hidden')) {
+
+        // Fängt den Zurück-Button des Browsers/Smartphones ab
+        window.addEventListener('popstate', () => {
+            if (isPlayerOpen) {
+                closePlayer(true);
+            }
+        });       
+
+        // Tastatur-Steuerung (ESC schließt den Player, Leertaste für Pause)
+        window.addEventListener('keydown', (e) => {
+            if (!isPlayerOpen) return;
+            
+            if (e.key === 'Escape' || e.key === 'BackSpace') {
                 closePlayer();
+            } else if (e.key === ' ') {
+                e.preventDefault();
+                togglePlayerTouch();
+            } else if (e.key === 'ArrowRight') {
+                seekPlayer(60);
+            } else if (e.key === 'ArrowLeft') {
+                seekPlayer(-60);
             }
         });
-        
-        // HUD Anzeigen Funktion
-        let hudTimeout;
+
+        // HUD / Statusanzeige im Player
         function showHUD(text) {
             const hud = document.getElementById('playerHUD');
-            const status = document.getElementById('hudStatus');
-            const time = document.getElementById('hudTime');
-            const vol = document.getElementById('hudVol');
-            const video = document.getElementById('mainVideoPlayer');
+            const hudStatus = document.getElementById('hudStatus');
+            if (!hud || !hudStatus) return;
 
-            if (!hud || !video) return;
-
-            if (text) status.innerText = text;
+            hudStatus.innerText = text;
+            hud.classList.remove('opacity-0');
             
-            const curMins = Math.floor(video.currentTime / 60).toString().padStart(2, '0');
-            const curSecs = Math.floor(video.currentTime % 60).toString().padStart(2, '0');
-            const durMins = Math.floor((video.duration || 0) / 60).toString().padStart(2, '0');
-            const durSecs = Math.floor((video.duration || 0) % 60).toString().padStart(2, '0');
-            
-            time.innerText = `${curMins}:${curSecs} / ${durMins}:${durSecs}`;
-            vol.innerText = `🔊 ${Math.round(video.volume * 100)}%`;
-
-            hud.style.opacity = '1';
-            clearTimeout(hudTimeout);
-            hudTimeout = setTimeout(() => {
-                hud.style.opacity = '0';
+            clearTimeout(window.hudTimeout);
+            window.hudTimeout = setTimeout(() => {
+                hud.classList.add('opacity-0');
             }, 2500);
         }
 
-        // Keydown Listener für Videoplayer
-        window.addEventListener('keydown', (e) => {
-            const modal = document.getElementById('videoModal');
-            const video = document.getElementById('mainVideoPlayer');
-
-            if (!modal || modal.classList.contains('hidden')) return;
-
-            if (e.key === 'ArrowDown' || e.key === 'Escape' || e.key === 'BackSpace' || e.keyCode === 10009 || e.keyCode === 461) {
-                e.preventDefault();
+        // Klick auf das Video schließt den Player, wenn kein Seek/Pause getriggert wurde
+        document.getElementById('videoModal')?.addEventListener('click', (e) => {
+            // Wenn direkt auf den dunklen Hintergrund oder den Player geklickt wird
+            if (e.target.id === 'videoModal') {
                 closePlayer();
-                return;
-            }
-
-            if (e.key === 'ArrowUp') {
-                e.preventDefault();
-                showHUD();
-                return;
-            }
-
-            if (e.key === ' ' || e.key === 'Enter' || e.keyCode === 13) {
-                e.preventDefault();
-                if (video.paused) {
-                    video.play();
-                    showHUD("▶ PLAY");
-                } else {
-                    video.pause();
-                    showHUD("⏸ PAUSE");
-                }
-                return;
-            }
-
-            if (e.key === 'ArrowLeft') {
-                e.preventDefault();
-                video.currentTime = Math.max(0, video.currentTime - 60);
-                showHUD("⏪ -60s");
-                return;
-            }
-
-            if (e.key === 'ArrowRight') {
-                e.preventDefault();
-                video.currentTime = Math.min(video.duration || 0, video.currentTime + 60);
-                showHUD("⏩ +60s");
-                return;
             }
         });
-
-        // Smart-TV Navigation
-        const topElements = ['searchBar', 'btnMediathek', 'btnLiveTv', 'btnNews'];
-        topElements.forEach(id => {
-            const el = document.getElementById(id);
-            if (el) {
-                el.addEventListener('keydown', (e) => {
-                    if (e.key === 'ArrowDown') {
-                        e.preventDefault();
-                        const firstGenreBtn = document.querySelector('#genreLeiste button');
-                        if (firstGenreBtn) firstGenreBtn.focus();
-                    }
-                });
-            }
-        });
-
-        // Back To Top Button Sichtbarkeit steuern
         window.addEventListener('scroll', () => {
             const btn = document.getElementById('btnBackToTop');
-            if (btn) {
-                if (window.scrollY > 300) {
-                    btn.classList.remove('hidden');
-                } else {
-                    btn.classList.add('hidden');
+            if (window.scrollY > 300) {
+                btn.classList.remove('hidden');
+            } else {
+                btn.classList.add('hidden');
+            }
+        });
+
+        window.addEventListener('beforeinstallprompt', (e) => {
+            e.preventDefault();
+            deferredPrompt = e;
+            const pwaBtn = document.getElementById('btnInstallPWA');
+            if (pwaBtn) pwaBtn.classList.remove('hidden');
+        });
+
+        document.getElementById('btnInstallPWA')?.addEventListener('click', async () => {
+            if (deferredPrompt) {
+                deferredPrompt.prompt();
+                const { outcome } = await deferredPrompt.userChoice;
+                if (outcome === 'accepted') {
+                    document.getElementById('btnInstallPWA').classList.add('hidden');
+                }
+                deferredPrompt = null;
+            }
+        });
+
+        window.addEventListener('keydown', (e) => {
+            // Nur bei Pfeiltasten reagieren
+            if (e.key === 'ArrowDown') {
+                const activeElement = document.activeElement;
+        
+                // Wenn wir im Header sind oder auf dem Body, springe in die Genre-Leiste
+                const headerElements = ['searchBar', 'btnThemeToggle', 'btnMediathek', 'btnLiveTv', 'btnNews', 'btnInstallPWA', 'btnRoulette'];
+        
+                if (headerElements.includes(activeElement.id) || activeElement.tagName === 'BODY') {
+                    e.preventDefault();
+                    const firstGenreBtn = document.querySelector('#genreLeiste button');
+                    if (firstGenreBtn) {
+                        firstGenreBtn.focus();
+                        // Scrollen zur Mitte, damit man sieht, wo man ist
+                        firstGenreBtn.scrollIntoView({ behavior: 'smooth', inline: 'center' });
+                    }
                 }
             }
         });
 
-        // App Initialisierung
         document.addEventListener('DOMContentLoaded', () => {
+            updateThemeUI();
             fetchAllData();
         });
     </script>
