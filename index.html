@@ -81,7 +81,7 @@
                 
                 <div class="w-full sm:w-80 md:w-96 flex gap-2">
                     <div class="relative w-full">
-                        <input type="text" id="searchBar" oninput="filterResults()" placeholder="Film | Regie | Schauspieler..." class="bg-gray-900/90 text-white pl-4 pr-10 py-2.5 rounded-2xl w-full focus:outline-none focus:ring-2 focus:ring-blue-500 border border-gray-800 shadow-inner text-xs sm:text-sm transition-all placeholder:text-gray-500">
+                        <input type="text" id="searchBar" oninput="debounceSearch()" placeholder="Film | Regie | Schauspieler..." class="bg-gray-900/90 text-white pl-4 pr-10 py-2.5 rounded-2xl w-full focus:outline-none focus:ring-2 focus:ring-blue-500 border border-gray-800 shadow-inner text-xs sm:text-sm transition-all placeholder:text-gray-500">
                     </div>
                 </div>
             </div>
@@ -94,6 +94,7 @@
         </main>
     </div>
 
+    <!-- Modals (Rating, Years, Video, Roulette, News) bleiben unverändert -->
     <div id="ratingModal" class="fixed inset-0 bg-black/80 hidden z-50 justify-center items-center p-4 backdrop-blur-md">
         <div class="bg-gray-900 border border-gray-800 rounded-3xl max-w-sm w-full p-6 flex flex-col shadow-2xl">
             <h2 class="text-lg font-bold mb-4 text-center text-gray-100 tracking-wide">Mindestbewertung</h2>
@@ -249,7 +250,32 @@
         let activeVideoErrorHandler = null; 
         let deferredPrompt = null; 
         let activeDownloadUrl = ''; 
+        let searchTimeout = null;
         const CHUNK_SIZE = 50; 
+
+        // Debounce-Funktion für die Suche
+        function debounceSearch() {
+            clearTimeout(searchTimeout);
+            searchTimeout = setTimeout(() => {
+                filterResults();
+            }, 300);
+        }
+
+        // PWA Install Event Handler
+        window.addEventListener('beforeinstallprompt', (e) => {
+            e.preventDefault();
+            deferredPrompt = e;
+            const installBtn = document.getElementById('btnInstallPWA');
+            if (installBtn) {
+                installBtn.classList.remove('hidden');
+                installBtn.onclick = async () => {
+                    installBtn.classList.add('hidden');
+                    deferredPrompt.prompt();
+                    const { outcome } = await deferredPrompt.userChoice;
+                    deferredPrompt = null;
+                };
+            }
+        });
 
         function toggleTvMoviesFilter() {
             hideTvMovies = !hideTvMovies;
@@ -1442,10 +1468,16 @@
         
             history.pushState({ playerOpen: true }, '');
         
+            // Aktiven Video-Error-Handler initialisieren, damit er Fehler abfängt
             if (activeVideoErrorHandler) {
                 video.removeEventListener('error', activeVideoErrorHandler);
-                activeVideoErrorHandler = null;
             }
+            activeVideoErrorHandler = () => {
+                console.error("Stream konnte nicht geladen werden.");
+                showHUD('⚠️ Fehler beim Laden des Videos');
+                setTimeout(closePlayer, 3000);
+            };
+            video.addEventListener('error', activeVideoErrorHandler);
         
             const isM3u8 = url.includes('.m3u8') || url.endsWith('.m3u8');
             if (isM3u8) {
