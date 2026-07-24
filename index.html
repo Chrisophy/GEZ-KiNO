@@ -9,7 +9,6 @@
     <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
 
     <script>
-        // Frühe Theme-Initialisierung gegen Flackern beim Laden
         (function() {
             const savedTheme = localStorage.getItem('gez_kino_theme');
             if (savedTheme === 'light') {
@@ -21,7 +20,6 @@
     </script>
 
     <style>
-        /* Rahmen von den Overlay-Buttons entfernen */
         #videoModal .grid > div:focus {
             outline: none !important;
             box-shadow: none !important;
@@ -47,14 +45,12 @@
             scrollbar-color: #3b82f6 #1f2937;
         }
 
-        /* Ersetze oder ergänze deine Genre-Button Klassen hiermit */
         #genreLeiste button:focus {
             outline: none !important;
             border-color: #3b82f6 !important; /* Blaues Border bei Fokus */
             box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.5) !important;
         }
 
-        /* Sicherstellen, dass der Button auch bei Tastatur-Navigation hervorgehoben bleibt */
         #genreLeiste button:focus-visible {
             transform: scale(1.05);
         }
@@ -63,9 +59,6 @@
         #genreLeiste::-webkit-scrollbar-track { background: #111827; }
         #genreLeiste::-webkit-scrollbar-thumb { background: #3b82f6; border-radius: 9999px; }
         
-        /* ==========================================
-           GLASMORPHISM / GLAS-EFFEKT FÜR BUTTONS
-           ========================================== */
         button {
             backdrop-filter: blur(12px) !important;
             -webkit-backdrop-filter: blur(12px) !important;
@@ -85,7 +78,6 @@
             box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.5) !important;
         }
 
-        /* Glas-Anpassung für blaue Primär-Buttons */
         .bg-blue-600, button.bg-blue-600 {
             background-color: rgba(37, 99, 235, 0.55) !important;
         }
@@ -94,7 +86,6 @@
             box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.5), 0 0 20px rgba(59, 130, 246, 0.5) !important;
         }
 
-        /* Glas-Anpassung für neutrale & dunkle Buttons */
         .bg-gray-900, button.bg-gray-900,
         .bg-gray-950\/50, button.bg-gray-950\/50,
         .bg-gray-800, button.bg-gray-800,
@@ -105,17 +96,14 @@
             background-color: rgba(31, 41, 55, 0.8) !important;
         }
 
-        /* Glas-Anpassung für den grünen App-Button */
         .bg-emerald-600, button.bg-emerald-600 {
             background-color: rgba(5, 150, 105, 0.55) !important;
         }
 
-        /* Glow-Effekt für aktive Elemente */
         .active-glow {
             box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.4), 0 0 20px rgba(59, 130, 246, 0.45) !important;
         }
 
-        /* Ausnahme: Roulette-Overlay auf dem Banner soll keinen Rahmen haben */
         #btnRoulette {
             border: none !important;
             box-shadow: none !important;
@@ -124,9 +112,6 @@
             transform: none !important;
         }
 
-        /* ==========================================
-           TAG-MODUS / LIGHT MODE ANPASSUNGEN
-           ========================================== */
         html:not(.dark) body {
             background-color: #f1f5f9;
             color: #0f172a;
@@ -305,10 +290,8 @@
             <span class="text-white/80 font-bold text-xl sm:text-2xl opacity-0 group-active:opacity-100 transition-opacity bg-black/60 px-4 py-2 rounded-2xl backdrop-blur-md">⏪ -60s</span>
         </div>
     
-        <!-- Mitte -->
         <div tabindex="-1" onclick="togglePlayerTouch(event)" class="h-full"></div>
 
-        <!-- Rechts -->
         <div tabindex="-1" onclick="seekPlayer(60, event)" class="h-full flex items-center justify-center group active:bg-white/10 transition-colors">
             <span class="text-white/80 font-bold text-xl sm:text-2xl opacity-0 group-active:opacity-100 transition-opacity bg-black/60 px-4 py-2 rounded-2xl backdrop-blur-md">⏩ +60s</span>
         </div>
@@ -317,7 +300,6 @@
         <div id="playerHUD" class="absolute bottom-10 left-1/2 -translate-x-1/2 bg-gray-950/90 border border-gray-800 px-6 py-3 rounded-2xl backdrop-blur-md flex items-center gap-6 opacity-0 transition-opacity duration-300 pointer-events-none z-20 shadow-2xl">
             <span id="hudStatus" class="text-blue-400 font-bold text-sm">▶ PLAY</span>
             <span id="hudTime" class="text-gray-300 text-xs font-mono">00:00 / 00:00</span>
-            <span id="hudVol" class="text-gray-400 text-xs font-bold">🔊 100%</span>
         </div>
     </div>
 
@@ -1047,8 +1029,6 @@
                 btn.setAttribute('data-genre', g);
                 btn.id = getCleanGenreId(g);
         
-                // HINWEIS: Der fehlerhafte 'focus' Event-Listener wurde hier komplett entfernt.
-        
                 if (g === 'News-Quelle-Umschalter') {
                     btn.id = "btnToggleNewsSource";
                     btn.className = "flex-shrink-0 min-w-[120px] px-3.5 py-1.5 rounded-xl text-center flex flex-col justify-center transition-all cursor-pointer border font-semibold shadow-sm bg-gray-900 border-gray-800 text-blue-400 hover:border-blue-500/50 focus:outline-none focus:ring-2 focus:ring-blue-500";
@@ -1638,7 +1618,6 @@
             }, 100);
         }
 
-        // Hilfsfunktion zur Formatierung der Zeit
         function formatTime(seconds) {
             if (isNaN(seconds) || !isFinite(seconds)) return "00:00";
             const h = Math.floor(seconds / 3600);
@@ -1650,7 +1629,6 @@
                 : `${m.toString().padStart(2, '0')}:${s.toString().padStart(2, '0')}`;
         }
 
-        // Handler für das Zeit-Update
         function updateHudTime() {
             const video = document.getElementById('mainVideoPlayer');
             const hudTime = document.getElementById('hudTime');
@@ -1659,16 +1637,12 @@
             hudTime.innerText = `${formatTime(video.currentTime)} / ${formatTime(video.duration)}`;
         }
         
-        // ==========================================
-        // VIDEO PLAYER & HISTORY HANDLING
-        // ==========================================
         let isPlayerOpen = false;
 
         function openPlayer(url, title) {
             if (!url) return;
             const modal = document.getElementById('videoModal');
             const video = document.getElementById('mainVideoPlayer');
-            // NEU: Event-Listener für Zeit-Updates
             video.addEventListener('timeupdate', updateHudTime);
             video.addEventListener('loadedmetadata', updateHudTime);
             
@@ -1677,12 +1651,10 @@
             modal.classList.remove('hidden');
             isPlayerOpen = true;
 
-            // Verlaufeintrag hinzufügen, damit die Zurück-Taste das Video schließt
             if (window.location.hash !== '#player') {
                 history.pushState({ playerOpen: true }, '', '#player');
             }
 
-            // HLS.js oder direktes HTML5 Video laden
             if (url.includes('.m3u8') && typeof Hls !== 'undefined' && Hls.isSupported()) {
                 if (hlsInstance) hlsInstance.destroy();
                 hlsInstance = new Hls({ maxBufferLength: 30 });
@@ -1706,7 +1678,6 @@
             video.removeEventListener('loadedmetadata', updateHudTime);            
             if (!modal || !video) return;
 
-            // Video stoppen und Speicher freigeben
             video.pause();
             if (hlsInstance) {
                 hlsInstance.destroy();
@@ -1719,21 +1690,18 @@
 
             if (isPlayerOpen) {
                 isPlayerOpen = false;
-                // Nur zur vorherigen History springen, wenn der Aufruf NICHT bereits über die Zurück-Taste kam
                 if (!fromPopState && window.location.hash === '#player') {
                     history.back();
                 }
             }
         }
 
-        // Fängt den Zurück-Button des Browsers/Smartphones ab
         window.addEventListener('popstate', () => {
             if (isPlayerOpen) {
                 closePlayer(true);
             }
         });       
 
-        // Tastatur-Steuerung (ESC schließt den Player, Leertaste für Pause)
         window.addEventListener('keydown', (e) => {
             if (!isPlayerOpen) return;
             
@@ -1749,7 +1717,6 @@
             }
         });
 
-        // HUD / Statusanzeige im Player
         function showHUD(text) {
             const hud = document.getElementById('playerHUD');
             const hudStatus = document.getElementById('hudStatus');
@@ -1764,9 +1731,7 @@
             }, 2500);
         }
 
-        // Klick auf das Video schließt den Player, wenn kein Seek/Pause getriggert wurde
         document.getElementById('videoModal')?.addEventListener('click', (e) => {
-            // Wenn direkt auf den dunklen Hintergrund oder den Player geklickt wird
             if (e.target.id === 'videoModal') {
                 closePlayer();
             }
@@ -1799,11 +1764,9 @@
         });
 
         window.addEventListener('keydown', (e) => {
-            // Nur bei Pfeiltasten reagieren
             if (e.key === 'ArrowDown') {
                 const activeElement = document.activeElement;
         
-                // Wenn wir im Header sind oder auf dem Body, springe in die Genre-Leiste
                 const headerElements = ['searchBar', 'btnThemeToggle', 'btnMediathek', 'btnLiveTv', 'btnNews', 'btnInstallPWA', 'btnRoulette'];
         
                 if (headerElements.includes(activeElement.id) || activeElement.tagName === 'BODY') {
@@ -1811,7 +1774,6 @@
                     const firstGenreBtn = document.querySelector('#genreLeiste button');
                     if (firstGenreBtn) {
                         firstGenreBtn.focus();
-                        // Scrollen zur Mitte, damit man sieht, wo man ist
                         firstGenreBtn.scrollIntoView({ behavior: 'smooth', inline: 'center' });
                     }
                 }
