@@ -37,8 +37,65 @@
         #genreLeiste::-webkit-scrollbar-track { background: #111827; }
         #genreLeiste::-webkit-scrollbar-thumb { background: #3b82f6; border-radius: 9999px; }
         
+        /* ==========================================
+           GLASMORPHISM / GLAS-EFFEKT FÜR BUTTONS
+           ========================================== */
+        button {
+            backdrop-filter: blur(12px) !important;
+            -webkit-backdrop-filter: blur(12px) !important;
+            border: 1px solid rgba(255, 255, 255, 0.15) !important;
+            box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.25), 0 4px 15px rgba(0, 0, 0, 0.3) !important;
+            transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1) !important;
+        }
+
+        button:hover {
+            border-color: rgba(255, 255, 255, 0.35) !important;
+            box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.4), 0 6px 20px rgba(0, 0, 0, 0.4) !important;
+            transform: translateY(-1px);
+        }
+
+        button:active {
+            transform: translateY(0);
+            box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.5) !important;
+        }
+
+        /* Glas-Anpassung für blaue Primär-Buttons */
+        .bg-blue-600, button.bg-blue-600 {
+            background-color: rgba(37, 99, 235, 0.55) !important;
+        }
+        .bg-blue-600:hover, button.bg-blue-600:hover {
+            background-color: rgba(37, 99, 235, 0.75) !important;
+            box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.5), 0 0 20px rgba(59, 130, 246, 0.5) !important;
+        }
+
+        /* Glas-Anpassung für neutrale & dunkle Buttons */
+        .bg-gray-900, button.bg-gray-900,
+        .bg-gray-950\/50, button.bg-gray-950\/50,
+        .bg-gray-800, button.bg-gray-800,
+        .bg-gray-800\/80, button.bg-gray-800\/80 {
+            background-color: rgba(17, 24, 39, 0.6) !important;
+        }
+        button.bg-gray-800:hover, button.bg-gray-800\/80:hover, button.bg-gray-900:hover {
+            background-color: rgba(31, 41, 55, 0.8) !important;
+        }
+
+        /* Glas-Anpassung für den grünen App-Button */
+        .bg-emerald-600, button.bg-emerald-600 {
+            background-color: rgba(5, 150, 105, 0.55) !important;
+        }
+
+        /* Glow-Effekt für aktive Elemente */
         .active-glow {
-            box-shadow: 0 0 15px rgba(59, 130, 246, 0.35);
+            box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.4), 0 0 20px rgba(59, 130, 246, 0.45) !important;
+        }
+
+        /* Ausnahme: Roulette-Overlay auf dem Banner soll keinen Rahmen haben */
+        #btnRoulette {
+            border: none !important;
+            box-shadow: none !important;
+            backdrop-filter: none !important;
+            -webkit-backdrop-filter: none !important;
+            transform: none !important;
         }
     </style>    
 
@@ -81,7 +138,7 @@
                 
                 <div class="w-full sm:w-80 md:w-96 flex gap-2">
                     <div class="relative w-full">
-                        <input type="text" id="searchBar" oninput="debounceSearch()" placeholder="Film | Regie | Schauspieler..." class="bg-gray-900/90 text-white pl-4 pr-10 py-2.5 rounded-2xl w-full focus:outline-none focus:ring-2 focus:ring-blue-500 border border-gray-800 shadow-inner text-xs sm:text-sm transition-all placeholder:text-gray-500">
+                        <input type="text" id="searchBar" oninput="filterResults()" placeholder="Film | Regie | Schauspieler..." class="bg-gray-900/90 text-white pl-4 pr-10 py-2.5 rounded-2xl w-full focus:outline-none focus:ring-2 focus:ring-blue-500 border border-gray-800 shadow-inner text-xs sm:text-sm transition-all placeholder:text-gray-500">
                     </div>
                 </div>
             </div>
@@ -94,7 +151,6 @@
         </main>
     </div>
 
-    <!-- Modals (Rating, Years, Video, Roulette, News) bleiben unverändert -->
     <div id="ratingModal" class="fixed inset-0 bg-black/80 hidden z-50 justify-center items-center p-4 backdrop-blur-md">
         <div class="bg-gray-900 border border-gray-800 rounded-3xl max-w-sm w-full p-6 flex flex-col shadow-2xl">
             <h2 class="text-lg font-bold mb-4 text-center text-gray-100 tracking-wide">Mindestbewertung</h2>
@@ -215,7 +271,7 @@
         </div>
     </div>
 
-    <button id="btnBackToTop" class="fixed bottom-6 right-6 z-40 hidden bg-blue-600/90 hover:bg-blue-600 text-white p-3 rounded-2xl shadow-2xl transition-all duration-300 border border-blue-400/30 backdrop-blur-sm active:scale-95" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+    <button id="btnBackToTop" class="fixed bottom-6 right-6 z-40 hidden bg-blue-600 text-white p-3 rounded-2xl shadow-2xl transition-all duration-300 border border-white/20 active:scale-95" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 15l7-7 7 7" />
         </svg>
@@ -250,32 +306,7 @@
         let activeVideoErrorHandler = null; 
         let deferredPrompt = null; 
         let activeDownloadUrl = ''; 
-        let searchTimeout = null;
         const CHUNK_SIZE = 50; 
-
-        // Debounce-Funktion für die Suche
-        function debounceSearch() {
-            clearTimeout(searchTimeout);
-            searchTimeout = setTimeout(() => {
-                filterResults();
-            }, 300);
-        }
-
-        // PWA Install Event Handler
-        window.addEventListener('beforeinstallprompt', (e) => {
-            e.preventDefault();
-            deferredPrompt = e;
-            const installBtn = document.getElementById('btnInstallPWA');
-            if (installBtn) {
-                installBtn.classList.remove('hidden');
-                installBtn.onclick = async () => {
-                    installBtn.classList.add('hidden');
-                    deferredPrompt.prompt();
-                    const { outcome } = await deferredPrompt.userChoice;
-                    deferredPrompt = null;
-                };
-            }
-        });
 
         function toggleTvMoviesFilter() {
             hideTvMovies = !hideTvMovies;
@@ -1468,16 +1499,10 @@
         
             history.pushState({ playerOpen: true }, '');
         
-            // Aktiven Video-Error-Handler initialisieren, damit er Fehler abfängt
             if (activeVideoErrorHandler) {
                 video.removeEventListener('error', activeVideoErrorHandler);
+                activeVideoErrorHandler = null;
             }
-            activeVideoErrorHandler = () => {
-                console.error("Stream konnte nicht geladen werden.");
-                showHUD('⚠️ Fehler beim Laden des Videos');
-                setTimeout(closePlayer, 3000);
-            };
-            video.addEventListener('error', activeVideoErrorHandler);
         
             const isM3u8 = url.includes('.m3u8') || url.endsWith('.m3u8');
             if (isM3u8) {
@@ -1542,100 +1567,22 @@
             
             video.src = ""; 
             try { video.load(); } catch(e) {} 
-            
-            modal.classList.add('hidden');
-            document.body.style.overflow = 'auto';
-        
-            if (history.state && history.state.playerOpen) {
-                history.back();
-            }
-        }
-        
-        window.addEventListener('popstate', (e) => {
-            const modal = document.getElementById('videoModal');
-            if (modal && !modal.classList.contains('hidden')) {
-                closePlayer();
-            }
-        });
-        
-        let hudTimeout;
-        function showHUD(text) {
-            const hud = document.getElementById('playerHUD');
-            const status = document.getElementById('hudStatus');
-            const time = document.getElementById('hudTime');
-            const vol = document.getElementById('hudVol');
-            const video = document.getElementById('mainVideoPlayer');
-
-            if (!hud || !video) return;
-
-            if (text) status.innerText = text;
-            
-            const curMins = Math.floor(video.currentTime / 60).toString().padStart(2, '0');
-            const curSecs = Math.floor(video.currentTime % 60).toString().padStart(2, '0');
-            const durMins = Math.floor((video.duration || 0) / 60).toString().padStart(2, '0');
-            const durSecs = Math.floor((video.duration || 0) % 60).toString().padStart(2, '0');
-            
-            time.innerText = `${curMins}:${curSecs} / ${durMins}:${durSecs}`;
-            vol.innerText = `🔊 ${Math.round(video.volume * 100)}%`;
-
-            hud.style.opacity = '1';
-            clearTimeout(hudTimeout);
-            hudTimeout = setTimeout(() => {
-                hud.style.opacity = '0';
-            }, 2500);
         }
 
-        window.addEventListener('keydown', (e) => {
-            const modal = document.getElementById('videoModal');
-            const video = document.getElementById('mainVideoPlayer');
-
-            if (!modal || modal.classList.contains('hidden')) return;
-
-            if (e.key === 'ArrowDown' || e.key === 'Escape' || e.key === 'BackSpace' || e.keyCode === 10009 || e.keyCode === 461) {
-                e.preventDefault();
-                closePlayer();
-                return;
-            }
-
-            if (e.key === 'ArrowUp') {
-                e.preventDefault();
-                showHUD();
-                return;
-            }
-
-            if (e.key === ' ' || e.key === 'Enter' || e.keyCode === 13) {
-                e.preventDefault();
-                togglePlayerTouch();
-            }
-        });
-
-        window.addEventListener('keydown', (e) => {
-            if (e.key === 'ArrowDown') {
-                const activeElement = document.activeElement;
-                
-                const headerElements = ['searchBar', 'btnMediathek', 'btnLiveTv', 'btnNews', 'btnInstallPWA', 'btnRoulette'];
-                
-                if (headerElements.includes(activeElement.id) || activeElement.tagName === 'BODY') {
-                    e.preventDefault();
-                    const firstGenreBtn = document.querySelector('#genreLeiste button');
-                    if (firstGenreBtn) {
-                        firstGenreBtn.focus();
-                        firstGenreBtn.scrollIntoView({ behavior: 'smooth', inline: 'center' });
+        window.addEventListener('load', () => {
+            fetchAllData();
+            
+            window.addEventListener('scroll', () => {
+                const btn = document.getElementById('btnBackToTop');
+                if (btn) {
+                    if (window.scrollY > 300) {
+                        btn.classList.remove('hidden');
+                    } else {
+                        btn.classList.add('hidden');
                     }
                 }
-            }
+            });
         });
-
-        window.addEventListener('scroll', () => {
-            const btn = document.getElementById('btnBackToTop');
-            if (!btn) return;
-            if (window.scrollY > 300) {
-                btn.classList.remove('hidden');
-            } else {
-                btn.classList.add('hidden');
-            }
-        });
-        fetchAllData();
     </script>
 </body>
 </html>
