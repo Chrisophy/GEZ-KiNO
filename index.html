@@ -777,7 +777,7 @@
         }
         
         async function hydrateWithTMDBParallel() {
-            const CONCURRENCY_LIMIT = 10;
+            const CONCURRENCY_LIMIT = 11;
             let movieIndex = 0;
             let loadedCount = 0;
             const totalMovies = allMovies.length;
@@ -1157,10 +1157,10 @@
             const grid = document.getElementById('yearsGrid');
             grid.innerHTML = '';
 
-            sortedYears.forEach(yr => {
+            sortedYears.forEach((yr, index) => {
                 const btn = document.createElement('button');
-                btn.setAttribute('tabindex', '0');
-                btn.className = "bg-gray-800/80 hover:bg-blue-600 text-white font-semibold py-2.5 rounded-xl transition-all cursor-pointer text-xs border border-gray-700/50";
+                btn.setAttribute('tabindex', '0'); // Wichtig für Tastatur & TV-Fernbedienungen
+                btn.className = "bg-gray-800/80 hover:bg-blue-600 focus:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400 text-white font-semibold py-2.5 rounded-xl transition-all cursor-pointer text-xs border border-gray-700/50";
                 btn.innerText = yr;
                 btn.onclick = () => {
                     currentGenre = `Jahr: ${yr}`;
@@ -1171,7 +1171,12 @@
                 grid.appendChild(btn);
             });
 
-            document.getElementById('yearsModal').style.display = 'flex';
+            const modal = document.getElementById('yearsModal');
+            modal.style.display = 'flex';
+            const firstBtn = grid.querySelector('button');
+            if (firstBtn) {
+                firstBtn.focus();
+            }
         }
 
         function closeYearsModal() {
