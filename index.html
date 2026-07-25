@@ -196,6 +196,18 @@
         html:not(.dark) .bg-black\/70 {
             background-color: rgba(15, 23, 42, 0.6) !important;
         }
+        
+        /* Sichtbarer Focus-Highlight für Jahre- & Rating-Modal */
+        #yearsModal button:focus,
+        #yearsModal button:focus-visible,
+        #ratingModal button:focus,
+        #ratingModal button:focus-visible {
+            outline: 3px solid #3b82f6 !important;
+            outline-offset: 1px !important;
+            background-color: #2563eb !important;
+            color: #ffffff !important;
+            transform: scale(1.04);
+        }        
     </style>    
 
     <link rel="manifest" href="manifest.json">
@@ -257,19 +269,19 @@
         <div class="bg-gray-900 border border-gray-800 rounded-3xl max-w-sm w-full p-6 flex flex-col shadow-2xl">
             <h2 class="text-lg font-bold mb-4 text-center text-gray-100 tracking-wide">Mindestbewertung</h2>
             <div class="grid grid-cols-2 gap-2 mb-4">
-                <button onclick="applyRatingFilter(9, 10)" class="bg-gray-800/80 hover:bg-yellow-600/80 text-white font-semibold py-2 rounded-xl transition-all text-xs border border-gray-700/50">9.0 – 10.0</button>
-                <button onclick="applyRatingFilter(8, 9)" class="bg-gray-800/80 hover:bg-yellow-600/80 text-white font-semibold py-2 rounded-xl transition-all text-xs border border-gray-700/50">8.0 – 9.0</button>
-                <button onclick="applyRatingFilter(7, 8)" class="bg-gray-800/80 hover:bg-yellow-600/80 text-white font-semibold py-2 rounded-xl transition-all text-xs border border-gray-700/50">7.0 – 8.0</button>
-                <button onclick="applyRatingFilter(6, 7)" class="bg-gray-800/80 hover:bg-yellow-600/80 text-white font-semibold py-2 rounded-xl transition-all text-xs border border-gray-700/50">6.0 – 7.0</button>
-                <button onclick="applyRatingFilter(5, 6)" class="bg-gray-800/80 hover:bg-yellow-600/80 text-white font-semibold py-2 rounded-xl transition-all text-xs border border-gray-700/50">5.0 – 6.0</button>
-                <button onclick="applyRatingFilter(4, 5)" class="bg-gray-800/80 hover:bg-yellow-600/80 text-white font-semibold py-2 rounded-xl transition-all text-xs border border-gray-700/50">4.0 – 5.0</button>
-                <button onclick="applyRatingFilter(3, 4)" class="bg-gray-800/80 hover:bg-yellow-600/80 text-white font-semibold py-2 rounded-xl transition-all text-xs border border-gray-700/50">3.0 – 4.0</button>
-                <button onclick="applyRatingFilter(2, 3)" class="bg-gray-800/80 hover:bg-yellow-600/80 text-white font-semibold py-2 rounded-xl transition-all text-xs border border-gray-700/50">2.0 – 3.0</button>
-                <button onclick="applyRatingFilter(1, 2)" class="bg-gray-800/80 hover:bg-yellow-600/80 text-white font-semibold py-2 rounded-xl transition-all text-xs border border-gray-700/50">1.0 – 2.0</button>
-                <button onclick="applyRatingFilter(0, 1)" class="bg-gray-800/80 hover:bg-yellow-600/80 text-white font-semibold py-2 rounded-xl transition-all text-xs border border-gray-700/50">0.0 – 1.0</button>
-                <button onclick="applyRatingFilter(0, 10)" class="bg-gray-800 hover:bg-gray-700 text-white font-bold py-2.5 rounded-xl transition-all col-span-2 mt-2 border border-gray-700 text-xs">Alle anzeigen</button>
+                <button tabindex="0" onclick="applyRatingFilter(9, 10)" class="bg-gray-800/80 hover:bg-yellow-600/80 text-white font-semibold py-2 rounded-xl transition-all text-xs border border-gray-700/50">9.0 – 10.0</button>
+                <button tabindex="0" onclick="applyRatingFilter(8, 9)" class="bg-gray-800/80 hover:bg-yellow-600/80 text-white font-semibold py-2 rounded-xl transition-all text-xs border border-gray-700/50">8.0 – 9.0</button>
+                <button tabindex="0" onclick="applyRatingFilter(7, 8)" class="bg-gray-800/80 hover:bg-yellow-600/80 text-white font-semibold py-2 rounded-xl transition-all text-xs border border-gray-700/50">7.0 – 8.0</button>
+                <button tabindex="0" onclick="applyRatingFilter(6, 7)" class="bg-gray-800/80 hover:bg-yellow-600/80 text-white font-semibold py-2 rounded-xl transition-all text-xs border border-gray-700/50">6.0 – 7.0</button>
+                <button tabindex="0" onclick="applyRatingFilter(5, 6)" class="bg-gray-800/80 hover:bg-yellow-600/80 text-white font-semibold py-2 rounded-xl transition-all text-xs border border-gray-700/50">5.0 – 6.0</button>
+                <button tabindex="0" onclick="applyRatingFilter(4, 5)" class="bg-gray-800/80 hover:bg-yellow-600/80 text-white font-semibold py-2 rounded-xl transition-all text-xs border border-gray-700/50">4.0 – 5.0</button>
+                <button tabindex="0" onclick="applyRatingFilter(3, 4)" class="bg-gray-800/80 hover:bg-yellow-600/80 text-white font-semibold py-2 rounded-xl transition-all text-xs border border-gray-700/50">3.0 – 4.0</button>
+                <button tabindex="0" onclick="applyRatingFilter(2, 3)" class="bg-gray-800/80 hover:bg-yellow-600/80 text-white font-semibold py-2 rounded-xl transition-all text-xs border border-gray-700/50">2.0 – 3.0</button>
+                <button tabindex="0" onclick="applyRatingFilter(1, 2)" class="bg-gray-800/80 hover:bg-yellow-600/80 text-white font-semibold py-2 rounded-xl transition-all text-xs border border-gray-700/50">1.0 – 2.0</button>
+                <button tabindex="0" onclick="applyRatingFilter(0, 1)" class="bg-gray-800/80 hover:bg-yellow-600/80 text-white font-semibold py-2 rounded-xl transition-all text-xs border border-gray-700/50">0.0 – 1.0</button>
+                <button tabindex="0" onclick="applyRatingFilter(0, 10)" class="bg-gray-800 hover:bg-gray-700 text-white font-bold py-2.5 rounded-xl transition-all col-span-2 mt-2 border border-gray-700 text-xs">Alle anzeigen</button>
             </div>
-            <button onclick="closeRatingModal()" class="w-full bg-gray-800 hover:bg-gray-700 text-gray-300 font-bold py-2.5 rounded-xl transition-colors text-xs border border-gray-700">ZURÜCK</button>
+            <button tabindex="0" onclick="closeRatingModal()" class="w-full bg-gray-800 hover:bg-gray-700 text-gray-300 font-bold py-2.5 rounded-xl transition-colors text-xs border border-gray-700">ZURÜCK</button>
         </div>
     </div>
 
@@ -277,7 +289,7 @@
         <div class="bg-gray-900 border border-gray-800 rounded-3xl max-w-sm w-full p-6 flex flex-col max-h-[80vh] shadow-2xl">
             <h2 class="text-lg font-bold mb-4 text-center text-gray-100 tracking-wide">Jahr auswählen</h2>
             <div id="yearsGrid" class="grid grid-cols-3 gap-2 mb-4 overflow-y-auto pr-1"></div>
-            <button onclick="closeYearsModal()" class="w-full bg-gray-800 hover:bg-gray-700 text-gray-300 font-bold py-2.5 rounded-xl transition-colors text-xs border border-gray-700">ZURÜCK</button>
+            <button tabindex="0" onclick="closeYearsModal()" class="w-full bg-gray-800 hover:bg-gray-700 text-gray-300 font-bold py-2.5 rounded-xl transition-colors text-xs border border-gray-700">ZURÜCK</button>
         </div>
     </div>
     
@@ -478,12 +490,24 @@
             }
         }
 
-        function openRatingModal() { document.getElementById('ratingModal').style.display = 'flex'; }
-        function closeRatingModal() { document.getElementById('ratingModal').style.display = 'none'; }
+        function openRatingModal() { 
+            document.getElementById('ratingModal').style.display = 'flex';
+            setTimeout(() => {
+                const firstBtn = document.querySelector('#ratingModal .grid button');
+                if (firstBtn) firstBtn.focus();
+            }, 50);
+        }
+
+        function closeRatingModal() { 
+            document.getElementById('ratingModal').style.display = 'none'; 
+            const genreButtons = Array.from(document.querySelectorAll('#genreLeiste button'));
+            const btnRating = genreButtons.find(b => b.innerText.includes('Rating') || b.innerText.includes('Bewertung'));
+            if (btnRating) btnRating.focus();
+        }
         
         function applyRatingFilter(min, max) {
             currentGenre = `Rating: ${min}-${max}`; 
-            document.getElementById('ratingModal').style.display = 'none';
+            closeRatingModal();
             setActiveGenreStyling();
             filterResults();
         }
@@ -777,7 +801,7 @@
         }
         
         async function hydrateWithTMDBParallel() {
-            const CONCURRENCY_LIMIT = 11;
+            const CONCURRENCY_LIMIT = 10;
             let movieIndex = 0;
             let loadedCount = 0;
             const totalMovies = allMovies.length;
@@ -1153,14 +1177,14 @@
                 if (m.year && m.year !== 'None' && parseInt(m.year) > 1900) yearsSet.add(m.year);
             });
             const sortedYears = Array.from(yearsSet).sort((a, b) => b - a);
-
+        
             const grid = document.getElementById('yearsGrid');
             grid.innerHTML = '';
-
-            sortedYears.forEach((yr, index) => {
+        
+            sortedYears.forEach(yr => {
                 const btn = document.createElement('button');
-                btn.setAttribute('tabindex', '0'); // Wichtig für Tastatur & TV-Fernbedienungen
-                btn.className = "bg-gray-800/80 hover:bg-blue-600 focus:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400 text-white font-semibold py-2.5 rounded-xl transition-all cursor-pointer text-xs border border-gray-700/50";
+                btn.setAttribute('tabindex', '0');
+                btn.className = "year-btn bg-gray-800/80 hover:bg-blue-600 text-white font-semibold py-2.5 rounded-xl transition-all cursor-pointer text-xs border border-gray-700/50";
                 btn.innerText = yr;
                 btn.onclick = () => {
                     currentGenre = `Jahr: ${yr}`;
@@ -1170,18 +1194,138 @@
                 };
                 grid.appendChild(btn);
             });
-
-            const modal = document.getElementById('yearsModal');
-            modal.style.display = 'flex';
-            const firstBtn = grid.querySelector('button');
-            if (firstBtn) {
-                firstBtn.focus();
-            }
+        
+            document.getElementById('yearsModal').style.display = 'flex';
+            
+            setTimeout(() => {
+                const firstBtn = grid.querySelector('button');
+                if (firstBtn) firstBtn.focus();
+            }, 50);
         }
-
+        
         function closeYearsModal() {
             document.getElementById('yearsModal').style.display = 'none';
+            
+            const genreButtons = Array.from(document.querySelectorAll('#genreLeiste button'));
+            const btnNachJahren = genreButtons.find(b => b.innerText.includes('Nach Jahren') || b.innerText.includes('Jahr'));
+            if (btnNachJahren) {
+                btnNachJahren.focus();
+            }
         }
+        
+        document.getElementById('yearsModal').addEventListener('keydown', function(e) {
+            const buttons = Array.from(this.querySelectorAll('.year-btn'));
+            const backBtn = this.querySelector('button[onclick="closeYearsModal()"]');
+            
+            if (!backBtn) return;
+            backBtn.classList.add('focus:outline-none', 'focus:ring-2', 'focus:ring-blue-500');
+            
+            const allFocusable = [...buttons, backBtn];
+            let currentIndex = allFocusable.indexOf(document.activeElement);
+            
+            if (e.key === 'Escape' || e.key === 'Backspace') {
+                closeYearsModal();
+                return;
+            }
+        
+            if (currentIndex === -1) return;
+        
+            const cols = 3;
+            let nextIndex = currentIndex;
+        
+            switch(e.key) {
+                case 'ArrowRight':
+                    e.preventDefault();
+                    if (currentIndex < buttons.length) nextIndex = currentIndex + 1;
+                    break;
+                    
+                case 'ArrowLeft':
+                    e.preventDefault();
+                    if (currentIndex > 0 && currentIndex < buttons.length) nextIndex = currentIndex - 1;
+                    break;
+                    
+                case 'ArrowDown':
+                    e.preventDefault();
+                    if (currentIndex < buttons.length) {
+                        if (currentIndex + cols < buttons.length) {
+                            nextIndex = currentIndex + cols;
+                        } else {
+                            nextIndex = allFocusable.length - 1;
+                        }
+                    }
+                    break;
+                    
+                case 'ArrowUp':
+                    e.preventDefault();
+                    if (currentIndex === allFocusable.length - 1) {
+                        nextIndex = buttons.length - 1;
+                    } else if (currentIndex - cols >= 0) {
+                        nextIndex = currentIndex - cols;
+                    }
+                    break;
+            }
+        
+            if (nextIndex >= 0 && nextIndex < allFocusable.length) {
+                allFocusable[nextIndex].focus();
+            }
+        });
+
+        document.getElementById('ratingModal').addEventListener('keydown', function(e) {
+            const buttons = Array.from(this.querySelectorAll('.grid button'));
+            const backBtn = this.querySelector('button[onclick="closeRatingModal()"]');
+            
+            if (!backBtn) return;
+            backBtn.classList.add('focus:outline-none', 'focus:ring-2', 'focus:ring-blue-500');
+            
+            const allFocusable = [...buttons, backBtn];
+            let currentIndex = allFocusable.indexOf(document.activeElement);
+            
+            if (e.key === 'Escape' || e.key === 'Backspace') {
+                closeRatingModal();
+                return;
+            }
+        
+            if (currentIndex === -1) return;
+        
+            const cols = 2;
+            let nextIndex = currentIndex;
+        
+            switch(e.key) {
+                case 'ArrowRight':
+                    e.preventDefault();
+                    if (currentIndex < buttons.length) nextIndex = currentIndex + 1;
+                    break;
+                    
+                case 'ArrowLeft':
+                    e.preventDefault();
+                    if (currentIndex > 0 && currentIndex < buttons.length) nextIndex = currentIndex - 1;
+                    break;
+                    
+                case 'ArrowDown':
+                    e.preventDefault();
+                    if (currentIndex < buttons.length) {
+                        if (currentIndex + cols < buttons.length) {
+                            nextIndex = currentIndex + cols;
+                        } else {
+                            nextIndex = allFocusable.length - 1;
+                        }
+                    }
+                    break;
+                    
+                case 'ArrowUp':
+                    e.preventDefault();
+                    if (currentIndex === allFocusable.length - 1) {
+                        nextIndex = buttons.length - 1;
+                    } else if (currentIndex - cols >= 0) {
+                        nextIndex = currentIndex - cols;
+                    }
+                    break;
+            }
+        
+            if (nextIndex >= 0 && nextIndex < allFocusable.length) {
+                allFocusable[nextIndex].focus();
+            }
+        });
 
         function searchPerson(name) {
             closeRouletteModal();
