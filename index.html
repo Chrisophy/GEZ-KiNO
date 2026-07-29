@@ -1793,27 +1793,41 @@
             video.addEventListener('loadedmetadata', updateHudTime);
             
             if (!modal || !video) return;
-
+        
             modal.classList.remove('hidden');
             isPlayerOpen = true;
-
+        
             if (window.location.hash !== '#player') {
                 history.pushState({ playerOpen: true }, '', '#player');
             }
-
-            if (url.includes('.m3u8') && typeof Hls !== 'undefined' && Hls.isSupported()) {
+        
+            if (typeof Hls !== 'undefined' && Hls.isSupported()) {
                 if (hlsInstance) hlsInstance.destroy();
-                hlsInstance = new Hls({ maxBufferLength: 30 });
+                
+                hlsInstance = new Hls({ 
+                    maxBufferLength: 30,
+                    enableWorker: true 
+                });
+                
                 hlsInstance.loadSource(url);
                 hlsInstance.attachMedia(video);
+                
                 hlsInstance.on(Hls.Events.MANIFEST_PARSED, () => {
-                    video.play().catch(() => {});
+                    video.play().catch((e) => console.log("Autoplay blockiert:", e));
+                });
+        
+                hlsInstance.on(Hls.Events.ERROR, (event, data) => {
+                    if (data.fatal) {
+                        console.error("HLS Fehler, versuche nativen Fallback...");
+                        video.src = url;
+                        video.play().catch(() => {});
+                    }
                 });
             } else {
                 video.src = url;
                 video.play().catch(() => {});
             }
-
+        
             showHUD(`▶ ${title || 'Spiele Video...'}`);
         }
 
