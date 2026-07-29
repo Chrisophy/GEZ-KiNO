@@ -1789,47 +1789,55 @@
             if (!url) return;
             const modal = document.getElementById('videoModal');
             const video = document.getElementById('mainVideoPlayer');
-            video.addEventListener('timeupdate', updateHudTime);
-            video.addEventListener('loadedmetadata', updateHudTime);
-            
             if (!modal || !video) return;
+        
+            // 1. Aufräumen
+            if (hlsInstance) {
+                hlsInstance.destroy();
+                hlsInstance = null;
+            }
+            video.pause();
+            video.src = "";
+            video.load();
         
             modal.classList.remove('hidden');
             isPlayerOpen = true;
         
-            if (window.location.hash !== '#player') {
-                history.pushState({ playerOpen: true }, '', '#player');
-            }
+            // 2. Explizite Prüfung auf Videodateien
+            // Wir prüfen nur, ob die URL mit einer dieser Endungen endet.
+            const isNativeFile = /\.(mp4|mkv|webm|avi|mov|flv|ogv)(\?|$)/i.test(url);
         
-            if (typeof Hls !== 'undefined' && Hls.isSupported()) {
-                if (hlsInstance) hlsInstance.destroy();
-                
-                hlsInstance = new Hls({ 
-                    maxBufferLength: 30,
-                    enableWorker: true 
-                });
-                
-                hlsInstance.loadSource(url);
-                hlsInstance.attachMedia(video);
-                
-                hlsInstance.on(Hls.Events.MANIFEST_PARSED, () => {
-                    video.play().catch((e) => console.log("Autoplay blockiert:", e));
-                });
-        
-                hlsInstance.on(Hls.Events.ERROR, (event, data) => {
-                    if (data.fatal) {
-                        console.error("HLS Fehler, versuche nativen Fallback...");
-                        video.src = url;
-                        video.play().catch(() => {});
-                    }
-                });
-            } else {
+            if (isNativeFile) {
+                // Fall A: Nativer Player (für klassische Dateien)
                 video.src = url;
-                video.play().catch(() => {});
+                video.play().catch(e => console.log("Fehler bei nativer Datei:", e));
+            } else {
+                // Fall B: Alles andere ist bei dir HLS (IPTV-Sender)
+                if (Hls.isSupported()) {
+                    hlsInstance = new Hls({ enableWorker: true });
+                    hlsInstance.loadSource(url);
+                    hlsInstance.attachMedia(video);
+                    hlsInstance.on(Hls.Events.MANIFEST_PARSED, () => {
+                        video.play().catch(e => console.log("HLS Playback Fehler:", e));
+                    });
+                    // Fehler-Fallback: Falls HLS doch fehlschlägt, nativen Player versuchen
+                    hlsInstance.on(Hls.Events.ERROR, (event, data) => {
+                        if (data.fatal) {
+                            console.warn("HLS-Fehler, versuche nativen Fallback...");
+                            video.src = url;
+                            video.play().catch(() => {});
+                        }
+                    });
+                } else {
+                    // Browser-Fallback
+                    video.src = url;
+                    video.play().catch(() => {});
+                }
             }
         
             showHUD(`▶ ${title || 'Spiele Video...'}`);
         }
+
 
         function closePlayer(fromPopState = false) {
             const modal = document.getElementById('videoModal');
