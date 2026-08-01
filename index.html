@@ -601,11 +601,12 @@
                         const title = m.title || '';
                         const channel = m.channel || '';
                         if (!url || !title) return;
-                
+                        if (channel.toLowerCase().includes('kika')) return;                
                         if (channel.toLowerCase().includes('zdf-tivi')) return;
                         if (title.toLowerCase().includes('zdf-tivi') || title.toLowerCase().includes('tivi')) return;
                         if (/audiodeskription|audio description|ad version|hörfilm|deskription|barrierefrei/.test(title.toLowerCase())) return;
                         if (title.includes('(Englisch)')) return;
+                        if (title.includes('(zho)')) return;
                         if (title.includes('(Originalversion mit Untertitel)')) return;
                         if (title.includes('(mit Untertitel)')) return;
                         if (title.includes('(Originalversion)')) return;
