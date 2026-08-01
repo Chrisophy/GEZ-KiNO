@@ -1783,136 +1783,60 @@
             hudTime.innerText = `${formatTime(video.currentTime)} / ${formatTime(video.duration)}`;
         }
         
-        // Globale Variablen (falls du sie nicht ohnehin schon oben definiert hast)
         let isPlayerOpen = false;
-        // let activeDownloadUrl = ''; 
-        // let activeVideoErrorHandler = null;
-        // let hlsInstance = null;
-        
+
         function openPlayer(url, title) {
             if (!url) return;
-        
             const modal = document.getElementById('videoModal');
             const video = document.getElementById('mainVideoPlayer');
-        
-            // OPTIMIERUNG: Null-Check ganz zu Beginn, um Abstürze zu verhindern
             if (!modal || !video) return;
         
-            activeDownloadUrl = url; 
-            modal.classList.remove('hidden');
-            document.body.style.overflow = 'hidden'; 
+            video.addEventListener('timeupdate', updateHudTime);
+            video.addEventListener('loadedmetadata', updateHudTime);
         
-            // HISTORY-LOGIK: State in die Browser-History pushen
+            modal.classList.remove('hidden');
             isPlayerOpen = true;
+        
             if (window.location.hash !== '#player') {
                 history.pushState({ playerOpen: true }, '', '#player');
             }
         
-            if (activeVideoErrorHandler) {
-                video.removeEventListener('error', activeVideoErrorHandler);
-                activeVideoErrorHandler = null;
-            }
-        
-            const isM3u8 = url.includes('.m3u8') || url.endsWith('.m3u8');
-            if (isM3u8) {
-                // OPTIMIERUNG: Zusätzlicher typeof Check für Hls, falls die Library nicht geladen wurde
-                if (typeof Hls !== 'undefined' && Hls.isSupported()) {
-                    if (hlsInstance) hlsInstance.destroy();
-                    hlsInstance = new Hls({ manifestLoadingTimeOut: 1500, manifestLoadingMaxRetry: 0 });
-                    hlsInstance.on(Hls.Events.ERROR, function (event, data) {
-                        if (!hlsInstance) return;
-                        if (data.fatal && data.type === Hls.ErrorTypes.NETWORK_ERROR) {
-                            hlsInstance.off(Hls.Events.ERROR); 
-                            window.open(url, '_blank');
-                            closePlayer();
-                        }
-                    });
-                    hlsInstance.loadSource(url);
-                    hlsInstance.attachMedia(video);
-                } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
-                    video.src = url;
-                    activeVideoErrorHandler = function() {
-                        video.removeEventListener('error', activeVideoErrorHandler);
-                        activeVideoErrorHandler = null;
-                        if (!video.src || video.src === "" || video.src === window.location.href) return;
-                        window.open(url, '_blank');
-                        closePlayer();
-                    };
-                    video.addEventListener('error', activeVideoErrorHandler);
-                } else {
-                    window.open(url, '_blank');
-                    closePlayer();
-                }
-            } else {
-                if (hlsInstance) {
-                    hlsInstance.destroy();
-                    hlsInstance = null;
-                }
-                video.src = url;
-                activeVideoErrorHandler = function() {
-                    video.removeEventListener('error', activeVideoErrorHandler);
-                    activeVideoErrorHandler = null;
-                    if (!video.src || video.src === "" || video.src === window.location.href) return;
-                    window.open(url, '_blank');
-                    closePlayer();
-                };
-                video.addEventListener('error', activeVideoErrorHandler);
-            }
-        
-            video.play()
-                .then(() => {
-                    if (video.requestFullscreen) {
-                        video.requestFullscreen();
-                    } else if (video.webkitRequestFullscreen) { 
-                        video.webkitRequestFullscreen();
-                    } else if (video.msRequestFullscreen) { 
-                        video.msRequestFullscreen();
-                    }
-                })
-                .catch(err => console.log("Autoplay blockiert:", err));
-        }
-        
-        // HISTORY-LOGIK: Parameter 'fromPopState' hinzugefügt
-        function closePlayer(fromPopState = false) {
-            const modal = document.getElementById('videoModal');
-            const video = document.getElementById('mainVideoPlayer');
-            
-            // OPTIMIERUNG: Null-Check auch hier
-            if (!modal || !video) return;
-        
-            activeDownloadUrl = '';
-        
-            if (document.fullscreenElement || document.webkitFullscreenElement || document.msFullscreenElement) {
-                if (document.exitFullscreen) {
-                    document.exitFullscreen();
-                } else if (document.webkitExitFullscreen) {
-                    document.webkitExitFullscreen();
-                } else if (document.msExitFullscreen) {
-                    document.msExitFullscreen();
-                }
-            }
-        
-            if (activeVideoErrorHandler) {
-                video.removeEventListener('error', activeVideoErrorHandler);
-                activeVideoErrorHandler = null;
-            }
-            video.onerror = null;
-            video.pause();
-            
-            if (hlsInstance) {
-                hlsInstance.off(Hls.Events.ERROR);
+            // Falls noch eine alte HLS-Instanz läuft, diese kurz aufräumen
+            if (typeof hlsInstance !== 'undefined' && hlsInstance) {
                 hlsInstance.destroy();
                 hlsInstance = null;
             }
-            
-            // OPTIMIERUNG: removeAttribute entfernt die Quelle zuverlässiger als src = "" (stoppt Buffering)
-            video.removeAttribute('src'); 
-            try { video.load(); } catch(e) {} 
-            
-            modal.classList.add('hidden');
-            document.body.style.overflow = 'auto'; 
         
-            // HISTORY-LOGIK: Nur in der History zurückgehen, wenn das Schließen NICHT durch den Zurück-Button ausgelöst wurde
+            // 1:1 die Logik aus deinem funktionierenden Script
+            video.muted = false;
+            video.src = url;
+        
+            video.play().catch(err => {
+                console.log("Autoplay mit Ton wurde blockiert, Falle auf Stumm zurück:", err);
+                video.muted = true;
+                video.play().catch(e => console.error("Wiedergabe fehlgeschlagen:", e));
+            });
+        
+            showHUD(`▶ ${title || 'Spiele Video...'}`);
+        }
+
+        function closePlayer(fromPopState = false) {
+            const modal = document.getElementById('videoModal');
+            const video = document.getElementById('mainVideoPlayer');
+            video.removeEventListener('timeupdate', updateHudTime);
+            video.removeEventListener('loadedmetadata', updateHudTime);            
+            if (!modal || !video) return;
+
+            video.pause();
+            if (hlsInstance) {
+                hlsInstance.destroy();
+                hlsInstance = null;
+            }
+            video.removeAttribute('src');
+            video.load();
+
+            modal.classList.add('hidden');
+
             if (isPlayerOpen) {
                 isPlayerOpen = false;
                 if (!fromPopState && window.location.hash === '#player') {
