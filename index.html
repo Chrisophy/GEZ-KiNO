@@ -1791,6 +1791,12 @@
             const video = document.getElementById('mainVideoPlayer');
             if (!modal || !video) return;
         
+            // Fokus vom Abspielen-Button entfernen & Fokus auf Modal legen
+            if (document.activeElement) {
+                document.activeElement.blur();
+            }
+            modal.focus();
+        
             video.addEventListener('timeupdate', updateHudTime);
             video.addEventListener('loadedmetadata', updateHudTime);
         
@@ -1801,13 +1807,11 @@
                 history.pushState({ playerOpen: true }, '', '#player');
             }
         
-            // Falls noch eine alte HLS-Instanz läuft, diese kurz aufräumen
             if (typeof hlsInstance !== 'undefined' && hlsInstance) {
                 hlsInstance.destroy();
                 hlsInstance = null;
             }
         
-            // 1:1 die Logik aus deinem funktionierenden Script
             video.muted = false;
             video.src = url;
         
@@ -1819,6 +1823,7 @@
         
             showHUD(`▶ ${title || 'Spiele Video...'}`);
         }
+
 
         function closePlayer(fromPopState = false) {
             const modal = document.getElementById('videoModal');
@@ -1856,7 +1861,7 @@
             
             if (e.key === 'Escape' || e.key === 'BackSpace') {
                 closePlayer();
-            } else if (e.key === ' ') {
+            } else if (e.key === ' ' || e.key === 'Enter' || e.key === 'Select') {
                 e.preventDefault();
                 togglePlayerTouch();
             } else if (e.key === 'ArrowRight') {
@@ -1865,6 +1870,7 @@
                 seekPlayer(-60);
             }
         });
+        
 
         function showHUD(text) {
             const hud = document.getElementById('playerHUD');
