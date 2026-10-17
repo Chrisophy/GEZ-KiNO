@@ -629,7 +629,7 @@
                             search: cleanName,
                             year: year,
                             video_url: url,
-                            plot: 'Lade Filminformationen...',
+                            plot: m.description || 'Keine Beschreibung verfügbar.',
                             mediathek_desc: m.description || '',
                             director: '',
                             actors: [],
@@ -656,18 +656,26 @@
                 
                 if (allMovies.length === 0 && currentView === 'mediathek') {
                     document.getElementById('statusMessage').innerText = "Keine Filme gefunden.";
+                    document.getElementById('scanner')?.classList.add('hidden');
                     return;
                 }
         
+                // ==========================================
+                // 🚀 TURBO-SCHRITT: SOFORT ANZEIGEN & SCHLIESSEN
+                // ==========================================
+                document.getElementById('scanner')?.classList.add('hidden');
                 renderGenreLeiste();
                 filterResults();                
-                await hydrateWithTMDBParallel();
-        
-                localStorage.setItem('gez_kino_last_fetch', Date.now().toString());
-                localStorage.setItem('gez_kino_movies_cache', JSON.stringify(allMovies));
+
+                // TMDB-Abgleich läuft jetzt asynchron im Hintergrund weiter, ohne die App zu blockieren!
+                hydrateWithTMDBParallel().then(() => {
+                    localStorage.setItem('gez_kino_last_fetch', Date.now().toString());
+                    localStorage.setItem('gez_kino_movies_cache', JSON.stringify(allMovies));
+                });
         
             } catch (err) {
                 console.error(err);
+                document.getElementById('scanner')?.classList.add('hidden');
                 if (currentView === 'mediathek') {
                     document.getElementById('statusMessage').innerText = "Fehler beim API-Abruf.";
                 }
@@ -799,11 +807,6 @@
         async function hydrateWithTMDBParallel() {
             const CONCURRENCY_LIMIT = 10;
             let movieIndex = 0;
-            let loadedCount = 0;
-            const totalMovies = allMovies.length;
-
-            const scannerText = document.getElementById('scanner-text');
-            const scannerPercent = document.getElementById('scanner-percent');
 
             async function worker() {
                 while (movieIndex < allMovies.length) {
@@ -836,7 +839,7 @@
                                 let bestMatch = data.results[0];
                                 let highestScore = 0;
                                 const mDesc = movie.mediathek_desc.toLowerCase();
-                                const candidates = data.results.slice(0, 5);
+                                const candidates = data.results.slice(0, 3); // Reduziert für Turbo
                                 const scoredCandidates = await Promise.all(candidates.map(async (candidate) => {
                                     let score = 0;
                                     const cOverview = (candidate.overview || '').toLowerCase();
@@ -855,7 +858,7 @@
                                             directors.forEach(d => {
                                                 if (mDesc.includes(d) || d.split(' ').every(part => mDesc.includes(part))) score += 50;
                                             });
-                                            const actors = credData.credits.cast.slice(0, 5).map(a => a.name.toLowerCase());
+                                            const actors = credData.credits.cast.slice(0, 3).map(a => a.name.toLowerCase());
                                             actors.forEach(a => {
                                                 if (mDesc.includes(a)) score += 15;
                                             });
@@ -934,25 +937,12 @@
                     } catch (e) {
                         console.error("TMDB-Fehler bei: " + movie.search, e);
                     }
-
-                    loadedCount++;
-                    
-                    if (totalMovies > 0) {
-                        const percent = Math.round((loadedCount / totalMovies) * 100);
-                        if (scannerText) scannerText.innerText = `Lade Mediathek-Daten...`;
-                        if (scannerPercent) scannerPercent.innerText = `${percent}%`;
-                    }
-
-                    if (loadedCount % 15 === 0) {
-                        updateGenreCounts();
-                    }
                 }
             }
 
             const workers = Array.from({ length: CONCURRENCY_LIMIT }, worker);
             await Promise.all(workers);
             updateGenreCounts();
-            document.getElementById('scanner')?.classList.add('hidden');
         }
 
         function getGenreCounts() {
