@@ -557,7 +557,7 @@
         async function fetchAllData() {
             const cachedData = localStorage.getItem('gez_kino_movies_cache');
             
-            if (cachedData && !shouldFetchFreshData()) {
+            if (cachedData && !shouldFetchFreshData() && localStorage.getItem('gez_kino_tmdb_match_version') === '2') {
                 try {
                     allMovies = JSON.parse(cachedData);
                     document.getElementById('scanner')?.classList.add('hidden');
@@ -629,7 +629,7 @@
                             search: cleanName,
                             year: year,
                             video_url: url,
-                            plot: m.description || 'Keine Beschreibung verfügbar.',
+                            plot: 'Lade Filminformationen...',
                             mediathek_desc: m.description || '',
                             director: '',
                             actors: [],
@@ -656,26 +656,19 @@
                 
                 if (allMovies.length === 0 && currentView === 'mediathek') {
                     document.getElementById('statusMessage').innerText = "Keine Filme gefunden.";
-                    document.getElementById('scanner')?.classList.add('hidden');
                     return;
                 }
         
-                // ==========================================
-                // 🚀 TURBO-SCHRITT: SOFORT ANZEIGEN & SCHLIESSEN
-                // ==========================================
-                document.getElementById('scanner')?.classList.add('hidden');
                 renderGenreLeiste();
                 filterResults();                
-
-                // TMDB-Abgleich läuft jetzt asynchron im Hintergrund weiter, ohne die App zu blockieren!
-                hydrateWithTMDBParallel().then(() => {
-                    localStorage.setItem('gez_kino_last_fetch', Date.now().toString());
-                    localStorage.setItem('gez_kino_movies_cache', JSON.stringify(allMovies));
-                });
+                await hydrateWithTMDBParallel();
+        
+                localStorage.setItem('gez_kino_last_fetch', Date.now().toString());
+                localStorage.setItem('gez_kino_tmdb_match_version', '2');
+                localStorage.setItem('gez_kino_movies_cache', JSON.stringify(allMovies));
         
             } catch (err) {
                 console.error(err);
-                document.getElementById('scanner')?.classList.add('hidden');
                 if (currentView === 'mediathek') {
                     document.getElementById('statusMessage').innerText = "Fehler beim API-Abruf.";
                 }
@@ -804,9 +797,101 @@
             }
         }
         
+        function normalizeMovieTitle(title) {
+            return (title || '')
+                .toLocaleLowerCase('de-DE')
+                .normalize('NFD')
+                .replace(/[\u0300-\u036f]/g, '')
+                .replace(/&/g, ' und ')
+                .replace(/[^a-z0-9]+/g, ' ')
+                .trim()
+                .replace(/\s+/g, ' ');
+        }
+
+        function scoreTMDBTitle(sourceTitle, candidateTitle) {
+            const source = normalizeMovieTitle(sourceTitle);
+            const candidate = normalizeMovieTitle(candidateTitle);
+            if (!source || !candidate) return 0;
+            if (source === candidate) return 100;
+
+            const sourceWords = source.split(' ').filter(Boolean);
+            const candidateWords = candidate.split(' ').filter(Boolean);
+            const sourceSet = new Set(sourceWords);
+            const candidateSet = new Set(candidateWords);
+            const overlap = sourceWords.filter(word => candidateSet.has(word)).length;
+            const sourceCoverage = overlap / Math.max(sourceSet.size, 1);
+            const candidateCoverage = overlap / Math.max(candidateSet.size, 1);
+
+            // Ein einzelnes gemeinsames Wort reicht nicht, um Zusatztitel
+            // wie "X-Men: Dark Phoenix" dem eigenständigen Film "Phoenix" zuzuordnen.
+            if (sourceSet.size === 1 && candidateSet.size > 1 && sourceCoverage === 1) {
+                return 25;
+            }
+
+            let score = sourceCoverage * 55 + candidateCoverage * 25;
+            if (candidate.startsWith(source + ' ') || candidate.endsWith(' ' + source)) {
+                score = Math.max(score, 45);
+            }
+            if (source.startsWith(candidate + ' ') || source.endsWith(' ' + candidate)) {
+                score = Math.max(score, 45);
+            }
+            return score;
+        }
+
+        function chooseBestTMDBResult(results, movie, type) {
+            if (!Array.isArray(results) || results.length === 0) return null;
+
+            const sourceTitle = movie.search || movie.title || '';
+            const sourceYear = movie.year && movie.year !== 'None' && movie.year !== 'LIVE'
+                ? String(movie.year)
+                : '';
+            const mDesc = (movie.mediathek_desc || '').toLocaleLowerCase('de-DE');
+
+            const scored = results.map(candidate => {
+                const candidateTitle = type === 'tv'
+                    ? (candidate.name || candidate.original_name || '')
+                    : (candidate.title || candidate.original_title || '');
+                const candidateOriginal = type === 'tv'
+                    ? (candidate.original_name || candidate.name || '')
+                    : (candidate.original_title || candidate.title || '');
+                let score = Math.max(
+                    scoreTMDBTitle(sourceTitle, candidateTitle),
+                    scoreTMDBTitle(sourceTitle, candidateOriginal)
+                );
+
+                const date = type === 'tv' ? candidate.first_air_date : candidate.release_date;
+                const candidateYear = date ? date.slice(0, 4) : '';
+                if (sourceYear && candidateYear) {
+                    if (sourceYear === candidateYear) score += 30;
+                    else score -= 35;
+                }
+
+                // Beschreibung nur als schwaches Zusatzsignal nutzen; sie darf
+                // einen falschen Titel-Treffer nicht allein auswählen.
+                const overview = (candidate.overview || '').toLocaleLowerCase('de-DE');
+                if (mDesc && overview) {
+                    const words = overview.split(/\s+/).filter(word => word.length > 5);
+                    const matches = words.filter(word => mDesc.includes(word)).length;
+                    score += Math.min(matches * 0.5, 8);
+                }
+
+                return { candidate, score };
+            }).sort((a, b) => b.score - a.score);
+
+            // Ohne ausreichende Titelähnlichkeit lieber keine TMDB-Daten zeigen
+            // als Informationen zu einem anderen Film zuzuordnen.
+            const best = scored[0];
+            return best && best.score >= 50 ? best.candidate : null;
+        }
+
         async function hydrateWithTMDBParallel() {
-            const CONCURRENCY_LIMIT = 10;
+            const CONCURRENCY_LIMIT = 5;
             let movieIndex = 0;
+            let loadedCount = 0;
+            const totalMovies = allMovies.length;
+
+            const scannerText = document.getElementById('scanner-text');
+            const scannerPercent = document.getElementById('scanner-percent');
 
             async function worker() {
                 while (movieIndex < allMovies.length) {
@@ -814,106 +899,79 @@
                     const movie = allMovies[currentIdx];
                     if (!movie) break;
 
-                    let movieUrl = `https://api.themoviedb.org/3/search/movie?api_key=${TMDB_API_KEY}&query=${encodeURIComponent(movie.search)}&language=de-DE&include_adult=false`;
-                    if (movie.year !== 'None') movieUrl += `&year=${movie.year}`;
-                    
                     try {
+                        const query = encodeURIComponent(movie.search || movie.title);
+                        let movieUrl = `https://api.themoviedb.org/3/search/movie?api_key=${TMDB_API_KEY}&query=${query}&language=de-DE&include_adult=false`;
+                        if (movie.year !== 'None' && movie.year !== 'LIVE') movieUrl += `&year=${encodeURIComponent(movie.year)}`;
+
                         let res = await fetch(movieUrl);
                         if (res.status === 429) {
                             movieIndex--;
-                            await new Promise(resolve => setTimeout(resolve, 800));
+                            await new Promise(resolve => setTimeout(resolve, 1200));
                             continue;
                         }
+
                         let data = await res.json();
-                        let tmdb = null;
+                        let tmdb = chooseBestTMDBResult(data.results, movie, 'movie');
                         let isTvShow = false;
 
-                        if ((!data.results || data.results.length === 0) && movie.year !== 'None') {
-                            let fallbackUrl = `https://api.themoviedb.org/3/search/movie?api_key=${TMDB_API_KEY}&query=${encodeURIComponent(movie.search)}&language=de-DE&include_adult=false`;
+                        // Wenn die Jahressuche keinen passenden Titel liefert, erneut
+                        // ohne Jahr suchen, aber weiterhin den Titel streng vergleichen.
+                        if (!tmdb && movie.year !== 'None' && movie.year !== 'LIVE') {
+                            const fallbackUrl = `https://api.themoviedb.org/3/search/movie?api_key=${TMDB_API_KEY}&query=${query}&language=de-DE&include_adult=false`;
                             const fallbackRes = await fetch(fallbackUrl);
-                            data = await fallbackRes.json();
-                        }
-
-                        if (data.results && data.results.length > 0) {
-                            if (movie.year === 'None' && data.results.length > 1) {
-                                let bestMatch = data.results[0];
-                                let highestScore = 0;
-                                const mDesc = movie.mediathek_desc.toLowerCase();
-                                const candidates = data.results.slice(0, 3); // Reduziert für Turbo
-                                const scoredCandidates = await Promise.all(candidates.map(async (candidate) => {
-                                    let score = 0;
-                                    const cOverview = (candidate.overview || '').toLowerCase();
-
-                                    if (cOverview && mDesc) {
-                                        const words = cOverview.split(/\s+/).filter(w => w.length > 4);
-                                        words.forEach(w => {
-                                            if (mDesc.includes(w)) score += 2;
-                                        });
-                                    }
-                                    try {
-                                        const credRes = await fetch(`https://api.themoviedb.org/3/movie/${candidate.id}?api_key=${TMDB_API_KEY}&language=de-DE&append_to_response=credits`);
-                                        const credData = await credRes.json();
-                                        if (credData.credits) {
-                                            const directors = credData.credits.crew.filter(c => c.job === 'Director').map(d => d.name.toLowerCase());
-                                            directors.forEach(d => {
-                                                if (mDesc.includes(d) || d.split(' ').every(part => mDesc.includes(part))) score += 50;
-                                            });
-                                            const actors = credData.credits.cast.slice(0, 3).map(a => a.name.toLowerCase());
-                                            actors.forEach(a => {
-                                                if (mDesc.includes(a)) score += 15;
-                                            });
-                                        }
-                                    } catch(e) {}
-
-                                    return { candidate, score };
-                                }));
-
-                                scoredCandidates.forEach(item => {
-                                    if (item.score > highestScore) {
-                                        highestScore = item.score;
-                                        bestMatch = item.candidate;
-                                    }
-                                });
-                                tmdb = bestMatch;
-                            } else {
-                                tmdb = data.results[0];
+                            if (fallbackRes.ok) {
+                                data = await fallbackRes.json();
+                                tmdb = chooseBestTMDBResult(data.results, movie, 'movie');
                             }
                         }
 
+                        // Serien nur verwenden, wenn kein ausreichend passender Film existiert.
                         if (!tmdb) {
-                            let tvUrl = `https://api.themoviedb.org/3/search/tv?api_key=${TMDB_API_KEY}&query=${encodeURIComponent(movie.search)}&language=de-DE&include_adult=false`;
-                            if (movie.year !== 'None') tvUrl += `&first_air_date_year=${movie.year}`;
-    
+                            let tvUrl = `https://api.themoviedb.org/3/search/tv?api_key=${TMDB_API_KEY}&query=${query}&language=de-DE&include_adult=false`;
+                            if (movie.year !== 'None' && movie.year !== 'LIVE') {
+                                tvUrl += `&first_air_date_year=${encodeURIComponent(movie.year)}`;
+                            }
+
                             const tvRes = await fetch(tvUrl);
-                            const tvData = await tvRes.json();
-                            if (tvData.results && tvData.results.length > 0) {
-                                tmdb = tvData.results[0];
-                                isTvShow = true;
+                            if (tvRes.ok) {
+                                const tvData = await tvRes.json();
+                                tmdb = chooseBestTMDBResult(tvData.results, movie, 'tv');
+                                isTvShow = Boolean(tmdb);
                             }
                         }
 
                         if (tmdb) {
                             if (tmdb.genre_ids && tmdb.genre_ids.includes(16)) {
                                 const lowerTitle = movie.title.toLowerCase();
-                                const lowerOverview = (tmdb.overview || "").toLowerCase();
+                                const lowerOverview = (tmdb.overview || '').toLowerCase();
                                 const realFilmKeywords = ['tatort', 'polizeiruf', 'in aller freundschaft', 'rosenheim-cops', 'krimi', 'fernsehfilm', 'kommissar', 'drama', 'spielfilm'];
-                                const isStrictlyRealfilm = realFilmKeywords.some(keyword => lowerTitle.includes(keyword) || lowerOverview.includes(keyword) || movie.mediathek_desc.toLowerCase().includes(keyword));
-                                
+                                const isStrictlyRealfilm = realFilmKeywords.some(keyword =>
+                                    lowerTitle.includes(keyword) ||
+                                    lowerOverview.includes(keyword) ||
+                                    (movie.mediathek_desc || '').toLowerCase().includes(keyword)
+                                );
+
                                 if (isStrictlyRealfilm) {
                                     tmdb.genre_ids = tmdb.genre_ids.filter(id => id !== 16);
                                 }
                             }
 
                             const mediaType = isTvShow ? 'tv' : 'movie';
-                            let creditsUrl = `https://api.themoviedb.org/3/${mediaType}/${tmdb.id}?api_key=${TMDB_API_KEY}&language=de-DE&append_to_response=credits`;
+                            const creditsUrl = `https://api.themoviedb.org/3/${mediaType}/${tmdb.id}?api_key=${TMDB_API_KEY}&language=de-DE&append_to_response=credits`;
                             const detailsRes = await fetch(creditsUrl);
-                            const detailsData = await detailsRes.json();
+                            const detailsData = detailsRes.ok ? await detailsRes.json() : {};
+
                             movie.plot = tmdb.overview || movie.mediathek_desc || 'Keine Beschreibung verfügbar.';
                             movie.rating = tmdb.vote_average ? tmdb.vote_average.toFixed(1) : 'N/A';
-                            movie.thumb = tmdb.poster_path ? `https://image.tmdb.org/t/p/w342${tmdb.poster_path}` : 'placeholder.png';
-                            
+                            movie.thumb = tmdb.poster_path
+                                ? `https://image.tmdb.org/t/p/w342${tmdb.poster_path}`
+                                : 'placeholder.png';
+
                             if (detailsData.credits) {
-                                const dir = detailsData.credits.crew.find(c => c.job === 'Director' || c.job === 'Executive Producer');
+                                const dir = detailsData.credits.crew.find(c =>
+                                    c.job === 'Director' || c.job === 'Executive Producer'
+                                );
                                 movie.director = dir ? dir.name : '';
                                 movie.actors = detailsData.credits.cast.slice(0, 3).map(a => a.name);
                             }
@@ -933,9 +991,28 @@
                             if (currentView === 'mediathek') {
                                 updateMovieCard(movie);
                             }
+                        } else {
+                            // Bei unsicherer Zuordnung keine fremden Poster/Bewertungen
+                            // anzeigen; die Mediathek-Beschreibung bleibt erhalten.
+                            movie.plot = movie.mediathek_desc || 'Keine Beschreibung verfügbar.';
+                            movie.rating = 'N/A';
+                            movie.thumb = 'placeholder.png';
                         }
                     } catch (e) {
                         console.error("TMDB-Fehler bei: " + movie.search, e);
+                        movie.plot = movie.mediathek_desc || 'Keine Beschreibung verfügbar.';
+                    }
+
+                    loadedCount++;
+
+                    if (totalMovies > 0) {
+                        const percent = Math.round((loadedCount / totalMovies) * 100);
+                        if (scannerText) scannerText.innerText = `Lade Mediathek-Daten...`;
+                        if (scannerPercent) scannerPercent.innerText = `${percent}%`;
+                    }
+
+                    if (loadedCount % 15 === 0) {
+                        updateGenreCounts();
                     }
                 }
             }
@@ -943,6 +1020,7 @@
             const workers = Array.from({ length: CONCURRENCY_LIMIT }, worker);
             await Promise.all(workers);
             updateGenreCounts();
+            document.getElementById('scanner')?.classList.add('hidden');
         }
 
         function getGenreCounts() {
