@@ -248,7 +248,7 @@
                 
                 <div class="w-full sm:w-80 md:w-96 flex gap-2">
                     <div class="relative w-full">
-                        <input type="text" id="searchBar" oninput="filterResults()" placeholder="Film | Beschreibung..." class="bg-gray-900/90 text-white pl-4 pr-10 py-2.5 rounded-2xl w-full focus:outline-none focus:ring-2 focus:ring-blue-500 border border-gray-800 shadow-inner text-xs sm:text-sm transition-all placeholder:text-gray-500">
+                        <input type="text" id="searchBar" oninput="filterResults()" placeholder="Film | Regie | Schauspieler..." class="bg-gray-900/90 text-white pl-4 pr-10 py-2.5 rounded-2xl w-full focus:outline-none focus:ring-2 focus:ring-blue-500 border border-gray-800 shadow-inner text-xs sm:text-sm transition-all placeholder:text-gray-500">
                     </div>
                     <button id="btnThemeToggle" onclick="toggleTheme()" type="button" aria-label="Design-Modus wechseln" title="Tag / Nacht Modus umschalten" class="px-2.5 py-2.0 rounded-2xl bg-gray-900/90 border border-gray-800 text-yellow-400 hover:text-yellow-300 transition-all cursor-pointer flex items-center justify-center shadow-inner flex-shrink-0">
                         <span id="themeToggleIcon" class="text-base sm:text-lg select-none">☀️</span>
@@ -391,11 +391,17 @@
     </button>
 
     <script>
+        const TMDB_API_KEY = '60b3801a9e76b5706ee2a432f06423e6';
         const MEDIATHEK_URL = 'https://mediathekviewweb.de/api/query';
         const IPTV_URL = 'https://raw.githubusercontent.com/jnk22/kodinerds-iptv/refs/heads/master/iptv/clean/clean_tv_main.m3u';
         const NEWS_URL = 'https://raw.githubusercontent.com/Chrisophy/Fassbrause/refs/heads/main/news.json';
         
-        const AVAILABLE_GENRES = ['Spielfilm', 'Drama', 'Krimi', 'Komödie', 'Doku', 'Thriller', 'Animation', 'Familie', 'Kultur', 'Sonstige'];
+        const GENRES_MAP = {
+            28: 'Action', 12: 'Abenteuer', 16: 'Animation', 35: 'Komödie', 80: 'Krimi', 99: 'Doku',
+            18: 'Drama', 10751: 'Familie', 14: 'Fantasy', 36: 'Historie', 27: 'Horror', 10402: 'Musik', 
+            9648: 'Mystery', 10749: 'Romanze', 878: 'Sci-Fi', 10770: 'TV-Film', 53: 'Thriller', 
+            10752: 'Krieg', 37: 'Western'
+        };
 
         const QUERIES = ['Spielfilm', 'Spielfilme', 'Spielfilm-Highlights', 'Filme', 'Kino - Filme', 'Filme in der ARD'];
         
@@ -410,7 +416,9 @@
         let currentView = 'mediathek'; 
         let chunkObserver = null;
         let hlsInstance = null;
+        let activeVideoErrorHandler = null; 
         let deferredPrompt = null; 
+        let activeDownloadUrl = ''; 
         const CHUNK_SIZE = 50; 
 
         function toggleTheme() {
@@ -546,39 +554,6 @@
             return lastFetch < latestSlot;
         }
 
-        function detectGenresFromText(movie, text) {
-            const t = text.toLowerCase();
-            let genres = [];
-            if (t.includes('krimi') || t.includes('tatort') || t.includes('polizeiruf') || t.includes('ermittler') || t.includes('kommissar') || t.includes('mord')) {
-                genres.push('Krimi');
-            }
-            if (t.includes('thriller')) {
-                genres.push('Thriller');
-            }
-            if (t.includes('komödie') || t.includes('komoedie') || t.includes('humor') || t.includes('satire')) {
-                genres.push('Komödie');
-            }
-            if (t.includes('drama') || t.includes('familiendrama') || t.includes('schicksal')) {
-                genres.push('Drama');
-            }
-            if (t.includes('doku') || t.includes('dokumentation') || t.includes('reportage') || t.includes('porträt')) {
-                genres.push('Doku');
-            }
-            if (t.includes('animation') || t.includes('zeichentrick') || t.includes('trickfilm')) {
-                genres.push('Animation');
-            }
-            if (t.includes('familie') || t.includes('kinderfilm') || t.includes('weihnachtsfilm')) {
-                genres.push('Familie');
-            }
-            if (t.includes('kultur') || t.includes('konzert') || t.includes('oper') || t.includes('ballett') || t.includes('theater')) {
-                genres.push('Kultur');
-            }
-            if (genres.length === 0) {
-                genres.push('Spielfilm');
-            }
-            movie.genres_list = [...new Set(genres)];
-        }
-
         async function fetchAllData() {
             const cachedData = localStorage.getItem('gez_kino_movies_cache');
             
@@ -588,7 +563,7 @@
                     document.getElementById('scanner')?.classList.add('hidden');
                     renderGenreLeiste();
                     filterResults();
-                    console.log("Filme aus Cache geladen.");
+                    console.log("Filme aus Cache geladen (Nächstes Update um 05:15 Uhr).");
                     return;
                 } catch (e) {
                     console.warn("Cache konnte nicht gelesen werden, lade neu...");
@@ -648,8 +623,8 @@
                 
                         seenUrls.add(url);
                         seenTitles.add(normTitle);
-
-                        let movieObj = {
+                
+                        tempResults.push({
                             title: cleanName,
                             search: cleanName,
                             year: year,
@@ -658,16 +633,13 @@
                             mediathek_desc: m.description || '',
                             director: '',
                             actors: [],
-                            rating: '7.5',
+                            rating: 'N/A',
                             thumb: 'placeholder.png', 
-                            genres_list: ['Spielfilm'],
+                            genres_list: ['Sonstige'],
                             channel: m.channel,
                             timestamp: m.timestamp || 0,
                             isNew: false
-                        };
-
-                        detectGenresFromText(movieObj, m.description || '');
-                        tempResults.push(movieObj);
+                        });
                     });
                 });
         
@@ -688,12 +660,15 @@
                     return;
                 }
         
+                // ==========================================
+                // 🚀 TURBO-SCHRITT: SOFORT ANZEIGEN & SCHLIESSEN
+                // ==========================================
                 document.getElementById('scanner')?.classList.add('hidden');
                 renderGenreLeiste();
                 filterResults();                
 
-                // 🚀 Wikipedia OpenSearch & Poster Abgleich im Hintergrund
-                hydrateWithWikipediaParallel().then(() => {
+                // TMDB-Abgleich läuft jetzt asynchron im Hintergrund weiter, ohne die App zu blockieren!
+                hydrateWithTMDBParallel().then(() => {
                     localStorage.setItem('gez_kino_last_fetch', Date.now().toString());
                     localStorage.setItem('gez_kino_movies_cache', JSON.stringify(allMovies));
                 });
@@ -809,7 +784,7 @@
 
             if (view === 'mediathek') {
                 btnMedia.className = activeClass;
-                searchBar.placeholder = "Film | Beschreibung suchen...";
+                searchBar.placeholder = "Film | Regie | Schauspieler suchen...";
                 renderGenreLeiste();
                 filterResults();
             } else if (view === 'livetv') {
@@ -829,60 +804,150 @@
             }
         }
         
-        // 🚀 Robuste Wikipedia OpenSearch & Summary Integration
-        async function hydrateWithWikipediaParallel() {
-            const CONCURRENCY_LIMIT = 6;
+        async function hydrateWithTMDBParallel() {
+            const CONCURRENCY_LIMIT = 10;
             let movieIndex = 0;
 
             async function worker() {
                 while (movieIndex < allMovies.length) {
                     const currentIdx = movieIndex++;
                     const movie = allMovies[currentIdx];
-                    if (!movie) continue;
+                    if (!movie) break;
 
+                    let movieUrl = `https://api.themoviedb.org/3/search/movie?api_key=${TMDB_API_KEY}&query=${encodeURIComponent(movie.search)}&language=de-DE&include_adult=false`;
+                    if (movie.year !== 'None') movieUrl += `&year=${movie.year}`;
+                    
                     try {
-                        // 1. OpenSearch nutzen, um den exakten Wikipedia-Seitentitel zu finden
-                        const searchUrl = `https://de.wikipedia.org/w/api.php?action=opensearch&search=${encodeURIComponent(movie.title)}&limit=1&namespace=0&format=json&origin=*`;
-                        const searchRes = await fetch(searchUrl);
-                        if (!searchRes.ok) continue;
-                        const searchData = await searchRes.json();
-                        const titles = searchData[1];
-                        if (!titles || titles.length === 0) continue;
-                        const pageTitle = titles[0];
+                        let res = await fetch(movieUrl);
+                        if (res.status === 429) {
+                            movieIndex--;
+                            await new Promise(resolve => setTimeout(resolve, 800));
+                            continue;
+                        }
+                        let data = await res.json();
+                        let tmdb = null;
+                        let isTvShow = false;
 
-                        // 2. Summary & Poster abrufen
-                        const summaryUrl = `https://de.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(pageTitle)}`;
-                        const res = await fetch(summaryUrl);
-                        if (res.ok) {
-                            let data = await res.json();
-                            if (data.thumbnail && data.thumbnail.source) {
-                                movie.thumb = data.thumbnail.source;
+                        if ((!data.results || data.results.length === 0) && movie.year !== 'None') {
+                            let fallbackUrl = `https://api.themoviedb.org/3/search/movie?api_key=${TMDB_API_KEY}&query=${encodeURIComponent(movie.search)}&language=de-DE&include_adult=false`;
+                            const fallbackRes = await fetch(fallbackUrl);
+                            data = await fallbackRes.json();
+                        }
+
+                        if (data.results && data.results.length > 0) {
+                            if (movie.year === 'None' && data.results.length > 1) {
+                                let bestMatch = data.results[0];
+                                let highestScore = 0;
+                                const mDesc = movie.mediathek_desc.toLowerCase();
+                                const candidates = data.results.slice(0, 3); // Reduziert für Turbo
+                                const scoredCandidates = await Promise.all(candidates.map(async (candidate) => {
+                                    let score = 0;
+                                    const cOverview = (candidate.overview || '').toLowerCase();
+
+                                    if (cOverview && mDesc) {
+                                        const words = cOverview.split(/\s+/).filter(w => w.length > 4);
+                                        words.forEach(w => {
+                                            if (mDesc.includes(w)) score += 2;
+                                        });
+                                    }
+                                    try {
+                                        const credRes = await fetch(`https://api.themoviedb.org/3/movie/${candidate.id}?api_key=${TMDB_API_KEY}&language=de-DE&append_to_response=credits`);
+                                        const credData = await credRes.json();
+                                        if (credData.credits) {
+                                            const directors = credData.credits.crew.filter(c => c.job === 'Director').map(d => d.name.toLowerCase());
+                                            directors.forEach(d => {
+                                                if (mDesc.includes(d) || d.split(' ').every(part => mDesc.includes(part))) score += 50;
+                                            });
+                                            const actors = credData.credits.cast.slice(0, 3).map(a => a.name.toLowerCase());
+                                            actors.forEach(a => {
+                                                if (mDesc.includes(a)) score += 15;
+                                            });
+                                        }
+                                    } catch(e) {}
+
+                                    return { candidate, score };
+                                }));
+
+                                scoredCandidates.forEach(item => {
+                                    if (item.score > highestScore) {
+                                        highestScore = item.score;
+                                        bestMatch = item.candidate;
+                                    }
+                                });
+                                tmdb = bestMatch;
+                            } else {
+                                tmdb = data.results[0];
                             }
-                            if (data.extract) {
-                                if (!movie.plot || movie.plot === 'Keine Beschreibung verfügbar.') {
-                                    movie.plot = data.extract;
+                        }
+
+                        if (!tmdb) {
+                            let tvUrl = `https://api.themoviedb.org/3/search/tv?api_key=${TMDB_API_KEY}&query=${encodeURIComponent(movie.search)}&language=de-DE&include_adult=false`;
+                            if (movie.year !== 'None') tvUrl += `&first_air_date_year=${movie.year}`;
+    
+                            const tvRes = await fetch(tvUrl);
+                            const tvData = await tvRes.json();
+                            if (tvData.results && tvData.results.length > 0) {
+                                tmdb = tvData.results[0];
+                                isTvShow = true;
+                            }
+                        }
+
+                        if (tmdb) {
+                            if (tmdb.genre_ids && tmdb.genre_ids.includes(16)) {
+                                const lowerTitle = movie.title.toLowerCase();
+                                const lowerOverview = (tmdb.overview || "").toLowerCase();
+                                const realFilmKeywords = ['tatort', 'polizeiruf', 'in aller freundschaft', 'rosenheim-cops', 'krimi', 'fernsehfilm', 'kommissar', 'drama', 'spielfilm'];
+                                const isStrictlyRealfilm = realFilmKeywords.some(keyword => lowerTitle.includes(keyword) || lowerOverview.includes(keyword) || movie.mediathek_desc.toLowerCase().includes(keyword));
+                                
+                                if (isStrictlyRealfilm) {
+                                    tmdb.genre_ids = tmdb.genre_ids.filter(id => id !== 16);
                                 }
-                                detectGenresFromText(movie, data.extract + ' ' + movie.mediathek_desc);
                             }
+
+                            const mediaType = isTvShow ? 'tv' : 'movie';
+                            let creditsUrl = `https://api.themoviedb.org/3/${mediaType}/${tmdb.id}?api_key=${TMDB_API_KEY}&language=de-DE&append_to_response=credits`;
+                            const detailsRes = await fetch(creditsUrl);
+                            const detailsData = await detailsRes.json();
+                            movie.plot = tmdb.overview || movie.mediathek_desc || 'Keine Beschreibung verfügbar.';
+                            movie.rating = tmdb.vote_average ? tmdb.vote_average.toFixed(1) : 'N/A';
+                            movie.thumb = tmdb.poster_path ? `https://image.tmdb.org/t/p/w342${tmdb.poster_path}` : 'placeholder.png';
+                            
+                            if (detailsData.credits) {
+                                const dir = detailsData.credits.crew.find(c => c.job === 'Director' || c.job === 'Executive Producer');
+                                movie.director = dir ? dir.name : '';
+                                movie.actors = detailsData.credits.cast.slice(0, 3).map(a => a.name);
+                            }
+
+                            const dateStr = tmdb.release_date || tmdb.first_air_date;
+                            if (dateStr && movie.year === 'None') {
+                                movie.year = dateStr.split('-')[0];
+                            }
+
+                            if (tmdb.genre_ids) {
+                                movie.genres_list = tmdb.genre_ids
+                                    .map(id => GENRES_MAP[id])
+                                    .filter(g => g !== undefined);
+                                if (movie.genres_list.length === 0) movie.genres_list = ['Sonstige'];
+                            }
+
                             if (currentView === 'mediathek') {
                                 updateMovieCard(movie);
                             }
                         }
                     } catch (e) {
-                        // Ignorieren
+                        console.error("TMDB-Fehler bei: " + movie.search, e);
                     }
                 }
             }
 
             const workers = Array.from({ length: CONCURRENCY_LIMIT }, worker);
             await Promise.all(workers);
-            renderGenreLeiste();
-            filterResults();
+            updateGenreCounts();
         }
 
         function getGenreCounts() {
             const counts = { "Alle": 0, "Neu hinzugefügt": 0, "Sonstige": 0, "Nach Jahren": 0, "Nach Bewertung": 0, "⭐ Favoriten": 0 };
-            AVAILABLE_GENRES.forEach(g => counts[g] = 0);
+            Object.values(GENRES_MAP).forEach(g => counts[g] = 0);
         
             let currentSet = allMovies;
             if (currentView === 'livetv') currentSet = liveTvChannels;
@@ -892,7 +957,13 @@
                 if (hideTvMovies && currentView === 'mediathek') {
                     const titleLower = m.title.toLowerCase();
                     const descLower = m.mediathek_desc ? m.mediathek_desc.toLowerCase() : '';
-                    if (titleLower.includes('tv-film') || descLower.includes('tv-film')) return;
+                    const genresLower = m.genres_list ? m.genres_list.map(g => g.toLowerCase()) : [];
+        
+                    if (titleLower.includes('tv-film') || titleLower.includes('tv film') || 
+                        descLower.includes('tv-film') || descLower.includes('tv film') || 
+                        genresLower.includes('tv-film')) {
+                        return;
+                    }
                 }                
         
                 if (currentView === 'news') {
@@ -917,11 +988,16 @@
                         counts["⭐ Favoriten"]++;
                     }
                     if (currentView === 'mediathek') {
-                        if (m.isNew) counts["Neu hinzugefügt"]++;
-                        if (m.year && m.year !== 'None' && parseInt(m.year) > 1900) counts["Nach Jahren"]++;
-                        if (m.rating && m.rating !== 'N/A' && parseFloat(m.rating) > 0) counts["Nach Bewertung"]++;
-                        
-                        if (!m.genres_list || m.genres_list.length === 0) {
+                        if (m.isNew) {
+                            counts["Neu hinzugefügt"]++;
+                        }
+                        if (m.year && m.year !== 'None' && parseInt(m.year) > 1900) {
+                            counts["Nach Jahren"]++;
+                        }
+                        if (m.rating && m.rating !== 'N/A' && parseFloat(m.rating) > 0) {
+                             counts["Nach Bewertung"]++;
+                        }
+                        if (!m.genres_list || m.genres_list.includes('Sonstige')) {
                             counts["Sonstige"]++;
                         } else {
                             m.genres_list.forEach(g => { if (g in counts) counts[g]++; });
@@ -942,9 +1018,16 @@
             
             let genres = [];
             if (currentView === 'mediathek') {
-                genres = ['Alle', 'Neu hinzugefügt', 'Nach Jahren', 'Nach Bewertung', 'TV-Filme-Umschalter', '⭐ Favoriten', ...AVAILABLE_GENRES];
+                const sortedGenres = Object.values(GENRES_MAP).sort();
+                genres = ['Alle', 'Neu hinzugefügt', 'Nach Jahren', 'Nach Bewertung', 'TV-Filme-Umschalter', '⭐ Favoriten', ...sortedGenres, 'Sonstige'];
             } else if (currentView === 'news') {
-                genres = ['News-Quelle-Umschalter', 'Alle', '⭐ Favoriten'];
+                const newsCats = new Set();
+                newsArticles.forEach(m => {
+                    if (m.genres_list && Array.isArray(m.genres_list)) {
+                        m.genres_list.forEach(g => newsCats.add(g));
+                    }
+                });
+                genres = ['News-Quelle-Umschalter', 'Alle', '⭐ Favoriten', ...Array.from(newsCats).sort()];
             } else {
                 genres = ['Alle', '⭐ Favoriten'];
             }
@@ -1230,6 +1313,34 @@
             }
         });
 
+        function searchPerson(name) {
+            closeRouletteModal();
+            if (currentView !== 'mediathek') {
+                switchView('mediathek');
+            }
+            currentGenre = 'Alle';
+            setActiveGenreStyling();
+            const searchBar = document.getElementById('searchBar');
+            searchBar.value = name;
+            filterResults();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        function generateCreditsHtml(director, actors) {
+            if (!director && (!actors || actors.length === 0)) return '';
+            
+            let html = '<div class="space-y-0.5 font-normal text-gray-300">';
+            if (director) {
+                html += `<div><span class="text-gray-500 font-semibold">Regie:</span> <button tabindex="0" onclick="searchPerson('${director.replace(/'/g, "\\'")}')" class="text-blue-400 hover:underline cursor-pointer text-left focus:outline-none font-medium">${director}</button></div>`;
+            }
+            if (actors && actors.length > 0) {
+                const actorsLinks = actors.map(a => `<button tabindex="0" onclick="searchPerson('${a.replace(/'/g, "\\'")}')" class="text-blue-400 hover:underline cursor-pointer text-left focus:outline-none font-medium">${a}</button>`).join(', ');
+                html += `<div><span class="text-gray-500 font-semibold">Besetzung:</span> ${actorsLinks}</div>`;
+            }
+            html += '</div>';
+            return html;
+        }
+
         function filterResults() {
             const query = document.getElementById('searchBar').value.toLowerCase().trim();
             let currentSet = allMovies;
@@ -1241,7 +1352,13 @@
                 if (hideTvMovies && currentView === 'mediathek') {
                     const titleLower = m.title.toLowerCase();
                     const descLower = m.mediathek_desc ? m.mediathek_desc.toLowerCase() : '';
-                    if (titleLower.includes('tv-film') || descLower.includes('tv-film')) return false;
+                    const genresLower = m.genres_list ? m.genres_list.map(g => g.toLowerCase()) : [];
+        
+                    if (titleLower.includes('tv-film') || titleLower.includes('tv film') || 
+                        descLower.includes('tv-film') || descLower.includes('tv film') || 
+                        genresLower.includes('tv-film')) {
+                        return false;
+                    }
                 }
         
                 if (currentView === 'news') {
@@ -1255,8 +1372,11 @@
 
                     if (currentGenre !== 'Alle' && currentGenre !== '⭐ Favoriten') {
                         if (!m.genres_list || !Array.isArray(m.genres_list)) return false;
+        
                         const targetGenre = currentGenre.trim().toLowerCase();
-                        if (!m.genres_list.some(g => g.trim().toLowerCase() === targetGenre)) return false;
+                        const hasGenre = m.genres_list.some(g => g.trim().toLowerCase() === targetGenre);
+        
+                        if (!hasGenre) return false;
                     }
                 }
         
@@ -1264,7 +1384,9 @@
                 if (query) {
                     const matchesTitle = m.title.toLowerCase().includes(query);
                     const matchesPlot = m.plot.toLowerCase().includes(query);
-                    matchQuery = matchesTitle || matchesPlot;
+                    const matchesDirector = m.director ? m.director.toLowerCase().includes(query) : false;
+                    const matchesActors = m.actors ? m.actors.some(a => a.toLowerCase().includes(query)) : false;
+                    matchQuery = matchesTitle || matchesPlot || matchesDirector || matchesActors;
                 }
                 if (!matchQuery) return false;
         
@@ -1282,7 +1404,7 @@
                 if (currentGenre === 'Neu hinzugefügt') return m.isNew;
                 
                 if (currentView === 'mediathek') {
-                    if (currentGenre === 'Sonstige') return !m.genres_list || m.genres_list.length === 0;
+                    if (currentGenre === 'Sonstige') return !m.genres_list || m.genres_list.includes('Sonstige');
                     if (currentGenre.startsWith('Jahr: ')) {
                         return m.year === currentGenre.replace('Jahr: ', '');
                     }
@@ -1314,6 +1436,10 @@
 
         function togglePlot(element) {
             element.classList.toggle('line-clamp-3');
+            const inlineCredits = element.nextElementSibling;
+            if(inlineCredits && inlineCredits.classList.contains('movie-credits-box')) {
+                inlineCredits.classList.toggle('hidden');
+            }
         }
 
         function renderNextChunk(startIndex) {
@@ -1348,7 +1474,16 @@
                 if (isNews) { badgeClass = "text-blue-400 border-blue-500/30"; badgeText = m.source || m.channel || "News"; }
 
                 const plotClickAction = isNews ? `openNewsModal('${m.id}')` : 'togglePlot(this)';
-                const plotTitleHint = isNews ? 'Klicken, um den ganzen Artikel zu lesen' : 'Klicken, um die Beschreibung zu erweitern';
+                const plotTitleHint = isNews ? 'Klicken, um den ganzen Artikel zu lesen' : 'Klicken, um die Beschreibung & Credits zu erweitern';
+
+                let creditsHtml = '';
+                if (!isTv && !isNews && (m.director || (m.actors && m.actors.length > 0))) {
+                    creditsHtml = `
+                        <div class="movie-credits-box hidden text-[10px] text-gray-400 bg-gray-950/80 p-2 rounded-xl mt-2 border border-gray-800/60 font-medium">
+                            ${generateCreditsHtml(m.director, m.actors)}
+                        </div>
+                    `;
+                }
 
                 const downloadBtnHtml = (!isTv && !isNews && m.video_url) ? `
                     <a href="${m.video_url}" download target="_blank" onclick="event.stopPropagation();" 
@@ -1381,6 +1516,7 @@
                                title="${plotTitleHint}">
                                ${m.plot}
                             </p>
+                            ${creditsHtml}
                         </div>
                         <div class="space-y-2 mt-3">
                             <div class="flex flex-wrap gap-1 mb-2">
@@ -1435,14 +1571,30 @@
             const img = card.querySelector('img');
             if (img && m.thumb !== 'placeholder.png') img.src = m.thumb;
 
+            const ratingBadge = card.querySelector('.text-yellow-400');
+            if (ratingBadge) ratingBadge.innerText = `★ ${m.rating}`;
+
             const plotText = card.querySelector('.p-3 p.text-gray-400, .p-3\\.5 p.text-gray-400');
             if (plotText) {
                 plotText.innerText = m.plot;
             }
 
-            const genreContainer = card.querySelector('.flex.flex-wrap.gap-1.mb-2');
-            if (genreContainer && m.genres_list) {
-                genreContainer.innerHTML = m.genres_list.map(g => `<span class="bg-gray-800/80 text-gray-400 text-[9px] px-1.5 py-0.5 rounded-md font-medium border border-gray-700/30">${g}</span>`).join('');
+            const infoText = card.querySelector('.text-gray-500');
+            if (infoText) infoText.innerText = `${m.channel} · ${m.year}`;
+
+            const genreBox = card.querySelector('.flex-wrap');
+            if (genreBox) {
+                genreBox.innerHTML = m.genres_list.map(g => `<span class="bg-gray-800/80 text-gray-400 text-[9px] px-1.5 py-0.5 rounded-md font-medium border border-gray-700/30">${g}</span>`).join('');
+            }
+
+            if (m.director || (m.actors && m.actors.length > 0)) {
+                let creditsBox = card.querySelector('.movie-credits-box');
+                if(!creditsBox) {
+                    creditsBox = document.createElement('div');
+                    creditsBox.className = "movie-credits-box hidden text-[10px] text-gray-400 bg-gray-950/80 p-2 rounded-xl mt-2 border border-gray-800/60 font-medium";
+                    if(plotText) plotText.parentNode.insertBefore(creditsBox, plotText.nextSibling);
+                }
+                creditsBox.innerHTML = generateCreditsHtml(m.director, m.actors);
             }
         }
 
@@ -1530,9 +1682,13 @@
                 switchView('mediathek');
             }
 
-            const validMovies = allMovies;
+            const validMovies = allMovies.filter(movie => {
+                const r = parseFloat(movie.rating);
+                return !isNaN(r) && r >= 5.0 && r <= 10.0;
+            });
+
             if (validMovies.length === 0) {
-                alert("Keine Filme geladen.");
+                alert("Gerade keine Filme mit einer Bewertung zwischen 5 und 10 geladen.");
                 return;
             }
 
@@ -1565,12 +1721,21 @@
                     document.getElementById('rouletteModalPlot').innerText = luckyMovie.plot || 'Keine Beschreibung verfügbar.';
 
                     const creditsContainer = document.getElementById('rouletteModalCredits');
-                    creditsContainer.classList.add('hidden');
+                    if (luckyMovie.director || (luckyMovie.actors && luckyMovie.actors.length > 0)) {
+                        creditsContainer.classList.remove('hidden');
+                        creditsContainer.innerHTML = generateCreditsHtml(luckyMovie.director, luckyMovie.actors);
+                    } else {
+                        creditsContainer.classList.add('hidden');
+                    }
 
                     const genreContainer = document.getElementById('rouletteModalGenres');
-                    genreContainer.innerHTML = luckyMovie.genres_list
-                        .map(g => `<span class="bg-gray-800 text-gray-400 text-[10px] px-1.5 py-0.5 rounded font-medium">#${g}</span>`)
-                        .join('');
+                    if (luckyMovie.genres_list && luckyMovie.genres_list.length > 0) {
+                        genreContainer.innerHTML = luckyMovie.genres_list
+                            .map(g => `<span class="bg-gray-800 text-gray-400 text-[10px] px-1.5 py-0.5 rounded font-medium">#${g}</span>`)
+                            .join('');
+                    } else {
+                        genreContainer.innerHTML = '<span class="bg-gray-800 text-gray-400 text-[10px] px-1.5 py-0.5 rounded font-medium">Sonstige</span>';
+                    }
 
                     const thumbImg = document.getElementById('rouletteModalThumb');
                     thumbImg.src = luckyMovie.thumb;
