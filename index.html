@@ -99,6 +99,8 @@
 <meta name="theme-color" content="#0b0f17">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+</head>
+<body class="min-h-screen flex flex-col p-3 sm:p-5">
 <div id="scanner" class="fixed inset-0 bg-black/70 backdrop-blur-md z-50 flex flex-col items-center justify-center gap-3 hidden transition-opacity duration-300">
   <div class="relative flex items-center justify-center">
     <div class="w-16 h-16 border-4 border-blue-500/20 border-t-blue-500 rounded-full animate-spin"></div>
@@ -359,19 +361,40 @@
     filterResults();
   }
 
+  // EXAKT REPLIZIERTE PYTHON TITLE CLEANING LOGIK
   function cleanTitle(title) {
-    let yearMatch = title.match(/(\d{4})/);
-    let year = yearMatch ? yearMatch[1] : 'None';
-    let clean = title;
+    if (!title) return '';
+    let clean = title.trim();
+    clean = clean.replace(/\s*\(\d{4}\)/g, '');
+    clean = clean.replace(/,\s*[A-Za-zäöüß\s]+\s+\d{4}$/, '');
+    clean = clean.replace(/,\s*\d{4}$/, '');
+    clean = clean.replace(/\s*[-–—]\s*(Spielfilm|Spiellfilm|Fernsehfilm).*$/i, '');
+    clean = clean.replace(/^(Spielfilm|Spiellfilm|Fernsehfilm):\s*/i, '');
     const markers = [
       ' - Spielfilm', ' – Spielfilm', ' - Spiellfilm', ' – Spiellfilm', ', Spielfilm', ' Österreich', ', Deutschland', ', Schweiz', ', Belgien', ', Frankreich', ', Spanien', ', Niederlande', ', Irland', ', Luxemburg', ', Italien', ', USA', ', Kosovo', ', Großbritannien', ', Tschechische Republik', ', Norwegen', ', BRD', ', Dänemark', ', Australien', ', Schweden', ', Video:', ', Präsentiert:', ', Kurzfilm', ' Fernsehfilm', ' Heimatfilm', ' - Thriller', ' - Drama', '«', '»'
     ];
     markers.forEach(marker => { clean = clean.split(new RegExp(marker, 'i'))[0]; });
-    clean = clean.replace(/^(Spielfilm|Spiellfilm):\s*/i, '');
     clean = clean.replace(/–/g, '-').replace(/—/g, '-');
     clean = clean.replace(/.*?/g, '');
-    clean = clean.trim().replace(/[ \t,.\-_–—»]+$/, '');
-    return { cleanName: clean, year: year };
+    return clean.trim().replace(/[ \t,.\-_–—»]+$/, '') || title;
+  }
+
+  // EXAKT REPLIZIERTE PYTHON YEAR EXTRACTION
+  function extractYearFromEntry(e) {
+    const maxYear = new Date().getFullYear() + 1;
+    const title = e.title || '';
+    let m = title.match(/\b(19\d{2}|20\d{2})\b/);
+    if (m) {
+      let yr = parseInt(m[1]);
+      if (yr <= maxYear) return String(yr);
+    }
+    const text = (e.description || '') + ' ' + (e.topic || '');
+    m = text.match(/\b(19\d{2}|20\d{2})\b/);
+    if (m) {
+      let foundYear = parseInt(m[1]);
+      if (foundYear <= maxYear) return String(foundYear);
+    }
+    return 'None';
   }
 
   function getLatestUpdateSlot() {
@@ -406,7 +429,6 @@
       }
     }
 
-    // TURBO: Scanner nicht blockierend anzeigen oder sofort freigeben
     document.getElementById('scanner')?.classList.remove('hidden');
     const seenUrls = new Set();
     const seenTitles = new Set();
@@ -426,20 +448,37 @@
           const title = m.title || '';
           const channel = m.channel || '';
           if (!url || !title) return;
-          if (channel.toLowerCase().includes('kika') || channel.toLowerCase().includes('zdf-tivi')) return;
-          if (title.toLowerCase().includes('zdf-tivi') || title.toLowerCase().includes('tivi')) return;
-          if (/audiodeskription|audio description|ad version|hörfilm|deskription|barrierefrei/.test(title.toLowerCase())) return;
-          if (title.includes('(Englisch)') || title.includes('(zho)') || title.includes('(Originalversion mit Untertitel)') || title.includes('(mit Untertitel)') || title.includes('(Originalversion)')) return;
-          if (/\b(folge|staffel|episode|ep\.|teil)\b/i.test(title)) return;
-          if (/\d+(\s*[\/\-]\s*\d+)?/.test(title)) return;
-          if (/\b\d{1,2}\/\d{1,2}\b/.test(title)) return;
+
+          const channelLower = channel.toLowerCase();
+          if (['kika', 'arte.fr', 'zdf-tivi'].some(c => channelLower.includes(c))) return;
+
+          const titleLower = title.toLowerCase();
+          if (titleLower.includes('zdf-tivi') || titleLower.includes('tivi') || titleLower === 'nö') return;
+
+          const skipWords = [
+            'audiodeskription', 'audio description', 'hörfilm', 'deskription', 'barrierefrei', 'ad version', 'gebärdensprache',
+            '(englisch)', '(französisch)', '(zho)', '(jpn)', '(originalversion mit untertitel)', '(mit untertitel)', '(originalversion)'
+          ];
+          if (skipWords.some(w => titleLower.includes(w))) return;
+
+          const skipRegexes = [
+            /\b(folge|serie|staffel|episode|ep\.|teil)\b/i,
+            /\(\d+(\s*[\/\-]\s*\d+)?\)/,
+            /\b\d{1,2}\/\d{1,2}\b/
+          ];
+          if (skipRegexes.some(rx => rx.test(title))) return;
+
           if (seenUrls.has(url)) return;
-          const { cleanName, year } = cleanTitle(title);
+          const cleanName = cleanTitle(title);
+          const year = extractYearFromEntry(m);
           if (!cleanName) return;
+          
           const normTitle = cleanName.toLowerCase().trim();
           if (normTitle === 'nö') return;
           if (seenTitles.has(normTitle)) return;
+
           if (m.duration < 4680) return;
+
           seenUrls.add(url);
           seenTitles.add(normTitle);
           tempResults.push({
@@ -460,17 +499,17 @@
           });
         });
       });
+      
       const sortedByTime = [...tempResults].sort((a, b) => b.timestamp - a.timestamp);
       const newestUrls = new Set(sortedByTime.slice(0, 100).map(m => m.video_url));
       tempResults.forEach(m => { if (newestUrls.has(m.video_url)) { m.isNew = true; } });
       allMovies = tempResults.sort((a, b) => a.title.localeCompare(b.title));
       
-      // TURBO: UI sofort freigeben!
+
       document.getElementById('scanner')?.classList.add('hidden');
       renderGenreLeiste();
       filterResults();
 
-      // TMDB Hydrierung im Hintergrund starten ohne Blockade
       hydrateWithTMDBParallel();
       localStorage.setItem('gez_kino_last_fetch', Date.now().toString());
       localStorage.setItem('gez_kino_movies_cache', JSON.stringify(allMovies));
@@ -589,17 +628,20 @@
     }
   }
 
+  // EXAKT GEALIGNETE PYTHON TMDb MATCHER MIT BESCHREIBUNG-OVERLAP & TV-FALLBACK
   async function hydrateWithTMDBParallel() {
-    const CONCURRENCY_LIMIT = 15; // Erhöht für Turbo-Speed
+    const CONCURRENCY_LIMIT = 15;
     let movieIndex = 0;
     async function worker() {
       while (movieIndex < allMovies.length) {
         const currentIdx = movieIndex++;
         const movie = allMovies[currentIdx];
         if (!movie) break;
-        let movieUrl = `https://api.themoviedb.org/3/search/movie?api_key=${TMDB_API_KEY}&query=${encodeURIComponent(movie.search)}&language=de-DE&include_adult=false`;
-        if (movie.year !== 'None') movieUrl += `&year=${movie.year}`;
+        
         try {
+          let movieUrl = `https://api.themoviedb.org/3/search/movie?api_key=${TMDB_API_KEY}&query=${encodeURIComponent(movie.search)}&language=de-DE&include_adult=false`;
+          if (movie.year && movie.year !== 'None') movieUrl += `&year=${movie.year}`;
+          
           let res = await fetch(movieUrl);
           if (res.status === 429) {
             movieIndex--;
@@ -607,45 +649,76 @@
             continue;
           }
           let data = await res.json();
-          let tmdb = null;
-          let isTvShow = false;
-          if ((!data.results || data.results.length === 0) && movie.year !== 'None') {
+          let results = data.results || [];
+          
+          if (results.length === 0 && movie.year && movie.year !== 'None') {
             let fallbackUrl = `https://api.themoviedb.org/3/search/movie?api_key=${TMDB_API_KEY}&query=${encodeURIComponent(movie.search)}&language=de-DE&include_adult=false`;
             const fallbackRes = await fetch(fallbackUrl);
-            data = await fallbackRes.json();
+            const fallbackData = await fallbackRes.json();
+            results = fallbackData.results || [];
           }
-          if (data.results && data.results.length > 0) {
-            tmdb = data.results[0];
-          }
-          if (!tmdb) {
+
+          let isTvShow = false;
+          if (results.length === 0) {
             let tvUrl = `https://api.themoviedb.org/3/search/tv?api_key=${TMDB_API_KEY}&query=${encodeURIComponent(movie.search)}&language=de-DE&include_adult=false`;
-            if (movie.year !== 'None') tvUrl += `&first_air_date_year=${movie.year}`;
+            if (movie.year && movie.year !== 'None') tvUrl += `&first_air_date_year=${movie.year}`;
             const tvRes = await fetch(tvUrl);
             const tvData = await tvRes.json();
-            if (tvData.results && tvData.results.length > 0) {
-              tmdb = tvData.results[0];
-              isTvShow = true;
-            }
+            results = tvData.results || [];
+            if (results.length > 0) isTvShow = true;
           }
-          if (tmdb) {
+
+          if (results.length > 0) {
+            // Intelligentere Auswahl über Text-Overlap mit Mediathek-Beschreibung (exakt wie in Python)
+            let validResults = [];
+            const currentYearNum = new Date().getFullYear() + 1;
+            for (let resItem of results) {
+              const rd = resItem.release_date || resItem.first_air_date || '';
+              const resYear = rd && rd.slice(0, 4).match(/^\d{4}$/) ? parseInt(rd.slice(0, 4)) : 0;
+              if ((!movie.year || movie.year === 'None') && resYear > currentYearNum) continue;
+              validResults.push(resItem);
+            }
+            if (validResults.length === 0) validResults = results;
+
+            let best = null;
+            let descLower = (movie.mediathek_desc || '').toLowerCase();
+            if (descLower) {
+              let highestMatches = -1;
+              for (let resItem of validResults) {
+                let overview = (resItem.overview || '').toLowerCase();
+                let matches = 0;
+                let words = descLower.split(/\s+/).filter(w => w.length > 5);
+                for (let w of words.slice(0, 20)) {
+                  if (overview.includes(w)) matches++;
+                }
+                if (matches > highestMatches) {
+                  highestMatches = matches;
+                  best = resItem;
+                }
+              }
+            }
+            if (!best) best = validResults[0];
+
             const mediaType = isTvShow ? 'tv' : 'movie';
-            let creditsUrl = `https://api.themoviedb.org/3/${mediaType}/${tmdb.id}?api_key=${TMDB_API_KEY}&language=de-DE&append_to_response=credits`;
+            let creditsUrl = `https://api.themoviedb.org/3/${mediaType}/${best.id}?api_key=${TMDB_API_KEY}&language=de-DE&append_to_response=credits`;
             const detailsRes = await fetch(creditsUrl);
             const detailsData = await detailsRes.json();
-            movie.plot = tmdb.overview || movie.mediathek_desc || 'Keine Beschreibung verfügbar.';
-            movie.rating = tmdb.vote_average ? tmdb.vote_average.toFixed(1) : 'N/A';
-            movie.thumb = tmdb.poster_path ? `https://image.tmdb.org/t/p/w342${tmdb.poster_path}` : 'placeholder.png';
+            
+            movie.plot = best.overview || movie.mediathek_desc || 'Keine Beschreibung verfügbar.';
+            movie.rating = best.vote_average ? best.vote_average.toFixed(1) : 'N/A';
+            movie.thumb = best.poster_path ? `https://image.tmdb.org/t/p/w342${best.poster_path}` : 'placeholder.png';
+            
             if (detailsData.credits) {
               const dir = detailsData.credits.crew.find(c => c.job === 'Director' || c.job === 'Executive Producer');
               movie.director = dir ? dir.name : '';
               movie.actors = detailsData.credits.cast.slice(0, 3).map(a => a.name);
             }
-            const dateStr = tmdb.release_date || tmdb.first_air_date;
-            if (dateStr && movie.year === 'None') {
+            const dateStr = best.release_date || best.first_air_date;
+            if (dateStr && (!movie.year || movie.year === 'None')) {
               movie.year = dateStr.split('-')[0];
             }
-            if (tmdb.genre_ids) {
-              movie.genres_list = tmdb.genre_ids.map(id => GENRES_MAP[id]).filter(g => g !== undefined);
+            if (best.genre_ids) {
+              movie.genres_list = best.genre_ids.map(id => GENRES_MAP[id]).filter(g => g !== undefined);
               if (movie.genres_list.length === 0) movie.genres_list = ['Sonstige'];
             }
             if (currentView === 'mediathek') {
@@ -1380,8 +1453,11 @@
     }
   });
 
+  document.appendEventListener = document.addEventListener;
   document.addEventListener('DOMContentLoaded', () => {
     updateThemeUI();
     fetchAllData();
   });
 </script>
+</body>
+</html>
