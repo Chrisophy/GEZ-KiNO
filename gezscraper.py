@@ -304,6 +304,11 @@ def get_search_queries(title, description=''):
     if title:
         queries.append(title)
         
+        # Spezielle Aliase für bekannte Problemfälle (z.B. "22 Kugeln" -> Originaltitel "L'immortel")
+        lower_t = title.lower()
+        if '22 kugeln' in lower_t:
+            queries.extend(['L\'immortel', '22 Bullets'])
+        
         for pm in re.findall(r'[(\[](.*?[^()\[\]]*?)[)\]]', title):
             pm_clean = pm.strip()
             if pm_clean and pm_clean not in queries and not re.match(r'^(?:19|20)\d{2}$', pm_clean):
@@ -398,8 +403,6 @@ def apply_match(movie, media_type, match):
 
     genre_ids = [g['id'] for g in details.get('genres', []) if 'id' in g] or cand.get('genre_ids', [])
     
-    # STRENGER ANIMATIONS-SCHUTZ:
-    # Entferne Genre 16 (Animation) strikt, es sei denn, der Titel oder die Beschreibung erwähnen explizit Animation/Zeichentrick/Anime.
     if 16 in genre_ids:
         full_text = (movie['title'] + ' ' + movie['mediathek_desc'] + ' ' + (overview or '')).lower()
         animation_keywords = ['animation', 'animiert', 'zeichentrick', 'anime', 'cartoon', 'computeranimiert']
