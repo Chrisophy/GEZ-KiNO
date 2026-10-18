@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/init/env python3
 # -*- coding: utf-8 -*-
 import os
 import json
@@ -122,16 +122,22 @@ def choose_best_result(results, movie, media_type):
 
 def get_search_queries(title):
     queries = [title]
-    # Automatische Extraktion des Kern-Titels bei Trennzeichen wie Bindestrich oder Doppelpunkt
     for sep in [' - ', ' – ', ' — ', ': ', ' / ']:
         if sep in title:
             base_part = title.split(sep)[0].strip()
             if base_part and base_part not in queries:
-                queries.insert(0, base_part) # Kern-Titel ganz nach vorne priorisieren
+                queries.insert(0, base_part)
     return queries
 
 def hydrate_movie(movie):
     global processed_count
+    
+    # Wenn der Film bereits vollständig hydriert ist (z.B. aus dem Cache oder manuell gepflegt), überspringen wir TMDB
+    if movie.get('tmdb_id') and movie.get('thumb') and movie.get('thumb') != 'placeholder.png':
+        with print_lock:
+            processed_count += 1
+        return movie
+
     try:
         raw_search = movie['search'] or movie['title']
         search_queries = get_search_queries(raw_search)
@@ -139,7 +145,6 @@ def hydrate_movie(movie):
         tmdb = None
         is_tv = False
 
-        # Versuche alle generierten Suchvarianten (angefangen beim Kern-Titel)
         for query_str in search_queries:
             q_encoded = urllib.parse.quote(query_str)
             movie_url = f"https://api.themoviedb.org/3/search/movie?api_key={TMDB_API_KEY}&query={q_encoded}&language=de-DE&include_adult=false"
@@ -156,7 +161,6 @@ def hydrate_movie(movie):
             if tmdb:
                 break
 
-            # Fallback ohne Jahr bei dieser Variante
             if not tmdb and movie['year'] not in ['None', 'LIVE']:
                 fallback_url = f"https://api.themoviedb.org/3/search/movie?api_key={TMDB_API_KEY}&query={q_encoded}&language=de-DE&include_adult=false"
                 f_res = requests.get(fallback_url, timeout=10)
@@ -165,7 +169,6 @@ def hydrate_movie(movie):
                     if tmdb:
                         break
 
-        # Wenn immer noch nichts gefunden, als TV-Serie versuchen
         if not tmdb:
             for query_str in search_queries:
                 q_encoded = urllib.parse.quote(query_str)
@@ -216,16 +219,18 @@ def hydrate_movie(movie):
             movie['tmdb_id'] = tmdb.get('id')
             movie['tmdb_type'] = media_type
         else:
-            movie['plot'] = movie['mediathek_desc'] or 'Keine Beschreibung verfügbar.'
-            movie['rating'] = 'N/A'
-            movie['thumb'] = 'placeholder.png'
+            if not movie.get('plot') or movie['plot'] == 'Keine Beschreibung verfügbar.':
+                movie['plot'] = movie['mediathek_desc'] or 'Keine Beschreibung verfügbar.'
+            if not movie.get('rating'):
+                movie['rating'] = 'N/A'
+            if not movie.get('thumb'):
+                movie['thumb'] = 'placeholder.png'
 
     except Exception as e:
         with print_lock:
             print(f"Fehler bei TMDB für {movie['search']}: {e}")
-        movie['plot'] = movie['mediathek_desc'] or 'Keine Beschreibung verfügbar.'
-        movie['rating'] = 'N/A'
-        movie['thumb'] = 'placeholder.png'
+        if not movie.get('plot'):
+            movie['plot'] = movie['mediathek_desc'] or 'Keine Beschreibung verfügbar.'
 
     with print_lock:
         processed_count += 1
@@ -235,6 +240,19 @@ def hydrate_movie(movie):
     return movie
 
 def main():
+    # Bestehende movies.json einlesen (als Cache nutzen)
+    existing_movies = {}
+    if os.path.exists('movies.json'):
+        try:
+            with open('movies.json', 'r', encoding='utf-8') as f:
+                cached_list = json.load(f)
+                for m in cached_list:
+                    if 'video_url' in m:
+                        existing_movies[m['video_url']] = m
+            print(f"{len(existing_movies)} Filme aus bestehender movies.json geladen (Cache aktiv).")
+        except Exception as e:
+            print(f"Konnte bestehende movies.json nicht lesen: {e}")
+
     seen_urls = set()
     seen_titles = set()
     temp_results = []
@@ -258,7 +276,7 @@ def main():
                 if not url or not title:
                     continue
                 chan_low = channel.lower()
-                if 'kika' in chan_low or 'zdf-tivi' in chan_low or 'tivi' in title.lower():
+                if 'kika' in chan_low || 'zdf-tivi' in chan_low || 'tivi' in title.lower():
                     continue
                 if re.search(r'audiodeskription|audio description|ad version|hörfilm|deskription|barrierefrei', title.lower()):
                     continue
@@ -285,22 +303,31 @@ def main():
                 seen_urls.add(url)
                 seen_titles.add(norm_title)
 
-                temp_results.append({
-                    "title": clean_name,
-                    "search": clean_name,
-                    "year": year,
-                    "video_url": url,
-                    "plot": m.get('description', 'Keine Beschreibung verfügbar.'),
-                    "mediathek_desc": m.get('description', ''),
-                    "director": "",
-                    "actors": [],
-                    "rating": "N/A",
-                    "thumb": "placeholder.png",
-                    "genres_list": ["Sonstige"],
-                    "channel": channel,
-                    "timestamp": m.get('timestamp', 0),
-                    "isNew": False
-                })
+                # Prüfen, ob der Film schon im Cache existiert -> Daten übernehmen!
+                if url in existing_movies:
+                    movie_entry = existing_movies[url]
+                    # Stream-URL und Timestamp sicherheitshalber aktualisieren
+                    movie_entry['video_url'] = url
+                    movie_entry['timestamp'] = m.get('timestamp', 0)
+                else:
+                    movie_entry = {
+                        "title": clean_name,
+                        "search": clean_name,
+                        "year": year,
+                        "video_url": url,
+                        "plot": m.get('description', 'Keine Beschreibung verfügbar.'),
+                        "mediathek_desc": m.get('description', ''),
+                        "director": "",
+                        "actors": [],
+                        "rating": "N/A",
+                        "thumb": "placeholder.png",
+                        "genres_list": ["Sonstige"],
+                        "channel": channel,
+                        "timestamp": m.get('timestamp', 0),
+                        "isNew": False
+                    }
+
+                temp_results.append(movie_entry)
         except Exception as e:
             print(f"Fehler bei Query {q}: {e}")
 
