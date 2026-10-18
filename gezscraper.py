@@ -1,64 +1,121 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
 import os
+import re
 import json
-import requests
-import urllib.parse
+import time
+import threading
+import unicodedata
 from datetime import datetime
 from concurrent.futures import ThreadPoolExecutor, as_completed
-import threading
-import time
 
-TMDB_API_KEY = '60b3801a9e76b5706ee2a432f06423e6'
+import requests
+
+TMDB_API_KEY = os.environ.get('TMDB_API_KEY', '60b3801a9e76b5706ee2a432f06423e6')
+TMDB_BASE = 'https://api.themoviedb.org/3'
 MEDIATHEK_URL = 'https://mediathekviewweb.de/api/query'
-
-GENRES_MAP = {
-    28: 'Action', 12: 'Abenteuer', 16: 'Animation', 35: 'Komödie', 80: 'Krimi', 99: 'Doku',
-    18: 'Drama', 10751: 'Familie', 14: 'Fantasy', 36: 'Historie', 27: 'Horror', 10402: 'Musik', 
-    9648: 'Mystery', 10749: 'Romanze', 878: 'Sci-Fi', 10770: 'TV-Film', 53: 'Thriller', 
-    10752: 'Krieg', 37: 'Western'
-}
 
 QUERIES = ['Spielfilm', 'Spielfilme', 'Spielfilm-Highlights', 'Filme', 'Kino - Filme', 'Filme in der ARD']
 
+MIN_DURATION = 4680      
+NEW_COUNT = 100         
+MAX_WORKERS = 8          
+
+PRE_THRESHOLD = 35       
+ACCEPT_THRESHOLD = 50    
+GENRES_MAP = {
+    28: 'Action', 12: 'Abenteuer', 16: 'Animation', 35: 'Komödie', 80: 'Krimi', 99: 'Doku',
+    18: 'Drama', 10751: 'Familie', 14: 'Fantasy', 36: 'Historie', 27: 'Horror', 10402: 'Musik',
+    9648: 'Mystery', 10749: 'Romanze', 878: 'Sci-Fi', 10770: 'TV-Film', 53: 'Thriller',
+    10752: 'Krieg', 37: 'Western',
+    10759: 'Action', 10765: 'Sci-Fi', 10768: 'Krieg'
+}
+
+CURRENT_YEAR = datetime.now().year
+
 print_lock = threading.Lock()
+details_lock = threading.Lock()
+details_cache = {}
 processed_count = 0
+_thread_local = threading.local()
+
+
+TITLE_MARKERS = [
+    ' - Spielfilm', ' – Spielfilm', ' - Spiellfilm', ' – Spiellfilm', ', Spielfilm',
+    ' Österreich', ', Deutschland', ', Schweiz', ', Belgien', ', Frankreich', ', Spanien',
+    ', Niederlande', ', Irland', ', Luxemburg', ', Italien', ', USA', ', Kosovo',
+    ', Großbritannien', ', Tschechische Republik', ', Norwegen', ', BRD', ', Dänemark',
+    ', Australien', ', Schweden', ', Video:', ', Präsentiert:', ', Kurzfilm', ' Fernsehfilm',
+    ' Heimatfilm', ' - Thriller', ' - Drama'
+]
+
+PAREN_YEAR_RE = re.compile(r'[(\[][^()\[\]]*?\b((?:19|20)\d{2})\b[^()\[\]]*?[)\]]')
+TAIL_YEAR_RE = re.compile(r'[,\-–—|(]\s*[^,\-–—|()]*?\b((?:19|20)\d{2})\b\s*\)?\s*$')
+TAIL_YEAR_STRIP_RE = re.compile(r'\s*[,\-–—|]\s*(?:[A-Za-zÄÖÜäöüß./ ]{0,30}?\s)?(?:19|20)\d{2}\s*$')
+COUNTRIES = (r'Deutschland|USA|Österreich|Schweiz|Frankreich|Großbritannien|Italien|Spanien|Kanada|'
+             r'Australien|Belgien|Dänemark|Schweden|Norwegen|Niederlande|Polen|Tschechien|Irland|'
+             r'Luxemburg|BRD|DDR')
+DESC_YEAR_RES = [
+    re.compile(r'(?:Produktionsjahr|Produktion|Jahr)\s*:?\s*((?:19|20)\d{2})', re.IGNORECASE),
+    re.compile(r'\(\s*[A-Za-zÄÖÜäöüß/ ,.\-]{2,60}?[,\s]\s*((?:19|20)\d{2})\s*\)'),
+    re.compile(r'\b(?:' + COUNTRIES + r')\s*,?\s*((?:19|20)\d{2})\b'),
+]
+
+
+def valid_year(y):
+    return 1900 <= y <= CURRENT_YEAR + 1
+
+
+def extract_year(title, description):
+    for m in PAREN_YEAR_RE.finditer(title or ''):
+        y = int(m.group(1))
+        if valid_year(y):
+            return y
+    m = TAIL_YEAR_RE.search(title or '')
+    if m and valid_year(int(m.group(1))):
+        return int(m.group(1))
+    for rx in DESC_YEAR_RES:
+        m = rx.search(description or '')
+        if m and valid_year(int(m.group(1))):
+            return int(m.group(1))
+    return None
+
 
 def clean_title(title):
-    import re
-    year_match = re.search(r'(\d{4})', title)
-    year = year_match.group(1) if year_match else 'None'
-    
     clean = title
-    markers = [
-        ' - Spielfilm', ' – Spielfilm', ' - Spiellfilm', ' – Spiellfilm', ', Spielfilm', 
-        ' Österreich', ', Deutschland', ', Schweiz', ', Belgien', ', Frankreich', ', Spanien',
-        ', Niederlande', ', Irland', ', Luxemburg', ', Italien', ', USA', ', Kosovo', 
-        ', Großbritannien', ', Tschechische Republik', ', Norwegen', ', BRD', ', Dänemark', 
-        ', Australien', ', Schweden', ', Video:', ', Präsentiert:', ', Kurzfilm', ' Fernsehfilm', 
-        ' Heimatfilm', ' - Thriller', ' - Drama', '«', '»'
-    ]
 
-    for marker in markers:
+    if '«' in clean:
+        before = clean.split('«')[0].strip(' \t,.-–—:')
+        inner = re.search(r'«(.+?)»', clean)
+        clean = inner.group(1) if (not before and inner) else before
+
+    clean = TAIL_YEAR_STRIP_RE.sub('', clean)
+
+    for marker in TITLE_MARKERS:
         clean = clean.split(marker)[0]
 
     clean = re.sub(r'^(Spielfilm|Spiellfilm):\s*', '', clean, flags=re.IGNORECASE)
     clean = clean.replace('–', '-').replace('—', '-')
     clean = re.sub(r'\(.*?\)', '', clean)
-    clean = clean.strip(' \t,.\-_–—»')
+    clean = clean.strip(' \t,.\\-_–—»')
+    return clean
 
-    return clean, year
 
 def normalize_title(title):
-    import unicodedata
     if not title:
         return ''
-    t = title.lower()
+    t = title.lower().replace('ß', 'ss')
     t = unicodedata.normalize('NFD', t)
     t = ''.join(c for c in t if unicodedata.category(c) != 'Mn')
     t = t.replace('&', ' und ')
-    import re
     t = re.sub(r'[^a-z0-9]+', ' ', t).strip()
     t = re.sub(r'\s+', ' ', t)
     return t
+
+
+def word_set(text):
+    return {w for w in normalize_title(text).split() if len(w) > 5}
+
 
 def score_title(source, candidate):
     src = normalize_title(source)
@@ -86,215 +143,440 @@ def score_title(source, candidate):
         score = max(score, 45)
     return score
 
-def choose_best_result(results, movie, media_type):
+
+def year_score(src_year, cand_date):
+    if not src_year or not cand_date:
+        return 0
+    try:
+        cand_year = int(cand_date[:4])
+    except ValueError:
+        return 0
+    diff = abs(src_year - cand_year)
+    if diff == 0:
+        return 30
+    if diff == 1:
+        return 15
+    if diff == 2:
+        return -10
+    return -55
+
+
+def get_session():
+    s = getattr(_thread_local, 'session', None)
+    if s is None:
+        s = requests.Session()
+        _thread_local.session = s
+    return s
+
+
+def tmdb_get(path, **params):
+    params['api_key'] = TMDB_API_KEY
+    url = TMDB_BASE + path
+    for attempt in range(4):
+        try:
+            res = get_session().get(url, params=params, timeout=10)
+        except requests.RequestException:
+            time.sleep(1 + attempt)
+            continue
+        if res.status_code == 200:
+            try:
+                return res.json()
+            except ValueError:
+                return {}
+        if res.status_code == 429:
+            try:
+                wait = float(res.headers.get('Retry-After', 2))
+            except ValueError:
+                wait = 2
+            time.sleep(min(wait, 10))
+            continue
+        if 500 <= res.status_code < 600:
+            time.sleep(1 + attempt)
+            continue
+        return {}
+    return {}
+
+
+def tmdb_search(media_type, query, year=None):
+    params = {'query': query, 'language': 'de-DE', 'include_adult': 'false'}
+    if year:
+        params['year' if media_type == 'movie' else 'first_air_date_year'] = year
+    return tmdb_get(f'/search/{media_type}', **params).get('results', [])
+
+
+def tmdb_details(media_type, tmdb_id):
+    key = (media_type, tmdb_id)
+    with details_lock:
+        if key in details_cache:
+            return details_cache[key]
+    data = tmdb_get(f'/{media_type}/{tmdb_id}', language='de-DE', append_to_response='credits')
+    with details_lock:
+        details_cache[key] = data
+    return data
+
+
+def tmdb_runtime(details, media_type):
+    if media_type == 'movie':
+        return details.get('runtime') or 0
+    runs = details.get('episode_run_time') or []
+    if runs:
+        return runs[0]
+    last = details.get('last_episode_to_air') or {}
+    return last.get('runtime') or 0
+
+
+def prescore(cand, movie, media_type, desc_words):
+    title_key = 'name' if media_type == 'tv' else 'title'
+    orig_key = 'original_name' if media_type == 'tv' else 'original_title'
+    src = movie['search']
+
+    score = max(score_title(src, cand.get(title_key, '')),
+                score_title(src, cand.get(orig_key, '')))
+    if score < 20:
+        return 0
+
+    date = cand.get('first_air_date' if media_type == 'tv' else 'release_date', '')
+    score += year_score(movie['year_num'], date)
+
+    overview_words = word_set(cand.get('overview', ''))
+    if desc_words and overview_words:
+        score += min(len(desc_words & overview_words) * 1.5, 15)
+    return score
+
+
+def detail_bonus(details, movie, media_type):
+    if not details:
+        return 0
+    bonus = 0
+
+    runtime = tmdb_runtime(details, media_type)
+    duration = movie['duration_min']
+    if runtime and duration:
+        diff = abs(runtime - duration)
+        if diff <= 10:
+            bonus += 10
+        elif diff <= 20:
+            bonus += 4
+        elif diff > 40:
+            bonus -= 12
+
+    desc_norm = ' ' + normalize_title(movie['mediathek_desc']) + ' '
+    if desc_norm.strip():
+        credits = details.get('credits', {})
+        names = [c.get('name', '') for c in credits.get('cast', [])[:15]]
+        names += [c.get('name', '') for c in credits.get('crew', []) if c.get('job') == 'Director']
+        hits = 0
+        for name in names:
+            nn = normalize_title(name)
+            if len(nn.split()) >= 2 and f' {nn} ' in desc_norm:
+                hits += 1
+        bonus += min(hits * 6, 15)
+
+    return bonus
+
+
+def pick_best(results, movie, media_type):
     if not results:
         return None
-    source_title = movie['search']
-    source_year = movie['year'] if movie['year'] not in ['None', 'LIVE'] else ''
-    m_desc = movie['mediathek_desc'].lower()
+    desc_words = word_set(movie['mediathek_desc'])
 
-    scored = []
-    for cand in results:
-        cand_title = cand.get('name' if media_type == 'tv' else 'title', '')
-        cand_orig = cand.get('original_name' if media_type == 'tv' else 'original_title', '')
-        score = max(score_title(source_title, cand_title), score_title(source_title, cand_orig))
+    pre = []
+    for cand in results[:10]:
+        s = prescore(cand, movie, media_type, desc_words)
+        if s >= PRE_THRESHOLD:
+            pre.append((s, cand))
+    if not pre:
+        return None
 
-        date = cand.get('first_air_date' if media_type == 'tv' else 'release_date', '')
-        cand_year = date[:4] if date else ''
-        if source_year and cand_year:
-            if source_year == cand_year:
-                score += 30
-            else:
-                score -= 35
+    pre.sort(key=lambda x: x[0], reverse=True)
+    top = pre[:3]
+    if len(top) == 1 or top[0][0] - top[1][0] >= 25:
+        top = top[:1]
 
-        overview = cand.get('overview', '').lower()
-        if m_desc and overview:
-            words = [w for w in overview.split() if len(w) > 5]
-            matches = sum(1 for w in words if w in m_desc)
-            score += min(matches * 0.5, 8)
+    best = None
+    for s, cand in top:
+        details = tmdb_details(media_type, cand['id'])
+        total = s + detail_bonus(details, movie, media_type)
+        if best is None or total > best[0]:
+            best = (total, cand, details)
 
-        scored.append((cand, score))
+    if best and best[0] >= ACCEPT_THRESHOLD:
+        return best
+    return None
 
-    scored.sort(key=lambda x: x[1], reverse=True)
-    best = scored[0]
-    return best[0] if best[1] >= 50 else None
+
+def find_tmdb_match(movie):
+    query = movie['search'] or movie['title']
+    year = movie['year_num']
+
+    match = pick_best(tmdb_search('movie', query), movie, 'movie')
+    if match:
+        return 'movie', match
+
+    if year:
+        match = pick_best(tmdb_search('movie', query, year), movie, 'movie')
+        if match:
+            return 'movie', match
+
+    match = pick_best(tmdb_search('tv', query), movie, 'tv')
+    if match:
+        return 'tv', match
+    return None
+
+
+def apply_match(movie, media_type, match):
+    _, cand, details = match
+
+    overview = details.get('overview') or cand.get('overview')
+    if overview:
+        movie['plot'] = overview
+
+    vote = details.get('vote_average') or cand.get('vote_average')
+    if vote:
+        movie['rating'] = f"{vote:.1f}"
+
+    poster = details.get('poster_path') or cand.get('poster_path')
+    if poster:
+        movie['thumb'] = f"https://image.tmdb.org/t/p/w342{poster}"
+
+    credits = details.get('credits', {})
+    crew = credits.get('crew', [])
+    director = next((c['name'] for c in crew if c.get('job') == 'Director'), '')
+    if not director:
+        director = next((c['name'] for c in details.get('created_by', []) if c.get('name')), '')
+    if not director:
+        director = next((c['name'] for c in crew if c.get('job') == 'Executive Producer'), '')
+    movie['director'] = director
+    movie['actors'] = [a['name'] for a in credits.get('cast', [])[:3]]
+
+    date_str = (details.get('release_date') or details.get('first_air_date')
+                or cand.get('release_date') or cand.get('first_air_date'))
+    if date_str and not movie['year_num']:
+        try:
+            y = int(date_str[:4])
+            if valid_year(y):
+                movie['year_num'] = y
+        except ValueError:
+            pass
+
+    genre_ids = [g['id'] for g in details.get('genres', []) if 'id' in g] or cand.get('genre_ids', [])
+    if 16 in genre_ids:
+        lower_title = movie['title'].lower()
+        lower_overview = (overview or '').lower()
+        lower_desc = movie['mediathek_desc'].lower()
+        real_keywords = ['tatort', 'polizeiruf', 'in aller freundschaft', 'rosenheim-cops', 'krimi',
+                         'fernsehfilm', 'kommissar', 'drama', 'spielfilm']
+        if any(kw in lower_title or kw in lower_overview or kw in lower_desc for kw in real_keywords):
+            genre_ids = [gid for gid in genre_ids if gid != 16]
+
+    genres = []
+    for gid in genre_ids:
+        name = GENRES_MAP.get(gid)
+        if name and name not in genres:
+            genres.append(name)
+    if genre_ids:
+        movie['genres_list'] = genres or ['Sonstige']
+
+    movie['tmdb_id'] = cand.get('id')
+    movie['tmdb_type'] = media_type
+
 
 def hydrate_movie(movie):
     global processed_count
     try:
-        query = urllib.parse.quote(movie['search'] or movie['title'])
-        movie_url = f"https://api.themoviedb.org/3/search/movie?api_key={TMDB_API_KEY}&query={query}&language=de-DE&include_adult=false"
-        if movie['year'] not in ['None', 'LIVE']:
-            movie_url += f"&year={movie['year']}"
-
-        res = requests.get(movie_url, timeout=10)
-        if res.status_code == 429:
-            time.sleep(2)
-            res = requests.get(movie_url, timeout=10)
-
-        data = res.json() if res.status_code == 200 else {}
-        tmdb = choose_best_result(data.get('results', []), movie, 'movie')
-        is_tv = False
-
-        if not tmdb and movie['year'] not in ['None', 'LIVE']:
-            fallback_url = f"https://api.themoviedb.org/3/search/movie?api_key={TMDB_API_KEY}&query={query}&language=de-DE&include_adult=false"
-            f_res = requests.get(fallback_url, timeout=10)
-            if f_res.status_code == 200:
-                tmdb = choose_best_result(f_res.json().get('results', []), movie, 'movie')
-
-        if not tmdb:
-            tv_url = f"https://api.themoviedb.org/3/search/tv?api_key={TMDB_API_KEY}&query={query}&language=de-DE&include_adult=false"
-            if movie['year'] not in ['None', 'LIVE']:
-                tv_url += f"&first_air_date_year={movie['year']}"
-            tv_res = requests.get(tv_url, timeout=10)
-            if tv_res.status_code == 200:
-                tmdb = choose_best_result(tv_res.json().get('results', []), movie, 'tv')
-                is_tv = bool(tmdb)
-
-        if tmdb:
-            genre_ids = tmdb.get('genre_ids', [])
-            if 16 in genre_ids:
-                lower_title = movie['title'].lower()
-                lower_overview = tmdb.get('overview', '').lower()
-                real_keywords = ['tatort', 'polizeiruf', 'in aller freundschaft', 'rosenheim-cops', 'krimi', 'fernsehfilm', 'kommissar', 'drama', 'spielfilm']
-                if any(kw in lower_title or kw in lower_overview or kw in movie['mediathek_desc'].lower() for kw in real_keywords):
-                    genre_ids = [gid for gid in genre_ids if gid != 16]
-
-            media_type = 'tv' if is_tv else 'movie'
-            credits_url = f"https://api.themoviedb.org/3/{media_type}/{tmdb['id']}?api_key={TMDB_API_KEY}&language=de-DE&append_to_response=credits"
-            d_res = requests.get(credits_url, timeout=10)
-            d_data = d_res.json() if d_res.status_code == 200 else {}
-
-            movie['plot'] = tmdb.get('overview') or movie['mediathek_desc'] or 'Keine Beschreibung verfügbar.'
-            vote_avg = tmdb.get('vote_average')
-            movie['rating'] = f"{vote_avg:.1f}" if vote_avg else 'N/A'
-            poster = tmdb.get('poster_path')
-            movie['thumb'] = f"https://image.tmdb.org/t/p/w342{poster}" if poster else 'placeholder.png'
-
-            credits = d_data.get('credits', {})
-            director = next((c['name'] for c in credits.get('crew', []) if c.get('job') in ['Director', 'Executive Producer']), '')
-            movie['director'] = director
-            movie['actors'] = [a['name'] for a in credits.get('cast', [])[:3]]
-
-            date_str = tmdb.get('release_date') or tmdb.get('first_air_date')
-            if date_str and movie['year'] == 'None':
-                movie['year'] = date_str.split('-')[0]
-
-            if genre_ids:
-                movie['genres_list'] = [GENRES_MAP[gid] for gid in genre_ids if gid in GENRES_MAP]
-                if not movie['genres_list']:
-                    movie['genres_list'] = ['Sonstige']
-        else:
-            movie['plot'] = movie['mediathek_desc'] or 'Keine Beschreibung verfügbar.'
-            movie['rating'] = 'N/A'
-            movie['thumb'] = 'placeholder.png'
-
+        found = find_tmdb_match(movie)
+        if found:
+            apply_match(movie, found[0], found[1])
     except Exception as e:
         with print_lock:
             print(f"Fehler bei TMDB für {movie['search']}: {e}")
-        movie['plot'] = movie['mediathek_desc'] or 'Keine Beschreibung verfügbar.'
-        movie['rating'] = 'N/A'
-        movie['thumb'] = 'placeholder.png'
 
     with print_lock:
         processed_count += 1
         if processed_count % 50 == 0:
             print(f"Fortschritt: {processed_count} verarbeitet...")
-
     return movie
 
-def main():
-    seen_urls = set()
-    seen_titles = set()
-    temp_results = []
 
-    print("Starte Mediathek-Abfrage...")
-    for q in QUERIES:
-        payload = {
-            "queries": [{"fields": ["topic"], "query": q}],
-            "size": 2000,
-            "sortBy": "timestamp",
-            "sortOrder": "desc"
-        }
+EXCLUDE_TITLE_RE = re.compile(r'audiodeskription|audio description|ad version|hörfilm|deskription|gebärdensprache|barrierefrei')
+EXCLUDE_TOKENS = ['(französisch)', '(englisch)', '(zho)', '(jpn)', '(originalversion mit untertitel)', '(mit untertitel)', '(originalversion)', 'hörfassung']
+EPISODE_RE = re.compile(r'\b(folge|staffel|episode|ep\.|teil)\b', re.IGNORECASE)
+
+COUNTER_RE = re.compile(r'\(\s*\d{1,3}(\s*[/\-]\s*\d{1,3})?\s*\)')
+FRACTION_RE = re.compile(r'\b\d{1,2}/\d{1,2}\b')
+
+
+def pick_streams(m):
+    candidates = [
+        ('HD', m.get('url_video_hd') or ''),
+        ('SD', m.get('url_video') or ''),
+        ('LQ', m.get('url_video_low') or ''),
+    ]
+    ordered = []
+    quality = ''
+    for q, url in candidates:
+        if url and url not in ordered:
+            if not ordered:
+                quality = q
+            ordered.append(url)
+    return (ordered[0] if ordered else ''), quality, ordered
+
+
+def build_entry(m):
+    title = m.get('title', '')
+    channel = m.get('channel', '')
+    if not title:
+        return None
+
+    best_url, quality, urls = pick_streams(m)
+    if not best_url:
+        return None
+
+    chan_low = channel.lower()
+    title_low = title.lower()
+    if 'kika' in chan_low or 'zdf-tivi' in chan_low or 'arte.fr' in chan_low or  'arte.en' in chan_low or 'tivi' in title_low:
+        return None
+    if EXCLUDE_TITLE_RE.search(title_low):
+        return None
+    if any(x in title for x in EXCLUDE_TOKENS):
+        return None
+    if EPISODE_RE.search(title) or COUNTER_RE.search(title) or FRACTION_RE.search(title):
+        return None
+
+    duration = m.get('duration', 0) or 0
+    if duration < MIN_DURATION:
+        return None
+
+    description = m.get('description', '') or ''
+    year = extract_year(title, description)
+    clean_name = clean_title(title)
+    if not clean_name or clean_name.lower().strip() == 'nö':
+        return None
+
+    return {
+        "title": clean_name,
+        "search": clean_name,
+        "year_num": year,
+        "video_url": best_url,
+        "download_url": best_url,
+        "video_urls": urls,
+        "quality": quality,
+        "plot": description or 'Keine Beschreibung verfügbar.',
+        "mediathek_desc": description,
+        "director": "",
+        "actors": [],
+        "rating": "N/A",
+        "thumb": "placeholder.png",
+        "genres_list": ["Sonstige"],
+        "channel": channel,
+        "timestamp": m.get('timestamp', 0) or 0,
+        "duration_min": round(duration / 60),
+        "isNew": False,
+    }
+
+
+QUALITY_RANK = {'HD': 2, 'SD': 1, 'LQ': 0}
+
+
+def is_better(new, old):
+    return (QUALITY_RANK.get(new['quality'], -1), new['timestamp']) > \
+           (QUALITY_RANK.get(old['quality'], -1), old['timestamp'])
+
+
+def merge_into(old, new):
+    timestamp = max(old['timestamp'], new['timestamp'])
+    year = old['year_num'] or new['year_num']
+    desc = old['mediathek_desc'] or new['mediathek_desc']
+    if is_better(new, old):
+        old.update(new)
+    old['timestamp'] = timestamp
+    old['year_num'] = year
+    old['mediathek_desc'] = desc
+    if not old['plot'] or old['plot'] == 'Keine Beschreibung verfügbar.':
+        old['plot'] = desc or 'Keine Beschreibung verfügbar.'
+
+
+def fetch_mediathek_query(q):
+    payload = {
+        "queries": [{"fields": ["topic"], "query": q}],
+        "size": 2000,
+        "sortBy": "timestamp",
+        "sortOrder": "desc",
+        "future": False
+    }
+    for attempt in range(3):
         try:
-            res = requests.post(MEDIATHEK_URL, json=payload, headers={'Content-Type': 'text/plain'}, timeout=15)
-            data = res.json()
-            results = data.get('result', {}).get('results', [])
-            for m in results:
-                url = m.get('url_video', '')
-                title = m.get('title', '')
-                channel = m.get('channel', '')
-                if not url or not title:
-                    continue
-                chan_low = channel.lower()
-                if 'kika' in chan_low or 'zdf-tivi' in chan_low or 'tivi' in title.lower():
-                    continue
-                import re
-                if re.search(r'audiodeskription|audio description|ad version|hörfilm|deskription|barrierefrei', title.lower()):
-                    continue
-                if any(x in title for x in ['(Englisch)', '(zho)', '(Originalversion mit Untertitel)', '(mit Untertitel)', '(Originalversion)']):
-                    continue
-                if re.search(r'\b(folge|staffel|episode|ep\.|teil)\b', title, re.IGNORECASE):
-                    continue
-                if re.search(r'\(\d+(\s*[\/\-]\s*\d+)?\)', title):
-                    continue
-                if re.search(r'\b\d{1,2}\/\d{1,2}\b', title):
-                    continue
-                if url in seen_urls:
-                    continue
-
-                clean_name, year = clean_title(title)
-                if not clean_name:
-                    continue
-                norm_title = clean_name.lower().strip()
-                if norm_title == 'nö' or norm_title in seen_titles:
-                    continue
-                if m.get('duration', 0) < 4680:
-                    continue
-
-                seen_urls.add(url)
-                seen_titles.add(norm_title)
-
-                temp_results.append({
-                    "title": clean_name,
-                    "search": clean_name,
-                    "year": year,
-                    "video_url": url,
-                    "plot": m.get('description', 'Keine Beschreibung verfügbar.'),
-                    "mediathek_desc": m.get('description', ''),
-                    "director": "",
-                    "actors": [],
-                    "rating": "N/A",
-                    "thumb": "placeholder.png",
-                    "genres_list": ["Sonstige"],
-                    "channel": channel,
-                    "timestamp": m.get('timestamp', 0),
-                    "isNew": False
-                })
+            res = requests.post(MEDIATHEK_URL, data=json.dumps(payload),
+                                headers={'Content-Type': 'text/plain'}, timeout=30)
+            return res.json().get('result', {}).get('results', [])
         except Exception as e:
-            print(f"Fehler bei Query {q}: {e}")
+            print(f"Fehler bei Query {q} (Versuch {attempt + 1}): {e}")
+            time.sleep(2 * (attempt + 1))
+    return []
 
-    temp_results.sort(key=lambda x: x['timestamp'], reverse=True)
-    newest_urls = {m['video_url'] for m in temp_results[:100]}
-    for m in temp_results:
-        if m['video_url'] in newest_urls:
-            m['isNew'] = True
 
-    all_movies = sorted(temp_results, key=lambda x: x['title'])
-    print(f"{len(all_movies)} Filme gefunden. Starte TMDB-Hydrierung (parallel mit Threads)...")
+def collect_movies():
+    seen_urls = set()
+    entries = []
+    by_title = {}  
 
-    hydrated_movies = []
-    # Parallele Abfragen mit 8 Threads
-    with ThreadPoolExecutor(max_workers=8) as executor:
-        futures = {executor.submit(hydrate_movie, m): m for m in all_movies}
+    for q in QUERIES:
+        for m in fetch_mediathek_query(q):
+            entry = build_entry(m)
+            if not entry:
+                continue
+            if any(u in seen_urls for u in entry['video_urls']):
+                continue
+            seen_urls.update(entry['video_urls'])
+
+            key = normalize_title(entry['title'])
+            same = None
+            for other in by_title.get(key, []):
+                if (not other['year_num'] or not entry['year_num']
+                        or other['year_num'] == entry['year_num']):
+                    same = other
+                    break
+
+            if same:
+                merge_into(same, entry)
+            else:
+                entries.append(entry)
+                by_title.setdefault(key, []).append(entry)
+
+    return entries
+
+
+def main():
+    print("Starte Mediathek-Abfrage...")
+    entries = collect_movies()
+
+    by_time = sorted(entries, key=lambda x: x['timestamp'], reverse=True)
+    for m in by_time[:NEW_COUNT]:
+        m['isNew'] = True
+
+    entries.sort(key=lambda x: x['title'])
+    print(f"{len(entries)} Filme gefunden. Starte TMDB-Abgleich (parallel mit {MAX_WORKERS} Threads)...")
+
+    hydrated = []
+    with ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
+        futures = [executor.submit(hydrate_movie, m) for m in entries]
         for future in as_completed(futures):
-            hydrated_movies.append(future.result())
+            hydrated.append(future.result())
 
-    hydrated_movies.sort(key=lambda x: x['title'])
+    hydrated.sort(key=lambda x: x['title'])
+
+    matched = sum(1 for m in hydrated if m.get('tmdb_id'))
+    hd = sum(1 for m in hydrated if m['quality'] == 'HD')
+    for m in hydrated:
+        m['year'] = str(m['year_num']) if m['year_num'] else 'None'
+        m.pop('year_num', None)
 
     with open('movies.json', 'w', encoding='utf-8') as f:
-        json.dump(hydrated_movies, f, ensure_ascii=False, indent=2)
+        json.dump(hydrated, f, ensure_ascii=False, indent=2)
+
+    print(f"TMDB-Treffer: {matched}/{len(hydrated)} | HD-Streams: {hd}/{len(hydrated)}")
     print("Fertig! movies.json erfolgreich gespeichert.")
+
 
 if __name__ == '__main__':
     main()
