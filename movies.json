@@ -5599,8 +5599,7 @@
     "rating": "6.3",
     "thumb": "https://image.tmdb.org/t/p/w342/kvwlPSVB2UvHzvlnAczCYVzYmn0.jpg",
     "genres_list": [
-      "Komödie",
-      "Animation"
+      "Komödie"
     ],
     "channel": "3Sat",
     "timestamp": 1669058100,
@@ -24569,7 +24568,7 @@
     "rating": "N/A",
     "thumb": "https://image.tmdb.org/t/p/w342/rW8e7qcnnRBAYZuEcFrtibDXjvb.jpg",
     "genres_list": [
-      "Animation"
+      "Sonstige"
     ],
     "channel": "ZDF",
     "timestamp": 1783309452,
