@@ -1,9 +1,11 @@
 import os
 import json
-import time 
 import requests
 import urllib.parse
 from datetime import datetime
+from concurrent.futures import ThreadPoolExecutor, as_completed
+import threading
+import time
 
 TMDB_API_KEY = '60b3801a9e76b5706ee2a432f06423e6'
 MEDIATHEK_URL = 'https://mediathekviewweb.de/api/query'
@@ -16,6 +18,9 @@ GENRES_MAP = {
 }
 
 QUERIES = ['Spielfilm', 'Spielfilme', 'Spielfilm-Highlights', 'Filme', 'Kino - Filme', 'Filme in der ARD']
+
+print_lock = threading.Lock()
+processed_count = 0
 
 def clean_title(title):
     import re
@@ -38,7 +43,7 @@ def clean_title(title):
     clean = re.sub(r'^(Spielfilm|Spiellfilm):\s*', '', clean, flags=re.IGNORECASE)
     clean = clean.replace('–', '-').replace('—', '-')
     clean = re.sub(r'\(.*?\)', '', clean)
-    clean = clean.strip(r' \t,.\-_–—»')
+    clean = clean.strip(' \t,.\-_–—»')
 
     return clean, year
 
@@ -72,7 +77,7 @@ def score_title(source, candidate):
     cand_cov = overlap / max(len(cand_set), 1)
 
     if len(src_set) == 1 and len(cand_set) > 1 and src_cov == 1:
-        return 35  
+        return 25
 
     score = src_cov * 55 + cand_cov * 25
     if cand.startswith(src + ' ') or cand.endswith(' ' + src):
@@ -85,69 +90,120 @@ def choose_best_result(results, movie, media_type):
     if not results:
         return None
     source_title = movie['search']
-    source_year = str(movie['year']) if movie['year'] not in ['None', 'LIVE'] else ''
+    source_year = movie['year'] if movie['year'] not in ['None', 'LIVE'] else ''
     m_desc = movie['mediathek_desc'].lower()
 
     scored = []
     for cand in results:
         cand_title = cand.get('name' if media_type == 'tv' else 'title', '')
         cand_orig = cand.get('original_name' if media_type == 'tv' else 'original_title', '')
-        
-        title_score = max(score_title(source_title, cand_title), score_title(source_title, cand_orig))
-        score = title_score
-
-        if title_score < 30:
-            continue  
+        score = max(score_title(source_title, cand_title), score_title(source_title, cand_orig))
 
         date = cand.get('first_air_date' if media_type == 'tv' else 'release_date', '')
         cand_year = date[:4] if date else ''
-        
         if source_year and cand_year:
-            year_diff = abs(int(source_year) - int(cand_year))
-            if year_diff == 0:
-                score += 30  # Stärkerer Bonus bei exaktem Produktionsjahr
-            elif year_diff == 1:
-                score += 15
+            if source_year == cand_year:
+                score += 30
             else:
-                score -= 60  # Stärkerer Abzug bei falschem Jahr
+                score -= 35
 
         overview = cand.get('overview', '').lower()
-        if m_desc and overview and title_score >= 40:
+        if m_desc and overview:
             words = [w for w in overview.split() if len(w) > 5]
             matches = sum(1 for w in words if w in m_desc)
-            score += min(matches * 0.4, 12)
+            score += min(matches * 0.5, 8)
 
         scored.append((cand, score))
 
-    if not scored:
-        return None
-
     scored.sort(key=lambda x: x[1], reverse=True)
     best = scored[0]
-    
-    if best[1] < 50:
-        return None
-        
-    return best[0]
+    return best[0] if best[1] >= 50 else None
 
+def hydrate_movie(movie):
+    global processed_count
+    try:
+        query = urllib.parse.quote(movie['search'] or movie['title'])
+        movie_url = f"https://api.themoviedb.org/3/search/movie?api_key={TMDB_API_KEY}&query={query}&language=de-DE&include_adult=false"
+        if movie['year'] not in ['None', 'LIVE']:
+            movie_url += f"&year={movie['year']}"
+
+        res = requests.get(movie_url, timeout=10)
+        if res.status_code == 429:
+            time.sleep(2)
+            res = requests.get(movie_url, timeout=10)
+
+        data = res.json() if res.status_code == 200 else {}
+        tmdb = choose_best_result(data.get('results', []), movie, 'movie')
+        is_tv = False
+
+        if not tmdb and movie['year'] not in ['None', 'LIVE']:
+            fallback_url = f"https://api.themoviedb.org/3/search/movie?api_key={TMDB_API_KEY}&query={query}&language=de-DE&include_adult=false"
+            f_res = requests.get(fallback_url, timeout=10)
+            if f_res.status_code == 200:
+                tmdb = choose_best_result(f_res.json().get('results', []), movie, 'movie')
+
+        if not tmdb:
+            tv_url = f"https://api.themoviedb.org/3/search/tv?api_key={TMDB_API_KEY}&query={query}&language=de-DE&include_adult=false"
+            if movie['year'] not in ['None', 'LIVE']:
+                tv_url += f"&first_air_date_year={movie['year']}"
+            tv_res = requests.get(tv_url, timeout=10)
+            if tv_res.status_code == 200:
+                tmdb = choose_best_result(tv_res.json().get('results', []), movie, 'tv')
+                is_tv = bool(tmdb)
+
+        if tmdb:
+            genre_ids = tmdb.get('genre_ids', [])
+            if 16 in genre_ids:
+                lower_title = movie['title'].lower()
+                lower_overview = tmdb.get('overview', '').lower()
+                real_keywords = ['tatort', 'polizeiruf', 'in aller freundschaft', 'rosenheim-cops', 'krimi', 'fernsehfilm', 'kommissar', 'drama', 'spielfilm']
+                if any(kw in lower_title or kw in lower_overview or kw in movie['mediathek_desc'].lower() for kw in real_keywords):
+                    genre_ids = [gid for gid in genre_ids if gid != 16]
+
+            media_type = 'tv' if is_tv else 'movie'
+            credits_url = f"https://api.themoviedb.org/3/{media_type}/{tmdb['id']}?api_key={TMDB_API_KEY}&language=de-DE&append_to_response=credits"
+            d_res = requests.get(credits_url, timeout=10)
+            d_data = d_res.json() if d_res.status_code == 200 else {}
+
+            movie['plot'] = tmdb.get('overview') or movie['mediathek_desc'] or 'Keine Beschreibung verfügbar.'
+            vote_avg = tmdb.get('vote_average')
+            movie['rating'] = f"{vote_avg:.1f}" if vote_avg else 'N/A'
+            poster = tmdb.get('poster_path')
+            movie['thumb'] = f"https://image.tmdb.org/t/p/w342{poster}" if poster else 'placeholder.png'
+
+            credits = d_data.get('credits', {})
+            director = next((c['name'] for c in credits.get('crew', []) if c.get('job') in ['Director', 'Executive Producer']), '')
+            movie['director'] = director
+            movie['actors'] = [a['name'] for a in credits.get('cast', [])[:3]]
+
+            date_str = tmdb.get('release_date') or tmdb.get('first_air_date')
+            if date_str and movie['year'] == 'None':
+                movie['year'] = date_str.split('-')[0]
+
+            if genre_ids:
+                movie['genres_list'] = [GENRES_MAP[gid] for gid in genre_ids if gid in GENRES_MAP]
+                if not movie['genres_list']:
+                    movie['genres_list'] = ['Sonstige']
+        else:
+            movie['plot'] = movie['mediathek_desc'] or 'Keine Beschreibung verfügbar.'
+            movie['rating'] = 'N/A'
+            movie['thumb'] = 'placeholder.png'
+
+    except Exception as e:
+        with print_lock:
+            print(f"Fehler bei TMDB für {movie['search']}: {e}")
+        movie['plot'] = movie['mediathek_desc'] or 'Keine Beschreibung verfügbar.'
+        movie['rating'] = 'N/A'
+        movie['thumb'] = 'placeholder.png'
+
+    with print_lock:
+        processed_count += 1
+        if processed_count % 50 == 0:
+            print(f"Fortschritt: {processed_count} verarbeitet...")
+
+    return movie
 
 def main():
-    existing_cache = {}
-    if os.path.exists('movies.json'):
-        try:
-            with open('movies.json', 'r', encoding='utf-8') as f:
-                old_movies = json.load(f)
-                for m in old_movies:
-                    if m.get('video_url'):
-                        if m.get('thumb') and 'placeholder.png' not in m.get('thumb'):
-                            m['processed'] = True
-                        else:
-                            m['processed'] = False
-                        existing_cache[m['video_url']] = m
-            print(f"Lese Cache: {len(existing_cache)} Filme aus movies.json geladen.")
-        except Exception as e:
-            print(f"Konnte bestehende movies.json nicht laden: {e}")
-
     seen_urls = set()
     seen_titles = set()
     temp_results = []
@@ -161,16 +217,13 @@ def main():
             "sortOrder": "desc"
         }
         try:
-            res = requests.post(MEDIATHEK_URL, json=payload, headers={'Content-Type': 'application/json'})
-
+            res = requests.post(MEDIATHEK_URL, json=payload, headers={'Content-Type': 'text/plain'}, timeout=15)
             data = res.json()
             results = data.get('result', {}).get('results', [])
             for m in results:
-                # Qualitäts-Priorisierung: HD -> SD -> LQ
-                url = m.get('url_video_hd') or m.get('url_video') or m.get('url_video_low', '')
+                url = m.get('url_video', '')
                 title = m.get('title', '')
                 channel = m.get('channel', '')
-                
                 if not url or not title:
                     continue
                 chan_low = channel.lower()
@@ -206,7 +259,6 @@ def main():
                     "title": clean_name,
                     "search": clean_name,
                     "year": year,
-                    "duration_min": m.get('duration', 0) // 60,  
                     "video_url": url,
                     "plot": m.get('description', 'Keine Beschreibung verfügbar.'),
                     "mediathek_desc": m.get('description', ''),
@@ -217,8 +269,7 @@ def main():
                     "genres_list": ["Sonstige"],
                     "channel": channel,
                     "timestamp": m.get('timestamp', 0),
-                    "isNew": False,
-                    "processed": False
+                    "isNew": False
                 })
         except Exception as e:
             print(f"Fehler bei Query {q}: {e}")
@@ -230,108 +281,20 @@ def main():
             m['isNew'] = True
 
     all_movies = sorted(temp_results, key=lambda x: x['title'])
-    print(f"{len(all_movies)} Filme gefunden. Starte TMDB-Hydrierung...")
+    print(f"{len(all_movies)} Filme gefunden. Starte TMDB-Hydrierung (parallel mit Threads)...")
 
-    for i, movie in enumerate(all_movies):
-        url = movie['video_url']
+    hydrated_movies = []
+    # Parallele Abfragen mit 8 Threads
+    with ThreadPoolExecutor(max_workers=8) as executor:
+        futures = {executor.submit(hydrate_movie, m): m for m in all_movies}
+        for future in as_completed(futures):
+            hydrated_movies.append(future.result())
 
-        if url in existing_cache and existing_cache[url].get('processed', False):
-            cached = existing_cache[url]
-            movie.update({
-                "plot": cached.get("plot"),
-                "rating": cached.get("rating"),
-                "thumb": cached.get("thumb"),
-                "director": cached.get("director"),
-                "actors": cached.get("actors"),
-                "genres_list": cached.get("genres_list"),
-                "year": cached.get("year"),
-                "processed": True
-            })
-            continue
-
-        try:
-            query = urllib.parse.quote(movie['search'] or movie['title'])
-            movie_url = f"https://api.themoviedb.org/3/search/movie?api_key={TMDB_API_KEY}&query={query}&language=de-DE&include_adult=false"
-
-            res = requests.get(movie_url)
-            data = res.json()
-            tmdb = choose_best_result(data.get('results', []), movie, 'movie')
-            is_tv = False
-
-            if not tmdb:
-                tv_url = f"https://api.themoviedb.org/3/search/tv?api_key={TMDB_API_KEY}&query={query}&language=de-DE&include_adult=false"
-                tv_res = requests.get(tv_url)
-                if tv_res.status_code == 200:
-                    tmdb = choose_best_result(tv_res.json().get('results', []), movie, 'tv')
-                    is_tv = bool(tmdb)
-
-            d_data = {}
-            if tmdb:
-                media_type = 'tv' if is_tv else 'movie'
-                credits_url = f"https://api.themoviedb.org/3/{media_type}/{tmdb['id']}?api_key={TMDB_API_KEY}&language=de-DE&append_to_response=credits"
-                d_res = requests.get(credits_url)
-                
-                d_data = d_res.json() if d_res.status_code == 200 else {}
-
-                tmdb_runtime = d_data.get('runtime', 0)
-                if not tmdb_runtime and is_tv and d_data.get('episode_run_time'):
-                    tmdb_runtime = d_data['episode_run_time'][0]
-
-                mediathek_runtime = movie.get('duration_min', 0)
-
-                if tmdb_runtime > 0 and mediathek_runtime > 0:
-                    # Toleranz von 12 Minuten für PAL-Speedup & TV-Fassungen
-                    if abs(tmdb_runtime - mediathek_runtime) > 12:
-                        tmdb = None
-
-            if tmdb:
-                genre_ids = tmdb.get('genre_ids', [])
-                if 16 in genre_ids:
-                    lower_title = movie['title'].lower()
-                    lower_overview = tmdb.get('overview', '').lower()
-                    real_keywords = ['tatort', 'polizeiruf', 'in aller freundschaft', 'rosenheim-cops', 'krimi', 'fernsehfilm', 'kommissar', 'drama', 'spielfilm']
-                    if any(kw in lower_title or kw in lower_overview or kw in movie['mediathek_desc'].lower() for kw in real_keywords):
-                        genre_ids = [gid for gid in genre_ids if gid != 16]
-
-                movie['plot'] = tmdb.get('overview') or movie['mediathek_desc'] or 'Keine Beschreibung verfügbar.'
-                vote_avg = tmdb.get('vote_average')
-                movie['rating'] = f"{vote_avg:.1f}" if vote_avg else 'N/A'
-                poster = tmdb.get('poster_path')
-                movie['thumb'] = f"https://image.tmdb.org/t/p/w342{poster}" if poster else 'placeholder.png'
-
-                credits = d_data.get('credits', {})
-                director = next((c['name'] for c in credits.get('crew', []) if c.get('job') in ['Director', 'Executive Producer']), '')
-                movie['director'] = director
-                movie['actors'] = [a['name'] for a in credits.get('cast', [])[:3]]
-
-                date_str = tmdb.get('release_date') or tmdb.get('first_air_date')
-                if date_str and movie['year'] == 'None':
-                    movie['year'] = date_str.split('-')[0]
-
-                if genre_ids:
-                    movie['genres_list'] = [GENRES_MAP[gid] for gid in genre_ids if gid in GENRES_MAP]
-                    if not movie['genres_list']:
-                        movie['genres_list'] = ['Sonstige']
-            else:
-                movie['plot'] = movie['mediathek_desc'] or 'Keine Beschreibung verfügbar.'
-                movie['rating'] = 'N/A'
-                movie['thumb'] = 'placeholder.png'
-
-            movie['processed'] = True
-
-        except Exception as e:
-            print(f"Fehler bei TMDB für {movie['search']}: {e}")
-
-        time.sleep(0.15)
-
-        if (i + 1) % 50 == 0:
-            print(f"Fortschritt: {i + 1}/{len(all_movies)} verarbeitet... (Zwischenspeicherung)")
-            with open('movies.json', 'w', encoding='utf-8') as f:
-                json.dump(all_movies, f, ensure_ascii=False, indent=2)
+    hydrated_movies.sort(key=lambda x: x['title'])
 
     with open('movies.json', 'w', encoding='utf-8') as f:
-        json.dump(all_movies, f, ensure_ascii=False, indent=2)
-    print("Fertig! movies.json erfolgreich vollständig gespeichert.")
+        json.dump(hydrated_movies, f, ensure_ascii=False, indent=2)
+    print("Fertig! movies.json erfolgreich gespeichert.")
 
 if __name__ == '__main__':
     main()
