@@ -139,8 +139,14 @@ def main():
                 old_movies = json.load(f)
                 for m in old_movies:
                     if m.get('video_url'):
+                        # Nur übernehmen, wenn es ein echter TMDB-Treffer ist (kein Platzhalter)
+                        if m.get('thumb') and 'placeholder.png' not in m.get('thumb'):
+                            m['processed'] = True
+                        else:
+                            # Fehlerhafte/Platzhalter-Einträge zurücksetzen, damit sie neu geprüft werden
+                            m['processed'] = False
                         existing_cache[m['video_url']] = m
-            print(f"Lese Cache: {len(existing_cache)} bereits verarbeitete Filme aus movies.json geladen.")
+            print(f"Lese Cache: {len(existing_cache)} Filme aus movies.json geladen.")
         except Exception as e:
             print(f"Konnte bestehende movies.json nicht laden: {e}")
 
@@ -274,7 +280,8 @@ def main():
                 mediathek_runtime = movie.get('duration_min', 0)
 
                 if tmdb_runtime > 0 and mediathek_runtime > 0:
-                    if abs(tmdb_runtime - mediathek_runtime) > 5:
+                    # Toleranz auf 12 Minuten erhöht (berücksichtigt PAL-Speedup & TV-Kürzungen)
+                    if abs(tmdb_runtime - mediathek_runtime) > 12:
                         tmdb = None
 
             if tmdb:
@@ -283,7 +290,6 @@ def main():
                     lower_title = movie['title'].lower()
                     lower_overview = tmdb.get('overview', '').lower()
                     real_keywords = ['tatort', 'polizeiruf', 'in aller freundschaft', 'rosenheim-cops', 'krimi', 'fernsehfilm', 'kommissar', 'drama', 'spielfilm']
- 
                     if any(kw in lower_title or kw in lower_overview or kw in movie['mediathek_desc'].lower() for kw in real_keywords):
                         genre_ids = [gid for gid in genre_ids if gid != 16]
 
