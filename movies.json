@@ -1846,18 +1846,22 @@
     "tmdb_type": "movie"
   },
   {
-    "title": "Auf eigenes Risiko",
+    "title": "Reclaim - Auf eigenes Risiko",
     "search": "Auf eigenes Risiko",
     "year": "2014",
     "video_url": "https://rodlzdf-a.akamaihd.net/dach/3sat/23/09/230922_auf_eigenes_risiko_spielfilm/1/230922_auf_eigenes_risiko_spielfilm_2360k_p35v15.mp4",
     "plot": "Steven und Shannon sind nach der Adoption ihrer Tochter Nina überglücklich. Doch schon bald gerät die junge Familie in eine große Gefahr, und Nina verschwindet spurlos.",
     "mediathek_desc": "Steven und Shannon sind nach der Adoption ihrer Tochter Nina überglücklich. Doch schon bald gerät die junge Familie in eine große Gefahr, und Nina verschwindet spurlos.",
-    "director": "",
-    "actors": [],
-    "rating": "N/A",
-    "thumb": "placeholder.png",
-    "genres_list": [
-      "Sonstige"
+    "director": "Alan White",
+    "actors": [
+      "John Cusack",
+      "Ryan Phillippe",
+      "Rachelle Lefèvre"
+    ],
+    "rating": "5.2",
+    "thumb": "https://image.tmdb.org/t/p/original/m9HpukbOaGlcgIIioy606RTSZC7.jpg",
+    "genres_list": [    
+      "Thriller"
     ],
     "channel": "3Sat",
     "timestamp": 1522095600,
