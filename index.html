@@ -207,6 +207,39 @@
             color: #ffffff !important;
             transform: scale(1.04);
         }        
+
+        /* CSS Tooltip für Touch & Hover */
+        .dl-tooltip-wrapper {
+            position: relative;
+            display: inline-block;
+        }
+        .dl-tooltip-wrapper .dl-tooltip-text {
+            visibility: hidden;
+            opacity: 0;
+            width: 170px;
+            background-color: #0f172a;
+            color: #f3f4f6;
+            text-align: center;
+            border-radius: 8px;
+            padding: 6px 8px;
+            position: absolute;
+            z-index: 30;
+            bottom: 125%;
+            left: 50%;
+            transform: translateX(-85%);
+            font-size: 10px;
+            line-height: 1.2;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.5);
+            transition: opacity 0.2s ease, visibility 0.2s ease;
+            pointer-events: none;
+        }
+        .dl-tooltip-wrapper:hover .dl-tooltip-text,
+        .dl-tooltip-wrapper:focus-within .dl-tooltip-text,
+        .dl-tooltip-wrapper.active .dl-tooltip-text {
+            visibility: visible;
+            opacity: 1;
+        }
     </style>    
 
     <link rel="manifest" href="manifest.json">
@@ -214,7 +247,7 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 </head>
-<body class="p-3 sm:p-5 max-w-[1600px] mx-auto flex flex-col min-h-screen selection:bg-blue-600 selection:text-white">
+<body class="p-3 sm:p-5 max-w-[1600px] mx-auto flex flex-col min-h-screen selection:bg-blue-600 selection:text-white" onclick="closeAllTooltips()">
     
     <div id="scanner" class="fixed inset-0 bg-black/70 backdrop-blur-md z-50 flex flex-col items-center justify-center gap-3 hidden transition-opacity duration-300">
         <div class="relative flex items-center justify-center">
@@ -1127,75 +1160,22 @@
             }
         }
 
-
-        async function downloadMovie(url, title, event) {
-            if (event) { event.stopPropagation(); event.preventDefault(); }
-            const btn = event?.currentTarget;
-            if (!btn || btn.dataset.busy) return;
-
-            const ext = (url.match(/\.(mp4|mkv|avi|webm|m4v)(\?.*)?$/i) || [])[1] || 'mp4';
-            const filename = (title.replace(/[\\/:*?"<>|]+/g, '').trim() || 'video') + '.' + ext;
-            const orig = btn.innerHTML;
-            btn.dataset.busy = '1';
-
-            let fileHandle = null, writable = null;
-            try {
-                if (window.showSaveFilePicker) {
-                    try {
-                        fileHandle = await window.showSaveFilePicker({ suggestedName: filename });
-                    } catch (e) {
-                        if (e.name === 'AbortError') {
-                            delete btn.dataset.busy;
-                            btn.innerHTML = orig;
-                            return;
-                        }
-                        fileHandle = null;
-                    }
-                }
-
-                const res = await fetch(url);
-                if (!res.ok || !res.body) throw new Error('HTTP ' + res.status);
-
-                const total = +res.headers.get('content-length') || 0;
-                const reader = res.body.getReader();
-                let loaded = 0;
-
-                if (fileHandle) {
-                    writable = await fileHandle.createWritable();
-                    while (true) {
-                        const { done, value } = await reader.read();
-                        if (done) break;
-                        await writable.write(value);
-                        loaded += value.length;
-                        btn.innerText = total
-                            ? Math.round(loaded / total * 100) + '%'
-                            : Math.round(loaded / 1048576) + ' MB';
-                    }
-                    await writable.close();
-                    writable = null;
-                } else {
-                    const blob = await res.blob();
-                    const blobUrl = URL.createObjectURL(blob);
-                    const a = document.createElement('a');
-                    a.href = blobUrl;
-                    a.download = filename;
-                    document.body.appendChild(a);
-                    a.click();
-                    a.remove();
-                    setTimeout(() => URL.revokeObjectURL(blobUrl), 60000);
-                }
-            } catch (err) {
-                console.error('Download fehlgeschlagen / CORS blockiert:', err);
-                if (writable) { try { await writable.abort(); } catch (e) {} }
-                
-                window.open(url, '_blank', 'noopener');
-                alert('Direkter Download vom Server wegen CORS-Sicherheitsrichtlinien blockiert. Der Link wurde stattdessen in einem neuen Tab geöffnet.');
-            } finally {
-                delete btn.dataset.busy;
-                btn.innerHTML = orig;
+        function toggleTooltip(element, event) {
+            if (event) event.stopPropagation();
+            const wrapper = element.closest('.dl-tooltip-wrapper');
+            if (!wrapper) return;
+            const wasActive = wrapper.classList.contains('active');
+            closeAllTooltips();
+            if (!wasActive) {
+                wrapper.classList.add('active');
             }
         }
 
+        function closeAllTooltips() {
+            document.querySelectorAll('.dl-tooltip-wrapper.active').forEach(el => {
+                el.classList.remove('active');
+            });
+        }
 
         function renderNextChunk(startIndex) {
             const grid = document.getElementById('movieGrid');
@@ -1241,13 +1221,16 @@
                 }
 
                 const downloadBtnHtml = (!isTv && !isNews && m.video_url) ? `
-                    <button tabindex="0" type="button" title="Speichern unter..."
-                       onclick="downloadMovie('${m.video_url}', '${escapedTitle}', event)"
-                       class="bg-gray-800 hover:bg-gray-700 text-gray-300 hover:text-white font-bold p-2 min-w-[40px] rounded-xl transition-all text-xs flex items-center justify-center border border-gray-700 active:scale-95">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-                        </svg>
-                    </button>
+                    <div class="dl-tooltip-wrapper">
+                        <span class="dl-tooltip-text">Zum Speichern: Lange drücken oder Rechtsklick & 'Link herunterladen'</span>
+                        <a href="${m.video_url}" target="_blank" rel="noopener noreferrer" 
+                           onclick="toggleTooltip(this, event);" 
+                           class="bg-gray-800 hover:bg-gray-700 text-gray-300 hover:text-white font-bold p-2 rounded-xl transition-all text-xs flex items-center justify-center border border-gray-700 active:scale-95">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                            </svg>
+                        </a>
+                    </div>
                 ` : '';
                 
                 card.innerHTML = `
