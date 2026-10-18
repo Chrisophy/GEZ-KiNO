@@ -255,7 +255,7 @@ def main():
                     lower_title = movie['title'].lower()
                     lower_overview = tmdb.get('overview', '').lower()
                     real_keywords = ['tatort', 'polizeiruf', 'in aller freundschaft', 'rosenheim-cops', 'krimi', 'fernsehfilm', 'kommissar', 'drama', 'spielfilm']
-                    if any(kw in lower_title or kw in lower_overview or kw in movie['mediathek_desc'].lower() for kw in real_keyword if kw in real_keywords):
+                    if any(kw in lower_title or kw in lower_overview or kw in movie['mediathek_desc'].lower() for kw in real_keywords if kw in real_keywords):
                         genre_ids = [gid for gid in genre_ids if gid != 16]
 
                 movie['plot'] = tmdb.get('overview') or movie['mediathek_desc'] or 'Keine Beschreibung verfügbar.'
