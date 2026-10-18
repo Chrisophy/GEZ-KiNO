@@ -11,6 +11,9 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 
 import requests
 
+# --------------------------------------------------------------------------
+# Konfiguration
+# --------------------------------------------------------------------------
 TMDB_API_KEY = os.environ.get('TMDB_API_KEY', '60b3801a9e76b5706ee2a432f06423e6')
 TMDB_BASE = 'https://api.themoviedb.org/3'
 MEDIATHEK_URL = 'https://mediathekviewweb.de/api/query'
@@ -19,10 +22,11 @@ QUERIES = ['Spielfilm', 'Spielfilme', 'Spielfilm-Highlights', 'Filme', 'Kino - F
 
 MIN_DURATION = 4680      
 NEW_COUNT = 100         
-MAX_WORKERS = 8          
+MAX_WORKERS = 8      
 
 PRE_THRESHOLD = 35       
-ACCEPT_THRESHOLD = 50    
+ACCEPT_THRESHOLD = 50   
+
 GENRES_MAP = {
     28: 'Action', 12: 'Abenteuer', 16: 'Animation', 35: 'Komödie', 80: 'Krimi', 99: 'Doku',
     18: 'Drama', 10751: 'Familie', 14: 'Fantasy', 36: 'Historie', 27: 'Horror', 10402: 'Musik',
@@ -40,6 +44,9 @@ processed_count = 0
 _thread_local = threading.local()
 
 
+# --------------------------------------------------------------------------
+# Titel / Jahr
+# --------------------------------------------------------------------------
 TITLE_MARKERS = [
     ' - Spielfilm', ' – Spielfilm', ' - Spiellfilm', ' – Spiellfilm', ', Spielfilm',
     ' Österreich', ', Deutschland', ', Schweiz', ', Belgien', ', Frankreich', ', Spanien',
@@ -67,6 +74,7 @@ def valid_year(y):
 
 
 def extract_year(title, description):
+    """Produktionsjahr: erst Titel (Klammer, dann Titelende), dann Beschreibung."""
     for m in PAREN_YEAR_RE.finditer(title or ''):
         y = int(m.group(1))
         if valid_year(y):
@@ -145,6 +153,7 @@ def score_title(source, candidate):
 
 
 def year_score(src_year, cand_date):
+    """Mediathek-Produktionsjahr gegen TMDB-Datum (Erstausstrahlung kann 1 Jahr abweichen)."""
     if not src_year or not cand_date:
         return 0
     try:
@@ -161,6 +170,9 @@ def year_score(src_year, cand_date):
     return -55
 
 
+# --------------------------------------------------------------------------
+# TMDB
+# --------------------------------------------------------------------------
 def get_session():
     s = getattr(_thread_local, 'session', None)
     if s is None:
@@ -245,6 +257,7 @@ def prescore(cand, movie, media_type, desc_words):
 
 
 def detail_bonus(details, movie, media_type):
+    """Zusatzpunkte aus Laufzeit sowie Darstellern/Regie, die in der Mediathek-Beschreibung stehen."""
     if not details:
         return 0
     bonus = 0
@@ -276,6 +289,7 @@ def detail_bonus(details, movie, media_type):
 
 
 def pick_best(results, movie, media_type):
+    """Gibt (gesamt_score, kandidat, details) oder None zurück."""
     if not results:
         return None
     desc_words = word_set(movie['mediathek_desc'])
@@ -306,6 +320,7 @@ def pick_best(results, movie, media_type):
 
 
 def find_tmdb_match(movie):
+    """Gibt (media_type, (score, kandidat, details)) oder None zurück."""
     query = movie['search'] or movie['title']
     year = movie['year_num']
 
@@ -398,15 +413,18 @@ def hydrate_movie(movie):
     return movie
 
 
-EXCLUDE_TITLE_RE = re.compile(r'audiodeskription|audio description|ad version|hörfilm|deskription|gebärdensprache|barrierefrei')
-EXCLUDE_TOKENS = ['(französisch)', '(englisch)', '(zho)', '(jpn)', '(originalversion mit untertitel)', '(mit untertitel)', '(originalversion)', 'hörfassung']
+# --------------------------------------------------------------------------
+# Mediathek
+# --------------------------------------------------------------------------
+EXCLUDE_TITLE_RE = re.compile(r'audiodeskription|audio description|ad version|hörfilm|deskription|barrierefrei')
+EXCLUDE_TOKENS = ['(Englisch)', '(zho)', '(Originalversion mit Untertitel)', '(mit Untertitel)', '(Originalversion)']
 EPISODE_RE = re.compile(r'\b(folge|staffel|episode|ep\.|teil)\b', re.IGNORECASE)
-
 COUNTER_RE = re.compile(r'\(\s*\d{1,3}(\s*[/\-]\s*\d{1,3})?\s*\)')
 FRACTION_RE = re.compile(r'\b\d{1,2}/\d{1,2}\b')
 
 
 def pick_streams(m):
+    """HD zuerst, dann SD, dann LQ. Liefert (beste_url, qualität, geordnete_url_liste)."""
     candidates = [
         ('HD', m.get('url_video_hd') or ''),
         ('SD', m.get('url_video') or ''),
@@ -434,7 +452,7 @@ def build_entry(m):
 
     chan_low = channel.lower()
     title_low = title.lower()
-    if 'kika' in chan_low or 'zdf-tivi' in chan_low or 'arte.fr' in chan_low or  'arte.en' in chan_low or 'tivi' in title_low:
+    if 'kika' in chan_low or 'zdf-tivi' in chan_low or 'tivi' in title_low:
         return None
     if EXCLUDE_TITLE_RE.search(title_low):
         return None
@@ -518,8 +536,7 @@ def fetch_mediathek_query(q):
 def collect_movies():
     seen_urls = set()
     entries = []
-    by_title = {}  
-
+    by_title = {}   
     for q in QUERIES:
         for m in fetch_mediathek_query(q):
             entry = build_entry(m)
@@ -546,6 +563,9 @@ def collect_movies():
     return entries
 
 
+# --------------------------------------------------------------------------
+# main
+# --------------------------------------------------------------------------
 def main():
     print("Starte Mediathek-Abfrage...")
     entries = collect_movies()
