@@ -1465,17 +1465,22 @@
   },
   {
     "title": "Angriff aus der Tiefe",
-    "search": "Angriff aus der Tiefe",
-    "year": "2019",
+    "search": "Sea Fever",
+    "year": "2020",
     "video_url": "https://rodlzdf-a.akamaihd.net/dach/3sat/24/06/240602_angriff_aus_der_tiefe_spielfilm/1/240602_angriff_aus_der_tiefe_spielfilm_2360k_p35v17.mp4",
-    "plot": "Als der Trawler feststeckt, auf dem eine irische Meeresbiologie-Studentin ihr Praktikum macht, beginnt eine mysteriöse, grünlich schimmernde Flüssigkeit durch den Schiffsrumpf zu sickern.",
+    "plot": "Als der Trawler feststeckt, auf dem eine irische Meeresbiologie-Studentin ihr Praktikum macht, beginnt eine mysteriöse, grünlich schimmernde Flüssigkeit durch den Schiffsrumpf zu sickern. Kurz darauf erblindet und stirbt das erste Crewmitglied, nachdem es sich über eine Wunde mit der Flüssigkeit infiziert hatte: Es ist der Auftakt eines Kampfs auf Leben und Tod.",
     "mediathek_desc": "Als der Trawler feststeckt, auf dem eine irische Meeresbiologie-Studentin ihr Praktikum macht, beginnt eine mysteriöse, grünlich schimmernde Flüssigkeit durch den Schiffsrumpf zu sickern.",
-    "director": "",
-    "actors": [],
-    "rating": "N/A",
-    "thumb": "placeholder.png",
+    "director": "Neasa Hardiman",
+    "actors": [
+      "Hermione Corfield",
+      "Ardalan Esmaili",
+      "Olwen Fouéré"
+    ],
+    "rating": "6.1",
+    "thumb": "https://image.tmdb.org/t/p/original/c1QSpS8UAFRmAaskHSndtqY06Lx.jpg",
     "genres_list": [
-      "Sonstige"
+      "Horror", 
+      "Sci-Fi"
     ],
     "channel": "3Sat",
     "timestamp": 1656965700,
@@ -1748,7 +1753,7 @@
     "video_url": "https://nrodlzdf-a.akamaihd.net/dach/3sat/22/01/220123_astrid_spielfilm/1/220123_astrid_spielfilm_a1a2_3360k_p36v15.mp4",
     "plot": "Von Pippi Langstrumpf über Ronja Räubertochter bis zum Michel aus Lönneberga: Kein anderer Name ist bis heute so untrennbar mit so vielen faszinierenden Kinderbüchern verbunden wie der von Astrid Lindgren. Ihre eigene Kindheit dagegen endete früh, als Astrid im Alter von 18 Jahren unehelich schwanger wurde – im Schweden der 1920er-Jahre ein Skandal.  Der Film erzählt einfühlsam davon, wie die junge Astrid den Mut findet, die Anfeindungen ihres Umfeldes zu überwinden und ein freies, selbstbestimmtes Leben als moderne Frau zu führen. Weiterhin zeichnet Astrid nach, wie diese Erfahrungen die späteren Werke und das Engagement der Autorin prägen sollten.",
     "mediathek_desc": "Astrid Ericsson wächst auf dem Land in einfachen, streng religiösen Verhältnissen auf. Mit 18 Jahren wird sie ungewollt schwanger und muss ihr Zuhause verlassen.",
-    "director": "Henrik Zein",
+    "director": "Suzanne Glansborg",
     "actors": [
       "Alba August",
       "Maria Bonnevie",
@@ -2581,26 +2586,6 @@
     "timestamp": 1613165460,
     "isNew": false,
     "tmdb_id": 438145,
-    "tmdb_type": "movie"
-  },
-  {
-    "title": "Black Box",
-    "search": "Black Box",
-    "year": "2022",
-    "video_url": "https://nrodlzdf-a.akamaihd.net/none/3sat/25/02/250213_black_box_spielfilm/1/250213_black_box_spielfilm_a1a2_3360k_p36v17.mp4",
-    "plot": "Ein alter Berliner Gebäudekomplex: Die Bewohner leiden unter der sinkenden Lebensqualität. Hausverwalter Horn möchte helfen, doch was weiß er über die Leiche auf dem Dachboden?",
-    "mediathek_desc": "Ein alter Berliner Gebäudekomplex: Die Bewohner leiden unter der sinkenden Lebensqualität. Hausverwalter Horn möchte helfen, doch was weiß er über die Leiche auf dem Dachboden?",
-    "director": "Alana Mango",
-    "actors": [],
-    "rating": "N/A",
-    "thumb": "https://image.tmdb.org/t/p/w342/8xeHTEIl5grwlNOOI24wTfJPf5Y.jpg",
-    "genres_list": [
-      "Animation"
-    ],
-    "channel": "3Sat",
-    "timestamp": 1739474100,
-    "isNew": false,
-    "tmdb_id": 1021014,
     "tmdb_type": "movie"
   },
   {
@@ -8032,7 +8017,7 @@
     "video_url": "https://ctv-videos.daserste.de/int/2026/08/05/DEGSM289953/DEGSM289953_3813884_sendeton_1280x720-50p-3200kbit.mp4",
     "plot": "Der Weltkriegsveteran Scott Burnett verliebt sich in Peggy Butler. Die aber ist mit dem eifersüchtigen Maler Ted Butler verheiratet, der ihretwegen erblindet ist. Scott hat Angst, dass Ted Verdacht schöpft und versucht, ihn als Schwindler zu enttarnen, der seine Blindheit nur vorgibt. Dabei geht er bis an die Grenze zum Mord.",
     "mediathek_desc": "Spielfilm Deutschland 2014 Auf einer einsamen Landstraße an der Küste Norwegens kommt ein Auto mit hoher Geschwindigkeit von der Straße ab und überschlägt sich. Wie durch ein Wunder überlebt die Fahrerin des Wagens das Unglück körperlich nahezu unversehrt: Brigitta Nielebeck (Katja Flint) trägt nur ein paar Schürfwunden davon....",
-    "director": "Jack J. Gross",
+    "director": "Jean Renoir",
     "actors": [
       "Joan Bennett",
       "Robert Ryan",
@@ -9319,20 +9304,19 @@
   {
     "title": "Die Schneekönigin",
     "search": "Die Schneekönigin",
-    "year": "2012",
+    "year": "2014",
     "video_url": "https://nrodlzdf-a.akamaihd.net/none/tivi/14/12/141208_die_schneekoenigin_mae/19/141208_die_schneekoenigin_mae_a1a2_3360k_p36v15.mp4",
-    "plot": "Vom hohen Norden aus hält die böse Schneekönigin die ganze Welt in ihrem frostigen Griff. Nur Meister Vegard, der letzte Zauberer, gefährdet noch ihre Macht. Denn wer in einen magischen Spiegel des Meisters schaut, erblickt darin sein wahres inneres Wesen. Deshalb fürchtet die Schneekönigin seine Kunst und tötet ihn. Niemand darf erfahren, was hinter ihrer kalten Maske verborgen ist. Doch Vegard hat einen Nachkommen hinterlassen – dieser könnte der Königin genauso gefährlich werden wie sein Vater. Sie entführt den Jungen in ihren Palast und lässt sein Herz zu Eis erstarren. Aber noch immer ist ihr Reich nicht sicher, denn es gibt auch eine Schwester, die sich auf den Weg in den Norden macht, um ihren Bruder zu retten …",
+    "plot": "Gerda und Kay sind zwei Nachbarskinder, die sich sehr lieb haben. An einem Wintertag entführt die Schneekönigin Kay in ihren Eispalast. Alle glauben, Kay sei tot, doch Gerda macht sich auf, um ihren Freund zu suchen. Ihre Reise führt Gerda in das blühende Reich der Flora, in ein sommerliches Schloss, zu Räubern und in die verschneite Welt des hohen Nordens.",
     "mediathek_desc": "Gerda und Kay sind zwei Nachbarskinder, die sich sehr lieb haben. An einem Wintertag entführt die Schneekönigin Kay in ihren Eispalast.",
-    "director": "Владимир Николаев",
+    "director": "Karola Hattop",
     "actors": [
-      "Иван Охлобыстин",
-      "Dmitri Nagijew",
-      "Людмила Артемьева"
+      "Flora Thiemann",
+      "Linda Zilliacus",
+      "Annette Frier"
     ],
-    "rating": "5.8",
-    "thumb": "https://image.tmdb.org/t/p/w342/bSYjWErUYJzYLyG2O4OK9sLi7U9.jpg",
+    "rating": "5.3",
+    "thumb": "https://image.tmdb.org/t/p/original/4F3uiz6CD2Rp7HFoqHvVAS4jMOA.jpg",
     "genres_list": [
-      "Animation",
       "Fantasy",
       "Familie"
     ],
@@ -10089,18 +10073,22 @@
   {
     "title": "Die kleine Hexe",
     "search": "Die kleine Hexe",
-    "year": "2017",
+    "year": "2018",
     "video_url": "https://rodlzdf-a.akamaihd.net/dach/3sat/23/10/231015_die_kleine_hexe_b_spielfilm/1/231015_die_kleine_hexe_b_spielfilm_a1a2_2360k_p35v17.mp4",
     "plot": "Die kleine Hexe ist zwar schon 127 Jahre alt, doch das ist noch kein Alter für eine Hexe. Um endlich mit den 'richtigen' Hexen in der Walpurgisnacht tanzen zu dürfen, muss sie erst beweisen, dass sie eine 'gute' Hexe ist. Und mit den Hexenkünsten mag es zum Leidwesen ihres treuen Raben Abraxas nicht so recht klappen. Anstatt fleißig zu lernen, liegt die kleine Hexe lieber im Bett oder fliegt auf ihrem Besen durch die Lüfte und zaubert schöne Dinge für Menschen und Tiere herbei. Das missfällt den bösen alten Hexen, die die kleine Hexe dafür hart bestrafen wollen. Da muss sie ihr ganzes Hexenkönnen einsetzen, um ihnen eine Lektion zu erteilen.",
     "mediathek_desc": "127 Jahre alt und damit viel zu jung, um in der Walpurgisnacht auf dem Blocksberg zu tanzen – die kleine Hexe ist frustriert. Und hält sich nicht an das Verbot.",
-    "director": "Zdeněk Smetana",
+    "director": "Michael Schaerer",
     "actors": [
-      "Jiřina Bohdalová"
+      "Karoline Herfurth",
+      "Axel Prahl",
+      "Suzanne von Borsody"
     ],
-    "rating": "6.7",
-    "thumb": "https://image.tmdb.org/t/p/w342/tnSSk1yK4kzhIvKPprvLGQ5IfVV.jpg",
+    "rating": "7",
+    "thumb": "https://image.tmdb.org/t/p/original/fsdz4uRSeIhpFlqw6nXfKrSrOTz.jpg",
     "genres_list": [
-      "Animation"
+      "Familie",
+      "Komödie",
+      "Drama"
     ],
     "channel": "3Sat",
     "timestamp": 1608907500,
@@ -11413,7 +11401,7 @@
     "video_url": "https://rodlzdf-a.akamaihd.net/dach/3sat/23/12/231210_gauner_gentleman_spielfilm/1/231210_gauner_gentleman_spielfilm_a1a2_2360k_p35v17.mp4",
     "plot": "Den Großteil seines Lebens verbrachte Forrest Tucker hinter Schloss und Riegel. Weil er aber nicht bloß einer der besten Bankräuber ist, sondern gleichzeitig auch ein wahres Genie, wenn es um Gefängnisausbrüche geht, genießt der Berufsganove auch immer wieder die selbstgewonnene Freiheit. Selbst im legendären, in der Bucht von San Francisco liegenden Hochsicherheitsknast von Alcatraz konnten sie den Verbrecher nicht halten. Als dieser 1981 mit seinen Handlangern Teddy und Waller schließlich eine Bank nach der anderen ausraubt, lernt er nach einem Coup die Farmbesitzerin Jewel kennen, die mit ihrem Truck liegengeblieben ist. Alles läuft wie am Schnürchen für Tucker, bis der Polizist John Hunt als erster durchschaut, was es mit all den Überfällen der letzten Zeit auf sich hat: Ein und dieselbe Bande steckt dahinter! Tucker und seine Komplizen müssen sich von nun an also umso mehr in Acht nehmen, denn Hurt ist ihnen dank des neugewonnenen Wissens dicht auf den Fersen …",
     "mediathek_desc": "Forrest Tucker ist alles andere als ein gewöhnlicher Bankräuber: Der stilvolle ältere Herr muss nur seinen Revolver zeigen, um geräuschlos die Barbestände ausgehändigt zu bekommen.",
-    "director": "Marc Schmidheiny",
+    "director": "Julie Goldstein",
     "actors": [
       "Robert Redford",
       "Casey Affleck",
@@ -22033,25 +22021,24 @@
     "search": "Memory - Sein letzter Auftrag",
     "year": "2021",
     "video_url": "https://nrodlzdf-a.akamaihd.net/dach/3sat/26/04/260417_memory_sein_letzter_auftrag_spielfilm/1/260417_memory_sein_letzter_auftrag_spielfilm_3360k_p36v17.mp4",
-    "plot": "Profikiller Alex Lewis möchte sich wegen seines nachlassenden Erinnerungsvermögens nach einer langen Karriere voller Gewalt zur Ruhe setzen. Als er seinen letzten Auftrag annimmt, findet er sich unvermittelt in einem Undercover-Einsatz des FBI wieder, angeführt von Agent Serra. Alex beschließt, Serras Team durch versteckte Hinweise zu helfen. Auch wenn er sich zunehmend schwer an Details erinnern kann, setzt er seine lebenslang trainierten Fähigkeiten ein, um zumindest einmal in seinem Leben das Richtige zu tun. Dies ruft natürlich mächtige Gegner auf den Plan, die Alex vernichten wollen, doch dieser weiß sich zu wehren …",
+    "plot": "Schnell, leise, unauffällig und professionell: Alex Lewis ist ein Auftragskiller, der keine Spuren hinterlässt. Doch eine Demenz erschwert zunehmend seinen Job.",
     "mediathek_desc": "Schnell, leise, unauffällig und professionell: Alex Lewis ist ein Auftragskiller, der keine Spuren hinterlässt. Doch eine Demenz erschwert zunehmend seinen Job.",
-    "director": "Peter Bouckaert",
+    "director": "Tina-Maria Feyrer",
     "actors": [
-      "Liam Neeson",
-      "Guy Pearce",
-      "Taj Atwal"
+      "Lisa Friedinger",
+      "Alessandro Giontella",
+      "Anna Sophie Krenn"
     ],
-    "rating": "6.7",
-    "thumb": "https://image.tmdb.org/t/p/w342/e6zf47QakOXpUz2p4Qrv8iiSlGM.jpg",
+    "rating": "N/A",
+    "thumb": "placeholder.png",
     "genres_list": [
-      "Action",
-      "Thriller",
-      "Krimi"
+      "Mystery",
+      "Thriller"
     ],
     "channel": "3Sat",
     "timestamp": 1711401300,
     "isNew": false,
-    "tmdb_id": 818397,
+    "tmdb_id": 884459,
     "tmdb_type": "movie"
   },
   {
@@ -27536,7 +27523,7 @@
     "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/23/10/231013_sony_2155_sendung_nsf/1/231013_sony_2155_sendung_nsf_3360k_p36v17.mp4",
     "plot": "Der Film erzählt von einem urkomischen Tag im Leben einer amerikanischen Familie, die zusammengekommen ist, um dem geliebten Ehemann und Vater die letzte Ehre zu erweisen. Doch als sich die Trauergemeinde im Haus der Familie versammelt, lösen schockierende Enthüllungen - schon lange unter der Oberfläche gärende Ressentiments - hässliche Drohungen, eine Erpressung und nicht zuletzt der verlorene Leichnam tödlichen Tumult und Chaos aus.",
     "mediathek_desc": "Nach dem Tod des Patriarchen einer chaotischen Familie gerät dessen Begräbnis zum Familienzirkus. Der Alte war gut betucht und die Trauergäste verfolgen ihre ganz eigenen Absichten.",
-    "director": "Jim Tauber",
+    "director": "Glenn S. Gainor",
     "actors": [
       "Chris Rock",
       "Martin Lawrence",
@@ -28012,7 +27999,7 @@
     "video_url": "https://rodlzdf-a.akamaihd.net/dach/3sat/24/01/240103_tage_am_strand_pp_hinweis_spielfilm/1/240103_tage_am_strand_pp_hinweis_spielfilm_2360k_p35v15.mp4",
     "plot": "Lil und Roz wachsen in einem australischen Küstenort auf und sind seit Kindertagen die besten Freundinnen. Die eine ist Witwe, der Gatte der anderen verschwindet als Professor nach Sidney. Die Söhne der beiden Frauen sind wie Brüder. Als die beiden Heranwachsenden jeweils mit der Mutter des anderen eine Affäre beginnen, genießen alle Vier Sex, Sand und Sonne, bis sich das schlechte Gewissen meldet. Aber sie kommen nicht voneinander los.",
     "mediathek_desc": "Roz und Lil kennen sich seit Kindertagen. Die tiefe Freundschaft zwischen den beiden Frauen wandelt sich, als die Söhne sich zur jeweils anderen Mutter hingezogen fühlen.",
-    "director": "Troy Lum",
+    "director": "Anne Fontaine",
     "actors": [
       "Naomi Watts",
       "Robin Wright",
@@ -31400,7 +31387,7 @@
     "video_url": "https://arteptweb-a.akamaihd.net/am/ptweb/132000/132000/132065-000-A_EQ_0_VA-STA_11579466_MP4-1500_AMM-PTWEB-60782072641723_ZtJCB15sjxt.mp4",
     "plot": "Menschen erträgt Zahnarzt Dr. Pincus am besten, wenn er sie bei der Behandlung kurzfristig verstummen lassen kann. Nach einer Operation, der er sich unterziehen musste, ist es mit der Ruhe vorbei. Plötzlich sieht er Geister, die Hilfe einfordern. Der lästigste ist Frank, der seine Witwe nicht in eine neue Ehe ziehen lassen will. Pincus willigt ein, diese Beziehung zu sabotieren, sich Gwen selbst als Lover zu offerieren.",
     "mediathek_desc": "Zahnarzt Bertram Pincus erträgt Menschen nur dann, wenn er sie bei der Behandlung kurzfristig verstummen lassen kann. Nach einer Operation, der er sich unterziehen musste, ist es mit der Ruhe plötzlich vorbei: er sieht Geister, die Hilfe von ihm einfordern. Der lästigste ist Frank, der seine Witwe Gwen nicht in eine neue Ehe ziehen lassen will. Pincus willigt ein, Gwens Beziehung zu sabotieren.",
-    "director": "Roger Birnbaum",
+    "director": "David Koepp",
     "actors": [
       "Ricky Gervais",
       "Greg Kinnear",
