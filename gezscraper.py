@@ -1,6 +1,7 @@
 from datetime import datetime
 import json
 import os
+import traceback
 import urllib.parse
 import requests
 
@@ -142,14 +143,12 @@ def choose_best_result(results, movie, media_type):
         'original_name' if media_type == 'tv' else 'original_title', ''
     )
 
-    # Titel-Score berechnen
     title_score = max(
         score_title(source_title, cand_title),
         score_title(source_title, cand_orig),
     )
     score = title_score
 
-    # SCHUTZ VOR KURZEN TITELN: Bei 1-2 Wörtern muss der Titel besser matchen
     if len(source_title.split()) <= 2 and title_score < 75:
       continue
 
@@ -163,11 +162,8 @@ def choose_best_result(results, movie, media_type):
       elif year_diff == 1:
         score += 10
       else:
-        score -= (
-            90  # Drastischer Abzug bei stark abweichendem Jahr
-        )
+        score -= 90
 
-    # Overview-Matching als kleiner Bonus
     overview = cand.get('overview', '').lower()
     if m_desc and overview and title_score >= 50:
       words = [w for w in overview.split() if len(w) > 5]
@@ -189,214 +185,221 @@ def choose_best_result(results, movie, media_type):
 
 
 def main():
-  if not os.path.exists('zdfm.json'):
-    print(
-        '[!] zdfm.json nicht gefunden! Bitte zuerst zdfscraper.py ausführen.'
-    )
-    return
-
-  print('Lade zdfm.json...')
-  with open('zdfm.json', 'r', encoding='utf-8') as f:
-    raw_items = json.load(f)
-
-  seen_urls = set()
-  seen_titles = set()
-  temp_results = []
-
-  print(f'{len(raw_items)} Roh-Einträge aus zdfm.json geladen. Filtere...')
-
-  for m in raw_items:
-    url = m.get('url_stream', '')
-    title = m.get('title', '')
-    channel = m.get('channel', '')
-    description = m.get('description', '')
-
-    if not url or not title:
-      continue
-    chan_low = channel.lower()
-    if (
-        'kika' in chan_low
-        or 'zdf-tivi' in chan_low
-        or 'tivi' in title.lower()
-    ):
-      continue
-    import re
-
-    if re.search(
-        r'audiodeskription|audio description|ad version|hörfilm|deskription|barrierefrei',
-        title.lower(),
-    ):
-      continue
-    if any(
-        x in title
-        for x in [
-            '(Englisch)',
-            '(zho)',
-            '(Originalversion mit Untertitel)',
-            '(mit Untertitel)',
-            '(Originalversion)',
-        ]
-    ):
-      continue
-    if re.search(
-        r'\b(folge|staffel|episode|ep\.|teil)\b', title, re.IGNORECASE
-    ):
-      continue
-    if re.search(r'\(\d+(\s*[\/\-]\s*\d+)?\)', title):
-      continue
-    if re.search(r'\b\d{1,2}\/\d{1,2}\b', title):
-      continue
-    if url in seen_urls:
-      continue
-
-    clean_name, year = clean_title(title)
-    if not clean_name:
-      continue
-    norm_title = clean_name.lower().strip()
-    if norm_title == 'nö' or norm_title in seen_titles:
-      continue
-    if m.get('duration_seconds', 0) < 4680:
-      continue
-
-    seen_urls.add(url)
-    seen_titles.add(norm_title)
-
-    # Versuche Datum in einen Timestamp zu konvertieren, falls vorhanden
-    raw_date = m.get('date', 0)
-    try:
-      timestamp = (
-          int(raw_date)
-          if str(raw_date).isdigit()
-          else int(
-              datetime.strptime(str(raw_date)[:10], '%Y-%m-%d').timestamp()
-          )
+  try:
+    if not os.path.exists('zdfm.json'):
+      print(
+          '[!] zdfm.json nicht gefunden! Bitte zuerst zdfscraper.py ausführen.'
       )
-    except:
-      timestamp = 0
+      return
 
-    temp_results.append({
-        'title': clean_name,
-        'search': clean_name,
-        'year': year,
-        'video_url': url,
-        'plot': description or 'Keine Beschreibung verfügbar.',
-        'mediathek_desc': description,
-        'director': '',
-        'actors': [],
-        'rating': 'N/A',
-        'thumb': m.get('url_poster') or 'placeholder.png',
-        'genres_list': ['Sonstige'],
-        'channel': channel,
-        'timestamp': timestamp,
-        'isNew': False,
-    })
+    print('Lade zdfm.json...')
+    with open('zdfm.json', 'r', encoding='utf-8') as f:
+      raw_items = json.load(f)
 
-  temp_results.sort(key=lambda x: x['timestamp'], reverse=True)
-  newest_urls = {m['video_url'] for m in temp_results[:100]}
-  for m in temp_results:
-    if m['video_url'] in newest_urls:
-      m['isNew'] = True
+    seen_urls = set()
+    seen_titles = set()
+    temp_results = []
 
-  all_movies = sorted(temp_results, key=lambda x: x['title'])
-  print(f'{len(all_movies)} gefilterte Filme. Starte TMDB-Hydrierung...')
+    print(f'{len(raw_items)} Roh-Einträge aus zdfm.json geladen. Filtere...')
 
-  for i, movie in enumerate(all_movies):
-    try:
-      query = urllib.parse.quote(movie['search'] or movie['title'])
-      movie_url = f'https://api.themoviedb.org/3/search/movie?api_key={TMDB_API_KEY}&query={query}&language=de-DE&include_adult=false'
+    for m in raw_items:
+      url = m.get('url_stream', '')
+      title = m.get('title', '')
+      channel = m.get('channel', '')
+      description = m.get('description', '')
 
-      res = requests.get(movie_url)
-      data = res.json()
-      tmdb = choose_best_result(data.get('results', []), movie, 'movie')
-      is_tv = False
+      if not url or not title:
+        continue
+      chan_low = channel.lower()
+      if (
+          'kika' in chan_low
+          or 'zdf-tivi' in chan_low
+          or 'tivi' in title.lower()
+      ):
+        continue
+      import re
 
-      if not tmdb:
-        tv_url = f'https://api.themoviedb.org/3/search/tv?api_key={TMDB_API_KEY}&query={query}&language=de-DE&include_adult=false'
-        tv_res = requests.get(tv_url)
-        if tv_res.status_code == 200:
-          tmdb = choose_best_result(tv_res.json().get('results', []), movie, 'tv')
-          is_tv = bool(tmdb)
-
-      if tmdb:
-        genre_ids = tmdb.get('genre_ids', [])
-        if 16 in genre_ids:
-          lower_title = movie['title'].lower()
-          lower_overview = tmdb.get('overview', '').lower()
-          real_keywords = [
-              'tatort',
-              'polizeiruf',
-              'in aller freundschaft',
-              'rosenheim-cops',
-              'krimi',
-              'fernsehfilm',
-              'kommissar',
-              'drama',
-              'spielfilm',
+      if re.search(
+          r'audiodeskription|audio description|ad version|hörfilm|deskription|barrierefrei',
+          title.lower(),
+      ):
+        continue
+      if any(
+          x in title
+          for x in [
+              '(Englisch)',
+              '(zho)',
+              '(Originalversion mit Untertitel)',
+              '(mit Untertitel)',
+              '(Originalversion)',
           ]
-          if any(
-              kw in lower_title
-              or kw in lower_overview
-              or kw in movie['mediathek_desc'].lower()
-              for kw in real_keywords
-          ):
-            genre_ids = [gid for gid in genre_ids if gid != 16]
+      ):
+        continue
+      if re.search(
+          r'\b(folge|staffel|episode|ep\.|teil)\b', title, re.IGNORECASE
+      ):
+        continue
+      if re.search(r'\(\d+(\s*[\/\-]\s*\d+)?\)', title):
+        continue
+      if re.search(r'\b\d{1,2}\/\d{1,2}\b', title):
+        continue
+      if url in seen_urls:
+        continue
 
-        media_type = 'tv' if is_tv else 'movie'
-        credits_url = f'https://api.themoviedb.org/3/{media_type}/{tmdb["id"]}?api_key={TMDB_API_KEY}&language=de-DE&append_to_response=credits'
-        d_res = requests.get(credits_url)
-        d_data = d_res.json() if d_res.status_code == 200 else {}
+      clean_name, year = clean_title(title)
+      if not clean_name:
+        continue
+      norm_title = clean_name.lower().strip()
+      if norm_title == 'nö' or norm_title in seen_titles:
+        continue
+      if m.get('duration_seconds', 0) < 4680:
+        continue
 
-        movie['plot'] = (
-            tmdb.get('overview')
-            or movie['mediathek_desc']
-            or 'Keine Beschreibung verfügbar.'
+      seen_urls.add(url)
+      seen_titles.add(norm_title)
+
+      raw_date = m.get('date', 0)
+      try:
+        timestamp = (
+            int(raw_date)
+            if str(raw_date).isdigit()
+            else int(
+                datetime.strptime(str(raw_date)[:10], '%Y-%m-%d').timestamp()
+            )
         )
-        vote_avg = tmdb.get('vote_average')
-        movie['rating'] = f'{vote_avg:.1f}' if vote_avg else 'N/A'
-        poster = tmdb.get('poster_path')
-        movie['thumb'] = (
-            f'https://image.tmdb.org/t/p/w342{poster}'
-            if poster
-            else 'placeholder.png'
-        )
+      except:
+        timestamp = 0
 
-        credits = d_data.get('credits', {})
-        director = next(
-            (
-                c['name']
-                for c in credits.get('crew', [])
-                if c.get('job') in ['Director', 'Executive Producer']
-            ),
-            '',
-        )
-        movie['director'] = director
-        movie['actors'] = [a['name'] for a in credits.get('cast', [])[:3]]
+      temp_results.append({
+          'title': clean_name,
+          'search': clean_name,
+          'year': year,
+          'video_url': url,
+          'plot': description or 'Keine Beschreibung verfügbar.',
+          'mediathek_desc': description,
+          'director': '',
+          'actors': [],
+          'rating': 'N/A',
+          'thumb': m.get('url_poster') or 'placeholder.png',
+          'genres_list': ['Sonstige'],
+          'channel': channel,
+          'timestamp': timestamp,
+          'isNew': False,
+      })
 
-        date_str = tmdb.get('release_date') or tmdb.get('first_air_date')
-        if date_str and movie['year'] == 'None':
-          movie['year'] = date_str.split('-')[0]
+    temp_results.sort(key=lambda x: x['timestamp'], reverse=True)
+    newest_urls = {m['video_url'] for m in temp_results[:100]}
+    for m in temp_results:
+      if m['video_url'] in newest_urls:
+        m['isNew'] = True
 
-        if genre_ids:
-          movie['genres_list'] = [
-              GENRES_MAP[gid] for gid in genre_ids if gid in GENRES_MAP
-          ]
-          if not movie['genres_list']:
-            movie['genres_list'] = ['Sonstige']
-      else:
-        movie['plot'] = movie['mediathek_desc'] or 'Keine Beschreibung verfügbar.'
-        movie['rating'] = 'N/A'
-        if not movie['thumb']:
-          movie['thumb'] = 'placeholder.png'
+    all_movies = sorted(temp_results, key=lambda x: x['title'])
+    print(f'{len(all_movies)} gefilterte Filme. Starte TMDB-Hydrierung...')
 
-    except Exception as e:
-      print(f"Fehler bei TMDB für {movie['search']}: {e}")
+    for i, movie in enumerate(all_movies):
+      try:
+        query = urllib.parse.quote(movie['search'] or movie['title'])
+        movie_url = f'https://api.themoviedb.org/3/search/movie?api_key={TMDB_API_KEY}&query={query}&language=de-DE&include_adult=false'
 
-    if (i + 1) % 50 == 0:
-      print(f'Fortschritt: {i + 1}/{len(all_movies)} verarbeitet...')
+        res = requests.get(movie_url)
+        data = res.json()
+        tmdb = choose_best_result(data.get('results', []), movie, 'movie')
+        is_tv = False
 
-  with open('movies.json', 'w', encoding='utf-8') as f:
-    json.dump(all_movies, f, ensure_ascii=False, indent=2)
-  print('Fertig! movies.json erfolgreich gespeichert.')
+        if not tmdb:
+          tv_url = f'https://api.themoviedb.org/3/search/tv?api_key={TMDB_API_KEY}&query={query}&language=de-DE&include_adult=false'
+          tv_res = requests.get(tv_url)
+          if tv_res.status_code == 200:
+            tmdb = choose_best_result(
+                tv_res.json().get('results', []), movie, 'tv'
+            )
+            is_tv = bool(tmdb)
+
+        if tmdb:
+          genre_ids = tmdb.get('genre_ids', [])
+          if 16 in genre_ids:
+            lower_title = movie['title'].lower()
+            lower_overview = tmdb.get('overview', '').lower()
+            real_keywords = [
+                'tatort',
+                'polizeiruf',
+                'in aller freundschaft',
+                'rosenheim-cops',
+                'krimi',
+                'fernsehfilm',
+                'kommissar',
+                'drama',
+                'spielfilm',
+            ]
+            if any(
+                kw in lower_title
+                or kw in lower_overview
+                or kw in movie['mediathek_desc'].lower()
+                for kw in real_keywords
+            ):
+              genre_ids = [gid for gid in genre_ids if gid != 16]
+
+          media_type = 'tv' if is_tv else 'movie'
+          credits_url = f'https://api.themoviedb.org/3/{media_type}/{tmdb["id"]}?api_key={TMDB_API_KEY}&language=de-DE&append_to_response=credits'
+          d_res = requests.get(credits_url)
+          d_data = d_res.json() if d_res.status_code == 200 else {}
+
+          movie['plot'] = (
+              tmdb.get('overview')
+              or movie['mediathek_desc']
+              or 'Keine Beschreibung verfügbar.'
+          )
+          vote_avg = tmdb.get('vote_average')
+          movie['rating'] = f'{vote_avg:.1f}' if vote_avg else 'N/A'
+          poster = tmdb.get('poster_path')
+          movie['thumb'] = (
+              f'https://image.tmdb.org/t/p/w342{poster}'
+              if poster
+              else 'placeholder.png'
+          )
+
+          credits = d_data.get('credits', {})
+          director = next(
+              (
+                  c['name']
+                  for c in credits.get('crew', [])
+                  if c.get('job') in ['Director', 'Executive Producer']
+              ),
+              '',
+          )
+          movie['director'] = director
+          movie['actors'] = [a['name'] for a in credits.get('cast', [])[:3]]
+
+          date_str = tmdb.get('release_date') or tmdb.get('first_air_date')
+          if date_str and movie['year'] == 'None':
+            movie['year'] = date_str.split('-')[0]
+
+          if genre_ids:
+            movie['genres_list'] = [
+                GENRES_MAP[gid] for gid in genre_ids if gid in GENRES_MAP
+            ]
+            if not movie['genres_list']:
+                movie['genres_list'] = ['Sonstige']
+        else:
+          movie['plot'] = movie['mediathek_desc'] or 'Keine Beschreibung verfügbar.'
+          movie['rating'] = 'N/A'
+          if not movie['thumb']:
+            movie['thumb'] = 'placeholder.png'
+
+      except Exception as e:
+        print(f"Fehler bei TMDB für {movie['search']}: {e}")
+
+      if (i + 1) % 50 == 0:
+        print(f'Fortschritt: {i + 1}/{len(all_movies)} verarbeitet...')
+
+    with open('movies.json', 'w', encoding='utf-8') as f:
+      json.dump(all_movies, f, ensure_ascii=False, indent=2)
+    print('Fertig! movies.json erfolgreich gespeichert.')
+
+  except Exception as e:
+    print(' SCHWERER FEHLER IN gezscraper.py:')
+    traceback.print_exc()
+    raise e
 
 
 if __name__ == '__main__':
