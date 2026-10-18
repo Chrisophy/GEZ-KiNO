@@ -21,8 +21,7 @@ jobs:
         run: pip install requests
 
       - name: Schritt 1 - Mediathek abfragen, TMDB abgleichen & movies.json erzeugen
-        env:
-          TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
+        # env-Block entfernt, damit der Fallback-Key im Skript greift
         run: python gezscraper.py
 
       - name: Schritt 2 - movies.json explizit hinzufügen und committen
@@ -30,5 +29,5 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add movies.json
-          git commit -m " Automatische Aktualisierung der movies.json" || echo "Keine Änderungen zum Committen"
+          git commit -m "Automatische Aktualisierung der movies.json" || echo "Keine Änderungen zum Committen"
           git push
