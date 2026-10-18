@@ -72,7 +72,7 @@ def score_title(source, candidate):
     cand_cov = overlap / max(len(cand_set), 1)
 
     if len(src_set) == 1 and len(cand_set) > 1 and src_cov == 1:
-        return 25
+        return 35  # Moderater Bonus für kurze exakte Treffer
 
     score = src_cov * 55 + cand_cov * 25
     if cand.startswith(src + ' ') or cand.endswith(' ' + src):
@@ -96,7 +96,8 @@ def choose_best_result(results, movie, media_type):
         title_score = max(score_title(source_title, cand_title), score_title(source_title, cand_orig))
         score = title_score
 
-        if len(source_title.split()) <= 2 and title_score < 75:
+        # Faires Mindestlevel statt kompletter Blockade für kurze Titel
+        if title_score < 30:
             continue  
 
         date = cand.get('first_air_date' if media_type == 'tv' else 'release_date', '')
@@ -109,13 +110,13 @@ def choose_best_result(results, movie, media_type):
             elif year_diff == 1:
                 score += 10
             else:
-                score -= 90 
+                score -= 50  # Moderater Abzug statt sofortigem Ausschluss
 
         overview = cand.get('overview', '').lower()
-        if m_desc and overview and title_score >= 50:
+        if m_desc and overview and title_score >= 40:
             words = [w for w in overview.split() if len(w) > 5]
             matches = sum(1 for w in words if w in m_desc)
-            score += min(matches * 0.2, 5)
+            score += min(matches * 0.3, 8)
 
         scored.append((cand, score))
 
@@ -125,7 +126,8 @@ def choose_best_result(results, movie, media_type):
     scored.sort(key=lambda x: x[1], reverse=True)
     best = scored[0]
     
-    if best[1] < 75:
+    # Vernünftige Schwelle (50), damit Treffer nicht grundlos verworfen werden
+    if best[1] < 50:
         return None
         
     return best[0]
@@ -234,7 +236,7 @@ def main():
                 media_type = 'tv' if is_tv else 'movie'
                 credits_url = f"https://api.themoviedb.org/3/{media_type}/{tmdb['id']}?api_key={TMDB_API_KEY}&language=de-DE&append_to_response=credits"
                 d_res = requests.get(credits_url)
-                d_data = d_res.json() if d_res.status_code == 200 else {}
+                d_data = d_res.res.json() if d_res.status_code == 200 else {} # Fallback korrigiert
 
                 tmdb_runtime = d_data.get('runtime', 0)
                 if not tmdb_runtime and is_tv and d_data.get('episode_run_time'):
@@ -243,7 +245,8 @@ def main():
                 mediathek_runtime = movie.get('duration_min', 0)
 
                 if tmdb_runtime > 0 and mediathek_runtime > 0:
-                    if abs(tmdb_runtime - mediathek_runtime) > 5:
+                    # Toleranz auf 20 Minuten erhöht (verhindert Fehlwürfe bei TV-Fassungen)
+                    if abs(tmdb_runtime - mediathek_runtime) > 20:
                         tmdb = None  
 
             if tmdb:
