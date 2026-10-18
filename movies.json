@@ -1477,14 +1477,19 @@
       "Olwen Fouéré"
     ],
     "rating": "6.1",
-    "thumb": "https://image.tmdb.org/t/p/original/c1QSpS8UAFRmAaskHSndtqY06Lx.jpg",
+    "thumb": "https://image.tmdb.org/t/p/w342/c1QSpS8UAFRmAaskHSndtqY06Lx.jpg",
     "genres_list": [
-      "Horror", 
-      "Sci-Fi"
+      "Thriller",
+      "Horror",
+      "Drama",
+      "Sci-Fi",
+      "Mystery"
     ],
     "channel": "3Sat",
     "timestamp": 1656965700,
-    "isNew": false
+    "isNew": false,
+    "tmdb_id": 507441,
+    "tmdb_type": "movie"
   },
   {
     "title": "Angst über den Wolken",
@@ -1844,28 +1849,6 @@
     "isNew": false,
     "tmdb_id": 368171,
     "tmdb_type": "movie"
-  },
-  {
-    "title": "Reclaim - Auf eigenes Risiko",
-    "search": "Auf eigenes Risiko",
-    "year": "2014",
-    "video_url": "https://rodlzdf-a.akamaihd.net/dach/3sat/23/09/230922_auf_eigenes_risiko_spielfilm/1/230922_auf_eigenes_risiko_spielfilm_2360k_p35v15.mp4",
-    "plot": "Steven und Shannon sind nach der Adoption ihrer Tochter Nina überglücklich. Doch schon bald gerät die junge Familie in eine große Gefahr, und Nina verschwindet spurlos.",
-    "mediathek_desc": "Steven und Shannon sind nach der Adoption ihrer Tochter Nina überglücklich. Doch schon bald gerät die junge Familie in eine große Gefahr, und Nina verschwindet spurlos.",
-    "director": "Alan White",
-    "actors": [
-      "John Cusack",
-      "Ryan Phillippe",
-      "Rachelle Lefèvre"
-    ],
-    "rating": "5.2",
-    "thumb": "https://image.tmdb.org/t/p/original/m9HpukbOaGlcgIIioy606RTSZC7.jpg",
-    "genres_list": [    
-      "Thriller"
-    ],
-    "channel": "3Sat",
-    "timestamp": 1522095600,
-    "isNew": false
   },
   {
     "title": "Auf einmal war es Liebe",
@@ -2590,6 +2573,26 @@
     "timestamp": 1613165460,
     "isNew": false,
     "tmdb_id": 438145,
+    "tmdb_type": "movie"
+  },
+  {
+    "title": "Black Box",
+    "search": "Black Box",
+    "year": "2022",
+    "video_url": "https://nrodlzdf-a.akamaihd.net/none/3sat/25/02/250213_black_box_spielfilm/1/250213_black_box_spielfilm_a1a2_3360k_p36v17.mp4",
+    "plot": "Ein alter Berliner Gebäudekomplex: Die Bewohner leiden unter der sinkenden Lebensqualität. Hausverwalter Horn möchte helfen, doch was weiß er über die Leiche auf dem Dachboden?",
+    "mediathek_desc": "Ein alter Berliner Gebäudekomplex: Die Bewohner leiden unter der sinkenden Lebensqualität. Hausverwalter Horn möchte helfen, doch was weiß er über die Leiche auf dem Dachboden?",
+    "director": "Alana Mango",
+    "actors": [],
+    "rating": "N/A",
+    "thumb": "https://image.tmdb.org/t/p/w342/8xeHTEIl5grwlNOOI24wTfJPf5Y.jpg",
+    "genres_list": [
+      "Animation"
+    ],
+    "channel": "3Sat",
+    "timestamp": 1739474100,
+    "isNew": false,
+    "tmdb_id": 1021014,
     "tmdb_type": "movie"
   },
   {
@@ -3583,7 +3586,7 @@
     "search": "Dampfnudelblues. Ein Eberhoferkrimi",
     "year": "2013",
     "video_url": "https://rodlzdf-a.akamaihd.net/none/3sat/24/02/240212_dampfnudelblues_mit_ad_spielfilm/1/240212_dampfnudelblues_mit_ad_spielfilm_a1a2_2360k_p35v17.mp4",
-    "plot": "Provinzbulle Franz Eberhofer ermittelt im Fall des zunächst verschwundenen und dann vom Zug überrollten Schuldirektors Höpfl. \"STIRB DU SAU!\" stand wenige Tage vorher an dessen Hauswand.",
+    "plot": "Gerade hat es sich Provinzpolizist Franz Eberhofer behaglich eingerichtet, da überschlagen sich die Ereignisse in Niederkaltenkirchen: »Stirb, du Sau!« hat jemand mit roter Farbe an Realschulrektor Höpfls Eigenheim geschmiert, und kurz darauf liegt dieser auch noch tot auf den Gleisen. Selbstmord? Mord? Mit der bayerischen Beschaulichkeit ist es erst mal vorbei. Stress pur für den Eberhofer Franz…",
     "mediathek_desc": "Provinzbulle Franz Eberhofer ermittelt im Fall des zunächst verschwundenen und dann vom Zug überrollten Schuldirektors Höpfl. \"STIRB DU SAU!\" stand wenige Tage vorher an dessen Hauswand.",
     "director": "Ed Herzog",
     "actors": [
@@ -3592,14 +3595,16 @@
       "Eisi Gulp"
     ],
     "rating": "6.8",
-    "thumb": "https://image.tmdb.org/t/p/original/mlE9wNxyzGQPJm26Fn8eBr1H1gx.jpg",
+    "thumb": "https://image.tmdb.org/t/p/w342/mlE9wNxyzGQPJm26Fn8eBr1H1gx.jpg",
     "genres_list": [
       "Komödie",
       "Krimi"
     ],
     "channel": "3Sat",
     "timestamp": 1563387360,
-    "isNew": false
+    "isNew": false,
+    "tmdb_id": 209232,
+    "tmdb_type": "movie"
   },
   {
     "title": "Dann kam Lucy",
@@ -3795,7 +3800,7 @@
     "genres_list": [
       "Krieg",
       "Historie",
-      "Drama"    
+      "Drama"
     ],
     "channel": "3Sat",
     "timestamp": 1725050100,
@@ -3915,7 +3920,7 @@
       "Luc Bruchez",
       "Laetitia Casta",
       "Thibaut Évrard"
-],
+    ],
     "rating": "5.3",
     "thumb": "https://image.tmdb.org/t/p/original/nQOh2FruQijwiR3e35qzLjFdWGj.jpg",
     "genres_list": [
@@ -4338,24 +4343,26 @@
     "search": "Das Jerico Projekt",
     "year": "2016",
     "video_url": "https://nrodlzdf-a.akamaihd.net/dach/3sat/22/09/220916_das_jerico_projekt_spielfilm/1/220916_das_jerico_projekt_spielfilm_3360k_p36v15.mp4",
-    "plot": "Als der CIA-Agent Pope ums Leben kommt, muss sein Vorgesetzter Wells zu drastischen Mitteln greifen: Die Erinnerungen des Agenten sollen in das Gehirn des Verbrechers Jerico übertragen werden.",
+    "plot": "Jerico Stewart ist ein skrupelloser Killer ohne Impulskontrolle, ohne Empathie und ohne die Fähigkeit, die Folgen seines Handelns abzuschätzen. Bald aber ist er nur noch die Hülle für einen anderen Mann: Stewart wird das Gehirn eines kürzlich ermordeten CIA-Agenten implantiert, das Gehirn von Bill Pope. Während dessen Frau Jill  um den Verlust ihres Mannes trauert, soll der sich im Körper von Stewart an seine jüngste Mission erinnern – daran, wohin er einen Mann unter Geheimdienstschutz gebracht hat. Das ist für Popes Vorgesetzten  von oberster Priorität, immerhin steht die Sicherheit der Metropolen Washington D.C., Berlin und Peking auf dem Spiel …",
     "mediathek_desc": "Als der CIA-Agent Pope ums Leben kommt, muss sein Vorgesetzter Wells zu drastischen Mitteln greifen: Die Erinnerungen des Agenten sollen in das Gehirn des Verbrechers Jerico übertragen werden.",
-    "director": "Ariel Vromen",
+    "director": "Jason Bloom",
     "actors": [
       "Kevin Costner",
       "Gary Oldman",
       "Tommy Lee Jones"
     ],
     "rating": "6.2",
-    "thumb": "https://image.tmdb.org/t/p/original/xuE4CeqpsVgxuhznpD9UX65qQyp.jpg",
+    "thumb": "https://image.tmdb.org/t/p/w342/xuE4CeqpsVgxuhznpD9UX65qQyp.jpg",
     "genres_list": [
-      "Thriller",
       "Action",
+      "Krimi",
       "Sci-Fi"
     ],
     "channel": "3Sat",
     "timestamp": 1569874500,
-    "isNew": false
+    "isNew": false,
+    "tmdb_id": 302156,
+    "tmdb_type": "movie"
   },
   {
     "title": "Das Kindermädchen: Mission Italien",
@@ -6464,7 +6471,7 @@
     "director": "Francis Ford Coppola",
     "actors": [
       "Al Pacino",
-      "Diane Keaton",      
+      "Diane Keaton",
       "Talia Shire"
     ],
     "rating": "7.4",
@@ -9400,7 +9407,7 @@
     "actors": [
       "Lindsay Wagner",
       "Michael Ironside",
-      "Martin Sheen"     
+      "Martin Sheen"
     ],
     "rating": "4.3",
     "thumb": "https://image.tmdb.org/t/p/original/1qzcqkN0uJQ1MoeVpnwL34PVfQ8.jpg",
@@ -11054,7 +11061,7 @@
       "Joachim Fuchsberger",
       "Sabina Sesselmann",
       "Klaus Kinski"
-],
+    ],
     "rating": "5.8",
     "thumb": "https://image.tmdb.org/t/p/original/7zpHuQo93ijMx5EiYSCKr22YsRd.jpg",
     "genres_list": [
@@ -17250,7 +17257,7 @@
     "search": "Im Visier des Killers",
     "year": "2018",
     "video_url": "https://nrodlzdf-a.akamaihd.net/dach/3sat/23/09/230930_im_visier_des_killers_spielfilm/1/230930_im_visier_des_killers_spielfilm_3360k_p36v17.mp4",
-    "plot": "Sean und sein Freund Derek begehen Gelegenheitseinbrüche. Als Sean eines Nachts in die Villa von Cale Erendreich einsteigt, entdeckt er in einem geheimen Zimmer eine gefesselte Frau.",
+    "plot": "Sean Falco und sein Kumpel Derek haben ein einträgliches Geschäft. Der eine parkt für ein Restaurant Autos, während der andere zu dieser Zeit in die Häuser der Eigentümer einbrechen kann, die gerade beim Essen sind. Alles geht gut, bis Sean eines Tages bei einem seiner Einbrüche eine Frau entdeckt, die in einer dunklen Kammer eingesperrt und angekettet ist. Als Sean versucht die Frau zu befreien, kommt der Besitzer deutlich früher zurück. Und nun beginnt für die Kleinkriminellen ein Albtraum. Denn natürlich glaubt ihnen die Polizei nicht, schließlich ist Hausbesitzer Cale ein angesehener Bürger der Stadt. Doch Sean und Derek müssen schnell am eigenen Leib erfahren, dass sich hinter dieser Fassade ein eiskalter Killer verbirgt. Und der macht nun Jagd auf sie …",
     "mediathek_desc": "Sean und sein Freund Derek begehen Gelegenheitseinbrüche. Als Sean eines Nachts in die Villa von Cale Erendreich einsteigt, entdeckt er in einem geheimen Zimmer eine gefesselte Frau.",
     "director": "Dean Devlin",
     "actors": [
@@ -17258,17 +17265,19 @@
       "Robert Sheehan",
       "Kerry Condon"
     ],
-    "rating": "7.6",
-    "thumb": "https://image.tmdb.org/t/p/original/xCrRHJTdMG8SSLrBUdI8EsLuAkS.jpg",
+    "rating": "6.7",
+    "thumb": "https://image.tmdb.org/t/p/w342/xCrRHJTdMG8SSLrBUdI8EsLuAkS.jpg",
     "genres_list": [
       "Thriller",
+      "Krimi",
       "Horror",
-      "Drama",
-      "Krimi"
+      "Drama"
     ],
     "channel": "3Sat",
     "timestamp": 1581974100,
-    "isNew": false
+    "isNew": false,
+    "tmdb_id": 467632,
+    "tmdb_type": "movie"
   },
   {
     "title": "Im Weißen Rössl",
@@ -22081,24 +22090,25 @@
     "search": "Memory - Sein letzter Auftrag",
     "year": "2021",
     "video_url": "https://nrodlzdf-a.akamaihd.net/dach/3sat/26/04/260417_memory_sein_letzter_auftrag_spielfilm/1/260417_memory_sein_letzter_auftrag_spielfilm_3360k_p36v17.mp4",
-    "plot": "Schnell, leise, unauffällig und professionell: Alex Lewis ist ein Auftragskiller, der keine Spuren hinterlässt. Doch eine Demenz erschwert zunehmend seinen Job.",
+    "plot": "Profikiller Alex Lewis möchte sich wegen seines nachlassenden Erinnerungsvermögens nach einer langen Karriere voller Gewalt zur Ruhe setzen. Als er seinen letzten Auftrag annimmt, findet er sich unvermittelt in einem Undercover-Einsatz des FBI wieder, angeführt von Agent Serra. Alex beschließt, Serras Team durch versteckte Hinweise zu helfen. Auch wenn er sich zunehmend schwer an Details erinnern kann, setzt er seine lebenslang trainierten Fähigkeiten ein, um zumindest einmal in seinem Leben das Richtige zu tun. Dies ruft natürlich mächtige Gegner auf den Plan, die Alex vernichten wollen, doch dieser weiß sich zu wehren …",
     "mediathek_desc": "Schnell, leise, unauffällig und professionell: Alex Lewis ist ein Auftragskiller, der keine Spuren hinterlässt. Doch eine Demenz erschwert zunehmend seinen Job.",
-    "director": "Tina-Maria Feyrer",
+    "director": "Peter Bouckaert",
     "actors": [
-      "Lisa Friedinger",
-      "Alessandro Giontella",
-      "Anna Sophie Krenn"
+      "Liam Neeson",
+      "Guy Pearce",
+      "Taj Atwal"
     ],
-    "rating": "N/A",
-    "thumb": "placeholder.png",
+    "rating": "6.7",
+    "thumb": "https://image.tmdb.org/t/p/w342/e6zf47QakOXpUz2p4Qrv8iiSlGM.jpg",
     "genres_list": [
-      "Mystery",
-      "Thriller"
+      "Action",
+      "Thriller",
+      "Krimi"
     ],
     "channel": "3Sat",
     "timestamp": 1711401300,
     "isNew": false,
-    "tmdb_id": 884459,
+    "tmdb_id": 818397,
     "tmdb_type": "movie"
   },
   {
@@ -25352,6 +25362,28 @@
     "tmdb_type": "movie"
   },
   {
+    "title": "Reclaim - Auf eigenes Risiko",
+    "search": "Auf eigenes Risiko",
+    "year": "2014",
+    "video_url": "https://rodlzdf-a.akamaihd.net/dach/3sat/23/09/230922_auf_eigenes_risiko_spielfilm/1/230922_auf_eigenes_risiko_spielfilm_2360k_p35v15.mp4",
+    "plot": "Steven und Shannon sind nach der Adoption ihrer Tochter Nina überglücklich. Doch schon bald gerät die junge Familie in eine große Gefahr, und Nina verschwindet spurlos.",
+    "mediathek_desc": "Steven und Shannon sind nach der Adoption ihrer Tochter Nina überglücklich. Doch schon bald gerät die junge Familie in eine große Gefahr, und Nina verschwindet spurlos.",
+    "director": "Alan White",
+    "actors": [
+      "John Cusack",
+      "Ryan Phillippe",
+      "Rachelle Lefèvre"
+    ],
+    "rating": "5.2",
+    "thumb": "https://image.tmdb.org/t/p/original/m9HpukbOaGlcgIIioy606RTSZC7.jpg",
+    "genres_list": [
+      "Thriller"
+    ],
+    "channel": "3Sat",
+    "timestamp": 1522095600,
+    "isNew": false
+  },
+  {
     "title": "Rehragout-Rendezvous",
     "search": "Rehragout-Rendezvous",
     "year": "2023",
@@ -26538,7 +26570,7 @@
     "actors": [
       "Liam Neeson",
       "Pierce Brosnan",
-     "Michael Wincott"
+      "Michael Wincott"
     ],
     "rating": "6.4",
     "thumb": "https://image.tmdb.org/t/p/original/o2tEpG0PSVKsjW5KWLqDNP4jUOF.jpg",
@@ -28311,7 +28343,7 @@
     "search": "The Convert - Krieg der Māori",
     "year": "2024",
     "video_url": "https://nrodlzdf-a.akamaihd.net/dach/3sat/26/07/260731_the_convert_krieg_der_maori_spielfilm/1/260731_the_convert_krieg_der_maori_spielfilm_a1a2_3360k_p36v17.mp4",
-    "plot": "Als Thomas Munro in den 1830ern die Küste von Neuseeland erreicht, trifft er auf ein von Māori geprägtes Aotearoa. Die Siedlung leidet unter Verfall und blutigen Stammeskonflikten.",
+    "plot": "Ein Laienprediger kommt in den 1830er Jahren in einer britischen Siedlung an. Seine gewalttätige Vergangenheit wird bald in Frage und sein Glaube auf die Probe gestellt, als er sich in der Mitte des Konfliktes wiederfindet.",
     "mediathek_desc": "Als Thomas Munro in den 1830ern die Küste von Neuseeland erreicht, trifft er auf ein von Māori geprägtes Aotearoa. Die Siedlung leidet unter Verfall und blutigen Stammeskonflikten.",
     "director": "Lee Tamahori",
     "actors": [
@@ -28320,14 +28352,16 @@
       "Antonio Te Maioha"
     ],
     "rating": "6.2",
-    "thumb": "https://image.tmdb.org/t/p/original/i4U9iMOaaGoay4DDRqmk67khoy5.jpg",
+    "thumb": "https://image.tmdb.org/t/p/w342/i4U9iMOaaGoay4DDRqmk67khoy5.jpg",
     "genres_list": [
       "Drama",
       "Action"
     ],
     "channel": "3Sat",
     "timestamp": 1785529500,
-    "isNew": false
+    "isNew": false,
+    "tmdb_id": 1066262,
+    "tmdb_type": "movie"
   },
   {
     "title": "The Courier - Tödlicher Auftrag",
@@ -28799,7 +28833,7 @@
     "actors": [
       "Hilary Swank",
       "Jeffrey Dean Morgan",
-      "Lee Pace"      
+      "Lee Pace"
     ],
     "rating": "5.7",
     "thumb": "https://image.tmdb.org/t/p/original/xROEwIjvWbRvK5k8B927oZYBjnH.jpg",
@@ -28991,23 +29025,25 @@
     "search": "Tides - Kampf um die Zukunft",
     "year": "2021",
     "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/24/09/240908_0245_sendung_spf/1/240908_0245_sendung_spf_a1a2_3360k_p36v17.mp4",
-    "plot": "Eine Astronautin kehrt nach einer Klimakatastrophe zurück zur Erde, um die Chance einer Neubesiedlung zu prüfen. Dabei sucht sie auch ihren bei einer Mission verschollenen Vater.",
+    "plot": "Als die Erde für den Menschen unbewohnbar wurde, besiedelte die herrschende Elite den Planeten Kepler 209. Doch seine Atmosphäre macht die neuen Bewohner unfruchtbar. Zwei Generationen später soll ein Programm feststellen, ob Leben auf der Erde wieder möglich ist: Mission Ulysses II soll Gewissheit bringen. Die Raumkapsel gerät beim Eintritt in die Erdatmosphäre außer Kontrolle. Die Astronautin Blake überlebt die Landung als Einzige – doch sie muss feststellen, dass sie auf der Erde nicht alleine ist. Ein Überlebenskampf beginnt, und Blake muss Entscheidungen treffen, die das Schicksal der ganzen Menschheit bestimmen werden.",
     "mediathek_desc": "Eine Astronautin kehrt nach einer Klimakatastrophe zurück zur Erde, um die Chance einer Neubesiedlung zu prüfen. Dabei sucht sie auch ihren bei einer Mission verschollenen Vater.",
-    "director": "Tim Fehlbaum",
+    "director": "Roland Emmerich",
     "actors": [
       "Nora Arnezeder",
       "Iain Glen",
       "Sarah-Sofie Boussnina"
     ],
     "rating": "5.7",
-    "thumb": "https://image.tmdb.org/t/p/original/8FhLL4VHFt5UvhAKe8S945U0DOn.jpg",
+    "thumb": "https://image.tmdb.org/t/p/w342/8FhLL4VHFt5UvhAKe8S945U0DOn.jpg",
     "genres_list": [
       "Sci-Fi",
       "Thriller"
     ],
     "channel": "ZDF",
     "timestamp": 1791069301,
-    "isNew": false
+    "isNew": false,
+    "tmdb_id": 760873,
+    "tmdb_type": "movie"
   },
   {
     "title": "Tiger House",
