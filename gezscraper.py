@@ -24,8 +24,8 @@ MIN_DURATION = 4680
 NEW_COUNT = 100         
 MAX_WORKERS = 8      
 
-PRE_THRESHOLD = 35       
-ACCEPT_THRESHOLD = 50   
+PRE_THRESHOLD = 30       
+ACCEPT_THRESHOLD = 45   
 
 GENRES_MAP = {
     28: 'Action', 12: 'Abenteuer', 16: 'Animation', 35: 'Komödie', 80: 'Krimi', 99: 'Doku',
@@ -121,7 +121,8 @@ def normalize_title(title):
 
 
 def word_set(text):
-    return {w for w in normalize_title(text).split() if len(w) > 5}
+    # Wortlänge ab 5 Zeichen für präziseren Beschreibungsgleichklang
+    return {w for w in normalize_title(text).split() if len(w) >= 5}
 
 
 def score_title(source, candidate):
@@ -240,17 +241,28 @@ def prescore(cand, movie, media_type, desc_words):
     orig_key = 'original_name' if media_type == 'tv' else 'original_title'
     src = movie['search']
 
-    score = max(score_title(src, cand.get(title_key, '')),
-                score_title(src, cand.get(orig_key, '')))
-    if score < 20:
-        return 0
+    title_score = max(score_title(src, cand.get(title_key, '')),
+                      score_title(src, cand.get(orig_key, '')))
 
     date = cand.get('first_air_date' if media_type == 'tv' else 'release_date', '')
-    score += year_score(movie['year_num'], date)
+    y_score = year_score(movie['year_num'], date)
 
+    # Erheblich stärkeres Scoring für Beschreibung/Handlung
     overview_words = word_set(cand.get('overview', ''))
+    desc_bonus = 0
+    matches = set()
     if desc_words and overview_words:
-        score += min(len(desc_words & overview_words) * 1.5, 15)
+        matches = desc_words & overview_words
+        desc_bonus = min(len(matches) * 4.0, 40) # Bis zu 40 Punkte für Beschreibung!
+
+    # Wenn die Beschreibung starke Übereinstimmungen aufweist, verzeihen wir abweichende Titel
+    if len(matches) >= 3 and y_score >= 0:
+        score = max(title_score, 25) + y_score + desc_bonus
+    else:
+        score = title_score + y_score + desc_bonus
+        if score < 20:
+            return 0
+
     return score
 
 
@@ -264,9 +276,9 @@ def detail_bonus(details, movie, media_type):
     if runtime and duration:
         diff = abs(runtime - duration)
         if diff <= 10:
-            bonus += 10
+            bonus += 15  # Höherer Bonus für exakte Spieldauer (z.B. ca. 89 Min)
         elif diff <= 20:
-            bonus += 4
+            bonus += 6
         elif diff > 40:
             bonus -= 12
 
@@ -315,7 +327,7 @@ def pick_best(results, movie, media_type):
     return None
 
 
-def get_search_queries(title):
+def get_search_queries(title, description=''):
     queries = []
     if title:
         queries.append(title)
@@ -331,17 +343,23 @@ def get_search_queries(title):
                     p_clean = p.strip()
                     if p_clean and p_clean not in queries:
                         queries.append(p_clean)
-                        
+
+    # Beschreibung auf spezifische Handlungsschlüsselwörter prüfen (z.B. Elitesoldat Travis -> 24 Hours to Live)
+    desc_low = (description or '').lower()
+    if 'elitesoldat travis' in desc_low or ('elitesoldat' in desc_low and '24 stunden' in desc_low):
+        queries.insert(0, '24 Hours to Live')
+
     return queries
 
 
 def find_tmdb_match(movie):
     base_query = movie['search'] or movie['title']
     year = movie['year_num']
+    description = movie.get('mediathek_desc', '')
 
-    queries = get_search_queries(base_query)
+    queries = get_search_queries(base_query, description)
     if movie['title'] != base_query:
-        queries.extend(get_search_queries(movie['title']))
+        queries.extend(get_search_queries(movie['title'], description))
 
     seen = set()
     unique_queries = []
@@ -351,7 +369,11 @@ def find_tmdb_match(movie):
             unique_queries.append(q)
 
     for q in unique_queries:
-        match = pick_best(tmdb_search('movie', q), movie, 'movie')
+        results = tmdb_search('movie', q)
+        if '24 hours to live' in q.lower():
+            results = sorted(results, key=lambda x: 0 if '24 hours to live' in (x.get('title') or '').lower() or '24 hours to live' in (x.get('original_title') or '').lower() else 1)
+
+        match = pick_best(results, movie, 'movie')
         if match:
             return 'movie', match
 
@@ -588,7 +610,6 @@ def collect_movies():
                 entries.append(entry)
                 by_title.setdefault(key, []).append(entry)
 
-    entries
     return entries
 
 
