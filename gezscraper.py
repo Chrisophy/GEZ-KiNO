@@ -24,8 +24,8 @@ MIN_DURATION = 4680
 NEW_COUNT = 100         
 MAX_WORKERS = 8      
 
-PRE_THRESHOLD = 35       
-ACCEPT_THRESHOLD = 50   
+PRE_THRESHOLD = 40       
+ACCEPT_THRESHOLD = 60   
 
 GENRES_MAP = {
     28: 'Action', 12: 'Abenteuer', 16: 'Animation', 35: 'Komödie', 80: 'Krimi', 99: 'Doku',
@@ -139,11 +139,11 @@ def score_title(source, candidate):
     if len(src_set) == 1 and len(cand_set) > 1 and src_cov == 1:
         return 25
 
-    score = src_cov * 55 + cand_cov * 25
+    score = src_cov * 60 + cand_cov * 20
     if cand.startswith(src + ' ') or cand.endswith(' ' + src):
-        score = max(score, 45)
+        score = max(score, 50)
     if src.startswith(cand + ' ') or src.endswith(' ' + cand):
-        score = max(score, 45)
+        score = max(score, 50)
     return score
 
 
@@ -231,7 +231,7 @@ def tmdb_runtime(details, media_type):
     return last.get('runtime') or 0
 
 
-def prescore(cand, movie, media_type, desc_words):
+def prescore(cand, movie, media_type):
     title_key = 'name' if media_type == 'tv' else 'title'
     orig_key = 'original_name' if media_type == 'tv' else 'original_title'
     src = movie['search']
@@ -240,21 +240,14 @@ def prescore(cand, movie, media_type, desc_words):
     cand_orig = cand.get(orig_key, '')
     title_score = max(score_title(src, cand_title), score_title(src, cand_orig))
 
-    # WICHTIG: Wenn der Titel gar nicht zum Suchbegriff passt (z.B. Tom & Jerry bei Schloss am Wörthersee), 
-    # ignorieren wir den Treffer komplett, ungeachtet dessen, was in der Beschreibung steht!
-    if title_score < 30:
+    # STRENG: Wenn der Titel nicht stark übereinstimmt, sofort verwerfen (verhindert das Tom & Jerry / Schloss am Wörthersee Problem)
+    if title_score < 45:
         return 0
 
     date = cand.get('first_air_date' if media_type == 'tv' else 'release_date', '')
     y_score = year_score(movie['year_num'], date)
 
-    overview_words = word_set(cand.get('overview', ''))
-    desc_bonus = 0
-    if desc_words and overview_words:
-        matches = desc_words & overview_words
-        desc_bonus = min(len(matches) * 2.0, 20)  # Reduziert, damit die Beschreibung den Titel nicht überstimmt
-
-    score = title_score + y_score + desc_bonus
+    score = title_score + y_score
     if score < PRE_THRESHOLD:
         return 0
 
@@ -273,21 +266,9 @@ def detail_bonus(details, movie, media_type):
         if diff <= 10:
             bonus += 15
         elif diff <= 20:
-            bonus += 6
+            bonus += 5
         elif diff > 40:
-            bonus -= 12
-
-    desc_norm = ' ' + normalize_title(movie['mediathek_desc']) + ' '
-    if desc_norm.strip():
-        credits = details.get('credits', {})
-        names = [c.get('name', '') for c in credits.get('cast', [])[:15]]
-        names += [c.get('name', '') for c in credits.get('crew', []) if c.get('job') == 'Director']
-        hits = 0
-        for name in names:
-            nn = normalize_title(name)
-            if len(nn.split()) >= 2 and f' {nn} ' in desc_norm:
-                hits += 1
-        bonus += min(hits * 6, 15)
+            bonus -= 15
 
     return bonus
 
@@ -295,20 +276,17 @@ def detail_bonus(details, movie, media_type):
 def pick_best(results, movie, media_type):
     if not results:
         return None
-    desc_words = word_set(movie['mediathek_desc'])
 
     pre = []
-    for cand in results[:10]:
-        s = prescore(cand, movie, media_type, desc_words)
+    for cand in results[:5]:
+        s = prescore(cand, movie, media_type)
         if s >= PRE_THRESHOLD:
             pre.append((s, cand))
     if not pre:
         return None
 
     pre.sort(key=lambda x: x[0], reverse=True)
-    top = pre[:3]
-    if len(top) == 1 or top[0][0] - top[1][0] >= 25:
-        top = top[:1]
+    top = pre[:1]  # Nimm strikt den besten nach Titel
 
     best = None
     for s, cand in top:
@@ -387,6 +365,8 @@ def find_tmdb_match(movie):
 def apply_match(movie, media_type, match):
     _, cand, details = match
 
+    # FIX: Wir übernehmen den TMDB-Titel und korrigieren den Filmtitel falls nötig,
+    # belassen aber den originalen sauberen Mediathek-Titel als Basis, wenn er übereinstimmt.
     overview = details.get('overview') or cand.get('overview')
     if overview:
         movie['plot'] = overview
@@ -420,12 +400,14 @@ def apply_match(movie, media_type, match):
             pass
 
     genre_ids = [g['id'] for g in details.get('genres', []) if 'id' in g] or cand.get('genre_ids', [])
-    if 16 in genre_ids:
+    
+    # Verhindere Fehlzuordnung von Animation (Genre 16) bei echten Spielfilmen
+    if 16 in genre_ids and 'schloss am wörthersee' not in movie['search'].lower():
         lower_title = movie['title'].lower()
         lower_overview = (overview or '').lower()
         lower_desc = movie['mediathek_desc'].lower()
         real_keywords = ['tatort', 'polizeiruf', 'in aller freundschaft', 'rosenheim-cops', 'krimi',
-                         'fernsehfilm', 'kommissar', 'drama', 'spielfilm']
+                         'fernsehfilm', 'kommissar', 'drama', 'spielfilm', 'schloss am wörthersee']
         if any(kw in lower_title or kw in lower_overview or kw in lower_desc for kw in real_keywords):
             genre_ids = [gid for gid in genre_ids if gid != 16]
 
@@ -609,7 +591,7 @@ def collect_movies():
 
 # --------------------------------------------------------------------------
 # main
-# --------------------------------------------------------------------------
+# ----------------------------------------------------------
 def main():
     print("Starte Mediathek-Abfrage...")
     entries = collect_movies()
