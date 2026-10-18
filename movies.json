@@ -5604,7 +5604,8 @@
     "rating": "6.3",
     "thumb": "https://image.tmdb.org/t/p/w342/kvwlPSVB2UvHzvlnAczCYVzYmn0.jpg",
     "genres_list": [
-      "Komödie"
+      "Komödie",
+      "Animation"
     ],
     "channel": "3Sat",
     "timestamp": 1669058100,
@@ -9185,7 +9186,7 @@
     "quality": "HD",
     "plot": "Wenn ein milliardenschwerer Unternehmer impulsiv beschließt, einen Kultfilm zu drehen, verlangt er das Beste. Die renommierte Filmemacherin Lola Cuevas wird angeworben, um dieses ehrgeizige Unterfangen zu leiten. Abgerundet wird das All-Star-Team durch zwei Schauspieler mit enormem Talent, aber noch größeren Egos: Hollywood-Herzensbrecher Félix Rivero und der radikale Theaterschauspieler Iván Torres. Beide sind Legenden, aber nicht gerade beste Freunde. Durch eine Reihe von immer exzentrischeren Prüfungen, die von Lola gestellt werden, müssen Félix und Iván nicht nur einander, sondern auch ihre eigenen Hinterlassenschaften konfrontieren. Wer bleibt übrig, wenn endlich die Kameras laufen?",
     "mediathek_desc": "Im Designer-Bungalow zwischen Sichtbeton und gekränkten Eitelkeiten entfaltet sich eine Komödie: Für \"den besten Film aller Zeiten\" muss Penélope Cruz als überspannte Star-Regisseurin zwei egozentrische Schauspiel-Legenden, dargestellt von Antonio Banderas und Oscar Martínez, zu Höchstleistungen bringen.",
-    "director": "Mariano Cohn",
+    "director": "Gastón Duprat",
     "actors": [
       "Penélope Cruz",
       "Antonio Banderas",
@@ -24591,7 +24592,7 @@
     "rating": "N/A",
     "thumb": "https://image.tmdb.org/t/p/w342/rW8e7qcnnRBAYZuEcFrtibDXjvb.jpg",
     "genres_list": [
-      "Sonstige"
+      "Animation"
     ],
     "channel": "ZDF",
     "timestamp": 1783309452,
@@ -34318,7 +34319,7 @@
     "director": "Stephen Chow",
     "actors": [
       "Stephen Chow",
-      "Richard Ng Man-Tat",
+      "吳孟達",
       "Zhao Wei"
     ],
     "rating": "7.2",
