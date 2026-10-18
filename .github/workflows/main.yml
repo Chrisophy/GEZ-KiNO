@@ -1,0 +1,33 @@
+name: Update Movies JSON
+
+on:
+  schedule:
+    - cron: '15 5 * * *'  # Täglich um 05:15 UTC
+  workflow_dispatch:      # Erlaubt manuellen Start über die GitHub-Oberfläche
+
+jobs:
+  update-data:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Repository auschecken
+        uses: actions/checkout@v4
+
+      - name: Python einrichten
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Abhängigkeiten installieren
+        run: |
+          pip install requests
+
+      - name: Scraper ausführen
+        run: python gezscraper.py
+
+      - name: Änderungen committen und pushen
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add movies.json
+          git diff --staged --quiet || git commit -m "Tägliches Update der movies.json [skip ci]"
+          git push
