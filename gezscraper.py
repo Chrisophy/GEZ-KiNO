@@ -144,7 +144,8 @@ def main():
             "sortOrder": "desc"
         }
         try:
-            res = requests.post(MEDIATHEK_URL, json=payload, headers={'Content-Type': 'text/plain'})
+            res = requests.post(MEDIATHEK_URL, json=payload, headers={'Content-Type': 'application/json'})
+
             data = res.json()
             results = data.get('result', {}).get('results', [])
             for m in results:
