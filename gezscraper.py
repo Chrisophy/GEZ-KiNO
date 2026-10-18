@@ -1,5 +1,6 @@
 import os
 import json
+import time 
 import requests
 import urllib.parse
 from datetime import datetime
@@ -246,7 +247,6 @@ def main():
                         tmdb = None  
 
             if tmdb:
-
                 genre_ids = tmdb.get('genre_ids', [])
                 if 16 in genre_ids:
                     lower_title = movie['title'].lower()
@@ -281,6 +281,8 @@ def main():
 
         except Exception as e:
             print(f"Fehler bei TMDB für {movie['search']}: {e}")
+
+        time.sleep(0.3)
 
         if (i + 1) % 50 == 0:
             print(f"Fortschritt: {i + 1}/{len(all_movies)} verarbeitet...")
