@@ -710,15 +710,6 @@
             return counts;
         }
 
-        function updateGenreCounts() {
-            const counts = getGenreCounts();
-            document.querySelectorAll('#genreLeiste button[data-genre]').forEach(btn => {
-                const g = btn.getAttribute('data-genre');
-                const el = btn.querySelector('.genre-count');
-                if (el && counts[g] !== undefined) el.innerText = '(' + counts[g] + ')';
-            });
-        }
-
         function getCleanGenreId(g) {
             return 'genre-btn-' + g.replace(/\s+/g, '').replace(/⭐/g, 'Fav').replace(/🆕/g, 'Neu').replace(/[^a-zA-Z0-9]/g, '');
         }
@@ -1136,169 +1127,75 @@
             }
         }
 
-        /* ===================== DOWNLOAD (Streaming, kein RAM-Puffer) ===================== */
-
-        const activeDownloads = new Map();
-        const MIME_BY_EXT = { mp4: 'video/mp4', m4v: 'video/mp4', webm: 'video/webm', mkv: 'video/x-matroska', avi: 'video/x-msvideo' };
-
-        function showDlToast(msg, linkUrl) {
-            let t = document.getElementById('dlToast');
-            if (!t) {
-                t = document.createElement('div');
-                t.id = 'dlToast';
-                t.className = 'fixed bottom-20 left-1/2 -translate-x-1/2 z-[60] max-w-[92vw] bg-gray-950/90 text-gray-100 text-xs px-4 py-2.5 rounded-xl border border-gray-800 shadow-2xl backdrop-blur-md text-center';
-                document.body.appendChild(t);
-            }
-            t.textContent = msg;
-            if (linkUrl) {
-                const a = document.createElement('a');
-                a.href = linkUrl; a.target = '_blank'; a.rel = 'noopener noreferrer';
-                a.textContent = 'Link manuell öffnen';
-                a.className = 'block mt-1 text-blue-400 underline font-semibold';
-                t.appendChild(a);
-            }
-            t.style.display = 'block';
-            clearTimeout(t._h);
-            t._h = setTimeout(() => { t.style.display = 'none'; }, linkUrl ? 12000 : 5000);
-        }
-
-        function plainDownloadLink(url, filename, reason) {
-            const a = document.createElement('a');
-            a.href = url; a.download = filename; a.target = '_blank'; a.rel = 'noopener noreferrer';
-            document.body.appendChild(a); a.click(); a.remove();
-            showDlToast(reason, url);
-        }
-
-        async function cleanupOpfsTemp() {
-            try {
-                const dir = await navigator.storage.getDirectory();
-                const names = [];
-                for await (const [name] of dir.entries()) if (name.startsWith('gez_dl_')) names.push(name);
-                for (const n of names) await dir.removeEntry(n).catch(() => {});
-            } catch (e) {}
-        }
 
         async function downloadMovie(url, title, event) {
             if (event) { event.stopPropagation(); event.preventDefault(); }
             const btn = event?.currentTarget;
-            if (!btn || !url) return;
+            if (!btn || btn.dataset.busy) return;
 
-            const running = activeDownloads.get(url);
-            if (running) { running.abort(); return; }
+            const ext = (url.match(/\.(mp4|mkv|avi|webm|m4v)(\?.*)?$/i) || [])[1] || 'mp4';
+            const filename = (title.replace(/[\\/:*?"<>|]+/g, '').trim() || 'video') + '.' + ext;
+            const orig = btn.innerHTML;
+            btn.dataset.busy = '1';
 
-            const ext = ((url.match(/\.(mp4|mkv|avi|webm|m4v)(\?.*)?$/i) || [])[1] || 'mp4').toLowerCase();
-            const filename = ((title || 'video').replace(/[\\/:*?"<>|]+/g, '').trim().slice(0, 120) || 'video') + '.' + ext;
-
-            if (/\.m3u8(\?.*)?$/i.test(url)) {
-                showDlToast('HLS-Streams (.m3u8) lassen sich nicht als einzelne Datei speichern.');
-                return;
-            }
-
-            const controller = new AbortController();
-            activeDownloads.set(url, controller);
-            const origHtml = btn.innerHTML;
-            btn.title = 'Läuft – erneut klicken zum Abbrechen';
-            btn.textContent = '…';
-
-            let writable = null, opfsDir = null, opfsName = null;
+            let fileHandle = null, writable = null;
             try {
-                let res;
-                try {
-                    res = await fetch(url, { signal: controller.signal, mode: 'cors', credentials: 'omit' });
-                } catch (e) {
-                    if (e.name === 'AbortError') throw e;
-                    plainDownloadLink(url, filename, 'Server erlaubt keinen JavaScript-Zugriff (CORS) – normaler Download-Link wird geöffnet.');
-                    return;
-                }
-                if (!res.ok || !res.body || (res.headers.get('content-type') || '').includes('text/html')) {
-                    controller.abort();
-                    plainDownloadLink(url, filename, 'Server liefert keine Videodatei per JavaScript – normaler Download-Link wird geöffnet.');
-                    return;
-                }
-
-                const total = +res.headers.get('content-length') || 0;
-                const mime = MIME_BY_EXT[ext] || 'video/mp4';
-                let sink = null;
-
                 if (window.showSaveFilePicker) {
                     try {
-                        const handle = await window.showSaveFilePicker({
-                            suggestedName: filename,
-                            types: [{ description: 'Video', accept: { [mime]: ['.' + ext] } }]
-                        });
-                        writable = await handle.createWritable();
-                        sink = 'picker';
+                        fileHandle = await window.showSaveFilePicker({ suggestedName: filename });
                     } catch (e) {
-                        if (e.name === 'AbortError') { controller.abort(); return; }
+                        if (e.name === 'AbortError') {
+                            delete btn.dataset.busy;
+                            btn.innerHTML = orig;
+                            return;
+                        }
+                        fileHandle = null;
                     }
                 }
 
-                if (!writable && navigator.storage?.getDirectory) {
-                    try {
-                        const est = navigator.storage.estimate ? await navigator.storage.estimate() : null;
-                        if (total && est?.quota && (est.quota - est.usage) < total * 1.05) throw new Error('Zu wenig Speicherplatz');
-                        await cleanupOpfsTemp();
-                        opfsDir = await navigator.storage.getDirectory();
-                        opfsName = 'gez_dl_' + Date.now();
-                        const fh = await opfsDir.getFileHandle(opfsName, { create: true });
-                        writable = await fh.createWritable();
-                        sink = 'opfs';
-                    } catch (e) {
-                        console.warn('OPFS nicht nutzbar:', e);
-                        writable = null;
-                        if (opfsDir && opfsName) opfsDir.removeEntry(opfsName).catch(() => {});
-                        opfsName = null;
-                    }
-                }
+                const res = await fetch(url);
+                if (!res.ok || !res.body) throw new Error('HTTP ' + res.status);
 
-                if (!writable) {
-                    controller.abort();
-                    plainDownloadLink(url, filename, 'Dein Browser kann nicht direkt auf die Platte streamen – normaler Download-Link wird geöffnet.');
-                    return;
-                }
-
+                const total = +res.headers.get('content-length') || 0;
                 const reader = res.body.getReader();
-                let loaded = 0, lastUi = 0;
-                while (true) {
-                    const { done, value } = await reader.read();
-                    if (done) break;
-                    await writable.write(value);
-                    loaded += value.length;
-                    const now = performance.now();
-                    if (now - lastUi > 250) {
-                        lastUi = now;
-                        if (btn.isConnected) btn.textContent = total
-                            ? Math.floor(loaded / total * 100) + '%'
+                let loaded = 0;
+
+                if (fileHandle) {
+                    writable = await fileHandle.createWritable();
+                    while (true) {
+                        const { done, value } = await reader.read();
+                        if (done) break;
+                        await writable.write(value);
+                        loaded += value.length;
+                        btn.innerText = total
+                            ? Math.round(loaded / total * 100) + '%'
                             : Math.round(loaded / 1048576) + ' MB';
                     }
-                }
-                if (total && loaded < total && !res.headers.get('content-encoding')) throw new Error('Download unvollständig');
-                await writable.close();
-                writable = null;
-
-                if (sink === 'opfs') {
-                    const file = await (await opfsDir.getFileHandle(opfsName)).getFile();
-                    const blobUrl = URL.createObjectURL(file.slice(0, file.size, mime));
+                    await writable.close();
+                    writable = null;
+                } else {
+                    const blob = await res.blob();
+                    const blobUrl = URL.createObjectURL(blob);
                     const a = document.createElement('a');
-                    a.href = blobUrl; a.download = filename;
-                    document.body.appendChild(a); a.click(); a.remove();
-                    const name = opfsName;
-                    opfsName = null;
-                    setTimeout(() => { URL.revokeObjectURL(blobUrl); opfsDir.removeEntry(name).catch(() => {}); }, 15 * 60 * 1000);
+                    a.href = blobUrl;
+                    a.download = filename;
+                    document.body.appendChild(a);
+                    a.click();
+                    a.remove();
+                    setTimeout(() => URL.revokeObjectURL(blobUrl), 60000);
                 }
-                showDlToast(sink === 'picker' ? 'Gespeichert ✔' : 'Download gestartet – siehe Downloads deines Browsers.');
             } catch (err) {
+                console.error('Download fehlgeschlagen / CORS blockiert:', err);
                 if (writable) { try { await writable.abort(); } catch (e) {} }
-                if (opfsDir && opfsName) opfsDir.removeEntry(opfsName).catch(() => {});
-                if (err.name === 'AbortError') showDlToast('Download abgebrochen.');
-                else { console.error('Download fehlgeschlagen:', err); showDlToast('Download fehlgeschlagen: ' + (err.message || err)); }
+                
+                window.open(url, '_blank', 'noopener');
+                alert('Direkter Download vom Server wegen CORS-Sicherheitsrichtlinien blockiert. Der Link wurde stattdessen in einem neuen Tab geöffnet.');
             } finally {
-                activeDownloads.delete(url);
-                if (btn.isConnected) { btn.innerHTML = origHtml; btn.title = 'Speichern unter...'; }
+                delete btn.dataset.busy;
+                btn.innerHTML = orig;
             }
         }
 
-        /* ===================== ENDE DOWNLOAD ===================== */
 
         function renderNextChunk(startIndex) {
             const grid = document.getElementById('movieGrid');
@@ -1746,7 +1643,6 @@
 
         document.addEventListener('DOMContentLoaded', () => {
             updateThemeUI();
-            cleanupOpfsTemp();
             fetchAllData();
         });
     </script>
