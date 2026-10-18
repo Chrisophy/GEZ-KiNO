@@ -24,8 +24,8 @@ MIN_DURATION = 4680
 NEW_COUNT = 100         
 MAX_WORKERS = 8      
 
-PRE_THRESHOLD = 30       
-ACCEPT_THRESHOLD = 45   
+PRE_THRESHOLD = 35       
+ACCEPT_THRESHOLD = 50   
 
 GENRES_MAP = {
     28: 'Action', 12: 'Abenteuer', 16: 'Animation', 35: 'Komödie', 80: 'Krimi', 99: 'Doku',
@@ -59,13 +59,10 @@ TITLE_MARKERS = [
 PAREN_YEAR_RE = re.compile(r'[(\[][^()\[\]]*?\b((?:19|20)\d{2})\b[^()\[\]]*?[)\]]')
 TAIL_YEAR_RE = re.compile(r'[,\-–—|(]\s*[^,\-–—|()]*?\b((?:19|20)\d{2})\b\s*\)?\s*$')
 TAIL_YEAR_STRIP_RE = re.compile(r'\s*[,\-–—|]\s*(?:[A-Za-zÄÖÜäöüß./ ]{0,30}?\s)?(?:19|20)\d{2}\s*$')
-COUNTRIES = (r'Deutschland|USA|Österreich|Schweiz|Frankreich|Großbritannien|Italien|Spanien|Kanada|'
-             r'Australien|Belgien|Dänemark|Schweden|Norwegen|Niederlande|Polen|Tschechien|Irland|'
-             r'Luxemburg|BRD|DDR')
+
+# Korrektur: Nur noch explizite Produktionsangaben in der Beschreibung erlauben, keine Jahreszahlen mitten aus dem Text (verhindert das Green-Book-Problem mit "1960er Jahre")
 DESC_YEAR_RES = [
-    re.compile(r'(?:Produktionsjahr|Produktion|Jahr)\s*:?\s*((?:19|20)\d{2})', re.IGNORECASE),
-    re.compile(r'\(\s*[A-Za-zÄÖÜäöüß/ ,.\-]{2,60}?[,\s]\s*((?:19|20)\d{2})\s*\)'),
-    re.compile(r'\b(?:' + COUNTRIES + r')\s*,?\s*((?:19|20)\d{2})\b'),
+    re.compile(r'(?:Produktionsjahr|Produktion|Erscheinungsjahr|Jahr)\s*:?\s*((?:19|20)\d{2})', re.IGNORECASE),
 ]
 
 
@@ -74,6 +71,7 @@ def valid_year(y):
 
 
 def extract_year(title, description):
+    """Produktionsjahr: erst Titel (Klammer, dann Titelende), dann strikte Beschreibung."""
     for m in PAREN_YEAR_RE.finditer(title or ''):
         y = int(m.group(1))
         if valid_year(y):
@@ -121,7 +119,6 @@ def normalize_title(title):
 
 
 def word_set(text):
-    # Wortlänge ab 5 Zeichen für präziseren Beschreibungsgleichklang
     return {w for w in normalize_title(text).split() if len(w) >= 5}
 
 
@@ -247,21 +244,21 @@ def prescore(cand, movie, media_type, desc_words):
     date = cand.get('first_air_date' if media_type == 'tv' else 'release_date', '')
     y_score = year_score(movie['year_num'], date)
 
-    # Erheblich stärkeres Scoring für Beschreibung/Handlung
     overview_words = word_set(cand.get('overview', ''))
     desc_bonus = 0
     matches = set()
     if desc_words and overview_words:
         matches = desc_words & overview_words
-        desc_bonus = min(len(matches) * 4.0, 40) # Bis zu 40 Punkte für Beschreibung!
+        desc_bonus = min(len(matches) * 3.0, 30)
 
-    # Wenn die Beschreibung starke Übereinstimmungen aufweist, verzeihen wir abweichende Titel
-    if len(matches) >= 3 and y_score >= 0:
-        score = max(title_score, 25) + y_score + desc_bonus
-    else:
-        score = title_score + y_score + desc_bonus
-        if score < 20:
-            return 0
+    # Strengere Absicherung: Der Titel muss zumindest eine minimale Ähnlichkeit haben, 
+    # damit nicht völlig falsche Filme (wie Tom & Jerry bei Schloss am Wörthersee) reinrutschen.
+    if title_score < 15:
+        return 0
+
+    score = title_score + y_score + desc_bonus
+    if score < PRE_THRESHOLD:
+        return 0
 
     return score
 
@@ -276,7 +273,7 @@ def detail_bonus(details, movie, media_type):
     if runtime and duration:
         diff = abs(runtime - duration)
         if diff <= 10:
-            bonus += 15  # Höherer Bonus für exakte Spieldauer (z.B. ca. 89 Min)
+            bonus += 15
         elif diff <= 20:
             bonus += 6
         elif diff > 40:
@@ -344,7 +341,6 @@ def get_search_queries(title, description=''):
                     if p_clean and p_clean not in queries:
                         queries.append(p_clean)
 
-    # Beschreibung auf spezifische Handlungsschlüsselwörter prüfen (z.B. Elitesoldat Travis -> 24 Hours to Live)
     desc_low = (description or '').lower()
     if 'elitesoldat travis' in desc_low or ('elitesoldat' in desc_low and '24 stunden' in desc_low):
         queries.insert(0, '24 Hours to Live')
