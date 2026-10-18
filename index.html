@@ -629,7 +629,7 @@
                             search: cleanName,
                             year: year,
                             video_url: url,
-                            plot: 'Lade Filminformationen...',
+                            plot: m.description || 'Keine Beschreibung verfügbar.',
                             mediathek_desc: m.description || '',
                             director: '',
                             actors: [],
@@ -656,19 +656,19 @@
                 
                 if (allMovies.length === 0 && currentView === 'mediathek') {
                     document.getElementById('statusMessage').innerText = "Keine Filme gefunden.";
+                    document.getElementById('scanner')?.classList.add('hidden');
                     return;
                 }
         
+                document.getElementById('scanner')?.classList.add('hidden');
                 renderGenreLeiste();
                 filterResults();                
-                await hydrateWithTMDBParallel();
-        
-                localStorage.setItem('gez_kino_last_fetch', Date.now().toString());
-                localStorage.setItem('gez_kino_tmdb_match_version', '2');
-                localStorage.setItem('gez_kino_movies_cache', JSON.stringify(allMovies));
+
+                hydrateWithTMDBParallel().catch(err => console.error("Hintergrund-Hydrierung fehlgeschlagen:", err));
         
             } catch (err) {
                 console.error(err);
+                document.getElementById('scanner')?.classList.add('hidden');
                 if (currentView === 'mediathek') {
                     document.getElementById('statusMessage').innerText = "Fehler beim API-Abruf.";
                 }
@@ -822,8 +822,6 @@
             const sourceCoverage = overlap / Math.max(sourceSet.size, 1);
             const candidateCoverage = overlap / Math.max(candidateSet.size, 1);
 
-            // Ein einzelnes gemeinsames Wort reicht nicht, um Zusatztitel
-            // wie "X-Men: Dark Phoenix" dem eigenständigen Film "Phoenix" zuzuordnen.
             if (sourceSet.size === 1 && candidateSet.size > 1 && sourceCoverage === 1) {
                 return 25;
             }
@@ -866,8 +864,6 @@
                     else score -= 35;
                 }
 
-                // Beschreibung nur als schwaches Zusatzsignal nutzen; sie darf
-                // einen falschen Titel-Treffer nicht allein auswählen.
                 const overview = (candidate.overview || '').toLocaleLowerCase('de-DE');
                 if (mDesc && overview) {
                     const words = overview.split(/\s+/).filter(word => word.length > 5);
@@ -878,8 +874,6 @@
                 return { candidate, score };
             }).sort((a, b) => b.score - a.score);
 
-            // Ohne ausreichende Titelähnlichkeit lieber keine TMDB-Daten zeigen
-            // als Informationen zu einem anderen Film zuzuordnen.
             const best = scored[0];
             return best && best.score >= 50 ? best.candidate : null;
         }
@@ -887,11 +881,7 @@
         async function hydrateWithTMDBParallel() {
             const CONCURRENCY_LIMIT = 5;
             let movieIndex = 0;
-            let loadedCount = 0;
             const totalMovies = allMovies.length;
-
-            const scannerText = document.getElementById('scanner-text');
-            const scannerPercent = document.getElementById('scanner-percent');
 
             async function worker() {
                 while (movieIndex < allMovies.length) {
@@ -907,7 +897,7 @@
                         let res = await fetch(movieUrl);
                         if (res.status === 429) {
                             movieIndex--;
-                            await new Promise(resolve => setTimeout(resolve, 1200));
+                            await new Promise(resolve => setTimeout(resolve, 1500));
                             continue;
                         }
 
@@ -915,8 +905,6 @@
                         let tmdb = chooseBestTMDBResult(data.results, movie, 'movie');
                         let isTvShow = false;
 
-                        // Wenn die Jahressuche keinen passenden Titel liefert, erneut
-                        // ohne Jahr suchen, aber weiterhin den Titel streng vergleichen.
                         if (!tmdb && movie.year !== 'None' && movie.year !== 'LIVE') {
                             const fallbackUrl = `https://api.themoviedb.org/3/search/movie?api_key=${TMDB_API_KEY}&query=${query}&language=de-DE&include_adult=false`;
                             const fallbackRes = await fetch(fallbackUrl);
@@ -926,7 +914,6 @@
                             }
                         }
 
-                        // Serien nur verwenden, wenn kein ausreichend passender Film existiert.
                         if (!tmdb) {
                             let tvUrl = `https://api.themoviedb.org/3/search/tv?api_key=${TMDB_API_KEY}&query=${query}&language=de-DE&include_adult=false`;
                             if (movie.year !== 'None' && movie.year !== 'LIVE') {
@@ -992,26 +979,18 @@
                                 updateMovieCard(movie);
                             }
                         } else {
-                            // Bei unsicherer Zuordnung keine fremden Poster/Bewertungen
-                            // anzeigen; die Mediathek-Beschreibung bleibt erhalten.
                             movie.plot = movie.mediathek_desc || 'Keine Beschreibung verfügbar.';
                             movie.rating = 'N/A';
                             movie.thumb = 'placeholder.png';
                         }
                     } catch (e) {
                         console.error("TMDB-Fehler bei: " + movie.search, e);
-                        movie.plot = movie.mediathek_desc || 'Keine Beschreibung verfügbar.';
                     }
 
-                    loadedCount++;
-
-                    if (totalMovies > 0) {
-                        const percent = Math.round((loadedCount / totalMovies) * 100);
-                        if (scannerText) scannerText.innerText = `Lade Mediathek-Daten...`;
-                        if (scannerPercent) scannerPercent.innerText = `${percent}%`;
-                    }
-
-                    if (loadedCount % 15 === 0) {
+                    if (currentIdx % 20 === 0) {
+                        localStorage.setItem('gez_kino_last_fetch', Date.now().toString());
+                        localStorage.setItem('gez_kino_tmdb_match_version', '2');
+                        localStorage.setItem('gez_kino_movies_cache', JSON.stringify(allMovies));
                         updateGenreCounts();
                     }
                 }
@@ -1020,7 +999,10 @@
             const workers = Array.from({ length: CONCURRENCY_LIMIT }, worker);
             await Promise.all(workers);
             updateGenreCounts();
-            document.getElementById('scanner')?.classList.add('hidden');
+            
+            localStorage.setItem('gez_kino_last_fetch', Date.now().toString());
+            localStorage.setItem('gez_kino_tmdb_match_version', '2');
+            localStorage.setItem('gez_kino_movies_cache', JSON.stringify(allMovies));
         }
 
         function getGenreCounts() {
