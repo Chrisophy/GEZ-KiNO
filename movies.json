@@ -28990,16 +28990,21 @@
   {
     "title": "Tides - Kampf um die Zukunft",
     "search": "Tides - Kampf um die Zukunft",
-    "year": "None",
+    "year": "2021",
     "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/24/09/240908_0245_sendung_spf/1/240908_0245_sendung_spf_a1a2_3360k_p36v17.mp4",
     "plot": "Eine Astronautin kehrt nach einer Klimakatastrophe zurück zur Erde, um die Chance einer Neubesiedlung zu prüfen. Dabei sucht sie auch ihren bei einer Mission verschollenen Vater.",
     "mediathek_desc": "Eine Astronautin kehrt nach einer Klimakatastrophe zurück zur Erde, um die Chance einer Neubesiedlung zu prüfen. Dabei sucht sie auch ihren bei einer Mission verschollenen Vater.",
-    "director": "",
-    "actors": [],
-    "rating": "N/A",
-    "thumb": "placeholder.png",
+    "director": "Tim Fehlbaum",
+    "actors": [
+      "Nora Arnezeder",
+      "Iain Glen",
+      "Sarah-Sofie Boussnina"
+    ],
+    "rating": "5.7",
+    "thumb": "https://image.tmdb.org/t/p/original/8FhLL4VHFt5UvhAKe8S945U0DOn.jpg",
     "genres_list": [
-      "Sonstige"
+      "Sci-Fi",
+      "Thriller"
     ],
     "channel": "ZDF",
     "timestamp": 1791069301,
