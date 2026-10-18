@@ -28,10 +28,11 @@ jobs:
           TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
         run: python gezscraper.py
 
-      - name: Schritt 3 - Änderungen in GitHub speichern
-        uses: stefanzweifel/git-auto-commit-action@v5
-        with:
-          commit_message: ' Automatische Aktualisierung der Filme (zdfm.json & movies.json)'
-          file_pattern: |
-            zdfm.json
-            movies.json
+      - name: Schritt 3 - Dateien explizit hinzufügen und committen
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add zdfm.json movies.json
+          git commit -m "🤖 Automatische Aktualisierung der Filme (zdfm.json & movies.json)" || echo "Keine Änderungen zum Committen"
+          git push
+          
