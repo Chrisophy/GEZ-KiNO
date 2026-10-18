@@ -107,19 +107,26 @@
       "https://ctv-videos.daserste.de/int/2020/12/19/9a932b71-0a74-4ec7-9b63-19b7f4bf688f/JOB_546301__sendeton_640x360-50p-1200kbit.mp4"
     ],
     "quality": "HD",
-    "plot": "Spielfilm Deutschland 2010 Nach vielen Jahren bei der Kripo hängt Kommissar Piet Becker eines Tages seinen Job kurzerhand an den Nagel: Was nützt der Erfolg im Beruf, wenn man sich nicht mehr frei und glücklich fühlt? Bevor er seinen persönlichen Neuanfang starten kann, muss Piet jedoch nach Husum reisen, um das Haus seiner kürzlich verstorbenen Tante zu verkaufen....",
+    "plot": "Die Tante von Exkommissar Piet und Heiratsschwindler Hannes wird in Husum getötet und so kommen beide wieder zusammen um zu ermitteln",
     "mediathek_desc": "Spielfilm Deutschland 2010 Nach vielen Jahren bei der Kripo hängt Kommissar Piet Becker eines Tages seinen Job kurzerhand an den Nagel: Was nützt der Erfolg im Beruf, wenn man sich nicht mehr frei und glücklich fühlt? Bevor er seinen persönlichen Neuanfang starten kann, muss Piet jedoch nach Husum reisen, um das Haus seiner kürzlich verstorbenen Tante zu verkaufen....",
-    "director": "",
-    "actors": [],
-    "rating": "N/A",
-    "thumb": "placeholder.png",
+    "director": "Lars Jessen",
+    "actors": [
+      "Jan Fedder",
+      "Axel Milberg",
+      "Nina Petri"
+    ],
+    "rating": "2.0",
+    "thumb": "https://image.tmdb.org/t/p/w342/6O18w0hzHstjLyF6DJEyehLWGz8.jpg",
     "genres_list": [
-      "Sonstige"
+      "Komödie",
+      "Krimi"
     ],
     "channel": "ARD",
     "timestamp": 1749506402,
     "duration_min": 88,
     "isNew": false,
+    "tmdb_id": 306927,
+    "tmdb_type": "movie",
     "year": "2010"
   },
   {
@@ -367,19 +374,27 @@
       "https://rodlzdf-a.akamaihd.net/dach/3sat/23/04/230409_a_royal_night_ein_koenigliches_vergnuegen_spielfilm/1/230409_a_royal_night_ein_koenigliches_vergnuegen_spielfilm_a1a2_808k_p11v17.mp4"
     ],
     "quality": "HD",
-    "plot": "8. Mai 1945: London feiert bis zum Morgen den Sieg über Nazideutschland. Auch die beiden Prinzessinnen Elizabeth und Margaret möchten sich ins Getümmel stürzen.",
+    "plot": "London, 8. Mai 1945. Ganz Europa feiert das Ende des Zweiten Weltkriegs. Auch die Straßen der britischen Hauptstadt sind voller jubelnder Menschen. Die jungen Prinzessinnen Elizabeth und Margaret sehen ihre große Chance, dem Buckingham Palace für eine Nacht zu entfliehen. Nachdem sie sechs Jahre lang abgeschottet im goldenen Käfig verbringen mussten, wollen sie den Frieden als „normale“ Bürgerinnen feiern. Abenteuer inklusive…",
     "mediathek_desc": "8. Mai 1945: London feiert bis zum Morgen den Sieg über Nazideutschland. Auch die beiden Prinzessinnen Elizabeth und Margaret möchten sich ins Getümmel stürzen.",
-    "director": "",
-    "actors": [],
-    "rating": "N/A",
-    "thumb": "placeholder.png",
+    "director": "Julian Jarrold",
+    "actors": [
+      "Sarah Gadon",
+      "Bel Powley",
+      "Emily Watson"
+    ],
+    "rating": "6.5",
+    "thumb": "https://image.tmdb.org/t/p/w342/qh90CrODJ5CbS3BUjEPuwMTFby3.jpg",
     "genres_list": [
-      "Sonstige"
+      "Komödie",
+      "Drama",
+      "Romanze"
     ],
     "channel": "3Sat",
     "timestamp": 1557666000,
     "duration_min": 94,
     "isNew": false,
+    "tmdb_id": 300155,
+    "tmdb_type": "movie",
     "year": "2014"
   },
   {
@@ -1324,20 +1339,27 @@
       "https://ctv-videos.daserste.de/int/2017/03/23/8d7fe0f2-6f58-4e71-81a6-76b3142af4aa/JOB_557882__sendeton_640x360-50p-1200kbit.mp4"
     ],
     "quality": "HD",
-    "plot": "Auch vor Gericht gibt es Fälle, die sich nicht einfach nach den Buchstaben des Gesetzes beurteilen lassen. Diese Erfahrung muss einmal mehr die freigeistige Richterin Lena Kalbach (Michaela May) machen, als ein scheinbarer Routinefall sich in eine äußerst delikate Sorgerechtsfrage verwandelt....",
+    "plot": "Zwei Väter kämpfen um ein Kind: Franz Bergen, Leiter eines Kirchenchors, will das Umgangsrecht mit dem kleinen Sohn des Kneipiers René Dörfler erstreiten. Zunächst räumt Richterin Lena Kalbach der Klage keine Chancen ein - bis sich herausstellt, dass Bergen als Samenspender der leibliche Vater des Kindes ist. Ein heikler Fall, für den Lena mit viel Fingerspitzengefühl eine Lösung finden muss. Aber auch persönlich ist sie vom Thema Vaterschaft betroffen: Ihre erwachsene Tochter Nike will endlich wissen, wer ihr Vater ist. In dem dritten Teil der beliebten TV-Reihe, spielt Michaela May erneut die kluge Richterin Lena Kalbach.",
     "mediathek_desc": "Auch vor Gericht gibt es Fälle, die sich nicht einfach nach den Buchstaben des Gesetzes beurteilen lassen. Diese Erfahrung muss einmal mehr die freigeistige Richterin Lena Kalbach (Michaela May) machen, als ein scheinbarer Routinefall sich in eine äußerst delikate Sorgerechtsfrage verwandelt....",
-    "director": "",
-    "actors": [],
-    "rating": "N/A",
-    "thumb": "placeholder.png",
+    "director": "Christoph Schrewe",
+    "actors": [
+      "Michaela May",
+      "Götz Schubert",
+      "Anna Schudt"
+    ],
+    "rating": "6.0",
+    "thumb": "https://image.tmdb.org/t/p/w342/ozlEJryyCQh32VK0ErgJjav2koF.jpg",
     "genres_list": [
-      "Sonstige"
+      "TV-Film",
+      "Komödie"
     ],
     "channel": "ARD",
     "timestamp": 1779100200,
     "duration_min": 88,
     "isNew": false,
-    "year": "None"
+    "tmdb_id": 446445,
+    "tmdb_type": "movie",
+    "year": "2011"
   },
   {
     "title": "Almuth und Rita",
@@ -2088,17 +2110,23 @@
     "quality": "HD",
     "plot": "Spielfilm USA 2019 Während des Vietnamkriegs erhält Captain Willard einen Sonderauftrag: Er soll den desertierten Colonel Kurtz aufspüren und liquidieren. Angeblich hält dieser sich mit seiner Einheit im kambodschanischen Dschungel verborgen. An Bord eines Patrouillenbootes machen sich Willard und seine Leute dorthin auf....",
     "mediathek_desc": "In Francis Ford Coppolas bildgewaltigem Antikriegsdrama folgt Captain Willard einer gefährlichen Mission durch die Hölle des Vietnamkriegs: Er soll den wahnsinnig gewordenen Colonel Kurtz, dargestellt von Marlon Brando, finden.",
-    "director": "",
-    "actors": [],
-    "rating": "N/A",
-    "thumb": "placeholder.png",
+    "director": "Baris Azman",
+    "actors": [
+      "Chas Gerretsen",
+      "Züleyha Azman",
+      "Jan de Vries"
+    ],
+    "rating": "6.6",
+    "thumb": "https://image.tmdb.org/t/p/w342/m6DwO6RKD48UdboX9hhCwJtAMtp.jpg",
     "genres_list": [
-      "Sonstige"
+      "Doku"
     ],
     "channel": "ARD",
     "timestamp": 1790374800,
     "duration_min": 170,
     "isNew": false,
+    "tmdb_id": 613970,
+    "tmdb_type": "movie",
     "year": "2019"
   },
   {
@@ -3889,19 +3917,26 @@
       "https://rodlzdf-a.akamaihd.net/dach/3sat/25/10/251005_breaking_surface_toedliche_tiefen_spielfilm/1/251005_breaking_surface_toedliche_tiefen_spielfilm_808k_p11v17.mp4"
     ],
     "quality": "HD",
-    "plot": "Kurz vor Weihnachten gehen die Schwestern Ida und Tuva auf Tauchgang. Nach einem Felsrutsch ist Tuva unter Wasser eingeklemmt, und Ida ist mit der Rettung auf sich allein gestellt.",
+    "plot": "Einige Tage nach Weihnachten machen sich die schwedisch-norwegischen Halbschwestern Ida und Tuva auf den Weg zu einem Wintertauchgang in einem abgelegenen Teil der norwegischen Küste. Gegen Ende des Tauchgangs schließt ein Steinschlag Tuva unter Wasser ein. Als Ida auftaucht, um um Hilfe zu rufen, entdeckt sie, dass der Steinschlag auch über Wasser einschlug und ihre Ausrüstung, Telefone und Autoschlüssel vergraben hat. Sie sind von jeder Möglichkeit einer Rettung von außen abgeschnitten...",
     "mediathek_desc": "Kurz vor Weihnachten gehen die Schwestern Ida und Tuva auf Tauchgang. Nach einem Felsrutsch ist Tuva unter Wasser eingeklemmt, und Ida ist mit der Rettung auf sich allein gestellt.",
-    "director": "",
-    "actors": [],
-    "rating": "N/A",
-    "thumb": "placeholder.png",
+    "director": "Joachim Hedén",
+    "actors": [
+      "Moa Gammel",
+      "Madeleine Martin",
+      "Lena Hope"
+    ],
+    "rating": "6.6",
+    "thumb": "https://image.tmdb.org/t/p/w342/7GzWqIvEJIoCrUaVjaYzD8N66xQ.jpg",
     "genres_list": [
-      "Sonstige"
+      "Drama",
+      "Thriller"
     ],
     "channel": "3Sat",
     "timestamp": 1641849300,
     "duration_min": 81,
     "isNew": false,
+    "tmdb_id": 616803,
+    "tmdb_type": "movie",
     "year": "2020"
   },
   {
@@ -9163,7 +9198,7 @@
     "quality": "HD",
     "plot": "Wenn ein milliardenschwerer Unternehmer impulsiv beschließt, einen Kultfilm zu drehen, verlangt er das Beste. Die renommierte Filmemacherin Lola Cuevas wird angeworben, um dieses ehrgeizige Unterfangen zu leiten. Abgerundet wird das All-Star-Team durch zwei Schauspieler mit enormem Talent, aber noch größeren Egos: Hollywood-Herzensbrecher Félix Rivero und der radikale Theaterschauspieler Iván Torres. Beide sind Legenden, aber nicht gerade beste Freunde. Durch eine Reihe von immer exzentrischeren Prüfungen, die von Lola gestellt werden, müssen Félix und Iván nicht nur einander, sondern auch ihre eigenen Hinterlassenschaften konfrontieren. Wer bleibt übrig, wenn endlich die Kameras laufen?",
     "mediathek_desc": "Im Designer-Bungalow zwischen Sichtbeton und gekränkten Eitelkeiten entfaltet sich eine Komödie: Für \"den besten Film aller Zeiten\" muss Penélope Cruz als überspannte Star-Regisseurin zwei egozentrische Schauspiel-Legenden, dargestellt von Antonio Banderas und Oscar Martínez, zu Höchstleistungen bringen.",
-    "director": "Gastón Duprat",
+    "director": "Mariano Cohn",
     "actors": [
       "Penélope Cruz",
       "Antonio Banderas",
@@ -11303,12 +11338,16 @@
       "https://pd-videos.daserste.de/int/2024/10/09/5e88401a-840b-4489-8f08-f90ed92bd154/JOB_504375__sendeton_640x360-50p-1200kbit.mp4"
     ],
     "quality": "HD",
-    "plot": "Spielfilm Deutschland 2020\r\n\r\nDie 34-jährige Swantje (Nadine Boske) hat allen Grund, selbstbewusst zu sein: Ohne sie geht auf dem beschaulichen Flugplatz ihres Vaters Hauke (Jan-Gregor Kremp) in Büsum nichts. Swantje repariert die in die Jahre gekommenen Maschinen und organisiert den Post- und Passagierbetrieb. Nur selbst zu fliegen, traut sich die passionierte Pilotin seit einer traumatischen Bru\n.....",
+    "plot": "Im Mittelpunkt der Serie steht Swantje Hansen, eine alleinerziehende Mutter, die gemeinsam mit ihrem Vater Hauke im schleswig-holsteinischen Büsum einen kleinen Flugplatz in Familienbesitz betreibt.",
     "mediathek_desc": "Spielfilm Deutschland 2020\r\n\r\nDie 34-jährige Swantje (Nadine Boske) hat allen Grund, selbstbewusst zu sein: Ohne sie geht auf dem beschaulichen Flugplatz ihres Vaters Hauke (Jan-Gregor Kremp) in Büsum nichts. Swantje repariert die in die Jahre gekommenen Maschinen und organisiert den Post- und Passagierbetrieb. Nur selbst zu fliegen, traut sich die passionierte Pilotin seit einer traumatischen Bru\n.....",
     "director": "",
-    "actors": [],
+    "actors": [
+      "Jan-Gregor Kremp",
+      "Jonas Laux",
+      "Susanne Schäfer"
+    ],
     "rating": "N/A",
-    "thumb": "placeholder.png",
+    "thumb": "https://image.tmdb.org/t/p/w342/gA8AImTBTjiSMH2NGRsK6fjYgRS.jpg",
     "genres_list": [
       "Sonstige"
     ],
@@ -11316,6 +11355,8 @@
     "timestamp": 1730034180,
     "duration_min": 88,
     "isNew": false,
+    "tmdb_id": 112639,
+    "tmdb_type": "tv",
     "year": "2020"
   },
   {
@@ -11329,19 +11370,25 @@
       "https://ctv-videos.daserste.de/int/2018/05/24/c1788e11-6e1a-4a95-8eac-892013819005/JOB_543051__sendeton_640x360-50p-1200kbit.mp4"
     ],
     "quality": "HD",
-    "plot": "Fernsehfilm Deutschland/Österreich 2007\r\n\r\nIn der Beziehung von Johanna und Laurenz läuft eigentlich alles bestens und schon bald sollen die Hochzeitsglocken läuten. Dann aber überschattet ein dunkler Verdacht das Liebesidyll: Hatte Laurenz tatsächlich eine Affäre?\r\n\r\nMit Christine Neubauer, Timothy Peach, Johanna von Koczian, Siegfried Rauch u.a. | Buch: Mathias Klaschka | Regie: Peter Sämann",
+    "plot": "Die erfolgreiche Münchener Medizinerin Johanna Lohmann zieht mit ihrem kleinen Sohn Max ins idyllische Provinzdorf Großraming, wo sie die Landarztpraxis ihres verstorbenen Onkels übernehmen will. Aber leider herrscht in ihrem Wartezimmer gähnende Leere: Der starrköpfige und einflussreiche Großbauer Bergmeier ist von der selbstbewussten Städterin im weißen Kittel ziemlich irritiert und verbietet den Dorfbewohnern, zur neuen Doktorin zu gehen.",
     "mediathek_desc": "Fernsehfilm Deutschland/Österreich 2007\r\n\r\nIn der Beziehung von Johanna und Laurenz läuft eigentlich alles bestens und schon bald sollen die Hochzeitsglocken läuten. Dann aber überschattet ein dunkler Verdacht das Liebesidyll: Hatte Laurenz tatsächlich eine Affäre?\r\n\r\nMit Christine Neubauer, Timothy Peach, Johanna von Koczian, Siegfried Rauch u.a. | Buch: Mathias Klaschka | Regie: Peter Sämann",
-    "director": "",
-    "actors": [],
+    "director": "Peter Sämann",
+    "actors": [
+      "Christine Neubauer",
+      "August Schmölzer",
+      "Gregor Bloéb"
+    ],
     "rating": "N/A",
-    "thumb": "placeholder.png",
+    "thumb": "https://image.tmdb.org/t/p/w342/5DSBotMAEo5CTx5xi1eIgd9Orbz.jpg",
     "genres_list": [
-      "Sonstige"
+      "Drama"
     ],
     "channel": "ARD",
     "timestamp": 1784484900,
     "duration_min": 88,
     "isNew": false,
+    "tmdb_id": 40856,
+    "tmdb_type": "tv",
     "year": "2007"
   },
   {
@@ -13589,7 +13636,7 @@
       "Peter Sattmann",
       "Gila von Weitershausen"
     ],
-    "rating": "6.0",
+    "rating": "6.6",
     "thumb": "https://image.tmdb.org/t/p/w342/krM8IIUdZUSPomgRQ5IwoOCSdRZ.jpg",
     "genres_list": [
       "Komödie"
@@ -13827,19 +13874,26 @@
       "https://rodlzdf-a.akamaihd.net/dach/3sat/25/05/250502_dreamland_toedliche_geschaefte_spielfilm/1/250502_dreamland_toedliche_geschaefte_spielfilm_808k_p11v17.mp4"
     ],
     "quality": "HD",
-    "plot": "US-Undercoveragent Jake Kelly will den kanadischen Drogenkönig Mother ausschalten. Jake hat persönliche Gründe für den Kampf gegen die Kartelle: Seine Schwester Emmie ist ein Junkie.",
+    "plot": "Während der Weltwirtschaftskrise träumt der junge Eugene Evans davon, aus seiner Kleinstadt in Texas herauszukommen. In der Scheune der Familie entdeckt er die flüchtige und verwundete Bankräuberin Allison Wells und hilft ihr bei Ihrer Schusswunde. Überall in der Gegend wird nach ihr gefahndet, doch obwohl 10 000 Dollar für Allisons Ergreifung ausgesetzt sind, verheimlicht Eugene ihren Aufenthaltsort.  Die beiden freunden sich an, er ist fasziniert von Allison, aber auch auf die Aussicht auf viel Geld und ein abenteuerliches Leben, deshalb wird er zu ihrem Komplizen und beide rauben die Bank seiner Heimatstadt aus, wobei Eugene einen der Kunden erschießt. Sie fliehen in einem gestohlenen Wagen, werden aber gestellt und Allison stirbt an einer Schusswunde. Eugene kann mit dem Wagen fliehen und seine jüngere Schwester erzählt aus dem Off, dass er nie wieder aufgetaucht ist.",
     "mediathek_desc": "US-Undercoveragent Jake Kelly will den kanadischen Drogenkönig Mother ausschalten. Jake hat persönliche Gründe für den Kampf gegen die Kartelle: Seine Schwester Emmie ist ein Junkie.",
-    "director": "",
-    "actors": [],
-    "rating": "N/A",
-    "thumb": "placeholder.png",
+    "director": "Miles Joris-Peyrafitte",
+    "actors": [
+      "Finn Cole",
+      "Margot Robbie",
+      "Travis Fimmel"
+    ],
+    "rating": "5.9",
+    "thumb": "https://image.tmdb.org/t/p/w342/zjCF0OAPJPDMTaortG05nioq3Y4.jpg",
     "genres_list": [
-      "Sonstige"
+      "Drama",
+      "Thriller"
     ],
     "channel": "3Sat",
     "timestamp": 1699305300,
     "duration_min": 114,
     "isNew": false,
+    "tmdb_id": 480434,
+    "tmdb_type": "movie",
     "year": "2020"
   },
   {
@@ -15156,19 +15210,27 @@
       "https://rodlzdf-a.akamaihd.net/none/3sat/26/08/260830_schloss_woerthersee_neu_spielfilm/1/260830_schloss_woerthersee_neu_spielfilm_808k_p11v17.mp4"
     ],
     "quality": "HD",
-    "plot": "Der charmante Lennie Berger hat von seinem Onkel das Schlosshotel Velden geerbt und will es auf Vordermann bringen. Das stößt bei den Angestellten und der Konkurrenz nicht nur auf Zuspruch.",
+    "plot": "Wegen ihrer ewigen Streitigkeiten verpassen Kater Tom und Maus Jerry den Auszug ihrer Familie aus deren Abbruchhäuschen. Am nächsten Tag ohne Bleibe, machen sie die Bekanntschaft der Ausreißerin Robyn, die nach dem vermeintlichen Tod ihres Vaters bei der bösen Tante Fies wohnt. Tom und Jerry erfahren das dunkle Geheimnis der Tante, doch die steckt die beiden zu dem skrupellosen Tierhändler Dr. Hundekuch. Tom und Jerry organisieren eine Massenflucht und machen sich mit Robyn auf die Suche nach ihrem Vater.",
     "mediathek_desc": "Der charmante Lennie Berger hat von seinem Onkel das Schlosshotel Velden geerbt und will es auf Vordermann bringen. Das stößt bei den Angestellten und der Konkurrenz nicht nur auf Zuspruch.",
-    "director": "",
-    "actors": [],
-    "rating": "N/A",
-    "thumb": "placeholder.png",
+    "director": "Phil Roman",
+    "actors": [
+      "Richard Kind",
+      "Dana Hill",
+      "Anndi McAfee"
+    ],
+    "rating": "6.3",
+    "thumb": "https://image.tmdb.org/t/p/w342/u4NkCyPbLtDmSnATkgkcvomltdb.jpg",
     "genres_list": [
-      "Sonstige"
+      "Animation",
+      "Komödie",
+      "Familie"
     ],
     "channel": "3Sat",
     "timestamp": 1788102840,
     "duration_min": 82,
     "isNew": false,
+    "tmdb_id": 22582,
+    "tmdb_type": "movie",
     "year": "1992"
   },
   {
@@ -17599,40 +17661,6 @@
   {
     "title": "Ferien auf Immenhof",
     "search": "Ferien auf Immenhof",
-    "video_url": "https://ctv-videos.daserste.de/de/2026/08/05/5163/5163_23545_sendeton_1920x1080-50p-5000kbit.mp4",
-    "download_url": "https://ctv-videos.daserste.de/de/2026/08/05/5163/5163_23545_sendeton_1920x1080-50p-5000kbit.mp4",
-    "video_urls": [
-      "https://ctv-videos.daserste.de/de/2026/08/05/5163/5163_23545_sendeton_1920x1080-50p-5000kbit.mp4",
-      "https://ctv-videos.daserste.de/de/2026/08/05/5163/5163_23545_sendeton_1280x720-50p-3200kbit.mp4",
-      "https://ctv-videos.daserste.de/de/2026/08/05/5163/5163_23545_sendeton_640x360-50p-1200kbit.mp4"
-    ],
-    "quality": "HD",
-    "plot": "Immenhof wurde zu einem Hotel umgestaltet, das Urlaub mit Ponyreiten anbietet und sich deshalb \"Ponyhotel\" nennt. Die Mädchen Dick und Dalli reiten auf Ponys ins nahe gelegene Lübeck, um dort Werbung für das Ponyhotel zu machen. Da die Prospekte nicht zu erfüllende Erwartungen wecken, reisen die ersten Gäste enttäuscht wieder ab. Die Situation ändert sich, als es Jochen von Roth und Oma Jantzen gelingt, ein Reisebüro von den Vorzügen ihres Urlaubshotels zu überzeugen.",
-    "mediathek_desc": "Spielfilm Deutschland 1957 Mit viel Liebe hat Oma Jantzen (Margarete Haagen) aus ihrem alten Gutshof das \"Pony-Hotel Immenhof\" gemacht - mit tatkräftiger Unterstützung von Dick (Angelika Meissner), Dalli (Heidi Brühl) und Jochen von Roth (Paul Klinger). Nun fehlt nur noch eines: die Gäste....",
-    "director": "Hermann Leitner",
-    "actors": [
-      "Angelika Meissner",
-      "Heidi Brühl",
-      "Paul Klinger"
-    ],
-    "rating": "6.9",
-    "thumb": "https://image.tmdb.org/t/p/w342/gYIAD8Q6BIS5K24wC8Iq5paseUw.jpg",
-    "genres_list": [
-      "Komödie",
-      "Familie",
-      "Drama"
-    ],
-    "channel": "ARD",
-    "timestamp": 1791025200,
-    "duration_min": 90,
-    "isNew": false,
-    "tmdb_id": 52618,
-    "tmdb_type": "movie",
-    "year": "1957"
-  },
-  {
-    "title": "Ferien auf Immenhof",
-    "search": "Ferien auf Immenhof",
     "video_url": "https://nrodlzdf-a.akamaihd.net/dach/3sat/26/04/260405_ferien_auf_immenhof_spielfilm/1/260405_ferien_auf_immenhof_spielfilm_6660k_p37v17.mp4",
     "download_url": "https://nrodlzdf-a.akamaihd.net/dach/3sat/26/04/260405_ferien_auf_immenhof_spielfilm/1/260405_ferien_auf_immenhof_spielfilm_6660k_p37v17.mp4",
     "video_urls": [
@@ -17663,6 +17691,40 @@
     "tmdb_id": 52618,
     "tmdb_type": "movie",
     "year": "1956"
+  },
+  {
+    "title": "Ferien auf Immenhof",
+    "search": "Ferien auf Immenhof",
+    "video_url": "https://ctv-videos.daserste.de/de/2026/08/05/5163/5163_23545_sendeton_1920x1080-50p-5000kbit.mp4",
+    "download_url": "https://ctv-videos.daserste.de/de/2026/08/05/5163/5163_23545_sendeton_1920x1080-50p-5000kbit.mp4",
+    "video_urls": [
+      "https://ctv-videos.daserste.de/de/2026/08/05/5163/5163_23545_sendeton_1920x1080-50p-5000kbit.mp4",
+      "https://ctv-videos.daserste.de/de/2026/08/05/5163/5163_23545_sendeton_1280x720-50p-3200kbit.mp4",
+      "https://ctv-videos.daserste.de/de/2026/08/05/5163/5163_23545_sendeton_640x360-50p-1200kbit.mp4"
+    ],
+    "quality": "HD",
+    "plot": "Immenhof wurde zu einem Hotel umgestaltet, das Urlaub mit Ponyreiten anbietet und sich deshalb \"Ponyhotel\" nennt. Die Mädchen Dick und Dalli reiten auf Ponys ins nahe gelegene Lübeck, um dort Werbung für das Ponyhotel zu machen. Da die Prospekte nicht zu erfüllende Erwartungen wecken, reisen die ersten Gäste enttäuscht wieder ab. Die Situation ändert sich, als es Jochen von Roth und Oma Jantzen gelingt, ein Reisebüro von den Vorzügen ihres Urlaubshotels zu überzeugen.",
+    "mediathek_desc": "Spielfilm Deutschland 1957 Mit viel Liebe hat Oma Jantzen (Margarete Haagen) aus ihrem alten Gutshof das \"Pony-Hotel Immenhof\" gemacht - mit tatkräftiger Unterstützung von Dick (Angelika Meissner), Dalli (Heidi Brühl) und Jochen von Roth (Paul Klinger). Nun fehlt nur noch eines: die Gäste....",
+    "director": "Hermann Leitner",
+    "actors": [
+      "Angelika Meissner",
+      "Heidi Brühl",
+      "Paul Klinger"
+    ],
+    "rating": "6.9",
+    "thumb": "https://image.tmdb.org/t/p/w342/gYIAD8Q6BIS5K24wC8Iq5paseUw.jpg",
+    "genres_list": [
+      "Komödie",
+      "Familie",
+      "Drama"
+    ],
+    "channel": "ARD",
+    "timestamp": 1791025200,
+    "duration_min": 90,
+    "isNew": false,
+    "tmdb_id": 52618,
+    "tmdb_type": "movie",
+    "year": "1957"
   },
   {
     "title": "Ferien auf Saltkrokan",
@@ -21143,7 +21205,7 @@
     "director": "",
     "actors": [],
     "rating": "N/A",
-    "thumb": "placeholder.png",
+    "thumb": "https://image.tmdb.org/t/p/w342/w9PgraOdBpaIR5hnBywERIryFDX.jpg",
     "genres_list": [
       "Sonstige"
     ],
@@ -21151,6 +21213,8 @@
     "timestamp": 1674306000,
     "duration_min": 88,
     "isNew": false,
+    "tmdb_id": 1435687,
+    "tmdb_type": "movie",
     "year": "2016"
   },
   {
@@ -21164,19 +21228,25 @@
       "https://pd-videos.daserste.de/int/2022/12/28/a77a5247-e8ff-4fc7-b6bf-ceaf7066da8d/JOB_526450__sendeton_640x360-50p-1200kbit.mp4"
     ],
     "quality": "HD",
-    "plot": "Spielfilm Deutschland 2016\r\n\r\nDas \"Hotel Heidelberg\" verdankt seinen Kultstatus der Gründerin Hermine Kramer. In deren Schatten steht Tochter Annette, die heutige Hotelchefin. Doch dann platzt Annette der Kragen und das Hotel stürzt ins Chaos.\r\n\r\nMit Hannelore Hoger, Ulrike C. Tscharre, Christoph Maria Herbst, Rüdiger Vogler u. a. | Regie: Michael Rowitz",
+    "plot": "Im idyllisch gelegenen „Hotel Heidelberg“ muss sich Junior-Chefin Annette Kramer  nicht nur mit den wachsenden Ansprüchen der Hotelgäste auseinandersetzen, sondern als alleinerziehende Mutter auch mit den Problemen ihres pubertierenden Sohnes Jeremy. Und auch die charismatische Hotelgründerin Hermine Kramer  macht ihrer Tochter durch ihr ständiges Einmischen in die Geschäfte das Leben nicht gerade leichter. Immerhin ist da noch Annettes Therapeut Ingolf der sich mächtig ins Zeug legt, um sie vor größeren Abstürzen zu bewahren.",
     "mediathek_desc": "Spielfilm Deutschland 2016\r\n\r\nDas \"Hotel Heidelberg\" verdankt seinen Kultstatus der Gründerin Hermine Kramer. In deren Schatten steht Tochter Annette, die heutige Hotelchefin. Doch dann platzt Annette der Kragen und das Hotel stürzt ins Chaos.\r\n\r\nMit Hannelore Hoger, Ulrike C. Tscharre, Christoph Maria Herbst, Rüdiger Vogler u. a. | Regie: Michael Rowitz",
     "director": "",
-    "actors": [],
+    "actors": [
+      "Hannelore Hoger",
+      "Christoph Maria Herbst",
+      "Stephan Grossmann"
+    ],
     "rating": "N/A",
-    "thumb": "placeholder.png",
+    "thumb": "https://image.tmdb.org/t/p/w342/hQjzo3pQs3r7IcMXzDLLMHVBTrN.jpg",
     "genres_list": [
-      "Sonstige"
+      "Drama"
     ],
     "channel": "ARD",
     "timestamp": 1673092800,
     "duration_min": 89,
     "isNew": false,
+    "tmdb_id": 82112,
+    "tmdb_type": "tv",
     "year": "2016"
   },
   {
@@ -21190,19 +21260,25 @@
       "https://pd-videos.daserste.de/int/2023/01/18/502c874b-8832-4b6b-9d21-0ef059d8a1b0/JOB_529160__sendeton_640x360-50p-1200kbit.mp4"
     ],
     "quality": "HD",
-    "plot": "Spielfilm Deutschland 2016 \r\n\r\nAnnette Kramer (Annette Frier) droht alles über den Kopf zu wachsen. Nicht nur soll sie Hausfrau, Mutter und Ehefrau sein, sondern auch noch rund um die Uhr ein Hotel managen.\r\nDa hat ihr gerade noch gefehlt, dass ihr Mann Ingolf (Christoph Maria Herbst) zunehmend genervt ist von den immer kleiner werdenden Zeitfenstern, die sie für ihn übrig hat. Und dass sich Annet\n.....",
+    "plot": "deutscher Lehrfilm",
     "mediathek_desc": "Spielfilm Deutschland 2016 \r\n\r\nAnnette Kramer (Annette Frier) droht alles über den Kopf zu wachsen. Nicht nur soll sie Hausfrau, Mutter und Ehefrau sein, sondern auch noch rund um die Uhr ein Hotel managen.\r\nDa hat ihr gerade noch gefehlt, dass ihr Mann Ingolf (Christoph Maria Herbst) zunehmend genervt ist von den immer kleiner werdenden Zeitfenstern, die sie für ihn übrig hat. Und dass sich Annet\n.....",
-    "director": "",
-    "actors": [],
+    "director": "Matthias Eder",
+    "actors": [
+      "Maximilian Ehrenreich",
+      "Beate Furcht",
+      "Friederike Kempter"
+    ],
     "rating": "N/A",
     "thumb": "placeholder.png",
     "genres_list": [
-      "Sonstige"
+      "Doku"
     ],
     "channel": "ARD",
     "timestamp": 1674910800,
     "duration_min": 89,
     "isNew": false,
+    "tmdb_id": 568504,
+    "tmdb_type": "movie",
     "year": "2016"
   },
   {
@@ -22723,12 +22799,16 @@
       "https://ctv-videos.daserste.de/int/2026/06/23/DEGSM443911/DEGSM443911_3765705_sendeton_640x360-50p-1200kbit.mp4"
     ],
     "quality": "HD",
-    "plot": "Spielfilm Deutschland 2018 Die Verwaltungschefin der Sachsenklinik ist begeistert: Dr. Heilmann soll als Redner bei einem Ärzte-Kongress in Thailand auftreten. Doch alles geht schief: Roland und seine Begleiter kommen nie in Bangkok an und landen mitten im Urwald. Hier erfährt Roland nicht, dass sein frischverliebter Sohn Jakob (Karsten Kühn) zu Hause in Leipzig in akuter Lebensgefahr schwebt....",
+    "plot": "TV-Special zur beliebten ARD-Serie „In aller Freundschaft – Die jungen Ärzte“.",
     "mediathek_desc": "Spielfilm Deutschland 2018 Die Verwaltungschefin der Sachsenklinik ist begeistert: Dr. Heilmann soll als Redner bei einem Ärzte-Kongress in Thailand auftreten. Doch alles geht schief: Roland und seine Begleiter kommen nie in Bangkok an und landen mitten im Urwald. Hier erfährt Roland nicht, dass sein frischverliebter Sohn Jakob (Karsten Kühn) zu Hause in Leipzig in akuter Lebensgefahr schwebt....",
     "director": "",
-    "actors": [],
+    "actors": [
+      "Mirka Pigulla",
+      "Philipp Danne",
+      "Stefan Ruppe"
+    ],
     "rating": "N/A",
-    "thumb": "placeholder.png",
+    "thumb": "https://image.tmdb.org/t/p/w342/el09QpDr03XaopffKtzC70qDt0q.jpg",
     "genres_list": [
       "Sonstige"
     ],
@@ -22736,6 +22816,8 @@
     "timestamp": 1782388980,
     "duration_min": 88,
     "isNew": false,
+    "tmdb_id": 1578084,
+    "tmdb_type": "movie",
     "year": "2018"
   },
   {
@@ -25922,19 +26004,27 @@
       "https://ctv-videos.daserste.de/int/2023/04/23/1dd95df8-d74a-4435-8673-fc15cf9a65dd/JOB_557653__sendeton_640x360-50p-1200kbit.mp4"
     ],
     "quality": "HD",
-    "plot": "Spielfilm Deutschland 2005\r\n\r\nSieben Monate sind vergangen, seit die Almbäuerin Rosa Mayrhofer und Fischhändler Hannes Seeger geheiratet haben und auf Rosas kleine Almhütte gezogen sind. Doch eines Tages hält es der Seebär Hannes in der alpinen Höhenlage nicht mehr aus.\r\n\r\nMit Christiane Hörbiger, Götz George, Sonja Kirchberger, Juraj Kukura, Miguel Herz-Kestranek",
+    "plot": "Sieben Monate sind vergangen, seit die lebensfrohe Almbäuerin Rosa Mayrhofer und der charmante Fischhändler Hannes Seeger geheiratet haben und auf Rosas kleine Almhütte gezogen sind. Doch eines Tages hält es der Seebär Hannes in der alpinen Höhenlage nicht mehr aus: Er flieht zurück in sein geliebtes Hamburg. Kurz entschlossen reist die wütende Rosa ihm nach. In der Hansestadt angekommen, beginnt für Rosa und Hannes ein turbulenter Reigen aus Liebe, Eifersucht und Leidenschaft.",
     "mediathek_desc": "Spielfilm Deutschland 2005\r\n\r\nSieben Monate sind vergangen, seit die Almbäuerin Rosa Mayrhofer und Fischhändler Hannes Seeger geheiratet haben und auf Rosas kleine Almhütte gezogen sind. Doch eines Tages hält es der Seebär Hannes in der alpinen Höhenlage nicht mehr aus.\r\n\r\nMit Christiane Hörbiger, Götz George, Sonja Kirchberger, Juraj Kukura, Miguel Herz-Kestranek",
-    "director": "",
-    "actors": [],
-    "rating": "N/A",
-    "thumb": "placeholder.png",
+    "director": "Hajo Gies",
+    "actors": [
+      "Christiane Hörbiger",
+      "Götz George",
+      "Sonja Kirchberger"
+    ],
+    "rating": "5.0",
+    "thumb": "https://image.tmdb.org/t/p/w342/tXbhYVBjkLplX1vfdHJi2bkt5Lw.jpg",
     "genres_list": [
-      "Sonstige"
+      "Romanze",
+      "TV-Film",
+      "Komödie"
     ],
     "channel": "ARD",
     "timestamp": 1689350924,
     "duration_min": 87,
     "isNew": false,
+    "tmdb_id": 430939,
+    "tmdb_type": "movie",
     "year": "2005"
   },
   {
@@ -27394,20 +27484,27 @@
       "https://rodlzdf-a.akamaihd.net/none/zdf/19/05/190509_2015_sendung_fis/8/190509_2015_sendung_fis_a1a2_808k_p11v17.mp4"
     ],
     "quality": "HD",
-    "plot": "Olaf Hintz ist ein Ekel und Misanthrop. Nach Jahren des Kümmerns hat seine Schwester Elfie genug. Sie geht und vermietet ihren Teil der gemeinsamen Wohnung an die alleinerziehende Trixie.",
+    "plot": "Der pensionierte Lehrer Olaf ist ein richtiges Ekel. Seit dem Tod seiner Frau mäkelt er an allen und allem herum. Besonders seine Schwester Elfie hat es schwer. Durch einem Schlaganfall ist er weitgehend an den Rollstuhl gebunden und tyrannisiert sie. Irgendwann reicht es ihr und sie bucht eine mehrmonatige Kreuzfahrt, allerdings nicht ohne Ersatz zu besorgen. Die resolute, alleinerziehende Trixie, die ständig pleite ist, darf mit ihren drei Kindern mietfrei wohnen, wenn für Olaf gesorgt wird.",
     "mediathek_desc": "Olaf Hintz ist ein Ekel und Misanthrop. Nach Jahren des Kümmerns hat seine Schwester Elfie genug. Sie geht und vermietet ihren Teil der gemeinsamen Wohnung an die alleinerziehende Trixie.",
-    "director": "",
-    "actors": [],
-    "rating": "N/A",
-    "thumb": "placeholder.png",
+    "director": "Marco Petry",
+    "actors": [
+      "Dieter Hallervorden",
+      "Alwara Höfels",
+      "Julius Göze"
+    ],
+    "rating": "7.1",
+    "thumb": "https://image.tmdb.org/t/p/w342/lYTZWPXZoTHqx14S0L595mrzBKY.jpg",
     "genres_list": [
-      "Sonstige"
+      "Komödie",
+      "TV-Film"
     ],
     "channel": "ZDF",
     "timestamp": 1784189711,
     "duration_min": 89,
     "isNew": false,
-    "year": "None"
+    "tmdb_id": 601490,
+    "tmdb_type": "movie",
+    "year": "2019"
   },
   {
     "title": "Mein Gott, Anna!",
@@ -28336,12 +28433,16 @@
       "https://ctv-videos.daserste.de/int/2023/10/11/181fc657-717d-48c4-9553-619f21bb3dea/JOB_576095__sendeton_640x360-50p-1200kbit.mp4"
     ],
     "quality": "HD",
-    "plot": "Spielfilm Deutschland 2008 Barbara Herzog (Uschi Glas) ist vollkommen überrascht: Marius Perlinger (Helmut Zierl) erklärt sich spontan bereit, seine finanziellen Ansprüche zurückzustellen. Die Maibach'sche Papierfabrik ist damit gerettet. Als Gegenleistung lässt Marius sich einen leer stehenden Gasthof überschreiben, der zum Firmenbesitz gehört....",
+    "plot": "Ausgerechnet mit Hilfe ihres Widersachers Marius Perlinger kann Barbara Herzog den drohenden Verkauf der Papierfabrik Maibach abwenden. Marius ist plötzlich bereit, seine Forderungen zurückzustellen. Als Gegenleistung lässt er sich ein leerstehendes Wirtshaus überschreiben, das zum Firmenbesitz gehört. Dabei kommen Barbara und Marius sich langsam näher, was harmonisierend auf das angespannte Familienleben der Herzogs wirkt. Doch bevor es richtig ernst wird zwischen den Verliebten, taucht plötzlich Barbaras weltreisender Ehemann Wolfgang auf …",
     "mediathek_desc": "Spielfilm Deutschland 2008 Barbara Herzog (Uschi Glas) ist vollkommen überrascht: Marius Perlinger (Helmut Zierl) erklärt sich spontan bereit, seine finanziellen Ansprüche zurückzustellen. Die Maibach'sche Papierfabrik ist damit gerettet. Als Gegenleistung lässt Marius sich einen leer stehenden Gasthof überschreiben, der zum Firmenbesitz gehört....",
     "director": "",
-    "actors": [],
-    "rating": "N/A",
-    "thumb": "placeholder.png",
+    "actors": [
+      "Uschi Glas",
+      "Helmut Zierl",
+      "Hans Peter Korff"
+    ],
+    "rating": "6.0",
+    "thumb": "https://image.tmdb.org/t/p/w342/en3grMKpx6r2EZaB9t6CQDsr7Ml.jpg",
     "genres_list": [
       "Sonstige"
     ],
@@ -28349,6 +28450,8 @@
     "timestamp": 1782567000,
     "duration_min": 89,
     "isNew": false,
+    "tmdb_id": 569961,
+    "tmdb_type": "movie",
     "year": "2008"
   },
   {
@@ -29283,19 +29386,27 @@
       "https://pd-videos.daserste.de/int/2024/05/21/031de11f-ef36-49a3-b152-50307b08b502/JOB_479007_sendeton_640x360-50p-1200kbit.mp4"
     ],
     "quality": "HD",
-    "plot": "Spielfilm Deutschland 2010 Ariane (Hande Kazanova), eine Deutsche, reist nach Istanbul, um ihren Sohn zu suchen, der vom eigenen Vater in die Türkei verschleppt wurde. Hilfesuchend wendet sie sich an Mehmet Özakin (Erol Sander), der sie an einen Kollegen verweist....",
+    "plot": "Kommissar Mehmet Özakin kämpft mit Charme und Leichtigkeit in der Bosporus-Metropole gegen das Verbrechen – und gegen die Bürokratie, die ihm bei seinen Ermittlungen immer wieder fantasiereiche Hürden in den Weg stellt. Özakins treuer Assistent Mustafa  unterstützt ihn dabei mit vollen Einsatz. Auch wenn dieser dabei immer wieder von den ständigen Kontrollanrufen seiner Mutter genervt wird. Neben den oft halsbrecherischen Einsätzen versucht Özakin, seiner über alles geliebten Ehefrau genügend Zeit für ein harmonisches Privatleben zu gewährleisten.",
     "mediathek_desc": "Spielfilm Deutschland 2010 Ariane (Hande Kazanova), eine Deutsche, reist nach Istanbul, um ihren Sohn zu suchen, der vom eigenen Vater in die Türkei verschleppt wurde. Hilfesuchend wendet sie sich an Mehmet Özakin (Erol Sander), der sie an einen Kollegen verweist....",
-    "director": "",
-    "actors": [],
-    "rating": "N/A",
-    "thumb": "placeholder.png",
+    "director": "Michael Kreindl",
+    "actors": [
+      "Erol Sander",
+      "İdil Üner",
+      "Sascha Laura Soydan"
+    ],
+    "rating": "5.2",
+    "thumb": "https://image.tmdb.org/t/p/w342/pgOUH0hD2oSfCoObj36TUU5fw9q.jpg",
     "genres_list": [
-      "Sonstige"
+      "Krimi",
+      "Action",
+      "Drama"
     ],
     "channel": "ARD",
     "timestamp": 1718062500,
     "duration_min": 87,
     "isNew": false,
+    "tmdb_id": 41015,
+    "tmdb_type": "tv",
     "year": "2010"
   },
   {
@@ -31184,19 +31295,26 @@
       "https://rodlzdf-a.akamaihd.net/dach/3sat/26/01/260130_one_life_wer_ein_leben_rettet_rettet_die_ganze_welt_spielfilm/1/260130_one_life_wer_ein_leben_rettet_rettet_die_ganze_welt_spielfilm_a1a2_808k_p11v17.mp4"
     ],
     "quality": "HD",
-    "plot": "Prag 1938: Der Londoner Börsenmakler Nicky Winton wird mit dem Elend der Flüchtlinge konfrontiert. Nicky handelt. Eine Liste soll jüdischen Kindern die Flucht nach England ermöglichen.",
+    "plot": "„Wenn etwas nicht unmöglich ist, dann muss es einen Weg geben!“ Mit dieser Lebenseinstellung schrieb Sir Nicholas ‚Nicky‘ Winton (Anthony Hopkins) Geschichte, als er in einem Wettlauf gegen die Zeit kurz vor Ausbruch des Zweiten Weltkriegs 669 Kinder vor den Nazis rettete: Dezember 1938. Der junge Londoner Börsenmakler Nicholas Winton (Johnny Flynn) erfährt über einen Freund von den entsetzlichen Zuständen in den tschechischen Flüchtlingslagern. Kurzentschlossen fährt er nach Prag und erlebt aus erster Hand, wie jüdische Familien auf der Flucht vor Verfolgung ohne Obdach und Essen ihrem Schicksal ausgeliefert sind. Bestürzt entwickelt er einen waghalsigen Plan. Und so beginnt mit Unterstützung seiner tatkräftigen Mutter (Helena Bonham Carter) in London und einer Hilfsorganisation vor Ort eine beispiellose Rettungsaktion – immer bedroht von der nahenden Invasion der Faschisten. Wie viele Kinder können sie retten, bevor die Grenzen geschlossen werden?",
     "mediathek_desc": "Prag 1938: Der Londoner Börsenmakler Nicky Winton wird mit dem Elend der Flüchtlinge konfrontiert. Nicky handelt. Eine Liste soll jüdischen Kindern die Flucht nach England ermöglichen.",
-    "director": "",
-    "actors": [],
-    "rating": "N/A",
-    "thumb": "placeholder.png",
+    "director": "James Hawes",
+    "actors": [
+      "Anthony Hopkins",
+      "Johnny Flynn",
+      "Lena Olin"
+    ],
+    "rating": "7.8",
+    "thumb": "https://image.tmdb.org/t/p/w342/q2i35Kj4SqluUKlIQqxyPAr1S0v.jpg",
     "genres_list": [
-      "Sonstige"
+      "Historie",
+      "Drama"
     ],
     "channel": "3Sat",
     "timestamp": 1738012500,
     "duration_min": 105,
     "isNew": false,
+    "tmdb_id": 760774,
+    "tmdb_type": "movie",
     "year": "2023"
   },
   {
@@ -31434,20 +31552,29 @@
       "https://ctv-videos.daserste.de/int/2026/04/11/DEGMT270454/DEGMT270454_3710496_sendeton_640x360-50p-1200kbit.mp4"
     ],
     "quality": "HD",
-    "plot": "Südfrankreich, um das Jahr 1766: In der Bergregion Gévaudan geht die Angst vor einer mordenden Bestie um. Der Chevalier Grégoire de Fronsac (Samuel Le Bihan), ein weitgereister Naturforscher und Tierpräparator, soll im Auftrag seiner königlichen Majestät die Suche unterstützen. Mit seinem Blutsbruder und Freund Mani (Marc Dacoscos), der ihn seit seiner Zeit in den Kolonien in der Neuen Welt beglei\n.....",
+    "plot": "1765-1768, zwanzig Jahre vor der franz. Revolution, wütet eine blutrünstige Bestie in der Provinz von Gévaudan. Über 100 Opfer, meist Frauen und Kinder, sind zu beklagen, die Leichen sind grässlich verstümmelt. So erzählt es zumindest die Legende ...  Der Naturkundler und Charismat Greagoire de Fransac und sein Getreuer Mani werden vom König entsandt, um die Geschehnisse zu untersuchen. Bei seinen Ermittlungen stößt das Duo bald auf einen dekadenten Edelmann, einen fanatischen Priester, eine geheimnisvolle Kurtisane und eine wunderschöne Adelstochter. Und beide beginnen zu ahnen, welches schreckliche Geheimnis hinter dem Monster und einer mystischen Geheimgesellschaft lauert ...",
     "mediathek_desc": "Südfrankreich, um das Jahr 1766: In der Bergregion Gévaudan geht die Angst vor einer mordenden Bestie um. Der Chevalier Grégoire de Fronsac (Samuel Le Bihan), ein weitgereister Naturforscher und Tierpräparator, soll im Auftrag seiner königlichen Majestät die Suche unterstützen. Mit seinem Blutsbruder und Freund Mani (Marc Dacoscos), der ihn seit seiner Zeit in den Kolonien in der Neuen Welt beglei\n.....",
-    "director": "",
-    "actors": [],
-    "rating": "N/A",
-    "thumb": "placeholder.png",
+    "director": "Christophe Gans",
+    "actors": [
+      "Samuel Le Bihan",
+      "Vincent Cassel",
+      "Émilie Dequenne"
+    ],
+    "rating": "6.7",
+    "thumb": "https://image.tmdb.org/t/p/w342/sfyUOXQagSmncNquAdbUtCgUF5h.jpg",
     "genres_list": [
-      "Sonstige"
+      "Abenteuer",
+      "Horror",
+      "Action",
+      "Historie"
     ],
     "channel": "ARD",
     "timestamp": 1775943000,
     "duration_min": 139,
     "isNew": false,
-    "year": "None"
+    "tmdb_id": 6312,
+    "tmdb_type": "movie",
+    "year": "2001"
   },
   {
     "title": "Papa Moll",
@@ -33337,19 +33464,25 @@
       "https://ctv-videos.daserste.de/de/2023/05/24/7c6a71c9-2d6d-40fd-8131-c5d88ce7fe8d/JOB_549595__sendeton_640x360-50p-1200kbit.mp4"
     ],
     "quality": "HD",
-    "plot": "Spielfilm Deutschland 2022 Marie (Katharina Marie Schubert) freut sich auf die Reise mit ihrem Hunsrücker Frauenchor nach Japan. Ihren Traum lässt sie sich auch nicht von ihrer Mutter (Victoria Trauttmansdorff) ausreden, die ausgerechnet jetzt zur Kur nach Rüdesheim fährt und ihre Tochter zur Vertretung in ihrem Kleinstadtladen verpflichten will....",
+    "plot": "Die Geschichte erzählt in einer Mischung aus abgründigem Humor und magischen Realismus von Marie, einer bodenständigen Frau in den Vierzigern. Sie kommt ihrem großen Traum, einer Reise nach Japan, eines Tages ganz nahe. Gemeinsam mit ihren Landfrauen bricht Marie zu einer Chorreise nach Fernost auf, doch auf dem Weg zum Frankfurter Flughafen erreicht sie die Nachricht, dass ihre Mutter in einem Kurstift in Rüdesheim ins Koma gefallen ist. Marie muss ihre Reise abbrechen.",
     "mediathek_desc": "Spielfilm Deutschland 2022 Marie (Katharina Marie Schubert) freut sich auf die Reise mit ihrem Hunsrücker Frauenchor nach Japan. Ihren Traum lässt sie sich auch nicht von ihrer Mutter (Victoria Trauttmansdorff) ausreden, die ausgerechnet jetzt zur Kur nach Rüdesheim fährt und ihre Tochter zur Vertretung in ihrem Kleinstadtladen verpflichten will....",
-    "director": "",
-    "actors": [],
-    "rating": "N/A",
-    "thumb": "placeholder.png",
+    "director": "Wolfgang Murnberger",
+    "actors": [
+      "Katharina M. Schubert",
+      "Victoria Trauttmansdorff",
+      "Janina Elkin"
+    ],
+    "rating": "5.5",
+    "thumb": "https://image.tmdb.org/t/p/w342/jR74CcH2Dllg1PbOFBqA4n841gN.jpg",
     "genres_list": [
-      "Sonstige"
+      "Komödie"
     ],
     "channel": "ARD",
     "timestamp": 1785666600,
     "duration_min": 88,
     "isNew": false,
+    "tmdb_id": 979671,
+    "tmdb_type": "movie",
     "year": "2022"
   },
   {
@@ -34292,7 +34425,7 @@
     "director": "Stephen Chow",
     "actors": [
       "Stephen Chow",
-      "吳孟達",
+      "Richard Ng Man-Tat",
       "Zhao Wei"
     ],
     "rating": "7.2",
@@ -38818,19 +38951,25 @@
       "https://ctv-videos.daserste.de/int/2020/02/29/68dab90b-1654-4654-b685-360c5dd10760/JOB_536795__sendeton_640x360-50p-1200kbit.mp4"
     ],
     "quality": "HD",
-    "plot": "Spielfilm Deutschland 2005 Kapitän Bernd Jensen (Horst Janson) von der \"Star Clipper\", einem stattlichen Viermaster, der die Nostalgie traditioneller Clipperschiffe mit dem Komfort eines modernen Luxus-Kreuzfahrtschiffs verbindet, muss einmal mehr auch die privaten Probleme seiner Passagiere lösen helfen. Kopfzerbrechen bereitet dem Kommandanten obendrein seine Cruisedirektorin Marlene (Christine Neubauer)....",
+    "plot": "Unter weißen Segeln geht es zu den schönsten Zielen dieser Welt. Egal ob in der Karibik, der Ägäis oder im Mittelmeer, ob in Thailand, Ägypten oder Kambodscha: Besatzung und Passagiere der Passagiersegelschiffe Star Clippers erleben traumhafte Abenteuer vor wunderschönen Stränden und historischen Kulissen. Liebesglück und Sehnsüchte spielen dabei eine zentrale Rolle ...",
     "mediathek_desc": "Spielfilm Deutschland 2005 Kapitän Bernd Jensen (Horst Janson) von der \"Star Clipper\", einem stattlichen Viermaster, der die Nostalgie traditioneller Clipperschiffe mit dem Komfort eines modernen Luxus-Kreuzfahrtschiffs verbindet, muss einmal mehr auch die privaten Probleme seiner Passagiere lösen helfen. Kopfzerbrechen bereitet dem Kommandanten obendrein seine Cruisedirektorin Marlene (Christine Neubauer)....",
-    "director": "",
-    "actors": [],
-    "rating": "N/A",
-    "thumb": "placeholder.png",
+    "director": "Gero Erhardt",
+    "actors": [
+      "Christine Neubauer",
+      "Horst Janson",
+      "Ivonne Schönherr"
+    ],
+    "rating": "5.5",
+    "thumb": "https://image.tmdb.org/t/p/w342/tgG6lbR7EqZ0BPUcn1QWDp8lTIX.jpg",
     "genres_list": [
-      "Sonstige"
+      "Drama"
     ],
     "channel": "ARD",
     "timestamp": 1787394600,
     "duration_min": 88,
     "isNew": false,
+    "tmdb_id": 40909,
+    "tmdb_type": "tv",
     "year": "2005"
   },
   {
@@ -38844,19 +38983,25 @@
       "https://ctv-videos.daserste.de/int/2024/06/18/DEGSM681837/DEGSM681837_2995754_sendeton_640x360-50p-1200kbit.mp4"
     ],
     "quality": "HD",
-    "plot": "Spielfilm Deutschland 2006 Die geschiedene Apothekerin Andrea (Diana Körner) kann es kaum fassen: Manfred (Krystian Martinek), ein gut aussehender, junger Antiquitätenhändler, den sie noch nicht lange kennt, macht ihr feierlich einen Antrag und lädt sie zu einer Karibik-Kreuzfahrt ein. Doch als der Fünfmaster „Royal Clipper\" in Bridgetown auf Barbados ablegen will, erhält Manfred einen Anruf und muss dringend nach New York....",
+    "plot": "Unter weißen Segeln geht es zu den schönsten Zielen dieser Welt. Egal ob in der Karibik, der Ägäis oder im Mittelmeer, ob in Thailand, Ägypten oder Kambodscha: Besatzung und Passagiere der Passagiersegelschiffe Star Clippers erleben traumhafte Abenteuer vor wunderschönen Stränden und historischen Kulissen. Liebesglück und Sehnsüchte spielen dabei eine zentrale Rolle ...",
     "mediathek_desc": "Spielfilm Deutschland 2006 Die geschiedene Apothekerin Andrea (Diana Körner) kann es kaum fassen: Manfred (Krystian Martinek), ein gut aussehender, junger Antiquitätenhändler, den sie noch nicht lange kennt, macht ihr feierlich einen Antrag und lädt sie zu einer Karibik-Kreuzfahrt ein. Doch als der Fünfmaster „Royal Clipper\" in Bridgetown auf Barbados ablegen will, erhält Manfred einen Anruf und muss dringend nach New York....",
-    "director": "",
-    "actors": [],
-    "rating": "N/A",
-    "thumb": "placeholder.png",
+    "director": "Gero Erhardt",
+    "actors": [
+      "Christine Neubauer",
+      "Horst Janson",
+      "Ivonne Schönherr"
+    ],
+    "rating": "5.5",
+    "thumb": "https://image.tmdb.org/t/p/w342/tgG6lbR7EqZ0BPUcn1QWDp8lTIX.jpg",
     "genres_list": [
-      "Sonstige"
+      "Drama"
     ],
     "channel": "ARD",
     "timestamp": 1791722700,
     "duration_min": 88,
     "isNew": true,
+    "tmdb_id": 40909,
+    "tmdb_type": "tv",
     "year": "2006"
   },
   {
@@ -38870,19 +39015,25 @@
       "https://ctv-videos.daserste.de/int/2017/02/20/15b71806-3ea0-4635-bc99-977a898da01b/JOB_536772__sendeton_640x360-50p-1200kbit.mp4"
     ],
     "quality": "HD",
-    "plot": "Spielfilm Deutschland 2004 Liebt sie ihren untreuen Ehemann Rudolf (Christian Kohlund) noch immer? Diese einfache Frage kann Marianne Bauer (Eleonore Weisgerber), gestandene Besitzerin eines großen Berliner Gartencenters, zu ihrer eigenen Überraschung nicht beantworten. Gründe genug, ihn zu hassen, gibt es: Knall auf Fall hat er sie nach über 20 Ehejahren wegen der 18 Jahre jüngeren Tamara (Stefanie Schmid) verlassen....",
+    "plot": "Unter weißen Segeln geht es zu den schönsten Zielen dieser Welt. Egal ob in der Karibik, der Ägäis oder im Mittelmeer, ob in Thailand, Ägypten oder Kambodscha: Besatzung und Passagiere der Passagiersegelschiffe Star Clippers erleben traumhafte Abenteuer vor wunderschönen Stränden und historischen Kulissen. Liebesglück und Sehnsüchte spielen dabei eine zentrale Rolle ...",
     "mediathek_desc": "Spielfilm Deutschland 2004 Liebt sie ihren untreuen Ehemann Rudolf (Christian Kohlund) noch immer? Diese einfache Frage kann Marianne Bauer (Eleonore Weisgerber), gestandene Besitzerin eines großen Berliner Gartencenters, zu ihrer eigenen Überraschung nicht beantworten. Gründe genug, ihn zu hassen, gibt es: Knall auf Fall hat er sie nach über 20 Ehejahren wegen der 18 Jahre jüngeren Tamara (Stefanie Schmid) verlassen....",
-    "director": "",
-    "actors": [],
-    "rating": "N/A",
-    "thumb": "placeholder.png",
+    "director": "Gero Erhardt",
+    "actors": [
+      "Christine Neubauer",
+      "Horst Janson",
+      "Ivonne Schönherr"
+    ],
+    "rating": "5.5",
+    "thumb": "https://image.tmdb.org/t/p/w342/tgG6lbR7EqZ0BPUcn1QWDp8lTIX.jpg",
     "genres_list": [
-      "Sonstige"
+      "Drama"
     ],
     "channel": "ARD",
     "timestamp": 1781703000,
     "duration_min": 89,
     "isNew": false,
+    "tmdb_id": 40909,
+    "tmdb_type": "tv",
     "year": "2004"
   },
   {
@@ -38896,19 +39047,25 @@
       "https://ctv-videos.daserste.de/int/2020/01/23/5a229a1d-e2df-463f-b030-ee3c8a2a15bc/JOB_538390__sendeton_640x360-50p-1200kbit.mp4"
     ],
     "quality": "HD",
-    "plot": "Spielfilm Deutschland 2005 Noch nicht im siebenten Himmel, aber beinahe im Olymp wähnt sich Susanne Stellmann (Annett Renneberg), als sie am Fuße der Akropolis mit ihrem temperamentvollen griechischen Verlobten Stavros Panagos (Simon Verhoeven) einen rauschenden Polterabend feiert....",
+    "plot": "Unter weißen Segeln geht es zu den schönsten Zielen dieser Welt. Egal ob in der Karibik, der Ägäis oder im Mittelmeer, ob in Thailand, Ägypten oder Kambodscha: Besatzung und Passagiere der Passagiersegelschiffe Star Clippers erleben traumhafte Abenteuer vor wunderschönen Stränden und historischen Kulissen. Liebesglück und Sehnsüchte spielen dabei eine zentrale Rolle ...",
     "mediathek_desc": "Spielfilm Deutschland 2005 Noch nicht im siebenten Himmel, aber beinahe im Olymp wähnt sich Susanne Stellmann (Annett Renneberg), als sie am Fuße der Akropolis mit ihrem temperamentvollen griechischen Verlobten Stavros Panagos (Simon Verhoeven) einen rauschenden Polterabend feiert....",
-    "director": "",
-    "actors": [],
-    "rating": "N/A",
-    "thumb": "placeholder.png",
+    "director": "Gero Erhardt",
+    "actors": [
+      "Christine Neubauer",
+      "Horst Janson",
+      "Ivonne Schönherr"
+    ],
+    "rating": "5.5",
+    "thumb": "https://image.tmdb.org/t/p/w342/tgG6lbR7EqZ0BPUcn1QWDp8lTIX.jpg",
     "genres_list": [
-      "Sonstige"
+      "Drama"
     ],
     "channel": "ARD",
     "timestamp": 1790513100,
     "duration_min": 88,
     "isNew": false,
+    "tmdb_id": 40909,
+    "tmdb_type": "tv",
     "year": "2005"
   },
   {
@@ -38922,19 +39079,25 @@
       "https://ctv-videos.daserste.de/int/2024/06/18/DEGSM681839/DEGSM681839_2995756_sendeton_640x360-50p-1200kbit.mp4"
     ],
     "quality": "HD",
-    "plot": "Spielfilm Deutschland 2006 Das Ehepaar Moritz (Sigmar Solbach) und Wilma Fink (Daniela Ziegler) will die traumhafte Kreuzfahrt durch asiatische Gewässer auf der „Star Flyer\" nutzen, um ihren Sohn Wolfgang (Lars Gärtner) zu besuchen, der in Kambodscha an der Restaurierung der berühmten Tempelanlage Angkor Wat mitarbeitet. Aber trotz Sonne, Palmenstränden und spiegelglatter See will bei Moritz keine rechte Urlaubsfreude aufkommen....",
+    "plot": "Unter weißen Segeln geht es zu den schönsten Zielen dieser Welt. Egal ob in der Karibik, der Ägäis oder im Mittelmeer, ob in Thailand, Ägypten oder Kambodscha: Besatzung und Passagiere der Passagiersegelschiffe Star Clippers erleben traumhafte Abenteuer vor wunderschönen Stränden und historischen Kulissen. Liebesglück und Sehnsüchte spielen dabei eine zentrale Rolle ...",
     "mediathek_desc": "Spielfilm Deutschland 2006 Das Ehepaar Moritz (Sigmar Solbach) und Wilma Fink (Daniela Ziegler) will die traumhafte Kreuzfahrt durch asiatische Gewässer auf der „Star Flyer\" nutzen, um ihren Sohn Wolfgang (Lars Gärtner) zu besuchen, der in Kambodscha an der Restaurierung der berühmten Tempelanlage Angkor Wat mitarbeitet. Aber trotz Sonne, Palmenstränden und spiegelglatter See will bei Moritz keine rechte Urlaubsfreude aufkommen....",
-    "director": "",
-    "actors": [],
-    "rating": "N/A",
-    "thumb": "placeholder.png",
+    "director": "Gero Erhardt",
+    "actors": [
+      "Christine Neubauer",
+      "Horst Janson",
+      "Ivonne Schönherr"
+    ],
+    "rating": "5.5",
+    "thumb": "https://image.tmdb.org/t/p/w342/tgG6lbR7EqZ0BPUcn1QWDp8lTIX.jpg",
     "genres_list": [
-      "Sonstige"
+      "Drama"
     ],
     "channel": "ARD",
     "timestamp": 1776594600,
     "duration_min": 88,
     "isNew": false,
+    "tmdb_id": 40909,
+    "tmdb_type": "tv",
     "year": "2006"
   },
   {
@@ -38948,19 +39111,25 @@
       "https://ctv-videos.daserste.de/int/2026/06/09/DEGSM474813/DEGSM474813_3768716_sendeton_640x360-50p-1200kbit.mp4"
     ],
     "quality": "HD",
-    "plot": "Spielfilm Deutschland 2004 Kapitän Klaus Berger (Peter Kremer) hat das Kommando auf der „Royal Clipper\", einem stattlichen Fünfmaster, der die Nostalgie eines „Windjammers\" mit dem Komfort eines modernen Luxuskreuzfahrtschiffes verbindet. Doch Berger muss nicht nur sein Schiff auf Kurs halten, auch die Crew hält den Kapitän mächtig auf Trab....",
+    "plot": "Unter weißen Segeln geht es zu den schönsten Zielen dieser Welt. Egal ob in der Karibik, der Ägäis oder im Mittelmeer, ob in Thailand, Ägypten oder Kambodscha: Besatzung und Passagiere der Passagiersegelschiffe Star Clippers erleben traumhafte Abenteuer vor wunderschönen Stränden und historischen Kulissen. Liebesglück und Sehnsüchte spielen dabei eine zentrale Rolle ...",
     "mediathek_desc": "Spielfilm Deutschland 2004 Kapitän Klaus Berger (Peter Kremer) hat das Kommando auf der „Royal Clipper\", einem stattlichen Fünfmaster, der die Nostalgie eines „Windjammers\" mit dem Komfort eines modernen Luxuskreuzfahrtschiffes verbindet. Doch Berger muss nicht nur sein Schiff auf Kurs halten, auch die Crew hält den Kapitän mächtig auf Trab....",
-    "director": "",
-    "actors": [],
-    "rating": "N/A",
-    "thumb": "placeholder.png",
+    "director": "Gero Erhardt",
+    "actors": [
+      "Christine Neubauer",
+      "Horst Janson",
+      "Ivonne Schönherr"
+    ],
+    "rating": "5.5",
+    "thumb": "https://image.tmdb.org/t/p/w342/tgG6lbR7EqZ0BPUcn1QWDp8lTIX.jpg",
     "genres_list": [
-      "Sonstige"
+      "Drama"
     ],
     "channel": "ARD",
     "timestamp": 1781616600,
     "duration_min": 88,
     "isNew": false,
+    "tmdb_id": 40909,
+    "tmdb_type": "tv",
     "year": "2004"
   },
   {
