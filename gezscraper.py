@@ -240,7 +240,6 @@ def prescore(cand, movie, media_type):
     cand_orig = cand.get(orig_key, '')
     title_score = max(score_title(src, cand_title), score_title(src, cand_orig))
 
-    # STRENG: Wenn der Titel nicht stark übereinstimmt, sofort verwerfen (verhindert das Tom & Jerry / Schloss am Wörthersee Problem)
     if title_score < 45:
         return 0
 
@@ -286,7 +285,7 @@ def pick_best(results, movie, media_type):
         return None
 
     pre.sort(key=lambda x: x[0], reverse=True)
-    top = pre[:1]  # Nimm strikt den besten nach Titel
+    top = pre[:1]
 
     best = None
     for s, cand in top:
@@ -365,8 +364,6 @@ def find_tmdb_match(movie):
 def apply_match(movie, media_type, match):
     _, cand, details = match
 
-    # FIX: Wir übernehmen den TMDB-Titel und korrigieren den Filmtitel falls nötig,
-    # belassen aber den originalen sauberen Mediathek-Titel als Basis, wenn er übereinstimmt.
     overview = details.get('overview') or cand.get('overview')
     if overview:
         movie['plot'] = overview
@@ -401,14 +398,12 @@ def apply_match(movie, media_type, match):
 
     genre_ids = [g['id'] for g in details.get('genres', []) if 'id' in g] or cand.get('genre_ids', [])
     
-    # Verhindere Fehlzuordnung von Animation (Genre 16) bei echten Spielfilmen
-    if 16 in genre_ids and 'schloss am wörthersee' not in movie['search'].lower():
-        lower_title = movie['title'].lower()
-        lower_overview = (overview or '').lower()
-        lower_desc = movie['mediathek_desc'].lower()
-        real_keywords = ['tatort', 'polizeiruf', 'in aller freundschaft', 'rosenheim-cops', 'krimi',
-                         'fernsehfilm', 'kommissar', 'drama', 'spielfilm', 'schloss am wörthersee']
-        if any(kw in lower_title or kw in lower_overview or kw in lower_desc for kw in real_keywords):
+    # STRENGER ANIMATIONS-SCHUTZ:
+    # Entferne Genre 16 (Animation) strikt, es sei denn, der Titel oder die Beschreibung erwähnen explizit Animation/Zeichentrick/Anime.
+    if 16 in genre_ids:
+        full_text = (movie['title'] + ' ' + movie['mediathek_desc'] + ' ' + (overview or '')).lower()
+        animation_keywords = ['animation', 'animiert', 'zeichentrick', 'anime', 'cartoon', 'computeranimiert']
+        if not any(kw in full_text for kw in animation_keywords):
             genre_ids = [gid for gid in genre_ids if gid != 16]
 
     genres = []
@@ -591,7 +586,7 @@ def collect_movies():
 
 # --------------------------------------------------------------------------
 # main
-# ----------------------------------------------------------
+# --------------------------------------------------------------------------
 def main():
     print("Starte Mediathek-Abfrage...")
     entries = collect_movies()
