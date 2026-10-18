@@ -74,7 +74,6 @@ def valid_year(y):
 
 
 def extract_year(title, description):
-    """Produktionsjahr: erst Titel (Klammer, dann Titelende), dann Beschreibung."""
     for m in PAREN_YEAR_RE.finditer(title or ''):
         y = int(m.group(1))
         if valid_year(y):
@@ -153,7 +152,6 @@ def score_title(source, candidate):
 
 
 def year_score(src_year, cand_date):
-    """Mediathek-Produktionsjahr gegen TMDB-Datum (Erstausstrahlung kann 1 Jahr abweichen)."""
     if not src_year or not cand_date:
         return 0
     try:
@@ -257,7 +255,6 @@ def prescore(cand, movie, media_type, desc_words):
 
 
 def detail_bonus(details, movie, media_type):
-    """Zusatzpunkte aus Laufzeit sowie Darstellern/Regie, die in der Mediathek-Beschreibung stehen."""
     if not details:
         return 0
     bonus = 0
@@ -289,7 +286,6 @@ def detail_bonus(details, movie, media_type):
 
 
 def pick_best(results, movie, media_type):
-    """Gibt (gesamt_score, kandidat, details) oder None zurück."""
     if not results:
         return None
     desc_words = word_set(movie['mediathek_desc'])
@@ -319,23 +315,56 @@ def pick_best(results, movie, media_type):
     return None
 
 
+def get_search_queries(title):
+    queries = []
+    if title:
+        queries.append(title)
+        
+        for pm in re.findall(r'[(\[](.*?[^()\[\]]*?)[)\]]', title):
+            pm_clean = pm.strip()
+            if pm_clean and pm_clean not in queries and not re.match(r'^(?:19|20)\d{2}$', pm_clean):
+                queries.append(pm_clean)
+                
+        for dash in [' - ', ' – ', ' — ', ' / ']:
+            if dash in title:
+                for p in title.split(dash):
+                    p_clean = p.strip()
+                    if p_clean and p_clean not in queries:
+                        queries.append(p_clean)
+                        
+    return queries
+
+
 def find_tmdb_match(movie):
-    """Gibt (media_type, (score, kandidat, details)) oder None zurück."""
-    query = movie['search'] or movie['title']
+    base_query = movie['search'] or movie['title']
     year = movie['year_num']
 
-    match = pick_best(tmdb_search('movie', query), movie, 'movie')
-    if match:
-        return 'movie', match
+    queries = get_search_queries(base_query)
+    if movie['title'] != base_query:
+        queries.extend(get_search_queries(movie['title']))
 
-    if year:
-        match = pick_best(tmdb_search('movie', query, year), movie, 'movie')
+    seen = set()
+    unique_queries = []
+    for q in queries:
+        if q not in seen:
+            seen.add(q)
+            unique_queries.append(q)
+
+    for q in unique_queries:
+        match = pick_best(tmdb_search('movie', q), movie, 'movie')
         if match:
             return 'movie', match
 
-    match = pick_best(tmdb_search('tv', query), movie, 'tv')
-    if match:
-        return 'tv', match
+        if year:
+            match = pick_best(tmdb_search('movie', q, year), movie, 'movie')
+            if match:
+                return 'movie', match
+
+    for q in unique_queries:
+        match = pick_best(tmdb_search('tv', q), movie, 'tv')
+        if match:
+            return 'tv', match
+
     return None
 
 
@@ -424,7 +453,6 @@ FRACTION_RE = re.compile(r'\b\d{1,2}/\d{1,2}\b')
 
 
 def pick_streams(m):
-    """HD zuerst, dann SD, dann LQ. Liefert (beste_url, qualität, geordnete_url_liste)."""
     candidates = [
         ('HD', m.get('url_video_hd') or ''),
         ('SD', m.get('url_video') or ''),
@@ -560,6 +588,7 @@ def collect_movies():
                 entries.append(entry)
                 by_title.setdefault(key, []).append(entry)
 
+    entries
     return entries
 
 
