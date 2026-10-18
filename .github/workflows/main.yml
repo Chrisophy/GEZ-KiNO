@@ -3,7 +3,11 @@ name: Update Movies JSON
 on:
   schedule:
     - cron: '15 5 * * *'  # Täglich um 05:15 UTC
-  workflow_dispatch:      # Erlaubt manuellen Start über die GitHub-Oberfläche
+  workflow_dispatch:      # Manueller Start
+
+# HIER DIE BERECHTIGUNGEN HINZUFÜGEN:
+permissions:
+  contents: write
 
 jobs:
   update-data:
