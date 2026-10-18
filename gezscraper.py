@@ -142,12 +142,14 @@ def choose_best_result(results, movie, media_type):
         'original_name' if media_type == 'tv' else 'original_title', ''
     )
 
+    # Titel-Score berechnen
     title_score = max(
         score_title(source_title, cand_title),
         score_title(source_title, cand_orig),
     )
     score = title_score
 
+    # SCHUTZ VOR KURZEN TITELN: Bei 1-2 Wörtern muss der Titel besser matchen
     if len(source_title.split()) <= 2 and title_score < 75:
       continue
 
@@ -161,8 +163,11 @@ def choose_best_result(results, movie, media_type):
       elif year_diff == 1:
         score += 10
       else:
-        score -= 90
+        score -= (
+            90  # Drastischer Abzug bei stark abweichendem Jahr
+        )
 
+    # Overview-Matching als kleiner Bonus
     overview = cand.get('overview', '').lower()
     if m_desc and overview and title_score >= 50:
       words = [w for w in overview.split() if len(w) > 5]
@@ -186,8 +191,7 @@ def choose_best_result(results, movie, media_type):
 def main():
   if not os.path.exists('zdfm.json'):
     print(
-        '[!] zdfm.json nicht gefunden! Bitte erst zdfscraper.py durchlaufen'
-        ' lassen.'
+        '[!] zdfm.json nicht gefunden! Bitte zuerst zdfscraper.py ausführen.'
     )
     return
 
@@ -199,7 +203,8 @@ def main():
   seen_titles = set()
   temp_results = []
 
-  print('Filtere und bereite Filme vor...')
+  print(f'{len(raw_items)} Roh-Einträge aus zdfm.json geladen. Filtere...')
+
   for m in raw_items:
     url = m.get('url_stream', '')
     title = m.get('title', '')
@@ -250,15 +255,29 @@ def main():
     norm_title = clean_name.lower().strip()
     if norm_title == 'nö' or norm_title in seen_titles:
       continue
+    if m.get('duration_seconds', 0) < 4680:
+      continue
 
     seen_urls.add(url)
     seen_titles.add(norm_title)
+
+    # Versuche Datum in einen Timestamp zu konvertieren, falls vorhanden
+    raw_date = m.get('date', 0)
+    try:
+      timestamp = (
+          int(raw_date)
+          if str(raw_date).isdigit()
+          else int(
+              datetime.strptime(str(raw_date)[:10], '%Y-%m-%d').timestamp()
+          )
+      )
+    except:
+      timestamp = 0
 
     temp_results.append({
         'title': clean_name,
         'search': clean_name,
         'year': year,
-        'duration_min': m.get('duration_minutes', 0),
         'video_url': url,
         'plot': description or 'Keine Beschreibung verfügbar.',
         'mediathek_desc': description,
@@ -268,12 +287,18 @@ def main():
         'thumb': m.get('url_poster') or 'placeholder.png',
         'genres_list': ['Sonstige'],
         'channel': channel,
-        'timestamp': m.get('date', ''),  # Datum als Sortierhilfe
+        'timestamp': timestamp,
         'isNew': False,
     })
 
+  temp_results.sort(key=lambda x: x['timestamp'], reverse=True)
+  newest_urls = {m['video_url'] for m in temp_results[:100]}
+  for m in temp_results:
+    if m['video_url'] in newest_urls:
+      m['isNew'] = True
+
   all_movies = sorted(temp_results, key=lambda x: x['title'])
-  print(f'{len(all_movies)} Filme nach Filterung. Starte TMDB-Hydrierung...')
+  print(f'{len(all_movies)} gefilterte Filme. Starte TMDB-Hydrierung...')
 
   for i, movie in enumerate(all_movies):
     try:
@@ -291,22 +316,6 @@ def main():
         if tv_res.status_code == 200:
           tmdb = choose_best_result(tv_res.json().get('results', []), movie, 'tv')
           is_tv = bool(tmdb)
-
-      if tmdb:
-        media_type = 'tv' if is_tv else 'movie'
-        credits_url = f'https://api.themoviedb.org/3/{media_type}/{tmdb["id"]}?api_key={TMDB_API_KEY}&language=de-DE&append_to_response=credits'
-        d_res = requests.get(credits_url)
-        d_data = d_res.json() if d_res.status_code == 200 else {}
-
-        tmdb_runtime = d_data.get('runtime', 0)
-        if not tmdb_runtime and is_tv and d_data.get('episode_run_time'):
-          tmdb_runtime = d_data['episode_run_time'][0]
-
-        mediathek_runtime = movie.get('duration_min', 0)
-
-        if tmdb_runtime > 0 and mediathek_runtime > 0:
-          if abs(tmdb_runtime - mediathek_runtime) > 5:
-            tmdb = None
 
       if tmdb:
         genre_ids = tmdb.get('genre_ids', [])
@@ -331,6 +340,11 @@ def main():
               for kw in real_keywords
           ):
             genre_ids = [gid for gid in genre_ids if gid != 16]
+
+        media_type = 'tv' if is_tv else 'movie'
+        credits_url = f'https://api.themoviedb.org/3/{media_type}/{tmdb["id"]}?api_key={TMDB_API_KEY}&language=de-DE&append_to_response=credits'
+        d_res = requests.get(credits_url)
+        d_data = d_res.json() if d_res.status_code == 200 else {}
 
         movie['plot'] = (
             tmdb.get('overview')
@@ -371,8 +385,7 @@ def main():
       else:
         movie['plot'] = movie['mediathek_desc'] or 'Keine Beschreibung verfügbar.'
         movie['rating'] = 'N/A'
-
-        if movie['thumb'] == '':
+        if not movie['thumb']:
           movie['thumb'] = 'placeholder.png'
 
     except Exception as e:
