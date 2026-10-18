@@ -1,4 +1,4 @@
-#!/usr/init/env python3
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 import os
 import json
@@ -240,7 +240,6 @@ def hydrate_movie(movie):
     return movie
 
 def main():
-    # Bestehende movies.json einlesen (als Cache nutzen)
     existing_movies = {}
     if os.path.exists('movies.json'):
         try:
@@ -276,7 +275,7 @@ def main():
                 if not url or not title:
                     continue
                 chan_low = channel.lower()
-                if 'kika' in chan_low || 'zdf-tivi' in chan_low || 'tivi' in title.lower():
+                if 'kika' in chan_low or 'zdf-tivi' in chan_low or 'tivi' in title.lower():
                     continue
                 if re.search(r'audiodeskription|audio description|ad version|hörfilm|deskription|barrierefrei', title.lower()):
                     continue
@@ -303,10 +302,8 @@ def main():
                 seen_urls.add(url)
                 seen_titles.add(norm_title)
 
-                # Prüfen, ob der Film schon im Cache existiert -> Daten übernehmen!
                 if url in existing_movies:
                     movie_entry = existing_movies[url]
-                    # Stream-URL und Timestamp sicherheitshalber aktualisieren
                     movie_entry['video_url'] = url
                     movie_entry['timestamp'] = m.get('timestamp', 0)
                 else:
