@@ -105,17 +105,17 @@ def choose_best_result(results, movie, media_type):
         if source_year and cand_year:
             year_diff = abs(int(source_year) - int(cand_year))
             if year_diff == 0:
-                score += 25
+                score += 30  # Stärkerer Bonus bei exaktem Produktionsjahr
             elif year_diff == 1:
-                score += 10
+                score += 15
             else:
-                score -= 50  
+                score -= 60  # Stärkerer Abzug bei falschem Jahr
 
         overview = cand.get('overview', '').lower()
         if m_desc and overview and title_score >= 40:
             words = [w for w in overview.split() if len(w) > 5]
             matches = sum(1 for w in words if w in m_desc)
-            score += min(matches * 0.3, 8)
+            score += min(matches * 0.4, 12)
 
         scored.append((cand, score))
 
@@ -132,6 +132,22 @@ def choose_best_result(results, movie, media_type):
 
 
 def main():
+    existing_cache = {}
+    if os.path.exists('movies.json'):
+        try:
+            with open('movies.json', 'r', encoding='utf-8') as f:
+                old_movies = json.load(f)
+                for m in old_movies:
+                    if m.get('video_url'):
+                        if m.get('thumb') and 'placeholder.png' not in m.get('thumb'):
+                            m['processed'] = True
+                        else:
+                            m['processed'] = False
+                        existing_cache[m['video_url']] = m
+            print(f"Lese Cache: {len(existing_cache)} Filme aus movies.json geladen.")
+        except Exception as e:
+            print(f"Konnte bestehende movies.json nicht laden: {e}")
+
     seen_urls = set()
     seen_titles = set()
     temp_results = []
@@ -150,9 +166,11 @@ def main():
             data = res.json()
             results = data.get('result', {}).get('results', [])
             for m in results:
-                url = m.get('url_video', '')
+                # Qualitäts-Priorisierung: HD -> SD -> LQ
+                url = m.get('url_video_hd') or m.get('url_video') or m.get('url_video_low', '')
                 title = m.get('title', '')
                 channel = m.get('channel', '')
+                
                 if not url or not title:
                     continue
                 chan_low = channel.lower()
@@ -199,7 +217,8 @@ def main():
                     "genres_list": ["Sonstige"],
                     "channel": channel,
                     "timestamp": m.get('timestamp', 0),
-                    "isNew": False
+                    "isNew": False,
+                    "processed": False
                 })
         except Exception as e:
             print(f"Fehler bei Query {q}: {e}")
@@ -214,6 +233,22 @@ def main():
     print(f"{len(all_movies)} Filme gefunden. Starte TMDB-Hydrierung...")
 
     for i, movie in enumerate(all_movies):
+        url = movie['video_url']
+
+        if url in existing_cache and existing_cache[url].get('processed', False):
+            cached = existing_cache[url]
+            movie.update({
+                "plot": cached.get("plot"),
+                "rating": cached.get("rating"),
+                "thumb": cached.get("thumb"),
+                "director": cached.get("director"),
+                "actors": cached.get("actors"),
+                "genres_list": cached.get("genres_list"),
+                "year": cached.get("year"),
+                "processed": True
+            })
+            continue
+
         try:
             query = urllib.parse.quote(movie['search'] or movie['title'])
             movie_url = f"https://api.themoviedb.org/3/search/movie?api_key={TMDB_API_KEY}&query={query}&language=de-DE&include_adult=false"
@@ -236,7 +271,6 @@ def main():
                 credits_url = f"https://api.themoviedb.org/3/{media_type}/{tmdb['id']}?api_key={TMDB_API_KEY}&language=de-DE&append_to_response=credits"
                 d_res = requests.get(credits_url)
                 
-                # BUGFIX: d_res.res.json() korrigiert zu d_res.json()
                 d_data = d_res.json() if d_res.status_code == 200 else {}
 
                 tmdb_runtime = d_data.get('runtime', 0)
@@ -246,9 +280,9 @@ def main():
                 mediathek_runtime = movie.get('duration_min', 0)
 
                 if tmdb_runtime > 0 and mediathek_runtime > 0:
-                    # Strikterer Laufzeit-Abgleich auf 5 Minuten gesetzt
-                    if abs(tmdb_runtime - mediathek_runtime) > 5:
-                        tmdb = None  # Verwirft den falschen TMDB-Treffer
+                    # Toleranz von 12 Minuten für PAL-Speedup & TV-Fassungen
+                    if abs(tmdb_runtime - mediathek_runtime) > 12:
+                        tmdb = None
 
             if tmdb:
                 genre_ids = tmdb.get('genre_ids', [])
@@ -256,7 +290,7 @@ def main():
                     lower_title = movie['title'].lower()
                     lower_overview = tmdb.get('overview', '').lower()
                     real_keywords = ['tatort', 'polizeiruf', 'in aller freundschaft', 'rosenheim-cops', 'krimi', 'fernsehfilm', 'kommissar', 'drama', 'spielfilm']
-                    if any(kw in lower_title or kw in lower_overview or kw in movie['mediathek_desc'].lower() for kw in real_keyword if kw in real_keywords): # Kleinigkeit korrigiert
+                    if any(kw in lower_title or kw in lower_overview or kw in movie['mediathek_desc'].lower() for kw in real_keywords):
                         genre_ids = [gid for gid in genre_ids if gid != 16]
 
                 movie['plot'] = tmdb.get('overview') or movie['mediathek_desc'] or 'Keine Beschreibung verfügbar.'
@@ -283,17 +317,21 @@ def main():
                 movie['rating'] = 'N/A'
                 movie['thumb'] = 'placeholder.png'
 
+            movie['processed'] = True
+
         except Exception as e:
             print(f"Fehler bei TMDB für {movie['search']}: {e}")
 
-        time.sleep(0.3)
+        time.sleep(0.15)
 
         if (i + 1) % 50 == 0:
-            print(f"Fortschritt: {i + 1}/{len(all_movies)} verarbeitet...")
+            print(f"Fortschritt: {i + 1}/{len(all_movies)} verarbeitet... (Zwischenspeicherung)")
+            with open('movies.json', 'w', encoding='utf-8') as f:
+                json.dump(all_movies, f, ensure_ascii=False, indent=2)
 
     with open('movies.json', 'w', encoding='utf-8') as f:
         json.dump(all_movies, f, ensure_ascii=False, indent=2)
-    print("Fertig! movies.json erfolgreich gespeichert.")
+    print("Fertig! movies.json erfolgreich vollständig gespeichert.")
 
 if __name__ == '__main__':
     main()
