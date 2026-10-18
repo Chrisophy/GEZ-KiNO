@@ -100,9 +100,9 @@ def choose_best_result(results, movie, media_type):
             if source_year == cand_year:
                 score += 40
             elif abs(int(source_year) - int(cand_year)) <= 1:
-                score += 15 # Toleranz von +/- 1 Jahr für Ausstrahlung vs. Produktionsjahr
+                score += 15
             else:
-                score -= 60  # Stärkerer Abzug bei falschem Jahr, um Fehlzuordnungen (wie bei "The Rider") zu verhindern
+                score -= 60 
 
         overview = cand.get('overview', '').lower()
         if m_desc and overview:
@@ -115,7 +115,6 @@ def choose_best_result(results, movie, media_type):
     scored.sort(key=lambda x: x[1], reverse=True)
     best = scored[0]
     
-    # Mindestscore erhöht und zusätzlicher Sicherheitscheck für das Jahr falls vorhanden
     if best[1] < 60:
         return None
         
