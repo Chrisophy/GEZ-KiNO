@@ -143,16 +143,21 @@
     "plot": "In der Unterwelt von Marseille ist Charly Matteï eine lebende Legende: Lange Jahre gehörte er zu den führenden Köpfen des organisierten Verbrechens – nur Drogenhandel war für ihn tabu.",
     "mediathek_desc": "In der Unterwelt von Marseille ist Charly Matteï eine lebende Legende: Lange Jahre gehörte er zu den führenden Köpfen des organisierten Verbrechens – nur Drogenhandel war für ihn tabu.",
     "director": "",
-    "actors": [],
-    "rating": "N/A",
-    "thumb": "placeholder.png",
+    "actors": [
+      "Colin Lane",
+      "Frank Woodley"
+    ],
+    "rating": "8.5",
+    "thumb": "https://image.tmdb.org/t/p/w342/o86h91cL1wB2ED8gPiyZ65LJgie.jpg",
     "genres_list": [
-      "Sonstige"
+      "Komödie"
     ],
     "channel": "3Sat",
     "timestamp": 1764970020,
     "duration_min": 105,
     "isNew": false,
+    "tmdb_id": 40783,
+    "tmdb_type": "movie",
     "year": "2010"
   },
   {
@@ -2102,22 +2107,22 @@
     "quality": "HD",
     "plot": "Spielfilm USA 2019 Während des Vietnamkriegs erhält Captain Willard einen Sonderauftrag: Er soll den desertierten Colonel Kurtz aufspüren und liquidieren. Angeblich hält dieser sich mit seiner Einheit im kambodschanischen Dschungel verborgen. An Bord eines Patrouillenbootes machen sich Willard und seine Leute dorthin auf....",
     "mediathek_desc": "In Francis Ford Coppolas bildgewaltigem Antikriegsdrama folgt Captain Willard einer gefährlichen Mission durch die Hölle des Vietnamkriegs: Er soll den wahnsinnig gewordenen Colonel Kurtz, dargestellt von Marlon Brando, finden.",
-    "director": "Joe Reizer",
+    "director": "Baris Azman",
     "actors": [
-      "Dante Aubain",
-      "Syrissa Sacca",
-      "Jess Levinson"
+      "Chas Gerretsen",
+      "Züleyha Azman",
+      "Jan de Vries"
     ],
-    "rating": "3.5",
-    "thumb": "https://image.tmdb.org/t/p/w342/zakKXIxUHaDqyTeJPniv1P376mV.jpg",
+    "rating": "6.6",
+    "thumb": "https://image.tmdb.org/t/p/w342/m6DwO6RKD48UdboX9hhCwJtAMtp.jpg",
     "genres_list": [
-      "Horror"
+      "Doku"
     ],
     "channel": "ARD",
     "timestamp": 1790374800,
     "duration_min": 170,
     "isNew": false,
-    "tmdb_id": 657701,
+    "tmdb_id": 613970,
     "tmdb_type": "movie",
     "year": "2019"
   },
@@ -8287,20 +8292,27 @@
       "https://arteptweb-a.akamaihd.net/am/ptweb/045000/045500/045560-000-C_HQ_0_VA_11533431_MP4-800_AMM-PTWEB-40521656206800_108hGI.mp4"
     ],
     "quality": "HD",
-    "plot": "Als Vito Corleone alias \"Der Pate\" stirbt, übernimmt sein Sohn Michael die Geschäfte und wird bald zu einem der meistgefürchteten Mafiabosse. Als er aber mit der Kasino-Mafia zu verhandeln beginnt, verliert Michael die Unterstützung eines seiner engsten New Yorker Kollegen, Frankie Pentangeli. – Der zweite Teil der opulenten Mafiasaga wurde 1975 mit sechs Oscars ausgezeichnet.",
+    "plot": "Michael Corleone ist jetzt der Pate seiner Familie und führt diese Aufgabe mit der nötigen Gnadenlosigkeit aus. Als er in Las Vegas und auf Kuba expandieren will, weil ihm die alten Geschäftsideen nichts mehr einbringen, treten Schwierigkeiten auf. Um diese zu klären, veranlaßt Michael eine große Säuberungsaktion, die auch vor den Familienmitgliedern nicht halt macht.",
     "mediathek_desc": "Als Vito Corleone alias \"Der Pate\" stirbt, übernimmt sein Sohn Michael die Geschäfte und wird bald zu einem der meistgefürchteten Mafiabosse. Als er aber mit der Kasino-Mafia zu verhandeln beginnt, verliert Michael die Unterstützung eines seiner engsten New Yorker Kollegen, Frankie Pentangeli. – Der zweite Teil der opulenten Mafiasaga wurde 1975 mit sechs Oscars ausgezeichnet.",
-    "director": "",
-    "actors": [],
-    "rating": "N/A",
-    "thumb": "placeholder.png",
+    "director": "Francis Ford Coppola",
+    "actors": [
+      "Al Pacino",
+      "Robert Duvall",
+      "Diane Keaton"
+    ],
+    "rating": "8.6",
+    "thumb": "https://image.tmdb.org/t/p/w342/ydzBlAMJTo9jOG5i8aRpZec0jF3.jpg",
     "genres_list": [
-      "Sonstige"
+      "Drama",
+      "Krimi"
     ],
     "channel": "ARTE.DE",
     "timestamp": 1789928121,
     "duration_min": 189,
     "isNew": false,
-    "year": "None"
+    "tmdb_id": 240,
+    "tmdb_type": "movie",
+    "year": "1974"
   },
   {
     "title": "Der Pate II",
@@ -14464,20 +14476,28 @@
       "https://rodlzdf-a.akamaihd.net/dach/3sat/20/07/200712_edgar_wallace_der_zinker_spielfilm/5/200712_edgar_wallace_der_zinker_spielfilm_776k_p11v13.mp4"
     ],
     "quality": "SD",
-    "plot": "Wer ist der \"Zinker\"? - Dem \"Lord\", Meister unter den Juwelendieben, gelingt es, nach einem großen Coup den gesuchten Hehler zu stellen. Den Erfolg kann er jedoch nicht lange feiern.",
+    "plot": "Die Londoner Unterwelt hält den Atem an. Denn seit einiger Zeit treibt ein geheimnisvoller Hehler sein Spiel mit den Ganoven. Wer nicht auf seine halsabschneiderischen Angebote eingeht, den liefert er Scotland Yard ans Messer.",
     "mediathek_desc": "Wer ist der \"Zinker\"? - Dem \"Lord\", Meister unter den Juwelendieben, gelingt es, nach einem großen Coup den gesuchten Hehler zu stellen. Den Erfolg kann er jedoch nicht lange feiern.",
-    "director": "",
-    "actors": [],
-    "rating": "N/A",
-    "thumb": "placeholder.png",
+    "director": "Karl Forest",
+    "actors": [
+      "Lissy Arna",
+      "Karl Ludwig Diehl",
+      "Fritz Rasp"
+    ],
+    "rating": "5.6",
+    "thumb": "https://image.tmdb.org/t/p/w342/m1dn4e1jtXDAgDdNd3yUmslHMQY.jpg",
     "genres_list": [
-      "Sonstige"
+      "Krimi",
+      "Drama",
+      "Mystery"
     ],
     "channel": "3Sat",
     "timestamp": 1586817300,
     "duration_min": 85,
     "isNew": false,
-    "year": "None"
+    "tmdb_id": 98279,
+    "tmdb_type": "movie",
+    "year": "1931"
   },
   {
     "title": "Edgar Wallace: Der grüne Bogenschütze",
@@ -19330,40 +19350,6 @@
   {
     "title": "Green Book - Eine besondere Freundschaft",
     "search": "Green Book - Eine besondere Freundschaft",
-    "video_url": "https://ctv-videos.daserste.de/de/2026/10/11/DEGSM251546/DEGSM251546_3871060_sendeton_1920x1080-50p-5000kbit.mp4",
-    "download_url": "https://ctv-videos.daserste.de/de/2026/10/11/DEGSM251546/DEGSM251546_3871060_sendeton_1920x1080-50p-5000kbit.mp4",
-    "video_urls": [
-      "https://ctv-videos.daserste.de/de/2026/10/11/DEGSM251546/DEGSM251546_3871060_sendeton_1920x1080-50p-5000kbit.mp4",
-      "https://ctv-videos.daserste.de/de/2026/10/11/DEGSM251546/DEGSM251546_3871060_sendeton_1280x720-50p-3200kbit.mp4",
-      "https://ctv-videos.daserste.de/de/2026/10/11/DEGSM251546/DEGSM251546_3871060_sendeton_640x360-50p-1200kbit.mp4"
-    ],
-    "quality": "HD",
-    "plot": "Im New York der 1960er Jahre, noch vor der amerikanischen Bürgerrechtsbewegung, hält sich Tony Lip als Türsteher in der Bronx über Wasser. Als der gutherzige, nicht sonderlich gebildete Italo-Amerikaner den Auftrag bekommt, einen sogenannten Dr. Don Shirley in die Südstaaten zu fahren, denkt er sich nicht viel dabei. Shirley aber ist einer der weltbesten Jazz-Pianisten und wortgewandt wie ein Dichter. Er plant eine Konzerttour von New York bis in den konservativen Süden, wo die Rassentrennung noch immer gelebt wird. Um allfälligen rassistischen Angriffen auszuweichen, halten sich die zwei unterschiedlichen Männer an das „Negro Motorist Green Book“, einen jährlich erscheinenden Reiseführer für die schwarze Bevölkerung, mit Tipps zu Motels, Restaurants und Tankstellen …",
-    "mediathek_desc": "Spielfilm USA 2018 New York, im Jahr 1962. Der berühmte Pianist Dr. Don Shirley plant eine nicht ungefährliche Konzertreise durch die US-Südstaaten. Als Afroamerikaner muss er sich nicht nur auf die dort vorherrschende Rassentrennung einstellen, sondern auch gegen unliebsame Überraschungen wappnen....",
-    "director": "Peter Farrelly",
-    "actors": [
-      "Viggo Mortensen",
-      "Mahershala Ali",
-      "Linda Cardellini"
-    ],
-    "rating": "8.2",
-    "thumb": "https://image.tmdb.org/t/p/w342/mqP6BzeYWcV2OR6bcSZ8guknBM8.jpg",
-    "genres_list": [
-      "Drama",
-      "Komödie",
-      "Historie"
-    ],
-    "channel": "ARD",
-    "timestamp": 1791755400,
-    "duration_min": 120,
-    "isNew": true,
-    "tmdb_id": 490132,
-    "tmdb_type": "movie",
-    "year": "1962"
-  },
-  {
-    "title": "Green Book - Eine besondere Freundschaft",
-    "search": "Green Book - Eine besondere Freundschaft",
     "video_url": "https://nrodlzdf-a.akamaihd.net/dach/3sat/25/08/250821_green_book_mit_ad_spielfilm/1/250821_green_book_mit_ad_spielfilm_a1a2_6660k_p37v17.mp4",
     "download_url": "https://nrodlzdf-a.akamaihd.net/dach/3sat/25/08/250821_green_book_mit_ad_spielfilm/1/250821_green_book_mit_ad_spielfilm_a1a2_6660k_p37v17.mp4",
     "video_urls": [
@@ -19394,6 +19380,40 @@
     "tmdb_id": 490132,
     "tmdb_type": "movie",
     "year": "2018"
+  },
+  {
+    "title": "Green Book - Eine besondere Freundschaft",
+    "search": "Green Book - Eine besondere Freundschaft",
+    "video_url": "https://ctv-videos.daserste.de/de/2026/10/11/DEGSM251546/DEGSM251546_3871060_sendeton_1920x1080-50p-5000kbit.mp4",
+    "download_url": "https://ctv-videos.daserste.de/de/2026/10/11/DEGSM251546/DEGSM251546_3871060_sendeton_1920x1080-50p-5000kbit.mp4",
+    "video_urls": [
+      "https://ctv-videos.daserste.de/de/2026/10/11/DEGSM251546/DEGSM251546_3871060_sendeton_1920x1080-50p-5000kbit.mp4",
+      "https://ctv-videos.daserste.de/de/2026/10/11/DEGSM251546/DEGSM251546_3871060_sendeton_1280x720-50p-3200kbit.mp4",
+      "https://ctv-videos.daserste.de/de/2026/10/11/DEGSM251546/DEGSM251546_3871060_sendeton_640x360-50p-1200kbit.mp4"
+    ],
+    "quality": "HD",
+    "plot": "Im New York der 1960er Jahre, noch vor der amerikanischen Bürgerrechtsbewegung, hält sich Tony Lip als Türsteher in der Bronx über Wasser. Als der gutherzige, nicht sonderlich gebildete Italo-Amerikaner den Auftrag bekommt, einen sogenannten Dr. Don Shirley in die Südstaaten zu fahren, denkt er sich nicht viel dabei. Shirley aber ist einer der weltbesten Jazz-Pianisten und wortgewandt wie ein Dichter. Er plant eine Konzerttour von New York bis in den konservativen Süden, wo die Rassentrennung noch immer gelebt wird. Um allfälligen rassistischen Angriffen auszuweichen, halten sich die zwei unterschiedlichen Männer an das „Negro Motorist Green Book“, einen jährlich erscheinenden Reiseführer für die schwarze Bevölkerung, mit Tipps zu Motels, Restaurants und Tankstellen …",
+    "mediathek_desc": "Spielfilm USA 2018 New York, im Jahr 1962. Der berühmte Pianist Dr. Don Shirley plant eine nicht ungefährliche Konzertreise durch die US-Südstaaten. Als Afroamerikaner muss er sich nicht nur auf die dort vorherrschende Rassentrennung einstellen, sondern auch gegen unliebsame Überraschungen wappnen....",
+    "director": "Peter Farrelly",
+    "actors": [
+      "Viggo Mortensen",
+      "Mahershala Ali",
+      "Linda Cardellini"
+    ],
+    "rating": "8.2",
+    "thumb": "https://image.tmdb.org/t/p/w342/mqP6BzeYWcV2OR6bcSZ8guknBM8.jpg",
+    "genres_list": [
+      "Drama",
+      "Komödie",
+      "Historie"
+    ],
+    "channel": "ARD",
+    "timestamp": 1791755400,
+    "duration_min": 120,
+    "isNew": true,
+    "tmdb_id": 490132,
+    "tmdb_type": "movie",
+    "year": "1962"
   },
   {
     "title": "Gripsholm",
@@ -20264,25 +20284,26 @@
       "https://rodlzdf-a.akamaihd.net/dach/3sat/19/08/190804_heidi/6/190804_heidi_776k_p11v13.mp4"
     ],
     "quality": "SD",
-    "plot": "Nirgendwo ist es schöner als zwischen den Almen und Felsentälern, durch die Heidi mit ihrem Freund Peter streift. Trotzdem fährt das Bergmädchen in die Stadt, um ihrer kranken Freundin Klara zu helfen. Weit weg von zu Hause überfällt sie bald das Heimweh.",
+    "plot": "Die glücklichsten Tage ihrer Kindheit verbringt das Waisenmädchen Heidi zusammen mit ihrem eigenbrötlerischen Großvater, dem Almöhi, abgeschieden in einer einfachen Hütte in den Schweizer Bergen. Zusammen mit ihrem Freund, dem Geißenpeter, hütet sie die Ziegen des Almöhi und genießt die Freiheit in den Bergen in vollen Zügen. Doch die unbeschwerte Zeit endet jäh, als Heidi von ihrer Tante Dete nach Frankfurt gebracht wird. Dort soll sie in der Familie des wohlhabenden Herrn Sesemann eine Spielgefährtin für die im Rollstuhl sitzende Tochter Klara sein und unter der Aufsicht des strengen Kindermädchens Fräulein Rottenmeier lesen und schreiben lernen. Obwohl sich die beiden Mädchen bald anfreunden und Klaras Großmutter in Heidi die Leidenschaft für Bücher erweckt, wird die Sehnsucht nach den geliebten Bergen und dem Almöhi immer stärker…",
     "mediathek_desc": "Das Waisenmädchen Heidi lebt mit seinem verbitterten Großvater, dem Alpöhi, auf der Alm. Am liebsten verbringt Heidi ihre Zeit mit dem Ziegenhirten Peter. Doch dann ändert sich ihr Leben.",
-    "director": "Luigi Comencini",
+    "director": "Alain Gsponer",
     "actors": [
-      "Elsbeth Sigmund",
-      "Heinrich Gretler",
-      "Thomas Klameth"
+      "Anuk Steffen",
+      "Bruno Ganz",
+      "Quirin Agrippi"
     ],
-    "rating": "7.2",
-    "thumb": "https://image.tmdb.org/t/p/w342/fS5WULSOZ6FxVO47G93BUqSxeIZ.jpg",
+    "rating": "7.3",
+    "thumb": "https://image.tmdb.org/t/p/w342/kxnhHaPOvh0cqMOAx5k0NnqhDqS.jpg",
     "genres_list": [
-      "Drama",
-      "Familie"
+      "Abenteuer",
+      "Familie",
+      "Drama"
     ],
     "channel": "3Sat",
     "timestamp": 1596392160,
     "duration_min": 96,
     "isNew": false,
-    "tmdb_id": 58757,
+    "tmdb_id": 365045,
     "tmdb_type": "movie",
     "year": "1952"
   },
@@ -21130,26 +21151,22 @@
       "https://pd-videos.daserste.de/int/2023/01/11/9611de5e-3b59-488b-83a8-cfb92dc18bfb/JOB_526465__sendeton_640x360-50p-1200kbit.mp4"
     ],
     "quality": "HD",
-    "plot": "Im idyllisch gelegenen „Hotel Heidelberg“ muss sich Junior-Chefin Annette Kramer  nicht nur mit den wachsenden Ansprüchen der Hotelgäste auseinandersetzen, sondern als alleinerziehende Mutter auch mit den Problemen ihres pubertierenden Sohnes Jeremy. Und auch die charismatische Hotelgründerin Hermine Kramer  macht ihrer Tochter durch ihr ständiges Einmischen in die Geschäfte das Leben nicht gerade leichter. Immerhin ist da noch Annettes Therapeut Ingolf der sich mächtig ins Zeug legt, um sie vor größeren Abstürzen zu bewahren.",
+    "plot": "Spielfilm Deutschland 2016 \r\n\r\nAnnette bekommt von Dr. Muthesius einen Heiratsantrag. Für sie gibt es keinen Zweifel: Er ist ein Mann fürs Leben! Doch schon bald knarzt es zwischen den Frischverliebten und auch im Hotel braut sich einiges zusammen.\r\n\r\nMit Hannelore Hoger, Ulrike C. Tscharre, Christoph Maria Herbst, Rüdiger Vogler, Stephan Grossmann | Regie: Michael Rowitz",
     "mediathek_desc": "Spielfilm Deutschland 2016 \r\n\r\nAnnette bekommt von Dr. Muthesius einen Heiratsantrag. Für sie gibt es keinen Zweifel: Er ist ein Mann fürs Leben! Doch schon bald knarzt es zwischen den Frischverliebten und auch im Hotel braut sich einiges zusammen.\r\n\r\nMit Hannelore Hoger, Ulrike C. Tscharre, Christoph Maria Herbst, Rüdiger Vogler, Stephan Grossmann | Regie: Michael Rowitz",
     "director": "",
-    "actors": [
-      "Hannelore Hoger",
-      "Christoph Maria Herbst",
-      "Stephan Grossmann"
-    ],
+    "actors": [],
     "rating": "N/A",
-    "thumb": "https://image.tmdb.org/t/p/w342/hQjzo3pQs3r7IcMXzDLLMHVBTrN.jpg",
+    "thumb": "https://image.tmdb.org/t/p/w342/w9PgraOdBpaIR5hnBywERIryFDX.jpg",
     "genres_list": [
-      "Drama"
+      "Sonstige"
     ],
     "channel": "ARD",
     "timestamp": 1674306000,
     "duration_min": 88,
     "isNew": false,
-    "tmdb_id": 82112,
-    "tmdb_type": "tv",
-    "year": "2016"
+    "tmdb_id": 1435687,
+    "tmdb_type": "movie",
+    "year": "2017"
   },
   {
     "title": "Hotel Heidelberg - Kramer gegen Kramer",
@@ -22703,12 +22720,16 @@
       "https://ctv-videos.daserste.de/int/2026/08/27/DEGMT309355/DEGMT309355_3828968_sendeton_640x360-50p-1200kbit.mp4"
     ],
     "quality": "HD",
-    "plot": "Spielfilm Deutschland 2011 Dr. Roland Heilmann, Chefarzt der Sachsenklinik, wird in einen schweren Verkehrsunfall verwickelt: Ein junger Familienvater kommt dabei ums Leben, seine Frau trägt lebensgefährliche Verletzungen davon. Der sechsjährige Sohn überlebt körperlich unversehrt, jedoch tief traumatisiert – ihm fehlt jede Erinnerung an die Geschehnisse....",
+    "plot": "TV-Special zur beliebten ARD-Serie „In aller Freundschaft – Die jungen Ärzte“.",
     "mediathek_desc": "Spielfilm Deutschland 2011 Dr. Roland Heilmann, Chefarzt der Sachsenklinik, wird in einen schweren Verkehrsunfall verwickelt: Ein junger Familienvater kommt dabei ums Leben, seine Frau trägt lebensgefährliche Verletzungen davon. Der sechsjährige Sohn überlebt körperlich unversehrt, jedoch tief traumatisiert – ihm fehlt jede Erinnerung an die Geschehnisse....",
     "director": "",
-    "actors": [],
+    "actors": [
+      "Mirka Pigulla",
+      "Philipp Danne",
+      "Stefan Ruppe"
+    ],
     "rating": "N/A",
-    "thumb": "placeholder.png",
+    "thumb": "https://image.tmdb.org/t/p/w342/el09QpDr03XaopffKtzC70qDt0q.jpg",
     "genres_list": [
       "Sonstige"
     ],
@@ -22716,6 +22737,8 @@
     "timestamp": 1787826600,
     "duration_min": 89,
     "isNew": false,
+    "tmdb_id": 1578084,
+    "tmdb_type": "movie",
     "year": "None"
   },
   {
@@ -22729,26 +22752,26 @@
       "https://ctv-videos.daserste.de/int/2026/06/23/DEGSM443911/DEGSM443911_3765705_sendeton_640x360-50p-1200kbit.mp4"
     ],
     "quality": "HD",
-    "plot": "Im Oktober 2018 feierte In aller Freundschaft das 20-jährige Bestehen, aus diesem Grund wurde das 90-Minuten-Jubiläums-Special In aller Freundschaft – Zwei Herzen gedreht. Hauptdarsteller aus der Sachsenklinik waren Thomas Rühmann, Alexa Maria Surholt, Jascha Rust und Karsten Kühn, ebenfalls vor der Kamera standen in weiteren Hauptrollen Michael Gwisdek, Petra van de Voort, Frank Richartz und Anna Hausburg.",
+    "plot": "TV-Special zur beliebten ARD-Serie „In aller Freundschaft – Die jungen Ärzte“.",
     "mediathek_desc": "Spielfilm Deutschland 2018 Die Verwaltungschefin der Sachsenklinik ist begeistert: Dr. Heilmann soll als Redner bei einem Ärzte-Kongress in Thailand auftreten. Doch alles geht schief: Roland und seine Begleiter kommen nie in Bangkok an und landen mitten im Urwald. Hier erfährt Roland nicht, dass sein frischverliebter Sohn Jakob (Karsten Kühn) zu Hause in Leipzig in akuter Lebensgefahr schwebt....",
     "director": "",
     "actors": [
-      "Thomas Rühmann",
-      "Alexa Maria Surholt",
-      "Karsten Kühn"
+      "Mirka Pigulla",
+      "Philipp Danne",
+      "Stefan Ruppe"
     ],
     "rating": "N/A",
-    "thumb": "placeholder.png",
+    "thumb": "https://image.tmdb.org/t/p/w342/el09QpDr03XaopffKtzC70qDt0q.jpg",
     "genres_list": [
-      "Drama"
+      "Sonstige"
     ],
     "channel": "ARD",
     "timestamp": 1782388980,
     "duration_min": 88,
     "isNew": false,
-    "tmdb_id": 845553,
+    "tmdb_id": 1578084,
     "tmdb_type": "movie",
-    "year": "2018"
+    "year": "None"
   },
   {
     "title": "In aller Freundschaft · Bis zur letzten Sekunde",
@@ -29232,26 +29255,26 @@
       "https://rodlzdf-a.akamaihd.net/none/3sat/20/11/201101_mord_im_orientexpress_spielfilm/4/201101_mord_im_orientexpress_spielfilm_776k_p11v13.mp4"
     ],
     "quality": "SD",
-    "plot": "Für die Rückreise von einem seiner Fälle nimmt Hercule Poirot den legendären Orient-Express. An eine gemütliche Zugfahrt ist aber nicht lange zu denken, stattdessen hat der berühmte Meisterdetektiv bald wieder Arbeit: Ein Passagier wird ermordet und damit ist klar, dass einer der übrigen Reisenden der Täter sein muss. Die spanische Missionarin Pilar Estravados, die Gouvernante Mary Debenham, Professor Gerhard Hardman, die Witwe Mrs. Hubbard und der Doktor Arbuthnot sind alle verdächtig. Doch bald wird Poirot klar, dass er den Fall nicht lösen wird, wenn er mehr über die möglichen Täter erfährt. Er muss mehr über das Opfer herausfinden – und sich beeilen, damit der Killer nicht nochmal zuschlägt …",
+    "plot": "Hercule Poirot steht vor einem seiner schwierigsten Fälle: In einer eisigen Winternacht muss der Orient Express aus Istanbul anhalten und am nächsten Morgen wird die Leiche eines, mit 12 Messerstichen ermordeten, reichen Geschäftsmannes aufgefunden.",
     "mediathek_desc": "Auf dem Balkan bleibt der Orient-Express im Schnee stecken. Als die Leiche eines US-Millionärs entdeckt wird, ermittelt Meisterdetektiv Hercule Poirot, der zufällig an Bord des Zuges ist.",
-    "director": "Kenneth Branagh",
+    "director": "Sidney Lumet",
     "actors": [
-      "Kenneth Branagh",
-      "Tom Bateman",
-      "Michelle Pfeiffer"
+      "Albert Finney",
+      "Lauren Bacall",
+      "Martin Balsam"
     ],
-    "rating": "6.7",
-    "thumb": "https://image.tmdb.org/t/p/w342/wPwToc8JCfbSrt4tHuWwsu0HsG.jpg",
+    "rating": "7.1",
+    "thumb": "https://image.tmdb.org/t/p/w342/6yQvJdSi4t3XVxSfxSYxRvMACSk.jpg",
     "genres_list": [
-      "Mystery",
       "Drama",
-      "Krimi"
+      "Thriller",
+      "Mystery"
     ],
     "channel": "3Sat",
     "timestamp": 1499611020,
     "duration_min": 122,
     "isNew": false,
-    "tmdb_id": 392044,
+    "tmdb_id": 4176,
     "tmdb_type": "movie",
     "year": "1974"
   },
@@ -29292,27 +29315,21 @@
       "https://pd-videos.daserste.de/int/2024/05/21/031de11f-ef36-49a3-b152-50307b08b502/JOB_479007_sendeton_640x360-50p-1200kbit.mp4"
     ],
     "quality": "HD",
-    "plot": "Kommissar Mehmet Özakin kämpft mit Charme und Leichtigkeit in der Bosporus-Metropole gegen das Verbrechen – und gegen die Bürokratie, die ihm bei seinen Ermittlungen immer wieder fantasiereiche Hürden in den Weg stellt. Özakins treuer Assistent Mustafa  unterstützt ihn dabei mit vollen Einsatz. Auch wenn dieser dabei immer wieder von den ständigen Kontrollanrufen seiner Mutter genervt wird. Neben den oft halsbrecherischen Einsätzen versucht Özakin, seiner über alles geliebten Ehefrau genügend Zeit für ein harmonisches Privatleben zu gewährleisten.",
+    "plot": "Spielfilm Deutschland 2010 Ariane (Hande Kazanova), eine Deutsche, reist nach Istanbul, um ihren Sohn zu suchen, der vom eigenen Vater in die Türkei verschleppt wurde. Hilfesuchend wendet sie sich an Mehmet Özakin (Erol Sander), der sie an einen Kollegen verweist....",
     "mediathek_desc": "Spielfilm Deutschland 2010 Ariane (Hande Kazanova), eine Deutsche, reist nach Istanbul, um ihren Sohn zu suchen, der vom eigenen Vater in die Türkei verschleppt wurde. Hilfesuchend wendet sie sich an Mehmet Özakin (Erol Sander), der sie an einen Kollegen verweist....",
-    "director": "Michael Kreindl",
-    "actors": [
-      "Erol Sander",
-      "İdil Üner",
-      "Sascha Laura Soydan"
-    ],
-    "rating": "5.2",
-    "thumb": "https://image.tmdb.org/t/p/w342/pgOUH0hD2oSfCoObj36TUU5fw9q.jpg",
+    "director": "",
+    "actors": [],
+    "rating": "N/A",
+    "thumb": "placeholder.png",
     "genres_list": [
-      "Krimi",
-      "Action",
-      "Drama"
+      "Sonstige"
     ],
     "channel": "ARD",
     "timestamp": 1718062500,
     "duration_min": 87,
     "isNew": false,
-    "tmdb_id": 41015,
-    "tmdb_type": "tv",
+    "tmdb_id": 1155317,
+    "tmdb_type": "movie",
     "year": "2008"
   },
   {
@@ -30873,19 +30890,25 @@
       "https://rodlzdf-a.akamaihd.net/dach/3sat/26/01/260108_nymphomaniac_1_spielfilm/1/260108_nymphomaniac_1_spielfilm_808k_p11v17.mp4"
     ],
     "quality": "HD",
-    "plot": "Der alternde Junggeselle Seligman findet auf seinem Heimweg die zusammengeschlagene Joe. Während er ihre Wunden versorgt, erzählt sie ihm von ihren ausschweifenden sexuellen Abenteuern.",
+    "plot": "An einem kalten Winterabend findet der Junggeselle Seligman eine übel zugerichtete Frau in einer Gasse hinter seinem Haus. Er nimmt Joe, die sich selbst als Nymphomanin bezeichnet, mit in seine Wohnung, wo er ihre Wunden versorgt und sie fragt, was ihr passiert ist. Ein langes, intimes und detailreiches Gespräch entspinnt sich. Aufmerksam hört der ältere Mann zu, während Joe - in acht Kapiteln - die lustvolle, verzweigte und facettenreiche Geschichte ihres Lebens, von ihrer Geburt bis zu ihrem 50. Lebensjahr, erzählt.",
     "mediathek_desc": "Der alternde Junggeselle Seligman findet auf seinem Heimweg die zusammengeschlagene Joe. Während er ihre Wunden versorgt, erzählt sie ihm von ihren ausschweifenden sexuellen Abenteuern.",
-    "director": "",
-    "actors": [],
-    "rating": "N/A",
-    "thumb": "placeholder.png",
+    "director": "Lars von Trier",
+    "actors": [
+      "Charlotte Gainsbourg",
+      "Stellan Skarsgård",
+      "Stacy Martin"
+    ],
+    "rating": "6.8",
+    "thumb": "https://image.tmdb.org/t/p/w342/y7NroU7TlQ20CYoN54oGro3KX0I.jpg",
     "genres_list": [
-      "Sonstige"
+      "Drama"
     ],
     "channel": "3Sat",
     "timestamp": 1767907740,
     "duration_min": 113,
     "isNew": false,
+    "tmdb_id": 258216,
+    "tmdb_type": "movie",
     "year": "2013"
   },
   {
@@ -30899,19 +30922,26 @@
       "https://rodlzdf-a.akamaihd.net/dach/3sat/26/01/260109_nymphomaniac_2_spielfilm/1/260109_nymphomaniac_2_spielfilm_808k_p11v17.mp4"
     ],
     "quality": "HD",
-    "plot": "In \"Nymphomaniac 2\" erzählt die sexsüchtige Joe ihrem Retter Seligman ihre Lebensgeschichte weiter und sinniert mit ihm über Scheinheiligkeit, Sadismus, Orgasmus, Gewalt und Einsamkeit.",
+    "plot": "\"Nymph()maniac 2\" umfasst die letzten dreieinhalb Kapitel von Lars von Triers zweigeteilten Drama über die bewegte Lebensgeschichte der Nymphomanin Joe. Die seelisch und körperlich verletzte Frau wird vom alternden Junggesellen Seligman aufgenommen und gepflegt. Sie berichtet ihm in langen Gesprächen davon, wie sie in ihrer langweiligen Beziehung zu Jerome verödete und plötzlich die Lust am Sex verlor. Aus der Verzweiflung heraus suchte sie den Sado-Maso-Künstler K auf, um über den Schmerz zur Lust zurückzufinden, gleichzeitig  vernachlässigte Joe allerdings ihr Baby. Im Gespräch erfährt die verzweifelte Frau indes auch einiges über ihren geheimnisvollen Retter und dessen Geheimnis. Seligman ist nämlich asexuell; er hatte noch nie Sex, was ihm eine ganz eigene Perspektive auf Joes Lebenswandel ermöglicht…",
     "mediathek_desc": "In \"Nymphomaniac 2\" erzählt die sexsüchtige Joe ihrem Retter Seligman ihre Lebensgeschichte weiter und sinniert mit ihm über Scheinheiligkeit, Sadismus, Orgasmus, Gewalt und Einsamkeit.",
-    "director": "",
-    "actors": [],
-    "rating": "N/A",
-    "thumb": "placeholder.png",
+    "director": "Lars von Trier",
+    "actors": [
+      "Charlotte Gainsbourg",
+      "Stellan Skarsgård",
+      "Stacy Martin"
+    ],
+    "rating": "6.7",
+    "thumb": "https://image.tmdb.org/t/p/w342/yUccUpvALHSjGNf8CRldOjYJLgT.jpg",
     "genres_list": [
-      "Sonstige"
+      "Drama",
+      "Mystery"
     ],
     "channel": "3Sat",
     "timestamp": 1767994140,
     "duration_min": 119,
     "isNew": false,
+    "tmdb_id": 249397,
+    "tmdb_type": "movie",
     "year": "2013"
   },
   {
