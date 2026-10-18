@@ -2439,19 +2439,25 @@
       "https://rodlzdf-a.akamaihd.net/dach/3sat/23/09/230922_auf_eigenes_risiko_spielfilm/1/230922_auf_eigenes_risiko_spielfilm_808k_p11v15.mp4"
     ],
     "quality": "HD",
-    "plot": "Steven und Shannon sind nach der Adoption ihrer Tochter Nina überglücklich. Doch schon bald gerät die junge Familie in eine große Gefahr, und Nina verschwindet spurlos.",
+    "plot": "Das junge Paar Steven und Shannon muss den Tod seines ungeborenen Babys verarbeiten. Nach einiger Zeit beschließen sie, ein Kind zu adoptieren, und reisen zu diesem Zweck nach Puerto Rico, um die letzten Details zu klären und die siebenjährige Nina kennenzulernen. Alles scheint perfekt und die frischgebackenen Eltern warten nur auf die Freigabe des Passes der Kleinen, bevor sie als glückliche Familie nach Hause zurückkehren können. Doch als sie am Strand scheinbar zufällig auf Benjamin treffen, ändert sich die Lage schlagartig, denn wenig später ist Nina verschwunden und sowohl von den Mitarbeitern als auch den Büroräumen der scheinbar legalen Adoptions-Agentur fehlt auf einmal jegliche Spur. Um ihre Tochter wiederzufinden, beginnen sie selbst Nachforschungen anzustellen und begeben sich dabei in höchste Gefahr.",
     "mediathek_desc": "Steven und Shannon sind nach der Adoption ihrer Tochter Nina überglücklich. Doch schon bald gerät die junge Familie in eine große Gefahr, und Nina verschwindet spurlos.",
-    "director": "",
-    "actors": [],
-    "rating": "N/A",
-    "thumb": "placeholder.png",
+    "director": "Alan White",
+    "actors": [
+      "John Cusack",
+      "Ryan Phillippe",
+      "Rachelle Lefèvre"
+    ],
+    "rating": "5.2",
+    "thumb": "https://image.tmdb.org/t/p/w342/m9HpukbOaGlcgIIioy606RTSZC7.jpg",
     "genres_list": [
-      "Sonstige"
+      "Thriller"
     ],
     "channel": "3Sat",
     "timestamp": 1522095600,
     "duration_min": 87,
     "isNew": false,
+    "tmdb_id": 286654,
+    "tmdb_type": "movie",
     "year": "2014"
   },
   {
@@ -4947,19 +4953,27 @@
       "https://rodlzdf-a.akamaihd.net/dach/3sat/24/08/240830_das_bombardement_spielfilm/1/240830_das_bombardement_spielfilm_808k_p11v17.mp4"
     ],
     "quality": "HD",
-    "plot": "Um die Widerstandsbewegung zu unterstützen, plant die britische Royal Airforce im März 1945 einen Angriff auf das Gestapo-Hauptquartier in Kopenhagen. Eine riskante Operation.",
+    "plot": "Am Morgen des 21. März 1945 sind die Nonnen und die Schulkameraden Rigmor, Eva und Henry von der französischen Schule im Kopenhagener Stadtteil Fredriksberg bereit für den Start in den Schultag. Weit entfernt - auf der anderen Seite der Nordsee - bereiten sich britische Piloten der Royal Air Force auf eine entscheidende Mission zur Unterstützung der dänischen Widerstandsbewegung vor. Sie setzen Kurs auf das \"Shell-Haus\", dem Gestapo-Hauptquartier mitten in Kopenhagen. Im obersten Stockwerk haben die Deutschen 26 dänische Gefangene als menschliche Schutzschilde platziert. Der Angriff gelingt, aber nicht weit entfernt tritt eine Tragödie ein: Ein Flugzeug stürzt nahe der französischen Schule ab, und der Brand lässt einige der folgenden Bomber glauben, das Ziel liege unter der Rauchsäule.",
     "mediathek_desc": "Um die Widerstandsbewegung zu unterstützen, plant die britische Royal Airforce im März 1945 einen Angriff auf das Gestapo-Hauptquartier in Kopenhagen. Eine riskante Operation.",
-    "director": "",
-    "actors": [],
-    "rating": "N/A",
-    "thumb": "placeholder.png",
+    "director": "Ole Bornedal",
+    "actors": [
+      "Bertram Bisgaard Enevoldsen",
+      "Ester Birch",
+      "Ella Nilsson"
+    ],
+    "rating": "7.8",
+    "thumb": "https://image.tmdb.org/t/p/w342/cZ80Wi9JZfR7bpZE0h6tkeHYVl7.jpg",
     "genres_list": [
-      "Sonstige"
+      "Krieg",
+      "Drama",
+      "Historie"
     ],
     "channel": "3Sat",
     "timestamp": 1725050100,
     "duration_min": 98,
     "isNew": false,
+    "tmdb_id": 650031,
+    "tmdb_type": "movie",
     "year": "2021"
   },
   {
@@ -5107,19 +5121,25 @@
       "https://rodlzdf-a.akamaihd.net/ebu/3sat/22/02/220212_flirren_am_horizont/1/220212_flirren_am_horizont_808k_p11v15.mp4"
     ],
     "quality": "HD",
-    "plot": "Unter der sengenden Sonne des Sommers 1976 lässt Gus seine Kindheit hinter sich ...",
+    "plot": "Unter der sengenden Sonne des Sommers lässt Gus seine Kindheit hinter sich. Die Natur kommt an ihre Grenzen, die Emotionen kochen hoch und die Bauernfamilie Sutter wird in ihren Grundfesten erschüttert. Die Risse treten an die Oberfläche und das Undenkbare tritt ein, als der langersehnte Regen auf die Erde fällt.",
     "mediathek_desc": "Unter der sengenden Sonne des Sommers 1976 lässt Gus seine Kindheit hinter sich ...",
-    "director": "",
-    "actors": [],
-    "rating": "N/A",
-    "thumb": "placeholder.png",
+    "director": "Delphine Lehericey",
+    "actors": [
+      "Luc Bruchez",
+      "Laetitia Casta",
+      "Thibaut Évrard"
+    ],
+    "rating": "5.3",
+    "thumb": "https://image.tmdb.org/t/p/w342/cly3W5Ev0JwoAufMCobp0YQN2sb.jpg",
     "genres_list": [
-      "Sonstige"
+      "Drama"
     ],
     "channel": "3Sat",
     "timestamp": 1644703260,
     "duration_min": 88,
     "isNew": false,
+    "tmdb_id": 592789,
+    "tmdb_type": "movie",
     "year": "2019"
   },
   {
@@ -7674,28 +7694,27 @@
       "https://rodlzdf-a.akamaihd.net/dach/3sat/25/12/251227_der_hauptmann_von_koepenick_mit_ad_spielfilm/1/251227_der_hauptmann_von_koepenick_mit_ad_spielfilm_a1a2_808k_p11v17.mp4"
     ],
     "quality": "HD",
-    "plot": "Die Versuche des vorbestraften Schusters Wilhelm Voigt, ein ehrliches Leben zu führen, scheitern vor allem daran, dass er keinen Pass besitzt. Als wieder einmal ein Versuch, einen solchen ausgestellt zu bekommen, ergebnislos verlaufen ist, entdeckt er in einem Laden eine alte Hauptmanns-Uniform. Solchermaßen verkleidet begibt er sich mit einer Garde im Schlepptau auf das Rathaus von Köpenick, wo er den Bürgermeister und den Stadtkämmerer festnehmen lässt. Doch auch so kann er sich nicht zu einem Pass verhelfen. Also greift er sich die Stadtkasse und flieht...",
+    "plot": "Die Geschichte des armen Schusters Carl Voigt, der nach jahrelanger Haft aus dem Gefängnis entlassen wird. Da ihm wichtige Papiere fehlen, kann er sich nicht mehr in die Gesellschaft eingliedern. Bei dem Versuch, die nötigen Unterlagen aus einem Polizeirevier zu stehlen wird er gefasst und kommt wieder hinter Gitter. In der Gefängnisbücherei findet er Bücher über Militärgeschichte, er ist fasziniert und liest alles über militärische Umgangsformen und Befehle. Als er nach seiner Entlassung eines Tages aus Berlin verwiesen werden soll, kauft er bei einem Trödler einen alten Hauptmannsrock und gibt sich als hoher Militär aus. Aber wie lange kann dies gut gehen? Nach dem gleichnamigen, vielfach verfilmten Bühnenstück von Carl Zuckmayr.",
     "mediathek_desc": "Dem vorbestraften Dokumentenfälscher  Wilhelm Voigt stehen in der gebrauchten Uniform eines Hauptmanns plötzlich alle Türen offen. Er wittert die Chance, endlich einen neuen Pass zu erlangen.",
-    "director": "Rainer Wolffhardt",
+    "director": "Helmut Käutner",
     "actors": [
-      "Rudolf Platte",
-      "Alexander Kerst",
-      "Joachim Teege"
+      "Heinz Rühmann",
+      "Martin Held",
+      "Hannelore Schroth"
     ],
-    "rating": "7.5",
-    "thumb": "https://image.tmdb.org/t/p/w342/eqBueZ6ntxDNOKhYW27rKSP8T6Q.jpg",
+    "rating": "7.3",
+    "thumb": "https://image.tmdb.org/t/p/w342/2oeyN0FZPDwGKtrZ6oS69m7DdKW.jpg",
     "genres_list": [
       "Komödie",
-      "Drama",
-      "TV-Film"
+      "Drama"
     ],
     "channel": "3Sat",
     "timestamp": 1766857560,
     "duration_min": 89,
     "isNew": false,
-    "tmdb_id": 524185,
+    "tmdb_id": 10626,
     "tmdb_type": "movie",
-    "year": "1960"
+    "year": "1956"
   },
   {
     "title": "Der Himmel über Berlin",
@@ -8371,20 +8390,28 @@
       "https://arteptweb-a.akamaihd.net/am/ptweb/039000/039900/039997-000-F_HQ_0_VA-STA_11553509_MP4-800_AMM-PTWEB-60782635401321_10c6b0.mp4"
     ],
     "quality": "HD",
-    "plot": "Für Michael Corleone ist es Zeit Bilanz zu ziehen. Er hat den illegalen Tätigkeiten abgeschworen, mit denen sein Vater reich wurde und arbeitet nun mit Bank- und Immobiliengeschäften. Aber seine Jugendverbrechen können nicht ungeschehen gemacht werden ... - Der dritte Teil der Mafiafilm-Trilogie \"Der Pate\" war 1991 für sieben Oscars und für sieben Golden Globes nominiert.",
+    "plot": "Der alternde Don Michael Corleone möchte den Familienbetrieb legalisieren und sich langsam aus dem Geschäft zurückziehen. Während er sich als Förderer der katholischen Kirche versucht, macht ihm vor allem ein Mensch zu schaffen: Vincent Mancini, Michaels zukünftiger Schwiegersohn und potentieller Nachfolger. Dieser schmiedet nämlich ganz andere Pläne.",
     "mediathek_desc": "Für Michael Corleone ist es Zeit Bilanz zu ziehen. Er hat den illegalen Tätigkeiten abgeschworen, mit denen sein Vater reich wurde und arbeitet nun mit Bank- und Immobiliengeschäften. Aber seine Jugendverbrechen können nicht ungeschehen gemacht werden ... - Der dritte Teil der Mafiafilm-Trilogie \"Der Pate\" war 1991 für sieben Oscars und für sieben Golden Globes nominiert.",
-    "director": "",
-    "actors": [],
-    "rating": "N/A",
-    "thumb": "placeholder.png",
+    "director": "Francis Ford Coppola",
+    "actors": [
+      "Al Pacino",
+      "Diane Keaton",
+      "Talia Shire"
+    ],
+    "rating": "7.4",
+    "thumb": "https://image.tmdb.org/t/p/w342/iVjSuqHFFOqCFM4rdhUyysYWnnj.jpg",
     "genres_list": [
-      "Sonstige"
+      "Krimi",
+      "Drama",
+      "Thriller"
     ],
     "channel": "ARTE.DE",
     "timestamp": 1790541574,
     "duration_min": 148,
     "isNew": false,
-    "year": "None"
+    "tmdb_id": 242,
+    "tmdb_type": "movie",
+    "year": "1990"
   },
   {
     "title": "Der Patriot",
@@ -9198,7 +9225,7 @@
     "quality": "HD",
     "plot": "Wenn ein milliardenschwerer Unternehmer impulsiv beschließt, einen Kultfilm zu drehen, verlangt er das Beste. Die renommierte Filmemacherin Lola Cuevas wird angeworben, um dieses ehrgeizige Unterfangen zu leiten. Abgerundet wird das All-Star-Team durch zwei Schauspieler mit enormem Talent, aber noch größeren Egos: Hollywood-Herzensbrecher Félix Rivero und der radikale Theaterschauspieler Iván Torres. Beide sind Legenden, aber nicht gerade beste Freunde. Durch eine Reihe von immer exzentrischeren Prüfungen, die von Lola gestellt werden, müssen Félix und Iván nicht nur einander, sondern auch ihre eigenen Hinterlassenschaften konfrontieren. Wer bleibt übrig, wenn endlich die Kameras laufen?",
     "mediathek_desc": "Im Designer-Bungalow zwischen Sichtbeton und gekränkten Eitelkeiten entfaltet sich eine Komödie: Für \"den besten Film aller Zeiten\" muss Penélope Cruz als überspannte Star-Regisseurin zwei egozentrische Schauspiel-Legenden, dargestellt von Antonio Banderas und Oscar Martínez, zu Höchstleistungen bringen.",
-    "director": "Mariano Cohn",
+    "director": "Gastón Duprat",
     "actors": [
       "Penélope Cruz",
       "Antonio Banderas",
@@ -10877,19 +10904,27 @@
       "https://rodlzdf-a.akamaihd.net/dach/3sat/19/10/191006_die_kamine_von_green_knowe_spielfilm/3/191006_die_kamine_von_green_knowe_spielfilm_776k_p11v13.mp4"
     ],
     "quality": "HD",
-    "plot": "England, Ende 1944: Der 13-jährige Tolly verbringt die Ferien bei seiner Großmutter, Mrs. Oldknow, auf dem Anwesen Green Knowe. Der Aufenthalt wird zu einer Zeitreise in die Vergangenheit.",
+    "plot": "England 1944: Während seine Mutter in London auf Nachricht vom Vater wartet, soll der 13jährige Tolly Weihnachten in \"Green Knowe\" verbringen. Der verwunschene Landsitz ist seit Jahrhunderten das Stammhaus der Familie und wird von Großmutter Linnet gehütet. Bei einer Erkundungstour durch das alte Gemäuer erscheint Tolly plötzlich der Geist eines Mädchens, das vor über 200 Jahren dort gelebt hat. Nach dem ersten Schrecken freundet sich Tolly mit Susan an. Und dann geschieht etwas Wunderbares! Tolly entdeckt, dass er mit Susan in ihre Zeit reisen kann. Für den Jungen und seine neue Freundin beginnt ein magisches Abenteuer...",
     "mediathek_desc": "England, Ende 1944: Der 13-jährige Tolly verbringt die Ferien bei seiner Großmutter, Mrs. Oldknow, auf dem Anwesen Green Knowe. Der Aufenthalt wird zu einer Zeitreise in die Vergangenheit.",
-    "director": "",
-    "actors": [],
-    "rating": "N/A",
-    "thumb": "placeholder.png",
+    "director": "Julian Fellowes",
+    "actors": [
+      "Maggie Smith",
+      "Dominic West",
+      "Timothy Spall"
+    ],
+    "rating": "6.3",
+    "thumb": "https://image.tmdb.org/t/p/w342/4qVw09ZMpyXWsHt1odiFzdAPCFB.jpg",
     "genres_list": [
-      "Sonstige"
+      "Abenteuer",
+      "Fantasy",
+      "Drama"
     ],
     "channel": "3Sat",
     "timestamp": 1485705720,
     "duration_min": 89,
     "isNew": false,
+    "tmdb_id": 49391,
+    "tmdb_type": "movie",
     "year": "2009"
   },
   {
@@ -12165,19 +12200,28 @@
       "https://ctv-videos.daserste.de/dach/2026/07/15/4125/4125_21857_sendeton_640x360-50p-1200kbit.mp4"
     ],
     "quality": "HD",
-    "plot": "Spielfilm USA/Deutschland 1998 Die viel beschäftigte Seuchenexpertin Dr. Stephanie Tauber (Lindsay Wagner) will sich während einer Karibik-Kreuzfahrt Zeit für ihre Tochter Aly (Katharine Isabelle) nehmen. Als es an Bord zu einer Serie von mysteriösen Todesfällen kommt, ist es jedoch mit dem Urlaub vorbei. Dr. Tauber lässt Proben in das Labor ihres Chefs Dr. Norman Ellisy (William B. Davis) vom „Center for Disease Control\" (CDC) bringen....",
+    "plot": "Seuchenforscherin Dr. Stephanie Tauber freut sich auf erholsame Tage auf dem Luxusdampfer \"Orion Star\". Dann ereignen sich mysteriöse Todesfälle. Stephanie läßt Blutproben der Opfer untersuchen und stößt auf ein unbekanntes Virus. Der Kapitän muß das Kommando an Stephanie übergeben, das Schiff wird unter Quarantäne gestellt. Bei Crew und Passagieren kommt es zu Spannungen. Die Suche nach einem heilenden Serum wird zum Wettlauf mit der Zeit, in den auch der US-Präsident und sein intriganter Berater verwickelt werden.",
     "mediathek_desc": "Spielfilm USA/Deutschland 1998 Die viel beschäftigte Seuchenexpertin Dr. Stephanie Tauber (Lindsay Wagner) will sich während einer Karibik-Kreuzfahrt Zeit für ihre Tochter Aly (Katharine Isabelle) nehmen. Als es an Bord zu einer Serie von mysteriösen Todesfällen kommt, ist es jedoch mit dem Urlaub vorbei. Dr. Tauber lässt Proben in das Labor ihres Chefs Dr. Norman Ellisy (William B. Davis) vom „Center for Disease Control\" (CDC) bringen....",
-    "director": "",
-    "actors": [],
-    "rating": "N/A",
-    "thumb": "placeholder.png",
+    "director": "Brian Trenchard-Smith",
+    "actors": [
+      "Lindsay Wagner",
+      "Michael Ironside",
+      "Martin Sheen"
+    ],
+    "rating": "4.3",
+    "thumb": "https://image.tmdb.org/t/p/w342/1qzcqkN0uJQ1MoeVpnwL34PVfQ8.jpg",
     "genres_list": [
-      "Sonstige"
+      "Thriller",
+      "Drama",
+      "TV-Film",
+      "Action"
     ],
     "channel": "ARD",
     "timestamp": 1786233009,
     "duration_min": 87,
     "isNew": false,
+    "tmdb_id": 291924,
+    "tmdb_type": "movie",
     "year": "1998"
   },
   {
@@ -13874,25 +13918,26 @@
       "https://rodlzdf-a.akamaihd.net/dach/3sat/25/05/250502_dreamland_toedliche_geschaefte_spielfilm/1/250502_dreamland_toedliche_geschaefte_spielfilm_808k_p11v17.mp4"
     ],
     "quality": "HD",
-    "plot": "Während der Weltwirtschaftskrise träumt der junge Eugene Evans davon, aus seiner Kleinstadt in Texas herauszukommen. In der Scheune der Familie entdeckt er die flüchtige und verwundete Bankräuberin Allison Wells und hilft ihr bei Ihrer Schusswunde. Überall in der Gegend wird nach ihr gefahndet, doch obwohl 10 000 Dollar für Allisons Ergreifung ausgesetzt sind, verheimlicht Eugene ihren Aufenthaltsort.  Die beiden freunden sich an, er ist fasziniert von Allison, aber auch auf die Aussicht auf viel Geld und ein abenteuerliches Leben, deshalb wird er zu ihrem Komplizen und beide rauben die Bank seiner Heimatstadt aus, wobei Eugene einen der Kunden erschießt. Sie fliehen in einem gestohlenen Wagen, werden aber gestellt und Allison stirbt an einer Schusswunde. Eugene kann mit dem Wagen fliehen und seine jüngere Schwester erzählt aus dem Off, dass er nie wieder aufgetaucht ist.",
+    "plot": "Drogen sorgen dafür, dass sich die Lebenswege mehrerer Menschen kreuzen, die unterschiedlicher nicht sein könnten: Undercover-DEA-Agent Jake Kelly organisiert eine gigantische Schmuggel-Aktion zwischen den USA und Kanada, bei der mehrere Kartelle zusammenarbeiten, und hofft diese ausschalten zu können. Die Architektin Claire Reimann, die sich von ihrer Oxycontin-Abhängig erholt, entdeckt, dass ihr verschwundener Sohn in Drogengeschäfte verwickelt ist. Und Universitäts-Professor Tyrone Brower muss mit einer unangenehmen Enthüllung über seinen Forschungs-Auftraggeber zurechtkommen: Denn eine Pharmafirma mit Verbindungen zu hohen politischen Kreisen bringt ein neues Schmerzmittel auf den Markt, das nicht abhängig machen soll. Doch Brower weiß, dass das nicht stimmt...",
     "mediathek_desc": "US-Undercoveragent Jake Kelly will den kanadischen Drogenkönig Mother ausschalten. Jake hat persönliche Gründe für den Kampf gegen die Kartelle: Seine Schwester Emmie ist ein Junkie.",
-    "director": "Miles Joris-Peyrafitte",
+    "director": "Nicholas Jarecki",
     "actors": [
-      "Finn Cole",
-      "Margot Robbie",
-      "Travis Fimmel"
+      "Gary Oldman",
+      "Armie Hammer",
+      "Evangeline Lilly"
     ],
-    "rating": "5.9",
-    "thumb": "https://image.tmdb.org/t/p/w342/zjCF0OAPJPDMTaortG05nioq3Y4.jpg",
+    "rating": "6.2",
+    "thumb": "https://image.tmdb.org/t/p/w342/o22H1AYFmvF556syhhDjG1ryJRn.jpg",
     "genres_list": [
-      "Drama",
-      "Thriller"
+      "Thriller",
+      "Krimi",
+      "Drama"
     ],
     "channel": "3Sat",
     "timestamp": 1699305300,
     "duration_min": 114,
     "isNew": false,
-    "tmdb_id": 480434,
+    "tmdb_id": 580532,
     "tmdb_type": "movie",
     "year": "2020"
   },
@@ -14196,26 +14241,27 @@
       "https://rodlzdf-a.akamaihd.net/de/zdf/26/03/260308_0110_sendung_spf/1/260308_0110_sendung_spf_808k_p11v15.mp4"
     ],
     "quality": "SD",
-    "plot": "Eine App, die Kontakt mit dem Reich der Toten aufnimmt! Das hat Studentin Asia nicht erwartet, nachdem sie das neue Programm auf ihrem Smartphone öffnet. Doch durch die Kamera sieht sie tatsächlich Geister. Allerdings tickt seit dem ersten Öffnen auch ein Countdown. Und der wahre Terror beginnt, denn Asia hat noch 24 Stunden, bevor sie stirbt. 24 Stunden, um diesen entsetzlichen Fluch zu besiegen.",
+    "plot": "Der Söldner Travis Conrad hat alles für seinen Arbeitgeber geopfert – erst seine Familie und schließlich sogar sein eigenes Leben. Denn als er noch einmal einen Auftrag seines alten Freundes Jim Morrow annimmt, obwohl er eigentlich schon im Ruhestand war, wird Travis während der Mission kurzerhand von der Interpol-Agentin Lin Bisset getötet. Doch plötzlich erwacht er und ist auf mysteriöse Weise wiederbelebt, denn an ihm wurde ein medizinisches Verfahren getestet, das ihn weitere 24 Stunden am Leben erhält. Denn Travis soll Jim schließlich noch den Aufenthaltsort der Zielperson seiner Mission nennen. Travis, der sich verraten und ausgenutzt fühlt, nimmt nun das Heft selbst in die Hand und zieht gegen seinen ehemaligen Arbeitgeber in den Krieg. Doch die Zeit ist gegen ihn, denn der Countdown, der auf seinem Unterarm eingraviert ist, läuft und läuft. Sobald dort die Null steht heißt es zum zweiten Mal: Ruhe in Frieden, Travis Conrad. Doch dazu will er es nicht kommen lassen...",
     "mediathek_desc": "Der Elitesoldat Travis wird nach einer tödlichen Schießerei von seiner Firma wieder zum Leben erweckt. Doch ihm bleiben nur noch 24 Stunden zu leben.",
-    "director": "Alessandro Antonaci",
+    "director": "Brian Smrz",
     "actors": [
-      "Carola Cudemo",
-      "Simone Valentino",
-      "Erica Landolfi"
+      "Ethan Hawke",
+      "Xu Qing",
+      "Paul Anderson"
     ],
-    "rating": "5.4",
-    "thumb": "https://image.tmdb.org/t/p/w342/6SSkBTjtQAPm7kC49fqmnwUEFgk.jpg",
+    "rating": "6.0",
+    "thumb": "https://image.tmdb.org/t/p/w342/5HaIXhfviOXLdYOQcs4zmw94jNF.jpg",
     "genres_list": [
-      "Horror",
-      "Drama",
-      "Thriller"
+      "Action",
+      "Sci-Fi",
+      "Thriller",
+      "Mystery"
     ],
     "channel": "ZDF",
     "timestamp": 1791963244,
     "duration_min": 89,
     "isNew": true,
-    "tmdb_id": 675568,
+    "tmdb_id": 470114,
     "tmdb_type": "movie",
     "year": "2017"
   },
@@ -19391,19 +19437,26 @@
       "https://rodlzdf-a.akamaihd.net/dach/3sat/24/04/240401_gracia_patricia_mit_ad_spielfilm/1/240401_gracia_patricia_mit_ad_spielfilm_a1a2_808k_p11v17.mp4"
     ],
     "quality": "HD",
-    "plot": "Sie war nicht nur umschwärmter Hollywood-Star und Oscar-Preisträgerin. Sie war auch das, was man heute eine Stilikone nennen würde: Erst brillierte Grace Kelly in Klassikern wie „Zwölf Uhr mittags“, „Das Fenster zum Hof“ oder „Über den Dächern von Nizza“, dann strahlte sie als Fürstin Gracia Patrica von Monaco. Die Film-Biografie des Franzosen Olivier Dahan wagt jedoch einen Blick hinter die Kulis\n.....",
+    "plot": "Fürstentum Monaco, Anfang der sechziger Jahre. Fürst Rainier III. kämpft um den Erhalt der Souveränität seines Landes und hat wenig Zeit für seine schöne Frau. Der französische Präsident Charles de Gaulle verlangt Steuerabgaben, er droht mit der militärischen Überlegenheit Frankreichs und verfügt schließlich eine Blockade der Landesgrenzen. Monaco ist von der Außenwelt abgeschnitten. Fürstin Grace, die sich trotz ihrer inzwischen mehrjährigen Ehe mit Rainier noch nicht in die Rolle der First Lady des Landes eingefunden hat und von Palastintrigen und Ablehnung durch die öffentliche Meinung umgeben ist, erhält zur gleichen Zeit ein Rollenangebot von Alfred Hitchcock - eine große Versuchung für den ehemals gefeierten Hollywood-Star.",
     "mediathek_desc": "Sie war nicht nur umschwärmter Hollywood-Star und Oscar-Preisträgerin. Sie war auch das, was man heute eine Stilikone nennen würde: Erst brillierte Grace Kelly in Klassikern wie „Zwölf Uhr mittags“, „Das Fenster zum Hof“ oder „Über den Dächern von Nizza“, dann strahlte sie als Fürstin Gracia Patrica von Monaco. Die Film-Biografie des Franzosen Olivier Dahan wagt jedoch einen Blick hinter die Kulis\n.....",
-    "director": "",
-    "actors": [],
-    "rating": "N/A",
-    "thumb": "placeholder.png",
+    "director": "Olivier Dahan",
+    "actors": [
+      "Nicole Kidman",
+      "Milo Ventimiglia",
+      "Paz Vega"
+    ],
+    "rating": "6.0",
+    "thumb": "https://image.tmdb.org/t/p/w342/aKTKmGJWUTl2p7NtdR2GyKynS6w.jpg",
     "genres_list": [
-      "Sonstige"
+      "Romanze",
+      "Drama"
     ],
     "channel": "3Sat",
     "timestamp": 1569164160,
     "duration_min": 92,
     "isNew": false,
+    "tmdb_id": 215211,
+    "tmdb_type": "movie",
     "year": "2014"
   },
   {
@@ -22773,12 +22826,16 @@
       "https://ctv-videos.daserste.de/int/2026/08/27/DEGMT309355/DEGMT309355_3828968_sendeton_640x360-50p-1200kbit.mp4"
     ],
     "quality": "HD",
-    "plot": "Spielfilm Deutschland 2011 Dr. Roland Heilmann, Chefarzt der Sachsenklinik, wird in einen schweren Verkehrsunfall verwickelt: Ein junger Familienvater kommt dabei ums Leben, seine Frau trägt lebensgefährliche Verletzungen davon. Der sechsjährige Sohn überlebt körperlich unversehrt, jedoch tief traumatisiert – ihm fehlt jede Erinnerung an die Geschehnisse....",
+    "plot": "TV-Special zur beliebten ARD-Serie „In aller Freundschaft – Die jungen Ärzte“.",
     "mediathek_desc": "Spielfilm Deutschland 2011 Dr. Roland Heilmann, Chefarzt der Sachsenklinik, wird in einen schweren Verkehrsunfall verwickelt: Ein junger Familienvater kommt dabei ums Leben, seine Frau trägt lebensgefährliche Verletzungen davon. Der sechsjährige Sohn überlebt körperlich unversehrt, jedoch tief traumatisiert – ihm fehlt jede Erinnerung an die Geschehnisse....",
     "director": "",
-    "actors": [],
+    "actors": [
+      "Mirka Pigulla",
+      "Philipp Danne",
+      "Stefan Ruppe"
+    ],
     "rating": "N/A",
-    "thumb": "placeholder.png",
+    "thumb": "https://image.tmdb.org/t/p/w342/el09QpDr03XaopffKtzC70qDt0q.jpg",
     "genres_list": [
       "Sonstige"
     ],
@@ -22786,6 +22843,8 @@
     "timestamp": 1787826600,
     "duration_min": 89,
     "isNew": false,
+    "tmdb_id": 1578084,
+    "tmdb_type": "movie",
     "year": "2011"
   },
   {
@@ -22799,24 +22858,25 @@
       "https://ctv-videos.daserste.de/int/2026/06/23/DEGSM443911/DEGSM443911_3765705_sendeton_640x360-50p-1200kbit.mp4"
     ],
     "quality": "HD",
-    "plot": "TV-Special zur beliebten ARD-Serie „In aller Freundschaft – Die jungen Ärzte“.",
+    "plot": "Während sie tagsüber in den Alpen an einem Lehrgang teilnehmen, in dem sie die Bergung verunglückter Personen trainieren, genießen die Ärzte des Johannes-Thal-Klinikums abends die Gastfreundschaft der Dorfbewohner. Als der Bergführer Gregor Blanz verschwindet, ahnt seine schwangere Frau Elisabeth, wo er sein könnte. Sie will zu ihrem Mann und bricht alleine in die Berge auf, um nach ihm zu suchen. (ARD)",
     "mediathek_desc": "Spielfilm Deutschland 2018 Die Verwaltungschefin der Sachsenklinik ist begeistert: Dr. Heilmann soll als Redner bei einem Ärzte-Kongress in Thailand auftreten. Doch alles geht schief: Roland und seine Begleiter kommen nie in Bangkok an und landen mitten im Urwald. Hier erfährt Roland nicht, dass sein frischverliebter Sohn Jakob (Karsten Kühn) zu Hause in Leipzig in akuter Lebensgefahr schwebt....",
-    "director": "",
+    "director": "Steffen Mahnert",
     "actors": [
-      "Mirka Pigulla",
-      "Philipp Danne",
-      "Stefan Ruppe"
+      "Mike Adler",
+      "Sanam Afrashteh",
+      "Marijam Agischewa"
     ],
     "rating": "N/A",
-    "thumb": "https://image.tmdb.org/t/p/w342/el09QpDr03XaopffKtzC70qDt0q.jpg",
+    "thumb": "https://image.tmdb.org/t/p/w342/cj6aKgilRJaDgELa8cTiSIzljMu.jpg",
     "genres_list": [
-      "Sonstige"
+      "TV-Film",
+      "Drama"
     ],
     "channel": "ARD",
     "timestamp": 1782388980,
     "duration_min": 88,
     "isNew": false,
-    "tmdb_id": 1578084,
+    "tmdb_id": 674543,
     "tmdb_type": "movie",
     "year": "2018"
   },
@@ -22986,19 +23046,27 @@
       "https://pd-videos.daserste.de/dach/2025/09/07/DEGSM182342/DEGSM182342_3430905_sendeton_640x360-50p-1200kbit.mp4"
     ],
     "quality": "HD",
-    "plot": "Spielfilm USA/Deutschland 1998\r\n\r\nDean McConnell (Eric Roberts) hat seinen Job als Agent beim US-Schatzamt verloren. Er überredet seinen Sohn Jeremy (Kaj-Erik Eriksen) zu einer Besichtigungstour durch die Behörde, doch eigentlich will er ihm dabei nur schonend beibringen, dass er die Tourleiterin Fiona (Cali Timmins) bald heiraten möchte. Jeremy reagiert jedoch eifersüchtig und will auch mit Fiona\n.....",
+    "plot": "Dean McConnell besucht zufällig mit Verlobter und Kindern seinen ehemaligen Arbeitsplatz, das amerikanische Bundesschatzamt, als sein Ex-Kollege Quentin Darby mit seinem zu allem entschlossenen Söldnerplatoon die Behörde überfällt, um ein paar Druckplatten für Dollarnoten zu stehlen. Als Dean sich einmischt, verhindert er zwar den Raub, löst aber zwei Brände aus, die das Haus von oben bis unten einzuäschern drohen. Die Gangster sind in Rage und wollen sich an ihm rächen...",
     "mediathek_desc": "Dean McConnell und seine Freundin Fiona treffen sich auf einer Besichtigungstour im US-Schatzamt, um ihre Kinder auf ihre geplante Heirat einzustimmen. Doch dabei kommt es zur Katastrophe.",
-    "director": "",
-    "actors": [],
-    "rating": "N/A",
-    "thumb": "placeholder.png",
+    "director": "David Warry-Smith",
+    "actors": [
+      "Eric Roberts",
+      "Jürgen Prochnow",
+      "Venus Terzo"
+    ],
+    "rating": "4.4",
+    "thumb": "https://image.tmdb.org/t/p/w342/cVNOgGq9wtzXRvMz4tTEmkD93l0.jpg",
     "genres_list": [
-      "Sonstige"
+      "Action",
+      "Thriller",
+      "TV-Film"
     ],
     "channel": "ARD",
     "timestamp": 1757205000,
     "duration_min": 87,
     "isNew": false,
+    "tmdb_id": 215170,
+    "tmdb_type": "movie",
     "year": "1998"
   },
   {
@@ -24548,20 +24616,28 @@
       "https://rodlzdf-a.akamaihd.net/none/3sat/19/08/190804_krachimstandesamt/1/190804_krachimstandesamt_776k_p11v13.mp4"
     ],
     "quality": "HD",
-    "plot": "Wendelin Pfannenstiel sitzt im Stadthaus von Niemalsingen am Empfang. Souverän weist er jeden Bittsteller ins richtige Büro. Heimlich aber träumt er davon, Standesbeamter zu sein.",
+    "plot": "Wendelin Pfannenstiel sitzt im Stadthaus von Niemalsingen am Empfang. Heimlich aber träumt er davon, Standesbeamter zu sein. Sein stiller Wunsch geht über Nacht in Erfüllung. Doch bald schon steht er vor einem Bräutigam, der sein Jawort nicht herausbringt und die Szene fluchtartig verlässt. Wendelin versucht, die Braut Julia zu trösten, und verliebt sich dabei in die schöne Verschmähte. Als das Paar zu einem weiteren Versuch antritt, lässt Wendelin Pfannenstiel seinerseits die Zeremonie platzen. Als sich auch noch herumspricht, dass Wendelin von einem unbekannten Australier Millionen erben soll, steigen seine Chancen bei Julia.",
     "mediathek_desc": "Wendelin Pfannenstiel sitzt im Stadthaus von Niemalsingen am Empfang. Souverän weist er jeden Bittsteller ins richtige Büro. Heimlich aber träumt er davon, Standesbeamter zu sein.",
-    "director": "",
-    "actors": [],
-    "rating": "N/A",
-    "thumb": "placeholder.png",
+    "director": "Kurt Früh",
+    "actors": [
+      "Walter Roderer",
+      "Waltraut Haas",
+      "Gardy Granass"
+    ],
+    "rating": "9.0",
+    "thumb": "https://image.tmdb.org/t/p/w342/2sGpmax03Pf10EQkARCqtvGxyZa.jpg",
     "genres_list": [
-      "Sonstige"
+      "Musik",
+      "Komödie",
+      "Romanze"
     ],
     "channel": "3Sat",
     "timestamp": 1501399200,
     "duration_min": 86,
     "isNew": false,
-    "year": "None"
+    "tmdb_id": 241265,
+    "tmdb_type": "movie",
+    "year": "1962"
   },
   {
     "title": "Kranke Geschäfte",
@@ -26502,19 +26578,26 @@
       "https://rodlzdf-a.akamaihd.net/dach/3sat/25/08/250831_luegen_sterben_nie_spielfilm/1/250831_luegen_sterben_nie_spielfilm_808k_p11v17.mp4"
     ],
     "quality": "HD",
-    "plot": "Nach einem schweren Schicksalsschlag hat der ehemalige MI6-Agent Martin Baxter mit seinem alten Leben abgeschlossen. Doch er wird von seiner Vergangenheit eingeholt.",
+    "plot": "Der ehemalige MI6-Agent Martin Baxter gerät aufgrund einer Bitte eines Journalisten zwischen die Fronten des britischen und des russischen Geheimdienstes. Als seine Tochter vom KGB entführt wird, bleiben ihm nur 24 Stunden, um dem russischen Geheimdienst wertvolle geheime Akten auszuliefern. Doch die muss er erst einmal finden und an sich bringen. Es beginnt eine kompromisslose Hetzjagd in der Schattenwelt der Geheimdienste, in der nichts so ist wie es scheint.",
     "mediathek_desc": "Nach einem schweren Schicksalsschlag hat der ehemalige MI6-Agent Martin Baxter mit seinem alten Leben abgeschlossen. Doch er wird von seiner Vergangenheit eingeholt.",
-    "director": "",
-    "actors": [],
-    "rating": "N/A",
-    "thumb": "placeholder.png",
+    "director": "Adrian Bol",
+    "actors": [
+      "Scott Adkins",
+      "Honor Kneafsey",
+      "Martin McDougall"
+    ],
+    "rating": "5.5",
+    "thumb": "https://image.tmdb.org/t/p/w342/bhNHCeJDFDaB00A46AoCw2mggdE.jpg",
     "genres_list": [
-      "Sonstige"
+      "Thriller",
+      "Action"
     ],
     "channel": "3Sat",
     "timestamp": 1725146400,
     "duration_min": 97,
     "isNew": false,
+    "tmdb_id": 601165,
+    "tmdb_type": "movie",
     "year": "2020"
   },
   {
@@ -27123,26 +27206,28 @@
       "https://rodlzdf-a.akamaihd.net/de/zdf/25/06/250609_2200_sendung_spf/1/250609_2200_sendung_spf_a1a2_808k_p11v17.mp4"
     ],
     "quality": "HD",
-    "plot": "Die Geschäfte von Privatdetektiv Philip Marlowe laufen eher schlecht, als die wunderschöne Clare Cavendish mit ihrem Antlitz sein heruntergekommenes Büro erhellt. Sie hat einen Auftrag: Ihr Liebhaber Nico Peterson ist spurlos verschwunden, Marlowe soll ihn finden...",
+    "plot": "Privatdetektiv Philip Marlowe ist nicht sonderlich interessiert an einer vermeintlichen Routinesache, als ihn eine unscheinbare Blondine aus Kansas bittet, nach ihrem verschwundenen Bruder zu suchen. Ehe er sich jedoch versieht, gerät er in eine mysteriöse Mordserie. Als Marlowe sich in den Fall verbeißt, bekommt er es gleichermaßen mit Gangstern und der Polizei zu tun, ehe er unter dramatischen Umständen herausfindet, was hinter dem rätselhaften Geschehen steckt.",
     "mediathek_desc": "In Los Angeles soll der Privatdetektiv Philip Marlowe 1939 den Liebhaber einer verführerischen Blondine mit Geld wiederfinden. Dabei lernt er die Schattenseiten Hollywoods kennen.",
-    "director": "Neil Jordan",
+    "director": "Paul Bogart",
     "actors": [
-      "Liam Neeson",
-      "Diane Kruger",
-      "Jessica Lange"
+      "James Garner",
+      "Gayle Hunnicutt",
+      "Carroll O'Connor"
     ],
-    "rating": "5.7",
-    "thumb": "https://image.tmdb.org/t/p/w342/9d9Uws9C92MRV4lho9E8KTHtRLG.jpg",
+    "rating": "6.2",
+    "thumb": "https://image.tmdb.org/t/p/w342/3gJEt8e7zMLBlnVyzenR0LgL5Ge.jpg",
     "genres_list": [
-      "Krimi"
+      "Krimi",
+      "Mystery",
+      "Drama"
     ],
     "channel": "ZDF",
     "timestamp": 1791062101,
     "duration_min": 105,
     "isNew": false,
-    "tmdb_id": 844417,
+    "tmdb_id": 1846,
     "tmdb_type": "movie",
-    "year": "2023"
+    "year": "1969"
   },
   {
     "title": "Marmorera",
@@ -29261,19 +29346,25 @@
       "https://rodlzdf-a.akamaihd.net/dach/3sat/21/06/210606_mord_auf_hoechster_ebene_spielfilm/2/210606_mord_auf_hoechster_ebene_spielfilm_808k_p11v15.mp4"
     ],
     "quality": "HD",
-    "plot": "Belgiens Premierminister wird von Terroristen gezwungen, die US-Präsidentin bei ihrem Besuch in Brüssel zu erschießen. Die Terroristen haben die Familie des Premiers in ihre Gewalt gebracht.",
+    "plot": "Der belgische Premierminister ist zusammen mit seiner Assistentin auf dem Weg ins Parlament. Alles erscheint wie ein ganz normaler Tag, bis ihr Wagen plötzlich gestoppt und beide entführt werden. Die Terroristen verlangen vom Premierminister, die US-Präsidentin beim anstehenden Staatsbesuch zu erschießen. Als Druckmittel haben sie seine Frau und die beiden Kinder entführt. Um seine Familie zu retten, muss er den perfiden Befehl der Terroristen ausführen. Die Uhr tickt während der explosive Höhepunkt immer näher rückt …",
     "mediathek_desc": "Belgiens Premierminister wird von Terroristen gezwungen, die US-Präsidentin bei ihrem Besuch in Brüssel zu erschießen. Die Terroristen haben die Familie des Premiers in ihre Gewalt gebracht.",
-    "director": "",
-    "actors": [],
-    "rating": "N/A",
-    "thumb": "placeholder.png",
+    "director": "Erik Van Looy",
+    "actors": [
+      "Koen De Bouw",
+      "Tine Reymer",
+      "Charlotte Vandermeersch"
+    ],
+    "rating": "5.8",
+    "thumb": "https://image.tmdb.org/t/p/w342/yG7m1fNfHYR9wseo1s7tCf6NsWK.jpg",
     "genres_list": [
-      "Sonstige"
+      "Thriller"
     ],
     "channel": "ZDF",
     "timestamp": 1716758100,
     "duration_min": 111,
     "isNew": false,
+    "tmdb_id": 394645,
+    "tmdb_type": "movie",
     "year": "2016"
   },
   {
@@ -29915,19 +30006,28 @@
       "https://rodlzdf-a.akamaihd.net/dach/3sat/23/05/230512_moerderischer_zweifel_spielfilm/1/230512_moerderischer_zweifel_spielfilm_808k_p11v17.mp4"
     ],
     "quality": "HD",
-    "plot": "Der Philosophie-Professor Evan Birch hat eigentlich ein sorgloses Leben. Doch dann verschwindet eine 17-jährige Cheerleaderin spurlos, und der Professor gerät in Schwierigkeiten.",
+    "plot": "Philosophieprofessor Evan Birch führt ein Bilderbuch-Leben als treusorgender Ehemann und Vater. Eines Tages jedoch verschwindet eine seiner Studentinnen spurlos und wird schließlich tot aufgefunden. Der pragmatische Ermittler Malloy beginnt in Birchs Umfeld zu ermitteln. Birch ist zunächst fassungslos angesichts dieser ungeheuerlichen Vorwürfe und auch seine Frau vermutet lediglich ein Missverständnis. Doch die Beweislage verschärft sich zusehends und Birchs Erinnerungslücken machen ihn nur verdächtiger …\r Atmosphärisch dichter und extrem spannender Psychothriller mit erstklassiger Besetzung, der sich mit elementaren Fragen um die Philosophie des Verbrechens befasst. Nichts ist, wie es scheint!",
     "mediathek_desc": "Der Philosophie-Professor Evan Birch hat eigentlich ein sorgloses Leben. Doch dann verschwindet eine 17-jährige Cheerleaderin spurlos, und der Professor gerät in Schwierigkeiten.",
-    "director": "",
-    "actors": [],
-    "rating": "N/A",
-    "thumb": "placeholder.png",
+    "director": "Simon Kaijser",
+    "actors": [
+      "Guy Pearce",
+      "Pierce Brosnan",
+      "Minnie Driver"
+    ],
+    "rating": "5.6",
+    "thumb": "https://image.tmdb.org/t/p/w342/pvLebrhqk3WMu0qwkPXTkHcl2yF.jpg",
     "genres_list": [
-      "Sonstige"
+      "Thriller",
+      "Mystery",
+      "Krimi",
+      "TV-Film"
     ],
     "channel": "ZDF",
     "timestamp": 1733697300,
     "duration_min": 96,
     "isNew": false,
+    "tmdb_id": 458109,
+    "tmdb_type": "movie",
     "year": "2018"
   },
   {
@@ -34425,7 +34525,7 @@
     "director": "Stephen Chow",
     "actors": [
       "Stephen Chow",
-      "Richard Ng Man-Tat",
+      "吳孟達",
       "Zhao Wei"
     ],
     "rating": "7.2",
@@ -37963,28 +38063,26 @@
       "https://rodlzdf-a.akamaihd.net/de/zdf/26/09/260928_0040_sendung_spf/3/260928_0040_sendung_spf_a1a2_808k_p11v17.mp4"
     ],
     "quality": "HD",
-    "plot": "Die schottischen Highlands im Jahre 1790: Der aus Japan stammende Schausteller Fujin und seine fast erwachsene Tochter Tornado reisen mit ihrem Samurai-Puppentheater durch die Gegend. Obwohl dieses sehr ausgefeilt inszeniert und erstaunlich realistisch anzusehen ist, schlägt den beiden immer wieder rassistische Ablehnung entgegen. So verdienen sie kaum genug Geld für Nahrung, geschweige denn, um sich endlich eine Schiffspassage zurück in ihre Heimat leisten zu können. Als sie auf eine von dem skrupellosen Verbrecher Sugarman angeführte Bande treffen, schmiedet Tornado den Plan, dieser ihr bei Raubzügen erbeutetes Gold zu stehlen. Doch der Coup läuft schief und Sugarman lässt Tornados Vater brutal töten, während die junge Frau gerade noch entkommen kann. Die von Fujin jahrelang in der Kunst des Schwertkampfs ausgebildete Tornado plant daraufhin einen blutigen Rachefeldzug …",
+    "plot": "Der Besitzer einer Kohlenmine in Illinois kämpft darum, seinen Geschäftsbetrieb aufrechtzuerhalten, ohne zu wissen, dass sich unter seinen Mitarbeitern ein Saboteur befindet, der Zerstörung und Chaos plant.",
     "mediathek_desc": "Ein geraubter Goldschatz wird einer jungen Frau fast zum Verhängnis. Denn das Gold gehört einer brutalen Diebesbande unter Führung eines Mannes namens Sugarman.",
-    "director": "John Maclean",
+    "director": "William Berke",
     "actors": [
-      "Kōki",
-      "Tim Roth",
-      "Jack Lowden"
+      "Chester Morris",
+      "Nancy Kelly",
+      "Gwen Kenyon"
     ],
-    "rating": "6.1",
-    "thumb": "https://image.tmdb.org/t/p/w342/5u23YsQjRkAfwkcyNDNdWqKRLAi.jpg",
+    "rating": "5.7",
+    "thumb": "https://image.tmdb.org/t/p/w342/eoGGKgLwphYroKzYQ9HNtgIHv7a.jpg",
     "genres_list": [
-      "Drama",
-      "Action",
-      "Western"
+      "Drama"
     ],
     "channel": "ZDF",
     "timestamp": 1790712655,
     "duration_min": 87,
     "isNew": false,
-    "tmdb_id": 1126915,
+    "tmdb_id": 211517,
     "tmdb_type": "movie",
-    "year": "2025"
+    "year": "1943"
   },
   {
     "title": "Transit",
