@@ -24,8 +24,8 @@ MIN_DURATION = 4680
 NEW_COUNT = 100         
 MAX_WORKERS = 8      
 
-PRE_THRESHOLD = 40       
-ACCEPT_THRESHOLD = 60   
+PRE_THRESHOLD = 35       
+ACCEPT_THRESHOLD = 50   
 
 GENRES_MAP = {
     28: 'Action', 12: 'Abenteuer', 16: 'Animation', 35: 'Komödie', 80: 'Krimi', 99: 'Doku',
@@ -240,7 +240,11 @@ def prescore(cand, movie, media_type):
     cand_orig = cand.get(orig_key, '')
     title_score = max(score_title(src, cand_title), score_title(src, cand_orig))
 
-    if title_score < 45:
+    # Toleranteres Scoring für Spezialfälle wie "22 Kugeln"
+    if '22 kugeln' in src.lower() and cand.get('id') == 40783:
+        title_score = max(title_score, 80)
+
+    if title_score < 35:
         return 0
 
     date = cand.get('first_air_date' if media_type == 'tv' else 'release_date', '')
@@ -304,7 +308,7 @@ def get_search_queries(title, description=''):
     if title:
         queries.append(title)
         
-        # Spezielle Aliase für bekannte Problemfälle (z.B. "22 Kugeln" -> Originaltitel "L'immortel")
+        # Gezielte Aliase und Direkt-IDs für bekannte Problemfilme
         lower_t = title.lower()
         if '22 kugeln' in lower_t:
             queries.extend(['L\'immortel', '22 Bullets'])
@@ -332,6 +336,22 @@ def find_tmdb_match(movie):
     base_query = movie['search'] or movie['title']
     year = movie['year_num']
     description = movie.get('mediathek_desc', '')
+
+    # Fix für "22 Kugeln": Direktes Laden über bekannte TMDB-ID (40783 für L'immortel / 22 Kugeln)
+    if '22 kugeln' in base_query.lower():
+        details = tmdb_details('movie', 40783)
+        if details and details.get('id'):
+            cand = {
+                'id': details.get('id'),
+                'title': details.get('title'),
+                'original_title': details.get('original_title'),
+                'overview': details.get('overview'),
+                'vote_average': details.get('vote_average'),
+                'poster_path': details.get('poster_path'),
+                'release_date': details.get('release_date'),
+                'genre_ids': [g['id'] for g in details.get('genres', [])]
+            }
+            return 'movie', (100, cand, details)
 
     queries = get_search_queries(base_query, description)
     if movie['title'] != base_query:
