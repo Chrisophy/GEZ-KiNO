@@ -53,14 +53,13 @@ TITLE_MARKERS = [
     ', Niederlande', ', Irland', ', Luxemburg', ', Italien', ', USA', ', Kosovo',
     ', Großbritannien', ', Tschechische Republik', ', Norwegen', ', BRD', ', Dänemark',
     ', Australien', ', Schweden', ', Video:', ', Präsentiert:', ', Kurzfilm', ' Fernsehfilm',
-    ' Heimatfilm', ' - Thriller', ' - Drama'
+    ' Heimatfilm', ' - Thriller', ' - Drama', ' - Der Film', ' - Kinofilm'
 ]
 
 PAREN_YEAR_RE = re.compile(r'[(\[][^()\[\]]*?\b((?:19|20)\d{2})\b[^()\[\]]*?[)\]]')
 TAIL_YEAR_RE = re.compile(r'[,\-–—|(]\s*[^,\-–—|()]*?\b((?:19|20)\d{2})\b\s*\)?\s*$')
 TAIL_YEAR_STRIP_RE = re.compile(r'\s*[,\-–—|]\s*(?:[A-Za-zÄÖÜäöüß./ ]{0,30}?\s)?(?:19|20)\d{2}\s*$')
 
-# Korrektur: Nur noch explizite Produktionsangaben in der Beschreibung erlauben, keine Jahreszahlen mitten aus dem Text (verhindert das Green-Book-Problem mit "1960er Jahre")
 DESC_YEAR_RES = [
     re.compile(r'(?:Produktionsjahr|Produktion|Erscheinungsjahr|Jahr)\s*:?\s*((?:19|20)\d{2})', re.IGNORECASE),
 ]
@@ -71,7 +70,6 @@ def valid_year(y):
 
 
 def extract_year(title, description):
-    """Produktionsjahr: erst Titel (Klammer, dann Titelende), dann strikte Beschreibung."""
     for m in PAREN_YEAR_RE.finditer(title or ''):
         y = int(m.group(1))
         if valid_year(y):
@@ -238,23 +236,23 @@ def prescore(cand, movie, media_type, desc_words):
     orig_key = 'original_name' if media_type == 'tv' else 'original_title'
     src = movie['search']
 
-    title_score = max(score_title(src, cand.get(title_key, '')),
-                      score_title(src, cand.get(orig_key, '')))
+    cand_title = cand.get(title_key, '')
+    cand_orig = cand.get(orig_key, '')
+    title_score = max(score_title(src, cand_title), score_title(src, cand_orig))
+
+    # WICHTIG: Wenn der Titel gar nicht zum Suchbegriff passt (z.B. Tom & Jerry bei Schloss am Wörthersee), 
+    # ignorieren wir den Treffer komplett, ungeachtet dessen, was in der Beschreibung steht!
+    if title_score < 30:
+        return 0
 
     date = cand.get('first_air_date' if media_type == 'tv' else 'release_date', '')
     y_score = year_score(movie['year_num'], date)
 
     overview_words = word_set(cand.get('overview', ''))
     desc_bonus = 0
-    matches = set()
     if desc_words and overview_words:
         matches = desc_words & overview_words
-        desc_bonus = min(len(matches) * 3.0, 30)
-
-    # Strengere Absicherung: Der Titel muss zumindest eine minimale Ähnlichkeit haben, 
-    # damit nicht völlig falsche Filme (wie Tom & Jerry bei Schloss am Wörthersee) reinrutschen.
-    if title_score < 15:
-        return 0
+        desc_bonus = min(len(matches) * 2.0, 20)  # Reduziert, damit die Beschreibung den Titel nicht überstimmt
 
     score = title_score + y_score + desc_bonus
     if score < PRE_THRESHOLD:
