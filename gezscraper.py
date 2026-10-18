@@ -240,10 +240,6 @@ def prescore(cand, movie, media_type):
     cand_orig = cand.get(orig_key, '')
     title_score = max(score_title(src, cand_title), score_title(src, cand_orig))
 
-    # Toleranteres Scoring für Spezialfälle wie "22 Kugeln"
-    if '22 kugeln' in src.lower() and cand.get('id') == 40783:
-        title_score = max(title_score, 80)
-
     if title_score < 35:
         return 0
 
@@ -308,7 +304,6 @@ def get_search_queries(title, description=''):
     if title:
         queries.append(title)
         
-        # Gezielte Aliase und Direkt-IDs für bekannte Problemfilme
         lower_t = title.lower()
         if '22 kugeln' in lower_t:
             queries.extend(['L\'immortel', '22 Bullets'])
@@ -337,7 +332,7 @@ def find_tmdb_match(movie):
     year = movie['year_num']
     description = movie.get('mediathek_desc', '')
 
-    # Fix für "22 Kugeln": Direktes Laden über bekannte TMDB-ID (40783 für L'immortel / 22 Kugeln)
+    # Fix für "22 Kugeln": Direktes Laden und strukturieren wie ein reguläres Picker-Ergebnis
     if '22 kugeln' in base_query.lower():
         details = tmdb_details('movie', 40783)
         if details and details.get('id'):
