@@ -121,18 +121,19 @@ def choose_best_result(results, movie, media_type):
     return best[0] if best[1] >= 50 else None
 
 def get_search_queries(title):
+    # WICHTIG: Den vollständigen Titel immer als ERTES durchsuchen!
     queries = [title]
     for sep in [' - ', ' – ', ' — ', ': ', ' / ']:
         if sep in title:
             base_part = title.split(sep)[0].strip()
             if base_part and base_part not in queries:
-                queries.insert(0, base_part)
+                queries.append(base_part) # Als Fallback AM ENDE anhängen, nicht vorne!
     return queries
 
 def hydrate_movie(movie):
     global processed_count
     
-    # Wenn der Film bereits vollständig hydriert ist (z.B. aus dem Cache oder manuell gepflegt), überspringen wir TMDB
+    # Wenn der Film bereits vollständig hydriert ist, überspringen wir TMDB
     if movie.get('tmdb_id') and movie.get('thumb') and movie.get('thumb') != 'placeholder.png':
         with print_lock:
             processed_count += 1
