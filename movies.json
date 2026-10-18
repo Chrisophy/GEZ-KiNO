@@ -3581,16 +3581,21 @@
   {
     "title": "Dampfnudelblues. Ein Eberhoferkrimi",
     "search": "Dampfnudelblues. Ein Eberhoferkrimi",
-    "year": "None",
+    "year": "2013",
     "video_url": "https://rodlzdf-a.akamaihd.net/none/3sat/24/02/240212_dampfnudelblues_mit_ad_spielfilm/1/240212_dampfnudelblues_mit_ad_spielfilm_a1a2_2360k_p35v17.mp4",
     "plot": "Provinzbulle Franz Eberhofer ermittelt im Fall des zunächst verschwundenen und dann vom Zug überrollten Schuldirektors Höpfl. \"STIRB DU SAU!\" stand wenige Tage vorher an dessen Hauswand.",
     "mediathek_desc": "Provinzbulle Franz Eberhofer ermittelt im Fall des zunächst verschwundenen und dann vom Zug überrollten Schuldirektors Höpfl. \"STIRB DU SAU!\" stand wenige Tage vorher an dessen Hauswand.",
-    "director": "",
-    "actors": [],
-    "rating": "N/A",
-    "thumb": "placeholder.png",
+    "director": "Ed Herzog",
+    "actors": [
+      "Sebastian Bezzel",
+      "Simon Schwarz",
+      "Eisi Gulp"
+    ],
+    "rating": "6.8",
+    "thumb": "https://image.tmdb.org/t/p/original/mlE9wNxyzGQPJm26Fn8eBr1H1gx.jpg",
     "genres_list": [
-      "Sonstige"
+      "Komödie",
+      "Krimi"
     ],
     "channel": "3Sat",
     "timestamp": 1563387360,
@@ -3773,18 +3778,24 @@
     "tmdb_type": "movie"
   },
   {
-    "title": "Das Bombardement",
+    "title": "Das Bombardement - Schatten in meinen Augen",
     "search": "Das Bombardement",
     "year": "2021",
     "video_url": "https://rodlzdf-a.akamaihd.net/dach/3sat/24/08/240830_das_bombardement_spielfilm/1/240830_das_bombardement_spielfilm_2360k_p35v17.mp4",
     "plot": "Um die Widerstandsbewegung zu unterstützen, plant die britische Royal Airforce im März 1945 einen Angriff auf das Gestapo-Hauptquartier in Kopenhagen. Eine riskante Operation.",
     "mediathek_desc": "Um die Widerstandsbewegung zu unterstützen, plant die britische Royal Airforce im März 1945 einen Angriff auf das Gestapo-Hauptquartier in Kopenhagen. Eine riskante Operation.",
-    "director": "",
-    "actors": [],
-    "rating": "N/A",
-    "thumb": "placeholder.png",
+    "director": "Ole Bornedal",
+    "actors": [
+      "Bertram Bisgaard Enevoldsen",
+      "Ester Birch",
+      "Ella Nilsson"
+    ],
+    "rating": "7.8",
+    "thumb": "https://image.tmdb.org/t/p/original/cZ80Wi9JZfR7bpZE0h6tkeHYVl7.jpg",
     "genres_list": [
-      "Sonstige"
+      "Krieg",
+      "Historie",
+      "Drama"    
     ],
     "channel": "3Sat",
     "timestamp": 1725050100,
@@ -3895,16 +3906,20 @@
   {
     "title": "Das Flirren am Horizont",
     "search": "Das Flirren am Horizont",
-    "year": "2019",
+    "year": "2022",
     "video_url": "https://rodlzdf-a.akamaihd.net/ebu/3sat/22/02/220212_flirren_am_horizont/1/220212_flirren_am_horizont_2360k_p35v15.mp4",
-    "plot": "Unter der sengenden Sonne des Sommers 1976 lässt Gus seine Kindheit hinter sich ...",
+    "plot": "Unter der sengenden Sonne des Sommers lässt Gus seine Kindheit hinter sich. Die Natur kommt an ihre Grenzen, die Emotionen kochen hoch und die Bauernfamilie Sutter wird in ihren Grundfesten erschüttert. Die Risse treten an die Oberfläche und das Undenkbare tritt ein, als der langersehnte Regen auf die Erde fällt.",
     "mediathek_desc": "Unter der sengenden Sonne des Sommers 1976 lässt Gus seine Kindheit hinter sich ...",
-    "director": "",
-    "actors": [],
-    "rating": "N/A",
-    "thumb": "placeholder.png",
+    "director": "Delphine Lehericey",
+    "actors": [
+      "Luc Bruchez",
+      "Laetitia Casta",
+      "Thibaut Évrard"
+],
+    "rating": "5.3",
+    "thumb": "https://image.tmdb.org/t/p/original/nQOh2FruQijwiR3e35qzLjFdWGj.jpg",
     "genres_list": [
-      "Sonstige"
+      "Drama"
     ],
     "channel": "3Sat",
     "timestamp": 1644703260,
@@ -4321,16 +4336,22 @@
   {
     "title": "Das Jerico Projekt",
     "search": "Das Jerico Projekt",
-    "year": "2015",
+    "year": "2016",
     "video_url": "https://nrodlzdf-a.akamaihd.net/dach/3sat/22/09/220916_das_jerico_projekt_spielfilm/1/220916_das_jerico_projekt_spielfilm_3360k_p36v15.mp4",
     "plot": "Als der CIA-Agent Pope ums Leben kommt, muss sein Vorgesetzter Wells zu drastischen Mitteln greifen: Die Erinnerungen des Agenten sollen in das Gehirn des Verbrechers Jerico übertragen werden.",
     "mediathek_desc": "Als der CIA-Agent Pope ums Leben kommt, muss sein Vorgesetzter Wells zu drastischen Mitteln greifen: Die Erinnerungen des Agenten sollen in das Gehirn des Verbrechers Jerico übertragen werden.",
-    "director": "",
-    "actors": [],
-    "rating": "N/A",
-    "thumb": "placeholder.png",
+    "director": "Ariel Vromen",
+    "actors": [
+      "Kevin Costner",
+      "Gary Oldman",
+      "Tommy Lee Jones"
+    ],
+    "rating": "6.2",
+    "thumb": "https://image.tmdb.org/t/p/original/xuE4CeqpsVgxuhznpD9UX65qQyp.jpg",
     "genres_list": [
-      "Sonstige"
+      "Thriller",
+      "Action",
+      "Sci-Fi"
     ],
     "channel": "3Sat",
     "timestamp": 1569874500,
@@ -6436,16 +6457,22 @@
   {
     "title": "Der Pate, Epilog: Der Tod von Michael Corleone",
     "search": "Der Pate, Epilog: Der Tod von Michael Corleone",
-    "year": "None",
+    "year": "1991",
     "video_url": "https://arteptweb-a.akamaihd.net/am/ptweb/039000/039900/039997-000-F_EQ_0_VA-STA_11553512_MP4-1500_AMM-PTWEB-60782635401321_p6xxb10c6fM.mp4",
     "plot": "Für Michael Corleone ist es Zeit Bilanz zu ziehen. Er hat den illegalen Tätigkeiten abgeschworen, mit denen sein Vater reich wurde und arbeitet nun mit Bank- und Immobiliengeschäften. Aber seine Jugendverbrechen können nicht ungeschehen gemacht werden ... - Der dritte Teil der Mafiafilm-Trilogie \"Der Pate\" war 1991 für sieben Oscars und für sieben Golden Globes nominiert.",
     "mediathek_desc": "Für Michael Corleone ist es Zeit Bilanz zu ziehen. Er hat den illegalen Tätigkeiten abgeschworen, mit denen sein Vater reich wurde und arbeitet nun mit Bank- und Immobiliengeschäften. Aber seine Jugendverbrechen können nicht ungeschehen gemacht werden ... - Der dritte Teil der Mafiafilm-Trilogie \"Der Pate\" war 1991 für sieben Oscars und für sieben Golden Globes nominiert.",
-    "director": "",
-    "actors": [],
-    "rating": "N/A",
-    "thumb": "placeholder.png",
+    "director": "Francis Ford Coppola",
+    "actors": [
+      "Al Pacino",
+      "Diane Keaton",      
+      "Talia Shire"
+    ],
+    "rating": "7.4",
+    "thumb": "https://image.tmdb.org/t/p/original/iVjSuqHFFOqCFM4rdhUyysYWnnj.jpg",
     "genres_list": [
-      "Sonstige"
+      "Krimi",
+      "Drama",
+      "Thriller"
     ],
     "channel": "ARTE.DE",
     "timestamp": 1790541574,
@@ -8382,16 +8409,22 @@
   {
     "title": "Die Kamine von Green Knowe",
     "search": "Die Kamine von Green Knowe",
-    "year": "2009",
+    "year": "2010",
     "video_url": "https://rodlzdf-a.akamaihd.net/dach/3sat/19/10/191006_die_kamine_von_green_knowe_spielfilm/3/191006_die_kamine_von_green_knowe_spielfilm_2328k_p35v13.mp4",
     "plot": "England, Ende 1944: Der 13-jährige Tolly verbringt die Ferien bei seiner Großmutter, Mrs. Oldknow, auf dem Anwesen Green Knowe. Der Aufenthalt wird zu einer Zeitreise in die Vergangenheit.",
     "mediathek_desc": "England, Ende 1944: Der 13-jährige Tolly verbringt die Ferien bei seiner Großmutter, Mrs. Oldknow, auf dem Anwesen Green Knowe. Der Aufenthalt wird zu einer Zeitreise in die Vergangenheit.",
-    "director": "",
-    "actors": [],
-    "rating": "N/A",
-    "thumb": "placeholder.png",
+    "director": "Julian Fellowes",
+    "actors": [
+      "Maggie Smith",
+      "Dominic West",
+      "Timothy Spall"
+    ],
+    "rating": "6.3",
+    "thumb": "https://image.tmdb.org/t/p/original/4qVw09ZMpyXWsHt1odiFzdAPCFB.jpg",
     "genres_list": [
-      "Sonstige"
+      "Krieg",
+      "Drama",
+      "Historie"
     ],
     "channel": "3Sat",
     "timestamp": 1485705720,
@@ -9359,16 +9392,22 @@
   {
     "title": "Die Schreckensfahrt der Orion Star",
     "search": "Die Schreckensfahrt der Orion Star",
-    "year": "None",
+    "year": "1998",
     "video_url": "https://ctv-videos.daserste.de/dach/2026/07/15/4125/4125_21857_sendeton_1280x720-50p-3200kbit.mp4",
     "plot": "Spielfilm USA/Deutschland 1998 Die viel beschäftigte Seuchenexpertin Dr. Stephanie Tauber (Lindsay Wagner) will sich während einer Karibik-Kreuzfahrt Zeit für ihre Tochter Aly (Katharine Isabelle) nehmen. Als es an Bord zu einer Serie von mysteriösen Todesfällen kommt, ist es jedoch mit dem Urlaub vorbei. Dr. Tauber lässt Proben in das Labor ihres Chefs Dr. Norman Ellisy (William B. Davis) vom „Center for Disease Control\" (CDC) bringen....",
     "mediathek_desc": "Spielfilm USA/Deutschland 1998 Die viel beschäftigte Seuchenexpertin Dr. Stephanie Tauber (Lindsay Wagner) will sich während einer Karibik-Kreuzfahrt Zeit für ihre Tochter Aly (Katharine Isabelle) nehmen. Als es an Bord zu einer Serie von mysteriösen Todesfällen kommt, ist es jedoch mit dem Urlaub vorbei. Dr. Tauber lässt Proben in das Labor ihres Chefs Dr. Norman Ellisy (William B. Davis) vom „Center for Disease Control\" (CDC) bringen....",
-    "director": "",
-    "actors": [],
-    "rating": "N/A",
-    "thumb": "placeholder.png",
+    "director": "Brian Trenchard-Smith",
+    "actors": [
+      "Lindsay Wagner",
+      "Michael Ironside",
+      "Martin Sheen"     
+    ],
+    "rating": "4.3",
+    "thumb": "https://image.tmdb.org/t/p/original/1qzcqkN0uJQ1MoeVpnwL34PVfQ8.jpg",
     "genres_list": [
-      "Sonstige"
+      "Thriller",
+      "Drama",
+      "Action"
     ],
     "channel": "ARD",
     "timestamp": 1786233009,
@@ -11010,12 +11049,17 @@
     "video_url": "https://rodlzdf-a.akamaihd.net/dach/3sat/20/07/200721_edgar_wallace_das_geheimnis_der_gelben_narzissen_spielfilm/2/200721_edgar_wallace_das_geheimnis_der_gelben_narzissen_spielfilm_2328k_p35v13.mp4",
     "plot": "Immer häufiger werden junge Frauen aus der Londoner Rauschgiftszene ermordet aufgefunden. Neben den Leichen liegt stets eine gelbe Narzisse. Scotland Yard nimmt die Ermittlungen auf.",
     "mediathek_desc": "Immer häufiger werden junge Frauen aus der Londoner Rauschgiftszene ermordet aufgefunden. Neben den Leichen liegt stets eine gelbe Narzisse. Scotland Yard nimmt die Ermittlungen auf.",
-    "director": "",
-    "actors": [],
-    "rating": "N/A",
-    "thumb": "placeholder.png",
+    "director": "Ákos Ráthonyi",
+    "actors": [
+      "Joachim Fuchsberger",
+      "Sabina Sesselmann",
+      "Klaus Kinski"
+],
+    "rating": "5.8",
+    "thumb": "https://image.tmdb.org/t/p/original/7zpHuQo93ijMx5EiYSCKr22YsRd.jpg",
     "genres_list": [
-      "Sonstige"
+      "Mystery",
+      "Krimi"
     ],
     "channel": "3Sat",
     "timestamp": 1595355300,
@@ -11716,7 +11760,7 @@
     "rating": "N/A",
     "thumb": "placeholder.png",
     "genres_list": [
-      "Sonstige"
+      "Komödie"
     ],
     "channel": "3Sat",
     "timestamp": 1788102840,
@@ -17204,16 +17248,23 @@
   {
     "title": "Im Visier des Killers",
     "search": "Im Visier des Killers",
-    "year": "2017",
+    "year": "2018",
     "video_url": "https://nrodlzdf-a.akamaihd.net/dach/3sat/23/09/230930_im_visier_des_killers_spielfilm/1/230930_im_visier_des_killers_spielfilm_3360k_p36v17.mp4",
     "plot": "Sean und sein Freund Derek begehen Gelegenheitseinbrüche. Als Sean eines Nachts in die Villa von Cale Erendreich einsteigt, entdeckt er in einem geheimen Zimmer eine gefesselte Frau.",
     "mediathek_desc": "Sean und sein Freund Derek begehen Gelegenheitseinbrüche. Als Sean eines Nachts in die Villa von Cale Erendreich einsteigt, entdeckt er in einem geheimen Zimmer eine gefesselte Frau.",
-    "director": "",
-    "actors": [],
-    "rating": "N/A",
-    "thumb": "placeholder.png",
+    "director": "Dean Devlin",
+    "actors": [
+      "David Tennant",
+      "Robert Sheehan",
+      "Kerry Condon"
+    ],
+    "rating": "7.6",
+    "thumb": "https://image.tmdb.org/t/p/original/xCrRHJTdMG8SSLrBUdI8EsLuAkS.jpg",
     "genres_list": [
-      "Sonstige"
+      "Thriller",
+      "Horror",
+      "Drama",
+      "Krimi"
     ],
     "channel": "3Sat",
     "timestamp": 1581974100,
@@ -17710,12 +17761,17 @@
     "video_url": "https://nrodlzdf-a.akamaihd.net/dach/3sat/21/03/210328_inferno_der_flammen_fernsehfilm/3/210328_inferno_der_flammen_fernsehfilm_3360k_p36v15.mp4",
     "plot": "Dean McConnell und seine Freundin Fiona treffen sich auf einer Besichtigungstour im US-Schatzamt, um ihre Kinder auf ihre geplante Heirat einzustimmen. Doch dabei kommt es zur Katastrophe.",
     "mediathek_desc": "Dean McConnell und seine Freundin Fiona treffen sich auf einer Besichtigungstour im US-Schatzamt, um ihre Kinder auf ihre geplante Heirat einzustimmen. Doch dabei kommt es zur Katastrophe.",
-    "director": "",
-    "actors": [],
-    "rating": "N/A",
-    "thumb": "placeholder.png",
+    "director": "David Warry-Smith",
+    "actors": [
+      "Eric Roberts",
+      "Jürgen Prochnow",
+      "Venus Terzo"
+    ],
+    "rating": "4.4",
+    "thumb": "https://image.tmdb.org/t/p/original/tQTgmB8LphOV7hgY5GzkTM6j5Uw.jpg",
     "genres_list": [
-      "Sonstige"
+      "Action",
+      "Thriller"
     ],
     "channel": "3Sat",
     "timestamp": 1616967840,
@@ -26478,12 +26534,18 @@
     "video_url": "https://nrodlzdf-a.akamaihd.net/dach/3sat/24/12/241213_seraphim_falls_gnadenlose_jagd_spielfilm/1/241213_seraphim_falls_gnadenlose_jagd_spielfilm_3360k_p36v17.mp4",
     "plot": "Ein ehemaliger Captain der Nordstaaten wird von fünf Männern gnadenlos durch die amerikanische Wildnis gehetzt. Angetrieben wird der Anführer seiner Verfolger von blinder Rache.",
     "mediathek_desc": "Ein ehemaliger Captain der Nordstaaten wird von fünf Männern gnadenlos durch die amerikanische Wildnis gehetzt. Angetrieben wird der Anführer seiner Verfolger von blinder Rache.",
-    "director": "",
-    "actors": [],
-    "rating": "N/A",
-    "thumb": "placeholder.png",
+    "director": "David Von Ancken",
+    "actors": [
+      "Liam Neeson",
+      "Pierce Brosnan",
+     "Michael Wincott"
+    ],
+    "rating": "6.4",
+    "thumb": "https://image.tmdb.org/t/p/original/o2tEpG0PSVKsjW5KWLqDNP4jUOF.jpg",
     "genres_list": [
-      "Sonstige"
+      "Westetn",
+      "Action",
+      "Drama"
     ],
     "channel": "3Sat",
     "timestamp": 1734125100,
@@ -28247,16 +28309,21 @@
   {
     "title": "The Convert - Krieg der Māori",
     "search": "The Convert - Krieg der Māori",
-    "year": "2023",
+    "year": "2024",
     "video_url": "https://nrodlzdf-a.akamaihd.net/dach/3sat/26/07/260731_the_convert_krieg_der_maori_spielfilm/1/260731_the_convert_krieg_der_maori_spielfilm_a1a2_3360k_p36v17.mp4",
     "plot": "Als Thomas Munro in den 1830ern die Küste von Neuseeland erreicht, trifft er auf ein von Māori geprägtes Aotearoa. Die Siedlung leidet unter Verfall und blutigen Stammeskonflikten.",
     "mediathek_desc": "Als Thomas Munro in den 1830ern die Küste von Neuseeland erreicht, trifft er auf ein von Māori geprägtes Aotearoa. Die Siedlung leidet unter Verfall und blutigen Stammeskonflikten.",
-    "director": "",
-    "actors": [],
-    "rating": "N/A",
-    "thumb": "placeholder.png",
+    "director": "Lee Tamahori",
+    "actors": [
+      "Guy Pearce",
+      "Tioreore Ngatai-Melbourne",
+      "Antonio Te Maioha"
+    ],
+    "rating": "6.2",
+    "thumb": "https://image.tmdb.org/t/p/original/i4U9iMOaaGoay4DDRqmk67khoy5.jpg",
     "genres_list": [
-      "Sonstige"
+      "Drama",
+      "Action"
     ],
     "channel": "3Sat",
     "timestamp": 1785529500,
@@ -28728,12 +28795,17 @@
     "video_url": "https://rodlzdf-a.akamaihd.net/dach/3sat/22/10/221023_the_resident_ich_sehe_dich_spielfilm/1/221023_the_resident_ich_sehe_dich_spielfilm_2360k_p35v15.mp4",
     "plot": "Von ihrem Freund betrogen, macht sich die junge Notfallärztin Juliet Devereau auf die Suche nach einer neuen Bleibe und findet eine Traumwohnung.",
     "mediathek_desc": "Von ihrem Freund betrogen, macht sich die junge Notfallärztin Juliet Devereau auf die Suche nach einer neuen Bleibe und findet eine Traumwohnung.",
-    "director": "",
-    "actors": [],
-    "rating": "N/A",
-    "thumb": "placeholder.png",
+    "director": "Antti J. Jokinen",
+    "actors": [
+      "Hilary Swank",
+      "Jeffrey Dean Morgan",
+      "Lee Pace"      
+    ],
+    "rating": "5.7",
+    "thumb": "https://image.tmdb.org/t/p/original/xROEwIjvWbRvK5k8B927oZYBjnH.jpg",
     "genres_list": [
-      "Sonstige"
+      "Thriller",
+      "Mysterien"
     ],
     "channel": "3Sat",
     "timestamp": 1469909400,
