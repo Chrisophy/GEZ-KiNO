@@ -332,7 +332,7 @@ def find_tmdb_match(movie):
     year = movie['year_num']
     description = movie.get('mediathek_desc', '')
 
-    # Fix für "22 Kugeln": Direktes Laden und strukturieren wie ein reguläres Picker-Ergebnis
+    # Fix für "22 Kugeln": Direktes Laden über TMDB-ID (40783 für L'immortel)
     if '22 kugeln' in base_query.lower():
         details = tmdb_details('movie', 40783)
         if details and details.get('id'):
@@ -418,10 +418,14 @@ def apply_match(movie, media_type, match):
 
     genre_ids = [g['id'] for g in details.get('genres', []) if 'id' in g] or cand.get('genre_ids', [])
     
+    # EXAKTER ANIMATIONS-SCHUTZ AUS DEM ALTEN JAVASCRIPT:
     if 16 in genre_ids:
-        full_text = (movie['title'] + ' ' + movie['mediathek_desc'] + ' ' + (overview or '')).lower()
-        animation_keywords = ['animation', 'animiert', 'zeichentrick', 'anime', 'cartoon', 'computeranimiert']
-        if not any(kw in full_text for kw in animation_keywords):
+        lower_title = movie['title'].lower()
+        lower_overview = (overview or "").lower()
+        real_film_keywords = ['tatort', 'polizeiruf', 'in aller freundschaft', 'rosenheim-cops', 'krimi', 'fernsehfilm', 'kommissar', 'drama', 'spielfilm']
+        is_strictly_realfilm = any(keyword in lower_title or keyword in lower_overview or keyword in movie['mediathek_desc'].lower() for keyword in real_film_keywords)
+        
+        if is_strictly_realfilm:
             genre_ids = [gid for gid in genre_ids if gid != 16]
 
     genres = []
