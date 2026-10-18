@@ -20,19 +20,15 @@ jobs:
       - name: Abhängigkeiten installieren
         run: pip install requests
 
-      - name: Schritt 1 - Rohe ZDF/Mediathek-Daten holen (zdfm.json)
-        run: python zdfscraper.py
-
-      - name: Schritt 2 - TMDB abgleichen & movies.json erzeugen
+      - name: Schritt 1 - Mediathek abfragen, TMDB abgleichen & movies.json erzeugen
         env:
           TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
         run: python gezscraper.py
 
-      - name: Schritt 3 - Dateien explizit hinzufügen und committen
+      - name: Schritt 2 - movies.json explizit hinzufügen und committen
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add zdfm.json movies.json
-          git commit -m "🤖 Automatische Aktualisierung der Filme (zdfm.json & movies.json)" || echo "Keine Änderungen zum Committen"
+          git add movies.json
+          git commit -m " Automatische Aktualisierung der movies.json" || echo "Keine Änderungen zum Committen"
           git push
-          
