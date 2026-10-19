@@ -356,7 +356,7 @@ def main():
                         }
 
                 temp_results.append(movie_entry)
-        except Exception as e:
+        exceptException as e:
             print(f"Fehler bei Query {q}: {e}")
 
     unique_temp = {}
@@ -367,10 +367,11 @@ def main():
     temp_results = list(unique_temp.values())
 
     temp_results.sort(key=lambda x: x['timestamp'], reverse=True)
-    newest_urls = {m['video_url'] for m in temp_results[:100]}
+    
+    temp_results = temp_results[:100]
+
     for m in temp_results:
-        if m['video_url'] in newest_urls:
-            m['isNew'] = True
+        m['isNew'] = True
 
     all_movies = sorted(temp_results, key=lambda x: x['title'])
     print(f"{len(all_movies)} Filme gefunden. Starte TMDB-Hydrierung (parallel mit Threads)...")
