@@ -168,7 +168,7 @@
       "Philippe Brenninkmeyer"
     ],
     "rating": "4.3",
-    "thumb": "placeholder.png",
+    "thumb": "https://image.tmdb.org/t/p/original/mWUy84EROAG5UZr43QnQTe96vfJ.jpg",
     "genres_list": [
       "TV-Film",
       "Drama"
@@ -27643,16 +27643,21 @@
   {
     "title": "Sayonara Loreley - Wiedersehen in Rüdesheim",
     "search": "Sayonara Loreley - Wiedersehen in Rüdesheim",
-    "year": "None",
+    "year": "2022",
     "video_url": "https://ctv-videos.daserste.de/de/2023/05/24/7c6a71c9-2d6d-40fd-8131-c5d88ce7fe8d/JOB_549595__sendeton_1280x720-50p-3200kbit.mp4",
     "plot": "Spielfilm Deutschland 2022 Marie (Katharina Marie Schubert) freut sich auf die Reise mit ihrem Hunsrücker Frauenchor nach Japan. Ihren Traum lässt sie sich auch nicht von ihrer Mutter (Victoria Trauttmansdorff) ausreden, die ausgerechnet jetzt zur Kur nach Rüdesheim fährt und ihre Tochter zur Vertretung in ihrem Kleinstadtladen verpflichten will....",
     "mediathek_desc": "Spielfilm Deutschland 2022 Marie (Katharina Marie Schubert) freut sich auf die Reise mit ihrem Hunsrücker Frauenchor nach Japan. Ihren Traum lässt sie sich auch nicht von ihrer Mutter (Victoria Trauttmansdorff) ausreden, die ausgerechnet jetzt zur Kur nach Rüdesheim fährt und ihre Tochter zur Vertretung in ihrem Kleinstadtladen verpflichten will....",
-    "director": "",
-    "actors": [],
-    "rating": "N/A",
-    "thumb": "placeholder.png",
+    "director": "Wolfgang Murnberger",
+    "actors": [
+      "Katharina M. Schubert",
+      "Victoria Trauttmansdorff",
+      "Janina Elkin"
+    ],
+    "rating": "5.5",
+    "thumb": "https://image.tmdb.org/t/p/original/jR74CcH2Dllg1PbOFBqA4n841gN.jpg",
     "genres_list": [
-      "Sonstige"
+      "Komödie",
+      "Drama"
     ],
     "channel": "ARD",
     "timestamp": 1785666600,
@@ -28434,7 +28439,7 @@
     "rating": "5.0",
     "thumb": "https://image.tmdb.org/t/p/w342/mvMoeKbCNRWyNy9snh5Jvh0HHmY.jpg",
     "genres_list": [
-      "Sonstige"
+      "TV-Film"
     ],
     "channel": "ARD",
     "timestamp": 1785014400,
@@ -30248,16 +30253,22 @@
   {
     "title": "The Dry - Lügen der Vergangenheit",
     "search": "The Dry - Lügen der Vergangenheit",
-    "year": "2020",
+    "year": "2021",
     "video_url": "https://nrodlzdf-a.akamaihd.net/dach/3sat/25/08/250801_the_dry_luegen_der_vergangenheit_spielfilm/1/250801_the_dry_luegen_der_vergangenheit_spielfilm_3360k_p36v17.mp4",
     "plot": "Detective Aaron Falk kehrt nach 20 Jahren in seine Heimat zurück. Dürre plagt das Land. Aarons Freund Luke soll sich und seine Familie getötet haben. Lukes Tod belastet Aaron schwer.",
     "mediathek_desc": "Detective Aaron Falk kehrt nach 20 Jahren in seine Heimat zurück. Dürre plagt das Land. Aarons Freund Luke soll sich und seine Familie getötet haben. Lukes Tod belastet Aaron schwer.",
     "director": "Rory McLeod",
-    "actors": [],
-    "rating": "N/A",
+    "actors": [
+      "Eric Bana",
+      "Genevieve O'Reilly",
+      "Keir O'Donnell"
+    ],
+    "rating": "6.8",
     "thumb": "https://image.tmdb.org/t/p/w342/1nottCOTIFTVALHIYkzPGxvcPyl.jpg",
     "genres_list": [
-      "Sonstige"
+      "Krimi",
+      "Mystery",
+      "Thriller"
     ],
     "channel": "3Sat",
     "timestamp": 1689624900,
@@ -31036,18 +31047,23 @@
     "url_website": "https://www.3sat.de/film/spielfilm/tod-auf-dem-nil-102.html"
   },
   {
-    "title": "Tod im Strandhaus",
+    "title": "The Rental - Tod im Strandhaus",
     "search": "Tod im Strandhaus",
-    "year": "None",
+    "year": "2020",
     "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/21/05/210510_2215_sendung_spf/1/210510_2215_sendung_spf_a1a2_3360k_p36v17.mp4",
     "plot": "Zwei Pärchen mieten über das Internet für ein Wochenende ein Traumhaus an der Pazifikküste. Ein Seitensprung wird dem Quartett zum Verhängnis. Denn ein Fremder hat alles gefilmt.",
     "mediathek_desc": "Zwei Pärchen mieten über das Internet für ein Wochenende ein Traumhaus an der Pazifikküste. Ein Seitensprung wird dem Quartett zum Verhängnis. Denn ein Fremder hat alles gefilmt.",
-    "director": "",
-    "actors": [],
-    "rating": "N/A",
-    "thumb": "placeholder.png",
+    "director": "Dave Franco",
+    "actors": [
+      "Dan Stevens",
+      "Alison Brie",
+      "Sheila Vand"
+    ],
+    "rating": "5.5",
+    "thumb": "https://image.tmdb.org/t/p/original/3Mvuv9x2pAC0FnI4JI3vgOlepMg.jpg",
     "genres_list": [
-      "Sonstige"
+      "Horror",
+      "Thriller"
     ],
     "channel": "ZDF",
     "timestamp": 1790582270,
@@ -31369,30 +31385,6 @@
     "url_website": "https://www.arte.tv/de/videos/075743-000-A/transit/"
   },
   {
-    "title": "Trautes Heim",
-    "search": "Trautes Heim",
-    "year": "None",
-    "video_url": "https://arteptweb-a.akamaihd.net/am/ptweb/131000/131500/131537-000-A_EQ_0_VOF-STA_11222886_MP4-1500_AMM-PTWEB-40521046236653_24bFLNftwFn.mp4",
-    "plot": "Ein Mann lädt eine Prostituierte zu sich nachhause ein.",
-    "mediathek_desc": "Ein Brüsseler Seniorenheim wird mit militärischer Strenge geführt, die Bewohner werden behandelt wie unartige Kinder, was schließlich zu einer Revolte führt. Im Mittelpunkt steht Jules, ein temperamentvoller Siebzigjähriger, der sich nicht anpassen möchte. Sein Trotz entfacht den rebellischen Geist von mehreren Älteren, deren Unfug zu einem wilden Aufstand eskaliert.",
-    "director": "Hannes Lieschke",
-    "actors": [
-      "Thomas Arnold",
-      "Ines Nieri"
-    ],
-    "rating": "N/A",
-    "thumb": "placeholder.png",
-    "genres_list": [
-      "Sonstige"
-    ],
-    "channel": "ARTE.DE",
-    "timestamp": 1780065284,
-    "isNew": false,
-    "tmdb_id": 467829,
-    "tmdb_type": "movie",
-    "url_website": "https://www.arte.tv/de/videos/131537-000-A/trautes-heim/"
-  },
-  {
     "title": "Trautmann",
     "search": "Trautmann",
     "year": "2018",
@@ -31538,7 +31530,8 @@
     "rating": "6.5",
     "thumb": "https://image.tmdb.org/t/p/w342/aCCFP1t7GQ2xyzidHsjZT8hmvUx.jpg",
     "genres_list": [
-      "Sonstige"
+      "Drama",
+      "Romanze"
     ],
     "channel": "ARD",
     "timestamp": 1786800600,
@@ -31684,16 +31677,17 @@
     "video_url": "https://pd-videos.daserste.de/dach/2022/12/14/20343b8c-cf62-4550-a940-afd00a837708/JOB_511405__sendeton_1280x720-50p-3200kbit.mp4",
     "plot": "Das Weihnachtsfest steht vor der Tür und mit ihm die Zeit der guten Taten. So ist der „Engel von Kaltenthal“ zurück und beglückt die Bedürftigen mit anonymem Geldsegen. Für die wohlhabende Witwe Sonja Berger (Bibiana Zeller) bringen die Tage Aufregung pur. In der Zeitung entdeckt sie ein Bild, auf dem sie ihre verschwundene Jugendliebe Thomas (Peter Franke) vermutet: Offenbar arbeitet er als Stadtführer in Fatima. Um das herauszufinden, bittet sie Schwester Hanna (Janina Hartwig), sie in den portugiesischen Wallfahrtsort zu begleiten. Obwohl die Schwester mitten in den Vorbereitungen für die Feier zugunsten der Kriegswaisen steckt, stimmt sie schließlich der ungewöhnlichen Pilgerreise zu – vor allem dank der Überredungskünste von Bürgermeister Wöller (Fritz Wepper), der überraschend seinen Begleitschutz anbietet.",
     "mediathek_desc": "Spielfilm Deutschland 2014 \r\n\r\nSchwester Hanna begleitet die wohlhabende Witwe Sonja Berger nach Fatima. Deren Jugendliebe soll in dem Wallfahrtsort als Fremdenführer arbeiten. Bürgermeister Wöller geht mit auf die Pilgerreise – natürlich nicht ohne Hintergedanken. \r\n\r\nMit Janina Hartwig, Fritz Wepper, Gaby Dohm, Bibiana Zeller, Peter Franke u. a. | Buch: Jürgen Werner | Regie: Dennis Satin",
-    "director": "",
+    "director": "Dennis Satin",
     "actors": [
       "Fritz Wepper",
       "Janina Hartwig",
       "Gaby Dohm"
     ],
-    "rating": "N/A",
+    "rating": "7.8",
     "thumb": "https://image.tmdb.org/t/p/w342/f35EVWcBFSkSLW3gFtAPjviqh8x.jpg",
     "genres_list": [
-      "Sonstige"
+      "Familie",
+      "Komödie"
     ],
     "channel": "ARD",
     "timestamp": 1671925200,
@@ -31768,7 +31762,7 @@
     "rating": "7.7",
     "thumb": "https://image.tmdb.org/t/p/w342/4LsUdPF7mIJHTZVZRZMmMin21pO.jpg",
     "genres_list": [
-      "Sonstige"
+      "Drama"
     ],
     "channel": "ZDF",
     "timestamp": 1783514285,
@@ -32918,7 +32912,7 @@
     "rating": "3.3",
     "thumb": "https://image.tmdb.org/t/p/w342/r466aAXV71ThFEwJky1EBfWA9uL.jpg",
     "genres_list": [
-      "Sonstige"
+      "Krimi"
     ],
     "channel": "ZDF",
     "timestamp": 1785818276,
@@ -33805,7 +33799,8 @@
     "rating": "4.4",
     "thumb": "https://image.tmdb.org/t/p/w342/pSzCWKmniUob56z52yGRYqe3Hek.jpg",
     "genres_list": [
-      "Sonstige"
+      "Drama",
+      "Romanze"
     ],
     "channel": "ARD",
     "timestamp": 1790685000,
@@ -34395,16 +34390,21 @@
   {
     "title": "Winterkartoffelknödel. Ein Eberhoferkrimi",
     "search": "Winterkartoffelknödel. Ein Eberhoferkrimi",
-    "year": "None",
+    "year": "2014",
     "video_url": "https://ctv-videos.daserste.de/de/2026/04/11/DEGMT270456/DEGMT270456_3710716_sendeton_1280x720-50p-3200kbit.mp4",
     "plot": "Spielfilm Deutschland 2014\r\n\r\nProvinzpolizist Franz Eberhofer bekommt es mit einer ganzen Serie bizarrer Todesfälle rund um die Familie Neuhofer zu tun. Während die einen an eine Verkettung unglücklicher Umstände glauben, ist Franz überzeugt, dass da etwas faul ist.\r\n\r\nMit Sebastian Bezzel, Simon Schwarz, Lisa Maria Potthoff, Enzi Fuchs, Eisi Gulp u.a. | Buch: Sascha Bigler, Ed Herzog und Kerstin \n.....",
     "mediathek_desc": "Spielfilm Deutschland 2014\r\n\r\nProvinzpolizist Franz Eberhofer bekommt es mit einer ganzen Serie bizarrer Todesfälle rund um die Familie Neuhofer zu tun. Während die einen an eine Verkettung unglücklicher Umstände glauben, ist Franz überzeugt, dass da etwas faul ist.\r\n\r\nMit Sebastian Bezzel, Simon Schwarz, Lisa Maria Potthoff, Enzi Fuchs, Eisi Gulp u.a. | Buch: Sascha Bigler, Ed Herzog und Kerstin \n.....",
-    "director": "",
-    "actors": [],
-    "rating": "N/A",
-    "thumb": "placeholder.png",
+    "director": "Ed Herzog",
+    "actors": [
+      "Sebastian Bezzel",
+      "Simon Schwarz",
+      "Lisa Maria Potthoff"
+    ],
+    "rating": "6.9",
+    "thumb": "https://image.tmdb.org/t/p/original/aaHdUviVHsyEk5yGiN796JfKRXL.jpg",
     "genres_list": [
-      "Sonstige"
+      "Komödie",
+      "Krimi"
     ],
     "channel": "ARD",
     "timestamp": 1775706023,
@@ -35109,7 +35109,7 @@
     "rating": "5.5",
     "thumb": "https://image.tmdb.org/t/p/w342/kGJOBcdSrmnaiksecFxHEKaoU7K.jpg",
     "genres_list": [
-      "Sonstige"
+      "Komödie"
     ],
     "channel": "ZDF",
     "timestamp": 1792293992,
@@ -35197,16 +35197,20 @@
   {
     "title": "Zurück zur Familie",
     "search": "Zurück zur Familie",
-    "year": "None",
+    "year": "2025",
     "video_url": "https://arteptweb-a.akamaihd.net/am/ptweb/134000/134100/134127-000-A_EQ_0_VO_11468217_MP4-1500_AMM-PTWEB-20260716132311_1MfY7xuApM4.mp4",
     "plot": "Simona kehrt ans Sterbebett ihrer Großmutter nach Hause zurück, wo sie ihre Eltern vorfindet, die von Alkohol und Reue zerfressen sind. Jeder Versuch, wieder eine Verbindung zu ihnen aufzubauen, scheitert, bringt dunkle Geheimnisse ans Licht und entfacht alte Konflikte neu. Vor dem Hintergrund dieser erdrückenden Atmosphäre zeigt „Zurück zur Familie“, dass Liebe nicht immer ausreicht, um unüberbrückbare familiäre Gräben zu überwinden.",
     "mediathek_desc": "Simona kehrt ans Sterbebett ihrer Großmutter nach Hause zurück, wo sie ihre Eltern vorfindet, die von Alkohol und Reue zerfressen sind. Jeder Versuch, wieder eine Verbindung zu ihnen aufzubauen, scheitert, bringt dunkle Geheimnisse ans Licht und entfacht alte Konflikte neu. Vor dem Hintergrund dieser erdrückenden Atmosphäre zeigt „Zurück zur Familie“, dass Liebe nicht immer ausreicht, um unüberbrückbare familiäre Gräben zu überwinden.",
-    "director": "",
-    "actors": [],
-    "rating": "N/A",
-    "thumb": "placeholder.png",
+    "director": "Šarūnas Bartas",
+    "actors": [
+      "Neringa Puidokaitė",
+      "Rima Paškauskaitė",
+      "Rolandas Junevičius"
+    ],
+    "rating": "7.0",
+    "thumb": "https://image.tmdb.org/t/p/original/ayVP1Asv4cnk0QRdd4AQsMCvS7b.jpg",
     "genres_list": [
-      "Sonstige"
+      "Drama"
     ],
     "channel": "ARTE.DE",
     "timestamp": 1787915804,
@@ -35306,7 +35310,8 @@
     "rating": "6.8",
     "thumb": "https://image.tmdb.org/t/p/w342/ndohL3Wsty43opICe4rNiNqq3tc.jpg",
     "genres_list": [
-      "Sonstige"
+      "Komödie",
+      "Romanze"
     ],
     "channel": "ARD",
     "timestamp": 1785489600,
