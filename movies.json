@@ -27956,16 +27956,20 @@
   {
     "title": "Schnee von gestern",
     "search": "Schnee von gestern",
-    "year": "2014",
+    "year": "2024",
     "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/26/03/260304_2015_sendung_fis/1/260304_2015_sendung_fis_a1a2_3360k_p36v17.mp4",
-    "plot": "Die Geschwister Michla und Feiv'ke sind die einzigen Überlebenden der jüdischen Familie Schwarz aus Wilna. Nach dem Krieg verpassen sie sich am Bahnhof im polnischen Lodsch (Łódź). Jeder denkt, dass er der einzige Überlebende der Familie ist. Beide ziehen einen Strich unter ihre bisherigen Biographien, entscheiden sich für das Leben und gründen eigene Familien. Feiv‘ke unter dem Namen Peter Schwarz in Deutschland ausgerechnet in dem Ort in dem er im Arbeitslager war und seine Schwester Michla in Israel.\r Ihren Kindern und Enkeln aber lässt das verpatzte Treffen keine Ruhe.\r Möglicherweise ist es wahr, dass Dinge sich an nur einem Tag entscheiden können, dass eine verlorengegangene Botschaft im Jahre 1945 zwischen einem Bruder und seiner Schwester das Leben vieler beeinflussen kann, über Jahrzehnte hinweg.",
+    "plot": "In einem Talsee in Tirol wird ein Toter entdeckt, der als Umweltlandesrat identifiziert wird. Bald ist klar, dass er nicht in dem See ertrunken ist, womit der Bergort ins Zentrum der Ermittlungen rückt, der das nächste Einsatzgebiet des Ermordeten gewesen wäre. Als der junge Chefermittler sich dort einquartiert, trifft er auf sich seltsam gebärdende und teils offen feindselige Einwohner...",
     "mediathek_desc": "Chefinspektor Martin Steiner und Chefinspektorin Melanie Grandits haben einen Fall, bei dem zunächst nicht sicher ist, ob es sich um einen Mord handelt oder nicht.",
-    "director": "Yael Reuveny",
-    "actors": [],
-    "rating": "8.5",
+    "director": "David Wagner",
+    "actors": [
+      "Simon Morzé",
+      "Marlene Hauser",
+      "Fanny Krausz"
+    ],
+    "rating": "6.0",
     "thumb": "https://image.tmdb.org/t/p/w342/uPen2zKD2GmoWV7n9O0EFgt7vpC.jpg",
     "genres_list": [
-      "Doku"
+      "Krimi"
     ],
     "channel": "ZDF",
     "timestamp": 1783048938,
@@ -30284,16 +30288,16 @@
     "video_url": "https://nrodlzdf-a.akamaihd.net/dach/3sat/25/08/250820_the_florida_project_spielfilm/1/250820_the_florida_project_spielfilm_3360k_p36v17.mp4",
     "plot": "Orlando, Florida: Moonee ist erst sechs Jahre alt, aber hat bereits ein höllisches Temperament. Sie lebt mit ihrer jungen Mutter Halley im abgewirtschafteten \"Magic Castle Motel\". Damit wächst sie direkt vor den Toren von Disneyworld auf. Ungeachtet ihrer schwierigen Wohnsituation erklären Moonee und ihre gleichaltrigen Freunde die Welt um sich herum zu einem großen Abenteuerspielplatz.",
     "mediathek_desc": "Orlando, Florida: Moonee ist erst sechs Jahre alt, aber hat bereits ein höllisches Temperament. Sie lebt mit ihrer jungen Mutter Halley im abgewirtschafteten \"Magic Castle Motel\". Damit wächst sie direkt vor den Toren von Disneyworld auf. Ungeachtet ihrer schwierigen Wohnsituation erklären Moonee und ihre gleichaltrigen Freunde die Welt um sich herum zu einem großen Abenteuerspielplatz.",
-    "director": "Alex Coco",
+    "director": "Sean Baker",
     "actors": [
-      "Sean Baker",
-      "Alexis Zabé",
-      "Kevin Chinoy"
+      "Brooklynn Prince",
+      "Bria Vinaite",
+      "Willem Dafoe"
     ],
-    "rating": "8.3",
-    "thumb": "https://image.tmdb.org/t/p/w342/AagMvQ3KSRjSOlrHg604z89wH5D.jpg",
+    "rating": "7.4",
+    "thumb": "https://image.tmdb.org/t/p/original/reT3cdR24YCaM55K57LNxRM9pKr.jpg",
     "genres_list": [
-      "Doku"
+      "Drama"
     ],
     "channel": "3Sat",
     "timestamp": 1755721620,
