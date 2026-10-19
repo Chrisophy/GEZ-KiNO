@@ -93,7 +93,8 @@ def choose_best_result(results, movie, media_type):
     if not results:
         return None
     source_title = movie['search']
-    source_year = movie['year'] if movie['year'] not in ['None', 'LIVE'] else ''
+    source_year_str = movie['year'] if movie['year'] not in ['None', 'LIVE'] else ''
+    source_year = int(source_year_str) if source_year_str.isdigit() else None
     m_desc = movie['mediathek_desc'].lower()
 
     scored = []
@@ -103,10 +104,15 @@ def choose_best_result(results, movie, media_type):
         score = max(score_title(source_title, cand_title), score_title(source_title, cand_orig))
 
         date = cand.get('first_air_date' if media_type == 'tv' else 'release_date', '')
-        cand_year = date[:4] if date else ''
+        cand_year_str = date[:4] if date else ''
+        cand_year = int(cand_year_str) if cand_year_str.isdigit() else None
+
         if source_year and cand_year:
-            if source_year == cand_year:
+            year_diff = abs(source_year - cand_year)
+            if year_diff == 0:
                 score += 30
+            elif year_diff == 1:
+                score += 15 
             else:
                 score -= 35
 
@@ -149,8 +155,6 @@ def hydrate_movie(movie):
         for query_str in search_queries:
             q_encoded = urllib.parse.quote(query_str)
             movie_url = f"https://api.themoviedb.org/3/search/movie?api_key={TMDB_API_KEY}&query={q_encoded}&language=de-DE&include_adult=false"
-            if movie['year'] not in ['None', 'LIVE']:
-                movie_url += f"&year={movie['year']}"
 
             res = requests.get(movie_url, timeout=10)
             if res.status_code == 429:
@@ -162,20 +166,10 @@ def hydrate_movie(movie):
             if tmdb:
                 break
 
-            if not tmdb and movie['year'] not in ['None', 'LIVE']:
-                fallback_url = f"https://api.themoviedb.org/3/search/movie?api_key={TMDB_API_KEY}&query={q_encoded}&language=de-DE&include_adult=false"
-                f_res = requests.get(fallback_url, timeout=10)
-                if f_res.status_code == 200:
-                    tmdb = choose_best_result(f_res.json().get('results', []), movie, 'movie')
-                    if tmdb:
-                        break
-
         if not tmdb:
             for query_str in search_queries:
                 q_encoded = urllib.parse.quote(query_str)
                 tv_url = f"https://api.themoviedb.org/3/search/tv?api_key={TMDB_API_KEY}&query={q_encoded}&language=de-DE&include_adult=false"
-                if movie['year'] not in ['None', 'LIVE']:
-                    tv_url += f"&first_air_date_year={movie['year']}"
                 tv_res = requests.get(tv_url, timeout=10)
                 if tv_res.status_code == 200:
                     tmdb = choose_best_result(tv_res.json().get('results', []), movie, 'tv')
