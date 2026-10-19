@@ -21905,12 +21905,16 @@
     "video_url": "https://nrodlzdf-a.akamaihd.net/none/3sat/25/08/250802_ma_folie_ad_spielfilm/1/250802_ma_folie_ad_spielfilm_a1a2_3360k_p36v17.mp4",
     "plot": "Hanna liebt Yann und die Lettres filmées, die er ihr schickt. Yann liebt Hanna, aber er vertraut ihr nicht. Er verlässt sie, doch lässt er sie nicht mehr allein.",
     "mediathek_desc": "Hanna liebt Yann und die Lettres filmées, die er ihr schickt. Yann liebt Hanna, aber er vertraut ihr nicht. Er verlässt sie, doch lässt er sie nicht mehr allein.",
-    "director": "",
-    "actors": [],
-    "rating": "N/A",
-    "thumb": "placeholder.png",
+    "director": "Andrina Mračnikar",
+    "actors": [
+	  "Alice Dwyer",
+	  "Sabin Tambrea",
+	  "Gerti Drassl"	
+	],
+    "rating": "4.0
+    "thumb": "https://image.tmdb.org/t/p/original/5Z4P6eBQyi18ss4se1Fg9V5wOpE.jpg",
     "genres_list": [
-      "Sonstige"
+      "Drama"
     ],
     "channel": "3Sat",
     "timestamp": 1754171580,
@@ -23946,16 +23950,21 @@
   {
     "title": "Mo Hayder: Ritualmord",
     "search": "Mo Hayder: Ritualmord",
-    "year": "None",
+    "year": "2022
     "video_url": "https://nrodlzdf-a.akamaihd.net/dach/zdf/23/06/230619_2215_sendung_spf/2/230619_2215_sendung_spf_a3a4_3360k_p36v17.mp4",
     "plot": "Der Albtraum beginnt, als Polizeitaucherin Kiki im trüben Wasser eines Brüsseler Kanals eine einzelne menschliche Hand findet. Es existiert keine Leiche, und es gibt keine Zeugen.",
     "mediathek_desc": "Der Albtraum beginnt, als Polizeitaucherin Kiki im trüben Wasser eines Brüsseler Kanals eine einzelne menschliche Hand findet. Es existiert keine Leiche, und es gibt keine Zeugen.",
-    "director": "",
-    "actors": [],
-    "rating": "N/A",
-    "thumb": "placeholder.png",
+    "director": "Hans Herbots",
+    "actors": [
+	  "Marie Vinck",
+	  "Geert Van Rampelberg",
+	  "Ériq Ebouaney"
+	],
+    "rating": "6.4",
+    "thumb": "https://image.tmdb.org/t/p/original/wsuo7fA9WB941fmoAoHELcnLyRY.jpg",
     "genres_list": [
-      "Sonstige"
+      "Thriller",
+	  "Krimi"
     ],
     "channel": "ZDF",
     "timestamp": 1790412868,
@@ -24145,18 +24154,22 @@
     "url_website": "https://www.3sat.de/film/spielfilm/mord-auf-la-gomera-100.html"
   },
   {
-    "title": "Mord auf höchster Ebene",
+    "title": "Das Protokoll - Mord auf höchster Ebene",
     "search": "Mord auf höchster Ebene",
-    "year": "2016",
+    "year": "2017",
     "video_url": "https://rodlzdf-a.akamaihd.net/dach/3sat/21/06/210606_mord_auf_hoechster_ebene_spielfilm/2/210606_mord_auf_hoechster_ebene_spielfilm_2360k_p35v15.mp4",
-    "plot": "Belgiens Premierminister wird von Terroristen gezwungen, die US-Präsidentin bei ihrem Besuch in Brüssel zu erschießen. Die Terroristen haben die Familie des Premiers in ihre Gewalt gebracht.",
+    "plot": "Der belgische Premierminister ist zusammen mit seiner Assistentin auf dem Weg ins Parlament. Alles erscheint wie ein ganz normaler Tag, bis ihr Wagen plötzlich gestoppt und beide entführt werden. Die Terroristen verlangen vom Premierminister, die US-Präsidentin beim anstehenden Staatsbesuch zu erschießen. Als Druckmittel haben sie seine Frau und die beiden Kinder entführt. Um seine Familie zu retten, muss er den perfiden Befehl der Terroristen ausführen. Die Uhr tickt während der explosive Höhepunkt immer näher rückt …",
     "mediathek_desc": "Belgiens Premierminister wird von Terroristen gezwungen, die US-Präsidentin bei ihrem Besuch in Brüssel zu erschießen. Die Terroristen haben die Familie des Premiers in ihre Gewalt gebracht.",
-    "director": "",
-    "actors": [],
-    "rating": "N/A",
-    "thumb": "placeholder.png",
+    "director": "Erik Van Looy",
+    "actors": [
+	  "Koen De Bouw",
+	  "Tine Reymer",
+	  "Charlotte Vandermeersch"
+	],
+    "rating": "5.8",
+    "thumb": "https://image.tmdb.org/t/p/original/yG7m1fNfHYR9wseo1s7tCf6NsWK.jpg",
     "genres_list": [
-      "Sonstige"
+      "Thriller"
     ],
     "channel": "ZDF",
     "timestamp": 1716758100,
@@ -24245,16 +24258,21 @@
   {
     "title": "Mordkommission Istanbul - In deiner Hand",
     "search": "Mordkommission Istanbul - In deiner Hand",
-    "year": "None",
+    "year": "2010",
     "video_url": "https://pd-videos.daserste.de/int/2024/05/21/031de11f-ef36-49a3-b152-50307b08b502/JOB_479007_sendeton_1280x720-50p-3200kbit.mp4",
     "plot": "Spielfilm Deutschland 2010 Ariane (Hande Kazanova), eine Deutsche, reist nach Istanbul, um ihren Sohn zu suchen, der vom eigenen Vater in die Türkei verschleppt wurde. Hilfesuchend wendet sie sich an Mehmet Özakin (Erol Sander), der sie an einen Kollegen verweist....",
     "mediathek_desc": "Spielfilm Deutschland 2010 Ariane (Hande Kazanova), eine Deutsche, reist nach Istanbul, um ihren Sohn zu suchen, der vom eigenen Vater in die Türkei verschleppt wurde. Hilfesuchend wendet sie sich an Mehmet Özakin (Erol Sander), der sie an einen Kollegen verweist....",
-    "director": "",
-    "actors": [],
-    "rating": "N/A",
-    "thumb": "placeholder.png",
+    "director": "Helmut Metzger",
+    "actors": [
+	 "Erol Sander",
+	 "Oscar Ortega Sánchez",
+	 "Idil Üner"
+	],
+    "rating": "5.0",
+    "thumb": "https://m.media-amazon.com/images/M/MV5BMzY5NTA0ZTktZDQ2OS00Y2I5LWFiM2YtYTdmNWM1MTNmMTM1XkEyXkFqcGc@._V1_.jpg",
     "genres_list": [
-      "Sonstige"
+      "TV-Film",
+	  "Krimi"
     ],
     "channel": "ARD",
     "timestamp": 1718062500,
@@ -24675,18 +24693,24 @@
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2FyZC5kZS85MzVkNjA4Zi0yMmUyLTQ5YzgtYjJkZS1lNGI2NmIxNDc5MDhfZ2FuemVTZW5kdW5n"
   },
   {
-    "title": "Mörderischer Zweifel",
+    "title": "Spinning Man - Mörderischer Zweifel",
     "search": "Mörderischer Zweifel",
     "year": "2018",
     "video_url": "https://rodlzdf-a.akamaihd.net/dach/3sat/23/05/230512_moerderischer_zweifel_spielfilm/1/230512_moerderischer_zweifel_spielfilm_2360k_p35v17.mp4",
-    "plot": "Der Philosophie-Professor Evan Birch hat eigentlich ein sorgloses Leben. Doch dann verschwindet eine 17-jährige Cheerleaderin spurlos, und der Professor gerät in Schwierigkeiten.",
+    "plot": "Philosophieprofessor Evan Birch führt ein Bilderbuch-Leben als treusorgender Ehemann und Vater. Eines Tages jedoch verschwindet eine seiner Studentinnen spurlos und wird schließlich tot aufgefunden. Der pragmatische Ermittler Malloy beginnt in Birchs Umfeld zu ermitteln. Birch ist zunächst fassungslos angesichts dieser ungeheuerlichen Vorwürfe und auch seine Frau vermutet lediglich ein Missverständnis. Doch die Beweislage verschärft sich zusehends und Birchs Erinnerungslücken machen ihn nur verdächtiger …",
     "mediathek_desc": "Der Philosophie-Professor Evan Birch hat eigentlich ein sorgloses Leben. Doch dann verschwindet eine 17-jährige Cheerleaderin spurlos, und der Professor gerät in Schwierigkeiten.",
-    "director": "",
-    "actors": [],
-    "rating": "N/A",
-    "thumb": "placeholder.png",
+    "director": "Simon Kaijser",
+    "actors": [
+	  "Guy Pearce",
+	  "Pierce Brosnan",
+	  "Minnie Driver"
+	],
+    "rating": "5.6",
+    "thumb": "https://image.tmdb.org/t/p/original/pvLebrhqk3WMu0qwkPXTkHcl2yF.jpg",
     "genres_list": [
-      "Sonstige"
+      "Thrller",
+	  "Mystery",
+	  "Krimi"
     ],
     "channel": "ZDF",
     "timestamp": 1733697300,
@@ -25102,7 +25126,8 @@
     "rating": "5.7",
     "thumb": "https://image.tmdb.org/t/p/w342/v7USMmkeGLJDEkYw5Rcr7jVZGoa.jpg",
     "genres_list": [
-      "Sonstige"
+      "Komödie",
+	  "Romanze"
     ],
     "channel": "ARD",
     "timestamp": 1778919900,
@@ -26419,12 +26444,18 @@
     "video_url": "https://rodlzdf-a.akamaihd.net/none/3sat/19/08/190803_pfarrer_brauch_schwein_gehabt_spielfilm/1/190803_pfarrer_brauch_schwein_gehabt_spielfilm_2328k_p35v13.mp4",
     "plot": "Schweinezüchter Gützkow wird bei einem Jagdunfall getötet. Davon profitieren nicht nur die Gegner eines geplanten Schweinemastbetriebes. Pfarrer Braun deckt eine gigantische Schweinerei auf.",
     "mediathek_desc": "Schweinezüchter Gützkow wird bei einem Jagdunfall getötet. Davon profitieren nicht nur die Gegner eines geplanten Schweinemastbetriebes. Pfarrer Braun deckt eine gigantische Schweinerei auf.",
-    "director": "",
-    "actors": [],
-    "rating": "N/A",
-    "thumb": "placeholder.png",
+    "director": "Wolfgang F. Henschel",
+    "actors": [
+	  "Ottfried Fischer",
+	  "Hans-Michael Rehberg",
+	  "Hansi Jochmann"
+	],
+    "rating": "6.7",
+    "thumb": "https://m.media-amazon.com/images/M/MV5BMzA3Y2ZiN2UtNmY2ZC00ZDU3LWJmOGQtODg4YWFmZmNhNDQ1XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
     "genres_list": [
-      "Sonstige"
+      "TV-Film",
+	  "Komödie",
+	  "Krimi"
     ],
     "channel": "3Sat",
     "timestamp": 1504366140,
@@ -26857,14 +26888,18 @@
     "video_url": "https://pd-videos.daserste.de/int/2024/12/18/899279b1-9cb5-4266-96dc-b3aea235a2a0/JOB_515922__sendeton_1280x720-50p-3200kbit.mp4",
     "plot": "Fernsehfilm Deutschland 2000\r\n\r\nHauptkommissarin Wanda Rosenbaum (Jutta Hoffmann) ermittelt zum zweiten Mal in Brandenburg: Eine Lehrerin wird während des Unterrichts niedergestochen. Für ihren Tod gibt es 28 Zeugen, doch keiner will den Mörder preisgeben. Bei ihren Ermittlungen stoßen Wanda Rosenbaum und Revierpolizist Krause (Horst Krause) auf eine Mauer des Schweigens. Als sie die letzten Stund\n.....",
     "mediathek_desc": "Fernsehfilm Deutschland 2000\r\n\r\nHauptkommissarin Wanda Rosenbaum (Jutta Hoffmann) ermittelt zum zweiten Mal in Brandenburg: Eine Lehrerin wird während des Unterrichts niedergestochen. Für ihren Tod gibt es 28 Zeugen, doch keiner will den Mörder preisgeben. Bei ihren Ermittlungen stoßen Wanda Rosenbaum und Revierpolizist Krause (Horst Krause) auf eine Mauer des Schweigens. Als sie die letzten Stund\n.....",
-    "director": "",
-    "actors": [],
-    "rating": "N/A",
-    "thumb": "placeholder.png",
+    "director": "Andreas Kleinert",
+    "actors": [
+	  "Jutta Hoffmann",
+	  "Horst Krause",
+	  "Uwe Kockisch"
+	],
+    "rating": "7.0",
+    "thumb": "https://m.media-amazon.com/images/M/MV5BYmIyMGE2ZGEtYThiMy00MTEzLTk4MDUtYzYxMDU5MDFhYmNjXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
     "genres_list": [
-      "Sonstige"
-    ],
-    "channel": "ARD",
+      "TV-Film",
+	  "Drama",
+	  "Thriller"
     "timestamp": 1736975400,
     "isNew": false,
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyNS0wMS0xNV8yMi0xMC1NRVo"
