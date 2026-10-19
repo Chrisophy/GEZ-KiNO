@@ -14,6 +14,6 @@ Der Speed-Vorteil: Weil alles in einer lokalen Datenbank zwischengespeichert wir
 
 ​Kurz gesagt: Es nimmt das, wofür du ohnehin bezahlst, und packt es in eine Oberfläche, die am Fernseher endlich richtig Spaß macht.
 
-Beste Grüße an mr-evil1, an Kangool, an Eragon, an Stonetester ....
+Beste Grüße an mr-evil1, an Kangool, an Kato14 an Eragon, an Stonetester ....
 
 https://chrisophy.github.io/GEZ-KiNO/
