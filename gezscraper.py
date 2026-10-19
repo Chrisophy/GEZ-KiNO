@@ -123,19 +123,17 @@ def choose_best_result(results, movie, media_type):
     return best[0] if best[1] >= 50 else None
 
 def get_search_queries(title):
-    # WICHTIG: Den vollständigen Titel immer als ERTES durchsuchen!
     queries = [title]
     for sep in [' - ', ' – ', ' — ', ': ', ' / ']:
         if sep in title:
             base_part = title.split(sep)[0].strip()
             if base_part and base_part not in queries:
-                queries.append(base_part) # Als Fallback AM ENDE anhängen, nicht vorne!
+                queries.append(base_part)
     return queries
 
 def hydrate_movie(movie):
     global processed_count
     
-    # Wenn der Film bereits vollständig hydriert ist, überspringen wir TMDB
     if movie.get('tmdb_id') and movie.get('thumb') and movie.get('thumb') != 'placeholder.png':
         with print_lock:
             processed_count += 1
@@ -243,17 +241,33 @@ def hydrate_movie(movie):
     return movie
 
 def main():
-    existing_movies = {}
+    existing_by_video = {}
+    existing_by_website = {}
+    existing_movies_list = []
+
     if os.path.exists('movies.json'):
         try:
             with open('movies.json', 'r', encoding='utf-8') as f:
                 cached_list = json.load(f)
+                existing_movies_list = cached_list
                 for m in cached_list:
                     if 'video_url' in m:
-                        existing_movies[m['video_url']] = m
-            print(f"{len(existing_movies)} Filme aus bestehender movies.json geladen (Cache aktiv).")
+                        existing_by_video[m['video_url']] = m
+                    if m.get('url_website'):
+                        existing_by_website[m['url_website']] = m
+            print(f"{len(cached_list)} Filme aus bestehender movies.json geladen (Cache aktiv).")
         except Exception as e:
             print(f"Konnte bestehende movies.json nicht lesen: {e}")
+
+    def find_existing_by_title(norm_title):
+        for m in existing_movies_list:
+            orig = m.get('original_title')
+            if orig and normalize_title(orig) == norm_title:
+                return m
+            cached_norm = normalize_title(m.get('title', ''))
+            if cached_norm == norm_title or cached_norm.startswith(norm_title + ' ') or norm_title.startswith(cached_norm + ' '):
+                return m
+        return None
 
     seen_urls = set()
     seen_titles = set()
@@ -272,10 +286,12 @@ def main():
             data = res.json()
             results = data.get('result', {}).get('results', [])
             for m in results:
-                url = m.get('url_video', '')
+                url_video = m.get('url_video', '')
+                url_website = m.get('url_website', '')
                 title = m.get('title', '')
                 channel = m.get('channel', '')
-                if not url or not title:
+                
+                if not url_video or not title:
                     continue
                 chan_low = channel.lower()
                 if 'kika' in chan_low or 'arte.fr' in chan_low or 'arte.es' in chan_low or 'arte.en' in chan_low or 'arte.it' in chan_low or 'zdf-tivi' in chan_low or 'tivi' in title.lower():
@@ -290,42 +306,60 @@ def main():
                     continue
                 if re.search(r'\b\d{1,2}/\d{1,2}\b', title):
                     continue
-                if url in seen_urls:
+                if url_video in seen_urls:
                     continue
 
                 clean_name, year = clean_title(title)
                 if not clean_name:
                     continue
-                norm_title = clean_name.lower().strip()
+                norm_title = normalize_title(clean_name)
                 if norm_title == 'nö' or norm_title in seen_titles:
                     continue
                 if m.get('duration', 0) < 4680:
                     continue
 
-                seen_urls.add(url)
+                seen_urls.add(url_video)
                 seen_titles.add(norm_title)
 
-                if url in existing_movies:
-                    movie_entry = existing_movies[url]
-                    movie_entry['video_url'] = url
+                movie_entry = None
+                
+                if url_video in existing_by_video:
+                    movie_entry = existing_by_video[url_video]
+                    movie_entry['video_url'] = url_video
+                    if url_website:
+                        movie_entry['url_website'] = url_website
+                    movie_entry['timestamp'] = m.get('timestamp', 0)
+                elif url_website and url_website in existing_by_website:
+                    movie_entry = existing_by_website[url_website]
+                    movie_entry['video_url'] = url_video
                     movie_entry['timestamp'] = m.get('timestamp', 0)
                 else:
-                    movie_entry = {
-                        "title": clean_name,
-                        "search": clean_name,
-                        "year": year,
-                        "video_url": url,
-                        "plot": m.get('description', 'Keine Beschreibung verfügbar.'),
-                        "mediathek_desc": m.get('description', ''),
-                        "director": "",
-                        "actors": [],
-                        "rating": "N/A",
-                        "thumb": "placeholder.png",
-                        "genres_list": ["Sonstige"],
-                        "channel": channel,
-                        "timestamp": m.get('timestamp', 0),
-                        "isNew": False
-                    }
+                    matched_cached = find_existing_by_title(norm_title)
+                    if matched_cached:
+                        movie_entry = matched_cached
+                        movie_entry['video_url'] = url_video
+                        if url_website:
+                            movie_entry['url_website'] = url_website
+                        movie_entry['timestamp'] = m.get('timestamp', 0)
+                    else:
+                        movie_entry = {
+                            "title": clean_name,
+                            "search": clean_name,
+                            "original_title": clean_name, 
+                            "year": year,
+                            "video_url": url_video,
+                            "url_website": url_website,
+                            "plot": m.get('description', 'Keine Beschreibung verfügbar.'),
+                            "mediathek_desc": m.get('description', ''),
+                            "director": "",
+                            "actors": [],
+                            "rating": "N/A",
+                            "thumb": "placeholder.png",
+                            "genres_list": ["Sonstige"],
+                            "channel": channel,
+                            "timestamp": m.get('timestamp', 0),
+                            "isNew": False
+                        }
 
                 temp_results.append(movie_entry)
         except Exception as e:
