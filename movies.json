@@ -8497,18 +8497,24 @@
     "tmdb_type": "movie"
   },
   {
-    "title": "Die Hölle",
+    "title": "Die Hölle - Inferno",
     "search": "Die Hölle",
-    "year": "2016",
+    "year": "2017",
     "video_url": "https://rodlzdf-a.akamaihd.net/dach/3sat/23/04/230414_die_hoelle_spielfilm/1/230414_die_hoelle_spielfilm_a1a2_2360k_p35v17.mp4",
     "plot": "Taxifahrerin Özge wird Zeugin eines brutalen Ritualmords. Da der Täter auch sie gesehen hat, soll sie das nächste Opfer des Killers werden. Aber die Thai-Boxerin weiß sich zu wehren.",
     "mediathek_desc": "Taxifahrerin Özge wird Zeugin eines brutalen Ritualmords. Da der Täter auch sie gesehen hat, soll sie das nächste Opfer des Killers werden. Aber die Thai-Boxerin weiß sich zu wehren.",
-    "director": "",
-    "actors": [],
-    "rating": "N/A",
-    "thumb": "placeholder.png",
+    "director": "Stefan Ruzowitzky",
+    "actors": [
+      "Violetta Schurawlow",
+      "Tobias Moretti",
+      "Robert Palfrader"
+],
+    "rating": "6.0",
+    "thumb": "https://image.tmdb.org/t/p/original/5eaKGeEKd1q3QCLEdL5xxKuf1H6.jpg",
     "genres_list": [
-      "Sonstige"
+      "Action",
+      "Krimi",
+      "Thriller"
     ],
     "channel": "3Sat",
     "timestamp": 1565640900,
@@ -8972,16 +8978,20 @@
   {
     "title": "Die Küstenpiloten - Kleine Schwester, großer Bruder",
     "search": "Die Küstenpiloten - Kleine Schwester, großer Bruder",
-    "year": "None",
+    "year": "2020",
     "video_url": "https://pd-videos.daserste.de/int/2024/10/09/5e88401a-840b-4489-8f08-f90ed92bd154/JOB_504375__sendeton_1280x720-50p-3200kbit.mp4",
     "plot": "Spielfilm Deutschland 2020\r\n\r\nDie 34-jährige Swantje (Nadine Boske) hat allen Grund, selbstbewusst zu sein: Ohne sie geht auf dem beschaulichen Flugplatz ihres Vaters Hauke (Jan-Gregor Kremp) in Büsum nichts. Swantje repariert die in die Jahre gekommenen Maschinen und organisiert den Post- und Passagierbetrieb. Nur selbst zu fliegen, traut sich die passionierte Pilotin seit einer traumatischen Bru\n.....",
     "mediathek_desc": "Spielfilm Deutschland 2020\r\n\r\nDie 34-jährige Swantje (Nadine Boske) hat allen Grund, selbstbewusst zu sein: Ohne sie geht auf dem beschaulichen Flugplatz ihres Vaters Hauke (Jan-Gregor Kremp) in Büsum nichts. Swantje repariert die in die Jahre gekommenen Maschinen und organisiert den Post- und Passagierbetrieb. Nur selbst zu fliegen, traut sich die passionierte Pilotin seit einer traumatischen Bru\n.....",
     "director": "",
-    "actors": [],
+    "actors": [
+      "Susanne Schäfer",
+      "Jonas Laux",
+      "Jan-Gregor Kremp"
+],
     "rating": "N/A",
-    "thumb": "placeholder.png",
+    "thumb": "https://image.tmdb.org/t/p/original/gA8AImTBTjiSMH2NGRsK6fjYgRS.jpg",
     "genres_list": [
-      "Sonstige"
+      "Drama"
     ],
     "channel": "ARD",
     "timestamp": 1730034180,
@@ -9964,7 +9974,9 @@
     "rating": "6.7",
     "thumb": "https://image.tmdb.org/t/p/w342/gvJ4HzCyExqUVG4BGqKzdYGww1C.jpg",
     "genres_list": [
-      "Sonstige"
+      "Krimi",
+      "Drama",
+      "Thriller"
     ],
     "channel": "ZDF",
     "timestamp": 1783313118,
@@ -10774,14 +10786,19 @@
     "search": "Donna Leon - Stille Wasser",
     "year": "2019",
     "video_url": "https://rodlzdf-a.akamaihd.net/dach/3sat/24/12/241228_donna_leon_stille_wasser_spielfilm/1/241228_donna_leon_stille_wasser_spielfilm_a1a2_2360k_p35v17.mp4",
-    "plot": "Nach einem \"Warnschuss\" seines Körpers muss Brunetti kürzertreten. Im Krankenurlaub auf der Laguneninsel San Erasmo lernt er den Bienenzüchter Davide Casati kennen.",
-    "mediathek_desc": "Nach einem \"Warnschuss\" seines Körpers muss Brunetti kürzertreten. Im Krankenurlaub auf der Laguneninsel San Erasmo lernt er den Bienenzüchter Davide Casati kennen.",
-    "director": "",
-    "actors": [],
-    "rating": "N/A",
-    "thumb": "placeholder.png",
+    "plot": "Während eines Krankenurlaubs lernt Brunetti einen Bienenzüchter kennen, der kurz darauf nach einem Sturm tot aufgefunden wird. Aus Verpflichtung gegenüber dessen Familie macht er sich an die Ermittlungen, um die Umstände aufzuklären. Der benachbarte Bauer hätte ein Motiv; zwischen ihm und dem Bienenzüchter gab es Streit. Bei den lokalen Verantwortlichen macht sich Brunetti mit seinen Untersuchungen nicht gerade beliebt; dann stößt er auf einen vertuschten Umweltskandal.",
+    "director": "Sigi Rothemund",
+    "actors": [
+      "Uwe Kockisch",
+      "Karl Fischer",
+      "Annett Renneberg"
+    ],
+    "rating": "7.3",
+    "thumb": "https://image.tmdb.org/t/p/original/eNYh2va2OoUhKTyIFIQESzazGME.jpg",
     "genres_list": [
-      "Sonstige"
+      "Krimi",
+      "Thriller",
+      "Drama"
     ],
     "channel": "3Sat",
     "timestamp": 1735420020,
@@ -10875,7 +10892,7 @@
     "rating": "6.0",
     "thumb": "https://image.tmdb.org/t/p/w342/y4nCTZ3SM6qyJGDSUQ5BPZKKqTz.jpg",
     "genres_list": [
-      "Sonstige"
+      "Komödie"
     ],
     "channel": "ZDF",
     "timestamp": 1787116061,
@@ -10948,7 +10965,7 @@
     "rating": "8.0",
     "thumb": "https://image.tmdb.org/t/p/w342/mkuEjqvMH2FHmrE6FfFzE3YjiOm.jpg",
     "genres_list": [
-      "Sonstige"
+      "Komödie"
     ],
     "channel": "ZDF",
     "timestamp": 1787116037,
@@ -11364,7 +11381,7 @@
     "rating": "5.0",
     "thumb": "https://image.tmdb.org/t/p/w342/7Fip7d9LKOuZB5KU8l6xETdL5ns.jpg",
     "genres_list": [
-      "Sonstige"
+      "Komödie"
     ],
     "channel": "ARD",
     "timestamp": 1769163600,
@@ -12366,7 +12383,8 @@
     "rating": "5.5",
     "thumb": "https://image.tmdb.org/t/p/w342/6BhDUPB1mqz4Bu3fDHTbvCAguYq.jpg",
     "genres_list": [
-      "Sonstige"
+      "Komödie",
+      "Drama"
     ],
     "channel": "ARD",
     "timestamp": 1778749500,
@@ -13468,15 +13486,20 @@
     "tmdb_type": "movie"
   },
   {
-    "title": "Erwartung",
+    "title": "Erwartung – Der Marco-Effekt",
     "search": "Erwartung",
-    "year": "2015",
+    "year": "2022",
     "video_url": "https://nrodlzdf-a.akamaihd.net/dach/zdf/24/02/240212_erwartung_film_jao/3/240212_erwartung_film_jao_a3a4_3360k_p36v17.mp4",
-    "plot": "Was hat der aufgegriffene Roma-Junge Marco mit einem fünf Jahre zuvor verschwundenen Regierungsbeamten zu tun? Bei dem Jugendlichen wird der Pass des mutmaßlich Toten gefunden.",
+    "plot": "Der 14-jährige Roma-Junge Marco will aus seinem kriminellen Familienclan aussteigen und wird in Dänemark festgenommen. Er hat den Reisepass eines vermissten, korrupten Regierungsbeamten bei sich. Carl Mørck und sein Team rollen den Fall neu auf und stoßen auf eine gefährliche politische Verschwörung.",
     "mediathek_desc": "Was hat der aufgegriffene Roma-Junge Marco mit einem fünf Jahre zuvor verschwundenen Regierungsbeamten zu tun? Bei dem Jugendlichen wird der Pass des mutmaßlich Toten gefunden.",
-    "director": "Pedro Huet",
-    "actors": [],
-    "rating": "N/A",
+    "director": "Martin Zandvliet",
+    "actors": [
+      "Ulrich Thomsen",
+      "Zaki Youssef",
+      "Sofie Torp",
+      "Lubos Oláh"
+    ],
+    "rating": "2.2",
     "thumb": "https://image.tmdb.org/t/p/w342/wj1fPhzgP3wA8VZ5NdUY3vuAbQF.jpg",
     "genres_list": [
       "Sonstige"
