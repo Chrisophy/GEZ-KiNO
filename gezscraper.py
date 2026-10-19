@@ -359,6 +359,13 @@ def main():
         except Exception as e:
             print(f"Fehler bei Query {q}: {e}")
 
+    unique_temp = {}
+    for m in temp_results:
+        v_url = m.get('video_url')
+        if v_url and v_url not in unique_temp:
+            unique_temp[v_url] = m
+    temp_results = list(unique_temp.values())
+
     temp_results.sort(key=lambda x: x['timestamp'], reverse=True)
     newest_urls = {m['video_url'] for m in temp_results[:100]}
     for m in temp_results:
