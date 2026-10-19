@@ -161,7 +161,7 @@
     "video_url": "https://ctv-videos.daserste.de/int/2025/03/26/1ab9e3ef-7c6a-4572-9d27-669cd2a9dcd1/JOB_543243__sendeton_1280x720-50p-3200kbit.mp4",
     "plot": "Die beiden rivalisierenden Halbbrüder Percy und Hannes arbeiten als Diamantentaucher vor der Küste Südafrikas. Zwischen ihnen schwelt ein andauernder Konflikt, der sich zuspitzt, als Percys Freundin Julia zu Besuch kommt. Als die Fotografin von ihrem Freund bezüglich der Produktion eines Fotobandes über seine Arbeit hängen gelassen wird, wendet Julia sich an seinen Bruder. Hannes nimmt sie mit auf sein Boot, was Percy zur Weißglut treibt und die Rivalität zwischen den beiden neu entfacht",
     "mediathek_desc": "Spielfilm Deutschland 2009 Die Berliner Fotografin Julia Sandberg (Marion Kracht) hat sich in den charmanten Abenteurer Percy van der Walt (Philippe Brenninkmeyer) verliebt, der einem äußerst ungewöhnlichen Job nachgeht. Percy taucht vor der Küste des südafrikanischen Hafenstädtchens Port Sheldon nach Diamanten....",
-    "director": "Bertha Spieker",
+    "director": "Giselher Venzke",
     "actors": [
       "Marion Kracht",
       "Francis Fulton-Smith",
@@ -282,7 +282,7 @@
     ],
     "channel": "ZDF",
     "timestamp": 1791490273,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 762441,
     "tmdb_type": "movie",
     "url_website": "https://www.zdf.de/filme/a-quiet-place-tag-eins-movie-100"
@@ -5612,31 +5612,6 @@
     "title": "Dennstein & Schwarz - Rufmord",
     "search": "Dennstein & Schwarz - Rufmord",
     "year": "2020",
-    "video_url": "https://pd-videos.daserste.de/int/2024/09/06/DEGSM685649/DEGSM685649_3059520_sendeton_1280x720-50p-3200kbit.mp4",
-    "plot": "Therese Schwarz vertritt den mit Paula Dennstein sehr gut befreundeten Politiker Konrad Wagner, der von einer Zeitung an den #MeToo-Pranger gestellt wurde. Deshalb passt der überraschende Besuch ihrer kleinen Schwester Marita auch so gar nicht in ihr Konzept. Noch dazu, wo Marita zusammen mit Ferdinand durch eine Cannabis-Geschichte in heiklen Polizeikontakt kommt. Für Konrads Verteidigung ist es wichtig den Verleumder auszumachen, doch das ist ein Wettlauf gegen die Zeit, da die Landtagswahl vor der Türe steht…",
-    "mediathek_desc": "Spielfilm Deutschland/Österreich 2020\r\n\r\nAuf Frauenpower setzen \"Dennstein & Schwarz\" als Markenzeichen ihrer Anwaltskanzlei. Der neue Fall verspricht viel Publicity, denn sie vertreten den aufstrebenden Politiker, der nun durch eine Zeitungsstory als Grapscher am Pranger steht. \r\n\r\nMit Maria Happel, Martina Ebm, Manuel Rubey, Nele Kiper u.a. | Buch: Konstanze Breitebner | Regie: Michael Rowitz",
-    "director": "Michael Rowitz",
-    "actors": [
-      "Maria Happel",
-      "Martina Ebm",
-      "Manuel Rubey"
-    ],
-    "rating": "6.0",
-    "thumb": "https://image.tmdb.org/t/p/w342/6AP96jy3fR9wc26fb5zlWWdEMS4.jpg",
-    "genres_list": [
-      "Drama"
-    ],
-    "channel": "ARD",
-    "timestamp": 1725710400,
-    "isNew": false,
-    "tmdb_id": 679245,
-    "tmdb_type": "movie",
-    "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyNC0wOS0wN18xNC0wMC1NRVNa"
-  },
-  {
-    "title": "Dennstein & Schwarz - Rufmord",
-    "search": "Dennstein & Schwarz - Rufmord",
-    "year": "2020",
     "video_url": "https://pd-videos.daserste.de/int/2024/08/23/DEGSM877904/DEGSM877904_3048790sendeton__1280x720-50p-3200kbit.mp4",
     "plot": "Therese Schwarz vertritt den mit Paula Dennstein sehr gut befreundeten Politiker Konrad Wagner, der von einer Zeitung an den #MeToo-Pranger gestellt wurde. Deshalb passt der überraschende Besuch ihrer kleinen Schwester Marita auch so gar nicht in ihr Konzept. Noch dazu, wo Marita zusammen mit Ferdinand durch eine Cannabis-Geschichte in heiklen Polizeikontakt kommt. Für Konrads Verteidigung ist es wichtig den Verleumder auszumachen, doch das ist ein Wettlauf gegen die Zeit, da die Landtagswahl vor der Türe steht…",
     "mediathek_desc": "Spielfilm Deutschland/Österreich 2020\r\n\r\nAuf Frauenpower setzen \"Dennstein & Schwarz\" als Markenzeichen ihrer Anwaltskanzlei. Der neue Fall verspricht viel Publicity, denn sie vertreten den aufstrebenden Politiker, der nun durch eine Zeitungsstory als Grapscher am Pranger steht. \r\n\r\nMit Maria Happel, Martina Ebm, Manuel Rubey, Nele Kiper u.a. | Buch: Konstanze Breitebner | Regie: Michael Rowitz",
@@ -5657,6 +5632,31 @@
     "tmdb_id": 679245,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyNC0wOC0yNF8xNC0wMC1NRVNa"
+  },
+  {
+    "title": "Dennstein & Schwarz - Rufmord",
+    "search": "Dennstein & Schwarz - Rufmord",
+    "year": "2020",
+    "video_url": "https://pd-videos.daserste.de/int/2024/09/06/DEGSM685649/DEGSM685649_3059520_sendeton_1280x720-50p-3200kbit.mp4",
+    "plot": "Therese Schwarz vertritt den mit Paula Dennstein sehr gut befreundeten Politiker Konrad Wagner, der von einer Zeitung an den #MeToo-Pranger gestellt wurde. Deshalb passt der überraschende Besuch ihrer kleinen Schwester Marita auch so gar nicht in ihr Konzept. Noch dazu, wo Marita zusammen mit Ferdinand durch eine Cannabis-Geschichte in heiklen Polizeikontakt kommt. Für Konrads Verteidigung ist es wichtig den Verleumder auszumachen, doch das ist ein Wettlauf gegen die Zeit, da die Landtagswahl vor der Türe steht…",
+    "mediathek_desc": "Spielfilm Deutschland/Österreich 2020\r\n\r\nAuf Frauenpower setzen \"Dennstein & Schwarz\" als Markenzeichen ihrer Anwaltskanzlei. Der neue Fall verspricht viel Publicity, denn sie vertreten den aufstrebenden Politiker, der nun durch eine Zeitungsstory als Grapscher am Pranger steht. \r\n\r\nMit Maria Happel, Martina Ebm, Manuel Rubey, Nele Kiper u.a. | Buch: Konstanze Breitebner | Regie: Michael Rowitz",
+    "director": "Michael Rowitz",
+    "actors": [
+      "Maria Happel",
+      "Martina Ebm",
+      "Manuel Rubey"
+    ],
+    "rating": "6.0",
+    "thumb": "https://image.tmdb.org/t/p/w342/6AP96jy3fR9wc26fb5zlWWdEMS4.jpg",
+    "genres_list": [
+      "Drama"
+    ],
+    "channel": "ARD",
+    "timestamp": 1725710400,
+    "isNew": false,
+    "tmdb_id": 679245,
+    "tmdb_type": "movie",
+    "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyNC0wOS0wN18xNC0wMC1NRVNa"
   },
   {
     "title": "Dennstein & Schwarz - Schuldenfalle",
@@ -6804,32 +6804,6 @@
   },
   {
     "title": "Der Pate II",
-    "search": "Der Pate 2",
-    "year": "1974",
-    "video_url": "https://arteptweb-a.akamaihd.net/am/ptweb/045000/045500/045560-000-C_EQ_0_VA_11533434_MP4-1500_AMM-PTWEB-40521656206800_1saJY8108id8.mp4",
-    "plot": "Michael Corleone ist jetzt der Pate seiner Familie und führt diese Aufgabe mit der nötigen Gnadenlosigkeit aus. Als er in Las Vegas und auf Kuba expandieren will, weil ihm die alten Geschäftsideen nichts mehr einbringen, treten Schwierigkeiten auf. Um diese zu klären, veranlaßt Michael eine große Säuberungsaktion, die auch vor den Familienmitgliedern nicht halt macht.",
-    "mediathek_desc": "Als Vito Corleone alias \"Der Pate\" stirbt, übernimmt sein Sohn Michael die Geschäfte und wird bald zu einem der meistgefürchteten Mafiabosse. Als er aber mit der Kasino-Mafia zu verhandeln beginnt, verliert Michael die Unterstützung eines seiner engsten New Yorker Kollegen, Frankie Pentangeli. – Der zweite Teil der opulenten Mafiasaga wurde 1975 mit sechs Oscars ausgezeichnet.",
-    "director": "Francis Ford Coppola",
-    "actors": [
-      "Al Pacino",
-      "Robert Duvall",
-      "Diane Keaton"
-    ],
-    "rating": "8.6",
-    "thumb": "https://image.tmdb.org/t/p/w342/ydzBlAMJTo9jOG5i8aRpZec0jF3.jpg",
-    "genres_list": [
-      "Drama",
-      "Krimi"
-    ],
-    "channel": "ARTE.DE",
-    "timestamp": 1789928121,
-    "isNew": false,
-    "tmdb_id": 240,
-    "tmdb_type": "movie",
-    "url_website": "https://www.arte.tv/de/videos/045560-000-A/der-pate-2/"
-  },
-  {
-    "title": "Der Pate II",
     "search": "Der Pate II",
     "year": "1974",
     "video_url": "https://nrodlzdf-a.akamaihd.net/dach/3sat/26/02/260220_der_pate_2_mit_ad_spielfilm/1/260220_der_pate_2_mit_ad_spielfilm_a1a2_3360k_p36v17.mp4",
@@ -6853,6 +6827,32 @@
     "tmdb_id": 240,
     "tmdb_type": "movie",
     "url_website": "https://www.3sat.de/film/spielfilm/der-pate-ii-100.html"
+  },
+  {
+    "title": "Der Pate II",
+    "search": "Der Pate 2",
+    "year": "1974",
+    "video_url": "https://arteptweb-a.akamaihd.net/am/ptweb/045000/045500/045560-000-C_EQ_0_VA_11533434_MP4-1500_AMM-PTWEB-40521656206800_1saJY8108id8.mp4",
+    "plot": "Michael Corleone ist jetzt der Pate seiner Familie und führt diese Aufgabe mit der nötigen Gnadenlosigkeit aus. Als er in Las Vegas und auf Kuba expandieren will, weil ihm die alten Geschäftsideen nichts mehr einbringen, treten Schwierigkeiten auf. Um diese zu klären, veranlaßt Michael eine große Säuberungsaktion, die auch vor den Familienmitgliedern nicht halt macht.",
+    "mediathek_desc": "Als Vito Corleone alias \"Der Pate\" stirbt, übernimmt sein Sohn Michael die Geschäfte und wird bald zu einem der meistgefürchteten Mafiabosse. Als er aber mit der Kasino-Mafia zu verhandeln beginnt, verliert Michael die Unterstützung eines seiner engsten New Yorker Kollegen, Frankie Pentangeli. – Der zweite Teil der opulenten Mafiasaga wurde 1975 mit sechs Oscars ausgezeichnet.",
+    "director": "Francis Ford Coppola",
+    "actors": [
+      "Al Pacino",
+      "Robert Duvall",
+      "Diane Keaton"
+    ],
+    "rating": "8.6",
+    "thumb": "https://image.tmdb.org/t/p/w342/ydzBlAMJTo9jOG5i8aRpZec0jF3.jpg",
+    "genres_list": [
+      "Drama",
+      "Krimi"
+    ],
+    "channel": "ARTE.DE",
+    "timestamp": 1789928121,
+    "isNew": false,
+    "tmdb_id": 240,
+    "tmdb_type": "movie",
+    "url_website": "https://www.arte.tv/de/videos/045560-000-A/der-pate-2/"
   },
   {
     "title": "Der Pate, Epilog: Der Tod von Michael Corleone",
@@ -7584,7 +7584,7 @@
       "Drama"
     ],
     "channel": "ARTE.DE",
-    "timestamp": 1792001700,
+    "timestamp": 1792001772,
     "isNew": true,
     "tmdb_id": 668640,
     "tmdb_type": "movie",
@@ -11217,7 +11217,8 @@
     "channel": "3Sat",
     "timestamp": 1735420020,
     "isNew": false,
-    "url_website": "https://www.3sat.de/film/spielfilm/donna-leon-stille-wasser-104.html"
+    "url_website": "https://www.3sat.de/film/spielfilm/donna-leon-stille-wasser-104.html",
+    "mediathek_desc": "Während eines Krankenurlaubs lernt Brunetti einen Bienenzüchter kennen, der kurz darauf nach einem Sturm tot aufgefunden wird. Aus Verpflichtung gegenüber dessen Familie macht er sich an die Ermittlungen, um die Umstände aufzuklären. Der benachbarte Bauer hätte ein Motiv; zwischen ihm und dem Bienenzüchter gab es Streit. Bei den lokalen Verantwortlichen macht sich Brunetti mit seinen Untersuchungen nicht gerade beliebt; dann stößt er auf einen vertuschten Umweltskandal."
   },
   {
     "title": "Doppelgängerin",
@@ -12736,7 +12737,7 @@
     ],
     "channel": "ZDF",
     "timestamp": 1791564451,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 1517628,
     "tmdb_type": "movie",
     "url_website": "https://www.zdf.de/filme/ein-ganz-grosses-ding-movie-100"
@@ -25755,7 +25756,7 @@
     ],
     "channel": "ARD",
     "timestamp": 1791543300,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 512030,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2FyZC5kZS9wbGFuQVJEXzRhNjE4YzA1LTBjZGEtNGEzNC05OGYyLTc4YjUwOTY1MjViMV9nYW56ZVNlbmR1bmc"
@@ -26539,7 +26540,7 @@
     "title": "Plan A",
     "search": "Plan A",
     "year": "2021",
-    "video_url": "https://arteptweb-a.akamaihd.net/am/ptweb/083000/083800/083853-000-A_EQ_0_VOA_11609466_MP4-1500_AMM-PTWEB-80843871561300_1P8jwU16crfZ.mp4",
+    "video_url": "https://arteptweb-a.akamaihd.net/am/ptweb/083000/083800/083853-000-A_EQ_0_VOA-STF_11609462_MP4-1500_AMM-PTWEB-101074494685232_16crJ9.mp4",
     "plot": "Deutschland, 1945: Max hat das Konzentrationslager überlebt, aber seine Frau und seinen Sohn verloren. In seiner Verzweiflung schließt er sich einer jüdischen Brigade an, die Nazi-Verbrecher jagt und tötet. Bald landet er in Nürnberg bei einer Gruppe von Holocaust-Überlebenden um die trauernde Anna und den charismatischen Anführer Abba. Max findet heraus, dass diese die größte Racheaktion der Geschichte planen: Mit einem Giftanschlag soll für jeden ermordeten Juden ein Deutscher sterben. Max muss sich fragen, ob er Teil dieses mörderischen Racheplans werden will …",
     "mediathek_desc": "Basierend auf einer wahren Geschichte: 1945 plante eine Gruppe jüdischer Holocaust-Überlebender das Trinkwasser in Deutschland zu vergiften und sechs Millionen Deutsche zu töten. Der Film der Brüder Yoav und Doron Paz (2021) erzählt von den Planungen der Geheimoperation \"Plan A\" und erinnert an ein vergessenes Kapitel der Nachkriegsgeschichte.",
     "director": "Amanda Bowers",
@@ -26556,7 +26557,7 @@
       "Historie"
     ],
     "channel": "ARTE.DE",
-    "timestamp": 1792174500,
+    "timestamp": 1792174511,
     "isNew": true,
     "tmdb_id": 714968,
     "tmdb_type": "movie",
@@ -35660,7 +35661,7 @@
     ],
     "channel": "ARD",
     "timestamp": 1791497400,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 614032,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2FyZC5kZS9wbGFuQVJEX2JkOWM2MDVlLWU2NDctNDI0Ny04MzZlLTYxN2EyNDgyODNjNF9nYW56ZVNlbmR1bmc"
