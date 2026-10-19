@@ -4404,7 +4404,7 @@
     "rating": "6.1",
     "thumb": "https://image.tmdb.org/t/p/w342/ockEcyU8nprZuOpEuwuYyKAGXn.jpg",
     "genres_list": [
-      "Sonstige"
+      "Komödie"
     ],
     "channel": "ARD",
     "timestamp": 1779723900,
@@ -5149,12 +5149,16 @@
     "video_url": "https://nrodlzdf-a.akamaihd.net/dach/3sat/25/05/250504_das_kann_doch_unseren_willi_nicht_erschuettern_spielfilm/1/250504_das_kann_doch_unseren_willi_nicht_erschuettern_spielfilm_3360k_p36v17.mp4",
     "plot": "Sommer 1970: Italien ist das Reiseziel Nummer eins der Deutschen. Willi Hirsekorn aus Castrop-Rauxel hat bislang keine Pläne, Richtung Süden zu reisen. Doch das ändert sich schlagartig.",
     "mediathek_desc": "Sommer 1970: Italien ist das Reiseziel Nummer eins der Deutschen. Willi Hirsekorn aus Castrop-Rauxel hat bislang keine Pläne, Richtung Süden zu reisen. Doch das ändert sich schlagartig.",
-    "director": "",
-    "actors": [],
-    "rating": "N/A",
-    "thumb": "placeholder.png",
+    "director": "Rolf Olsen",
+    "actors": [
+      "Heinz ErhardtRuth",
+      "StephanGünther",
+      "Jerschke"
+    ],
+    "rating": "5.5",
+    "thumb": "https://image.tmdb.org/t/p/original/vNECjYWQGKqu3XRVgYC4LD0h2Tn.jpg",
     "genres_list": [
-      "Sonstige"
+      "Komödie"
     ],
     "channel": "3Sat",
     "timestamp": 1746371460,
@@ -5411,30 +5415,6 @@
     "tmdb_type": "movie"
   },
   {
-    "title": "Dennstein & Schwarz",
-    "search": "Dennstein & Schwarz",
-    "year": "2020",
-    "video_url": "https://pd-videos.daserste.de/int/2024/08/23/DEGSM877904/DEGSM877904_3048790sendeton__1280x720-50p-3200kbit.mp4",
-    "plot": "Therese Schwarz vertritt den mit Paula Dennstein sehr gut befreundeten Politiker Konrad Wagner, der von einer Zeitung an den #MeToo-Pranger gestellt wurde. Deshalb passt der überraschende Besuch ihrer kleinen Schwester Marita auch so gar nicht in ihr Konzept. Noch dazu, wo Marita zusammen mit Ferdinand durch eine Cannabis-Geschichte in heiklen Polizeikontakt kommt. Für Konrads Verteidigung ist es wichtig den Verleumder auszumachen, doch das ist ein Wettlauf gegen die Zeit, da die Landtagswahl vor der Türe steht…",
-    "mediathek_desc": "Spielfilm Deutschland/Österreich 2018 Die junge Anwältin Dr. Therese Schwarz (Martina Ebm) gerät in einen erbitterten Erbschaftsstreit: Sie soll dem Biobauern Fritz (Robert Finster) helfen, sich gegen die Familie des verstorbenen Grafen Florentin Dennstein zu behaupten....",
-    "director": "Michael Rowitz",
-    "actors": [
-      "Maria Happel",
-      "Martina Ebm",
-      "Manuel Rubey"
-    ],
-    "rating": "6.0",
-    "thumb": "https://image.tmdb.org/t/p/w342/6AP96jy3fR9wc26fb5zlWWdEMS4.jpg",
-    "genres_list": [
-      "Sonstige"
-    ],
-    "channel": "ARD",
-    "timestamp": 1724500800,
-    "isNew": false,
-    "tmdb_id": 679245,
-    "tmdb_type": "movie"
-  },
-  {
     "title": "Dennstein & Schwarz - Rufmord",
     "search": "Dennstein & Schwarz - Rufmord",
     "year": "2020",
@@ -5450,7 +5430,7 @@
     "rating": "6.0",
     "thumb": "https://image.tmdb.org/t/p/w342/6AP96jy3fR9wc26fb5zlWWdEMS4.jpg",
     "genres_list": [
-      "Sonstige"
+      "Drama"
     ],
     "channel": "ARD",
     "timestamp": 1725710400,
@@ -5474,7 +5454,7 @@
     "rating": "6.0",
     "thumb": "https://image.tmdb.org/t/p/w342/6AP96jy3fR9wc26fb5zlWWdEMS4.jpg",
     "genres_list": [
-      "Sonstige"
+      "Drama"
     ],
     "channel": "ARD",
     "timestamp": 1785234600,
@@ -6559,7 +6539,7 @@
     "tmdb_type": "movie"
   },
   {
-    "title": "Der Pate 2",
+    "title": "Der Pate II",
     "search": "Der Pate 2",
     "year": "1974",
     "video_url": "https://arteptweb-a.akamaihd.net/am/ptweb/045000/045500/045560-000-C_EQ_0_VA_11533434_MP4-1500_AMM-PTWEB-40521656206800_1saJY8108id8.mp4",
@@ -6610,17 +6590,23 @@
   },
   {
     "title": "Der Pate, Epilog: Der Tod von Michael Corleone",
-    "search": "Der Pate, Epilog: Der Tod von Michael Corleone",
-    "year": "None",
+    "search": "Der Pate III, Epilog: Der Tod von Michael Corleone",
+    "year": "1990",
     "video_url": "https://arteptweb-a.akamaihd.net/am/ptweb/039000/039900/039997-000-F_EQ_0_VA-STMA_11553516_MP4-1500_AMM-PTWEB-60782635401550_1sgej410c8J7.mp4",
     "plot": "Für Michael Corleone ist es Zeit Bilanz zu ziehen. Er hat den illegalen Tätigkeiten abgeschworen, mit denen sein Vater reich wurde und arbeitet nun mit Bank- und Immobiliengeschäften. Aber seine Jugendverbrechen können nicht ungeschehen gemacht werden ... - Der dritte Teil der Mafiafilm-Trilogie \"Der Pate\" war 1991 für sieben Oscars und für sieben Golden Globes nominiert.",
     "mediathek_desc": "Für Michael Corleone ist es Zeit Bilanz zu ziehen. Er hat den illegalen Tätigkeiten abgeschworen, mit denen sein Vater reich wurde und arbeitet nun mit Bank- und Immobiliengeschäften. Aber seine Jugendverbrechen können nicht ungeschehen gemacht werden ... - Der dritte Teil der Mafiafilm-Trilogie \"Der Pate\" war 1991 für sieben Oscars und für sieben Golden Globes nominiert.",
-    "director": "",
-    "actors": [],
-    "rating": "N/A",
+    "director": "Francis Ford Coppola",
+    "actors": [
+      "Talia Shire",
+      "Diane Keaton",
+      "Al Pacino"
+],
+    "rating": "7.4",
     "thumb": "placeholder.png",
     "genres_list": [
-      "Sonstige"
+      "Krimi",
+      "Drama",
+      "Thriller"
     ],
     "channel": "ARTE.DE",
     "timestamp": 1790541574,
