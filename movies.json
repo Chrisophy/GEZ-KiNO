@@ -2703,27 +2703,6 @@
     "url_website": "https://www.3sat.de/film/spielfilm/black-47-100.html"
   },
   {
-    "title": "Black Box",
-    "search": "Black Box",
-    "year": "2022",
-    "video_url": "https://nrodlzdf-a.akamaihd.net/none/3sat/25/02/250213_black_box_spielfilm/1/250213_black_box_spielfilm_a1a2_3360k_p36v17.mp4",
-    "plot": "Ein alter Berliner Gebäudekomplex: Die Bewohner leiden unter der sinkenden Lebensqualität. Hausverwalter Horn möchte helfen, doch was weiß er über die Leiche auf dem Dachboden?",
-    "mediathek_desc": "Ein alter Berliner Gebäudekomplex: Die Bewohner leiden unter der sinkenden Lebensqualität. Hausverwalter Horn möchte helfen, doch was weiß er über die Leiche auf dem Dachboden?",
-    "director": "Alana Mango",
-    "actors": [],
-    "rating": "N/A",
-    "thumb": "https://image.tmdb.org/t/p/w342/8xeHTEIl5grwlNOOI24wTfJPf5Y.jpg",
-    "genres_list": [
-      "Animation"
-    ],
-    "channel": "3Sat",
-    "timestamp": 1739474100,
-    "isNew": false,
-    "tmdb_id": 1021014,
-    "tmdb_type": "movie",
-    "url_website": "https://www.3sat.de/film/spielfilm/black-box-100.html"
-  },
-  {
     "title": "Black Box - Gefährliche Wahrheit",
     "search": "Black Box - Gefährliche Wahrheit",
     "year": "2021",
@@ -5504,20 +5483,20 @@
   {
     "title": "Das verrückte Herz",
     "search": "Das verrückte Herz",
-    "year": "2006",
+    "year": "1970",
     "video_url": "https://arteptweb-a.akamaihd.net/am/ptweb/134000/134100/134140-000-A_EQ_0_VOF-STA_11564497_MP4-1500_AMM-PTWEB-40521638322456_10sFOl.mp4",
     "plot": "Serge, ein Boulevardjournalist, ist auf der Suche nach einer Sensationsmeldung bei seiner Ex-Frau Cécile, einer Schauspielerin, die in einer psychiatrischen Klinik untergebracht ist. Vor Ort verliebt er sich in Clo, eine junge, charismatische Pyromanin, und hilft ihr zu fliehen. Auf ihrer leidenschaftlichen Flucht hinterlässt das Paar eine Spur von Bränden....",
     "mediathek_desc": "Serge, ein Boulevardjournalist, ist auf der Suche nach einer Sensationsmeldung bei seiner Ex-Frau Cécile, einer Schauspielerin, die in einer psychiatrischen Klinik untergebracht ist. Vor Ort verliebt er sich in Clo, eine junge, charismatische Pyromanin, und hilft ihr zu fliehen. Auf ihrer leidenschaftlichen Flucht hinterlässt das Paar eine Spur von Bränden....",
-    "director": "Gregor Dashuber",
+    "director": "Jean-Gabriel Albicocco",
     "actors": [
-      "Andreas Fröhlich",
-      "Tom Strauss"
+      "Michel Auclair",
+      "Ewa Swann",
+      "Madeleine Robinson"
     ],
-    "rating": "6.5",
-    "thumb": "https://image.tmdb.org/t/p/w342/igwHpKVqdcqs9HRFLnpo4u8rfD7.jpg",
+    "rating": "6.6",
+    "thumb": "https://image.tmdb.org/t/p/original/p3Jw51Je6N4wqFVtnRoOLPtyy02.jpg",
     "genres_list": [
-      "Animation",
-      "Horror"
+      "Drama"
     ],
     "channel": "ARTE.DE",
     "timestamp": 1785831764,
