@@ -17599,25 +17599,25 @@
     "search": "Hotel Heidelberg - Kommen und Gehen",
     "year": "2016",
     "video_url": "https://pd-videos.daserste.de/int/2023/01/11/9611de5e-3b59-488b-83a8-cfb92dc18bfb/JOB_526465__sendeton_1280x720-50p-3200kbit.mp4",
-    "plot": "Spielfilm Deutschland 2016 \r\n\r\nAnnette bekommt von Dr. Muthesius einen Heiratsantrag. Für sie gibt es keinen Zweifel: Er ist ein Mann fürs Leben! Doch schon bald knarzt es zwischen den Frischverliebten und auch im Hotel braut sich einiges zusammen.\r\n\r\nMit Hannelore Hoger, Ulrike C. Tscharre, Christoph Maria Herbst, Rüdiger Vogler, Stephan Grossmann | Regie: Michael Rowitz",
+    "plot": "Im idyllisch gelegenen „Hotel Heidelberg“ muss sich Junior-Chefin Annette Kramer  nicht nur mit den wachsenden Ansprüchen der Hotelgäste auseinandersetzen, sondern als alleinerziehende Mutter auch mit den Problemen ihres pubertierenden Sohnes Jeremy. Und auch die charismatische Hotelgründerin Hermine Kramer  macht ihrer Tochter durch ihr ständiges Einmischen in die Geschäfte das Leben nicht gerade leichter. Immerhin ist da noch Annettes Therapeut Ingolf der sich mächtig ins Zeug legt, um sie vor größeren Abstürzen zu bewahren.",
     "mediathek_desc": "Spielfilm Deutschland 2016 \r\n\r\nAnnette bekommt von Dr. Muthesius einen Heiratsantrag. Für sie gibt es keinen Zweifel: Er ist ein Mann fürs Leben! Doch schon bald knarzt es zwischen den Frischverliebten und auch im Hotel braut sich einiges zusammen.\r\n\r\nMit Hannelore Hoger, Ulrike C. Tscharre, Christoph Maria Herbst, Rüdiger Vogler, Stephan Grossmann | Regie: Michael Rowitz",
-    "director": "Michael Rowitz",
+    "director": "",
     "actors": [
       "Hannelore Hoger",
-      "Ulrike C. Tscharre",
       "Christoph Maria Herbst",
-      "Rüdiger Vogler"
+      "Stephan Grossmann"
     ],
-    "rating": "5.2",
+    "rating": "N/A",
     "thumb": "https://image.tmdb.org/t/p/w342/hQjzo3pQs3r7IcMXzDLLMHVBTrN.jpg",
     "genres_list": [
-      "TV-Film",
       "Drama"
     ],
     "channel": "ARD",
     "timestamp": 1674306000,
     "isNew": false,
-    "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyMy0wMS0yMV8xNC0wMC1NRVo"
+    "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyMy0wMS0yMV8xNC0wMC1NRVo",
+    "tmdb_id": 82112,
+    "tmdb_type": "tv"
   },
   {
     "title": "Hotel Heidelberg - Kramer gegen Kramer",
@@ -19580,7 +19580,7 @@
       "Ulrich Thomsen",
       "Afshin Firouzi",
       "Sofie Torp"
-],
+    ],
     "rating": "5.9",
     "thumb": "https://image.tmdb.org/t/p/original/ehY9As0Vitq9T9pyouJxWIMp7YO.jpg",
     "genres_list": [
