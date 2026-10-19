@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 # IT('s) Possible 
-# 2026.10.18
+# 2026.10.19
 # GEZ-KiNO GitHub Scraper gezscraper.py
 import os
 import json
@@ -356,7 +356,7 @@ def main():
                         }
 
                 temp_results.append(movie_entry)
-        exceptException as e:
+        except Exception as e:
             print(f"Fehler bei Query {q}: {e}")
 
     unique_temp = {}
