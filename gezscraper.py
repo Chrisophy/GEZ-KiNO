@@ -282,7 +282,7 @@ def main():
                     continue
                 if re.search(r'audiodeskription|audio description|ad version|hörfilm|deskription|gebärdensprache|barrierefrei', title.lower()):
                     continue
-                if any(x in title for x in ['(englisch)', '(französisch)', '(engl.)', '(zho)', ,'(jpn)', '(originalversion mit untertitel)', '(mit untertitel)', '(originalversion)']):
+                if any(x in title for x in ['(englisch)', '(französisch)', '(engl.)', '(zho)', '(jpn)', '(originalversion mit untertitel)', '(mit untertitel)', '(originalversion)']):
                     continue
                 if re.search(r'\b(folge|staffel|episode|ep\.|teil)\b', title, re.IGNORECASE):
                     continue
