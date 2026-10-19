@@ -1,5 +1,7 @@
-#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
+# IT('s) Possible 
+# 2026.10.18
+# GEZ-KiNO GitHub Scraper gezscraper.py
 import os
 import json
 import requests
@@ -276,11 +278,11 @@ def main():
                 if not url or not title:
                     continue
                 chan_low = channel.lower()
-                if 'kika' in chan_low or 'zdf-tivi' in chan_low or 'tivi' in title.lower():
+                if 'kika' in chan_low or 'arte.fr' in chan_low or 'arte.es' in chan_low or 'arte.en' in chan_low or 'arte.it' in chan_low or 'zdf-tivi' in chan_low or 'tivi' in title.lower():
                     continue
-                if re.search(r'audiodeskription|audio description|ad version|hörfilm|deskription|barrierefrei', title.lower()):
+                if re.search(r'audiodeskription|audio description|ad version|hörfilm|deskription|gebärdensprache|barrierefrei', title.lower()):
                     continue
-                if any(x in title for x in ['(Englisch)', '(zho)', '(Originalversion mit Untertitel)', '(mit Untertitel)', '(Originalversion)']):
+                if any(x in title for x in ['(englisch)', '(französisch)', '(engl.)', '(zho)', ,'(jpn)', '(originalversion mit untertitel)', '(mit untertitel)', '(originalversion)']):
                     continue
                 if re.search(r'\b(folge|staffel|episode|ep\.|teil)\b', title, re.IGNORECASE):
                     continue
