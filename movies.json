@@ -2730,6 +2730,33 @@
     "url_website": "https://www.3sat.de/film/spielfilm/black-box---gefaehrliche-wahrheit-100.html"
   },
   {
+    "title": "Black Box - Gefährliche Wahrheit",
+    "search": "Black Box - Gefährliche Wahrheit",
+    "year": "2021",
+    "video_url": "https://nrodlzdf-a.akamaihd.net/dach/3sat/26/03/260322_black_box_gefaehrliche_wahrheit_spielfilm/1/260322_black_box_gefaehrliche_wahrheit_spielfilm_a1a2_3360k_p36v17.mp4",
+    "plot": "Mathieu ist ein hochtalentierter Blackbox-Analyst, der die Ursache für den tödlichen Absturz eines brandneuen Flugzeugs aufklären soll. Als der Fall von den Behörden abgeschlossen wird, spürt Mathieu jedoch, dass etwas mit den Beweisen ganz und gar nicht stimmt. Er sieht sich die Blackbox erneut an und stößt dabei auf einige sehr beunruhigende Details. Könnte das Band manipuliert worden sein? Entgegen den Anweisungen seines Chefs beginnt Mathieu mit seinen eigenen Ermittlungen – eine manische wie bedrohliche Suche nach der Wahrheit beginnt, die bald weit mehr als seine Karriere in Gefahr bringt …",
+    "mediathek_desc": "Nach einem Flugzeugabsturz in den Alpen stößt der junge Black-Box-Analyst Mathieu schnell auf die vermeintliche Ursache der Tragödie. Doch bald kommen ihm infolge neuer Beweise Zweifel.",
+    "director": "Yann Gozlan",
+    "actors": [
+      "Pierre Niney",
+      "Lou de Laâge",
+      "André Dussollier"
+    ],
+    "rating": "7.3",
+    "thumb": "https://image.tmdb.org/t/p/w342/8zeNLFubXLfP2ICJ9Tms1j38YSo.jpg",
+    "genres_list": [
+      "Mystery",
+      "Thriller",
+      "Drama"
+    ],
+    "channel": "3Sat",
+    "timestamp": 1722896100,
+    "isNew": false,
+    "tmdb_id": 663260,
+    "tmdb_type": "movie",
+    "url_website": "https://www.3sat.de/film/spielfilm/black-box---gefaehrliche-wahrheit-100.html"
+  },
+  {
     "title": "Black Hawk Down",
     "search": "Black Hawk Down",
     "year": "2001",
@@ -5612,7 +5639,7 @@
     "title": "Dennstein & Schwarz - Rufmord",
     "search": "Dennstein & Schwarz - Rufmord",
     "year": "2020",
-    "video_url": "https://pd-videos.daserste.de/int/2024/08/23/DEGSM877904/DEGSM877904_3048790sendeton__1280x720-50p-3200kbit.mp4",
+    "video_url": "https://pd-videos.daserste.de/int/2024/09/06/DEGSM685649/DEGSM685649_3059520_sendeton_1280x720-50p-3200kbit.mp4",
     "plot": "Therese Schwarz vertritt den mit Paula Dennstein sehr gut befreundeten Politiker Konrad Wagner, der von einer Zeitung an den #MeToo-Pranger gestellt wurde. Deshalb passt der überraschende Besuch ihrer kleinen Schwester Marita auch so gar nicht in ihr Konzept. Noch dazu, wo Marita zusammen mit Ferdinand durch eine Cannabis-Geschichte in heiklen Polizeikontakt kommt. Für Konrads Verteidigung ist es wichtig den Verleumder auszumachen, doch das ist ein Wettlauf gegen die Zeit, da die Landtagswahl vor der Türe steht…",
     "mediathek_desc": "Spielfilm Deutschland/Österreich 2020\r\n\r\nAuf Frauenpower setzen \"Dennstein & Schwarz\" als Markenzeichen ihrer Anwaltskanzlei. Der neue Fall verspricht viel Publicity, denn sie vertreten den aufstrebenden Politiker, der nun durch eine Zeitungsstory als Grapscher am Pranger steht. \r\n\r\nMit Maria Happel, Martina Ebm, Manuel Rubey, Nele Kiper u.a. | Buch: Konstanze Breitebner | Regie: Michael Rowitz",
     "director": "Michael Rowitz",
@@ -5627,11 +5654,11 @@
       "Drama"
     ],
     "channel": "ARD",
-    "timestamp": 1724500800,
+    "timestamp": 1725710400,
     "isNew": false,
     "tmdb_id": 679245,
     "tmdb_type": "movie",
-    "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyNC0wOC0yNF8xNC0wMC1NRVNa"
+    "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyNC0wOS0wN18xNC0wMC1NRVNa"
   },
   {
     "title": "Dennstein & Schwarz - Rufmord",
