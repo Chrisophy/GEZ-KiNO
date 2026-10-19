@@ -21907,11 +21907,11 @@
     "mediathek_desc": "Hanna liebt Yann und die Lettres filmées, die er ihr schickt. Yann liebt Hanna, aber er vertraut ihr nicht. Er verlässt sie, doch lässt er sie nicht mehr allein.",
     "director": "Andrina Mračnikar",
     "actors": [
-	  "Alice Dwyer",
-	  "Sabin Tambrea",
-	  "Gerti Drassl"	
-	],
-    "rating": "4.0
+      "Alice Dwyer",
+      "Sabin Tambrea",
+      "Gerti Drassl"
+    ],
+    "rating": "4.0",
     "thumb": "https://image.tmdb.org/t/p/original/5Z4P6eBQyi18ss4se1Fg9V5wOpE.jpg",
     "genres_list": [
       "Drama"
@@ -23950,21 +23950,21 @@
   {
     "title": "Mo Hayder: Ritualmord",
     "search": "Mo Hayder: Ritualmord",
-    "year": "2022
+    "year": "2022",
     "video_url": "https://nrodlzdf-a.akamaihd.net/dach/zdf/23/06/230619_2215_sendung_spf/2/230619_2215_sendung_spf_a3a4_3360k_p36v17.mp4",
     "plot": "Der Albtraum beginnt, als Polizeitaucherin Kiki im trüben Wasser eines Brüsseler Kanals eine einzelne menschliche Hand findet. Es existiert keine Leiche, und es gibt keine Zeugen.",
     "mediathek_desc": "Der Albtraum beginnt, als Polizeitaucherin Kiki im trüben Wasser eines Brüsseler Kanals eine einzelne menschliche Hand findet. Es existiert keine Leiche, und es gibt keine Zeugen.",
     "director": "Hans Herbots",
     "actors": [
-	  "Marie Vinck",
-	  "Geert Van Rampelberg",
-	  "Ériq Ebouaney"
-	],
+      "Marie Vinck",
+      "Geert Van Rampelberg",
+      "Ériq Ebouaney"
+    ],
     "rating": "6.4",
     "thumb": "https://image.tmdb.org/t/p/original/wsuo7fA9WB941fmoAoHELcnLyRY.jpg",
     "genres_list": [
       "Thriller",
-	  "Krimi"
+      "Krimi"
     ],
     "channel": "ZDF",
     "timestamp": 1790412868,
@@ -24162,10 +24162,10 @@
     "mediathek_desc": "Belgiens Premierminister wird von Terroristen gezwungen, die US-Präsidentin bei ihrem Besuch in Brüssel zu erschießen. Die Terroristen haben die Familie des Premiers in ihre Gewalt gebracht.",
     "director": "Erik Van Looy",
     "actors": [
-	  "Koen De Bouw",
-	  "Tine Reymer",
-	  "Charlotte Vandermeersch"
-	],
+      "Koen De Bouw",
+      "Tine Reymer",
+      "Charlotte Vandermeersch"
+    ],
     "rating": "5.8",
     "thumb": "https://image.tmdb.org/t/p/original/yG7m1fNfHYR9wseo1s7tCf6NsWK.jpg",
     "genres_list": [
@@ -24264,15 +24264,15 @@
     "mediathek_desc": "Spielfilm Deutschland 2010 Ariane (Hande Kazanova), eine Deutsche, reist nach Istanbul, um ihren Sohn zu suchen, der vom eigenen Vater in die Türkei verschleppt wurde. Hilfesuchend wendet sie sich an Mehmet Özakin (Erol Sander), der sie an einen Kollegen verweist....",
     "director": "Helmut Metzger",
     "actors": [
-	 "Erol Sander",
-	 "Oscar Ortega Sánchez",
-	 "Idil Üner"
-	],
+      "Erol Sander",
+      "Oscar Ortega Sánchez",
+      "Idil Üner"
+    ],
     "rating": "5.0",
     "thumb": "https://m.media-amazon.com/images/M/MV5BMzY5NTA0ZTktZDQ2OS00Y2I5LWFiM2YtYTdmNWM1MTNmMTM1XkEyXkFqcGc@._V1_.jpg",
     "genres_list": [
       "TV-Film",
-	  "Krimi"
+      "Krimi"
     ],
     "channel": "ARD",
     "timestamp": 1718062500,
@@ -24701,16 +24701,16 @@
     "mediathek_desc": "Der Philosophie-Professor Evan Birch hat eigentlich ein sorgloses Leben. Doch dann verschwindet eine 17-jährige Cheerleaderin spurlos, und der Professor gerät in Schwierigkeiten.",
     "director": "Simon Kaijser",
     "actors": [
-	  "Guy Pearce",
-	  "Pierce Brosnan",
-	  "Minnie Driver"
-	],
+      "Guy Pearce",
+      "Pierce Brosnan",
+      "Minnie Driver"
+    ],
     "rating": "5.6",
     "thumb": "https://image.tmdb.org/t/p/original/pvLebrhqk3WMu0qwkPXTkHcl2yF.jpg",
     "genres_list": [
       "Thrller",
-	  "Mystery",
-	  "Krimi"
+      "Mystery",
+      "Krimi"
     ],
     "channel": "ZDF",
     "timestamp": 1733697300,
@@ -25127,7 +25127,7 @@
     "thumb": "https://image.tmdb.org/t/p/w342/v7USMmkeGLJDEkYw5Rcr7jVZGoa.jpg",
     "genres_list": [
       "Komödie",
-	  "Romanze"
+      "Romanze"
     ],
     "channel": "ARD",
     "timestamp": 1778919900,
@@ -26446,16 +26446,16 @@
     "mediathek_desc": "Schweinezüchter Gützkow wird bei einem Jagdunfall getötet. Davon profitieren nicht nur die Gegner eines geplanten Schweinemastbetriebes. Pfarrer Braun deckt eine gigantische Schweinerei auf.",
     "director": "Wolfgang F. Henschel",
     "actors": [
-	  "Ottfried Fischer",
-	  "Hans-Michael Rehberg",
-	  "Hansi Jochmann"
-	],
+      "Ottfried Fischer",
+      "Hans-Michael Rehberg",
+      "Hansi Jochmann"
+    ],
     "rating": "6.7",
     "thumb": "https://m.media-amazon.com/images/M/MV5BMzA3Y2ZiN2UtNmY2ZC00ZDU3LWJmOGQtODg4YWFmZmNhNDQ1XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
     "genres_list": [
       "TV-Film",
-	  "Komödie",
-	  "Krimi"
+      "Komödie",
+      "Krimi"
     ],
     "channel": "3Sat",
     "timestamp": 1504366140,
@@ -26890,16 +26890,17 @@
     "mediathek_desc": "Fernsehfilm Deutschland 2000\r\n\r\nHauptkommissarin Wanda Rosenbaum (Jutta Hoffmann) ermittelt zum zweiten Mal in Brandenburg: Eine Lehrerin wird während des Unterrichts niedergestochen. Für ihren Tod gibt es 28 Zeugen, doch keiner will den Mörder preisgeben. Bei ihren Ermittlungen stoßen Wanda Rosenbaum und Revierpolizist Krause (Horst Krause) auf eine Mauer des Schweigens. Als sie die letzten Stund\n.....",
     "director": "Andreas Kleinert",
     "actors": [
-	  "Jutta Hoffmann",
-	  "Horst Krause",
-	  "Uwe Kockisch"
-	],
+      "Jutta Hoffmann",
+      "Horst Krause",
+      "Uwe Kockisch"
+    ],
     "rating": "7.0",
     "thumb": "https://m.media-amazon.com/images/M/MV5BYmIyMGE2ZGEtYThiMy00MTEzLTk4MDUtYzYxMDU5MDFhYmNjXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
     "genres_list": [
       "TV-Film",
-	  "Drama",
-	  "Thriller"
+      "Drama",
+      "Thriller"
+    ],
     "timestamp": 1736975400,
     "isNew": false,
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyNS0wMS0xNV8yMi0xMC1NRVo"
