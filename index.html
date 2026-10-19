@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>[GEZ] KiNO</title>
     
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4.1.4"></script>
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@1.5.20"></script>
 
     <script>
         (function() {
-            const savedTheme = localStorage.getItem('gez_kino_theme');
+            let savedTheme = null;
+            try { savedTheme = localStorage.getItem('gez_kino_theme'); } catch (e) {}
             if (savedTheme === 'light') {
                 document.documentElement.classList.remove('dark');
             } else {
@@ -434,12 +435,34 @@
             10752: 'Krieg', 37: 'Western'
         };
         
+        function storageGet(key) {
+            try { return localStorage.getItem(key); } catch (e) { return null; }
+        }
+        function storageSet(key, value) {
+            try { localStorage.setItem(key, value); } catch (e) {}
+        }
+        function jsAttr(value) {
+            return String(value ?? '')
+                .replace(/\\/g, '\\\\')
+                .replace(/'/g, "\\'")
+                .replace(/[\r\n]+/g, ' ')
+                .replace(/&/g, '&amp;')
+                .replace(/"/g, '&quot;')
+                .replace(/</g, '&lt;')
+                .replace(/>/g, '&gt;');
+        }
+
         let allMovies = [];
         let liveTvChannels = [];
         let newsArticles = []; 
         let moviesToRender = []; 
-        let favoriteUrls = JSON.parse(localStorage.getItem('gez_kino_favs') || '[]');
-        let hideTvMovies = localStorage.getItem('gez_kino_hide_tv') === 'true';
+        let favoriteUrls = (() => {
+            try {
+                const v = JSON.parse(storageGet('gez_kino_favs') || '[]');
+                return Array.isArray(v) ? v : [];
+            } catch (e) { return []; }
+        })();
+        let hideTvMovies = storageGet('gez_kino_hide_tv') === 'true';
         let currentNewsSource = 'ÖRR';
         let currentGenre = 'Alle';
         let currentView = 'mediathek'; 
@@ -453,10 +476,10 @@
             const isDark = html.classList.contains('dark');
             if (isDark) {
                 html.classList.remove('dark');
-                localStorage.setItem('gez_kino_theme', 'light');
+                storageSet('gez_kino_theme', 'light');
             } else {
                 html.classList.add('dark');
-                localStorage.setItem('gez_kino_theme', 'dark');
+                storageSet('gez_kino_theme', 'dark');
             }
             updateThemeUI();
         }
@@ -476,7 +499,7 @@
 
         function toggleTvMoviesFilter() {
             hideTvMovies = !hideTvMovies;
-            localStorage.setItem('gez_kino_hide_tv', hideTvMovies ? 'true' : 'false');
+            storageSet('gez_kino_hide_tv', hideTvMovies ? 'true' : 'false');
             renderGenreLeiste();
             filterResults();
         }
@@ -573,7 +596,8 @@
                     if (line.startsWith('#EXTINF:')) {
                         const logoMatch = line.match(/tvg-logo="([^"]+)"/);
                         const commaIdx = line.indexOf(',');
-                        const name = commaIdx !== -1 ? line.substring(commaIdx + 1).trim() : 'Unbekannter Sender';
+                        const rawName = commaIdx !== -1 ? line.substring(commaIdx + 1).trim() : 'Unbekannter Sender';
+                        const name = rawName.replace(/[<>"]/g, '') || 'Unbekannter Sender';
                         
                         currentChannel = {
                             title: name,
@@ -1194,15 +1218,15 @@
                 card.id = `movie-${uniqueCardId}`;
                 card.className = "bg-gray-900/90 rounded-2xl overflow-hidden shadow-lg border border-gray-800/80 flex flex-col justify-between hover:border-blue-500/80 hover:shadow-blue-500/10 transition-all duration-300 group h-full";
                 
-                const escapedTitle = m.title.replace(/'/g, "\\'").replace(/"/g, '&quot;');
+                const escapedTitle = jsAttr(m.title);
                 const isTv = currentView === 'livetv';
                 const isNews = currentView === 'news'; 
                 const isFav = favoriteUrls.includes(m.video_url);
                 const isDirectVideo = m.video_url.match(/\.(mp4|m3u8|mkv|avi)(\?.*)?$/i);
                 
                 const clickAction = (isNews && !isDirectVideo) 
-                    ? `openNewsModal('${m.id}')` 
-                    : `openPlayer('${m.video_url}', '${escapedTitle}')`;
+                    ? `openNewsModal('${jsAttr(m.id)}')` 
+                    : `openPlayer('${jsAttr(m.video_url)}', '${escapedTitle}')`;
                 const buttonText = (isNews && !isDirectVideo) ? 'LESEN' : 'ABSPIELEN';
 
                 let badgeClass = "text-yellow-400 border-yellow-500/30";
@@ -1210,7 +1234,7 @@
                 if (isTv) { badgeClass = "text-red-400 border-red-500/30"; badgeText = "🔴 LIVE"; }
                 if (isNews) { badgeClass = "text-blue-400 border-blue-500/30"; badgeText = m.source || m.channel || "News"; }
 
-                const plotClickAction = isNews ? `openNewsModal('${m.id}')` : 'togglePlot(this)';
+                const plotClickAction = isNews ? `openNewsModal('${jsAttr(m.id)}')` : 'togglePlot(this)';
                 const plotTitleHint = isNews ? 'Klicken, um den ganzen Artikel zu lesen' : 'Klicken, um die Beschreibung & Credits zu erweitern';
 
                 let creditsHtml = '';
@@ -1338,7 +1362,7 @@
                 favoriteUrls.push(url);
             }
             
-            localStorage.setItem('gez_kino_favs', JSON.stringify(favoriteUrls));
+            storageSet('gez_kino_favs', JSON.stringify(favoriteUrls));
             
             const card = document.getElementById(`movie-${cardId}`);
             if (card) {
@@ -1531,13 +1555,41 @@
             }
         
             video.muted = false;
-            video.src = url;
-        
-            video.play().catch(err => {
-                console.log("Autoplay mit Ton wurde blockiert, Falle auf Stumm zurück:", err);
-                video.muted = true;
-                video.play().catch(e => console.error("Wiedergabe fehlgeschlagen:", e));
-            });
+
+            const startPlayback = () => {
+                video.play().catch(err => {
+                    console.log("Autoplay mit Ton wurde blockiert, Falle auf Stumm zurück:", err);
+                    video.muted = true;
+                    video.play().catch(e => console.error("Wiedergabe fehlgeschlagen:", e));
+                });
+            };
+
+            const isHlsUrl = /\.m3u8(\?.*)?$/i.test(url);
+
+            if (isHlsUrl && window.Hls && Hls.isSupported()) {
+                let networkRetries = 0;
+                hlsInstance = new Hls();
+                hlsInstance.on(Hls.Events.MANIFEST_PARSED, startPlayback);
+                hlsInstance.on(Hls.Events.ERROR, (evt, data) => {
+                    if (!data.fatal || !hlsInstance) return;
+                    if (data.type === Hls.ErrorTypes.NETWORK_ERROR && networkRetries < 2) {
+                        networkRetries++;
+                        hlsInstance.startLoad();
+                    } else if (data.type === Hls.ErrorTypes.MEDIA_ERROR && networkRetries < 2) {
+                        networkRetries++;
+                        hlsInstance.recoverMediaError();
+                    } else {
+                        hlsInstance.destroy();
+                        hlsInstance = null;
+                        showHUD('⚠️ Stream nicht abspielbar', 6000);
+                    }
+                });
+                hlsInstance.loadSource(url);
+                hlsInstance.attachMedia(video);
+            } else {
+                video.src = url;
+                startPlayback();
+            }
         
             showHUD(`▶ ${title || 'Spiele Video...'}`);
         }
@@ -1545,9 +1597,9 @@
         function closePlayer(fromPopState = false) {
             const modal = document.getElementById('videoModal');
             const video = document.getElementById('mainVideoPlayer');
-            video.removeEventListener('timeupdate', updateHudTime);
-            video.removeEventListener('loadedmetadata', updateHudTime);            
             if (!modal || !video) return;
+            video.removeEventListener('timeupdate', updateHudTime);
+            video.removeEventListener('loadedmetadata', updateHudTime);
 
             video.pause();
             if (hlsInstance) {
@@ -1576,7 +1628,7 @@
         window.addEventListener('keydown', (e) => {
             if (!isPlayerOpen) return;
             
-            if (e.key === 'Escape' || e.key === 'BackSpace') {
+            if (e.key === 'Escape' || e.key === 'Backspace' || e.key === 'BackSpace' || e.key === 'GoBack' || e.key === 'BrowserBack') {
                 closePlayer();
             } else if (e.key === ' ' || e.key === 'Enter' || e.key === 'Select') {
                 e.preventDefault();
@@ -1588,7 +1640,7 @@
             }
         });
 
-        function showHUD(text) {
+        function showHUD(text, duration = 2500) {
             const hud = document.getElementById('playerHUD');
             const hudStatus = document.getElementById('hudStatus');
             if (!hud || !hudStatus) return;
@@ -1599,7 +1651,7 @@
             clearTimeout(window.hudTimeout);
             window.hudTimeout = setTimeout(() => {
                 hud.classList.add('opacity-0');
-            }, 2500);
+            }, duration);
         }
 
         document.getElementById('videoModal')?.addEventListener('click', (e) => {
@@ -1649,6 +1701,11 @@
                     }
                 }
             }
+        });
+
+        document.getElementById('mainVideoPlayer')?.addEventListener('error', () => {
+            if (!isPlayerOpen) return;
+            showHUD('⚠️ Stream nicht abspielbar', 6000);
         });
 
         document.addEventListener('DOMContentLoaded', () => {
