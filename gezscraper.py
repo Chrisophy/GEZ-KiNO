@@ -95,7 +95,7 @@ def choose_best_result(results, movie, media_type):
     source_title = movie['search']
     source_year_str = movie['year'] if movie['year'] not in ['None', 'LIVE'] else ''
     source_year = int(source_year_str) if source_year_str.isdigit() else None
-    m_desc = movie['mediathek_desc'].lower()
+    m_desc = (movie.get('mediathek_desc') or movie.get('plot') or '').lower()
 
     scored = []
     for cand in results:
@@ -145,8 +145,10 @@ def hydrate_movie(movie):
             processed_count += 1
         return movie
 
+    m_desc_safe = movie.get('mediathek_desc') or movie.get('plot') or ''
+
     try:
-        raw_search = movie['search'] or movie['title']
+        raw_search = movie.get('search') or movie.get('title') or ''
         search_queries = get_search_queries(raw_search)
         
         tmdb = None
@@ -180,10 +182,10 @@ def hydrate_movie(movie):
         if tmdb:
             genre_ids = tmdb.get('genre_ids', [])
             if 16 in genre_ids:
-                lower_title = movie['title'].lower()
+                lower_title = movie.get('title', '').lower()
                 lower_overview = tmdb.get('overview', '').lower()
                 real_keywords = ['tatort', 'polizeiruf', 'in aller freundschaft', 'rosenheim-cops', 'krimi', 'fernsehfilm', 'kommissar', 'drama', 'spielfilm']
-                if any(kw in lower_title or kw in lower_overview or kw in movie['mediathek_desc'].lower() for kw in real_keywords):
+                if any(kw in lower_title or kw in lower_overview or kw in m_desc_safe.lower() for kw in real_keywords):
                     genre_ids = [gid for gid in genre_ids if gid != 16]
 
             media_type = 'tv' if is_tv else 'movie'
@@ -191,7 +193,7 @@ def hydrate_movie(movie):
             d_res = requests.get(credits_url, timeout=10)
             d_data = d_res.json() if d_res.status_code == 200 else {}
 
-            movie['plot'] = tmdb.get('overview') or movie['mediathek_desc'] or 'Keine Beschreibung verfügbar.'
+            movie['plot'] = tmdb.get('overview') or m_desc_safe or 'Keine Beschreibung verfügbar.'
             vote_avg = tmdb.get('vote_average')
             movie['rating'] = f"{vote_avg:.1f}" if vote_avg else 'N/A'
             poster = tmdb.get('poster_path')
@@ -203,7 +205,7 @@ def hydrate_movie(movie):
             movie['actors'] = [a['name'] for a in credits.get('cast', [])[:3]]
 
             date_str = tmdb.get('release_date') or tmdb.get('first_air_date')
-            if date_str and movie['year'] == 'None':
+            if date_str and movie.get('year') == 'None':
                 movie['year'] = date_str.split('-')[0]
 
             if genre_ids:
@@ -215,7 +217,7 @@ def hydrate_movie(movie):
             movie['tmdb_type'] = media_type
         else:
             if not movie.get('plot') or movie['plot'] == 'Keine Beschreibung verfügbar.':
-                movie['plot'] = movie['mediathek_desc'] or 'Keine Beschreibung verfügbar.'
+                movie['plot'] = m_desc_safe or 'Keine Beschreibung verfügbar.'
             if not movie.get('rating'):
                 movie['rating'] = 'N/A'
             if not movie.get('thumb'):
@@ -223,9 +225,9 @@ def hydrate_movie(movie):
 
     except Exception as e:
         with print_lock:
-            print(f"Fehler bei TMDB für {movie['search']}: {e}")
+            print(f"Fehler bei TMDB für {movie.get('search')}: {e}")
         if not movie.get('plot'):
-            movie['plot'] = movie['mediathek_desc'] or 'Keine Beschreibung verfügbar.'
+            movie['plot'] = m_desc_safe or 'Keine Beschreibung verfügbar.'
 
     with print_lock:
         processed_count += 1
@@ -355,6 +357,9 @@ def main():
                             "isNew": False
                         }
 
+                if 'mediathek_desc' not in movie_entry:
+                    movie_entry['mediathek_desc'] = movie_entry.get('plot', '')
+
                 temp_results.append(movie_entry)
         except Exception as e:
             print(f"Fehler bei Query {q}: {e}")
@@ -366,14 +371,12 @@ def main():
             unique_temp[v_url] = m
     temp_results = list(unique_temp.values())
 
-    temp_results.sort(key=lambda x: x['timestamp'], reverse=True)
+    temp_results.sort(key=lambda x: x.get('timestamp', 0), reverse=True)
     
-    temp_results = temp_results[:100]
+    for i, m in enumerate(temp_results):
+        m['isNew'] = (i < 100)
 
-    for m in temp_results:
-        m['isNew'] = True
-
-    all_movies = sorted(temp_results, key=lambda x: x['title'])
+    all_movies = sorted(temp_results, key=lambda x: x.get('title', ''))
     print(f"{len(all_movies)} Filme gefunden. Starte TMDB-Hydrierung (parallel mit Threads)...")
 
     hydrated_movies = []
@@ -382,7 +385,7 @@ def main():
         for future in as_completed(futures):
             hydrated_movies.append(future.result())
 
-    hydrated_movies.sort(key=lambda x: x['title'])
+    hydrated_movies.sort(key=lambda x: x.get('title', ''))
 
     with open('movies.json', 'w', encoding='utf-8') as f:
         json.dump(hydrated_movies, f, ensure_ascii=False, indent=2)
