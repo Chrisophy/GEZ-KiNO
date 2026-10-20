@@ -1578,6 +1578,34 @@
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyNS0xMS0xNV8wMy0yNS1NRVo"
   },
   {
+    "title": "Anna und die Apokalypse",
+    "search": "Anna und die Apokalypse",
+    "original_title": "Anna und die Apokalypse",
+    "year": "2018",
+    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/24/10/241004_0025_sendung_spf/3/241004_0025_sendung_spf_a1a2_3360k_p36v17.mp4",
+    "url_website": "https://www.zdf.de/video/filme/anna-und-die-apokalypse-movie-100/anna-und-die-apokalypse-100",
+    "plot": "Anna kann es gar nicht erwarten, dass sie endlich mit der Schule fertig ist, denn sie will unbedingt aus ihrer kleinen Heimatstadt Little Haven weg. Sie möchte die Welt sehen und etwas erleben, gerade auch weil ihr Vater andere Plänen für seine Tochter hat. Ihr bester Freund John hat indes andere Probleme, denn er ist in Anna verliebt und weiß nicht, wie er ihr das sagen soll. Doch all das rückt auf einmal in den Hintergrund, als ihr Leben durch eine Zombie-Invasion auf den Kopf gestellt wird.",
+    "mediathek_desc": "Ausgerechnet am Weihnachtsvorabend bricht weltweit eine Zombie-Epidemie aus. Teenager Anna und ihre Freunde müssen um ihr Leben kämpfen – und zwar mit äußerst ungewöhnlichen Mitteln.",
+    "director": "John McPhail",
+    "actors": [
+      "Ella Hunt",
+      "Sarah Swire",
+      "Malcolm Cumming"
+    ],
+    "rating": "6.0",
+    "thumb": "https://image.tmdb.org/t/p/w342/7Tk15Xm2VAHsUbxGk4U6N7VB9NZ.jpg",
+    "genres_list": [
+      "Horror",
+      "Komödie",
+      "Fantasy"
+    ],
+    "channel": "ZDF",
+    "timestamp": 1727994600,
+    "isNew": false,
+    "tmdb_id": 461928,
+    "tmdb_type": "movie"
+  },
+  {
     "title": "Annas Erbe",
     "search": "Annas Erbe",
     "year": "2011",
@@ -1944,10 +1972,10 @@
     ],
     "channel": "RBB",
     "timestamp": 1791615600,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 570356,
     "tmdb_type": "movie",
-    "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyMS0xMS0yN18xNC0zMC1NRVo"
+    "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyMS0xMS0yN18xNC0zMC1NRVovYXVkaW9kZXNrcmlwdGlvbg"
   },
   {
     "title": "Aus lauter Liebe zu dir",
@@ -4455,8 +4483,8 @@
       "Romanze"
     ],
     "channel": "ARD",
-    "timestamp": 1786969800,
-    "isNew": false,
+    "timestamp": 1793010000,
+    "isNew": true,
     "tmdb_id": 198092,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyNS0wNy0wM18wMi0wMC1NRVNa"
@@ -4933,6 +4961,29 @@
     "tmdb_id": 713,
     "tmdb_type": "movie",
     "url_website": "https://www.3sat.de/film/spielfilm/das-piano-102.html"
+  },
+  {
+    "title": "Das Protokoll - Mord auf höchster Ebene",
+    "search": "Mord auf höchster Ebene",
+    "year": "2017",
+    "video_url": "https://rodlzdf-a.akamaihd.net/dach/3sat/21/06/210606_mord_auf_hoechster_ebene_spielfilm/2/210606_mord_auf_hoechster_ebene_spielfilm_2360k_p35v15.mp4",
+    "plot": "Der belgische Premierminister ist zusammen mit seiner Assistentin auf dem Weg ins Parlament. Alles erscheint wie ein ganz normaler Tag, bis ihr Wagen plötzlich gestoppt und beide entführt werden. Die Terroristen verlangen vom Premierminister, die US-Präsidentin beim anstehenden Staatsbesuch zu erschießen. Als Druckmittel haben sie seine Frau und die beiden Kinder entführt. Um seine Familie zu retten, muss er den perfiden Befehl der Terroristen ausführen. Die Uhr tickt während der explosive Höhepunkt immer näher rückt …",
+    "mediathek_desc": "Belgiens Premierminister wird von Terroristen gezwungen, die US-Präsidentin bei ihrem Besuch in Brüssel zu erschießen. Die Terroristen haben die Familie des Premiers in ihre Gewalt gebracht.",
+    "director": "Erik Van Looy",
+    "actors": [
+      "Koen De Bouw",
+      "Tine Reymer",
+      "Charlotte Vandermeersch"
+    ],
+    "rating": "5.8",
+    "thumb": "https://image.tmdb.org/t/p/original/yG7m1fNfHYR9wseo1s7tCf6NsWK.jpg",
+    "genres_list": [
+      "Thriller"
+    ],
+    "channel": "ZDF",
+    "timestamp": 1716758100,
+    "isNew": false,
+    "url_website": "https://www.zdf.de/filme/spielfilm-highlights/mord-auf-hoechster-ebene-110.html"
   },
   {
     "title": "Das Tal der geheimen Gräber",
@@ -5525,7 +5576,7 @@
       "TV-Film"
     ],
     "channel": "ZDF",
-    "timestamp": 1791612002,
+    "timestamp": 1792417778,
     "isNew": true,
     "tmdb_id": 1426262,
     "tmdb_type": "movie",
@@ -6804,32 +6855,6 @@
   },
   {
     "title": "Der Pate II",
-    "search": "Der Pate II",
-    "year": "1974",
-    "video_url": "https://nrodlzdf-a.akamaihd.net/dach/3sat/26/02/260220_der_pate_2_mit_ad_spielfilm/1/260220_der_pate_2_mit_ad_spielfilm_a1a2_3360k_p36v17.mp4",
-    "plot": "Michael Corleone ist jetzt der Pate seiner Familie und führt diese Aufgabe mit der nötigen Gnadenlosigkeit aus. Als er in Las Vegas und auf Kuba expandieren will, weil ihm die alten Geschäftsideen nichts mehr einbringen, treten Schwierigkeiten auf. Um diese zu klären, veranlaßt Michael eine große Säuberungsaktion, die auch vor den Familienmitgliedern nicht halt macht.",
-    "mediathek_desc": "Aufgewachsen in den 1920er-Jahren in einem sizilianischen Dorf, wandert der junge Vito Corleone nach New York aus, wo er nach seinem ersten Auftragsmord eine eigene Mafiafamilie aufbaut.",
-    "director": "Francis Ford Coppola",
-    "actors": [
-      "Al Pacino",
-      "Robert Duvall",
-      "Diane Keaton"
-    ],
-    "rating": "8.6",
-    "thumb": "https://image.tmdb.org/t/p/w342/ydzBlAMJTo9jOG5i8aRpZec0jF3.jpg",
-    "genres_list": [
-      "Drama",
-      "Krimi"
-    ],
-    "channel": "3Sat",
-    "timestamp": 1771623060,
-    "isNew": false,
-    "tmdb_id": 240,
-    "tmdb_type": "movie",
-    "url_website": "https://www.3sat.de/film/spielfilm/der-pate-ii-100.html"
-  },
-  {
-    "title": "Der Pate II",
     "search": "Der Pate 2",
     "year": "1974",
     "video_url": "https://arteptweb-a.akamaihd.net/am/ptweb/045000/045500/045560-000-C_EQ_0_VA_11533434_MP4-1500_AMM-PTWEB-40521656206800_1saJY8108id8.mp4",
@@ -6853,6 +6878,32 @@
     "tmdb_id": 240,
     "tmdb_type": "movie",
     "url_website": "https://www.arte.tv/de/videos/045560-000-A/der-pate-2/"
+  },
+  {
+    "title": "Der Pate II",
+    "search": "Der Pate II",
+    "year": "1974",
+    "video_url": "https://nrodlzdf-a.akamaihd.net/dach/3sat/26/02/260220_der_pate_2_mit_ad_spielfilm/1/260220_der_pate_2_mit_ad_spielfilm_a1a2_3360k_p36v17.mp4",
+    "plot": "Michael Corleone ist jetzt der Pate seiner Familie und führt diese Aufgabe mit der nötigen Gnadenlosigkeit aus. Als er in Las Vegas und auf Kuba expandieren will, weil ihm die alten Geschäftsideen nichts mehr einbringen, treten Schwierigkeiten auf. Um diese zu klären, veranlaßt Michael eine große Säuberungsaktion, die auch vor den Familienmitgliedern nicht halt macht.",
+    "mediathek_desc": "Aufgewachsen in den 1920er-Jahren in einem sizilianischen Dorf, wandert der junge Vito Corleone nach New York aus, wo er nach seinem ersten Auftragsmord eine eigene Mafiafamilie aufbaut.",
+    "director": "Francis Ford Coppola",
+    "actors": [
+      "Al Pacino",
+      "Robert Duvall",
+      "Diane Keaton"
+    ],
+    "rating": "8.6",
+    "thumb": "https://image.tmdb.org/t/p/w342/ydzBlAMJTo9jOG5i8aRpZec0jF3.jpg",
+    "genres_list": [
+      "Drama",
+      "Krimi"
+    ],
+    "channel": "3Sat",
+    "timestamp": 1771623060,
+    "isNew": false,
+    "tmdb_id": 240,
+    "tmdb_type": "movie",
+    "url_website": "https://www.3sat.de/film/spielfilm/der-pate-ii-100.html"
   },
   {
     "title": "Der Pate, Epilog: Der Tod von Michael Corleone",
@@ -8683,32 +8734,6 @@
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyNC0xMC0xMl8xNC0wMC1NRVNa"
   },
   {
-    "title": "Die Gleichung ihres Lebens",
-    "search": "Die Gleichung ihres Lebens",
-    "year": "2023",
-    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/25/10/251024_0045_sendung_spf/1/251024_0045_sendung_spf_a3a4_3360k_p36v17.mp4",
-    "plot": "Primzahlen sind Marguerites große Leidenschaft. Die brillante Mathematikstudentin ist die einzige Frau im Promotionsprogramm unter dem renommierten Professor Werner an der École Normale Supérieure in Paris. Doch als sie bei der Präsentation vor einem Forschergremium mit einem gravierenden Fehler in ihrer Arbeit konfrontiert wird und die Fassung verliert, lässt ihr Doktorvater sie fallen und widmet sich ganz dem talentierten Promovenden Lucas. Tief erschüttert und voller Selbstzweifel wirft Marguerite alles hin und sucht sich einen Aushilfsjob. Schnell muss sie erkennen, dass auch das Leben außerhalb der Universität überraschende Erkenntnisse bereithält und sich weder die Mathematik noch Lucas so einfach aus ihrem Leben verbannen lassen.",
-    "mediathek_desc": "Für die Pariser Studentin Marguerite steht Mathe über allem, doch nach einem herben Rückschlag bei ihrem Forschungsprojekt schmeißt sie alles hin und wagt einen radikalen Neuanfang.",
-    "director": "Anna Novion",
-    "actors": [
-      "Ella Rumpf",
-      "Julien Frison",
-      "Jean-Pierre Darroussin"
-    ],
-    "rating": "6.8",
-    "thumb": "https://image.tmdb.org/t/p/w342/mdiCmhUVVf9I1o6ILjyhUeQuoXO.jpg",
-    "genres_list": [
-      "Drama",
-      "Mystery"
-    ],
-    "channel": "ZDF",
-    "timestamp": 1792121413,
-    "isNew": true,
-    "tmdb_id": 960033,
-    "tmdb_type": "movie",
-    "url_website": "https://www.zdf.de/filme/die-gleichung-ihres-lebens-movie-100"
-  },
-  {
     "title": "Die Gottesanbeterin",
     "search": "Die Gottesanbeterin",
     "year": "2001",
@@ -10464,7 +10489,7 @@
     ],
     "channel": "ARD",
     "timestamp": 1791579000,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 891,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2FyZC5kZS9wbGFuQVJEXzllNzM5YjZhLWNmYjEtNDI0NC05MDVjLWMzNDAzMzQxY2IwN19nYW56ZVNlbmR1bmc"
@@ -10830,6 +10855,34 @@
     "tmdb_id": 390882,
     "tmdb_type": "movie",
     "url_website": "https://www.3sat.de/film/spielfilm/die-kleine-hexe-100.html"
+  },
+  {
+    "title": "Die letzte Fahrt",
+    "search": "Die letzte Fahrt",
+    "original_title": "Die letzte Fahrt",
+    "year": "2013",
+    "video_url": "https://ctv-videos.daserste.de/int/2026/08/17/3981/3981_24662_sendeton_1280x720-50p-3200kbit.mp4",
+    "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2FyZC5kZS9lNGU3MTZhZi1kMDE0LTRjODAtOTc1OS0xZGI2OWU3ZmNiZjNfZ2FuemVTZW5kdW5n",
+    "plot": "Vor 20 Jahren haben Claudia und ihr Mann Michael ein alternatives Reisemagazin gegründet. Mit Erfolg, doch nun werden die Zeiten härter, die Arbeit immer anstrengender und aufwendiger. Sie vernachlässigen ihre Beziehung, und auch ihr Sohn Jonas , der nun schon zum zweiten Mal sitzengeblieben ist und aufs Internat soll, leidet unter der großen Arbeitsbelastung. Kurz gesagt, die kleine Familie steht vor einer Zerreißprobe. Doch dann kommt es zur wirklichen Katastrophe: Claudias Mutter stirbt. Ihr Vater Rainer, ein starrköpfiger Schiffer, der trotz seines Alters unbeirrt den Rhein rauf- und runterfährt, bleibt allein zurück. Was soll nun mit ihm geschehen? Bevor Claudia eine Entscheidung treffen kann, nimmt Rainer die Dinge in die Hand und macht sich auf zu einer letzten Fahrt: Er will die Asche seiner Frau im Rhein verstreuen und nimmt Jonas mit. Claudia folgt ihrem Vater und ihrem Sohn auf das Schiff und auch Michael stößt später dazu.  Eine Fahrt mit ungewissem Ausgang.",
+    "mediathek_desc": "Spielfilm Deutschland 2012 Mit ihrem angesagten Magazin für alternativen Tourismus haben Claudia (Julia Jäger) und Michael (Thomas Sarbacher) ihre Reiseleidenschaft erfolgreich zum Beruf gemacht. Die selbstständigen Publizisten arbeiten jedoch stets am Limit und vernachlässigen dabei ihre Ehe und ihren pubertierenden Sohn Jonas (Sammy Scheuritzel), der zum zweiten Mal sitzen geblieben ist....",
+    "director": "Christoph Schrewe",
+    "actors": [
+      "Thomas Sarbacher",
+      "Julia Jäger",
+      "Sönke Möhring"
+    ],
+    "rating": "4.2",
+    "thumb": "https://image.tmdb.org/t/p/w342/kY2yhP4hctzF7OiFFa1F9Cd2QyH.jpg",
+    "genres_list": [
+      "Romanze",
+      "TV-Film",
+      "Drama"
+    ],
+    "channel": "ARD",
+    "timestamp": 1787036784,
+    "isNew": false,
+    "tmdb_id": 279971,
+    "tmdb_type": "movie"
   },
   {
     "title": "Die letzte Mätresse",
@@ -11269,6 +11322,32 @@
     "tmdb_id": 260764,
     "tmdb_type": "movie",
     "url_website": "https://www.zdf.de/filme/dora-heldt-ausgeliebt-movie-100"
+  },
+  {
+    "title": "Dora Heldt: Bei Hitze ist es wenigstens nicht kalt",
+    "search": "Dora Heldt: Bei Hitze ist es wenigstens nicht kalt",
+    "original_title": "Dora Heldt: Bei Hitze ist es wenigstens nicht kalt",
+    "year": "2012",
+    "video_url": "https://nrodlzdf-a.akamaihd.net/none/zdf/21/07/210710_1210_sendung_sof/4/210710_1210_sendung_sof_3360k_p36v15.mp4",
+    "url_website": "https://www.zdf.de/filme/dora-heldt-bei-hitze-ist-es-wenigstens-nicht-kalt-movie-100",
+    "plot": "Doris gerät ins Schwitzen: Ihr 50. Geburtstag naht, und sie sieht keinen Grund zum Jubilieren. Sie ist nervös, leidet unter Hitzewallungen und ist unzufrieden. Auf gar keinen Fall will sie eine spießige Familienfeier. Als Doris erfährt, dass ihr Mann Torsten eine Überraschungsparty plant, hilft nur eins: die Flucht.  Kurzerhand fährt Doris mit ihren besten Freundinnen Katja und Anke für ein paar Tage in ein Wellness-Hotel. Dort möchte sie ganz entspannt in den leidigen Geburtstag hineinfeiern. Die Freundinnen sind gar nicht begeistert, als sie erfahren, dass Doris den Aufenthalt zur Sinnsuche nutzen will und dafür auch noch für alle den \"Lifecoach\" Georg engagiert hat. Auch sonst läuft nicht alles wie geplant.",
+    "mediathek_desc": "Doris gerät ins Schwitzen: Ihr 50. Geburtstag naht, und sie sieht keinen Grund zum Jubilieren. Sie ist nervös, hat Hitzewallungen und ist unzufrieden.",
+    "director": "Mark von Seydlitz",
+    "actors": [
+      "Christine Neubauer",
+      "Birge Schade",
+      "Gesine Cukrowski"
+    ],
+    "rating": "4.0",
+    "thumb": "https://image.tmdb.org/t/p/w342/3hhdF5r1rY6cg5hFeJ02NYlfOG0.jpg",
+    "genres_list": [
+      "Komödie"
+    ],
+    "channel": "ZDF",
+    "timestamp": 1789982003,
+    "isNew": false,
+    "tmdb_id": 163089,
+    "tmdb_type": "movie"
   },
   {
     "title": "Dora Heldt: Herzlichen Glückwunsch, Sie haben gewonnen!",
@@ -13073,8 +13152,8 @@
       "Romanze"
     ],
     "channel": "ARD",
-    "timestamp": 1785573000,
-    "isNew": false,
+    "timestamp": 1793016000,
+    "isNew": true,
     "tmdb_id": 323168,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyNC0xMS0wOV8xNS0zMC1NRVo"
@@ -23952,7 +24031,7 @@
     "search": "Mo Hayder: Ritualmord",
     "year": "2022",
     "video_url": "https://nrodlzdf-a.akamaihd.net/dach/zdf/23/06/230619_2215_sendung_spf/2/230619_2215_sendung_spf_a3a4_3360k_p36v17.mp4",
-    "plot": "Der Albtraum beginnt, als Polizeitaucherin Kiki im trüben Wasser eines Brüsseler Kanals eine einzelne menschliche Hand findet. Es existiert keine Leiche, und es gibt keine Zeugen.",
+    "plot": "Kiki Schelfthaut ist Polizeitaucherin und macht bei ihrer Arbeit eines Tages eine grausige Entdeckung: Im trüben Wasser eines Brüsseler Kanals findet sie eine menschliche Hand. Zwar gibt es keine Leiche, zu der die Hand gehört, doch schon bald gibt es einen weiteren Fund. Alle Hinweise deuten auf eine Art Ritual und so nimmt Schelfthaut gemeinsam mit Polizeikommissar Cafmeyer die Ermittlungen auf. Schon bald entdecken sie, dass mit den blutigen Ritualen teuflische Kräfte in Schach gehalten werden sollen. Doch auch der belgische Staat und Schelfthauts Familie scheinen in den Fall verwickelt zu sein …\r Basiert auf dem Thriller „Ritualmord“ von Mo Hayder.",
     "mediathek_desc": "Der Albtraum beginnt, als Polizeitaucherin Kiki im trüben Wasser eines Brüsseler Kanals eine einzelne menschliche Hand findet. Es existiert keine Leiche, und es gibt keine Zeugen.",
     "director": "Hans Herbots",
     "actors": [
@@ -23961,7 +24040,7 @@
       "Ériq Ebouaney"
     ],
     "rating": "6.4",
-    "thumb": "https://image.tmdb.org/t/p/original/wsuo7fA9WB941fmoAoHELcnLyRY.jpg",
+    "thumb": "https://image.tmdb.org/t/p/w342/wsuo7fA9WB941fmoAoHELcnLyRY.jpg",
     "genres_list": [
       "Thriller",
       "Krimi"
@@ -23969,7 +24048,9 @@
     "channel": "ZDF",
     "timestamp": 1790412868,
     "isNew": false,
-    "url_website": "https://www.zdf.de/filme/mo-hayder-ritualmord-movie-100"
+    "url_website": "https://www.zdf.de/filme/mo-hayder-ritualmord-movie-100",
+    "tmdb_id": 818422,
+    "tmdb_type": "movie"
   },
   {
     "title": "Momê",
@@ -24152,29 +24233,6 @@
     "tmdb_id": 437035,
     "tmdb_type": "movie",
     "url_website": "https://www.3sat.de/film/spielfilm/mord-auf-la-gomera-100.html"
-  },
-  {
-    "title": "Das Protokoll - Mord auf höchster Ebene",
-    "search": "Mord auf höchster Ebene",
-    "year": "2017",
-    "video_url": "https://rodlzdf-a.akamaihd.net/dach/3sat/21/06/210606_mord_auf_hoechster_ebene_spielfilm/2/210606_mord_auf_hoechster_ebene_spielfilm_2360k_p35v15.mp4",
-    "plot": "Der belgische Premierminister ist zusammen mit seiner Assistentin auf dem Weg ins Parlament. Alles erscheint wie ein ganz normaler Tag, bis ihr Wagen plötzlich gestoppt und beide entführt werden. Die Terroristen verlangen vom Premierminister, die US-Präsidentin beim anstehenden Staatsbesuch zu erschießen. Als Druckmittel haben sie seine Frau und die beiden Kinder entführt. Um seine Familie zu retten, muss er den perfiden Befehl der Terroristen ausführen. Die Uhr tickt während der explosive Höhepunkt immer näher rückt …",
-    "mediathek_desc": "Belgiens Premierminister wird von Terroristen gezwungen, die US-Präsidentin bei ihrem Besuch in Brüssel zu erschießen. Die Terroristen haben die Familie des Premiers in ihre Gewalt gebracht.",
-    "director": "Erik Van Looy",
-    "actors": [
-      "Koen De Bouw",
-      "Tine Reymer",
-      "Charlotte Vandermeersch"
-    ],
-    "rating": "5.8",
-    "thumb": "https://image.tmdb.org/t/p/original/yG7m1fNfHYR9wseo1s7tCf6NsWK.jpg",
-    "genres_list": [
-      "Thriller"
-    ],
-    "channel": "ZDF",
-    "timestamp": 1716758100,
-    "isNew": false,
-    "url_website": "https://www.zdf.de/filme/spielfilm-highlights/mord-auf-hoechster-ebene-110.html"
   },
   {
     "title": "Mord im Fahrpreis inbegriffen",
@@ -24456,8 +24514,8 @@
       "Komödie"
     ],
     "channel": "ARD",
-    "timestamp": 1778322600,
-    "isNew": false,
+    "timestamp": 1793021400,
+    "isNew": true,
     "tmdb_id": 286807,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2FyZC5kZS9wbGFuQVJEXzQ1MmNjNTYyLTE2ZmUtNDhlYi1iNjgzLTdmMmIxMzZmNTk5MF9nYW56ZVNlbmR1bmc"
@@ -24691,31 +24749,6 @@
     "tmdb_id": 266520,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2FyZC5kZS85MzVkNjA4Zi0yMmUyLTQ5YzgtYjJkZS1lNGI2NmIxNDc5MDhfZ2FuemVTZW5kdW5n"
-  },
-  {
-    "title": "Spinning Man - Mörderischer Zweifel",
-    "search": "Mörderischer Zweifel",
-    "year": "2018",
-    "video_url": "https://rodlzdf-a.akamaihd.net/dach/3sat/23/05/230512_moerderischer_zweifel_spielfilm/1/230512_moerderischer_zweifel_spielfilm_2360k_p35v17.mp4",
-    "plot": "Philosophieprofessor Evan Birch führt ein Bilderbuch-Leben als treusorgender Ehemann und Vater. Eines Tages jedoch verschwindet eine seiner Studentinnen spurlos und wird schließlich tot aufgefunden. Der pragmatische Ermittler Malloy beginnt in Birchs Umfeld zu ermitteln. Birch ist zunächst fassungslos angesichts dieser ungeheuerlichen Vorwürfe und auch seine Frau vermutet lediglich ein Missverständnis. Doch die Beweislage verschärft sich zusehends und Birchs Erinnerungslücken machen ihn nur verdächtiger …",
-    "mediathek_desc": "Der Philosophie-Professor Evan Birch hat eigentlich ein sorgloses Leben. Doch dann verschwindet eine 17-jährige Cheerleaderin spurlos, und der Professor gerät in Schwierigkeiten.",
-    "director": "Simon Kaijser",
-    "actors": [
-      "Guy Pearce",
-      "Pierce Brosnan",
-      "Minnie Driver"
-    ],
-    "rating": "5.6",
-    "thumb": "https://image.tmdb.org/t/p/original/pvLebrhqk3WMu0qwkPXTkHcl2yF.jpg",
-    "genres_list": [
-      "Thrller",
-      "Mystery",
-      "Krimi"
-    ],
-    "channel": "ZDF",
-    "timestamp": 1733697300,
-    "isNew": false,
-    "url_website": "https://www.zdf.de/3sat/spielfilm/moerderischer-zweifel-120.html"
   },
   {
     "title": "Nach all den Jahren",
@@ -27645,7 +27678,7 @@
     "search": "Sayonara Loreley - Wiedersehen in Rüdesheim",
     "year": "2022",
     "video_url": "https://ctv-videos.daserste.de/de/2023/05/24/7c6a71c9-2d6d-40fd-8131-c5d88ce7fe8d/JOB_549595__sendeton_1280x720-50p-3200kbit.mp4",
-    "plot": "Spielfilm Deutschland 2022 Marie (Katharina Marie Schubert) freut sich auf die Reise mit ihrem Hunsrücker Frauenchor nach Japan. Ihren Traum lässt sie sich auch nicht von ihrer Mutter (Victoria Trauttmansdorff) ausreden, die ausgerechnet jetzt zur Kur nach Rüdesheim fährt und ihre Tochter zur Vertretung in ihrem Kleinstadtladen verpflichten will....",
+    "plot": "Die Geschichte erzählt in einer Mischung aus abgründigem Humor und magischen Realismus von Marie, einer bodenständigen Frau in den Vierzigern. Sie kommt ihrem großen Traum, einer Reise nach Japan, eines Tages ganz nahe. Gemeinsam mit ihren Landfrauen bricht Marie zu einer Chorreise nach Fernost auf, doch auf dem Weg zum Frankfurter Flughafen erreicht sie die Nachricht, dass ihre Mutter in einem Kurstift in Rüdesheim ins Koma gefallen ist. Marie muss ihre Reise abbrechen.",
     "mediathek_desc": "Spielfilm Deutschland 2022 Marie (Katharina Marie Schubert) freut sich auf die Reise mit ihrem Hunsrücker Frauenchor nach Japan. Ihren Traum lässt sie sich auch nicht von ihrer Mutter (Victoria Trauttmansdorff) ausreden, die ausgerechnet jetzt zur Kur nach Rüdesheim fährt und ihre Tochter zur Vertretung in ihrem Kleinstadtladen verpflichten will....",
     "director": "Wolfgang Murnberger",
     "actors": [
@@ -27654,15 +27687,16 @@
       "Janina Elkin"
     ],
     "rating": "5.5",
-    "thumb": "https://image.tmdb.org/t/p/original/jR74CcH2Dllg1PbOFBqA4n841gN.jpg",
+    "thumb": "https://image.tmdb.org/t/p/w342/jR74CcH2Dllg1PbOFBqA4n841gN.jpg",
     "genres_list": [
-      "Komödie",
-      "Drama"
+      "Komödie"
     ],
     "channel": "ARD",
     "timestamp": 1785666600,
     "isNew": false,
-    "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyMy0wNi0wOV8yMC0xNS1NRVNa"
+    "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyMy0wNi0wOV8yMC0xNS1NRVNa",
+    "tmdb_id": 979671,
+    "tmdb_type": "movie"
   },
   {
     "title": "Schachnovelle",
@@ -28610,33 +28644,6 @@
     "url_website": "https://www.3sat.de/film/spielfilm/showdown-in-den-bergen-100.html"
   },
   {
-    "title": "Shutter Island",
-    "search": "Shutter Island",
-    "year": "2010",
-    "video_url": "https://arteptweb-a.akamaihd.net/am/ptweb/128000/128600/128690-000-A_EQ_0_VA-STA_11600608_MP4-1500_AMM-PTWEB-60782241236368_huBUN16IYXx.mp4",
-    "plot": "1954 soll der U.S. Marshall Teddy Daniels das Verschwinden eines Patienten aus dem Bostoner Shutter Island Ashecliffe Hospital aufklären. Er hat sich aus persönlichen Gründen um diesen Auftrag bemüht, aber schon bald muss er sich fragen, ob er nicht durch die Ärzte manipuliert wurde, deren Methoden von unethisch über illegal bis skrupellos gehen. Teddys scharfsinnige Ermittlungsmethoden führen rasch zu einer vielversprechenden Spur, aber das Hospital verweigert ihm Zugriff auf Informationen, die den Fall erhellen könnten. Als ein Hurrikan die Verbindung zum Festland unterbricht, \"entkommen\" weitere gefährliche Kriminelle in dem Chaos und die verwirrenden Hinweise mehren sich, so dass Teddy an allem zu zweifeln beginnt - seinem Gedächtnis, seinem Partner und sogar seinem eigenen Verstand.",
-    "mediathek_desc": "1954: Der US-Marshal Teddy Daniels und sein neuer Partner Chuck Aule sollen im Ashecliffe Hospital auf Shutter Island das Verschwinden einer Patientin aufklären. Der Fall ist jedoch nicht der einzige Grund, der Teddy auf die Insel treibt. Es gibt Gerüchte von geheimen Experimenten in der Klinik, denen die Patienten hilflos ausgeliefert sind. Ein Psychothriller von Martin Scorsese.",
-    "director": "Martin Scorsese",
-    "actors": [
-      "Leonardo DiCaprio",
-      "Mark Ruffalo",
-      "Ben Kingsley"
-    ],
-    "rating": "8.2",
-    "thumb": "https://image.tmdb.org/t/p/w342/mm07ImVjMcrBFhcepmy63toBfax.jpg",
-    "genres_list": [
-      "Drama",
-      "Thriller",
-      "Mystery"
-    ],
-    "channel": "ARTE.DE",
-    "timestamp": 1791749833,
-    "isNew": true,
-    "tmdb_id": 11324,
-    "tmdb_type": "movie",
-    "url_website": "https://www.arte.tv/de/videos/128690-000-A/shutter-island/"
-  },
-  {
     "title": "Sie hat es verdient",
     "search": "Sie hat es verdient",
     "year": "2011",
@@ -29238,6 +29245,31 @@
     "tmdb_id": 1063879,
     "tmdb_type": "movie",
     "url_website": "https://www.zdf.de/filme/spiders---ihr-biss-ist-der-tod-movie-100"
+  },
+  {
+    "title": "Spinning Man - Mörderischer Zweifel",
+    "search": "Mörderischer Zweifel",
+    "year": "2018",
+    "video_url": "https://rodlzdf-a.akamaihd.net/dach/3sat/23/05/230512_moerderischer_zweifel_spielfilm/1/230512_moerderischer_zweifel_spielfilm_2360k_p35v17.mp4",
+    "plot": "Philosophieprofessor Evan Birch führt ein Bilderbuch-Leben als treusorgender Ehemann und Vater. Eines Tages jedoch verschwindet eine seiner Studentinnen spurlos und wird schließlich tot aufgefunden. Der pragmatische Ermittler Malloy beginnt in Birchs Umfeld zu ermitteln. Birch ist zunächst fassungslos angesichts dieser ungeheuerlichen Vorwürfe und auch seine Frau vermutet lediglich ein Missverständnis. Doch die Beweislage verschärft sich zusehends und Birchs Erinnerungslücken machen ihn nur verdächtiger …",
+    "mediathek_desc": "Der Philosophie-Professor Evan Birch hat eigentlich ein sorgloses Leben. Doch dann verschwindet eine 17-jährige Cheerleaderin spurlos, und der Professor gerät in Schwierigkeiten.",
+    "director": "Simon Kaijser",
+    "actors": [
+      "Guy Pearce",
+      "Pierce Brosnan",
+      "Minnie Driver"
+    ],
+    "rating": "5.6",
+    "thumb": "https://image.tmdb.org/t/p/original/pvLebrhqk3WMu0qwkPXTkHcl2yF.jpg",
+    "genres_list": [
+      "Thrller",
+      "Mystery",
+      "Krimi"
+    ],
+    "channel": "ZDF",
+    "timestamp": 1733697300,
+    "isNew": false,
+    "url_website": "https://www.zdf.de/3sat/spielfilm/moerderischer-zweifel-120.html"
   },
   {
     "title": "Spooks - Verräter in den eigenen Reihen",
@@ -30633,6 +30665,33 @@
     "url_website": "https://www.3sat.de/film/spielfilm/the-pledge---das-versprechen-100.html"
   },
   {
+    "title": "The Pope's Exorcist",
+    "search": "The Pope's Exorcist",
+    "original_title": "The Pope's Exorcist",
+    "year": "2023",
+    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/26/10/261019_sony_2215_sendung_spf/3/261019_sony_2215_sendung_spf_a1a2_3360k_p36v17.mp4",
+    "url_website": "https://www.zdf.de/video/filme/the-popes-exorcist-movie-100/the-popes-exorcist-100",
+    "plot": "Pater Gabriele Amorth könnte doch glatt als fortschrittlicher Exorzist bezeichnet werden, denn der Dämonenaustreiber im Auftrag des Papstes überweist starke 98 Prozent der Fälle in ärztliche oder psychiatrische Betreuung. Doch bei den restlichen zwei Prozent stößt Amorth auf das, was er das „pure Böse“ nennt.  Ein neuer Fall von Besessenheit führt den Pater an das Bett eines Jungen. Die in ihm gefangene Entität hatte explizit nach Gabriele Amorth verlangt. Doch hinter dem dämonischen Befall scheint mehr zu stecken, als der Priester zunächst ahnt, denn offenbar hat dieser Dämon schon öfter den Kontakt zur römisch-katholischen Kirche gesucht – obwohl in den Schriften keine Erwähnung dazu gefunden werden kann. Was möchte das Wesen vom obersten Exorzisten?",
+    "mediathek_desc": "Pater Gabriele Amorth ist als Exorzist im Auftrag des Vatikans tätig. Als eine unheimliche Kraft den jungen Henry im fernen Spanien befällt, wird Amorth vom Papst zu dem Fall entsandt.",
+    "director": "Julius Avery",
+    "actors": [
+      "Russell Crowe",
+      "Daniel Zovatto",
+      "Alex Essoe"
+    ],
+    "rating": "6.9",
+    "thumb": "https://image.tmdb.org/t/p/w342/kvYNAFcRQhzJfdokXQaemseB5tD.jpg",
+    "genres_list": [
+      "Horror",
+      "Thriller"
+    ],
+    "channel": "ZDF",
+    "timestamp": 1792440900,
+    "isNew": true,
+    "tmdb_id": 758323,
+    "tmdb_type": "movie"
+  },
+  {
     "title": "The Program - Um jeden Preis",
     "search": "The Program - Um jeden Preis",
     "year": "2015",
@@ -30681,6 +30740,30 @@
     "tmdb_id": 916405,
     "tmdb_type": "movie",
     "url_website": "https://www.3sat.de/film/spielfilm/the-quiet-girl-102.html"
+  },
+  {
+    "title": "The Rental - Tod im Strandhaus",
+    "search": "Tod im Strandhaus",
+    "year": "2020",
+    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/21/05/210510_2215_sendung_spf/1/210510_2215_sendung_spf_a1a2_3360k_p36v17.mp4",
+    "plot": "Zwei Pärchen mieten über das Internet für ein Wochenende ein Traumhaus an der Pazifikküste. Ein Seitensprung wird dem Quartett zum Verhängnis. Denn ein Fremder hat alles gefilmt.",
+    "mediathek_desc": "Zwei Pärchen mieten über das Internet für ein Wochenende ein Traumhaus an der Pazifikküste. Ein Seitensprung wird dem Quartett zum Verhängnis. Denn ein Fremder hat alles gefilmt.",
+    "director": "Dave Franco",
+    "actors": [
+      "Dan Stevens",
+      "Alison Brie",
+      "Sheila Vand"
+    ],
+    "rating": "5.5",
+    "thumb": "https://image.tmdb.org/t/p/original/3Mvuv9x2pAC0FnI4JI3vgOlepMg.jpg",
+    "genres_list": [
+      "Horror",
+      "Thriller"
+    ],
+    "channel": "ZDF",
+    "timestamp": 1790582270,
+    "isNew": false,
+    "url_website": "https://www.zdf.de/filme/tod-im-strandhaus-movie-100"
   },
   {
     "title": "The Replacement Killers - Die Ersatzkiller",
@@ -31051,30 +31134,6 @@
     "url_website": "https://www.3sat.de/film/spielfilm/tod-auf-dem-nil-102.html"
   },
   {
-    "title": "The Rental - Tod im Strandhaus",
-    "search": "Tod im Strandhaus",
-    "year": "2020",
-    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/21/05/210510_2215_sendung_spf/1/210510_2215_sendung_spf_a1a2_3360k_p36v17.mp4",
-    "plot": "Zwei Pärchen mieten über das Internet für ein Wochenende ein Traumhaus an der Pazifikküste. Ein Seitensprung wird dem Quartett zum Verhängnis. Denn ein Fremder hat alles gefilmt.",
-    "mediathek_desc": "Zwei Pärchen mieten über das Internet für ein Wochenende ein Traumhaus an der Pazifikküste. Ein Seitensprung wird dem Quartett zum Verhängnis. Denn ein Fremder hat alles gefilmt.",
-    "director": "Dave Franco",
-    "actors": [
-      "Dan Stevens",
-      "Alison Brie",
-      "Sheila Vand"
-    ],
-    "rating": "5.5",
-    "thumb": "https://image.tmdb.org/t/p/original/3Mvuv9x2pAC0FnI4JI3vgOlepMg.jpg",
-    "genres_list": [
-      "Horror",
-      "Thriller"
-    ],
-    "channel": "ZDF",
-    "timestamp": 1790582270,
-    "isNew": false,
-    "url_website": "https://www.zdf.de/filme/tod-im-strandhaus-movie-100"
-  },
-  {
     "title": "Tod in Sevilla",
     "search": "Tod in Sevilla",
     "year": "2014",
@@ -31389,6 +31448,31 @@
     "url_website": "https://www.arte.tv/de/videos/075743-000-A/transit/"
   },
   {
+    "title": "Trautes Heim",
+    "search": "Trautes Heim",
+    "original_title": "Trautes Heim",
+    "year": "None",
+    "video_url": "https://arteptweb-a.akamaihd.net/am/ptweb/131000/131500/131537-000-A_EQ_0_VOF-STA_11222886_MP4-1500_AMM-PTWEB-40521046236653_24bFLNftwFn.mp4",
+    "url_website": "https://www.arte.tv/de/videos/131537-000-A/trautes-heim/",
+    "plot": "Ein Mann lädt eine Prostituierte zu sich nachhause ein.",
+    "mediathek_desc": "Ein Brüsseler Seniorenheim wird mit militärischer Strenge geführt, die Bewohner werden behandelt wie unartige Kinder, was schließlich zu einer Revolte führt. Im Mittelpunkt steht Jules, ein temperamentvoller Siebzigjähriger, der sich nicht anpassen möchte. Sein Trotz entfacht den rebellischen Geist von mehreren Älteren, deren Unfug zu einem wilden Aufstand eskaliert.",
+    "director": "Hannes Lieschke",
+    "actors": [
+      "Thomas Arnold",
+      "Ines Nieri"
+    ],
+    "rating": "N/A",
+    "thumb": "placeholder.png",
+    "genres_list": [
+      "Sonstige"
+    ],
+    "channel": "ARTE.DE",
+    "timestamp": 1780065284,
+    "isNew": false,
+    "tmdb_id": 467829,
+    "tmdb_type": "movie"
+  },
+  {
     "title": "Trautmann",
     "search": "Trautmann",
     "year": "2018",
@@ -31419,7 +31503,7 @@
     "title": "Treibsand",
     "search": "Treibsand",
     "year": "2013",
-    "video_url": "https://arteptweb-a.akamaihd.net/am/ptweb/060000/060100/060145-000-A_EQ_0_VA-STMA_11049651_MP4-1500_AMM-PTWEB-60502532484281_2pkX4SDuBC.mp4",
+    "video_url": "https://arteptweb-a.akamaihd.net/am/ptweb/060000/060100/060145-000-A_EQ_0_VA-STA_11049646_MP4-1500_AMM-PTWEB-60471703354910_2pkX3SDuBC.mp4",
     "plot": "Ein Bewerbungsgespräch führt Lulu in die kleine Küstenstadt Saint-Gilles-Croix-de-Vie. Doch Lulu vermasselt das Gespräch und verpasst auch noch ihren Zug zurück in das kleine Dorf, wo sie mit ihren drei Kindern und ihrem Mann lebt. Sie nimmt sich ein Zimmer in einem Hotel, um am nächsten Morgen den ersten Zug nach Hause zu nehmen.  Doch es kommt anders: Sie vergisst ihren Ehering im Hotel, den sie am Vorabend gedankenlos abstreifte. Nur halbherzig versucht Lulu, den Ring wiederzufinden, denn eigentlich ist sie noch nicht bereit, in ihren Alltag zurückzukehren. Sie beschließt, sich eine Auszeit zu nehmen, und bleibt.",
     "mediathek_desc": "Nach einem erfolglosen Bewerbungsgespräch in einem Küstenort beschließt Lulu (Karin Viard), sich Zeit für sich zu nehmen und vorerst nicht nach Hause zu ihrem Mann und ihren drei Kindern zurückzukehren. Lulu findet so wieder, was sie schon lange verloren hat: sich selbst. - Verfilmung (2013) des gleichnamigen Comics von Etienne Davodeau",
     "director": "Sólveig Anspach",
