@@ -2,8 +2,13 @@ name: GEZ Kino Aktualisierung
 
 on:
   schedule:
-    - cron: '0 4 * * *' # Läuft täglich um 4 Uhr morgens
+    # 02:17 UTC entspricht 04:17 Uhr deutscher Sommerzeit
+    # Krumme Minutenzahl umgeht Server-Staus bei GitHub
+    - cron: '17 2 * * *'
   workflow_dispatch: # Manueller Start-Button
+
+permissions:
+  contents: write # Stellt sicher, dass git push erlaubt ist
 
 jobs:
   build-cinema:
@@ -21,7 +26,6 @@ jobs:
         run: pip install requests
 
       - name: Schritt 1 - Mediathek abfragen, TMDB abgleichen & movies.json erzeugen
-        # env-Block entfernt, damit der Fallback-Key im Skript greift
         run: python gezscraper.py
 
       - name: Schritt 2 - movies.json explizit hinzufügen und committen
