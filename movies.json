@@ -1736,7 +1736,7 @@
       "Action"
     ],
     "channel": "ARTE.DE",
-    "timestamp": 1791979500,
+    "timestamp": 1791979204,
     "isNew": true,
     "tmdb_id": 23030,
     "tmdb_type": "movie",
@@ -1772,7 +1772,7 @@
     "title": "Armored",
     "search": "Armored",
     "year": "2009",
-    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/24/03/240302_sony_2335_sendung_nsf/1/240302_sony_2335_sendung_nsf_a3a4_3360k_p36v17.mp4",
+    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/24/03/240302_sony_2335_sendung_nsf/1/240302_sony_2335_sendung_nsf_a1a2_3360k_p36v17.mp4",
     "plot": "Eine Gruppe von Kollegen einer auf Geldtransporte spezialisierten Sicherheitsfirma riskiert ihr Leben, als sie den ultimativen Raubüberfall startet - auf die eigene Firma. Mit einem scheinbar todsicheren Plan hoffen die Männer auf millionenschwere Beute, ohne dabei jemanden verletzen zu wollen. Doch als ein unerwarteter Zeuge auftaucht, eskaliert die Situation und alle Pläne platzen.",
     "mediathek_desc": "Ty Hackett, ein ehemaliger Soldat in finanziellen Nöten, wird von seinen Kollegen einer privaten Sicherheitsfirma überredet, den Geldtransporter zu überfallen, den sie bewachen sollen.",
     "director": "Luis Guerrero",
@@ -1791,11 +1791,11 @@
       "Mystery"
     ],
     "channel": "ZDFneo",
-    "timestamp": 1709418900,
-    "isNew": false,
+    "timestamp": 1791921301,
+    "isNew": true,
     "tmdb_id": 4597,
     "tmdb_type": "movie",
-    "url_website": "https://www.zdf.de/video/filme/armored-movie-100/armored-100"
+    "url_website": "https://www.zdf.de/filme/armored-movie-100"
   },
   {
     "title": "Arrhythmia",
@@ -1996,8 +1996,8 @@
       "Komödie"
     ],
     "channel": "ARD",
-    "timestamp": 1762390200,
-    "isNew": false,
+    "timestamp": 1793438700,
+    "isNew": true,
     "tmdb_id": 345591,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyMy0wNy0xM18wMS01MC1NRVNa"
@@ -2699,8 +2699,8 @@
       "Drama"
     ],
     "channel": "ARD",
-    "timestamp": 1785665700,
-    "isNew": false,
+    "timestamp": 1793100600,
+    "isNew": true,
     "tmdb_id": 304414,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2FyZC5kZS9wbGFuQVJEX2QyYTM0ZjQ2LWE0OWEtNDc2My04MjMzLWJhN2UxMDg2ZDE0N19nYW56ZVNlbmR1bmc"
@@ -4986,6 +4986,32 @@
     "url_website": "https://www.zdf.de/filme/spielfilm-highlights/mord-auf-hoechster-ebene-110.html"
   },
   {
+    "title": "Das Schmuckstück",
+    "search": "Das Schmuckstück",
+    "original_title": "Das Schmuckstück",
+    "year": "2010",
+    "video_url": "https://arteptweb-a.akamaihd.net/am/ptweb/110000/110200/110207-000-A_EQ_0_VA-STA_11626987_MP4-1500_AMM-PTWEB-60663332498602_fZmeE16xsPQ.mp4",
+    "url_website": "https://www.arte.tv/de/videos/110207-000-A/das-schmuckstueck/",
+    "plot": "Frankreich, im Jahre 1977: Suzanne Pujol ist die klassische, biedere Hausfrau. Während ihr Mann Robert den typischen Patriarchen mimt, putzt und kocht sie und kümmert sich um die Familie. Robert leitet eine Fabrik und ist wegen seiner schroffen und überheblichen Art bei seinen Arbeitern nicht sonderlich beliebt. Auch seine Familie kann ihn nicht besonders gut leiden. Vor Frauen, besonders vor seiner eigenen, hat er wenig bis überhaupt keinen Respekt. Seine Einstellung ist klar: Es reicht, wenn eine Frau die Meinung des Mannes teilt, da braucht sie keine eigene zu haben! Eines Tages jedoch erleidet Robert einen Herzinfarkt, so dass plötzlich Suzanne in der Fabrik als Ersatz für ihren Mann einspringen und den Posten der Direktorin übernehmen muss. Zur großen Überraschung aller, erweist sie sich dabei als äußerst fähig. Als Robert schließlich wieder auf den Beinen ist und seine alte Stellung als Chef zurück haben möchte, wird die Sache kompliziert...",
+    "mediathek_desc": "In einer Kleinstadt der 70er Jahre gefällt sich der notorische Choleriker Robert in seiner Rolle als Familienoberhaupt und Geschäftsführer einer Regenschirmfabrik. Plötzlich wird das Leben der Familie auf den Kopf gestellt: Robert erleidet einen Herzinfarkt ... – François Ozons amüsante Gesellschaftskomödie (2009) wird von einer hervorragenden Catherine Deneuve angeführt.",
+    "director": "François Ozon",
+    "actors": [
+      "Catherine Deneuve",
+      "Gérard Depardieu",
+      "Fabrice Luchini"
+    ],
+    "rating": "6.1",
+    "thumb": "https://image.tmdb.org/t/p/w342/hC4eY2KxIwXax0iQSSWgOparctw.jpg",
+    "genres_list": [
+      "Komödie"
+    ],
+    "channel": "ARTE.DE",
+    "timestamp": 1792606500,
+    "isNew": true,
+    "tmdb_id": 51447,
+    "tmdb_type": "movie"
+  },
+  {
     "title": "Das Tal der geheimen Gräber",
     "search": "Das Tal der geheimen Gräber",
     "year": "2018",
@@ -6855,32 +6881,6 @@
   },
   {
     "title": "Der Pate II",
-    "search": "Der Pate 2",
-    "year": "1974",
-    "video_url": "https://arteptweb-a.akamaihd.net/am/ptweb/045000/045500/045560-000-C_EQ_0_VA_11533434_MP4-1500_AMM-PTWEB-40521656206800_1saJY8108id8.mp4",
-    "plot": "Michael Corleone ist jetzt der Pate seiner Familie und führt diese Aufgabe mit der nötigen Gnadenlosigkeit aus. Als er in Las Vegas und auf Kuba expandieren will, weil ihm die alten Geschäftsideen nichts mehr einbringen, treten Schwierigkeiten auf. Um diese zu klären, veranlaßt Michael eine große Säuberungsaktion, die auch vor den Familienmitgliedern nicht halt macht.",
-    "mediathek_desc": "Als Vito Corleone alias \"Der Pate\" stirbt, übernimmt sein Sohn Michael die Geschäfte und wird bald zu einem der meistgefürchteten Mafiabosse. Als er aber mit der Kasino-Mafia zu verhandeln beginnt, verliert Michael die Unterstützung eines seiner engsten New Yorker Kollegen, Frankie Pentangeli. – Der zweite Teil der opulenten Mafiasaga wurde 1975 mit sechs Oscars ausgezeichnet.",
-    "director": "Francis Ford Coppola",
-    "actors": [
-      "Al Pacino",
-      "Robert Duvall",
-      "Diane Keaton"
-    ],
-    "rating": "8.6",
-    "thumb": "https://image.tmdb.org/t/p/w342/ydzBlAMJTo9jOG5i8aRpZec0jF3.jpg",
-    "genres_list": [
-      "Drama",
-      "Krimi"
-    ],
-    "channel": "ARTE.DE",
-    "timestamp": 1789928121,
-    "isNew": false,
-    "tmdb_id": 240,
-    "tmdb_type": "movie",
-    "url_website": "https://www.arte.tv/de/videos/045560-000-A/der-pate-2/"
-  },
-  {
-    "title": "Der Pate II",
     "search": "Der Pate II",
     "year": "1974",
     "video_url": "https://nrodlzdf-a.akamaihd.net/dach/3sat/26/02/260220_der_pate_2_mit_ad_spielfilm/1/260220_der_pate_2_mit_ad_spielfilm_a1a2_3360k_p36v17.mp4",
@@ -7923,6 +7923,33 @@
     "tmdb_id": 300643,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyMS0xMS0wNl8xMy0wMC1NRVo"
+  },
+  {
+    "title": "Dick und Jane",
+    "search": "Dick und Jane",
+    "original_title": "Dick und Jane",
+    "year": "2005",
+    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/25/12/251216_sony_2330_sendung_nsf/1/251216_sony_2330_sendung_nsf_3360k_p36v17.mp4",
+    "url_website": "https://www.zdf.de/video/filme/dick-und-jane-movie-100/dick-und-jane-100",
+    "plot": "Dick Harper ist endlich am Ziel seiner Träume: Es winkt ihm eine satte Beförderung. Also ade Mittelstandsleben und willkommen in der Oberschicht. Seine Frau Jane kann endlich ihren verhassten Job im Reisebüro kündigen und zusammen mit Söhnchen Billy das Haus und den neuen Pool hüten. Nur leider haben die Harpers nicht mit Dicks Chef gerechnet. Der macht sich nämlich mitsamt den Firmengeldern aus den Staub und Dick steht auf der Straße. Jetzt gibt es nur noch einen Ausweg aus der Finanzmisere: Bewaffneter Raubüberfall!",
+    "mediathek_desc": "Einst lebte Dick Harper mit seiner geliebten Ehefrau Jane, Sohn Billy und Haushälterin Blanca in einem adretten Einfamilienhaus ein glückliches Leben. Doch dann kam alles anders.",
+    "director": "Dean Parisot",
+    "actors": [
+      "Jim Carrey",
+      "Téa Leoni",
+      "Alec Baldwin"
+    ],
+    "rating": "6.2",
+    "thumb": "https://image.tmdb.org/t/p/w342/v5NMIUm3M2JAHkQpXjNNUJY6OfF.jpg",
+    "genres_list": [
+      "Komödie",
+      "Krimi"
+    ],
+    "channel": "ZDFneo",
+    "timestamp": 1605381300,
+    "isNew": false,
+    "tmdb_id": 7552,
+    "tmdb_type": "movie"
   },
   {
     "title": "Die Abräumer",
@@ -11772,7 +11799,7 @@
     ],
     "channel": "BR",
     "timestamp": 1791621000,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 321045,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2FyZC5kZS9wbGFuQVJEX2QwZjFkOWIzLTZkNWYtNDVkMy1hNDFhLTQ5MDZmYzMzNjQ0Zl9nYW56ZVNlbmR1bmc"
@@ -17752,31 +17779,6 @@
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyMy0wMS0yOF8xNC0wMC1NRVo"
   },
   {
-    "title": "How To Have Sex",
-    "search": "How To Have Sex",
-    "year": "2023",
-    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/26/03/260321_0330_sendung_spf/1/260321_0330_sendung_spf_a3a4_3360k_p36v17.mp4",
-    "plot": "Sonne, Party und Sex: Mehr interessiert die Teenager Tara, Em und Skye während ihres ersten Mädelstrips nicht. Mit wilden Clubnächten, jeder Menge Drinks und heißen Partyspielen soll ihr gemeinsamer Sommerurlaub auf Kreta der beste ihres Lebens werden. Vor allem die 16-jährige Tara hat sich vorgenommen, die Zeit in vollen Zügen zu genießen. Sie ist als einzige der drei Freundinnen noch Jungfrau – und das möchte sie unbedingt noch in diesem Sommer ändern.",
-    "mediathek_desc": "Nach ihrer Abschlussprüfung fährt Tara mit ihren Freundinnen Em und Skye zum Partyurlaub nach Kreta. Dort will Tara endlich ihr erstes Mal erleben.",
-    "director": "Molly Manning Walker",
-    "actors": [
-      "Mia McKenna-Bruce",
-      "Lara Peake",
-      "Enva Lewis"
-    ],
-    "rating": "6.2",
-    "thumb": "https://image.tmdb.org/t/p/w342/a8Pgicxd7gj47gxPpRsXoWHuHJU.jpg",
-    "genres_list": [
-      "Drama"
-    ],
-    "channel": "ZDF",
-    "timestamp": 1791775744,
-    "isNew": true,
-    "tmdb_id": 1075175,
-    "tmdb_type": "movie",
-    "url_website": "https://www.zdf.de/filme/how-to-have-sex-movie-100"
-  },
-  {
     "title": "Hüftkreisen mit Nancy",
     "search": "Hüftkreisen mit Nancy",
     "year": "2019",
@@ -18034,7 +18036,7 @@
     ],
     "channel": "BR",
     "timestamp": 1791626400,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 317264,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyNC0wNi0yNV8xNS0zMC1NRVNa"
@@ -18212,7 +18214,7 @@
       "Komödie"
     ],
     "channel": "ARD",
-    "timestamp": 1792220400,
+    "timestamp": 1795002900,
     "isNew": true,
     "tmdb_id": 666618,
     "tmdb_type": "movie",
@@ -20191,8 +20193,8 @@
       "Krimi"
     ],
     "channel": "ARD",
-    "timestamp": 1723672803,
-    "isNew": false,
+    "timestamp": 1792871100,
+    "isNew": true,
     "tmdb_id": 434173,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyNC0wOC0xNl8wMi0yMC1NRVNa"
@@ -20562,7 +20564,7 @@
     "title": "L'Immensità",
     "search": "L'Immensità",
     "year": "2022",
-    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/25/02/250207_0045_sendung_spf/1/250207_0045_sendung_spf_a1a2_3360k_p36v17.mp4",
+    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/25/02/250207_0045_sendung_spf/1/250207_0045_sendung_spf_a3a4_3360k_p36v17.mp4",
     "plot": "Rom in den 1970er Jahren: Die Familie Borghetti ist gerade in einen der vielen neuen Wohnkomplexe gezogen, die in der italienischen Hauptstadt gebaut wurden. Trotz des Umzugs in die oberste Etage einer neuen Wohnung mit Blick über die ganze Stadt sind Clara (Penélope Cruz) und Felice (Vincenzo Amato) nicht mehr verliebt, können sich aber auch nicht voneinander trennen. Clara findet Zuflucht vor ihrer Einsamkeit, indem sie sich auf die besondere Beziehung zu ihren drei Kindern konzentriert. Die älteste Tochter, Adri (Luana Giuliani), die in der neuen Gegend noch unbekannt ist, stellt sich den Kindern absichtlich als Junge vor, was das Band, das die Familie noch zusammenhält, an einen Punkt bringt, an dem es zu zerreißen droht.",
     "mediathek_desc": "Adri identifiziert sich als Junge und macht unter dem Pseudonym Andrea ihre erste Liebeserfahrung. In ihrer Identitätssuche entdeckt sie unerwartete Parallelen zu ihrer Mutter.",
     "director": "Olivia Sleiter",
@@ -23136,7 +23138,7 @@
     ],
     "channel": "ARD",
     "timestamp": 1791633600,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 805019,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyNC0wNi0yMl8xNy0wMC1NRVNa"
@@ -23266,7 +23268,7 @@
     ],
     "channel": "ARD",
     "timestamp": 1791639000,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 805016,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2FyZC5kZS9wbGFuQVJEXzQyOGY2NDg4LWU2YTEtNDA4Zi1hYzM0LThjYzUzOTk3MzJmZF9nYW56ZVNlbmR1bmc"
@@ -29896,7 +29898,7 @@
     "title": "Survive - Gestrandet im Ozean",
     "search": "Survive - Gestrandet im Ozean",
     "year": "2024",
-    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/26/10/261012_2215_sendung_spf/1/261012_2215_sendung_spf_a3a4_3360k_p36v17.mp4",
+    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/26/10/261012_2215_sendung_spf/1/261012_2215_sendung_spf_a1a2_3360k_p36v17.mp4",
     "plot": "Der gemeinsame Urlaub auf hoher See wird für Tom und seine Familie zum Horrortrip, als sie mitten auf dem Ozean in einen heftigen Sturm geraten, der ihr Boot fast zum Kentern bringt. Kurz darauf finden sie sich im Wrack ihres Bootes auf dem trockenen Meeresgrund wieder. Eine Polaritätsumkehr hat das Wasser abziehen und das Festland überschwemmen lassen. Doch die Wassermassen drohen zurückzukommen. Für die Familie beginnt ein verzweifelter Wettlauf gegen die Zeit, während sich hungrige Meereskreaturen auf die Jagd nach Nahrung machen ...",
     "mediathek_desc": "Eine vierköpfige Familie macht mit ihrer Yacht Urlaub auf dem Atlantik.\nPlötzlich häufen sich lebensbedrohliche Szenarien. Nach einem schweren Sturm hat sich das Wasser zurückgezogen.",
     "director": "Frantz Richard",
@@ -29914,11 +29916,11 @@
       "Action"
     ],
     "channel": "ZDF",
-    "timestamp": 1791836100,
+    "timestamp": 1792095128,
     "isNew": true,
     "tmdb_id": 1196470,
     "tmdb_type": "movie",
-    "url_website": "https://www.zdf.de/video/filme/survive---gestrandet-im-ozean-movie-100/survive---gestrandet-im-ozean-100"
+    "url_website": "https://www.zdf.de/filme/survive---gestrandet-im-ozean-movie-100"
   },
   {
     "title": "Swimming Pool",
@@ -32619,31 +32621,6 @@
     "url_website": "https://www.zdf.de/3sat/spielfilm/vanished---tage-der-angst-104.html"
   },
   {
-    "title": "Vater aus Liebe",
-    "search": "Vater aus Liebe",
-    "year": "2008",
-    "video_url": "https://pd-videos.daserste.de/int/2025/03/08/DEGSM156817/DEGSM156817_3237874_sendeton_1280x720-50p-3200kbit.mp4",
-    "plot": "Die Wirtschaftsanwältin Christine Arnold besucht ihre alte Freundin Judith, die sich vor kurzem von ihrem langjährigen Lebensgefährten Felix getrennt hat. Aus dieser Beziehung stammt ein gemeinsamer Sohn, Marco, den Felix über alles liebt. Auch der kleine Marco hängt sehr an seinem Vater. Judith ärgert sich oft über Felix' Unzuverlässigkeit. Nach einem eigentlich harmlosen Fahrradunfall will sie ihrem Ex den Umgang mit seinem Sohn verbieten lassen. Vergeblich versucht Christine, zwischen den zerstrittenen Eltern zu vermitteln - und gerät dabei zusehends selbst zwischen die Fronten. Als sich dann auch noch herausstellt, dass Felix in Wahrheit gar nicht Marcos leiblicher Vater ist, spitzt sich der Konflikt zu.",
-    "mediathek_desc": "Spielfilm Deutschland 2008\r\n\r\nDie alleinstehende Christine Arnold (Bettina Kupfer), mit großem Erfolg als Wirtschaftsanwältin in einer Kölner Kanzlei tätig, ist auf dem Weg zu ihrer alten Freundin Judith (Tina Ruland), die eine sehr schwierige Lebensphase durchmacht: Vor kurzem hat sie sich von ihrem langjährigen Freund Felix (Uwe Bohm) getrennt. Die beiden haben einen gemeinsamen Sohn, Marco (Jon\n.....",
-    "director": "Imogen Kimmel",
-    "actors": [
-      "Bettina Kupfer",
-      "Tina Ruland",
-      "Uwe Bohm"
-    ],
-    "rating": "5.1",
-    "thumb": "https://image.tmdb.org/t/p/w342/nSZWlFSny4WDvNcNZ2EPAonyBP7.jpg",
-    "genres_list": [
-      "Drama"
-    ],
-    "channel": "ARD",
-    "timestamp": 1741567500,
-    "isNew": false,
-    "tmdb_id": 330860,
-    "tmdb_type": "movie",
-    "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyNS0wMy0xMF8wMS00NS1NRVo"
-  },
-  {
     "title": "Vater werden ist nicht schwer",
     "search": "Vater werden ist nicht schwer",
     "year": "2004",
@@ -32899,7 +32876,7 @@
     ],
     "channel": "WDR",
     "timestamp": 1791630000,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 549145,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2FyZC5kZS9wbGFuQVJEXzM1ZmViYWRlLTU1NTYtNDUwYi1hMWVjLWJjMTAzYjBiZDZhNV9nYW56ZVNlbmR1bmc"
@@ -34181,8 +34158,8 @@
       "Romanze"
     ],
     "channel": "ARD",
-    "timestamp": 1735426800,
-    "isNew": false,
+    "timestamp": 1793102100,
+    "isNew": true,
     "tmdb_id": 7864,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyNC0xMi0yOV8xMy0zNS1NRVo"
