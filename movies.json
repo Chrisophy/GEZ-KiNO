@@ -1772,7 +1772,7 @@
     "title": "Armored",
     "search": "Armored",
     "year": "2009",
-    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/24/03/240302_sony_2335_sendung_nsf/1/240302_sony_2335_sendung_nsf_a1a2_3360k_p36v17.mp4",
+    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/24/03/240302_sony_2335_sendung_nsf/1/240302_sony_2335_sendung_nsf_a3a4_3360k_p36v17.mp4",
     "plot": "Eine Gruppe von Kollegen einer auf Geldtransporte spezialisierten Sicherheitsfirma riskiert ihr Leben, als sie den ultimativen Raubüberfall startet - auf die eigene Firma. Mit einem scheinbar todsicheren Plan hoffen die Männer auf millionenschwere Beute, ohne dabei jemanden verletzen zu wollen. Doch als ein unerwarteter Zeuge auftaucht, eskaliert die Situation und alle Pläne platzen.",
     "mediathek_desc": "Ty Hackett, ein ehemaliger Soldat in finanziellen Nöten, wird von seinen Kollegen einer privaten Sicherheitsfirma überredet, den Geldtransporter zu überfallen, den sie bewachen sollen.",
     "director": "Luis Guerrero",
@@ -1975,7 +1975,7 @@
     "isNew": false,
     "tmdb_id": 570356,
     "tmdb_type": "movie",
-    "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyMS0xMS0yN18xNC0zMC1NRVovYXVkaW9kZXNrcmlwdGlvbg"
+    "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyMS0xMS0yN18xNC0zMC1NRVo"
   },
   {
     "title": "Aus lauter Liebe zu dir",
@@ -3383,11 +3383,11 @@
       "Thriller"
     ],
     "channel": "ZDFneo",
-    "timestamp": 1710632700,
-    "isNew": false,
+    "timestamp": 1792048891,
+    "isNew": true,
     "tmdb_id": 109424,
     "tmdb_type": "movie",
-    "url_website": "https://www.zdf.de/video/filme/captain-phillips-movie-100/captain-phillips-100"
+    "url_website": "https://www.zdf.de/filme/captain-phillips-movie-100"
   },
   {
     "title": "Carneval - Der Clown bringt den Tod",
@@ -4150,7 +4150,7 @@
     "title": "Das Geheimnis meiner Schwester",
     "search": "Das Geheimnis meiner Schwester",
     "year": "2007",
-    "video_url": "https://pd-videos.daserste.de/int/2023/08/08/667116bf-b44c-4ee1-aea7-75ade84b4ee1/JOB_539692__sendeton_1280x720-50p-3200kbit.mp4",
+    "video_url": "https://ctv-videos.daserste.de/int/2023/08/08/667116bf-b44c-4ee1-aea7-75ade84b4ee1/JOB_539692__sendeton_1280x720-50p-3200kbit.mp4",
     "plot": "Antonia Wiedemann hat sich nach der schmerzlichen Scheidung von ihrem Mann Ludwig ein neues Leben aufgebaut. In ihrer Tierpension auf dem Land kümmert sie sich voller Hingabe um alles, was da kreucht und fleucht. Tierarzt Dr. Rafael Hansen vertraut ihr sogar ein Springpferd an, das sein Besitzer schon zum Schlachthof bringen wollte. Für Tiere hat Antonia ein einzigartiges Gespür, doch Rafaels vorsichtigen Annäherungsversuchen weicht sie lieber aus.",
     "mediathek_desc": "Spielfilm Deutschland 2007\r\n\r\nAntonia Wiedemann (Marianne Sägebrecht) hat sich nach der schmerzlichen Scheidung von ihrem Mann Ludwig (Walter Kreye) ein neues Leben aufgebaut. In ihrer Tierpension auf dem Land kümmert sie sich voller Hingabe um alles, was da kreucht und fleucht. Tierarzt Dr. Rafael Hansen (Siegfried Rauch) vertraut ihr sogar ein Springpferd an, das sein Besitzer schon zum Schlacht\n.....",
     "director": "Bettina Woernle",
@@ -4165,8 +4165,8 @@
       "Drama"
     ],
     "channel": "ARD",
-    "timestamp": 1692524700,
-    "isNew": false,
+    "timestamp": 1793194200,
+    "isNew": true,
     "tmdb_id": 333838,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyMy0wOC0yMF8xMS00NS1NRVNa"
@@ -4347,8 +4347,8 @@
       "Drama"
     ],
     "channel": "ARD",
-    "timestamp": 1745051400,
-    "isNew": false,
+    "timestamp": 1793187000,
+    "isNew": true,
     "tmdb_id": 342962,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyMS0wNS0xNl8xMy00MC1NRVNa"
@@ -4986,32 +4986,6 @@
     "url_website": "https://www.zdf.de/filme/spielfilm-highlights/mord-auf-hoechster-ebene-110.html"
   },
   {
-    "title": "Das Schmuckstück",
-    "search": "Das Schmuckstück",
-    "original_title": "Das Schmuckstück",
-    "year": "2010",
-    "video_url": "https://arteptweb-a.akamaihd.net/am/ptweb/110000/110200/110207-000-A_EQ_0_VA-STA_11626987_MP4-1500_AMM-PTWEB-60663332498602_fZmeE16xsPQ.mp4",
-    "url_website": "https://www.arte.tv/de/videos/110207-000-A/das-schmuckstueck/",
-    "plot": "Frankreich, im Jahre 1977: Suzanne Pujol ist die klassische, biedere Hausfrau. Während ihr Mann Robert den typischen Patriarchen mimt, putzt und kocht sie und kümmert sich um die Familie. Robert leitet eine Fabrik und ist wegen seiner schroffen und überheblichen Art bei seinen Arbeitern nicht sonderlich beliebt. Auch seine Familie kann ihn nicht besonders gut leiden. Vor Frauen, besonders vor seiner eigenen, hat er wenig bis überhaupt keinen Respekt. Seine Einstellung ist klar: Es reicht, wenn eine Frau die Meinung des Mannes teilt, da braucht sie keine eigene zu haben! Eines Tages jedoch erleidet Robert einen Herzinfarkt, so dass plötzlich Suzanne in der Fabrik als Ersatz für ihren Mann einspringen und den Posten der Direktorin übernehmen muss. Zur großen Überraschung aller, erweist sie sich dabei als äußerst fähig. Als Robert schließlich wieder auf den Beinen ist und seine alte Stellung als Chef zurück haben möchte, wird die Sache kompliziert...",
-    "mediathek_desc": "In einer Kleinstadt der 70er Jahre gefällt sich der notorische Choleriker Robert in seiner Rolle als Familienoberhaupt und Geschäftsführer einer Regenschirmfabrik. Plötzlich wird das Leben der Familie auf den Kopf gestellt: Robert erleidet einen Herzinfarkt ... – François Ozons amüsante Gesellschaftskomödie (2009) wird von einer hervorragenden Catherine Deneuve angeführt.",
-    "director": "François Ozon",
-    "actors": [
-      "Catherine Deneuve",
-      "Gérard Depardieu",
-      "Fabrice Luchini"
-    ],
-    "rating": "6.1",
-    "thumb": "https://image.tmdb.org/t/p/w342/hC4eY2KxIwXax0iQSSWgOparctw.jpg",
-    "genres_list": [
-      "Komödie"
-    ],
-    "channel": "ARTE.DE",
-    "timestamp": 1792606500,
-    "isNew": true,
-    "tmdb_id": 51447,
-    "tmdb_type": "movie"
-  },
-  {
     "title": "Das Tal der geheimen Gräber",
     "search": "Das Tal der geheimen Gräber",
     "year": "2018",
@@ -5505,32 +5479,6 @@
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2FyZC5kZS9wbGFuQVJEX2ZjZTIxNGFiLWNlZjItNDEyOC1iOWRjLTA4NDcxMjFlODE5MV9nYW56ZVNlbmR1bmc"
   },
   {
-    "title": "Das schwarze Quadrat",
-    "search": "Das schwarze Quadrat",
-    "year": "2021",
-    "video_url": "https://arteptweb-a.akamaihd.net/am/ptweb/090000/090500/090567-000-A_EQ_0_VOA-STF_11530497_MP4-1500_AMM-PTWEB-101084508604848_1083QT.mp4",
-    "plot": "Die Kunsträuber Vincent und Nils sind kurz davor, ihr Ziel zu erreichen: In ihrer Kreuzfahrtkabine liegt das 60 Millionen Dollar teure Gemälde „Das schwarze Quadrat“, das sie an Bord ihrem Auftraggeber übergeben sollten. Sie haben vorher nur noch einen kleinen Termin, der so nicht eingeplant war. Dafür müssen sie auf die Showbühne des Schiffes und sich durch ihr Programm als Elvis- und David Bowie-Imitatoren quälen. In dem Moment nutzen Unbekannte die Gunst der Stunden und stehlen das Gemälde. Die Schlinge zieht sich für das Gauner-Duo damit zu…",
-    "mediathek_desc": "Die Kunstdiebe Vincent und Nils haben das berühmte russische Gemälde \"Das schwarze Quadrat\" gestohlen. Das Bild soll auf einem Kreuzfahrtschiff an den Käufer übergeben werden. Um auf das Schiff zu kommen, überwältigen sie kurzerhand zwei Passagiere ... – In Peter Meisters skurrilem Spielfilmdebüt (2021) spielt die abstrakte Kunst eine entscheidende Rolle.",
-    "director": "Peter Meister",
-    "actors": [
-      "Bernhard Schütz",
-      "Jacob Matschenz",
-      "Sandra Hüller"
-    ],
-    "rating": "5.3",
-    "thumb": "https://image.tmdb.org/t/p/w342/muDv79a0CUzi2V5z1Ng86DfRkX1.jpg",
-    "genres_list": [
-      "Komödie",
-      "Krimi"
-    ],
-    "channel": "ARTE.DE",
-    "timestamp": 1790030827,
-    "isNew": false,
-    "tmdb_id": 840576,
-    "tmdb_type": "movie",
-    "url_website": "https://www.arte.tv/de/videos/090567-000-A/das-schwarze-quadrat/"
-  },
-  {
     "title": "Das schönste Geschenk meines Lebens",
     "search": "Das schönste Geschenk meines Lebens",
     "year": "2003",
@@ -5602,7 +5550,7 @@
       "TV-Film"
     ],
     "channel": "ZDF",
-    "timestamp": 1792417778,
+    "timestamp": 1792613493,
     "isNew": true,
     "tmdb_id": 1426262,
     "tmdb_type": "movie",
@@ -5689,31 +5637,6 @@
     "title": "Dennstein & Schwarz - Rufmord",
     "search": "Dennstein & Schwarz - Rufmord",
     "year": "2020",
-    "video_url": "https://pd-videos.daserste.de/int/2024/08/23/DEGSM877904/DEGSM877904_3048790sendeton__1280x720-50p-3200kbit.mp4",
-    "plot": "Therese Schwarz vertritt den mit Paula Dennstein sehr gut befreundeten Politiker Konrad Wagner, der von einer Zeitung an den #MeToo-Pranger gestellt wurde. Deshalb passt der überraschende Besuch ihrer kleinen Schwester Marita auch so gar nicht in ihr Konzept. Noch dazu, wo Marita zusammen mit Ferdinand durch eine Cannabis-Geschichte in heiklen Polizeikontakt kommt. Für Konrads Verteidigung ist es wichtig den Verleumder auszumachen, doch das ist ein Wettlauf gegen die Zeit, da die Landtagswahl vor der Türe steht…",
-    "mediathek_desc": "Spielfilm Deutschland/Österreich 2020\r\n\r\nAuf Frauenpower setzen \"Dennstein & Schwarz\" als Markenzeichen ihrer Anwaltskanzlei. Der neue Fall verspricht viel Publicity, denn sie vertreten den aufstrebenden Politiker, der nun durch eine Zeitungsstory als Grapscher am Pranger steht. \r\n\r\nMit Maria Happel, Martina Ebm, Manuel Rubey, Nele Kiper u.a. | Buch: Konstanze Breitebner | Regie: Michael Rowitz",
-    "director": "Michael Rowitz",
-    "actors": [
-      "Maria Happel",
-      "Martina Ebm",
-      "Manuel Rubey"
-    ],
-    "rating": "6.0",
-    "thumb": "https://image.tmdb.org/t/p/w342/6AP96jy3fR9wc26fb5zlWWdEMS4.jpg",
-    "genres_list": [
-      "Drama"
-    ],
-    "channel": "ARD",
-    "timestamp": 1724500800,
-    "isNew": false,
-    "tmdb_id": 679245,
-    "tmdb_type": "movie",
-    "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyNC0wOC0yNF8xNC0wMC1NRVNa"
-  },
-  {
-    "title": "Dennstein & Schwarz - Rufmord",
-    "search": "Dennstein & Schwarz - Rufmord",
-    "year": "2020",
     "video_url": "https://pd-videos.daserste.de/int/2024/09/06/DEGSM685649/DEGSM685649_3059520_sendeton_1280x720-50p-3200kbit.mp4",
     "plot": "Therese Schwarz vertritt den mit Paula Dennstein sehr gut befreundeten Politiker Konrad Wagner, der von einer Zeitung an den #MeToo-Pranger gestellt wurde. Deshalb passt der überraschende Besuch ihrer kleinen Schwester Marita auch so gar nicht in ihr Konzept. Noch dazu, wo Marita zusammen mit Ferdinand durch eine Cannabis-Geschichte in heiklen Polizeikontakt kommt. Für Konrads Verteidigung ist es wichtig den Verleumder auszumachen, doch das ist ein Wettlauf gegen die Zeit, da die Landtagswahl vor der Türe steht…",
     "mediathek_desc": "Spielfilm Deutschland/Österreich 2020\r\n\r\nAuf Frauenpower setzen \"Dennstein & Schwarz\" als Markenzeichen ihrer Anwaltskanzlei. Der neue Fall verspricht viel Publicity, denn sie vertreten den aufstrebenden Politiker, der nun durch eine Zeitungsstory als Grapscher am Pranger steht. \r\n\r\nMit Maria Happel, Martina Ebm, Manuel Rubey, Nele Kiper u.a. | Buch: Konstanze Breitebner | Regie: Michael Rowitz",
@@ -5734,6 +5657,31 @@
     "tmdb_id": 679245,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyNC0wOS0wN18xNC0wMC1NRVNa"
+  },
+  {
+    "title": "Dennstein & Schwarz - Rufmord",
+    "search": "Dennstein & Schwarz - Rufmord",
+    "year": "2020",
+    "video_url": "https://pd-videos.daserste.de/int/2024/08/23/DEGSM877904/DEGSM877904_3048790sendeton__1280x720-50p-3200kbit.mp4",
+    "plot": "Therese Schwarz vertritt den mit Paula Dennstein sehr gut befreundeten Politiker Konrad Wagner, der von einer Zeitung an den #MeToo-Pranger gestellt wurde. Deshalb passt der überraschende Besuch ihrer kleinen Schwester Marita auch so gar nicht in ihr Konzept. Noch dazu, wo Marita zusammen mit Ferdinand durch eine Cannabis-Geschichte in heiklen Polizeikontakt kommt. Für Konrads Verteidigung ist es wichtig den Verleumder auszumachen, doch das ist ein Wettlauf gegen die Zeit, da die Landtagswahl vor der Türe steht…",
+    "mediathek_desc": "Spielfilm Deutschland/Österreich 2020\r\n\r\nAuf Frauenpower setzen \"Dennstein & Schwarz\" als Markenzeichen ihrer Anwaltskanzlei. Der neue Fall verspricht viel Publicity, denn sie vertreten den aufstrebenden Politiker, der nun durch eine Zeitungsstory als Grapscher am Pranger steht. \r\n\r\nMit Maria Happel, Martina Ebm, Manuel Rubey, Nele Kiper u.a. | Buch: Konstanze Breitebner | Regie: Michael Rowitz",
+    "director": "Michael Rowitz",
+    "actors": [
+      "Maria Happel",
+      "Martina Ebm",
+      "Manuel Rubey"
+    ],
+    "rating": "6.0",
+    "thumb": "https://image.tmdb.org/t/p/w342/6AP96jy3fR9wc26fb5zlWWdEMS4.jpg",
+    "genres_list": [
+      "Drama"
+    ],
+    "channel": "ARD",
+    "timestamp": 1724500800,
+    "isNew": false,
+    "tmdb_id": 679245,
+    "tmdb_type": "movie",
+    "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyNC0wOC0yNF8xNC0wMC1NRVNa"
   },
   {
     "title": "Dennstein & Schwarz - Schuldenfalle",
@@ -5960,7 +5908,7 @@
     ],
     "channel": "ARD",
     "timestamp": 1791702000,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 289228,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyNC0xMS0xMF8xMy0xNS1NRVo"
@@ -7265,7 +7213,7 @@
     ],
     "channel": "ARTE.DE",
     "timestamp": 1791742512,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 2270,
     "tmdb_type": "movie",
     "url_website": "https://www.arte.tv/de/videos/101328-000-A/der-sternwanderer/"
@@ -8523,8 +8471,8 @@
       "TV-Film"
     ],
     "channel": "ARD",
-    "timestamp": 1791106800,
-    "isNew": false,
+    "timestamp": 1794750300,
+    "isNew": true,
     "tmdb_id": 313281,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyNS0wMy0yNF8wMS00NS1NRVo"
@@ -9582,7 +9530,7 @@
     "title": "Die Macht und ihr Preis",
     "search": "Die Macht und ihr Preis",
     "year": "1976",
-    "video_url": "https://arteptweb-a.akamaihd.net/am/ptweb/026000/026300/026377-000-B_EQ_0_VA-STA_11623160_MP4-1500_AMM-PTWEB-60782436444935_1az9jG16pV1b.mp4",
+    "video_url": "https://arteptweb-a.akamaihd.net/am/ptweb/026000/026300/026377-000-B_EQ_0_VA-STMA_11628495_MP4-1500_AMM-PTWEB-60782631413643_16y8Vs.mp4",
     "plot": "Der römische Polizeiinspektor Rogas übernimmt die Ermittlungen, nachdem der gefürchtete Staatsanwalt Varga auf offener Straße erschossen wurde. Nach Morden an weiteren hohen Justizbeamten in Sütitalien kommt Rogas einer gigantischen Verschwörung auf die Spur. Seine Vorgesetzten versuchen schließlich, ihn zurückzupfeifen...",
     "mediathek_desc": "Inspektor Rogas findet bei seinen Vorgesetzten wenig Unterstützung, als er eine spektakuläre Mordserie untersucht. Alle Opfer sind Justizbeamte. Bei seinen Ermittlungen kommt Rogas ein Verdacht: Der Täter, den er sucht, könnte für ein politisches Komplott missbraucht werden. Francesco Rosis berühmter Thriller von 1975 mit Lino Ventura in der Hauptrolle.",
     "director": "Francesco Rosi",
@@ -11771,8 +11719,8 @@
       "Komödie"
     ],
     "channel": "ZDF",
-    "timestamp": 1791203631,
-    "isNew": false,
+    "timestamp": 1792565140,
+    "isNew": true,
     "tmdb_id": 862252,
     "tmdb_type": "movie",
     "url_website": "https://www.zdf.de/filme/dreiraumwohnung-movie-100"
@@ -16040,7 +15988,7 @@
     ],
     "channel": "ARD",
     "timestamp": 1791677100,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 11441,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2FyZC5kZS9wbGFuQVJEX2VkMDFmYTQ0LTJlYTctNGM3Zi05OTg4LTFhODJmMDVlZWRjOF9nYW56ZVNlbmR1bmc"
@@ -16455,7 +16403,7 @@
       "TV-Film"
     ],
     "channel": "ZDF",
-    "timestamp": 1791862074,
+    "timestamp": 1792553906,
     "isNew": true,
     "tmdb_id": 1174820,
     "tmdb_type": "movie",
@@ -18139,7 +18087,7 @@
     ],
     "channel": "BR",
     "timestamp": 1791656100,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 1174541,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2ljaC13aWxsLW1laW4tZ2x1ZWNrLXp1cnVlY2svMjAyNS0xMS0xNF8yMC0xNS1NRVo"
@@ -18321,8 +18269,8 @@
       "Romanze"
     ],
     "channel": "ARD",
-    "timestamp": 1788004800,
-    "isNew": false,
+    "timestamp": 1794736500,
+    "isNew": true,
     "tmdb_id": 265558,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2FyZC5kZS9wbGFuQVJEX2I1ZGRlOTc2LTNiMzctNDZkYS05MGIzLWM2Y2ViOWI3NjMyZV9nYW56ZVNlbmR1bmc"
@@ -20561,31 +20509,6 @@
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAxOC0wMi0wM18xNC0zMC1NRVo"
   },
   {
-    "title": "L'Immensità",
-    "search": "L'Immensità",
-    "year": "2022",
-    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/25/02/250207_0045_sendung_spf/1/250207_0045_sendung_spf_a3a4_3360k_p36v17.mp4",
-    "plot": "Rom in den 1970er Jahren: Die Familie Borghetti ist gerade in einen der vielen neuen Wohnkomplexe gezogen, die in der italienischen Hauptstadt gebaut wurden. Trotz des Umzugs in die oberste Etage einer neuen Wohnung mit Blick über die ganze Stadt sind Clara (Penélope Cruz) und Felice (Vincenzo Amato) nicht mehr verliebt, können sich aber auch nicht voneinander trennen. Clara findet Zuflucht vor ihrer Einsamkeit, indem sie sich auf die besondere Beziehung zu ihren drei Kindern konzentriert. Die älteste Tochter, Adri (Luana Giuliani), die in der neuen Gegend noch unbekannt ist, stellt sich den Kindern absichtlich als Junge vor, was das Band, das die Familie noch zusammenhält, an einen Punkt bringt, an dem es zu zerreißen droht.",
-    "mediathek_desc": "Adri identifiziert sich als Junge und macht unter dem Pseudonym Andrea ihre erste Liebeserfahrung. In ihrer Identitätssuche entdeckt sie unerwartete Parallelen zu ihrer Mutter.",
-    "director": "Olivia Sleiter",
-    "actors": [
-      "Penélope Cruz",
-      "Luana Giuliani",
-      "Vincenzo Amato"
-    ],
-    "rating": "6.3",
-    "thumb": "https://image.tmdb.org/t/p/w342/w9mEBbQo4o5yhTNW9yqYLeGzG59.jpg",
-    "genres_list": [
-      "Drama"
-    ],
-    "channel": "ZDF",
-    "timestamp": 1792035017,
-    "isNew": true,
-    "tmdb_id": 770724,
-    "tmdb_type": "movie",
-    "url_website": "https://www.zdf.de/filme/limmensit-movie-100"
-  },
-  {
     "title": "L'Immensità - Meine fantastische Mutter",
     "search": "L'Immensità - Meine fantastische Mutter",
     "year": "2022",
@@ -22076,7 +21999,7 @@
     ],
     "channel": "ZDFneo",
     "timestamp": 1791655200,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 77930,
     "tmdb_type": "movie",
     "url_website": "https://www.zdf.de/filme/magic-mike-movie-100"
@@ -22213,31 +22136,6 @@
     "tmdb_id": 294181,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2FyZC5kZS9wbGFuQVJEXzRhYjU1NzE5LTA4YzgtNDY5Yy05NTI0LTYxYmQ2NTUzMGYxZl9nYW56ZVNlbmR1bmc"
-  },
-  {
-    "title": "Man nennt mich Hondo",
-    "search": "Man nennt mich Hondo",
-    "year": "1953",
-    "video_url": "https://arteptweb-a.akamaihd.net/am/ptweb/079000/079300/079357-000-A_EQ_0_VA-STMA_11533829_MP4-1500_AMM-PTWEB-60542854444048_jIvNO10CFi1.mp4",
-    "plot": "Eine alleinstehende Rancherin und ihr Sohn geraten in Gefahr. Diesem Umstand verdankt es Hondo Lane, ein Kurierreiter der Kavallerie, dass er plötzlich für den Schutz der eigenwilligen Angie Lowe verantwortlich ist und zur Vaterfigur für ihren Sohn Johnny wird.",
-    "mediathek_desc": "Eine alleinstehende Rancherin und ihr Sohn geraten in Gefahr. Diesem Umstand verdankt es Hondo Lane, ein Kurierreiter der Kavallerie, dass er plötzlich für den Schutz der eigenwilligen Angie Lowe verantwortlich ist und zur Vaterfigur für ihren Sohn Johnny wird. – Film-Adaption (1953) von John Farrow und John Ford nach der Erzählung \"The Gift of Cochise\" von Louis L'Amour.",
-    "director": "John Farrow",
-    "actors": [
-      "John Wayne",
-      "Geraldine Page",
-      "Ward Bond"
-    ],
-    "rating": "6.5",
-    "thumb": "https://image.tmdb.org/t/p/w342/tIEIGto2RAiteXTcFhk8PiGnKIl.jpg",
-    "genres_list": [
-      "Western"
-    ],
-    "channel": "ARTE.DE",
-    "timestamp": 1790014473,
-    "isNew": false,
-    "tmdb_id": 6529,
-    "tmdb_type": "movie",
-    "url_website": "https://www.arte.tv/de/videos/079357-000-A/man-nennt-mich-hondo/"
   },
   {
     "title": "Manche mögen's glücklich",
@@ -26021,8 +25919,8 @@
       "Komödie"
     ],
     "channel": "ZDFneo",
-    "timestamp": 1791197037,
-    "isNew": false,
+    "timestamp": 1792569948,
+    "isNew": true,
     "tmdb_id": 9883,
     "tmdb_type": "movie",
     "url_website": "https://www.zdf.de/filme/otto---der-liebesfilm-movie-100"
@@ -29148,6 +29046,33 @@
     "url_website": "https://www.3sat.de/film/spielfilm/songbird--ueberleben-hat-einen-preis-100.html"
   },
   {
+    "title": "Sonne und Beton",
+    "search": "Sonne und Beton",
+    "original_title": "Sonne und Beton",
+    "year": "2023",
+    "video_url": "https://ctv-videos.daserste.de/de/2026/10/20/17497/17497_30117_sendeton_1280x720-50p-3200kbit.mp4",
+    "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2FyZC5kZS9jZDUwZTI0Zi0xZjMxLTQwOWUtOTQ5OS0yNzFiMWQxYWQ3NjlfZ2FuemVTZW5kdW5n",
+    "plot": "Am Rande der Großstadt Berlin in Neukölln leben die Freunde Lukas, Gino und Julius. Sommer 2003 in Gropiusstadt, die Freunde geraten zwiwchen die Fronten der Banden. Einer verprügelt Lukas und verlangt Schutzgeld. Da die Freunde kein Geld haben, hecken sie zusammen mit dem Klassen Neuling Sanchez einen Plan aus; die neuen Schulcomputer klauen und zu Geld machen. Doch die Wahrheit sieht anders aus.",
+    "mediathek_desc": "Spielfilm Deutschland 2023 Der Neuntklässler Lukas (Levy Rico Arcos) wächst in der „Platte“ der Berliner Gropiusstadt auf: Schule nervt, zu Hause nur Stress. Von den Gangs im Park möchte er sich fernhalten. Sein großmäuliger Kumpel Julius (Vincent Wiemer) legt sich jedoch beim Graskaufen mit den „Arabern“ an – und löst eine brutale Schlägerei zwischen Jugendgangs von Djamel (Wael Alkhatib) und Cem (Lucio101) aus....",
+    "director": "Martin Moszkowicz",
+    "actors": [
+      "Levy Rico Arcos",
+      "Rafael Luis Klein-Hessling",
+      "Vincent Wiemer"
+    ],
+    "rating": "7.0",
+    "thumb": "https://image.tmdb.org/t/p/w342/ddacirup8d3NJqyFvRaBllSFncr.jpg",
+    "genres_list": [
+      "Krimi",
+      "Drama"
+    ],
+    "channel": "ARD",
+    "timestamp": 1792187700,
+    "isNew": true,
+    "tmdb_id": 915980,
+    "tmdb_type": "movie"
+  },
+  {
     "title": "Sonntagsvierer",
     "search": "Sonntagsvierer",
     "year": "2010",
@@ -29888,8 +29813,8 @@
       "Drama"
     ],
     "channel": "ZDFneo",
-    "timestamp": 1787901185,
-    "isNew": false,
+    "timestamp": 1792569519,
+    "isNew": true,
     "tmdb_id": 1041623,
     "tmdb_type": "movie",
     "url_website": "https://www.zdf.de/filme/sugar-movie-100"
@@ -29898,7 +29823,7 @@
     "title": "Survive - Gestrandet im Ozean",
     "search": "Survive - Gestrandet im Ozean",
     "year": "2024",
-    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/26/10/261012_2215_sendung_spf/1/261012_2215_sendung_spf_a1a2_3360k_p36v17.mp4",
+    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/26/10/261012_2215_sendung_spf/1/261012_2215_sendung_spf_a3a4_3360k_p36v17.mp4",
     "plot": "Der gemeinsame Urlaub auf hoher See wird für Tom und seine Familie zum Horrortrip, als sie mitten auf dem Ozean in einen heftigen Sturm geraten, der ihr Boot fast zum Kentern bringt. Kurz darauf finden sie sich im Wrack ihres Bootes auf dem trockenen Meeresgrund wieder. Eine Polaritätsumkehr hat das Wasser abziehen und das Festland überschwemmen lassen. Doch die Wassermassen drohen zurückzukommen. Für die Familie beginnt ein verzweifelter Wettlauf gegen die Zeit, während sich hungrige Meereskreaturen auf die Jagd nach Nahrung machen ...",
     "mediathek_desc": "Eine vierköpfige Familie macht mit ihrer Yacht Urlaub auf dem Atlantik.\nPlötzlich häufen sich lebensbedrohliche Szenarien. Nach einem schweren Sturm hat sich das Wasser zurückgezogen.",
     "director": "Frantz Richard",
@@ -30181,32 +30106,6 @@
     "tmdb_id": 1182047,
     "tmdb_type": "movie",
     "url_website": "https://www.zdf.de/video/filme/the-apprentice--the-trump-story-movie-100/the-apprentice--the-trump-story-100"
-  },
-  {
-    "title": "The Bricklayer - Tödliche Geheimnisse",
-    "search": "The Bricklayer - Tödliche Geheimnisse",
-    "year": "2023",
-    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/26/09/260921_2215_sendung_spf/2/260921_2215_sendung_spf_a1a2_3360k_p36v17.mp4",
-    "plot": "Die CIA wird offenbar von einem ihrer ehemaligen Agenten erpresst. Der Mann hat bereits diverse ausländische Journalisten ermordet und die Taten immer so aussehen lassen, als seien sie von Auftragskillern des Geheimdienstes begangen worden. Als deshalb diverse Staaten sich gegen die USA stellen, sieht sich die CIA gezwungen, Steve Vail – einen ziemlich rebellischen Ex-Mitarbeiter – anzuflehen, wieder in den aktiven Dienst einzutreten. Der brillante Ermittler und erfahrene Einzelkämpfer soll den Unbekannten identifizieren und ausschalten, um so den guten Ruf der Behörde wieder herzustellen. Widerwillig stimmt Vail zu und versucht gemeinsam mit seiner von den CIA-Bossen als Aufpasserin abkommandierten Kollegin Kate Bannon den Verbrecher zu stellen. Dabei stößt das ungleiche Duo auf eine weitverzweigte, internationale Verschwörung …",
-    "mediathek_desc": "Ein ungleiches CIA-Duo macht in Griechenland Jagd auf einen totgeglaubten Ex-Agenten, der Mordattentate begeht und diese wie Aufträge des amerikanischen Geheimdiensts aussehen lässt.",
-    "director": "Tanner Mobley",
-    "actors": [
-      "Aaron Eckhart",
-      "Nina Dobrev",
-      "Clifton Collins Jr."
-    ],
-    "rating": "5.8",
-    "thumb": "https://image.tmdb.org/t/p/w342/Ae1WZeosmTRi4xS7yViO0bOZ6kV.jpg",
-    "genres_list": [
-      "Action",
-      "Thriller"
-    ],
-    "channel": "ZDF",
-    "timestamp": 1790194232,
-    "isNew": false,
-    "tmdb_id": 927107,
-    "tmdb_type": "movie",
-    "url_website": "https://www.zdf.de/filme/the-bricklayer---toedliche-geheimnisse-movie-100"
   },
   {
     "title": "The Card Counter",
@@ -31502,32 +31401,6 @@
     "url_website": "https://www.3sat.de/film/spielfilm/trautmann-102.html"
   },
   {
-    "title": "Treibsand",
-    "search": "Treibsand",
-    "year": "2013",
-    "video_url": "https://arteptweb-a.akamaihd.net/am/ptweb/060000/060100/060145-000-A_EQ_0_VA-STA_11049646_MP4-1500_AMM-PTWEB-60471703354910_2pkX3SDuBC.mp4",
-    "plot": "Ein Bewerbungsgespräch führt Lulu in die kleine Küstenstadt Saint-Gilles-Croix-de-Vie. Doch Lulu vermasselt das Gespräch und verpasst auch noch ihren Zug zurück in das kleine Dorf, wo sie mit ihren drei Kindern und ihrem Mann lebt. Sie nimmt sich ein Zimmer in einem Hotel, um am nächsten Morgen den ersten Zug nach Hause zu nehmen.  Doch es kommt anders: Sie vergisst ihren Ehering im Hotel, den sie am Vorabend gedankenlos abstreifte. Nur halbherzig versucht Lulu, den Ring wiederzufinden, denn eigentlich ist sie noch nicht bereit, in ihren Alltag zurückzukehren. Sie beschließt, sich eine Auszeit zu nehmen, und bleibt.",
-    "mediathek_desc": "Nach einem erfolglosen Bewerbungsgespräch in einem Küstenort beschließt Lulu (Karin Viard), sich Zeit für sich zu nehmen und vorerst nicht nach Hause zu ihrem Mann und ihren drei Kindern zurückzukehren. Lulu findet so wieder, was sie schon lange verloren hat: sich selbst. - Verfilmung (2013) des gleichnamigen Comics von Etienne Davodeau",
-    "director": "Sólveig Anspach",
-    "actors": [
-      "Karin Viard",
-      "Bouli Lanners",
-      "Claude Gensac"
-    ],
-    "rating": "6.1",
-    "thumb": "https://image.tmdb.org/t/p/w342/ttf8EMBlU7yup93MDs9GnkisRQs.jpg",
-    "genres_list": [
-      "Komödie",
-      "Drama"
-    ],
-    "channel": "ARTE.DE",
-    "timestamp": 1464804936,
-    "isNew": false,
-    "tmdb_id": 236873,
-    "tmdb_type": "movie",
-    "url_website": "https://www.arte.tv/de/videos/060145-000-A/treibsand/"
-  },
-  {
     "title": "Trennung auf Italienisch",
     "search": "Trennung auf Italienisch",
     "year": "2014",
@@ -32065,7 +31938,7 @@
     ],
     "channel": "ARD",
     "timestamp": 1791713100,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 293190,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyNC0xMS0zMF8xNC0wMC1NRVo"
@@ -32273,7 +32146,7 @@
     ],
     "channel": "ARD",
     "timestamp": 1791722700,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 419687,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyNC0wNi0xOF8xNS0zMC1NRVNa"
@@ -32619,6 +32492,32 @@
     "tmdb_id": 718400,
     "tmdb_type": "movie",
     "url_website": "https://www.zdf.de/3sat/spielfilm/vanished---tage-der-angst-104.html"
+  },
+  {
+    "title": "Vater braucht eine Frau",
+    "search": "Vater braucht eine Frau",
+    "original_title": "Vater braucht eine Frau",
+    "year": "2002",
+    "video_url": "https://ctv-videos.daserste.de/int/2026/10/12/DEGSM975230/DEGSM975230_29202_sendeton_1280x720-50p-3200kbit.mp4",
+    "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2FyZC5kZS9wbGFuQVJEXzk2ZDBiYjE0LThjNTYtNGMzYi1hMzc4LTQyNGVlNmU2MmQyOF9nYW56ZVNlbmR1bmc",
+    "plot": "Seine Kanzlei führt der erfolgreiche Anwalt Dr. Frank Neu eher mit links. Auch seine vier halbwüchsigen Kinder schätzen ihren Daddy Cool, weil er als alleinerziehender Vater den Ball flach hält und keinen überflüssigen Stress bereitet. Die vier pfiffigen Kinder beschließen, dass es wirklich an der Zeit ist, dass Papa sich neu verliebt. Sie starten für den Vater eine Internet-Kontakt-Aktion mit Chaos stiftender Resonanz. Wie wird Frank die Versammlung der heiratswilligen Witwen überleben, die, mit einer Rose im Knopfloch, alle gemeinsam im Seniorencafé auf den begehrten Anwalt warten?",
+    "mediathek_desc": "Spielfilm Deutschland 2001 Seine Kanzlei führt der erfolgreiche Anwalt Dr. Frank Neu eher mit links. Auch seine vier halbwüchsigen Kinder schätzen ihren Daddy Cool, weil er als alleinerziehender Vater den Ball flach hält und keinen überflüssigen Stress bereitet. Nur wenn zu Bennys Geburtstag regelmäßig der komplette Kindergarten anrückt, erlebt Frank seine Haushälterin am Rande des Nervenzusammenbruchs....",
+    "director": "Matthias Tiefenbacher",
+    "actors": [
+      "Peter Lohmeyer",
+      "Ursula Karven",
+      "Sonsee Neu"
+    ],
+    "rating": "5.7",
+    "thumb": "https://image.tmdb.org/t/p/w342/otYbZi4RwzvNumpyjLxutsfPnqO.jpg",
+    "genres_list": [
+      "Komödie"
+    ],
+    "channel": "ARD",
+    "timestamp": 1792585800,
+    "isNew": true,
+    "tmdb_id": 306712,
+    "tmdb_type": "movie"
   },
   {
     "title": "Vater werden ist nicht schwer",
@@ -35154,7 +35053,7 @@
     ],
     "channel": "BR",
     "timestamp": 1791661500,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 669107,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2FyZC5kZS9wbGFuQVJEXzhkYWU2YzNjLTI2ZjYtNGQ5NS1hOTFmLTA0MTk4YWI5ZjY5OV9nYW56ZVNlbmR1bmc"
@@ -35690,7 +35589,7 @@
       "Drama"
     ],
     "channel": "ZDF",
-    "timestamp": 1791803954,
+    "timestamp": 1792568947,
     "isNew": true,
     "tmdb_id": 303148,
     "tmdb_type": "movie",
