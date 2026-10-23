@@ -1769,35 +1769,6 @@
     "url_website": "https://www.3sat.de/film/spielfilm/arctic-100.html"
   },
   {
-    "title": "Armored",
-    "search": "Armored",
-    "year": "2009",
-    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/24/03/240302_sony_2335_sendung_nsf/1/240302_sony_2335_sendung_nsf_a3a4_3360k_p36v17.mp4",
-    "plot": "Eine Gruppe von Kollegen einer auf Geldtransporte spezialisierten Sicherheitsfirma riskiert ihr Leben, als sie den ultimativen Raubüberfall startet - auf die eigene Firma. Mit einem scheinbar todsicheren Plan hoffen die Männer auf millionenschwere Beute, ohne dabei jemanden verletzen zu wollen. Doch als ein unerwarteter Zeuge auftaucht, eskaliert die Situation und alle Pläne platzen.",
-    "mediathek_desc": "Ty Hackett, ein ehemaliger Soldat in finanziellen Nöten, wird von seinen Kollegen einer privaten Sicherheitsfirma überredet, den Geldtransporter zu überfallen, den sie bewachen sollen.",
-    "director": "Luis Guerrero",
-    "actors": [
-      "Matt Dillon",
-      "Jean Reno",
-      "Laurence Fishburne"
-    ],
-    "rating": "5.8",
-    "thumb": "https://image.tmdb.org/t/p/w342/3HX52ND0dY7tKIDXv7i59q2VPP3.jpg",
-    "genres_list": [
-      "Action",
-      "Krimi",
-      "Drama",
-      "Thriller",
-      "Mystery"
-    ],
-    "channel": "ZDFneo",
-    "timestamp": 1791921301,
-    "isNew": true,
-    "tmdb_id": 4597,
-    "tmdb_type": "movie",
-    "url_website": "https://www.zdf.de/filme/armored-movie-100"
-  },
-  {
     "title": "Arrhythmia",
     "search": "Arrhythmia",
     "year": "2017",
@@ -1975,7 +1946,7 @@
     "isNew": false,
     "tmdb_id": 570356,
     "tmdb_type": "movie",
-    "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyMS0xMS0yN18xNC0zMC1NRVo"
+    "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyMS0xMS0yN18xNC0zMC1NRVovYXVkaW9kZXNrcmlwdGlvbg"
   },
   {
     "title": "Aus lauter Liebe zu dir",
@@ -2785,33 +2756,6 @@
     "url_website": "https://www.3sat.de/film/spielfilm/black-hawk-down-100.html"
   },
   {
-    "title": "Black Rain",
-    "search": "Black Rain",
-    "year": "1989",
-    "video_url": "https://arteptweb-a.akamaihd.net/am/ptweb/125000/125600/125608-000-A_EQ_0_VA-STMA_11534438_MP4-1500_AMM-PTWEB-60782731357276_10CKc8.mp4",
-    "plot": "Nick Conklin, ein hartgesottener New Yorker Cop, soll mit seinem Partner Charlie den Yakuza-Killer Sato in Osaka den japanischen Behörden übergeben. Doch die beiden werden in eine Falle gelockt - Sato kann entkommen. Da Nick und Charlie bei den Ermittlungen ihrer japanischen Kollegen nur als Beobachter zugelassen sind, ermittelt Nick auf eigene Faust. Als er entdeckt, dass Sato in einen Falschgeld-Deal zweier Yakuza-Banden verstrickt ist, wird Charlie von Sato brutal ermordet...",
-    "mediathek_desc": "Nick Conklin, ein harter New Yorker Cop, soll mit seinem jüngeren Partner Charlie Vincent den Yakuza-Auftragsmörder Sato in Osaka den japanischen Behörden übergeben. Doch die Übergabe geht schief. Und dann wird die Angelegenheit auch noch persönlich. – Starbesetzer, packender Action-Klassiker von Ridley Scott, mit faszinierender Bildgestaltung, 1990 für zwei Oscars nominiert.",
-    "director": "Craig Bolotin",
-    "actors": [
-      "Michael Douglas",
-      "Andy Garcia",
-      "Ken Takakura"
-    ],
-    "rating": "6.6",
-    "thumb": "https://image.tmdb.org/t/p/w342/tW4xShuLOL38fTaMljvCcpnfPQd.jpg",
-    "genres_list": [
-      "Drama",
-      "Action",
-      "Thriller"
-    ],
-    "channel": "ARTE.DE",
-    "timestamp": 1790019428,
-    "isNew": false,
-    "tmdb_id": 4105,
-    "tmdb_type": "movie",
-    "url_website": "https://www.arte.tv/de/videos/125608-000-A/black-rain/"
-  },
-  {
     "title": "Bleib bei mir",
     "search": "Bleib bei mir",
     "year": "2009",
@@ -3361,33 +3305,6 @@
     "tmdb_id": 595328,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyMi0xMC0wM18xNS0xNS1NRVNa"
-  },
-  {
-    "title": "Captain Phillips",
-    "search": "Captain Phillips",
-    "year": "2013",
-    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/25/06/250618_sony_0215_sendung_nsf/1/250618_sony_0215_sendung_nsf_3360k_p36v17.mp4",
-    "plot": "Captain Richard Phillips muss als Kapitän des Containerschiffs MV Mærsk Alabama den Albtraum aller Seefahrer durchleiden, als er gemeinsam mit seiner Crew 2009 in die Gewalt somalischer Piraten gerät. Um seine Crew zu schützen, bietet er sich den Piraten als Geisel an. Gleichzeitig gelingt es Mitgliedern seiner Crew das Schiff maneuvrierunfähig zu machen und sich vor den Piraten zu verstecken. Als die Erstürmung des dahintreibenden Schiffes durch Spezialeinheiten droht, entsteht eine Pattsituation, die jederzeit in einem Blutbad münden kann. Captain Philips muss versuchen, gemeinsam mit dem somalischen Piraten-Anführer Muse einen Ausweg zu finden, der die Sicherheit seiner Männer ermöglicht. Dabei sind sie jedoch Kräften ausgeliefert, die jenseits ihres Einflusses liegen.",
-    "mediathek_desc": "Captain Richard Phillips ist mit dem Containerschiff \"Maersk Alabama\" im Golf von Aden in Richtung Mombasa unterwegs. Nahe der somalischen Küste wollen Piraten das Schiff entern.",
-    "director": "Paul Greengrass",
-    "actors": [
-      "Tom Hanks",
-      "Barkhad Abdi",
-      "Barkhad Abdirahman"
-    ],
-    "rating": "7.5",
-    "thumb": "https://image.tmdb.org/t/p/w342/8Td0kkocW6sD3uRpzwfMfkqMWhx.jpg",
-    "genres_list": [
-      "Action",
-      "Drama",
-      "Thriller"
-    ],
-    "channel": "ZDFneo",
-    "timestamp": 1792048891,
-    "isNew": true,
-    "tmdb_id": 109424,
-    "tmdb_type": "movie",
-    "url_website": "https://www.zdf.de/filme/captain-phillips-movie-100"
   },
   {
     "title": "Carneval - Der Clown bringt den Tod",
@@ -4641,8 +4558,8 @@
       "Romanze"
     ],
     "channel": "ARD",
-    "timestamp": 1777629600,
-    "isNew": false,
+    "timestamp": 1793269200,
+    "isNew": true,
     "tmdb_id": 324766,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyNC0wNi0yOF8xNS0zMC1NRVNa"
@@ -10421,7 +10338,7 @@
     "title": "Die Trödelqueen - Gelegenheit macht Liebe",
     "search": "Die Trödelqueen - Gelegenheit macht Liebe",
     "year": "2011",
-    "video_url": "https://pd-videos.daserste.de/int/2025/07/29/DEGSM180417/DEGSM180417_3395543_sendeton_1280x720-50p-3200kbit.mp4",
+    "video_url": "https://ctv-videos.daserste.de/int/2025/07/29/DEGSM180417/DEGSM180417_3395543_sendeton_1280x720-50p-3200kbit.mp4",
     "plot": "Vor kurzem erst hat Andrea ihren Ehemann verloren. Mehr schlecht als recht versucht sie seither, ihren verschuldeten \"Kunst und Trödel\"-Laden alleine über Wasser zu halten. Ihrem Verehrer Ludwig zeigt die Witwe die kalte Schulter - bis sie in ihrem Kummer auch noch erfahren muss, dass ihr Göttergatte seit elf Jahren eine Geliebte hatte",
     "mediathek_desc": "Spielfilm Deutschland 2011\r\n\r\nKunst und Kuriositäten sind ihr Leben: Gemeinsam mit ihrem Ehemann Wolfgang hat sich Andrea Steckenreiter (Mariele Millowitsch) vor vielen Jahren einen Lebenstraum erfüllt und einen Laden für altes Kunsthandwerk und originellen Trödel eröffnet. Sehr gewinnbringend war das Geschäft nie, doch das gesamte Ausmaß der finanziellen Notlage wird Andrea erst nach dem überrasc\n.....",
     "director": "Matthias Tiefenbacher",
@@ -10436,8 +10353,8 @@
       "Komödie"
     ],
     "channel": "ARD",
-    "timestamp": 1753882200,
-    "isNew": false,
+    "timestamp": 1793274900,
+    "isNew": true,
     "tmdb_id": 328629,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyNS0wNy0zMF8xNS0zMC1NRVNa"
@@ -14638,6 +14555,34 @@
     "url_website": "https://www.3sat.de/film/spielfilm/feinde---hostiles-100.html"
   },
   {
+    "title": "Feinfühlige Vampirin sucht lebensmüdes Opfer",
+    "search": "Feinfühlige Vampirin sucht lebensmüdes Opfer",
+    "original_title": "Feinfühlige Vampirin sucht lebensmüdes Opfer",
+    "year": "2023",
+    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/25/10/251004_0305_sendung_spf/4/251004_0305_sendung_spf_a3a4_3360k_p36v17.mp4",
+    "url_website": "https://www.zdf.de/video/filme/feinfuehlige-vampirin-sucht-lebensmuedes-opfer-movie-100/feinfuehlige-vampirin-sucht-lebensmuedes-opfer-100",
+    "plot": "Der Ernährungsplan von Vampiren ist naturgemäß sehr überschaubar – ohne menschliches Blut zu trinken, können sie nicht überleben. Für die junge Vampirin Sasha hat die Sache nur einen Haken: Aus Mitleid mit ihren Opfern bringt sie es nicht über sich, jemandem wehzutun, geschweige denn umzubringen. Doch die Geduld ihrer Eltern hat ein Ende: Sasha wird vor die Tür gesetzt und soll nun von ihrer skrupellosen Cousine die blutige Nahrungsbeschaffung lernen. Wie praktisch, dass sie Einzelgänger Paul begegnet, denn der will sowieso nicht mehr leben und meldet sich freiwillig als ihr erstes Opfer. Einen letzten Wunsch will Sasha ihm noch erfüllen, aber seine letzte Nacht läuft anders als geplant …",
+    "mediathek_desc": "Die Teenie-Vampirin Sasha soll nach Ansicht ihrer Familie endlich selbst auf die Jagd gehen, jedoch hemmt sie ihr Empathievermögen. Doch dann lernt Sasha den suizidgefährdeten Paul kennen.",
+    "director": "Ariane Louis-Seize",
+    "actors": [
+      "Sara Montpetit",
+      "Félix-Antoine Bénard",
+      "Steve Laplante"
+    ],
+    "rating": "7.5",
+    "thumb": "https://image.tmdb.org/t/p/w342/4QtHnJq3iqjiH2SAHepXuxGvsBQ.jpg",
+    "genres_list": [
+      "Komödie",
+      "Fantasy",
+      "Horror"
+    ],
+    "channel": "ZDF",
+    "timestamp": 1759540200,
+    "isNew": false,
+    "tmdb_id": 988402,
+    "tmdb_type": "movie"
+  },
+  {
     "title": "Femme",
     "search": "Femme",
     "year": "2023",
@@ -17324,7 +17269,7 @@
     ],
     "channel": "ARD",
     "timestamp": 1791764700,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 286803,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2FyZC5kZS9wbGFuQVJEXzBiNTdmNjdjLTM1MmItNGQyYy1hZTgzLTRjYmM1NTVkYzYyYl9nYW56ZVNlbmR1bmc"
@@ -22776,8 +22721,8 @@
       "Komödie"
     ],
     "channel": "ARD",
-    "timestamp": 1783188900,
-    "isNew": false,
+    "timestamp": 1793280600,
+    "isNew": true,
     "tmdb_id": 290894,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2FyZC5kZS9wbGFuQVJEXzg2YWNmYmY4LTVjNWYtNGNiYS05ODRhLWZhN2Y1ZmI0Y2ZlMV9nYW56ZVNlbmR1bmc"
@@ -25221,7 +25166,7 @@
     ],
     "channel": "3Sat",
     "timestamp": 1791753360,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 9322,
     "tmdb_type": "movie",
     "url_website": "https://www.3sat.de/film/spielfilm/nikita-100.html"
@@ -25894,8 +25839,8 @@
       "Komödie"
     ],
     "channel": "ZDFneo",
-    "timestamp": 1790978401,
-    "isNew": false,
+    "timestamp": 1792664486,
+    "isNew": true,
     "tmdb_id": 9883,
     "tmdb_type": "movie",
     "url_website": "https://www.zdf.de/filme/otto---der-katastrofenfilm-movie-100"
@@ -29151,7 +29096,7 @@
     "title": "Spiders - Ihr Biss ist der Tod",
     "search": "Spiders - Ihr Biss ist der Tod",
     "year": "2023",
-    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/26/10/261012_0105_sendung_spf/1/261012_0105_sendung_spf_a3a4_3360k_p36v17.mp4",
+    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/26/10/261012_0105_sendung_spf/1/261012_0105_sendung_spf_a1a2_3360k_p36v17.mp4",
     "plot": "Kaleb wird bald 30 und war noch nie so einsam wie jetzt. Er streitet mit seiner Schwester um ihr Erbe und hat sich von seinem besten Freund getrennt. Da er sich für exotische Tiere begeistert, kommt er eines Tages mit einer ungewöhnlichen Spinne nach Hause und lässt sie versehentlich entwischen. Bald wird sein unterprivilegierter Vorort ins Chaos gestürzt, als sich die tödlichen Spinnentiere vermehren. Die Bewohner des Projekts werden unter Quarantäne gestellt und sind gezwungen, neben den schrecklichen Spinnen zu leben, die immer größer werden.",
     "mediathek_desc": "Kaleb lebt in einem sozial schwachen Vorort von Paris und schlägt sich mit Hehlerei durchs Leben. Doch es ist seine Vorliebe für exotische Tiere, die ihn in Schwierigkeiten bringt.",
     "director": "Sébastien Vaniček",
@@ -29167,11 +29112,11 @@
       "Thriller"
     ],
     "channel": "ZDF",
-    "timestamp": 1792208538,
-    "isNew": true,
+    "timestamp": 1791759900,
+    "isNew": false,
     "tmdb_id": 1063879,
     "tmdb_type": "movie",
-    "url_website": "https://www.zdf.de/filme/spiders---ihr-biss-ist-der-tod-movie-100"
+    "url_website": "https://www.zdf.de/video/filme/spiders---ihr-biss-ist-der-tod-movie-100/spiders---ihr-biss-ist-der-tod-100"
   },
   {
     "title": "Spinning Man - Mörderischer Zweifel",
@@ -30646,7 +30591,7 @@
     "title": "The Rental - Tod im Strandhaus",
     "search": "Tod im Strandhaus",
     "year": "2020",
-    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/21/05/210510_2215_sendung_spf/1/210510_2215_sendung_spf_a1a2_3360k_p36v17.mp4",
+    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/21/05/210510_2215_sendung_spf/1/210510_2215_sendung_spf_a3a4_3360k_p36v17.mp4",
     "plot": "Zwei Pärchen mieten über das Internet für ein Wochenende ein Traumhaus an der Pazifikküste. Ein Seitensprung wird dem Quartett zum Verhängnis. Denn ein Fremder hat alles gefilmt.",
     "mediathek_desc": "Zwei Pärchen mieten über das Internet für ein Wochenende ein Traumhaus an der Pazifikküste. Ein Seitensprung wird dem Quartett zum Verhängnis. Denn ein Fremder hat alles gefilmt.",
     "director": "Dave Franco",
@@ -33458,6 +33403,34 @@
     "tmdb_id": 292282,
     "tmdb_type": "movie",
     "url_website": "https://www.zdf.de/filme/weihnachten-im-morgenland-movie-100"
+  },
+  {
+    "title": "Weihnachten im Schnee",
+    "search": "Weihnachten im Schnee",
+    "original_title": "Weihnachten im Schnee",
+    "year": "2019",
+    "video_url": "https://nrodlzdf-a.akamaihd.net/none/zdf/19/12/191215_2015_sendung_sof/7/191215_2015_sendung_sof_a1a2_3328k_p36v14.mp4",
+    "url_website": "https://www.zdf.de/filme/weihnachten-im-schnee-movie-100",
+    "plot": "Die erwachsenen Geschwister Annika, Sanne und Bastian fallen aus allen Wolken: Weihnachten soll dieses Jahr im Schnee stattfinden, genauer gesagt in einer Hütte in Norwegen. Eigentlich feiert die Familie das Fest der Liebe immer gemeinsam in Hamburg. Doch Gitta und Henri Johnen haben kurzerhand das Ferienhaus von Finja Lund gebucht. Die E-Mail, die sie ihren Kindern kurz vor den Feiertagen schicken, stellt die alljährliche Weihnachtsroutine erst mal auf den Kopf. Buchhalterin Annika, die gemeinsam mit Ehemann Christoph den 15-jährigen Sohn Simon hat, ist nicht gerade besinnlicher Stimmung",
+    "mediathek_desc": "Die erwachsenen Geschwister Annika, Sanne und Bastian fallen aus allen Wolken: Weihnachten soll dieses Jahr im Schnee stattfinden, genauer gesagt in einer Hütte in Norwegen.",
+    "director": "Till Franzen",
+    "actors": [
+      "Wencke Myhre",
+      "Katharina Schüttler",
+      "Ulrike Kriener"
+    ],
+    "rating": "3.5",
+    "thumb": "https://image.tmdb.org/t/p/w342/liubDHfrbqkjFLhSl6DtpEVmmuq.jpg",
+    "genres_list": [
+      "Romanze",
+      "Familie",
+      "Komödie"
+    ],
+    "channel": "ZDF",
+    "timestamp": 1792702800,
+    "isNew": true,
+    "tmdb_id": 652617,
+    "tmdb_type": "movie"
   },
   {
     "title": "Weihnachts-Männer",
