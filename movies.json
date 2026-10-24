@@ -181,6 +181,33 @@
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyNS0wOC0wNl8xNC0wMy1NRVNa"
   },
   {
+    "title": "5 Zimmer Küche Sarg",
+    "search": "5 Zimmer Küche Sarg",
+    "original_title": "5 Zimmer Küche Sarg",
+    "year": "2014",
+    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/25/10/251025_0325_sendung_spf/1/251025_0325_sendung_spf_a3a4_3360k_p36v17.mp4",
+    "url_website": "https://www.zdf.de/video/filme/5-zimmer-kueche-sarg-movie-100/5-zimmer-kueche-sarg-100",
+    "plot": "Die Vampire Viago, Vladislav, Deacon und Petyr teilen sich eine Villa in Wellington. Abgesehen vom fehlenden Spiegelbild, einseitiger Ernährung und gelegentlichen Auseinandersetzungen mit Werwölfen unterscheidet sich ihr Alltag kaum von dem einer ganz normalen WG: Streitereien um den Abwasch und gemeinsame Partynächte stehen täglich auf dem Programm. Als der 8000-jährige Petyr den coolen Mittzwanziger Nick zum Vampir macht, müssen die anderen Verantwortung für den impulsiven Frischling übernehmen und ihm die Grundregeln des ewigen Lebens beibringen. Im Gegenzug erklärt ihnen Nick die technischen Errungenschaften der modernen Gesellschaft. Als er aber seinen menschlichen Freund Stu anschleppt, gerät das beschauliche Leben der Vampir-Veteranen völlig aus den Fugen.",
+    "mediathek_desc": "Vier befreundete Vampire leben in Wellington in einer Wohngemeinschaft zusammen. Dabei ergeben sich allseits bekannte, aber auch ganz besondere Situationen und Probleme.",
+    "director": "Jemaine Clement",
+    "actors": [
+      "Jemaine Clement",
+      "Taika Waititi",
+      "Jonny Brugh"
+    ],
+    "rating": "7.5",
+    "thumb": "https://image.tmdb.org/t/p/w342/nokm5vVBgMHTxDzOfPFh44VJFy1.jpg",
+    "genres_list": [
+      "Komödie",
+      "Horror"
+    ],
+    "channel": "ZDF",
+    "timestamp": 1761355800,
+    "isNew": false,
+    "tmdb_id": 246741,
+    "tmdb_type": "movie"
+  },
+  {
     "title": "8 Mile",
     "search": "8 Mile",
     "year": "2002",
@@ -5883,6 +5910,32 @@
     "tmdb_id": 346658,
     "tmdb_type": "movie",
     "url_website": "https://www.3sat.de/film/spielfilm/der-eid-100.html"
+  },
+  {
+    "title": "Der Engel mit der Posaune",
+    "search": "Der Engel mit der Posaune",
+    "original_title": "Der Engel mit der Posaune",
+    "year": "1949",
+    "video_url": "https://nrodlzdf-a.akamaihd.net/dach/3sat/26/10/261024_engel_mit_der_posaune_spielfilm/1/261024_engel_mit_der_posaune_spielfilm_3360k_p36v15.mp4",
+    "url_website": "https://www.3sat.de/film/spielfilm/der-engel-mit-der-posaune-102.html",
+    "plot": "Diese weit gespannte Familiengeschichte schildert den Lebensweg der Klavierbauerfamilie Alt – vom Zerfall der österreichisch-ungarischen Monarchie bis hin zum Ende des Zweiten Weltkriegs.",
+    "mediathek_desc": "Als die Gestapo die Jüdin Henriette, Ehefrau des Klavierproduzenten Hans Alt, verhaften will, stürzt sie sich aus dem Fenster, ehe ihr Sohn Hermann, ein fanatischer Nazi, eingreifen kann.",
+    "director": "Karl Hartl",
+    "actors": [
+      "Paula Wessely",
+      "Helene Thimig",
+      "Hedwig Bleibtreu"
+    ],
+    "rating": "6.1",
+    "thumb": "https://image.tmdb.org/t/p/w342/c51dlage0Caf22r8Ir9henn9g3s.jpg",
+    "genres_list": [
+      "Drama"
+    ],
+    "channel": "3Sat",
+    "timestamp": 1508672280,
+    "isNew": false,
+    "tmdb_id": 262021,
+    "tmdb_type": "movie"
   },
   {
     "title": "Der Fall Nevenka",
@@ -26449,7 +26502,7 @@
     "title": "Plan A",
     "search": "Plan A",
     "year": "2021",
-    "video_url": "https://arteptweb-a.akamaihd.net/am/ptweb/083000/083800/083853-000-A_EQ_0_VOA-STF_11609462_MP4-1500_AMM-PTWEB-101074494685232_16crJ9.mp4",
+    "video_url": "https://arteptweb-a.akamaihd.net/am/ptweb/083000/083800/083853-000-A_EQ_0_VOA_11609466_MP4-1500_AMM-PTWEB-80843871561300_1P8jwU16crfZ.mp4",
     "plot": "Deutschland, 1945: Max hat das Konzentrationslager überlebt, aber seine Frau und seinen Sohn verloren. In seiner Verzweiflung schließt er sich einer jüdischen Brigade an, die Nazi-Verbrecher jagt und tötet. Bald landet er in Nürnberg bei einer Gruppe von Holocaust-Überlebenden um die trauernde Anna und den charismatischen Anführer Abba. Max findet heraus, dass diese die größte Racheaktion der Geschichte planen: Mit einem Giftanschlag soll für jeden ermordeten Juden ein Deutscher sterben. Max muss sich fragen, ob er Teil dieses mörderischen Racheplans werden will …",
     "mediathek_desc": "Basierend auf einer wahren Geschichte: 1945 plante eine Gruppe jüdischer Holocaust-Überlebender das Trinkwasser in Deutschland zu vergiften und sechs Millionen Deutsche zu töten. Der Film der Brüder Yoav und Doron Paz (2021) erzählt von den Planungen der Geheimoperation \"Plan A\" und erinnert an ein vergessenes Kapitel der Nachkriegsgeschichte.",
     "director": "Amanda Bowers",
