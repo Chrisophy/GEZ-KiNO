@@ -570,7 +570,7 @@
     ],
     "channel": "ZDF",
     "timestamp": 1791881591,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 964980,
     "tmdb_type": "movie",
     "url_website": "https://www.zdf.de/filme/air---der-grosse-wurf-movie-100"
@@ -1367,32 +1367,6 @@
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyMi0wNS0yMl8xNS0zMC1NRVNa"
   },
   {
-    "title": "Am anderen Ende der Brücke",
-    "search": "Am anderen Ende der Brücke",
-    "year": "2002",
-    "video_url": "https://nrodlzdf-a.akamaihd.net/dach/3sat/25/10/251024_andere_ende_bruecke_spielfilm/1/251024_andere_ende_bruecke_spielfilm_3360k_p36v17.mp4",
-    "plot": "Die wahre Geschichte einer Österreicherin, die heute hoch betagt im Kreise ihrer Kinder und Enkel in einem kleinen Dorf südlich von Shanghai lebt.  Wien im Jahre 1931: Fanny Ebner, Tochter eines Polizei-Ausbildners, begegnet dem chinesischen Polizeibeamten Ma Yunlong der an einem Trainingskurs in Wien teilnimmt. Die zuerst schüchternen Annäherungen verwandeln sich in eine leidenschaftliche Liebe. Trotz dieser Liebe sind die kulturellen Unterschiede einfach zu groß und scheinen unüberwindbar. Fanny´s Eltern lehnen das Verhältnis ab.",
-    "mediathek_desc": "Wien im Jahr 1931: Fanny, Tochter eines Ausbildners der Wiener Polizei, lernt den chinesischen Polizeioffizier Ma Yunlong kennen, der eine Fachausbildung in Wien absolviert.",
-    "director": "Hu Mei",
-    "actors": [
-      "Nina Proll",
-      "王志文",
-      "Muriel Baumeister"
-    ],
-    "rating": "6.8",
-    "thumb": "https://image.tmdb.org/t/p/w342/hP7vk9VOIJbJUKe3lTs3KPLAyeG.jpg",
-    "genres_list": [
-      "Drama",
-      "Romanze"
-    ],
-    "channel": "3Sat",
-    "timestamp": 1761329760,
-    "isNew": false,
-    "tmdb_id": 324404,
-    "tmdb_type": "movie",
-    "url_website": "https://www.3sat.de/film/spielfilm/am-anderen-ende-der-bruecke-100.html"
-  },
-  {
     "title": "American Hustle",
     "search": "American Hustle",
     "year": "2013",
@@ -1973,7 +1947,7 @@
     "isNew": false,
     "tmdb_id": 570356,
     "tmdb_type": "movie",
-    "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyMS0xMS0yN18xNC0zMC1NRVovYXVkaW9kZXNrcmlwdGlvbg"
+    "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyMS0xMS0yN18xNC0zMC1NRVo"
   },
   {
     "title": "Aus lauter Liebe zu dir",
@@ -5581,31 +5555,6 @@
     "title": "Dennstein & Schwarz - Rufmord",
     "search": "Dennstein & Schwarz - Rufmord",
     "year": "2020",
-    "video_url": "https://pd-videos.daserste.de/int/2024/09/06/DEGSM685649/DEGSM685649_3059520_sendeton_1280x720-50p-3200kbit.mp4",
-    "plot": "Therese Schwarz vertritt den mit Paula Dennstein sehr gut befreundeten Politiker Konrad Wagner, der von einer Zeitung an den #MeToo-Pranger gestellt wurde. Deshalb passt der überraschende Besuch ihrer kleinen Schwester Marita auch so gar nicht in ihr Konzept. Noch dazu, wo Marita zusammen mit Ferdinand durch eine Cannabis-Geschichte in heiklen Polizeikontakt kommt. Für Konrads Verteidigung ist es wichtig den Verleumder auszumachen, doch das ist ein Wettlauf gegen die Zeit, da die Landtagswahl vor der Türe steht…",
-    "mediathek_desc": "Spielfilm Deutschland/Österreich 2020\r\n\r\nAuf Frauenpower setzen \"Dennstein & Schwarz\" als Markenzeichen ihrer Anwaltskanzlei. Der neue Fall verspricht viel Publicity, denn sie vertreten den aufstrebenden Politiker, der nun durch eine Zeitungsstory als Grapscher am Pranger steht. \r\n\r\nMit Maria Happel, Martina Ebm, Manuel Rubey, Nele Kiper u.a. | Buch: Konstanze Breitebner | Regie: Michael Rowitz",
-    "director": "Michael Rowitz",
-    "actors": [
-      "Maria Happel",
-      "Martina Ebm",
-      "Manuel Rubey"
-    ],
-    "rating": "6.0",
-    "thumb": "https://image.tmdb.org/t/p/w342/6AP96jy3fR9wc26fb5zlWWdEMS4.jpg",
-    "genres_list": [
-      "Drama"
-    ],
-    "channel": "ARD",
-    "timestamp": 1725710400,
-    "isNew": false,
-    "tmdb_id": 679245,
-    "tmdb_type": "movie",
-    "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyNC0wOS0wN18xNC0wMC1NRVNa"
-  },
-  {
-    "title": "Dennstein & Schwarz - Rufmord",
-    "search": "Dennstein & Schwarz - Rufmord",
-    "year": "2020",
     "video_url": "https://pd-videos.daserste.de/int/2024/08/23/DEGSM877904/DEGSM877904_3048790sendeton__1280x720-50p-3200kbit.mp4",
     "plot": "Therese Schwarz vertritt den mit Paula Dennstein sehr gut befreundeten Politiker Konrad Wagner, der von einer Zeitung an den #MeToo-Pranger gestellt wurde. Deshalb passt der überraschende Besuch ihrer kleinen Schwester Marita auch so gar nicht in ihr Konzept. Noch dazu, wo Marita zusammen mit Ferdinand durch eine Cannabis-Geschichte in heiklen Polizeikontakt kommt. Für Konrads Verteidigung ist es wichtig den Verleumder auszumachen, doch das ist ein Wettlauf gegen die Zeit, da die Landtagswahl vor der Türe steht…",
     "mediathek_desc": "Spielfilm Deutschland/Österreich 2020\r\n\r\nAuf Frauenpower setzen \"Dennstein & Schwarz\" als Markenzeichen ihrer Anwaltskanzlei. Der neue Fall verspricht viel Publicity, denn sie vertreten den aufstrebenden Politiker, der nun durch eine Zeitungsstory als Grapscher am Pranger steht. \r\n\r\nMit Maria Happel, Martina Ebm, Manuel Rubey, Nele Kiper u.a. | Buch: Konstanze Breitebner | Regie: Michael Rowitz",
@@ -5626,6 +5575,31 @@
     "tmdb_id": 679245,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyNC0wOC0yNF8xNC0wMC1NRVNa"
+  },
+  {
+    "title": "Dennstein & Schwarz - Rufmord",
+    "search": "Dennstein & Schwarz - Rufmord",
+    "year": "2020",
+    "video_url": "https://pd-videos.daserste.de/int/2024/09/06/DEGSM685649/DEGSM685649_3059520_sendeton_1280x720-50p-3200kbit.mp4",
+    "plot": "Therese Schwarz vertritt den mit Paula Dennstein sehr gut befreundeten Politiker Konrad Wagner, der von einer Zeitung an den #MeToo-Pranger gestellt wurde. Deshalb passt der überraschende Besuch ihrer kleinen Schwester Marita auch so gar nicht in ihr Konzept. Noch dazu, wo Marita zusammen mit Ferdinand durch eine Cannabis-Geschichte in heiklen Polizeikontakt kommt. Für Konrads Verteidigung ist es wichtig den Verleumder auszumachen, doch das ist ein Wettlauf gegen die Zeit, da die Landtagswahl vor der Türe steht…",
+    "mediathek_desc": "Spielfilm Deutschland/Österreich 2020\r\n\r\nAuf Frauenpower setzen \"Dennstein & Schwarz\" als Markenzeichen ihrer Anwaltskanzlei. Der neue Fall verspricht viel Publicity, denn sie vertreten den aufstrebenden Politiker, der nun durch eine Zeitungsstory als Grapscher am Pranger steht. \r\n\r\nMit Maria Happel, Martina Ebm, Manuel Rubey, Nele Kiper u.a. | Buch: Konstanze Breitebner | Regie: Michael Rowitz",
+    "director": "Michael Rowitz",
+    "actors": [
+      "Maria Happel",
+      "Martina Ebm",
+      "Manuel Rubey"
+    ],
+    "rating": "6.0",
+    "thumb": "https://image.tmdb.org/t/p/w342/6AP96jy3fR9wc26fb5zlWWdEMS4.jpg",
+    "genres_list": [
+      "Drama"
+    ],
+    "channel": "ARD",
+    "timestamp": 1725710400,
+    "isNew": false,
+    "tmdb_id": 679245,
+    "tmdb_type": "movie",
+    "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyNC0wOS0wN18xNC0wMC1NRVNa"
   },
   {
     "title": "Dennstein & Schwarz - Schuldenfalle",
@@ -6277,6 +6251,34 @@
     "url_website": "https://www.3sat.de/film/spielfilm/der-hauptmann-von-koepenick-102.html"
   },
   {
+    "title": "Der Hexenclub",
+    "search": "Der Hexenclub",
+    "original_title": "Der Hexenclub",
+    "year": "1996",
+    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/26/10/261024_sony_2350_sendung_nsf/1/261024_sony_2350_sendung_nsf_a3a4_3360k_p36v17.mp4",
+    "url_website": "https://www.zdf.de/filme/spielfilme/der-hexenclub-100.html",
+    "plot": "Wer glaubt, Hexen seien alt und häßlich, kennt Sarah, Nancy, Bonnie und Rochelle noch nicht. Die attraktiven High School Girls gründen einen Hexenzirkel, mitten in Los Angeles – ausgerechnet an der katholischen St. Benedict’s Academy. Die Magie bringt ihnen Spaß und erfüllt ihre sehnsüchtigsten Wünsche auf geheimnisvolle Weise. Doch nicht ohne Folgen, denn sie haben eines übersehen: „Was immer Du aussendest, bekommst Du dreifach zurück“. Das macht die smarten Hexen für andere lebensgefährlich: Wer sie ärgert, wird verwünscht! Ihre Rache ist eiskalt und das Unglück nimmt seinen unbarmherzigen Lauf …",
+    "mediathek_desc": "Die vier Außenseiterinnen Sarah, Nancy, Bonnie und Rochelle gründen an einer US-Highschool einen Hexenzirkel. Sie entfesseln dunkle Magie, doch jeder Zauber fordert seinen Preis.",
+    "director": "Andrew Fleming",
+    "actors": [
+      "Robin Tunney",
+      "Fairuza Balk",
+      "Neve Campbell"
+    ],
+    "rating": "6.8",
+    "thumb": "https://image.tmdb.org/t/p/w342/lkk67ACPrUFuHkBtQpXiiombWYg.jpg",
+    "genres_list": [
+      "Horror",
+      "Drama",
+      "Fantasy"
+    ],
+    "channel": "ZDFneo",
+    "timestamp": 1792878600,
+    "isNew": true,
+    "tmdb_id": 9100,
+    "tmdb_type": "movie"
+  },
+  {
     "title": "Der Himmel über Berlin",
     "search": "Der Himmel über Berlin",
     "year": "1987",
@@ -6901,31 +6903,6 @@
     "tmdb_id": 580175,
     "tmdb_type": "movie",
     "url_website": "https://www.3sat.de/film/spielfilm/der-rausch-102.html"
-  },
-  {
-    "title": "Der Rekordbeobachter",
-    "search": "Der Rekordbeobachter",
-    "year": "2012",
-    "video_url": "https://pdvideosdaserste-a.akamaihd.net/int/2024/03/15/DEGSM536957/DEGSM536957_2903965_sendeton_1280x720-50p-3200kbit.mp4",
-    "plot": "Marvin Feldmann hat einen ungewöhnlichen Job: Er arbeitet für das „Buch der Rekorde\". Sein neuer Auftrag führt den strengen und unbestechlichen Rekordbeobachter auf die finnische Insel Föglö. Dort soll es einen Jungen geben, der einen Stein 52 Mal auf dem Wasser springen lassen kann. Große Lust auf die mühselige Reise hat Marvin nicht, und als der zwölfjährige Elias bei seinem Rekordversuch knapp scheitert, will er sofort wieder abreisen. Marvin hat allerdings nicht mit den gewitzten Inselbewohnern gerechnet, die dem lebensbedrohlich kranken Jungen unbedingt eine zweite Chance ermöglichen wollen - allen voran Elias' Tante Fanny.",
-    "mediathek_desc": "Spielfilm Deutschland 2012\r\n\r\nMarvin Feldmann hat einen ungewöhnlichen Job: Er arbeitet für das berühmte \"Buch der Rekorde\". Sein neuer Auftrag führt den strengen und absolut unbestechlichen Rekordbeobachter auf die finnische Insel Föglö. Dort soll es einen Jungen geben, der einen flachen Stein 52 Mal auf dem Wasser springen lassen kann. Große Lust auf die mühselige Reise hat Marvin nicht, und als\n.....",
-    "director": "Karola Hattop",
-    "actors": [
-      "Axel Milberg",
-      "Ann-Kathrin Kramer",
-      "Sabine Vitua"
-    ],
-    "rating": "4.8",
-    "thumb": "https://image.tmdb.org/t/p/w342/urEfKgArnuRIKZdyLh9AVRU6P8B.jpg",
-    "genres_list": [
-      "Komödie"
-    ],
-    "channel": "ARD",
-    "timestamp": 1710599400,
-    "isNew": false,
-    "tmdb_id": 324176,
-    "tmdb_type": "movie",
-    "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyNC0wMy0xNl8xNS0zMC1NRVo"
   },
   {
     "title": "Der Rosengarten von Madame Vernet",
@@ -9627,6 +9604,34 @@
     "url_website": "https://www.zdf.de/filme/die-moerder-meines-sohnes-movie-100"
   },
   {
+    "title": "Die Nacht der Creeps",
+    "search": "Die Nacht der Creeps",
+    "original_title": "Die Nacht der Creeps",
+    "year": "1986",
+    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/26/10/261025_sony_0125_sendung_nsf/1/261025_sony_0125_sendung_nsf_a1a2_3360k_p36v17.mp4",
+    "url_website": "https://www.zdf.de/filme/spielfilme/die-nacht-der-creeps-100.html",
+    "plot": "In einer Nacht, in der es für die meisten Jugendlichen der Stadt vor allem ums Feiern geht, kommen seltsame Wesen von allen unbemerkt auf die Erde. Sie sind klein und ähneln ein wenig normalen Würmern, sind jedoch tödlich. Die Studenten bemerken sie nicht, denn sie gelangen durch den Mond ihrer Opfer in den Körper und nisten sich daraufhin im Gehirn ihrer Wirte ein. Dieses verwenden sie als Brutstätte und können so sogar Tote wieder zu vermeintlichem Leben erwecken. Als die Studenten die Gefahr bemerken, ist es bereits zu spät und so ist ihre einzige Chance, sich mit Schrotflinte und Flammenwerfer gegen die bereits infizierten Menschen zur Wehr zu setzen. Der Kampf gegen die sogenannten Creeps um die Zukunft der Menschheit beginnt.",
+    "mediathek_desc": "Die Studenten Chris und Cynthia tauen versehentlich einen eingefrorenen Studenten aus dem Jahr 1959 auf – und entfesseln damit schleimige Aliens, die Menschen in Zombies verwandeln.",
+    "director": "Fred Dekker",
+    "actors": [
+      "Jason Lively",
+      "Steve Marshall",
+      "Jill Whitlow"
+    ],
+    "rating": "6.8",
+    "thumb": "https://image.tmdb.org/t/p/w342/1JhLkE5MNKLzcuAO2BoqTZC4ejT.jpg",
+    "genres_list": [
+      "Horror",
+      "Komödie",
+      "Sci-Fi"
+    ],
+    "channel": "ZDFneo",
+    "timestamp": 1792884300,
+    "isNew": true,
+    "tmdb_id": 15762,
+    "tmdb_type": "movie"
+  },
+  {
     "title": "Die Nacht der Jäger",
     "search": "Die Nacht der Jäger",
     "year": "2011",
@@ -11314,7 +11319,7 @@
     ],
     "channel": "ZDF",
     "timestamp": 1791802472,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 268550,
     "tmdb_type": "movie",
     "url_website": "https://www.zdf.de/filme/dora-heldt-herzlichen-glueckwunsch-sie-haben-gewonnen-movie-100"
@@ -11777,33 +11782,6 @@
     "url_website": "https://www.3sat.de/film/spielfilm/du-lebst-noch-24-stunden-100.html"
   },
   {
-    "title": "Dumb Money - Schnelles Geld",
-    "search": "Dumb Money - Schnelles Geld",
-    "year": "2023",
-    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/26/09/260921_0040_sendung_spf/1/260921_0040_sendung_spf_a3a4_3360k_p36v17.mp4",
-    "plot": "Dumb Money ist eine David gegen Goliath-Story, in deren Mittelpunkt die verrückte, wahre Geschichte gewöhnlicher Menschen steht, die einen unerwarteten Coup an der Wall Street landeten und reich wurden, indem sie Gamestop in das gefragteste Unternehmen der Welt verwandelten.",
-    "mediathek_desc": "Während der Coronapandemie sorgt der YouTuber und Hobby-Finanzexperte Keith Gill alias Roaring Kitty für eine Revolution auf dem Aktienmarkt und für Milliardenverluste an der Wall Street.",
-    "director": "Tyler Winklevoss",
-    "actors": [
-      "Paul Dano",
-      "Shailene Woodley",
-      "America Ferrera"
-    ],
-    "rating": "6.7",
-    "thumb": "https://image.tmdb.org/t/p/w342/tEz4lBHjxvPah89m8huMP2AJLoi.jpg",
-    "genres_list": [
-      "Historie",
-      "Komödie",
-      "Drama"
-    ],
-    "channel": "ZDF",
-    "timestamp": 1790107845,
-    "isNew": false,
-    "tmdb_id": 792293,
-    "tmdb_type": "movie",
-    "url_website": "https://www.zdf.de/filme/dumb-money---schnelles-geld-movie-100"
-  },
-  {
     "title": "Durchs wilde Kurdistan",
     "search": "Durchs wilde Kurdistan",
     "year": "1965",
@@ -11827,6 +11805,33 @@
     "tmdb_id": 19196,
     "tmdb_type": "movie",
     "url_website": "https://www.3sat.de/film/spielfilm/durchs-wilde-kurdistan-100.html"
+  },
+  {
+    "title": "Eat Pray Love",
+    "search": "Eat Pray Love",
+    "original_title": "Eat Pray Love",
+    "year": "2010",
+    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/23/05/230520_sony_2015_sendung_nsf/1/230520_sony_2015_sendung_nsf_3360k_p36v17.mp4",
+    "url_website": "https://www.zdf.de/video/filme/eat-pray-love-movie-100/eat-pray-love-102",
+    "plot": "In dieser inspirierenden, auf einer wahren Begebenheit beruhenden Bestsellerverfilmung weckt die wachsende Überzeugung, dass das Leben aus mehr als nur Mann, Haus und Karriere besteht, neuen Lebenshunger in Liz Gilbert. Sie kehrt New York für mehrere Jahre den Rücken und reist nach Italien, Indien und Bali, um sich durch gutes Essen, Meditation und die Aussicht auf eine neue, wahre Liebe selbst zu finden.",
+    "mediathek_desc": "Eigentlich hat Liz alles, was man sich nur wünschen kann, trotzdem ist sie unglücklich. Nach dem Scheitern ihrer Ehe nimmt sie sich eine Auszeit von einem Jahr, um den Kopf frei zu kriegen.",
+    "director": "Ryan Murphy",
+    "actors": [
+      "Julia Roberts",
+      "Javier Bardem",
+      "James Franco"
+    ],
+    "rating": "6.2",
+    "thumb": "https://image.tmdb.org/t/p/w342/uubadSX9UaC8IjOd1M4DZ4dS31F.jpg",
+    "genres_list": [
+      "Drama",
+      "Romanze"
+    ],
+    "channel": "ZDFneo",
+    "timestamp": 1684606500,
+    "isNew": false,
+    "tmdb_id": 38167,
+    "tmdb_type": "movie"
   },
   {
     "title": "Echte Bauern singen besser",
@@ -13441,7 +13446,7 @@
     ],
     "channel": "ZDF",
     "timestamp": 1791801985,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 339655,
     "tmdb_type": "movie",
     "url_website": "https://www.zdf.de/filme/eine-wie-diese-movie-100"
@@ -16091,7 +16096,7 @@
     ],
     "channel": "ARD",
     "timestamp": 1791802800,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 264950,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyMi0wOC0yN18xMy0wMC1NRVNa"
@@ -16611,11 +16616,11 @@
       "Action"
     ],
     "channel": "ZDFneo",
-    "timestamp": 1792272000,
+    "timestamp": 1792270200,
     "isNew": true,
     "tmdb_id": 8960,
     "tmdb_type": "movie",
-    "url_website": "https://www.zdf.de/video/filme/hancock-movie-100/hancock-100"
+    "url_website": "https://www.zdf.de/filme/hancock-movie-100"
   },
   {
     "title": "Hangman - Spiel mit dem Tod",
@@ -17195,7 +17200,7 @@
     "isNew": false,
     "tmdb_id": 265294,
     "tmdb_type": "movie",
-    "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2FyZC5kZS9wbGFuQVJEXzgzNjQyNTY5LTdlNzMtNDZlNy1hYTQ4LTY0N2EzM2FkNDhkNl9nYW56ZVNlbmR1bmc"
+    "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2FyZC5kZS9wbGFuQVJEXzgzNjQyNTY5LTdlNzMtNDZlNy1hYTQ4LTY0N2EzM2FkNDhkNl9nYW56ZVNlbmR1bmcvYXVkaW9kZXNrcmlwdGlvbg"
   },
   {
     "title": "Herzlichen Glückwunsch",
@@ -17350,7 +17355,7 @@
     ],
     "channel": "ARD",
     "timestamp": 1791842400,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 265363,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2FyZC5kZS85MDMyY2ZiMC1hZjQ3LTRkM2UtYTJmNS03YWFkNTk5YTg4NjdfZ2FuemVTZW5kdW5n"
@@ -20114,7 +20119,7 @@
     ],
     "channel": "ARTE.DE",
     "timestamp": 1791828859,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 76647,
     "tmdb_type": "movie",
     "url_website": "https://www.arte.tv/de/videos/129825-000-A/kommissar-maigret-sieht-rot/"
@@ -20217,11 +20222,11 @@
       "Drama"
     ],
     "channel": "ZDF",
-    "timestamp": 1695672900,
-    "isNew": false,
+    "timestamp": 1792649292,
+    "isNew": true,
     "tmdb_id": 852427,
     "tmdb_type": "movie",
-    "url_website": "https://www.zdf.de/video/filme/kompromat---die-macht-der-luege-movie-100/kompromat---die-macht-der-luege-100"
+    "url_website": "https://www.zdf.de/filme/kompromat---die-macht-der-luege-movie-100"
   },
   {
     "title": "Krach im Standesamt - Der 42. Himmel",
@@ -22156,8 +22161,8 @@
       "Romanze"
     ],
     "channel": "ARD",
-    "timestamp": 1767342600,
-    "isNew": false,
+    "timestamp": 1793490300,
+    "isNew": true,
     "tmdb_id": 172056,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyNi0wMS0wMl8xNS0zMC1NRVo"
@@ -23552,11 +23557,11 @@
       "Sci-Fi"
     ],
     "channel": "ZDFneo",
-    "timestamp": 1792260900,
+    "timestamp": 1792440590,
     "isNew": true,
     "tmdb_id": 607,
     "tmdb_type": "movie",
-    "url_website": "https://www.zdf.de/video/filme/men-in-black-movie-100/men-in-black-104"
+    "url_website": "https://www.zdf.de/filme/men-in-black-movie-100"
   },
   {
     "title": "Men in Black 3",
@@ -23579,11 +23584,11 @@
       "Sci-Fi"
     ],
     "channel": "ZDFneo",
-    "timestamp": 1662833700,
-    "isNew": false,
+    "timestamp": 1792440596,
+    "isNew": true,
     "tmdb_id": 41154,
     "tmdb_type": "movie",
-    "url_website": "https://www.zdf.de/video/filme/men-in-black-3-movie-100/men-in-black-3-104"
+    "url_website": "https://www.zdf.de/filme/men-in-black-3-movie-100"
   },
   {
     "title": "Mensch Mutter",
@@ -23847,6 +23852,32 @@
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyMy0wMS0yMl8xNS0zMC1NRVo"
   },
   {
+    "title": "Mit der Tür ins Haus",
+    "search": "Mit der Tür ins Haus",
+    "original_title": "Mit der Tür ins Haus",
+    "year": "2019",
+    "video_url": "https://nrodlzdf-a.akamaihd.net/none/zdf/19/05/190502_2015_sendung_fis/6/190502_2015_sendung_fis_a1a2_3360k_p36v17.mp4",
+    "url_website": "https://www.zdf.de/filme/mit-der-tuer-ins-haus-movie-100",
+    "plot": "Ohne Ankündigung stehen plötzlich die vor zwanzig Jahren ausgewanderten Eltern vor der Tür; und wie sich schließlich rausstellt, wollen sie auch nicht wieder weg.",
+    "mediathek_desc": "Nora freut sich, als ihre Eltern, seit 20 Jahren ausgewandert, vor der Tür stehen. Doch diese sind nicht gekommen, um zu feiern, sondern um zu bleiben.",
+    "director": "Karola Meeder",
+    "actors": [
+      "Chiara Schoras",
+      "Hansjürgen Hürrig",
+      "Ruth Reinecke"
+    ],
+    "rating": "5.0",
+    "thumb": "https://image.tmdb.org/t/p/w342/nLoC9GOUQFL1kPaP8XrBooodWBi.jpg",
+    "genres_list": [
+      "Komödie"
+    ],
+    "channel": "ZDF",
+    "timestamp": 1791525601,
+    "isNew": false,
+    "tmdb_id": 644436,
+    "tmdb_type": "movie"
+  },
+  {
     "title": "Mit einem Rutsch ins Glück",
     "search": "Mit einem Rutsch ins Glück",
     "year": "2003",
@@ -24074,11 +24105,11 @@
       "Fantasy"
     ],
     "channel": "ZDF",
-    "timestamp": 1742246100,
-    "isNew": false,
+    "timestamp": 1792498094,
+    "isNew": true,
     "tmdb_id": 526896,
     "tmdb_type": "movie",
-    "url_website": "https://www.zdf.de/video/filme/morbius-movie-100/morbius-100"
+    "url_website": "https://www.zdf.de/filme/morbius-movie-100"
   },
   {
     "title": "Mord an Bord",
@@ -24860,6 +24891,33 @@
     "url_website": "https://www.arte.tv/de/videos/130524-000-A/nebraska/"
   },
   {
+    "title": "Nelly und das Weihnachtswunder",
+    "search": "Nelly und das Weihnachtswunder",
+    "original_title": "Nelly und das Weihnachtswunder",
+    "year": "2024",
+    "video_url": "https://nrodlzdf-a.akamaihd.net/none/zdf/24/12/241222_2015_sendung_sof/1/241222_2015_sendung_sof_a1a2_3360k_p36v17.mp4",
+    "url_website": "https://www.zdf.de/filme/nelly-und-das-weihnachtswunder-movie-100",
+    "plot": "Eine Paketbotin, die mit Weihnachten nichts am Hut hat, kreuzt zufällig die Wege eines Gelegenheitsdiebes und eines rätselhaften kleinen Jungen, der nicht spricht. Nelly ist verblüfft, als Filou Sonny an der Tankstelle, in der sie einen Zweitjob hat, zwei Whiskeyflaschen und einen Oldtimer klaut. Nick, der plötzlich zwischen den Verkaufsregalen auftaucht und kein Wort von sich gibt, lenkt Nelly während des Diebstahls ab. Da sie davon ausgehen muss, dass es sich bei Nick um Sonnys Komplizen handelt, schnappt sie sich den Jungen und nimmt ihn mit auf die Verfolgung.Dabei erhält sie Unterstützung von der betagten Taxifahrerin Gesine, die eben noch ihren Wagen an der Tankstelle betankt hatte. Als Nelly den gestohlenen Oldtimer zufällig vor einer Villa entdeckt, schickt sie Gesine zurück und bittet sie, sich während ihrer Abwesenheit um die Tankstelle zu kümmern.",
+    "mediathek_desc": "Eine Paketbotin, die mit Weihnachten nichts am Hut hat, kreuzt zufällig die Wege eines Gelegenheitsdiebes und eines rätselhaften kleinen Jungen, der nicht spricht.",
+    "director": "Katja Benrath",
+    "actors": [
+      "Anna Schudt",
+      "Rafael Gareisen",
+      "Joah Lion Goetze"
+    ],
+    "rating": "2.7",
+    "thumb": "https://image.tmdb.org/t/p/w342/2P18ZxyFzAe3Ov3JveEhrARaCXj.jpg",
+    "genres_list": [
+      "Komödie",
+      "TV-Film"
+    ],
+    "channel": "ZDF",
+    "timestamp": 1792738800,
+    "isNew": true,
+    "tmdb_id": 1390109,
+    "tmdb_type": "movie"
+  },
+  {
     "title": "Nestwochen",
     "search": "Nestwochen",
     "year": "2021",
@@ -24963,6 +25021,33 @@
     "tmdb_id": 385775,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyMy0xMS0wOV8wMS01MC1NRVo"
+  },
+  {
+    "title": "Neues Land",
+    "search": "Neues Land",
+    "original_title": "Neues Land",
+    "year": "2026",
+    "video_url": "https://nrodlzdf-a.akamaihd.net/none/zdf/26/10/261026_2015_sendung_fdw/1/261026_2015_sendung_fdw_a1a2_3360k_p36v17.mp4",
+    "url_website": "https://www.zdf.de/filme/neues-land-movie-100",
+    "plot": "Die Geologin Ina Sedlitz kehrt nach vielen Jahren in ihren Heimatort Neukirch zurück – ein Ort, der sich vom ehemaligen Braunkohlerevier in ein beliebtes Tourismusziel verwandelt hat. Ein Lebenswerk, auf das ihr Vater, der Bürgermeister Walter Sedlitz stolz ist. Ina will nur eines: ihren Erbteil am Familienhotel an ihre Nichte Mara übertragen und endgültig mit der Vergangenheit abschließen.",
+    "mediathek_desc": "Die Geologin Ina Sedlitz kehrt nach vielen Jahren in ihr Heimatdorf Neukirch zurück – ein Ort, der sich vom ehemaligen Braunkohlerevier in ein beliebtes Tourismusziel verwandelt hat.",
+    "director": "Esther Rauch",
+    "actors": [
+      "Jördis Triebel",
+      "Jörg Schüttauf",
+      "Ronald Zehrfeld"
+    ],
+    "rating": "5.5",
+    "thumb": "https://image.tmdb.org/t/p/w342/iAYJT3GTjuGLz3aYWOzUhhpmdQd.jpg",
+    "genres_list": [
+      "TV-Film",
+      "Drama"
+    ],
+    "channel": "ZDF",
+    "timestamp": 1792483541,
+    "isNew": true,
+    "tmdb_id": 1481869,
+    "tmdb_type": "movie"
   },
   {
     "title": "Neues von uns Kindern aus Bullerbü",
@@ -25892,7 +25977,7 @@
       "Komödie"
     ],
     "channel": "ZDFneo",
-    "timestamp": 1792664486,
+    "timestamp": 1792741259,
     "isNew": true,
     "tmdb_id": 9883,
     "tmdb_type": "movie",
@@ -26687,7 +26772,7 @@
     "title": "Plötzlich Papa",
     "search": "Plötzlich Papa",
     "year": "2015",
-    "video_url": "https://nrodlzdf-a.akamaihd.net/dach/3sat/25/11/251116_ploetzlich_papa_mit_ad_spielfilm/1/251116_ploetzlich_papa_mit_ad_spielfilm_a1a2_3360k_p36v17.mp4",
+    "video_url": "https://pd-videos.daserste.de/de/2024/12/15/DEGSM677042/DEGSM677042_3154576_sendeton_1280x720-50p-3200kbit.mp4",
     "plot": "Samuel lebt in Südfrankreich und genießt sein Single-Leben in vollen Zügen. Jeden Tag Sonne, Strand und Spaß - und bloß keine Verpflichtungen, bitte! Eines Tages jedoch taucht Kristin bei ihm auf, eine verflossene Liebschaft, mit einer süßen Überraschung im Arm: Gloria, seine Tochter, von deren Existenz er bislang nichts wusste. Ehe Samuel sich versieht, ist Kristin auch schon wieder verschwunden, hat Gloria allerdings bei ihm zurückgelassen. Er soll sich allein um dieses Kind kümmern? No way! Panisch reist Samuel Kristin nach London hinterher, um sie zu suchen - aber ohne Erfolg. Acht Jahre später: Samuel und Gloria leben in London und sind längst unzertrennlich. Dank seiner Tochter ist Samuel erwachsen geworden und macht als Stuntman Karriere. Doch da taucht Kristin erneut auf und fordert ihr Kind zurück...",
     "mediathek_desc": "Der charmante Samuel genießt an der Côte d'Azur ein sorgenfreies Single-Leben. Als ein längst vergessener One-Night-Stand bei ihm auftaucht, droht seinem unbeschwerten Dasein ein Ende.",
     "director": "Hugo Gélin",
@@ -26703,11 +26788,11 @@
       "Komödie"
     ],
     "channel": "3Sat",
-    "timestamp": 1644162360,
+    "timestamp": 1734303900,
     "isNew": false,
     "tmdb_id": 382591,
     "tmdb_type": "movie",
-    "url_website": "https://www.3sat.de/film/spielfilm/ploetzlich-papa-100.html"
+    "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyNC0xMi0xNl8wMC0wNS1NRVo"
   },
   {
     "title": "Plötzlich Schwester",
@@ -27467,6 +27552,34 @@
     "tmdb_id": 425093,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyNC0wNC0xMV8wMS01MC1NRVNa"
+  },
+  {
+    "title": "Salt",
+    "search": "Salt",
+    "original_title": "Salt",
+    "year": "2010",
+    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/21/08/210826_sony_2345_sendung_spf/1/210826_sony_2345_sendung_spf_3360k_p36v17.mp4",
+    "url_website": "https://www.zdf.de/video/filme/salt-movie-100/salt-102",
+    "plot": "Evelyn Salt genießt bei der CIA den Ruf, eine der besten Agentinnen des Geheimdienstes zu sein. Loyalität und Patriotismus stehen bei ihr an vorderster Stelle. Niemand würde ihre Integrität in Frage stellen. Bis ein Überläufer sie beschuldigt, eine russische Spionin zu sein. Salt setzt sich ab. Während sie ihre gesammelten Fähigkeiten einsetzt, um ihre Verfolger zu täuschen und abzuschütteln, müht sie sich darum, ihre Unschuld zu beweisen. Damit bewirkt sie aber nur das Gegenteil. Offenbar gibt es ein Geheimnis, von dem keiner erfahren soll.",
+    "mediathek_desc": "Eine amerikanische Topagentin gerät in Verdacht, zu den Russen übergelaufen zu sein. Sie taucht ab, um ihren Namen reinzuwaschen, ihre Verfolger immer dicht auf den Fersen.",
+    "director": "Phillip Noyce",
+    "actors": [
+      "Angelina Jolie",
+      "Liev Schreiber",
+      "Chiwetel Ejiofor"
+    ],
+    "rating": "6.4",
+    "thumb": "https://image.tmdb.org/t/p/w342/ywlfN9ZiRJSxVsxEWEY5U0Ixo7S.jpg",
+    "genres_list": [
+      "Action",
+      "Mystery",
+      "Thriller"
+    ],
+    "channel": "ZDFneo",
+    "timestamp": 1630014300,
+    "isNew": false,
+    "tmdb_id": 27576,
+    "tmdb_type": "movie"
   },
   {
     "title": "Salto Vitale",
@@ -32406,7 +32519,7 @@
     ],
     "channel": "ARD",
     "timestamp": 1791888900,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 212366,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyNC0wNS0yMF8xMy00MC1NRVNa"
@@ -32568,6 +32681,35 @@
     "tmdb_id": 505270,
     "tmdb_type": "movie",
     "url_website": "https://www.zdf.de/filme/venus-im-vierten-haus-movie-100"
+  },
+  {
+    "title": "Verblendung",
+    "search": "Verblendung",
+    "original_title": "Verblendung",
+    "year": "2009",
+    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/25/06/250621_sony_2340_sendung_spf/1/250621_sony_2340_sendung_spf_3360k_p36v17.mp4",
+    "url_website": "https://www.zdf.de/video/filme/verblendung-movie-100/verblendung-102",
+    "plot": "Harriet Vanger verschwindet spurlos während eines Familientreffens. Jahrzehnte bleibt ihr Schicksal ungeklärt. Was ist nur damals mit Harriet geschehen? Mittlerweile 82 Jahre alt, lässt Henrik Vanger diese Frage keine Ruhe. Ein letztes Mal versucht er, doch noch eine Antwort zu finden, und kontaktiert den renommierten Enthüllungsjournalisten Mikael Blomkvist. Gemeinsam mit der ebenso genialen wie kompromisslosen Hackerin Lisbeth Salander, von der er unerwartet Unterstützung erhält, stößt Blomkvist schnell auf erste Spuren. Schon bald tauchen die beiden immer tiefer in die Geschichte der einflussreichen Industriellenfamilie Vanger ein – und entdecken dabei Grausames.",
+    "mediathek_desc": "Nach einem Presse-Skandal reist Journalist Mikael Blomkvist in Schwedens Norden, wo die Familie Vanger residiert. Mikael soll herausfinden, was mit Harriet Vanger passiert ist.",
+    "director": "Niels Arden Oplev",
+    "actors": [
+      "Michael Nyqvist",
+      "Noomi Rapace",
+      "Lena Endre"
+    ],
+    "rating": "7.5",
+    "thumb": "https://image.tmdb.org/t/p/w342/9m1zNnNR7YFIIwDCTweLidKABPG.jpg",
+    "genres_list": [
+      "Drama",
+      "Thriller",
+      "Krimi",
+      "Mystery"
+    ],
+    "channel": "ZDFneo",
+    "timestamp": 1653076800,
+    "isNew": false,
+    "tmdb_id": 15472,
+    "tmdb_type": "movie"
   },
   {
     "title": "Verdammt in alle Ewigkeit",
@@ -33717,7 +33859,7 @@
     ],
     "channel": "ARD",
     "timestamp": 1791801000,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 612029,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyNS0wNS0yOV8wMi0zNS1NRVNa"
@@ -33743,8 +33885,8 @@
       "Komödie"
     ],
     "channel": "ARD",
-    "timestamp": 1766836800,
-    "isNew": false,
+    "timestamp": 1793490600,
+    "isNew": true,
     "tmdb_id": 403793,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyMS0xMS0yMl8wMi0wNS1NRVo"
@@ -35332,7 +35474,7 @@
     ],
     "channel": "ARD",
     "timestamp": 1791887400,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 313279,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyNC0xMC0yMF8xNC0wMy1NRVNa"
