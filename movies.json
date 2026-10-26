@@ -624,7 +624,7 @@
     ],
     "channel": "ZDF",
     "timestamp": 1791972152,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 820800,
     "tmdb_type": "movie",
     "url_website": "https://www.zdf.de/filme/alice-im-weihnachtsland-movie-100"
@@ -1947,7 +1947,7 @@
     "isNew": false,
     "tmdb_id": 570356,
     "tmdb_type": "movie",
-    "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyMS0xMS0yN18xNC0zMC1NRVo"
+    "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyMS0xMS0yN18xNC0zMC1NRVovYXVkaW9kZXNrcmlwdGlvbg"
   },
   {
     "title": "Aus lauter Liebe zu dir",
@@ -5555,31 +5555,6 @@
     "title": "Dennstein & Schwarz - Rufmord",
     "search": "Dennstein & Schwarz - Rufmord",
     "year": "2020",
-    "video_url": "https://pd-videos.daserste.de/int/2024/08/23/DEGSM877904/DEGSM877904_3048790sendeton__1280x720-50p-3200kbit.mp4",
-    "plot": "Therese Schwarz vertritt den mit Paula Dennstein sehr gut befreundeten Politiker Konrad Wagner, der von einer Zeitung an den #MeToo-Pranger gestellt wurde. Deshalb passt der überraschende Besuch ihrer kleinen Schwester Marita auch so gar nicht in ihr Konzept. Noch dazu, wo Marita zusammen mit Ferdinand durch eine Cannabis-Geschichte in heiklen Polizeikontakt kommt. Für Konrads Verteidigung ist es wichtig den Verleumder auszumachen, doch das ist ein Wettlauf gegen die Zeit, da die Landtagswahl vor der Türe steht…",
-    "mediathek_desc": "Spielfilm Deutschland/Österreich 2020\r\n\r\nAuf Frauenpower setzen \"Dennstein & Schwarz\" als Markenzeichen ihrer Anwaltskanzlei. Der neue Fall verspricht viel Publicity, denn sie vertreten den aufstrebenden Politiker, der nun durch eine Zeitungsstory als Grapscher am Pranger steht. \r\n\r\nMit Maria Happel, Martina Ebm, Manuel Rubey, Nele Kiper u.a. | Buch: Konstanze Breitebner | Regie: Michael Rowitz",
-    "director": "Michael Rowitz",
-    "actors": [
-      "Maria Happel",
-      "Martina Ebm",
-      "Manuel Rubey"
-    ],
-    "rating": "6.0",
-    "thumb": "https://image.tmdb.org/t/p/w342/6AP96jy3fR9wc26fb5zlWWdEMS4.jpg",
-    "genres_list": [
-      "Drama"
-    ],
-    "channel": "ARD",
-    "timestamp": 1724500800,
-    "isNew": false,
-    "tmdb_id": 679245,
-    "tmdb_type": "movie",
-    "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyNC0wOC0yNF8xNC0wMC1NRVNa"
-  },
-  {
-    "title": "Dennstein & Schwarz - Rufmord",
-    "search": "Dennstein & Schwarz - Rufmord",
-    "year": "2020",
     "video_url": "https://pd-videos.daserste.de/int/2024/09/06/DEGSM685649/DEGSM685649_3059520_sendeton_1280x720-50p-3200kbit.mp4",
     "plot": "Therese Schwarz vertritt den mit Paula Dennstein sehr gut befreundeten Politiker Konrad Wagner, der von einer Zeitung an den #MeToo-Pranger gestellt wurde. Deshalb passt der überraschende Besuch ihrer kleinen Schwester Marita auch so gar nicht in ihr Konzept. Noch dazu, wo Marita zusammen mit Ferdinand durch eine Cannabis-Geschichte in heiklen Polizeikontakt kommt. Für Konrads Verteidigung ist es wichtig den Verleumder auszumachen, doch das ist ein Wettlauf gegen die Zeit, da die Landtagswahl vor der Türe steht…",
     "mediathek_desc": "Spielfilm Deutschland/Österreich 2020\r\n\r\nAuf Frauenpower setzen \"Dennstein & Schwarz\" als Markenzeichen ihrer Anwaltskanzlei. Der neue Fall verspricht viel Publicity, denn sie vertreten den aufstrebenden Politiker, der nun durch eine Zeitungsstory als Grapscher am Pranger steht. \r\n\r\nMit Maria Happel, Martina Ebm, Manuel Rubey, Nele Kiper u.a. | Buch: Konstanze Breitebner | Regie: Michael Rowitz",
@@ -5600,6 +5575,31 @@
     "tmdb_id": 679245,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyNC0wOS0wN18xNC0wMC1NRVNa"
+  },
+  {
+    "title": "Dennstein & Schwarz - Rufmord",
+    "search": "Dennstein & Schwarz - Rufmord",
+    "year": "2020",
+    "video_url": "https://pd-videos.daserste.de/int/2024/08/23/DEGSM877904/DEGSM877904_3048790sendeton__1280x720-50p-3200kbit.mp4",
+    "plot": "Therese Schwarz vertritt den mit Paula Dennstein sehr gut befreundeten Politiker Konrad Wagner, der von einer Zeitung an den #MeToo-Pranger gestellt wurde. Deshalb passt der überraschende Besuch ihrer kleinen Schwester Marita auch so gar nicht in ihr Konzept. Noch dazu, wo Marita zusammen mit Ferdinand durch eine Cannabis-Geschichte in heiklen Polizeikontakt kommt. Für Konrads Verteidigung ist es wichtig den Verleumder auszumachen, doch das ist ein Wettlauf gegen die Zeit, da die Landtagswahl vor der Türe steht…",
+    "mediathek_desc": "Spielfilm Deutschland/Österreich 2020\r\n\r\nAuf Frauenpower setzen \"Dennstein & Schwarz\" als Markenzeichen ihrer Anwaltskanzlei. Der neue Fall verspricht viel Publicity, denn sie vertreten den aufstrebenden Politiker, der nun durch eine Zeitungsstory als Grapscher am Pranger steht. \r\n\r\nMit Maria Happel, Martina Ebm, Manuel Rubey, Nele Kiper u.a. | Buch: Konstanze Breitebner | Regie: Michael Rowitz",
+    "director": "Michael Rowitz",
+    "actors": [
+      "Maria Happel",
+      "Martina Ebm",
+      "Manuel Rubey"
+    ],
+    "rating": "6.0",
+    "thumb": "https://image.tmdb.org/t/p/w342/6AP96jy3fR9wc26fb5zlWWdEMS4.jpg",
+    "genres_list": [
+      "Drama"
+    ],
+    "channel": "ARD",
+    "timestamp": 1724500800,
+    "isNew": false,
+    "tmdb_id": 679245,
+    "tmdb_type": "movie",
+    "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyNC0wOC0yNF8xNC0wMC1NRVNa"
   },
   {
     "title": "Dennstein & Schwarz - Schuldenfalle",
@@ -6073,7 +6073,7 @@
     "title": "Der Geruch von Erde",
     "search": "Der Geruch von Erde",
     "year": "2014",
-    "video_url": "https://pd-videos.daserste.de/int/2022/08/19/29bd918d-c8d7-49d2-bc4e-99382a839dc1/JOB_567993__sendeton_1280x720-50p-3200kbit.mp4",
+    "video_url": "https://ctv-videos.daserste.de/int/2022/08/19/29bd918d-c8d7-49d2-bc4e-99382a839dc1/JOB_567993__sendeton_1280x720-50p-3200kbit.mp4",
     "plot": "Die junge Agrarwissenschaftlerin Dr. Ellen Bischoff hat sich der ökologischen Landwirtschaft verschrieben. Doch während sie beruflich Erfolge feiert, steht es mit ihrem Familienleben nicht zum Besten. Einst zerstritt sie sich mit ihrem verwitweten, uneinsichtigen Vater Anton und kehrte dem heimischen Milchbauernhof den Rücken. Nun aber liegt Anton nach einem schweren Herzanfall im Krankenhaus. Ellen bleibt nichts anderes übrig, als nach Hause zurückzukehren, um den Betrieb in Gang zu halten. Dort trifft sie auch ihre Jugendliebe Felix wieder, dem sie nie verzeihen konnte, dass er sie mit ihrer ehemals besten Freundin Karin betrog.",
     "mediathek_desc": "Spielfilm Deutschland 2013 \r\n\r\nDie junge Agrarwissenschaftlerin Dr. Ellen Bischoff hat sich der ökologischen Landwirtschaft verschrieben. Doch während sie beruflich Erfolge feiert, steht es mit ihrem Familienleben nicht zum Besten. Einst zerstritt sie sich mit ihrem verwitweten, uneinsichtigen Vater Anton und kehrte dem heimischen Milchbauernhof den Rücken. Nun aber liegt Anton nach einem schweren\n.....",
     "director": "Marcus Ulbricht",
@@ -6088,8 +6088,8 @@
       "Drama"
     ],
     "channel": "ARD",
-    "timestamp": 1661688180,
-    "isNew": false,
+    "timestamp": 1793531700,
+    "isNew": true,
     "tmdb_id": 289517,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyMi0wOC0yOF8xNC0wMy1NRVNa"
@@ -11863,7 +11863,7 @@
     "search": "Edgar Wallace: Das Geheimnis der gelben Narzissen",
     "year": "1961",
     "video_url": "https://rodlzdf-a.akamaihd.net/dach/3sat/20/07/200721_edgar_wallace_das_geheimnis_der_gelben_narzissen_spielfilm/2/200721_edgar_wallace_das_geheimnis_der_gelben_narzissen_spielfilm_2328k_p35v13.mp4",
-    "plot": "Immer häufiger werden junge Frauen aus der Londoner Rauschgiftszene ermordet aufgefunden. Neben den Leichen liegt stets eine gelbe Narzisse. Scotland Yard nimmt die Ermittlungen auf.",
+    "plot": "Großalarm bei der Londoner Polizei: Ein offensichtlich wahnsinniger Mörder hat innerhalb kürzester Zeit drei junge Frauen umgebracht. Jedes Mal hinterließ der Täter einen Strauß gelber Narzissen am Ort des schrecklichen Geschehens.  Oberinspektor Whiteside übernimmt die Ermittlungen. Jack Tarling - Agent einer internationalen Fluggesellschaft - und der geheimnisvolle Chinese Ling Chu glauben allerdings nicht an die Tat eines einzelnen. Erst recht nicht, als sie nur knapp einem Bombenanschlag entkommen, der eine gerade erst entdeckte Lieferung geschmuggelten Heroins vernichtet.  Immer mehr scheint sich der Verdacht der beiden zu bestätigen, dass die rätselhafte Mordserie im Zusammenhang mit dem Drogenhandel steht. Oberinspektor Whiteside hält zunächst an seiner These fest, bis auch seine Spuren in einen verruchten Club und zu dessen Besitzer - einem reichen Londoner Geschäftsmann - führen.",
     "mediathek_desc": "Immer häufiger werden junge Frauen aus der Londoner Rauschgiftszene ermordet aufgefunden. Neben den Leichen liegt stets eine gelbe Narzisse. Scotland Yard nimmt die Ermittlungen auf.",
     "director": "Ákos Ráthonyi",
     "actors": [
@@ -11872,7 +11872,7 @@
       "Klaus Kinski"
     ],
     "rating": "5.8",
-    "thumb": "https://image.tmdb.org/t/p/original/7zpHuQo93ijMx5EiYSCKr22YsRd.jpg",
+    "thumb": "https://image.tmdb.org/t/p/w342/7zpHuQo93ijMx5EiYSCKr22YsRd.jpg",
     "genres_list": [
       "Mystery",
       "Krimi"
@@ -11880,7 +11880,9 @@
     "channel": "3Sat",
     "timestamp": 1595355300,
     "isNew": false,
-    "url_website": "https://www.3sat.de/film/spielfilm/edgar-wallace-das-geheimnis-der-gelben-narzissen-100.html"
+    "url_website": "https://www.3sat.de/film/spielfilm/edgar-wallace-das-geheimnis-der-gelben-narzissen-100.html",
+    "tmdb_id": 70028,
+    "tmdb_type": "movie"
   },
   {
     "title": "Edgar Wallace: Das indische Tuch",
@@ -12300,6 +12302,34 @@
     "tmdb_id": 429203,
     "tmdb_type": "movie",
     "url_website": "https://www.3sat.de/film/spielfilm/ein-gauner--gentleman-100.html"
+  },
+  {
+    "title": "Ein Gauner Gottes",
+    "search": "Ein Gauner Gottes",
+    "original_title": "Ein Gauner Gottes",
+    "year": "2004",
+    "video_url": "https://ctv-videos.daserste.de/int/2021/05/20/5a994d18-7c38-4931-b3cc-1966e13ba56f/JOB_581145__sendeton_1280x720-50p-3200kbit.mp4",
+    "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyMS0wNS0yOV8xMy0wMC1NRVNa",
+    "plot": "Nach 20 Jahren kehrt der Zimmermann Johannes Keinath in seine Heimatstadt am Bodensee zurück. Als er sich bei einem Raubüberfall gegen zwei Ganoven zur Wehr setzt, glaubt er anschließend, einen der beiden tödlich verletzt zu haben.",
+    "mediathek_desc": "Spielfilm Deutschland 2004 \n\nZimmermann Johannes Keinath glaubt, einen Gauner getötet zu haben und ergreift die Flucht. Verkleidet als Mönch sorgt \"Bruder Johannes\" anschließend für einige Turbulenzen. \n\nMit Fritz Wepper Saskia Vester, Peter Sattmann, Michael Roll, Jaecki Schwarz, Anke Sevenich u. a. | Buch: Felix Huby, Hans Münch und Ulrike Münch | Regie: Helmut Metzger",
+    "director": "Helmut Metzger",
+    "actors": [
+      "Fritz Wepper",
+      "Saskia Vester",
+      "Peter Sattmann"
+    ],
+    "rating": "6.0",
+    "thumb": "https://image.tmdb.org/t/p/w342/cqIYMhqAR4P1Q9JaWhkXxkTIIlN.jpg",
+    "genres_list": [
+      "Familie",
+      "Komödie",
+      "TV-Film"
+    ],
+    "channel": "ARD",
+    "timestamp": 1792930200,
+    "isNew": true,
+    "tmdb_id": 289650,
+    "tmdb_type": "movie"
   },
   {
     "title": "Ein Geschenk des Himmels",
@@ -14166,6 +14196,33 @@
     "tmdb_id": 339633,
     "tmdb_type": "movie",
     "url_website": "https://www.zdf.de/filme/es-kommt-noch-besser-movie-100"
+  },
+  {
+    "title": "Eternal",
+    "search": "Eternal",
+    "original_title": "Eternal",
+    "year": "None",
+    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/26/03/260327_0045_sendung_spf/1/260327_0045_sendung_spf_a3a4_3360k_p36v17.mp4",
+    "url_website": "https://www.zdf.de/video/filme/eternal-movie-100/eternal-100",
+    "plot": "Als die Klimakrise eskaliert, entscheidet sich der junge Forscher Elias gegen eine gemeinsame Zukunft mit Anita. Doch Jahre später holt ihn seine Entscheidung wieder ein.",
+    "mediathek_desc": "Als die Klimakrise eskaliert, entscheidet sich der junge Forscher Elias gegen eine gemeinsame Zukunft mit Anita. Doch Jahre später holt ihn seine Entscheidung wieder ein.",
+    "director": "",
+    "actors": [
+      "Anthony Arcuri",
+      "Stevie Hall",
+      "Kristine Petkovska"
+    ],
+    "rating": "N/A",
+    "thumb": "placeholder.png",
+    "genres_list": [
+      "Drama",
+      "Komödie"
+    ],
+    "channel": "ZDF",
+    "timestamp": 1774568700,
+    "isNew": false,
+    "tmdb_id": 1543076,
+    "tmdb_type": "movie"
   },
   {
     "title": "Eva Zacharias",
@@ -16387,32 +16444,6 @@
     "url_website": "https://www.3sat.de/film/spielfilm/guglhupfgeschwader-100.html"
   },
   {
-    "title": "Gäste zum Essen",
-    "search": "Gäste zum Essen",
-    "year": "2023",
-    "video_url": "https://nrodlzdf-a.akamaihd.net/none/zdf/23/09/230914_2015_sendung_fis/1/230914_2015_sendung_fis_a1a2_3360k_p36v17.mp4",
-    "plot": "Zwei Familien aus völlig unterschiedlichen gesellschaftlichen Welten prallen bei einem Abendessen aufeinander. Das so harmlos geplante Kennenlernen eskaliert. Soraya und André Faber, ein Hamburger Architekten-Ehepaar, machen sich Sorgen um ihre 16-jährige Tochter Mila, die ihnen und in der Schule zu entgleiten droht. Ihre Vermutung: Das kann nur am schlechten Einfluss ihres Freundes Leon liegen. Da müssen sie handeln!  Entschlossen laden die Fabers Leons Eltern Viktor und Monika Popov in ihr großzügiges Zuhause zum festlichen Abendessen ein. Während die reichen Gastgeber noch über einen rücksichtsvollen Kleidungsstil im Understatement nachdenken, fahren Viktor und die Supermarktverkäuferin Monika bereits aufgebrezelt auf dem Motorrad vor – in Kampfstimmung: Sie werden sich von diesen Bonzen nicht unterbuttern lassen!",
-    "mediathek_desc": "Zwei Familien aus völlig unterschiedlichen gesellschaftlichen Welten prallen bei einem Abendessen aufeinander. Das so harmlos geplante Kennenlernen eskaliert.",
-    "director": "Carolin Otterbach",
-    "actors": [
-      "Neda Rahmanian",
-      "Matthias Koeberlin",
-      "Hannah Schiller"
-    ],
-    "rating": "6.0",
-    "thumb": "https://image.tmdb.org/t/p/w342/uCRLMnSfCXWAnM6LQrqrHPHlqxs.jpg",
-    "genres_list": [
-      "Komödie",
-      "TV-Film"
-    ],
-    "channel": "ZDF",
-    "timestamp": 1792553906,
-    "isNew": true,
-    "tmdb_id": 1174820,
-    "tmdb_type": "movie",
-    "url_website": "https://www.zdf.de/filme/gaeste-zum-essen-movie-100"
-  },
-  {
     "title": "Göttliche Funken",
     "search": "Göttliche Funken",
     "year": "2014",
@@ -16595,32 +16626,6 @@
     "tmdb_id": 1084145,
     "tmdb_type": "movie",
     "url_website": "https://www.3sat.de/film/spielfilm/hammarskjoeld--kampf-fuer-den-frieden-100.html"
-  },
-  {
-    "title": "Hancock",
-    "search": "Hancock",
-    "year": "2008",
-    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/26/10/261017_sony_2320_sendung_nsf/1/261017_sony_2320_sendung_nsf_3360k_p36v17.mp4",
-    "plot": "Der ausgebrannte Superheld Hancock fliegt nur noch mit Whiskeyflasche zum Einsatz. Wegen einigen misslungenen Heldentaten und seinen unkonventionellen Methoden ist die Stadt L.A. auf ihren Helden nicht gut zu sprechen. Der PR-Berater Ray möchte Hancocks Image aufpolieren.  Nun verliebt sich Hancock in Rays Frau Mary und das Chaos nimmt seinen Lauf …",
-    "mediathek_desc": "Hancock hat übermenschliche Kräfte. In Los Angeles rettet er Leben und richtet zugleich massive Schäden an. Die Bevölkerung verliert die Geduld mit dem rücksichtlosen Helfer.",
-    "director": "Richard Saperstein",
-    "actors": [
-      "Will Smith",
-      "Charlize Theron",
-      "Jason Bateman"
-    ],
-    "rating": "6.4",
-    "thumb": "https://image.tmdb.org/t/p/w342/qAvlfGGLjAQPtSGhOn9Hsq0Apkd.jpg",
-    "genres_list": [
-      "Fantasy",
-      "Action"
-    ],
-    "channel": "ZDFneo",
-    "timestamp": 1792270200,
-    "isNew": true,
-    "tmdb_id": 8960,
-    "tmdb_type": "movie",
-    "url_website": "https://www.zdf.de/filme/hancock-movie-100"
   },
   {
     "title": "Hangman - Spiel mit dem Tod",
@@ -16810,7 +16815,7 @@
     "title": "Hatching",
     "search": "Hatching",
     "year": "2022",
-    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/25/10/251006_0035_sendung_spf/1/251006_0035_sendung_spf_a3a4_3360k_p36v17.mp4",
+    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/25/10/251006_0035_sendung_spf/1/251006_0035_sendung_spf_a1a2_3360k_p36v17.mp4",
     "plot": "Die 12-jährige Turnerin Tinja (Siiri Solalinna) möchte unbedingt ihrer Mutter (Sophia Heikkilä) gefallen, die früher einmal Eiskunstläuferin war und nun einen beliebten Blog betreibt, der das idyllische Leben ihrer Familie präsentiert. Nachdem Tinja eines Tages im Wald einen verwundeten Vogel findet, bringt sie sein seltsames Ei nach Hause, versteckt es in ihrem Bett und pflegt es, bis es schlüpft. Die Kreatur, die daraus auftaucht, wird zu ihrer engsten Freundin und einem lebenden Albtraum, der Tinja unter der makellosen Fassade in eine verdrehte Realität stürzt, die ihre Mutter nicht sehen will. Doch Tinja ist nicht die Einzige, die versucht, ein Geheimnis zu bewahren.",
     "mediathek_desc": "Die Nachwuchsturnerin Tinja leidet unter den hohen Ansprüchen ihrer Mutter.\nNach dem Fund eines seltsamen Eies wird sie selbst zur Ziehmutter einer sonderbaren Vogelkreatur - mit bösen Folgen.",
     "director": "Peter Kropénin",
@@ -16826,11 +16831,11 @@
       "Fantasy"
     ],
     "channel": "ZDF",
-    "timestamp": 1792035047,
-    "isNew": true,
+    "timestamp": 1759703700,
+    "isNew": false,
     "tmdb_id": 517302,
     "tmdb_type": "movie",
-    "url_website": "https://www.zdf.de/filme/hatching-movie-100"
+    "url_website": "https://www.zdf.de/video/filme/hatching-movie-100/hatching-100"
   },
   {
     "title": "Hattinger und der Nebel - Ein Chiemseekrimi",
@@ -17881,7 +17886,7 @@
     ],
     "channel": "ARD",
     "timestamp": 1791969600,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 342345,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyMy0wOS0yNF8xNS0zMC1NRVNa"
@@ -20206,7 +20211,7 @@
     "title": "Kompromat - Die Macht der Lüge",
     "search": "Kompromat - Die Macht der Lüge",
     "year": "2022",
-    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/23/09/230925_2215_sendung_spf/1/230925_2215_sendung_spf_a3a4_3360k_p36v17.mp4",
+    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/23/09/230925_2215_sendung_spf/1/230925_2215_sendung_spf_a1a2_3360k_p36v17.mp4",
     "plot": "Sibirien, 2017: Der französische Diplomat Mathieu wird Opfer einer Intrige des russischen Geheimdienstes. Vor den Augen seiner Tochter wird er verhaftet, inhaftiert und isoliert. Ohne Chance auf Verteidigung oder Hilfe von der eigenen Regierung bleibt dem Staatsfeind nur ein Ausweg, wenn er seine Familie je wiedersehen will: die abenteuerliche Flucht auf eigene Faust durch ein fremdes und feindseliges Land.",
     "mediathek_desc": "Der Franzose Mathieu Roussel wird in Russland beschuldigt, ein Kinderschänder zu sein. Ihm drohen 15 Jahre Lagerhaft. Selbst sein Anwalt rät ihm zur Flucht.",
     "director": "Jérôme Salle",
@@ -21165,8 +21170,8 @@
       "Romanze"
     ],
     "channel": "ARD",
-    "timestamp": 1774085100,
-    "isNew": false,
+    "timestamp": 1793749500,
+    "isNew": true,
     "tmdb_id": 374434,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyNS0wNC0yMF8xMi0zMC1NRVNa"
@@ -21175,7 +21180,7 @@
     "title": "Liebe ist die beste Medizin",
     "search": "Liebe ist die beste Medizin",
     "year": "2004",
-    "video_url": "https://pd-videos.daserste.de/int/2023/04/19/160298df-9e0b-40f0-9153-1b90731b9f6f/JOB_501267__sendeton_1280x720-50p-3200kbit.mp4",
+    "video_url": "https://ctv-videos.daserste.de/int/2023/04/19/160298df-9e0b-40f0-9153-1b90731b9f6f/JOB_501267__sendeton_1280x720-50p-3200kbit.mp4",
     "plot": "Dr. Peter Haller ist ein erfolgreicher Arzt, der nach vielen Jahren in seinen kleinen Heimatort zurückkehren muss: Sein Vater, Dr. Maximilian Haller, ist gestorben. Was Peter nicht ahnt; Maximilian ist gar nicht tot, er hat lediglich nach einem Weg gesucht, seinen Sohn zurück nach Hause zu locken - denn Peter soll die gut gehende Praxis seines ungeliebten Vaters übernehmen. Während seines Aufenthaltes behandelt Peter die hübsche Stella - und verliebt sich prompt in seine Patientin. Das gibt Ärger mit deren temperamentvollen Verlobten Giuseppe. Und dann erleidet sein \"toter\" Vater auch noch einen Herzanfall.",
     "mediathek_desc": "Spielfilm Deutschland 2003 \r\n\r\nDr. Peter Haller (Dominic Raacke) ist ein erfolgreicher Arzt. Als ihn die Nachricht vom Tod seines Vaters Dr. Maximilian Haller (Charles Brauer) erreicht, kehrt er nach vielen Jahren in seinen kleinen Heimatort zurück. Peters Trauer hält sich allerdings in Grenzen: Bereits vor Jahren hatte er den Kontakt zu seinem Vater abgebrochen. Für ihn war dieser, ein angesehene\n.....",
     "director": "Hannu Salonen",
@@ -21190,8 +21195,8 @@
       "Drama"
     ],
     "channel": "ARD",
-    "timestamp": 1682946900,
-    "isNew": false,
+    "timestamp": 1793543400,
+    "isNew": true,
     "tmdb_id": 291652,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyMy0wNS0wMV8xNS0xNS1NRVNa"
@@ -23536,34 +23541,6 @@
     "url_website": "https://www.3sat.de/film/spielfilm/memory---sein-letzter-auftrag-100.html"
   },
   {
-    "title": "Men in Black",
-    "search": "Men in Black",
-    "year": "1997",
-    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/26/10/261017_sony_2015_sendung_nsf/1/261017_sony_2015_sendung_nsf_3360k_p36v17.mp4",
-    "plot": "Nur die Men In Black kennen das bestgehütete Geheimnis der Welt: auf der Erde wimmelt es von Aliens! Außerirdische der unterschiedlichsten Art haben sich, als Menschen getarnt, auf dem Planeten breitgemacht. Einige werden geduldet, andere aufgespürt, gejagt, vertrieben. Und diesen Job erledigen die beiden zähesten unter den Alienjägern, die Agenten Mr. K und Mr. J. Doch dann landet ein intergalaktisches Riesenmonster auf der Erde - sein Ziel: die totale Vernichtung der Welt. Trotz optimaler High-Tech-Bewaffnung haben die beiden Super-Agenten jetzt einen lebensgefährlichen Auftrag. Als sie die Fährte des außerirdischen Eindringlings aufgenommen haben, scheint es fast zu spät zu sein - eine globale Katastrophe bahnt sich an...",
-    "mediathek_desc": "Auf der Erde leben zahlreiche Außerirdische – unerkannt und getarnt als Menschen. Die Agenten Kay und Jay spüren illegale Aliens auf und halten ihre Existenz geheim.",
-    "director": "Barry Sonnenfeld",
-    "actors": [
-      "Tommy Lee Jones",
-      "Will Smith",
-      "Linda Fiorentino"
-    ],
-    "rating": "7.2",
-    "thumb": "https://image.tmdb.org/t/p/w342/ebkJnaXRREQEzd3yMKuEDC827We.jpg",
-    "genres_list": [
-      "Action",
-      "Abenteuer",
-      "Komödie",
-      "Sci-Fi"
-    ],
-    "channel": "ZDFneo",
-    "timestamp": 1792440590,
-    "isNew": true,
-    "tmdb_id": 607,
-    "tmdb_type": "movie",
-    "url_website": "https://www.zdf.de/filme/men-in-black-movie-100"
-  },
-  {
     "title": "Men in Black 3",
     "search": "Men in Black 3",
     "year": "2012",
@@ -24083,33 +24060,6 @@
     "tmdb_id": 434273,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2FyZC5kZS9wbGFuQVJEXzY2MWQxOTg1LThjNDAtNDViNS04YjAyLWQ2ZjZkNzc1NTQ5M19nYW56ZVNlbmR1bmc"
-  },
-  {
-    "title": "Morbius",
-    "search": "Morbius",
-    "year": "2022",
-    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/25/03/250317_sony_2215_sendung_spf/1/250317_sony_2215_sendung_spf_3360k_p36v17.mp4",
-    "plot": "Dr. Michael Morbius leidet an einer seltenen Blutkrankheit und experimentiert mit biochemischen Elementen, um sich selbst zu heilen. Er infiziert sich jedoch versehentlich mit einer vampirähnlichen Krankheit.",
-    "mediathek_desc": "Dr. Michael Morbius leidet an einer seltenen, tödlichen Blutkrankheit und setzt alles daran, um ein Heilmittel zu finden. Doch mit seiner Forschung öffnet er die Büchse der Pandora.",
-    "director": "Jared Leto",
-    "actors": [
-      "Jared Leto",
-      "Matt Smith",
-      "Adria Arjona"
-    ],
-    "rating": "5.9",
-    "thumb": "https://image.tmdb.org/t/p/w342/bSV2fyGY9ce6OfUV47xEJdNsQNY.jpg",
-    "genres_list": [
-      "Action",
-      "Sci-Fi",
-      "Fantasy"
-    ],
-    "channel": "ZDF",
-    "timestamp": 1792498094,
-    "isNew": true,
-    "tmdb_id": 526896,
-    "tmdb_type": "movie",
-    "url_website": "https://www.zdf.de/filme/morbius-movie-100"
   },
   {
     "title": "Mord an Bord",
@@ -30212,11 +30162,11 @@
       "Komödie"
     ],
     "channel": "ZDF",
-    "timestamp": 1781909100,
-    "isNew": false,
+    "timestamp": 1792267304,
+    "isNew": true,
     "tmdb_id": 1182047,
     "tmdb_type": "movie",
-    "url_website": "https://www.zdf.de/video/filme/the-apprentice--the-trump-story-movie-100/the-apprentice--the-trump-story-100"
+    "url_website": "https://www.zdf.de/filme/the-apprentice--the-trump-story-movie-100"
   },
   {
     "title": "The Card Counter",
@@ -33946,7 +33896,7 @@
     "title": "Werk ohne Autor",
     "search": "Werk ohne Autor",
     "year": "2018",
-    "video_url": "https://ctv-videos.daserste.de/dach/2026/04/03/DEGSM206510/DEGSM206510_3697005_sendeton_1280x720-50p-3200kbit.mp4",
+    "video_url": "https://ctv-videos.daserste.de/dach/2026/09/29/DEGSM499221/DEGSM499221_28263_sendeton_1280x720-50p-3200kbit.mp4",
     "plot": "Auch nach der Flucht in die BRD lassen dem jungen Künstler Kurt Barnert seine Kindheits- und Jugenderlebnisse aus NS- und SED-Zeit keine Ruhe. Als er in der Studentin Ellie, die Liebe seines Lebens, trifft, gelingt es ihm, Bilder zu schaffen, die nicht nur sein eigenes Schicksal widerspiegeln, sondern die Traumata einer ganzen Generation.\r Ein epischer, psychologischer Thriller über drei Epochen deutscher Geschichte.",
     "mediathek_desc": "Spielfilm Deutschland 2018\r\n\r\nDie DDR in den 1950er Jahren: Der hochtalentierte Maler Kurt Barnert (Tom Schilling) ist auf dem Weg, ein bedeutender Künstler des Sozialistischen Realismus zu werden. An der Dresdener Kunstakademie lernt er die begabte Modestudentin Ellie (Paula Beer) kennen. Für beide ist es Liebe auf den ersten Blick - und schon bald zieht Kurt als Untermieter in die großbürgerlich\n.....",
     "director": "Florian Henckel von Donnersmarck",
@@ -33963,8 +33913,8 @@
       "Historie"
     ],
     "channel": "ARD",
-    "timestamp": 1775426400,
-    "isNew": false,
+    "timestamp": 1793138100,
+    "isNew": true,
     "tmdb_id": 423612,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2FyZC5kZS9wbGFuQVJEXzlmMThiOWM4LWRhOGEtNDUwMy1iYjNhLTZkMDc4MTBhOWU4ZV9nYW56ZVNlbmR1bmc"
@@ -35685,6 +35635,33 @@
     "tmdb_id": 32634,
     "tmdb_type": "movie",
     "url_website": "https://www.zdf.de/filme/spielfilme/zwei-ritten-zusammen-110.html"
+  },
+  {
+    "title": "Zwei verlorene Schafe",
+    "search": "Zwei verlorene Schafe",
+    "original_title": "Zwei verlorene Schafe",
+    "year": "2016",
+    "video_url": "https://nrodlzdf-a.akamaihd.net/none/zdf/16/10/161020_2015_sendung_fis/7/161020_2015_sendung_fis_3360k_p36v15.mp4",
+    "url_website": "https://www.zdf.de/filme/zwei-verlorene-schafe-movie-100",
+    "plot": "Was passiert, wenn eine ambitionierte, aber erfolglose Schauspielerin in der Mitte ihres Lebens, einen jungen, kein bisschen ambitionierten und ebenso erfolglosen Pfarrer coacht? Rebeccas Schauspielkarriere ist den Bach runter. Das Angebot, in einem Kellertheater die Hauptrolle zu spielen, kommt da wie ein Geschenk des Himmels - genau wie das Angebot, den talentfreien Pfarrer Thaddäus zu coachen.",
+    "mediathek_desc": "Was passiert, wenn eine ambitionierte, aber erfolglose Schauspielerin in der Mitte ihres Lebens einen jungen, kein bisschen ambitionierten und ebenso erfolglosen Pfarrer coacht?",
+    "director": "Sylke Enders",
+    "actors": [
+      "Steffi Kühnert",
+      "Andrea Sawatzki",
+      "Franz Hartwig"
+    ],
+    "rating": "4.3",
+    "thumb": "https://image.tmdb.org/t/p/w342/w58mdCKeoDHyMIG79jX2TToQsi3.jpg",
+    "genres_list": [
+      "Komödie",
+      "TV-Film"
+    ],
+    "channel": "ZDF",
+    "timestamp": 1792270563,
+    "isNew": true,
+    "tmdb_id": 425783,
+    "tmdb_type": "movie"
   },
   {
     "title": "Zwei übern Berg",
