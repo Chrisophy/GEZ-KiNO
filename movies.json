@@ -1738,7 +1738,7 @@
     ],
     "channel": "ARTE.DE",
     "timestamp": 1791979204,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 23030,
     "tmdb_type": "movie",
     "url_website": "https://www.arte.tv/de/videos/102939-000-A/arabeske/"
@@ -1947,7 +1947,7 @@
     "isNew": false,
     "tmdb_id": 570356,
     "tmdb_type": "movie",
-    "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyMS0xMS0yN18xNC0zMC1NRVovYXVkaW9kZXNrcmlwdGlvbg"
+    "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyMS0xMS0yN18xNC0zMC1NRVo"
   },
   {
     "title": "Aus lauter Liebe zu dir",
@@ -4375,7 +4375,7 @@
     ],
     "channel": "ARD",
     "timestamp": 1791973800,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 347240,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2FyZC5kZS9wbGFuQVJEX2Q2MTU3MjFjLTk5NTMtNDFhZC04NjhmLTllOWFiMWM4NjYxOF9nYW56ZVNlbmR1bmc"
@@ -5090,7 +5090,7 @@
     "title": "Das Wunder von Merching",
     "search": "Das Wunder von Merching",
     "year": "2012",
-    "video_url": "https://pd-videos.daserste.de/int/2023/10/09/cfe334e2-ce12-416c-a252-75e5d7e45f14/JOB_566143__sendeton_1280x720-50p-3200kbit.mp4",
+    "video_url": "https://ctv-videos.daserste.de/int/2023/10/09/cfe334e2-ce12-416c-a252-75e5d7e45f14/JOB_566143__sendeton_1280x720-50p-3200kbit.mp4",
     "plot": "Früher lebten die Merchinger vom Fremdenverkehr, der seit Jahren zum Erliegen gekommen ist. Mit der Eingemeindung droht dem idyllischen Provinzdorf nun auch noch der Verlust der Unabhängigkeit. In der Stunde größter Not verbreitet sich das Gerücht, die Marienstatue der hiesigen Feldkapelle vergieße Tränen. Das ruft Skeptiker auf den Plan, doch eine kirchliche Überprüfung bestätigt die Echtheit der übernatürlichen Erscheinung. Die Merchinger frohlocken, allein die tüchtige Bäuerin Kathi fühlt sich zunehmend unwohl in ihrer Haut, weiß sie doch besser als alle anderen um den irdischen Ursprung des göttlichen Zeichens.",
     "mediathek_desc": "Spielfilm Deutschland 2012 \r\n\r\nUnter Mühen bewirtschaftet die junge Fenzlbäurin Kathi (Jule Ronstedt) den väterlichen Hof im abgelegenen bayerischen Merching. Die Zeiten sind hart, denn Touristen verirren sich nur noch selten in den einstigen Fremdenverkehrsort. Und nun muss Kathi erfahren, dass der hinterhältige Fritz Krontaler (Stephan Zinner), Bürgermeister des Nachbarortes Mirning, ihr verschu\n.....",
     "director": "Thomas Kronthaler",
@@ -5106,8 +5106,8 @@
       "Komödie"
     ],
     "channel": "ARD",
-    "timestamp": 1697976000,
-    "isNew": false,
+    "timestamp": 1793620500,
+    "isNew": true,
     "tmdb_id": 233476,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyMy0xMC0yMl8xNC0wMC1NRVNa"
@@ -6256,7 +6256,7 @@
     "original_title": "Der Hexenclub",
     "year": "1996",
     "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/26/10/261024_sony_2350_sendung_nsf/1/261024_sony_2350_sendung_nsf_a3a4_3360k_p36v17.mp4",
-    "url_website": "https://www.zdf.de/filme/spielfilme/der-hexenclub-100.html",
+    "url_website": "https://www.zdf.de/video/filme/der-hexenclub-movie-100/der-hexenclub-100",
     "plot": "Wer glaubt, Hexen seien alt und häßlich, kennt Sarah, Nancy, Bonnie und Rochelle noch nicht. Die attraktiven High School Girls gründen einen Hexenzirkel, mitten in Los Angeles – ausgerechnet an der katholischen St. Benedict’s Academy. Die Magie bringt ihnen Spaß und erfüllt ihre sehnsüchtigsten Wünsche auf geheimnisvolle Weise. Doch nicht ohne Folgen, denn sie haben eines übersehen: „Was immer Du aussendest, bekommst Du dreifach zurück“. Das macht die smarten Hexen für andere lebensgefährlich: Wer sie ärgert, wird verwünscht! Ihre Rache ist eiskalt und das Unglück nimmt seinen unbarmherzigen Lauf …",
     "mediathek_desc": "Die vier Außenseiterinnen Sarah, Nancy, Bonnie und Rochelle gründen an einer US-Highschool einen Hexenzirkel. Sie entfesseln dunkle Magie, doch jeder Zauber fordert seinen Preis.",
     "director": "Andrew Fleming",
@@ -7867,7 +7867,7 @@
     ],
     "channel": "ZDF",
     "timestamp": 1791982192,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 1724285,
     "tmdb_type": "movie",
     "url_website": "https://www.zdf.de/filme/die-abraeumer-movie-100"
@@ -9609,7 +9609,7 @@
     "original_title": "Die Nacht der Creeps",
     "year": "1986",
     "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/26/10/261025_sony_0125_sendung_nsf/1/261025_sony_0125_sendung_nsf_a1a2_3360k_p36v17.mp4",
-    "url_website": "https://www.zdf.de/filme/spielfilme/die-nacht-der-creeps-100.html",
+    "url_website": "https://www.zdf.de/video/filme/die-nacht-der-creeps-movie-100/die-nacht-der-creeps-100",
     "plot": "In einer Nacht, in der es für die meisten Jugendlichen der Stadt vor allem ums Feiern geht, kommen seltsame Wesen von allen unbemerkt auf die Erde. Sie sind klein und ähneln ein wenig normalen Würmern, sind jedoch tödlich. Die Studenten bemerken sie nicht, denn sie gelangen durch den Mond ihrer Opfer in den Körper und nisten sich daraufhin im Gehirn ihrer Wirte ein. Dieses verwenden sie als Brutstätte und können so sogar Tote wieder zu vermeintlichem Leben erwecken. Als die Studenten die Gefahr bemerken, ist es bereits zu spät und so ist ihre einzige Chance, sich mit Schrotflinte und Flammenwerfer gegen die bereits infizierten Menschen zur Wehr zu setzen. Der Kampf gegen die sogenannten Creeps um die Zukunft der Menschheit beginnt.",
     "mediathek_desc": "Die Studenten Chris und Cynthia tauen versehentlich einen eingefrorenen Studenten aus dem Jahr 1959 auf – und entfesseln damit schleimige Aliens, die Menschen in Zombies verwandeln.",
     "director": "Fred Dekker",
@@ -11959,7 +11959,7 @@
     ],
     "channel": "ZDFneo",
     "timestamp": 1791985102,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 100124,
     "tmdb_type": "movie",
     "url_website": "https://www.zdf.de/filme/der-mann-mit-dem-glasauge-movie-100"
@@ -11986,7 +11986,7 @@
     ],
     "channel": "ZDFneo",
     "timestamp": 1791985090,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 656491,
     "tmdb_type": "movie",
     "url_website": "https://www.zdf.de/filme/der-moench-mit-der-peitsche-movie-100"
@@ -12090,7 +12090,7 @@
     ],
     "channel": "ZDFneo",
     "timestamp": 1791985069,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 70538,
     "tmdb_type": "movie",
     "url_website": "https://www.zdf.de/filme/im-banne-des-unheimlichen-movie-100"
@@ -12308,7 +12308,7 @@
     "search": "Ein Gauner Gottes",
     "original_title": "Ein Gauner Gottes",
     "year": "2004",
-    "video_url": "https://ctv-videos.daserste.de/int/2021/05/20/5a994d18-7c38-4931-b3cc-1966e13ba56f/JOB_581145__sendeton_1280x720-50p-3200kbit.mp4",
+    "video_url": "https://ctv-videos.daserste.de/int/2026/10/26/DEGSM409915/DEGSM409915_30567_sendeton_1280x720-50p-3200kbit.mp4",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyMS0wNS0yOV8xMy0wMC1NRVNa",
     "plot": "Nach 20 Jahren kehrt der Zimmermann Johannes Keinath in seine Heimatstadt am Bodensee zurück. Als er sich bei einem Raubüberfall gegen zwei Ganoven zur Wehr setzt, glaubt er anschließend, einen der beiden tödlich verletzt zu haben.",
     "mediathek_desc": "Spielfilm Deutschland 2004 \n\nZimmermann Johannes Keinath glaubt, einen Gauner getötet zu haben und ergreift die Flucht. Verkleidet als Mönch sorgt \"Bruder Johannes\" anschließend für einige Turbulenzen. \n\nMit Fritz Wepper Saskia Vester, Peter Sattmann, Michael Roll, Jaecki Schwarz, Anke Sevenich u. a. | Buch: Felix Huby, Hans Münch und Ulrike Münch | Regie: Helmut Metzger",
@@ -15064,6 +15064,33 @@
     "url_website": "https://www.3sat.de/film/spielfilm/footloose-104.html"
   },
   {
+    "title": "Frau Holles Garten",
+    "search": "Frau Holles Garten",
+    "original_title": "Frau Holles Garten",
+    "year": "2019",
+    "video_url": "https://nrodlzdf-a.akamaihd.net/none/zdf/20/12/201213_0405_sendung_sof/5/201213_0405_sendung_sof_a1a2_3360k_p36v15.mp4",
+    "url_website": "https://www.zdf.de/filme/frau-holles-garten-movie-100",
+    "plot": "Mia Goldig liebt ihren Job im Botanischen Garten. Doch ihre Mutter, die scheidende Leiterin des Gartens, zieht ihre Schwester als Nachfolgerin vor. Kann Frau Holle für die richtige Entscheidung sorgen? Die neue Leiterin muss vor allem finanzkräftige Sponsoren finden, da sich der Garten in finanziellen Nöten befindet. Eine Aufgabe, die sich die zurückhaltende Chefgärtnerin Mia selbst nicht zutraut. Sie liebt die Pflanzen, nicht aber den großen Auftritt. Ganz im Gegensatz zu ihrer selbstsicheren Schwester Marissa.Auch ihre Mutter Helene sieht in Mia, die stottert, wenn sie vor mehreren Menschen sprechen muss, nicht die richtige Wahl für diesen repräsentativen Posten. Dagegen scheint ihr die zielstrebige Marissa wie geschaffen für die Stelle. Dass Marissa der Garten völlig egal ist und sie ein intrigantes Spiel treibt, entgeht Helene.Aber Frau Holle, der guten Seele des Gartens, die dort einen Laden betreibt, bleibt nichts verborgen.",
+    "mediathek_desc": "Mia liebt ihren Job im botanischen Garten. Wird sie die neue Leiterin, obwohl ihre Mutter ihre Schwester als Nachfolgerin vorzieht. Kann Frau Holle für die richtige Entscheidung sorgen?",
+    "director": "Seyhan Derin",
+    "actors": [
+      "Cornelia Froboess",
+      "Klara Deutschmann",
+      "Lavinia Wilson"
+    ],
+    "rating": "8.0",
+    "thumb": "https://image.tmdb.org/t/p/w342/h8I6m9dOSV5AXJvdNEY2GAsRFci.jpg",
+    "genres_list": [
+      "Drama",
+      "Romanze"
+    ],
+    "channel": "ZDF",
+    "timestamp": 1793018636,
+    "isNew": true,
+    "tmdb_id": 652614,
+    "tmdb_type": "movie"
+  },
+  {
     "title": "Frau Pfarrer & Herr Priester",
     "search": "Frau Pfarrer & Herr Priester",
     "year": "2016",
@@ -17096,11 +17123,11 @@
       "Mystery"
     ],
     "channel": "ZDF",
-    "timestamp": 1724723700,
-    "isNew": false,
+    "timestamp": 1792527156,
+    "isNew": true,
     "tmdb_id": 73262,
     "tmdb_type": "movie",
-    "url_website": "https://www.zdf.de/video/filme/hell-movie-100/hell-100"
+    "url_website": "https://www.zdf.de/filme/hell-movie-100"
   },
   {
     "title": "Herr Lenz reist in den Frühling",
@@ -17205,7 +17232,7 @@
     "isNew": false,
     "tmdb_id": 265294,
     "tmdb_type": "movie",
-    "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2FyZC5kZS9wbGFuQVJEXzgzNjQyNTY5LTdlNzMtNDZlNy1hYTQ4LTY0N2EzM2FkNDhkNl9nYW56ZVNlbmR1bmcvYXVkaW9kZXNrcmlwdGlvbg"
+    "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2FyZC5kZS9wbGFuQVJEXzgzNjQyNTY5LTdlNzMtNDZlNy1hYTQ4LTY0N2EzM2FkNDhkNl9nYW56ZVNlbmR1bmc"
   },
   {
     "title": "Herzlichen Glückwunsch",
@@ -18617,8 +18644,8 @@
       "TV-Film"
     ],
     "channel": "ARD",
-    "timestamp": 1784363400,
-    "isNew": false,
+    "timestamp": 1793617200,
+    "isNew": true,
     "tmdb_id": 330267,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyMy0wNC0wMV8xNC0wMC1NRVNa"
@@ -19111,6 +19138,33 @@
     "tmdb_id": 395763,
     "tmdb_type": "movie",
     "url_website": "https://www.3sat.de/film/spielfilm/iris---rendezvous-mit-dem-tod-100.html"
+  },
+  {
+    "title": "It Follows",
+    "search": "It Follows",
+    "original_title": "It Follows",
+    "year": "2015",
+    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/25/10/251024_0230_sendung_spf/1/251024_0230_sendung_spf_a3a4_3360k_p36v17.mp4",
+    "url_website": "https://www.zdf.de/video/filme/it-follows-movie-100/it-follows-100",
+    "plot": "Die 19-Jährige Jay hat Sex mit Hugh, ihrem Date. Doch hätte sie vorher gewusst, was der Beischlaf für Folgen haben wird, wäre sie nicht zu dem jungen Mann auf den Rücksitz geklettert. Als sie, noch benommen vom Chloroform und an einen Stuhl gefesselt, wieder aufwacht, erklärt ihr Hugh reumütig, dass er einen verstörenden Hintergedanken hatte: Er sei von einem Geist verfolgt worden, den er loswerden und zu diesem Zweck transferieren wollte – ein Ziel, dass er mit dem Sex erreicht habe. Jay glaubt Hugh zunächst nicht, sieht den Geist aber bald mit eigenen Augen, er hat sich in unterschiedlichen Erscheinungen an ihre Fersen geheftet: als nackte Frau, großer Mann und kleines Kind. Um ihn loszuwerden, müsse Jay mit einer anderen Person schlafen. Ob der heimgesuchten jungen Frau ein anderer Ausweg gelingt? Verzweifelt bittet sie ihre Schwester Kelly und ihre Freunde Yara und Paul um Hilfe…",
+    "mediathek_desc": "Nach einem One-Night-Stand wird die Studentin Jay von einem Gestaltwandler verfolgt. Doch statt den Fluch durch Sex auf ein neues Opfer zu übertragen, entscheidet sich Jay zur Gegenwehr.",
+    "director": "David Robert Mitchell",
+    "actors": [
+      "Maika Monroe",
+      "Keir Gilchrist",
+      "Daniel Zovatto"
+    ],
+    "rating": "6.6",
+    "thumb": "https://image.tmdb.org/t/p/w342/iwnQ1JH1wdWrGYkgWySptJ5284A.jpg",
+    "genres_list": [
+      "Horror",
+      "Mystery"
+    ],
+    "channel": "ZDF",
+    "timestamp": 1761266400,
+    "isNew": false,
+    "tmdb_id": 270303,
+    "tmdb_type": "movie"
   },
   {
     "title": "Jagd vor Gibraltar",
@@ -21757,6 +21811,34 @@
     "url_website": "https://www.arte.tv/de/videos/017664-000-A/lolita-90/"
   },
   {
+    "title": "Longlegs",
+    "search": "Longlegs",
+    "original_title": "Longlegs",
+    "year": "2024",
+    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/26/10/261026_2215_sendung_spf/1/261026_2215_sendung_spf_a1a2_3360k_p36v17.mp4",
+    "url_website": "https://www.zdf.de/video/filme/longlegs-movie-100/longlegs-100",
+    "plot": "Die junge FBI-Agentin Lee Harker entdeckt eine Reihe okkulter Hinweise in einem Serienmörder-Fall. Als sie eine persönliche Verbindung zu dem Serienmörder aufdeckt, nimmt der Fall eine unerwartete Wendung…",
+    "mediathek_desc": "Eine FBI-Agentin erhält einen neuen Fall: Seit 30 Jahren treibt ein Serienkiller sein Unwesen. Die Opfer sind ganze Familien, an den Tatorten werden seltsame Botschaften hinterlassen.",
+    "director": "Oz Perkins",
+    "actors": [
+      "Maika Monroe",
+      "Nicolas Cage",
+      "Blair Underwood"
+    ],
+    "rating": "6.5",
+    "thumb": "https://image.tmdb.org/t/p/w342/x3OhhbqQeFUo1WAFyRf9rHXnvFS.jpg",
+    "genres_list": [
+      "Krimi",
+      "Horror",
+      "Mystery"
+    ],
+    "channel": "ZDF",
+    "timestamp": 1793049300,
+    "isNew": true,
+    "tmdb_id": 1226578,
+    "tmdb_type": "movie"
+  },
+  {
     "title": "Lottoschein ins Glück",
     "search": "Lottoschein ins Glück",
     "year": "2003",
@@ -23541,33 +23623,6 @@
     "url_website": "https://www.3sat.de/film/spielfilm/memory---sein-letzter-auftrag-100.html"
   },
   {
-    "title": "Men in Black 3",
-    "search": "Men in Black 3",
-    "year": "2012",
-    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/25/06/250607_sony_2015_sendung_spf/1/250607_sony_2015_sendung_spf_a1a2_3360k_p36v17.mp4",
-    "plot": "Die Vergangenheit droht Agent K einzuholen. Denn vor mittlerweile 40 Jahren hat er den gefährlichen Alien-Verbrecher Boris verhaftet, wobei dieser seinen Arm verlor. Seitdem sitzt Boris in einem geheimen Gefängnis am Mond und sinnt auf Rache. Doch mit Hilfe der hübschen Lilly gelingt Boris die Flucht und er macht sich rasch auf die Jagd nach K. Doch er will ihn nicht etwa einfach töten, sondern in die Vergangenheit reisen, K umbringen und gleichzeitig seinen Arm retten. Da K plötzlich wie vom Erdboden verschwunden ist und sich nur sein Partner Agent J an ihn erinnern kann scheint das unterfangen auch gelungen zu sein - doch J lässt das natürlich nicht auf sich sitzen, reist ebenfalls in die Vergangenheit und arbeitet mit dem jungen K zusammen um Boris aufzuhalten...",
-    "mediathek_desc": "Der Erde droht die Zerstörung durch einen Alien-Angriff. Drahtzieher ist Boris, die Bestie. Um seine Pläne zu verwirklichen, muss Boris Agent K in der Vergangenheit töten.",
-    "director": "Barry Sonnenfeld",
-    "actors": [
-      "Will Smith",
-      "Tommy Lee Jones",
-      "Josh Brolin"
-    ],
-    "rating": "6.5",
-    "thumb": "https://image.tmdb.org/t/p/w342/kCJY3HF44LzAdb8A0J8eM8x6kU4.jpg",
-    "genres_list": [
-      "Action",
-      "Komödie",
-      "Sci-Fi"
-    ],
-    "channel": "ZDFneo",
-    "timestamp": 1792440596,
-    "isNew": true,
-    "tmdb_id": 41154,
-    "tmdb_type": "movie",
-    "url_website": "https://www.zdf.de/filme/men-in-black-3-movie-100"
-  },
-  {
     "title": "Mensch Mutter",
     "search": "Mensch Mutter",
     "year": "2003",
@@ -23931,32 +23986,6 @@
     "tmdb_id": 716814,
     "tmdb_type": "movie",
     "url_website": "https://www.3sat.de/film/spielfilm/mittsommerlust-100.html"
-  },
-  {
-    "title": "Mo Hayder: Ritualmord",
-    "search": "Mo Hayder: Ritualmord",
-    "year": "2022",
-    "video_url": "https://nrodlzdf-a.akamaihd.net/dach/zdf/23/06/230619_2215_sendung_spf/2/230619_2215_sendung_spf_a3a4_3360k_p36v17.mp4",
-    "plot": "Kiki Schelfthaut ist Polizeitaucherin und macht bei ihrer Arbeit eines Tages eine grausige Entdeckung: Im trüben Wasser eines Brüsseler Kanals findet sie eine menschliche Hand. Zwar gibt es keine Leiche, zu der die Hand gehört, doch schon bald gibt es einen weiteren Fund. Alle Hinweise deuten auf eine Art Ritual und so nimmt Schelfthaut gemeinsam mit Polizeikommissar Cafmeyer die Ermittlungen auf. Schon bald entdecken sie, dass mit den blutigen Ritualen teuflische Kräfte in Schach gehalten werden sollen. Doch auch der belgische Staat und Schelfthauts Familie scheinen in den Fall verwickelt zu sein …\r Basiert auf dem Thriller „Ritualmord“ von Mo Hayder.",
-    "mediathek_desc": "Der Albtraum beginnt, als Polizeitaucherin Kiki im trüben Wasser eines Brüsseler Kanals eine einzelne menschliche Hand findet. Es existiert keine Leiche, und es gibt keine Zeugen.",
-    "director": "Hans Herbots",
-    "actors": [
-      "Marie Vinck",
-      "Geert Van Rampelberg",
-      "Ériq Ebouaney"
-    ],
-    "rating": "6.4",
-    "thumb": "https://image.tmdb.org/t/p/w342/wsuo7fA9WB941fmoAoHELcnLyRY.jpg",
-    "genres_list": [
-      "Thriller",
-      "Krimi"
-    ],
-    "channel": "ZDF",
-    "timestamp": 1790412868,
-    "isNew": false,
-    "url_website": "https://www.zdf.de/filme/mo-hayder-ritualmord-movie-100",
-    "tmdb_id": 818422,
-    "tmdb_type": "movie"
   },
   {
     "title": "Momê",
@@ -24994,7 +25023,7 @@
       "Drama"
     ],
     "channel": "ZDF",
-    "timestamp": 1792483541,
+    "timestamp": 1793032499,
     "isNew": true,
     "tmdb_id": 1481869,
     "tmdb_type": "movie"
@@ -25927,7 +25956,7 @@
       "Komödie"
     ],
     "channel": "ZDFneo",
-    "timestamp": 1792741259,
+    "timestamp": 1792992434,
     "isNew": true,
     "tmdb_id": 9883,
     "tmdb_type": "movie",
@@ -26032,7 +26061,7 @@
       "Romanze"
     ],
     "channel": "ARD",
-    "timestamp": 1793231100,
+    "timestamp": 1793231700,
     "isNew": true,
     "tmdb_id": 363186,
     "tmdb_type": "movie",
@@ -30571,6 +30600,34 @@
     "url_website": "https://www.3sat.de/film/spielfilm/the-northman-100.html"
   },
   {
+    "title": "The Owners",
+    "search": "The Owners",
+    "original_title": "The Owners",
+    "year": "2020",
+    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/25/02/250222_0320_sendung_spf/1/250222_0320_sendung_spf_a1a2_3360k_p36v17.mp4",
+    "url_website": "https://www.zdf.de/video/filme/the-owners-movie-100/the-owners-100",
+    "plot": "Eine Gruppe von Freunden finden ein leeres Haus mit gut gefülltem Tresor - ein vermeintlicher Jackpot. Bis die Hausbesitzer, ein älteres Ehepaar, früher als gedacht nach Hause kommen. Es kommt zum tödlichen Katz und Maus-Spiel.",
+    "mediathek_desc": "Nathan will mit zwei Freunden in ein abgelegenes Landhaus einbrechen, um einen Safe auszuräumen. Doch seine schwangere Freundin Mary hat gar kein gutes Gefühl bei der Sache.",
+    "director": "Julius Berg",
+    "actors": [
+      "Maisie Williams",
+      "Sylvester McCoy",
+      "Rita Tushingham"
+    ],
+    "rating": "5.6",
+    "thumb": "https://image.tmdb.org/t/p/w342/pREqNMSQO745fJ85cG0iDOw4Msd.jpg",
+    "genres_list": [
+      "Horror",
+      "Mystery",
+      "Thriller"
+    ],
+    "channel": "ZDF",
+    "timestamp": 1740189900,
+    "isNew": false,
+    "tmdb_id": 659986,
+    "tmdb_type": "movie"
+  },
+  {
     "title": "The Painted Bird",
     "search": "The Painted Bird",
     "year": "2019",
@@ -30631,8 +30688,8 @@
     "search": "The Pope's Exorcist",
     "original_title": "The Pope's Exorcist",
     "year": "2023",
-    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/26/10/261019_sony_2215_sendung_spf/3/261019_sony_2215_sendung_spf_a1a2_3360k_p36v17.mp4",
-    "url_website": "https://www.zdf.de/video/filme/the-popes-exorcist-movie-100/the-popes-exorcist-100",
+    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/26/10/261019_sony_2215_sendung_spf/3/261019_sony_2215_sendung_spf_a3a4_3360k_p36v17.mp4",
+    "url_website": "https://www.zdf.de/filme/the-popes-exorcist-movie-100",
     "plot": "Pater Gabriele Amorth könnte doch glatt als fortschrittlicher Exorzist bezeichnet werden, denn der Dämonenaustreiber im Auftrag des Papstes überweist starke 98 Prozent der Fälle in ärztliche oder psychiatrische Betreuung. Doch bei den restlichen zwei Prozent stößt Amorth auf das, was er das „pure Böse“ nennt.  Ein neuer Fall von Besessenheit führt den Pater an das Bett eines Jungen. Die in ihm gefangene Entität hatte explizit nach Gabriele Amorth verlangt. Doch hinter dem dämonischen Befall scheint mehr zu stecken, als der Priester zunächst ahnt, denn offenbar hat dieser Dämon schon öfter den Kontakt zur römisch-katholischen Kirche gesucht – obwohl in den Schriften keine Erwähnung dazu gefunden werden kann. Was möchte das Wesen vom obersten Exorzisten?",
     "mediathek_desc": "Pater Gabriele Amorth ist als Exorzist im Auftrag des Vatikans tätig. Als eine unheimliche Kraft den jungen Henry im fernen Spanien befällt, wird Amorth vom Papst zu dem Fall entsandt.",
     "director": "Julius Avery",
@@ -30648,7 +30705,7 @@
       "Thriller"
     ],
     "channel": "ZDF",
-    "timestamp": 1792440900,
+    "timestamp": 1792699904,
     "isNew": true,
     "tmdb_id": 758323,
     "tmdb_type": "movie"
@@ -32638,7 +32695,7 @@
     "original_title": "Verblendung",
     "year": "2009",
     "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/25/06/250621_sony_2340_sendung_spf/1/250621_sony_2340_sendung_spf_3360k_p36v17.mp4",
-    "url_website": "https://www.zdf.de/video/filme/verblendung-movie-100/verblendung-102",
+    "url_website": "https://www.zdf.de/filme/verblendung-movie-100",
     "plot": "Harriet Vanger verschwindet spurlos während eines Familientreffens. Jahrzehnte bleibt ihr Schicksal ungeklärt. Was ist nur damals mit Harriet geschehen? Mittlerweile 82 Jahre alt, lässt Henrik Vanger diese Frage keine Ruhe. Ein letztes Mal versucht er, doch noch eine Antwort zu finden, und kontaktiert den renommierten Enthüllungsjournalisten Mikael Blomkvist. Gemeinsam mit der ebenso genialen wie kompromisslosen Hackerin Lisbeth Salander, von der er unerwartet Unterstützung erhält, stößt Blomkvist schnell auf erste Spuren. Schon bald tauchen die beiden immer tiefer in die Geschichte der einflussreichen Industriellenfamilie Vanger ein – und entdecken dabei Grausames.",
     "mediathek_desc": "Nach einem Presse-Skandal reist Journalist Mikael Blomkvist in Schwedens Norden, wo die Familie Vanger residiert. Mikael soll herausfinden, was mit Harriet Vanger passiert ist.",
     "director": "Niels Arden Oplev",
@@ -32656,8 +32713,8 @@
       "Mystery"
     ],
     "channel": "ZDFneo",
-    "timestamp": 1653076800,
-    "isNew": false,
+    "timestamp": 1793052671,
+    "isNew": true,
     "tmdb_id": 15472,
     "tmdb_type": "movie"
   },
@@ -32980,7 +33037,7 @@
     "title": "Vermisst in den Highlands",
     "search": "Vermisst in den Highlands",
     "year": "2021",
-    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/25/01/250120_2215_sendung_spf/1/250120_2215_sendung_spf_a3a4_3360k_p36v17.mp4",
+    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/25/01/250120_2215_sendung_spf/1/250120_2215_sendung_spf_a1a2_3360k_p36v17.mp4",
     "plot": "Unterwegs im Herzen der Highlands, erhält Edmond Murray einen Anruf von seiner in Tränen aufgelösten Ex-Frau Joan. Ihr siebenjähriger Sohn ist auf einem Campingplatz verschwunden. Als Edmond am Campingplatz ankommt, trifft er auf Joan und den führenden Ermittler Inspector Roy. Nach aussichtlosen Einsätzen des Suchtrupps wird klar, dass es sich beim Verschwinden des Jungens um eine Entführung handelt. Eine unangenehmen Begegnung zwischen Edmond und Joans neuem Freund Frank schöpft bei Edmond Verdacht...",
     "mediathek_desc": "Der kleine Ethan wird aus einem Ferienlager in Schottland entführt. Als die Polizei nicht weiterhelfen kann, nimmt Ethans Vater Edmond eigene Ermittlungen auf.",
     "director": "Christian Carion",
@@ -32997,8 +33054,8 @@
       "Drama"
     ],
     "channel": "ZDFneo",
-    "timestamp": 1790921276,
-    "isNew": false,
+    "timestamp": 1793051100,
+    "isNew": true,
     "tmdb_id": 750253,
     "tmdb_type": "movie",
     "url_website": "https://www.zdf.de/filme/vermisst-in-den-highlands-movie-100"
@@ -33913,7 +33970,7 @@
       "Historie"
     ],
     "channel": "ARD",
-    "timestamp": 1793138100,
+    "timestamp": 1793836800,
     "isNew": true,
     "tmdb_id": 423612,
     "tmdb_type": "movie",
