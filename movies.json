@@ -623,8 +623,8 @@
       "Drama"
     ],
     "channel": "ZDF",
-    "timestamp": 1791972152,
-    "isNew": false,
+    "timestamp": 1793079421,
+    "isNew": true,
     "tmdb_id": 820800,
     "tmdb_type": "movie",
     "url_website": "https://www.zdf.de/filme/alice-im-weihnachtsland-movie-100"
@@ -1583,8 +1583,8 @@
     "search": "Anna und die Apokalypse",
     "original_title": "Anna und die Apokalypse",
     "year": "2018",
-    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/24/10/241004_0025_sendung_spf/3/241004_0025_sendung_spf_a1a2_3360k_p36v17.mp4",
-    "url_website": "https://www.zdf.de/video/filme/anna-und-die-apokalypse-movie-100/anna-und-die-apokalypse-100",
+    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/24/10/241004_0025_sendung_spf/3/241004_0025_sendung_spf_a3a4_3360k_p36v17.mp4",
+    "url_website": "https://www.zdf.de/filme/anna-und-die-apokalypse-movie-100",
     "plot": "Anna kann es gar nicht erwarten, dass sie endlich mit der Schule fertig ist, denn sie will unbedingt aus ihrer kleinen Heimatstadt Little Haven weg. Sie möchte die Welt sehen und etwas erleben, gerade auch weil ihr Vater andere Plänen für seine Tochter hat. Ihr bester Freund John hat indes andere Probleme, denn er ist in Anna verliebt und weiß nicht, wie er ihr das sagen soll. Doch all das rückt auf einmal in den Hintergrund, als ihr Leben durch eine Zombie-Invasion auf den Kopf gestellt wird.",
     "mediathek_desc": "Ausgerechnet am Weihnachtsvorabend bricht weltweit eine Zombie-Epidemie aus. Teenager Anna und ihre Freunde müssen um ihr Leben kämpfen – und zwar mit äußerst ungewöhnlichen Mitteln.",
     "director": "John McPhail",
@@ -1601,8 +1601,8 @@
       "Fantasy"
     ],
     "channel": "ZDF",
-    "timestamp": 1727994600,
-    "isNew": false,
+    "timestamp": 1792451100,
+    "isNew": true,
     "tmdb_id": 461928,
     "tmdb_type": "movie"
   },
@@ -1947,7 +1947,7 @@
     "isNew": false,
     "tmdb_id": 570356,
     "tmdb_type": "movie",
-    "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyMS0xMS0yN18xNC0zMC1NRVo"
+    "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyMS0xMS0yN18xNC0zMC1NRVovYXVkaW9kZXNrcmlwdGlvbg"
   },
   {
     "title": "Aus lauter Liebe zu dir",
@@ -7531,7 +7531,7 @@
     ],
     "channel": "ARTE.DE",
     "timestamp": 1792001772,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 668640,
     "tmdb_type": "movie",
     "url_website": "https://www.arte.tv/de/videos/132042-000-A/der-beste-film-aller-zeiten/"
@@ -9608,7 +9608,7 @@
     "search": "Die Nacht der Creeps",
     "original_title": "Die Nacht der Creeps",
     "year": "1986",
-    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/26/10/261025_sony_0125_sendung_nsf/1/261025_sony_0125_sendung_nsf_a1a2_3360k_p36v17.mp4",
+    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/26/10/261025_sony_0125_sendung_nsf/1/261025_sony_0125_sendung_nsf_a3a4_3360k_p36v17.mp4",
     "url_website": "https://www.zdf.de/video/filme/die-nacht-der-creeps-movie-100/die-nacht-der-creeps-100",
     "plot": "In einer Nacht, in der es für die meisten Jugendlichen der Stadt vor allem ums Feiern geht, kommen seltsame Wesen von allen unbemerkt auf die Erde. Sie sind klein und ähneln ein wenig normalen Würmern, sind jedoch tödlich. Die Studenten bemerken sie nicht, denn sie gelangen durch den Mond ihrer Opfer in den Körper und nisten sich daraufhin im Gehirn ihrer Wirte ein. Dieses verwenden sie als Brutstätte und können so sogar Tote wieder zu vermeintlichem Leben erwecken. Als die Studenten die Gefahr bemerken, ist es bereits zu spät und so ist ihre einzige Chance, sich mit Schrotflinte und Flammenwerfer gegen die bereits infizierten Menschen zur Wehr zu setzen. Der Kampf gegen die sogenannten Creeps um die Zukunft der Menschheit beginnt.",
     "mediathek_desc": "Die Studenten Chris und Cynthia tauen versehentlich einen eingefrorenen Studenten aus dem Jahr 1959 auf – und entfesseln damit schleimige Aliens, die Menschen in Zombies verwandeln.",
@@ -11694,7 +11694,7 @@
       "Komödie"
     ],
     "channel": "ZDF",
-    "timestamp": 1792565140,
+    "timestamp": 1793084150,
     "isNew": true,
     "tmdb_id": 862252,
     "tmdb_type": "movie",
@@ -11932,7 +11932,7 @@
     ],
     "channel": "ZDFneo",
     "timestamp": 1791985126,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 656491,
     "tmdb_type": "movie",
     "url_website": "https://www.zdf.de/filme/der-frosch-mit-der-maske-movie-100"
@@ -17232,7 +17232,7 @@
     "isNew": false,
     "tmdb_id": 265294,
     "tmdb_type": "movie",
-    "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2FyZC5kZS9wbGFuQVJEXzgzNjQyNTY5LTdlNzMtNDZlNy1hYTQ4LTY0N2EzM2FkNDhkNl9nYW56ZVNlbmR1bmc"
+    "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2FyZC5kZS9wbGFuQVJEXzgzNjQyNTY5LTdlNzMtNDZlNy1hYTQ4LTY0N2EzM2FkNDhkNl9nYW56ZVNlbmR1bmcvYXVkaW9kZXNrcmlwdGlvbg"
   },
   {
     "title": "Herzlichen Glückwunsch",
@@ -17965,8 +17965,8 @@
       "Komödie"
     ],
     "channel": "ARD",
-    "timestamp": 1741698596,
-    "isNew": false,
+    "timestamp": 1795258800,
+    "isNew": true,
     "tmdb_id": 265464,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyMS0wOC0yMV8xMy0wMC1NRVNa"
@@ -18799,8 +18799,8 @@
       "Komödie"
     ],
     "channel": "ARD",
-    "timestamp": 1776901800,
-    "isNew": false,
+    "timestamp": 1793706900,
+    "isNew": true,
     "tmdb_id": 330268,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2FyZC5kZS9wbGFuQVJEX2JiZGNkNGIxLTE4M2EtNDkzYi1iODFhLTZlYTg5N2VkYTc5Yl9nYW56ZVNlbmR1bmc"
@@ -23799,7 +23799,7 @@
     ],
     "channel": "ARTE.DE",
     "timestamp": 1792011749,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 1063574,
     "tmdb_type": "movie",
     "url_website": "https://www.arte.tv/de/videos/128673-000-A/misericordia/"
@@ -25862,7 +25862,7 @@
     "title": "Opa, ledig, jung",
     "search": "Opa, ledig, jung",
     "year": "2015",
-    "video_url": "https://pd-videos.daserste.de/int/2025/10/02/DEGSM816073/DEGSM816073_3463068_sendeton_1280x720-50p-3200kbit.mp4",
+    "video_url": "https://ctv-videos.daserste.de/int/2025/10/02/DEGSM816073/DEGSM816073_3463068_sendeton_1280x720-50p-3200kbit.mp4",
     "plot": "Werner ist 45 und sollte mit den Jahren eigentlich gereift sein. Stattdessen hält er sich für einen alterslosen Womanizer und ignoriert trotzig die Tatsache, verkrachte Familienverhältnisse hinter sich gelassen zu haben. Bis die fünfjährige Zora in seinem Durcheinander erscheint. Werners entfremdete Tochter Julia hat ihm die Enkelin notgedrungen zum Aufpassen anvertraut. Auf dem Spielplatz merkt der Filou, dass man als angeblicher Vater Beute machen kann: Die reizende Kathie hat es ihm besonders angetan. Um sie zu umgarnen, zieht Werner alle Register und verstrickt sich in ein Gebilde aus kleinen Not- und handfesten Lebenslügen. Tiefsinn und Leichtigkeit paaren sich zu einer generationsübergreifenden Charme-Offensive.",
     "mediathek_desc": "Spielfilm Deutschland 2015\r\n\r\n\"Arm, aber sexy\" - nach diesem Motto lebt Werner Klamm (Steffen Groth), der aus seinem Alter gern ein Geheimnis macht, seit Jahren unbeschwert in Berlin und lässt dabei nichts anbrennen. Der 45-Jährige schlägt sich mit Nebenjobs in einem Hostel durch, feiert gern und ausgiebig, wohnt in einer WG und ist ungebunden. Jetzt aber zieht Tochter Julia (Julia Hartmann), eine\n.....",
     "director": "Markus Herling",
@@ -25878,8 +25878,8 @@
       "Komödie"
     ],
     "channel": "ARD",
-    "timestamp": 1759485600,
-    "isNew": false,
+    "timestamp": 1793705400,
+    "isNew": true,
     "tmdb_id": 333152,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyNS0xMC0wM18xMi0wMC1NRVNa"
@@ -27454,6 +27454,26 @@
     "url_website": "https://www.3sat.de/film/spielfilm/roter-himmel-100.html"
   },
   {
+    "title": "Rotzbub - Animationsfilm",
+    "search": "Rotzbub - Animationsfilm",
+    "original_title": "Rotzbub - Animationsfilm",
+    "year": "2021",
+    "video_url": "https://nrodlzdf-a.akamaihd.net/none/3sat/26/10/261025_rotzbub_ad_neu_spielfilm/1/261025_rotzbub_ad_neu_spielfilm_a1a2_3360k_p36v17.mp4",
+    "url_website": "https://www.3sat.de/film/spielfilm/rotzbub-106.html",
+    "plot": "\"Rotzbub\" erzählt, wie aus einem kaum beachteten Schankbuben ein ganzer Kerl und zudem ein scharfsinniger und legendärer \"Triebzeichner\" und \"satirischer Scharfschütze\" wird.",
+    "mediathek_desc": "\"Rotzbub\" erzählt, wie aus einem kaum beachteten Schankbuben ein ganzer Kerl und zudem ein scharfsinniger und legendärer \"Triebzeichner\" und \"satirischer Scharfschütze\" wird.",
+    "director": "",
+    "actors": [],
+    "rating": "N/A",
+    "thumb": "placeholder.png",
+    "genres_list": [
+      "Sonstige"
+    ],
+    "channel": "3Sat",
+    "timestamp": 1792966200,
+    "isNew": true
+  },
+  {
     "title": "Rückkehr nach Rimini",
     "search": "Rückkehr nach Rimini",
     "year": "2022",
@@ -28101,7 +28121,7 @@
     ],
     "channel": "ARD",
     "timestamp": 1792061700,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 433278,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyNC0xMi0yN18xNS0zMC1NRVo"
@@ -29932,7 +29952,7 @@
     ],
     "channel": "ZDF",
     "timestamp": 1792095128,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 1196470,
     "tmdb_type": "movie",
     "url_website": "https://www.zdf.de/filme/survive---gestrandet-im-ozean-movie-100"
@@ -30604,7 +30624,7 @@
     "search": "The Owners",
     "original_title": "The Owners",
     "year": "2020",
-    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/25/02/250222_0320_sendung_spf/1/250222_0320_sendung_spf_a1a2_3360k_p36v17.mp4",
+    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/25/02/250222_0320_sendung_spf/1/250222_0320_sendung_spf_a3a4_3360k_p36v17.mp4",
     "url_website": "https://www.zdf.de/video/filme/the-owners-movie-100/the-owners-100",
     "plot": "Eine Gruppe von Freunden finden ein leeres Haus mit gut gefülltem Tresor - ein vermeintlicher Jackpot. Bis die Hausbesitzer, ein älteres Ehepaar, früher als gedacht nach Hause kommen. Es kommt zum tödlichen Katz und Maus-Spiel.",
     "mediathek_desc": "Nathan will mit zwei Freunden in ein abgelegenes Landhaus einbrechen, um einen Safe auszuräumen. Doch seine schwangere Freundin Mary hat gar kein gutes Gefühl bei der Sache.",
@@ -30682,33 +30702,6 @@
     "tmdb_id": 5955,
     "tmdb_type": "movie",
     "url_website": "https://www.3sat.de/film/spielfilm/the-pledge---das-versprechen-100.html"
-  },
-  {
-    "title": "The Pope's Exorcist",
-    "search": "The Pope's Exorcist",
-    "original_title": "The Pope's Exorcist",
-    "year": "2023",
-    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/26/10/261019_sony_2215_sendung_spf/3/261019_sony_2215_sendung_spf_a3a4_3360k_p36v17.mp4",
-    "url_website": "https://www.zdf.de/filme/the-popes-exorcist-movie-100",
-    "plot": "Pater Gabriele Amorth könnte doch glatt als fortschrittlicher Exorzist bezeichnet werden, denn der Dämonenaustreiber im Auftrag des Papstes überweist starke 98 Prozent der Fälle in ärztliche oder psychiatrische Betreuung. Doch bei den restlichen zwei Prozent stößt Amorth auf das, was er das „pure Böse“ nennt.  Ein neuer Fall von Besessenheit führt den Pater an das Bett eines Jungen. Die in ihm gefangene Entität hatte explizit nach Gabriele Amorth verlangt. Doch hinter dem dämonischen Befall scheint mehr zu stecken, als der Priester zunächst ahnt, denn offenbar hat dieser Dämon schon öfter den Kontakt zur römisch-katholischen Kirche gesucht – obwohl in den Schriften keine Erwähnung dazu gefunden werden kann. Was möchte das Wesen vom obersten Exorzisten?",
-    "mediathek_desc": "Pater Gabriele Amorth ist als Exorzist im Auftrag des Vatikans tätig. Als eine unheimliche Kraft den jungen Henry im fernen Spanien befällt, wird Amorth vom Papst zu dem Fall entsandt.",
-    "director": "Julius Avery",
-    "actors": [
-      "Russell Crowe",
-      "Daniel Zovatto",
-      "Alex Essoe"
-    ],
-    "rating": "6.9",
-    "thumb": "https://image.tmdb.org/t/p/w342/kvYNAFcRQhzJfdokXQaemseB5tD.jpg",
-    "genres_list": [
-      "Horror",
-      "Thriller"
-    ],
-    "channel": "ZDF",
-    "timestamp": 1792699904,
-    "isNew": true,
-    "tmdb_id": 758323,
-    "tmdb_type": "movie"
   },
   {
     "title": "The Program - Um jeden Preis",
