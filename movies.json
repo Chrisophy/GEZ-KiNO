@@ -2308,7 +2308,7 @@
     ],
     "channel": "ARD",
     "timestamp": 1792102800,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 330064,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyNC0xMi0yNF8wMi0yNS1NRVo"
@@ -3991,7 +3991,7 @@
     "title": "Das Experiment",
     "search": "Das Experiment",
     "year": "2001",
-    "video_url": "https://arteptweb-a.akamaihd.net/am/ptweb/124000/124300/124357-000-A_EQ_0_VOA-STMA_11555292_MP4-1500_AMM-PTWEB-60782769413706_1nSolf10fnPq.mp4",
+    "video_url": "https://arteptweb-a.akamaihd.net/am/ptweb/124000/124300/124357-000-A_EQ_0_VOA_11555287_MP4-1500_AMM-PTWEB-40521846268101_10fmaY.mp4",
     "plot": "Der Taxifahrer Tarek ist einer von 20 Männern, die an einer zweiwöchigen Aggressionsstudie teilnehmen. Bei dieser werden die Forschungsobjekte in einen überwachten Zellentrakt untergebracht und vorab in Wärter und Gefangene eingeteilt. Damit soll ermittelt werden, wie die Testpersonen auf die neuen Umstände reagieren. Anfangs läuft alles nach den Vorstellungen der Wissenschaftler, doch schon sehr bald fangen die als Wärter eingeteilten Probanden an, ihre Vormachtstellung auszunutzen und schikanieren die Gefangenen. Zu schnell entwickelt sich die Lage in einen Ausnahmezustand, der den Experten keine Möglichkeit zum Eingreifen mehr lässt. Aus dem Spiel ist nun bitterer Ernst geworden und nun wird auch nicht mehr vor Mord zurückgeschreckt.",
     "mediathek_desc": "20 Männer lassen sich für zwei Wochen auf ein riskantes Rollenspiel ein: Gefangene und Wärter in einem simulierten Gefängnis. Anfangs gelten klare Regeln, Gewalt ist verboten. Doch Macht, Angst und Gehorsam verändern alles. Aus der Studie wird ein Alptraum – und die Frage bleibt: Kann \"Das Experiment\" noch gelingen? Psychothriller, inspiriert vom Stanford-Prison-Experiment.",
     "director": "Oliver Hirschbiegel",
@@ -6046,7 +6046,7 @@
     "title": "Der Gefangene von Alcatraz",
     "search": "Der Gefangene von Alcatraz",
     "year": "1962",
-    "video_url": "https://arteptweb-a.akamaihd.net/am/ptweb/128000/128600/128679-000-A_EQ_0_VA-STA_11555501_MP4-1500_AMM-PTWEB-60781147353348_10fpCr.mp4",
+    "video_url": "https://arteptweb-a.akamaihd.net/am/ptweb/128000/128600/128679-000-A_EQ_0_VA-STMA_11555506_MP4-1500_AMM-PTWEB-60781147353448_10fpCs.mp4",
     "plot": "Gefangen hinter kalten Mauern, den Blick leer, durch Gitterstangen in die Welt gerichtet, fristet Robert Strout seine lebenslange Strafe. Der zweifache Mörder vegetiert geistig dahin und hat jegliches Interesse an seinem eigenen Leben verloren. Bis zu dem Tag, als er die Liebe zu den Vögeln entdeckt und das Dasein für ihn wieder einen Sinn ergibt. Er beginnt in seiner Zelle seine gefiederten Freunde zu beobachten und zu züchten. Die Lebensfreude, die er daraus zieht, wird jedoch abrupt gestört, als der neue Gefängnisdirektor Strout nach Alcatraz verlegen lassen will. Dort ist seine zum Lebenswerk gewordene Arbeit nicht erlaubt. Der Film basiert auf einer wahren Geschichte. Der Häftling Robert Strout wurde während seiner 43-jährigen Gefangenschaft zu einem der populärsten Vogelexperten im Land. Burt Lancaster schaffte es, dem Charakter so viel Stärke und sympathische Wesenszüge einzuhauchen, dass Zuschauerbriefe tatsächlich die Begnadigung des wirklichen Robert Strout verlangten.",
     "mediathek_desc": "Eine ungewöhnliche Lebensgeschichte: Der verbitterte Strafgefangene Robert Stroud tötet im Streit einen Wärter und wird zu lebenslanger Einzelhaft verurteilt. Er erhält aber die Erlaubnis, Kanarienvögel zu züchten. Beharrlich entwickelt er unter anderem ein Heilmittel gegen eine tödliche Vogelkrankheit, was ihn über die Gefängnismauern hinaus bekannt macht. Kann er begnadigt werden?",
     "director": "Harold Hecht",
@@ -6824,33 +6824,6 @@
     "tmdb_id": 240,
     "tmdb_type": "movie",
     "url_website": "https://www.3sat.de/film/spielfilm/der-pate-ii-100.html"
-  },
-  {
-    "title": "Der Pate, Epilog: Der Tod von Michael Corleone",
-    "search": "Der Pate III, Epilog: Der Tod von Michael Corleone",
-    "year": "1990",
-    "video_url": "https://arteptweb-a.akamaihd.net/am/ptweb/039000/039900/039997-000-F_EQ_0_VA-STMA_11553516_MP4-1500_AMM-PTWEB-60782635401550_1sgej410c8J7.mp4",
-    "plot": "Der alternde Don Michael Corleone möchte den Familienbetrieb legalisieren und sich langsam aus dem Geschäft zurückziehen. Während er sich als Förderer der katholischen Kirche versucht, macht ihm vor allem ein Mensch zu schaffen: Vincent Mancini, Michaels zukünftiger Schwiegersohn und potentieller Nachfolger. Dieser schmiedet nämlich ganz andere Pläne.",
-    "mediathek_desc": "Für Michael Corleone ist es Zeit Bilanz zu ziehen. Er hat den illegalen Tätigkeiten abgeschworen, mit denen sein Vater reich wurde und arbeitet nun mit Bank- und Immobiliengeschäften. Aber seine Jugendverbrechen können nicht ungeschehen gemacht werden ... - Der dritte Teil der Mafiafilm-Trilogie \"Der Pate\" war 1991 für sieben Oscars und für sieben Golden Globes nominiert.",
-    "director": "Francis Ford Coppola",
-    "actors": [
-      "Al Pacino",
-      "Diane Keaton",
-      "Talia Shire"
-    ],
-    "rating": "7.4",
-    "thumb": "https://image.tmdb.org/t/p/w342/iVjSuqHFFOqCFM4rdhUyysYWnnj.jpg",
-    "genres_list": [
-      "Krimi",
-      "Drama",
-      "Thriller"
-    ],
-    "channel": "ARTE.DE",
-    "timestamp": 1790541574,
-    "isNew": false,
-    "url_website": "https://www.arte.tv/de/videos/039997-000-F/der-pate-epilog-der-tod-von-michael-corleone/",
-    "tmdb_id": 242,
-    "tmdb_type": "movie"
   },
   {
     "title": "Der Patriot",
@@ -7825,7 +7798,7 @@
     "original_title": "Dick und Jane",
     "year": "2005",
     "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/25/12/251216_sony_2330_sendung_nsf/1/251216_sony_2330_sendung_nsf_3360k_p36v17.mp4",
-    "url_website": "https://www.zdf.de/video/filme/dick-und-jane-movie-100/dick-und-jane-100",
+    "url_website": "https://www.zdf.de/filme/dick-und-jane-movie-100",
     "plot": "Dick Harper ist endlich am Ziel seiner Träume: Es winkt ihm eine satte Beförderung. Also ade Mittelstandsleben und willkommen in der Oberschicht. Seine Frau Jane kann endlich ihren verhassten Job im Reisebüro kündigen und zusammen mit Söhnchen Billy das Haus und den neuen Pool hüten. Nur leider haben die Harpers nicht mit Dicks Chef gerechnet. Der macht sich nämlich mitsamt den Firmengeldern aus den Staub und Dick steht auf der Straße. Jetzt gibt es nur noch einen Ausweg aus der Finanzmisere: Bewaffneter Raubüberfall!",
     "mediathek_desc": "Einst lebte Dick Harper mit seiner geliebten Ehefrau Jane, Sohn Billy und Haushälterin Blanca in einem adretten Einfamilienhaus ein glückliches Leben. Doch dann kam alles anders.",
     "director": "Dean Parisot",
@@ -7841,8 +7814,8 @@
       "Krimi"
     ],
     "channel": "ZDFneo",
-    "timestamp": 1605381300,
-    "isNew": false,
+    "timestamp": 1792536900,
+    "isNew": true,
     "tmdb_id": 7552,
     "tmdb_type": "movie"
   },
@@ -11170,33 +11143,6 @@
     "tmdb_id": 10772,
     "tmdb_type": "movie",
     "url_website": "https://www.3sat.de/film/spielfilm/django-100.html"
-  },
-  {
-    "title": "DogMan",
-    "search": "DogMan",
-    "year": "2023",
-    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/26/09/260928_2215_sendung_spf/3/260928_2215_sendung_spf_a1a2_3360k_p36v17.mp4",
-    "plot": "Bei einer Verkehrskontrolle wird Doug blutverschmiert und im Abendkleid am Steuer eines Lastwagens voller Hunde aufgegriffen und festgenommen. Beim Verhör auf der Polizeiwache berichtet er über Ereignisse, die so schockierend sind, dass sie jegliche Vorstellungskraft sprengen.",
-    "mediathek_desc": "Bei einer Verkehrskontrolle wird ein Mann am Steuer eines Lastwagens voller Hunde aufgegriffen. Er ist blutverschmiert, trägt Abendkleid und Perücke.\nSein Name ist Doug.",
-    "director": "Luc Besson",
-    "actors": [
-      "Caleb Landry Jones",
-      "Jojo T. Gibbs",
-      "Christopher Denham"
-    ],
-    "rating": "7.8",
-    "thumb": "https://image.tmdb.org/t/p/w342/irAisv4D3VLbuDzeIe3XqKgseSg.jpg",
-    "genres_list": [
-      "Action",
-      "Drama",
-      "Krimi"
-    ],
-    "channel": "ZDF",
-    "timestamp": 1790885354,
-    "isNew": false,
-    "tmdb_id": 944401,
-    "tmdb_type": "movie",
-    "url_website": "https://www.zdf.de/filme/dogman-movie-100"
   },
   {
     "title": "Donna Leon - Stille Wasser",
@@ -17232,7 +17178,7 @@
     "isNew": false,
     "tmdb_id": 265294,
     "tmdb_type": "movie",
-    "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2FyZC5kZS9wbGFuQVJEXzgzNjQyNTY5LTdlNzMtNDZlNy1hYTQ4LTY0N2EzM2FkNDhkNl9nYW56ZVNlbmR1bmcvYXVkaW9kZXNrcmlwdGlvbg"
+    "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2FyZC5kZS9wbGFuQVJEXzgzNjQyNTY5LTdlNzMtNDZlNy1hYTQ4LTY0N2EzM2FkNDhkNl9nYW56ZVNlbmR1bmc"
   },
   {
     "title": "Herzlichen Glückwunsch",
@@ -19144,7 +19090,7 @@
     "search": "It Follows",
     "original_title": "It Follows",
     "year": "2015",
-    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/25/10/251024_0230_sendung_spf/1/251024_0230_sendung_spf_a3a4_3360k_p36v17.mp4",
+    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/25/10/251024_0230_sendung_spf/1/251024_0230_sendung_spf_a1a2_3360k_p36v17.mp4",
     "url_website": "https://www.zdf.de/video/filme/it-follows-movie-100/it-follows-100",
     "plot": "Die 19-Jährige Jay hat Sex mit Hugh, ihrem Date. Doch hätte sie vorher gewusst, was der Beischlaf für Folgen haben wird, wäre sie nicht zu dem jungen Mann auf den Rücksitz geklettert. Als sie, noch benommen vom Chloroform und an einen Stuhl gefesselt, wieder aufwacht, erklärt ihr Hugh reumütig, dass er einen verstörenden Hintergedanken hatte: Er sei von einem Geist verfolgt worden, den er loswerden und zu diesem Zweck transferieren wollte – ein Ziel, dass er mit dem Sex erreicht habe. Jay glaubt Hugh zunächst nicht, sieht den Geist aber bald mit eigenen Augen, er hat sich in unterschiedlichen Erscheinungen an ihre Fersen geheftet: als nackte Frau, großer Mann und kleines Kind. Um ihn loszuwerden, müsse Jay mit einer anderen Person schlafen. Ob der heimgesuchten jungen Frau ein anderer Ausweg gelingt? Verzweifelt bittet sie ihre Schwester Kelly und ihre Freunde Yara und Paul um Hilfe…",
     "mediathek_desc": "Nach einem One-Night-Stand wird die Studentin Jay von einem Gestaltwandler verfolgt. Doch statt den Fluch durch Sex auf ein neues Opfer zu übertragen, entscheidet sich Jay zur Gegenwehr.",
@@ -20157,33 +20103,6 @@
     "url_website": "https://www.3sat.de/film/spielfilm/kochen-ist-chefsache-100.html"
   },
   {
-    "title": "Kommissar Maigret sieht rot",
-    "search": "Kommissar Maigret sieht rot",
-    "year": "1963",
-    "video_url": "https://arteptweb-a.akamaihd.net/am/ptweb/129000/129800/129825-000-A_EQ_0_VA-STMA_11601956_MP4-1500_AMM-PTWEB-60782767536030_16Mihx.mp4",
-    "plot": "Gangster aus den Vereinigten Staaten versuchen, einen wichtigen Zeugen der Regierung zu töten, dessen Aussage dazu beitragen könnte, einen einflussreichen Gangster hinter Gitter zu bringen. Es liegt an Kommissar Maigret, sich mit dem FBI und einer Reihe von Unterweltfiguren auseinanderzusetzen, um das Leben des Zeugen zu retten...",
-    "mediathek_desc": "Im Pariser Vergnügungsviertel Pigalle wird ein Mann auf offener Straße erschossen. Doch bevor die Polizei am Tatort eintrifft, verschwindet die Leiche. Kommissar Maigret nimmt die Ermittlungen auf und gerät in einen gefährlichen Machtkampf zwischen amerikanischen Gangstern und der Polizei. – Gilles Grangiers Krimiklassiker (1963) mit Jean Gabin in der Hauptrolle.",
-    "director": "Gilles Grangier",
-    "actors": [
-      "Jean Gabin",
-      "Françoise Fabian",
-      "Michel Constantin"
-    ],
-    "rating": "6.4",
-    "thumb": "https://image.tmdb.org/t/p/w342/qfVfTtyp5LrqAP4CxmY2ms4anex.jpg",
-    "genres_list": [
-      "Krimi",
-      "Drama",
-      "Mystery"
-    ],
-    "channel": "ARTE.DE",
-    "timestamp": 1791828859,
-    "isNew": false,
-    "tmdb_id": 76647,
-    "tmdb_type": "movie",
-    "url_website": "https://www.arte.tv/de/videos/129825-000-A/kommissar-maigret-sieht-rot/"
-  },
-  {
     "title": "Kommissar Pascha",
     "search": "Kommissar Pascha",
     "year": "2016",
@@ -20388,31 +20307,6 @@
     "tmdb_id": 379621,
     "tmdb_type": "movie",
     "url_website": "https://www.zdf.de/filme/krokodil-movie-100"
-  },
-  {
-    "title": "Kundschafter des Friedens",
-    "search": "Kundschafter des Friedens",
-    "year": "2017",
-    "video_url": "https://arteptweb-a.akamaihd.net/am/ptweb/051000/051400/051404-000-A_EQ_0_VOA-STMA_11550075_MP4-1500_AMM-PTWEB-100934832683825_10bQlH.mp4",
-    "plot": "Siebenundzwanzig Jahre nach dem Mauerfall ist der Alltag des einst legendären Top-Spions der DDR-Auslandsaufklärung, Jochen Falk, ziemlich eintönig geworden. Doch da bittet der ehemalige Erzfeind BND überraschend um seine Hilfe. Falk wittert die Chance, eine offene Rechnung mit dem West-Agenten Kern zu begleichen und stimmt dem Einsatz zu.",
-    "mediathek_desc": "Die Bundesregierung hat ein Problem: Kurz vor den geplanten Verhandlungen zur Wiedervereinigung zweier ehemaliger Sowjetrepubliken wurde der Präsidentschaftskandidat gemeinsam mit BND-Agent Kern entführt. Da schnell klar wird, dass der BND diese Aufgabe nicht lösen kann, wird ein Spitzenagent der DDR reaktiviert. – Altherren-James-Bond-Komödie (2017) von Robert Thalheim.",
-    "director": "Robert Thalheim",
-    "actors": [
-      "Henry Hübchen",
-      "Michael Gwisdek",
-      "Antje Traue"
-    ],
-    "rating": "5.9",
-    "thumb": "https://image.tmdb.org/t/p/w342/6F2ZqaQazVc4bhZ1XpfvYpLVFdA.jpg",
-    "genres_list": [
-      "Komödie"
-    ],
-    "channel": "ARTE.DE",
-    "timestamp": 1790532898,
-    "isNew": false,
-    "tmdb_id": 376280,
-    "tmdb_type": "movie",
-    "url_website": "https://www.arte.tv/de/videos/051404-000-A/kundschafter-des-friedens/"
   },
   {
     "title": "Kundschafter des Friedens 2",
@@ -22433,32 +22327,6 @@
     "tmdb_id": 434177,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyNS0wOC0wNF8xNS0zMC1NRVNa"
-  },
-  {
-    "title": "Marinette - Kämpferin. Fußballerin. Legende",
-    "search": "Marinette - Kämpferin. Fußballerin. Legende",
-    "year": "2023",
-    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/25/03/250304_0220_sendung_spf/1/250304_0220_sendung_spf_a3a4_3360k_p36v17.mp4",
-    "plot": "Frankreich 1980: Die kleine Marinette Pichon beginnt heimlich mit dem Fußballtraining. Fußballplatz und Mannschaft werden zu dem Zuhause, das sie nie hatte. Obwohl kaum jemand an Marinettes Traum einer Karriere im Profifußball glaubt, schafft sie es bis ins französische Nationalteam. Doch unfaire Bezahlung und Ignoranz legen allen Spielerinnen Steine in den Weg. Als Marinette von einem professionellen US-Team unter Vertrag genommen wird, verändert das alles für sie.",
-    "mediathek_desc": "Marinette lebt für ihre Leidenschaft – den Fußball. Doch zerrüttete Familienverhältnisse und die fehlende Akzeptanz gegenüber dem Frauenfußball stellen sie vor Herausforderungen.",
-    "director": "Angeline Massoni",
-    "actors": [
-      "Garance Marillier",
-      "Émilie Dequenne",
-      "Alban Lenoir"
-    ],
-    "rating": "6.6",
-    "thumb": "https://image.tmdb.org/t/p/w342/grzA1WIALWS0wUwME3QcCIYpKLN.jpg",
-    "genres_list": [
-      "Drama",
-      "Historie"
-    ],
-    "channel": "ZDF",
-    "timestamp": 1790626235,
-    "isNew": false,
-    "tmdb_id": 953735,
-    "tmdb_type": "movie",
-    "url_website": "https://www.zdf.de/filme/marinette---kaempferin-fussballerin-legende-movie-100"
   },
   {
     "title": "Marlowe",
@@ -24838,7 +24706,7 @@
     ],
     "channel": "ARD",
     "timestamp": 1792148100,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 971495,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyNS0wNi0xNF8xNS0zMC1NRVNa"
@@ -25023,7 +24891,7 @@
       "Drama"
     ],
     "channel": "ZDF",
-    "timestamp": 1793032499,
+    "timestamp": 1793225954,
     "isNew": true,
     "tmdb_id": 1481869,
     "tmdb_type": "movie"
@@ -25527,7 +25395,7 @@
     "title": "Nur mit Euch!",
     "search": "Nur mit Euch!",
     "year": "2013",
-    "video_url": "https://pd-videos.daserste.de/int/2025/07/20/DEGSM176712/DEGSM176712_3387434_sendeton_1280x720-50p-3200kbit.mp4",
+    "video_url": "https://ctv-videos.daserste.de/int/2025/07/20/DEGSM176712/DEGSM176712_3387434_sendeton_1280x720-50p-3200kbit.mp4",
     "plot": "Seit der Trennung von seiner Frau Katja sieht der Architekt Florian seine beiden Töchter Anna und Sophie nur noch jedes zweite Wochenende. Während er nach einer Lösung sucht, um den Kontakt zu den Kindern zu intensivieren, versucht die Ärztin Katja ihrerseits, die Doppelbelastung aus Beruf und Mutterpflicht besser in den Griff zu bekommen. Als sie sich neu verliebt und nach Schweden auswandern will, kommt es zu einem erbitterten Streit.",
     "mediathek_desc": "Spielfilm Deutschland 2013\r\n\r\nEinst bildeten der Architekt Florian (Hardy Krüger jr.) und die Ärztin Katja (Sophie Schütt) mit ihren beiden Kindern eine glückliche Bilderbuchfamilie. Dann aber zerbrach die Ehe an Florians Fixierung auf seinen Job: Er richtete sein ganzes Leben auf seine Karriere aus und verlor darüber seine Frau. Die gemeinsamen Töchter Anna (Monique Schröder) und Sophie (Hanna Hö\n.....",
     "director": "Udo Witte",
@@ -25542,8 +25410,8 @@
       "Drama"
     ],
     "channel": "ARD",
-    "timestamp": 1753099380,
-    "isNew": false,
+    "timestamp": 1793793300,
+    "isNew": true,
     "tmdb_id": 330597,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyNS0wNy0yMV8xNC0wMy1NRVNa"
@@ -30754,30 +30622,6 @@
     "url_website": "https://www.3sat.de/film/spielfilm/the-quiet-girl-102.html"
   },
   {
-    "title": "The Rental - Tod im Strandhaus",
-    "search": "Tod im Strandhaus",
-    "year": "2020",
-    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/21/05/210510_2215_sendung_spf/1/210510_2215_sendung_spf_a3a4_3360k_p36v17.mp4",
-    "plot": "Zwei Pärchen mieten über das Internet für ein Wochenende ein Traumhaus an der Pazifikküste. Ein Seitensprung wird dem Quartett zum Verhängnis. Denn ein Fremder hat alles gefilmt.",
-    "mediathek_desc": "Zwei Pärchen mieten über das Internet für ein Wochenende ein Traumhaus an der Pazifikküste. Ein Seitensprung wird dem Quartett zum Verhängnis. Denn ein Fremder hat alles gefilmt.",
-    "director": "Dave Franco",
-    "actors": [
-      "Dan Stevens",
-      "Alison Brie",
-      "Sheila Vand"
-    ],
-    "rating": "5.5",
-    "thumb": "https://image.tmdb.org/t/p/original/3Mvuv9x2pAC0FnI4JI3vgOlepMg.jpg",
-    "genres_list": [
-      "Horror",
-      "Thriller"
-    ],
-    "channel": "ZDF",
-    "timestamp": 1790582270,
-    "isNew": false,
-    "url_website": "https://www.zdf.de/filme/tod-im-strandhaus-movie-100"
-  },
-  {
     "title": "The Replacement Killers - Die Ersatzkiller",
     "search": "The Replacement Killers - Die Ersatzkiller",
     "year": "1998",
@@ -32706,7 +32550,7 @@
       "Mystery"
     ],
     "channel": "ZDFneo",
-    "timestamp": 1793052671,
+    "timestamp": 1793166442,
     "isNew": true,
     "tmdb_id": 15472,
     "tmdb_type": "movie"
@@ -34393,7 +34237,7 @@
     "title": "Wind River - Tod im Schnee",
     "search": "Wind River - Tod im Schnee",
     "year": "2016",
-    "video_url": "https://rodlzdf-a.akamaihd.net/dach/3sat/23/08/230827_wind_river_tod_im_schnee_spielfilm/1/230827_wind_river_tod_im_schnee_spielfilm_2360k_p35v17.mp4",
+    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/19/12/191230_2215_sendung_spf/1/191230_2215_sendung_spf_3360k_p36v17.mp4",
     "plot": "Cory Lambert arbeitet für den United States Fish and Wildlife Service und macht vor allem Jagd auf Kojoten und andere Raubtiere im Indianer-Reservat Wind River. Den kürzlichen Tod seiner Teenager-Tochter hat er noch nicht überwunden, da stolpert er in der Wildnis über die Leiche einer vergewaltigten und erfrorenen Jugendlichen. Um den Täter zu fassen, wird die noch sehr junge FBI-Agentin Jane Banner auf den Fall angesetzt. Weil sie sich in dem rauen Gelände und mit den schwierigen Wetterverhältnissen vor Ort allerdings nicht auskennt, bittet sie Cory um Hilfe bei ihren Ermittlungen und gemeinsam brechen sie auf ins Ungewisse.",
     "mediathek_desc": "Ein Indianerreservat im tief verschneiten Wyoming: Im Schnee findet der Jäger Cory Lambert die Leiche einer jungen Frau. Sie trägt keine Schuhe. Jane Banner vom FBI ermittelt.",
     "director": "Taylor Sheridan",
@@ -34410,9 +34254,9 @@
       "Thriller"
     ],
     "channel": "3Sat",
-    "timestamp": 1577740500,
+    "timestamp": 1643062500,
     "isNew": false,
-    "url_website": "https://www.3sat.de/film/spielfilm/wind-river---tod-im-schnee-100.html",
+    "url_website": "https://www.zdf.de/video/filme/wind-river---tod-im-schnee-movie-100/wind-river---tod-im-schnee-100",
     "tmdb_id": 395834,
     "tmdb_type": "movie"
   },
