@@ -1947,7 +1947,7 @@
     "isNew": false,
     "tmdb_id": 570356,
     "tmdb_type": "movie",
-    "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyMS0xMS0yN18xNC0zMC1NRVovYXVkaW9kZXNrcmlwdGlvbg"
+    "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyMS0xMS0yN18xNC0zMC1NRVo"
   },
   {
     "title": "Aus lauter Liebe zu dir",
@@ -3988,32 +3988,6 @@
     "url_website": "https://www.zdf.de/3sat/spielfilm/das-ende-einer-affaere-114.html"
   },
   {
-    "title": "Das Experiment",
-    "search": "Das Experiment",
-    "year": "2001",
-    "video_url": "https://arteptweb-a.akamaihd.net/am/ptweb/124000/124300/124357-000-A_EQ_0_VOA_11555287_MP4-1500_AMM-PTWEB-40521846268101_10fmaY.mp4",
-    "plot": "Der Taxifahrer Tarek ist einer von 20 Männern, die an einer zweiwöchigen Aggressionsstudie teilnehmen. Bei dieser werden die Forschungsobjekte in einen überwachten Zellentrakt untergebracht und vorab in Wärter und Gefangene eingeteilt. Damit soll ermittelt werden, wie die Testpersonen auf die neuen Umstände reagieren. Anfangs läuft alles nach den Vorstellungen der Wissenschaftler, doch schon sehr bald fangen die als Wärter eingeteilten Probanden an, ihre Vormachtstellung auszunutzen und schikanieren die Gefangenen. Zu schnell entwickelt sich die Lage in einen Ausnahmezustand, der den Experten keine Möglichkeit zum Eingreifen mehr lässt. Aus dem Spiel ist nun bitterer Ernst geworden und nun wird auch nicht mehr vor Mord zurückgeschreckt.",
-    "mediathek_desc": "20 Männer lassen sich für zwei Wochen auf ein riskantes Rollenspiel ein: Gefangene und Wärter in einem simulierten Gefängnis. Anfangs gelten klare Regeln, Gewalt ist verboten. Doch Macht, Angst und Gehorsam verändern alles. Aus der Studie wird ein Alptraum – und die Frage bleibt: Kann \"Das Experiment\" noch gelingen? Psychothriller, inspiriert vom Stanford-Prison-Experiment.",
-    "director": "Oliver Hirschbiegel",
-    "actors": [
-      "Moritz Bleibtreu",
-      "Christian Berkel",
-      "Justus von Dohnányi"
-    ],
-    "rating": "7.4",
-    "thumb": "https://image.tmdb.org/t/p/w342/nIAJnivbh5N8gpbyVmtPFC9psON.jpg",
-    "genres_list": [
-      "Drama",
-      "Thriller"
-    ],
-    "channel": "ARTE.DE",
-    "timestamp": 1790627966,
-    "isNew": false,
-    "tmdb_id": 575,
-    "tmdb_type": "movie",
-    "url_website": "https://www.arte.tv/de/videos/124357-000-A/das-experiment/"
-  },
-  {
     "title": "Das Flirren am Horizont",
     "search": "Das Flirren am Horizont",
     "year": "2022",
@@ -6041,33 +6015,6 @@
     "tmdb_id": 1457048,
     "tmdb_type": "movie",
     "url_website": "https://www.zdf.de/filme/wolfsmord-movie-100"
-  },
-  {
-    "title": "Der Gefangene von Alcatraz",
-    "search": "Der Gefangene von Alcatraz",
-    "year": "1962",
-    "video_url": "https://arteptweb-a.akamaihd.net/am/ptweb/128000/128600/128679-000-A_EQ_0_VA-STMA_11555506_MP4-1500_AMM-PTWEB-60781147353448_10fpCs.mp4",
-    "plot": "Gefangen hinter kalten Mauern, den Blick leer, durch Gitterstangen in die Welt gerichtet, fristet Robert Strout seine lebenslange Strafe. Der zweifache Mörder vegetiert geistig dahin und hat jegliches Interesse an seinem eigenen Leben verloren. Bis zu dem Tag, als er die Liebe zu den Vögeln entdeckt und das Dasein für ihn wieder einen Sinn ergibt. Er beginnt in seiner Zelle seine gefiederten Freunde zu beobachten und zu züchten. Die Lebensfreude, die er daraus zieht, wird jedoch abrupt gestört, als der neue Gefängnisdirektor Strout nach Alcatraz verlegen lassen will. Dort ist seine zum Lebenswerk gewordene Arbeit nicht erlaubt. Der Film basiert auf einer wahren Geschichte. Der Häftling Robert Strout wurde während seiner 43-jährigen Gefangenschaft zu einem der populärsten Vogelexperten im Land. Burt Lancaster schaffte es, dem Charakter so viel Stärke und sympathische Wesenszüge einzuhauchen, dass Zuschauerbriefe tatsächlich die Begnadigung des wirklichen Robert Strout verlangten.",
-    "mediathek_desc": "Eine ungewöhnliche Lebensgeschichte: Der verbitterte Strafgefangene Robert Stroud tötet im Streit einen Wärter und wird zu lebenslanger Einzelhaft verurteilt. Er erhält aber die Erlaubnis, Kanarienvögel zu züchten. Beharrlich entwickelt er unter anderem ein Heilmittel gegen eine tödliche Vogelkrankheit, was ihn über die Gefängnismauern hinaus bekannt macht. Kann er begnadigt werden?",
-    "director": "Harold Hecht",
-    "actors": [
-      "Burt Lancaster",
-      "Karl Malden",
-      "Thelma Ritter"
-    ],
-    "rating": "7.5",
-    "thumb": "https://image.tmdb.org/t/p/w342/q1TyQ2faX6bur3fSUWYaBvm0xQw.jpg",
-    "genres_list": [
-      "Drama",
-      "Krimi",
-      "Historie"
-    ],
-    "channel": "ARTE.DE",
-    "timestamp": 1790619276,
-    "isNew": false,
-    "tmdb_id": 898,
-    "tmdb_type": "movie",
-    "url_website": "https://www.arte.tv/de/videos/128679-000-A/der-gefangene-von-alcatraz/"
   },
   {
     "title": "Der Geruch von Erde",
@@ -21621,8 +21568,8 @@
       "Komödie"
     ],
     "channel": "ARD",
-    "timestamp": 1791282600,
-    "isNew": false,
+    "timestamp": 1794091200,
+    "isNew": true,
     "tmdb_id": 404717,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyNS0wOC0xMV8xNC0wMy1NRVNa"
@@ -21856,7 +21803,7 @@
       "Historie"
     ],
     "channel": "3Sat",
-    "timestamp": 1555708500,
+    "timestamp": 1604085420,
     "isNew": false,
     "tmdb_id": 5653,
     "tmdb_type": "movie",
@@ -23646,6 +23593,34 @@
     "url_website": "https://www.3sat.de/film/spielfilm/michael-clayton-102.html"
   },
   {
+    "title": "Midsommar",
+    "search": "Midsommar",
+    "original_title": "Midsommar",
+    "year": "2019",
+    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/25/10/251003_0235_sendung_spf/1/251003_0235_sendung_spf_3360k_p36v17.mp4",
+    "url_website": "https://www.zdf.de/video/filme/midsommar-movie-100/midsommar-100",
+    "plot": "Obwohl ihre Beziehung kriselt, schließt sich Dani ihrem Freund Christian auf einen Sommertrip in einen kleinen Ort in Schweden an. Gemeinsam mit Christians Clique sind sie zu einem einmaligen Mittsommer-Festival eingeladen. Doch der anfänglich idyllische Eindruck der abgelegenen Gemeinschaft trügt und die freundlichen Dorfbewohner verhalten sich nach und nach merkwürdiger: Sie bereiten sich auf ein besonderes Mittsommer-Ritual vor, das nur alle 90 Jahre zelebriert wird. Was als puritanisches Fest der Liebe und Glückseligkeit beginnt, nimmt eine unheimliche Wendung, die das sonnengeflutete Paradies bis in die Eingeweide erschüttert.",
+    "mediathek_desc": "Nach einem tragischen Familienvorfall schließt sich Dani ihrem insgeheim trennungswilligen Freund Christian und seiner Clique zu einer Reise nach Schweden an. Diese wird zum Horrortrip.",
+    "director": "Ari Aster",
+    "actors": [
+      "Florence Pugh",
+      "Jack Reynor",
+      "William Jackson Harper"
+    ],
+    "rating": "7.1",
+    "thumb": "https://image.tmdb.org/t/p/w342/53p7M8w35cGCjQVsgVLpPIYEck0.jpg",
+    "genres_list": [
+      "Horror",
+      "Drama",
+      "Mystery"
+    ],
+    "channel": "ZDF",
+    "timestamp": 1759452300,
+    "isNew": false,
+    "tmdb_id": 530385,
+    "tmdb_type": "movie"
+  },
+  {
     "title": "Misericordia",
     "search": "Misericordia",
     "year": "2024",
@@ -24391,8 +24366,8 @@
       "Drama"
     ],
     "channel": "ARD",
-    "timestamp": 1689352079,
-    "isNew": false,
+    "timestamp": 1793355600,
+    "isNew": true,
     "tmdb_id": 276862,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyMy0wNC0zMF8xNC0wMy1NRVNa"
@@ -24874,7 +24849,7 @@
     "search": "Neues Land",
     "original_title": "Neues Land",
     "year": "2026",
-    "video_url": "https://nrodlzdf-a.akamaihd.net/none/zdf/26/10/261026_2015_sendung_fdw/1/261026_2015_sendung_fdw_a1a2_3360k_p36v17.mp4",
+    "video_url": "https://nrodlzdf-a.akamaihd.net/dach/zdf/26/10/261026_2015_sendung_fdw/1/261026_2015_sendung_fdw_a1a2_3360k_p36v17.mp4",
     "url_website": "https://www.zdf.de/filme/neues-land-movie-100",
     "plot": "Die Geologin Ina Sedlitz kehrt nach vielen Jahren in ihren Heimatort Neukirch zurück – ein Ort, der sich vom ehemaligen Braunkohlerevier in ein beliebtes Tourismusziel verwandelt hat. Ein Lebenswerk, auf das ihr Vater, der Bürgermeister Walter Sedlitz stolz ist. Ina will nur eines: ihren Erbteil am Familienhotel an ihre Nichte Mara übertragen und endgültig mit der Vergangenheit abschließen.",
     "mediathek_desc": "Die Geologin Ina Sedlitz kehrt nach vielen Jahren in ihr Heimatdorf Neukirch zurück – ein Ort, der sich vom ehemaligen Braunkohlerevier in ein beliebtes Tourismusziel verwandelt hat.",
@@ -26452,7 +26427,7 @@
     ],
     "channel": "ARTE.DE",
     "timestamp": 1792174511,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 714968,
     "tmdb_type": "movie",
     "url_website": "https://www.arte.tv/de/videos/083853-000-A/plan-a/"
@@ -32871,33 +32846,6 @@
     "url_website": "https://www.zdf.de/filme/vermisst-in-berlin-movie-100"
   },
   {
-    "title": "Vermisst in den Highlands",
-    "search": "Vermisst in den Highlands",
-    "year": "2021",
-    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/25/01/250120_2215_sendung_spf/1/250120_2215_sendung_spf_a1a2_3360k_p36v17.mp4",
-    "plot": "Unterwegs im Herzen der Highlands, erhält Edmond Murray einen Anruf von seiner in Tränen aufgelösten Ex-Frau Joan. Ihr siebenjähriger Sohn ist auf einem Campingplatz verschwunden. Als Edmond am Campingplatz ankommt, trifft er auf Joan und den führenden Ermittler Inspector Roy. Nach aussichtlosen Einsätzen des Suchtrupps wird klar, dass es sich beim Verschwinden des Jungens um eine Entführung handelt. Eine unangenehmen Begegnung zwischen Edmond und Joans neuem Freund Frank schöpft bei Edmond Verdacht...",
-    "mediathek_desc": "Der kleine Ethan wird aus einem Ferienlager in Schottland entführt. Als die Polizei nicht weiterhelfen kann, nimmt Ethans Vater Edmond eigene Ermittlungen auf.",
-    "director": "Christian Carion",
-    "actors": [
-      "James McAvoy",
-      "Claire Foy",
-      "Tom Cullen"
-    ],
-    "rating": "6.1",
-    "thumb": "https://image.tmdb.org/t/p/w342/yvwpvBY5rnZn8wBMT3xO57RMQPx.jpg",
-    "genres_list": [
-      "Thriller",
-      "Krimi",
-      "Drama"
-    ],
-    "channel": "ZDFneo",
-    "timestamp": 1793051100,
-    "isNew": true,
-    "tmdb_id": 750253,
-    "tmdb_type": "movie",
-    "url_website": "https://www.zdf.de/filme/vermisst-in-den-highlands-movie-100"
-  },
-  {
     "title": "Verso - Die dunkle Seite",
     "search": "Verso - Die dunkle Seite",
     "year": "2009",
@@ -34237,7 +34185,7 @@
     "title": "Wind River - Tod im Schnee",
     "search": "Wind River - Tod im Schnee",
     "year": "2016",
-    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/19/12/191230_2215_sendung_spf/1/191230_2215_sendung_spf_3360k_p36v17.mp4",
+    "video_url": "https://rodlzdf-a.akamaihd.net/dach/3sat/23/08/230827_wind_river_tod_im_schnee_spielfilm/1/230827_wind_river_tod_im_schnee_spielfilm_2360k_p35v17.mp4",
     "plot": "Cory Lambert arbeitet für den United States Fish and Wildlife Service und macht vor allem Jagd auf Kojoten und andere Raubtiere im Indianer-Reservat Wind River. Den kürzlichen Tod seiner Teenager-Tochter hat er noch nicht überwunden, da stolpert er in der Wildnis über die Leiche einer vergewaltigten und erfrorenen Jugendlichen. Um den Täter zu fassen, wird die noch sehr junge FBI-Agentin Jane Banner auf den Fall angesetzt. Weil sie sich in dem rauen Gelände und mit den schwierigen Wetterverhältnissen vor Ort allerdings nicht auskennt, bittet sie Cory um Hilfe bei ihren Ermittlungen und gemeinsam brechen sie auf ins Ungewisse.",
     "mediathek_desc": "Ein Indianerreservat im tief verschneiten Wyoming: Im Schnee findet der Jäger Cory Lambert die Leiche einer jungen Frau. Sie trägt keine Schuhe. Jane Banner vom FBI ermittelt.",
     "director": "Taylor Sheridan",
@@ -34254,9 +34202,9 @@
       "Thriller"
     ],
     "channel": "3Sat",
-    "timestamp": 1643062500,
+    "timestamp": 1577740500,
     "isNew": false,
-    "url_website": "https://www.zdf.de/video/filme/wind-river---tod-im-schnee-movie-100/wind-river---tod-im-schnee-100",
+    "url_website": "https://www.3sat.de/film/spielfilm/wind-river---tod-im-schnee-100.html",
     "tmdb_id": 395834,
     "tmdb_type": "movie"
   },
@@ -34511,7 +34459,7 @@
     ],
     "channel": "ZDF",
     "timestamp": 1792183660,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 1176282,
     "tmdb_type": "movie",
     "url_website": "https://www.zdf.de/filme/wir-haben-einen-deal-movie-100"
@@ -35583,6 +35531,32 @@
     "tmdb_id": 329913,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyMy0wNi0yNF8xNS0zMC1NRVNa"
+  },
+  {
+    "title": "Zweibettzimmer",
+    "search": "Zweibettzimmer",
+    "original_title": "Zweibettzimmer",
+    "year": "2017",
+    "video_url": "https://nrodlzdf-a.akamaihd.net/none/zdf/17/04/170410_2015_sendung_fdw/17/170410_2015_sendung_fdw_a1a2_3360k_p36v15.mp4",
+    "url_website": "https://www.zdf.de/filme/zweibettzimmer-movie-100",
+    "plot": "Konstanze ist perfekt: attraktiv, Mutter zweier Kinder, erfolgreiche Herzchirurgin, eigenes Haus, und seit neuestem leider mit Ex-Ehemann. Jacqueline Ende 30, alleinerziehend, drei Kinder von drei Vätern, große Klappe mit grell lackierten Fingernägeln, hält sich mit vier Minijobs über Wasser und hat schon wieder den falschen Mann am Hals. Normalerweise hätten diese ungleichen Frauen nie Kontakt gehabt. Ein Zweibettzimmer in einer Reha-Klinik wird zur Kampfzone zwischen den beiden.",
+    "mediathek_desc": "Zwei Frauen, die aus zu unterschiedlichen Welten kommen und sich nichts zu sagen haben, treffen unfreiwillig in einer Rehaklinik als Zimmergenossinnen aufeinander.",
+    "director": "Isabel Kleefeld",
+    "actors": [
+      "Anja Kling",
+      "Carol Schuler",
+      "Stephan Kampwirth"
+    ],
+    "rating": "6.3",
+    "thumb": "https://image.tmdb.org/t/p/w342/vRhxhKhjJAAE5R1AAHjKptNlnyo.jpg",
+    "genres_list": [
+      "Komödie"
+    ],
+    "channel": "ZDF",
+    "timestamp": 1793264756,
+    "isNew": true,
+    "tmdb_id": 434364,
+    "tmdb_type": "movie"
   },
   {
     "title": "Zwingli - Der Reformator",
