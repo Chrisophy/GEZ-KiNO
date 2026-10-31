@@ -1891,8 +1891,8 @@
       "Romanze"
     ],
     "channel": "ARD",
-    "timestamp": 1775039400,
-    "isNew": false,
+    "timestamp": 1793966100,
+    "isNew": true,
     "tmdb_id": 305100,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyNS0wNS0yNV8xNS0zMC1NRVNa"
@@ -1947,7 +1947,7 @@
     "isNew": false,
     "tmdb_id": 570356,
     "tmdb_type": "movie",
-    "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyMS0xMS0yN18xNC0zMC1NRVo"
+    "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyMS0xMS0yN18xNC0zMC1NRVovYXVkaW9kZXNrcmlwdGlvbg"
   },
   {
     "title": "Aus lauter Liebe zu dir",
@@ -5827,7 +5827,7 @@
     ],
     "channel": "ARD",
     "timestamp": 1792226400,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 310915,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyNS0wMS0wNV8xMi0xNS1NRVo"
@@ -7738,33 +7738,6 @@
     "tmdb_id": 300643,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyMS0xMS0wNl8xMy0wMC1NRVo"
-  },
-  {
-    "title": "Dick und Jane",
-    "search": "Dick und Jane",
-    "original_title": "Dick und Jane",
-    "year": "2005",
-    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/25/12/251216_sony_2330_sendung_nsf/1/251216_sony_2330_sendung_nsf_3360k_p36v17.mp4",
-    "url_website": "https://www.zdf.de/filme/dick-und-jane-movie-100",
-    "plot": "Dick Harper ist endlich am Ziel seiner Träume: Es winkt ihm eine satte Beförderung. Also ade Mittelstandsleben und willkommen in der Oberschicht. Seine Frau Jane kann endlich ihren verhassten Job im Reisebüro kündigen und zusammen mit Söhnchen Billy das Haus und den neuen Pool hüten. Nur leider haben die Harpers nicht mit Dicks Chef gerechnet. Der macht sich nämlich mitsamt den Firmengeldern aus den Staub und Dick steht auf der Straße. Jetzt gibt es nur noch einen Ausweg aus der Finanzmisere: Bewaffneter Raubüberfall!",
-    "mediathek_desc": "Einst lebte Dick Harper mit seiner geliebten Ehefrau Jane, Sohn Billy und Haushälterin Blanca in einem adretten Einfamilienhaus ein glückliches Leben. Doch dann kam alles anders.",
-    "director": "Dean Parisot",
-    "actors": [
-      "Jim Carrey",
-      "Téa Leoni",
-      "Alec Baldwin"
-    ],
-    "rating": "6.2",
-    "thumb": "https://image.tmdb.org/t/p/w342/v5NMIUm3M2JAHkQpXjNNUJY6OfF.jpg",
-    "genres_list": [
-      "Komödie",
-      "Krimi"
-    ],
-    "channel": "ZDFneo",
-    "timestamp": 1792536900,
-    "isNew": true,
-    "tmdb_id": 7552,
-    "tmdb_type": "movie"
   },
   {
     "title": "Die Abräumer",
@@ -13664,32 +13637,6 @@
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyNC0wNi0yNl8xNS0zMC1NRVNa"
   },
   {
-    "title": "El amor brujo - Liebeszauber",
-    "search": "El amor brujo - Liebeszauber",
-    "year": "1986",
-    "video_url": "https://arteptweb-a.akamaihd.net/am/ptweb/131000/131500/131535-000-A_EQ_0_VO-STA_11371716_MP4-1500_AMM-PTWEB-40521320266560_nPQTH.mp4",
-    "plot": "Nach dem Ballett \"Liebeszauber\" von Manuel de Falla erzählt der Film die Geschichte Candelas, die von albtraumartigen Erscheinungen ihres ehemaligen Geliebten Diego heimgesucht wird. Diego, der bei einer Schlägerei ums Leben kam, verfolgt Candela noch als Geist und hält sie in seinem Schatten gefangen. Ihr neuer Liebhaber Antonio kämpft darum, sie aus diesem Bann zu befreien.",
-    "mediathek_desc": "Nach dem Ballett \"Liebeszauber\" von Manuel de Falla erzählt der Film die Geschichte Candelas, die von albtraumartigen Erscheinungen ihres ehemaligen Geliebten Diego heimgesucht wird. Diego, der bei einer Schlägerei ums Leben kam, verfolgt Candela noch als Geist und hält sie in seinem Schatten gefangen. Ihr neuer Liebhaber Antonio kämpft darum, sie aus diesem Bann zu befreien.",
-    "director": "Carlos Saura",
-    "actors": [
-      "Antonio Gades",
-      "Cristina Hoyos",
-      "Laura del Sol"
-    ],
-    "rating": "6.9",
-    "thumb": "https://image.tmdb.org/t/p/w342/4lwWfALqmxLB9sE4sXGa7W7zyCW.jpg",
-    "genres_list": [
-      "Musik",
-      "Drama"
-    ],
-    "channel": "ARTE.DE",
-    "timestamp": 1783428389,
-    "isNew": false,
-    "tmdb_id": 42020,
-    "tmdb_type": "movie",
-    "url_website": "https://www.arte.tv/de/videos/131535-000-A/el-amor-brujo/"
-  },
-  {
     "title": "Eltern und andere Wahrheiten",
     "search": "Eltern und andere Wahrheiten",
     "year": "2017",
@@ -14568,7 +14515,7 @@
     "original_title": "Feinfühlige Vampirin sucht lebensmüdes Opfer",
     "year": "2023",
     "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/25/10/251004_0305_sendung_spf/4/251004_0305_sendung_spf_a3a4_3360k_p36v17.mp4",
-    "url_website": "https://www.zdf.de/video/filme/feinfuehlige-vampirin-sucht-lebensmuedes-opfer-movie-100/feinfuehlige-vampirin-sucht-lebensmuedes-opfer-100",
+    "url_website": "https://www.zdf.de/filme/feinfuehlige-vampirin-sucht-lebensmuedes-opfer-movie-100",
     "plot": "Der Ernährungsplan von Vampiren ist naturgemäß sehr überschaubar – ohne menschliches Blut zu trinken, können sie nicht überleben. Für die junge Vampirin Sasha hat die Sache nur einen Haken: Aus Mitleid mit ihren Opfern bringt sie es nicht über sich, jemandem wehzutun, geschweige denn umzubringen. Doch die Geduld ihrer Eltern hat ein Ende: Sasha wird vor die Tür gesetzt und soll nun von ihrer skrupellosen Cousine die blutige Nahrungsbeschaffung lernen. Wie praktisch, dass sie Einzelgänger Paul begegnet, denn der will sowieso nicht mehr leben und meldet sich freiwillig als ihr erstes Opfer. Einen letzten Wunsch will Sasha ihm noch erfüllen, aber seine letzte Nacht läuft anders als geplant …",
     "mediathek_desc": "Die Teenie-Vampirin Sasha soll nach Ansicht ihrer Familie endlich selbst auf die Jagd gehen, jedoch hemmt sie ihr Empathievermögen. Doch dann lernt Sasha den suizidgefährdeten Paul kennen.",
     "director": "Ariane Louis-Seize",
@@ -14585,8 +14532,8 @@
       "Horror"
     ],
     "channel": "ZDF",
-    "timestamp": 1759540200,
-    "isNew": false,
+    "timestamp": 1792648803,
+    "isNew": true,
     "tmdb_id": 988402,
     "tmdb_type": "movie"
   },
@@ -16836,6 +16783,33 @@
     "url_website": "https://www.3sat.de/film/spielfilm/hautnah-100.html"
   },
   {
+    "title": "Heartbeast",
+    "search": "Heartbeast",
+    "original_title": "Heartbeast",
+    "year": "2022",
+    "video_url": "https://nrodlzdf-a.akamaihd.net/dach/3sat/26/10/261031_heartbeast_spielfilm/1/261031_heartbeast_spielfilm_3360k_p36v17.mp4",
+    "url_website": "https://www.3sat.de/film/spielfilm/heartbeast-100.html",
+    "plot": "Die 15-jährige aufstrebende Rapperin Elina (Elsi Sloan) muss ihr Heimatland Finnland verlassen, um in den Süden Frankreichs zu ziehen, wo ihre Mutter einen neuen Freund gefunden hat. Dort angekommen, ist sie sofort fasziniert von ihrer 17-jährigen Stiefschwester Sofia (Carmen Kassovitz), die trotz ihrer charismatischen Art ein gefährliches Doppelleben voller Jungen und Drogen führt. Die Freundschaft von Elina und Sofia wird auf eine harte Probe gestellt...",
+    "mediathek_desc": "Die junge Rapperin Elina muss ihre Heimat Finnland verlassen und nach Frankreich ziehen. Dort lernt sie ihre neue Stiefschwester Sofia kennen, zu der sie sich hingezogen fühlt.",
+    "director": "Aino Suni",
+    "actors": [
+      "Elsi Sloan",
+      "Carmen Kassovitz",
+      "Camille"
+    ],
+    "rating": "3.8",
+    "thumb": "https://image.tmdb.org/t/p/w342/szu5A3wPlvn9z9EfumiHwT7JJtX.jpg",
+    "genres_list": [
+      "Drama",
+      "Thriller"
+    ],
+    "channel": "3Sat",
+    "timestamp": 1725835800,
+    "isNew": false,
+    "tmdb_id": 726888,
+    "tmdb_type": "movie"
+  },
+  {
     "title": "Heidi",
     "search": "Heidi",
     "year": "1952",
@@ -18542,6 +18516,34 @@
     "tmdb_id": 330267,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyMy0wNC0wMV8xNC0wMC1NRVNa"
+  },
+  {
+    "title": "Immaculate",
+    "search": "Immaculate",
+    "original_title": "Immaculate",
+    "year": "2024",
+    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/26/10/261031_0315_sendung_spf/1/261031_0315_sendung_spf_a1a2_3360k_p36v17.mp4",
+    "url_website": "https://www.zdf.de/video/filme/immaculate-movie-100/immaculate-100",
+    "plot": "Die gläubige amerikanische Nonne Cecilia begibt sich auf eine neue Reise in ein abgelegenes Kloster in der pittoresken Landschaft Italiens. Der herzliche Empfang Cecilias entwickelt sich schnell zu einem Albtraum, als klar wird, dass ihr neues Zuhause ein düsteres Geheimnis und unaussprechliche Schrecken birgt.",
+    "mediathek_desc": "Die junge Amerikanerin Cecilia zieht in ein abgelegenes, italienisches Kloster. Als sich dort beunruhigende Vorfälle ereignen, beginnt die Nonne nicht nur an ihrem Glauben zu zweifeln.",
+    "director": "Michael Mohan",
+    "actors": [
+      "Sydney Sweeney",
+      "Álvaro Morte",
+      "Simona Tabasco"
+    ],
+    "rating": "6.2",
+    "thumb": "https://image.tmdb.org/t/p/w342/vNMKPTDyJDdv2zBFtd4NF3ZJCsO.jpg",
+    "genres_list": [
+      "Horror",
+      "Mystery",
+      "Thriller"
+    ],
+    "channel": "ZDF",
+    "timestamp": 1793412900,
+    "isNew": true,
+    "tmdb_id": 1041613,
+    "tmdb_type": "movie"
   },
   {
     "title": "Immenhof - Das Abenteuer eines Sommers",
@@ -21039,7 +21041,7 @@
     ],
     "channel": "ARD",
     "timestamp": 1792201800,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 330574,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyNC0xMS0wOV8xNC0wMC1NRVo"
@@ -22381,32 +22383,6 @@
     "url_website": "https://www.3sat.de/film/spielfilm/match-point-100.html"
   },
   {
-    "title": "Matthiesens Töchter",
-    "search": "Matthiesens Töchter",
-    "year": "2015",
-    "video_url": "https://pdvideosdaserste-a.akamaihd.net/int/2024/01/26/DEGSM879342/DEGSM879342_2863037_sendeton_1280x720-50p-3200kbit.mp4",
-    "plot": "So richtig herzlich geht der alte Matthiesen nicht mit seiner Tochter Esther um. Die ist mit ihrem 105- Kilo-Wonneproppen von Sohn David auf den elterlichen Reiterhof geflüchtet, da ihr Junge mal wieder Ärger mit der Polizei hat. Zu ihrer und vor allem Matthiesens Überraschung flattern auch ihre Schwestern Rahel und Thirza wieder ins Nest: Alle bringen Probleme mit – und dennoch wollen sie Papa helfen, seinen „latrinösen“ Hof zu entschulden…",
-    "mediathek_desc": "Spielfilm Deutschland 2015 \r\n\r\nEin geradezu inniger Hang zum Scheitern scheint bei den Matthiesens in der Familie zu liegen. Völlig abgebrannt kehren Esther, Rahel und Thirza in die vorpommerische „Prärie\" ihrer Kindheit zurück. Dort hat sich erwartungsgemäß nichts zum Guten verändert. Ihr trinkfreudiger Vater empfängt sie widerborstig wie eh und je, der einst idyllische Reiterhof ist völlig verwi\n.....",
-    "director": "Titus Selge",
-    "actors": [
-      "Matthias Habich",
-      "Julia Jäger",
-      "Ulrike C. Tscharre"
-    ],
-    "rating": "4.0",
-    "thumb": "https://image.tmdb.org/t/p/w342/wajSqN7RjNrolkkdij8H9Kx2ltQ.jpg",
-    "genres_list": [
-      "TV-Film",
-      "Komödie"
-    ],
-    "channel": "ARD",
-    "timestamp": 1706365800,
-    "isNew": false,
-    "tmdb_id": 380176,
-    "tmdb_type": "movie",
-    "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyNC0wMS0yN18xNS0zMC1NRVo"
-  },
-  {
     "title": "Matze, Kebab und Sauerkraut",
     "search": "Matze, Kebab und Sauerkraut",
     "year": "2020",
@@ -23436,6 +23412,34 @@
     "tmdb_id": 818397,
     "tmdb_type": "movie",
     "url_website": "https://www.3sat.de/film/spielfilm/memory---sein-letzter-auftrag-100.html"
+  },
+  {
+    "title": "Mensch Mama!",
+    "search": "Mensch Mama!",
+    "original_title": "Mensch Mama!",
+    "year": "2012",
+    "video_url": "https://ctv-videos.daserste.de/int/2026/10/31/DEGSM287666/DEGSM287666_3884677_sendeton_1280x720-50p-3200kbit.mp4",
+    "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2FyZC5kZS9wbGFuQVJEX2NmZTQzNzViLTE1MzMtNGM1NS1iM2I1LTRiMWRkZmYwNGVmMV9nYW56ZVNlbmR1bmc",
+    "plot": "Die Bremers sind eine ganz normale Familie. Mutter Anja regelt das Leben ihrer beiden heranwachsenden Kinder, und ihr Mann Ulli sitzt nach getaner Arbeit vor dem Fernseher. Das behagt der patenten Kindergärtnerin nicht, denn sie hat noch Pläne. Nach dem segensreichen Gewinn einer Lottomillion könnte sie nun ihre Träume endlich verwirklichen. Leider muss sie jedoch befürchten, dass ihr Mann aufgrund des unerwarteten Reichtums den Hintern gar nicht mehr hochbekommt. Um ihn zu motivieren, entwickelt Anja einen kühnen Plan. Damit löst sie mehr Wirbel aus, als ihr lieb ist.",
+    "mediathek_desc": "Spielfilm Deutschland 2012 Anja Bremer (Birge Schade) gewinnt eine Million im Lotto - genauer gesagt: 999.999 Euro und 20 Cent. Das wäre eigentlich ein Grund zur Freude, doch nach kurzer Euphorie überkommen die zweifache Mutter ernste Zweifel. Die patente Kindergärtnerin befürchtet, dass ihr knietief in der Midlife-Crisis steckender Mann Ulli (Götz Schubert) nun in einer Lethargie auf Luxusniveau erstarren könnte....",
+    "director": "Dirk Regel",
+    "actors": [
+      "Birge Schade",
+      "Götz Schubert",
+      "Grit Boettcher"
+    ],
+    "rating": "4.0",
+    "thumb": "https://image.tmdb.org/t/p/w342/dZxy1nFVwg3jGKk1fSnIZaPnwks.jpg",
+    "genres_list": [
+      "TV-Film",
+      "Familie",
+      "Komödie"
+    ],
+    "channel": "ARD",
+    "timestamp": 1793451600,
+    "isNew": true,
+    "tmdb_id": 330583,
+    "tmdb_type": "movie"
   },
   {
     "title": "Mensch Mutter",
@@ -29021,7 +29025,7 @@
     ],
     "channel": "ARD",
     "timestamp": 1792187700,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 915980,
     "tmdb_type": "movie"
   },
@@ -31224,33 +31228,6 @@
     "tmdb_id": 665899,
     "tmdb_type": "movie",
     "url_website": "https://www.3sat.de/film/spielfilm/topside--flucht-ins-ungewisse-100.html"
-  },
-  {
-    "title": "Tornado",
-    "search": "Tornado",
-    "year": "2025",
-    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/26/09/260928_0040_sendung_spf/3/260928_0040_sendung_spf_a3a4_3360k_p36v17.mp4",
-    "plot": "Die schottischen Highlands im Jahre 1790: Der aus Japan stammende Schausteller Fujin und seine fast erwachsene Tochter Tornado reisen mit ihrem Samurai-Puppentheater durch die Gegend. Obwohl dieses sehr ausgefeilt inszeniert und erstaunlich realistisch anzusehen ist, schlägt den beiden immer wieder rassistische Ablehnung entgegen. So verdienen sie kaum genug Geld für Nahrung, geschweige denn, um sich endlich eine Schiffspassage zurück in ihre Heimat leisten zu können. Als sie auf eine von dem skrupellosen Verbrecher Sugarman angeführte Bande treffen, schmiedet Tornado den Plan, dieser ihr bei Raubzügen erbeutetes Gold zu stehlen. Doch der Coup läuft schief und Sugarman lässt Tornados Vater brutal töten, während die junge Frau gerade noch entkommen kann. Die von Fujin jahrelang in der Kunst des Schwertkampfs ausgebildete Tornado plant daraufhin einen blutigen Rachefeldzug …",
-    "mediathek_desc": "Ein geraubter Goldschatz wird einer jungen Frau fast zum Verhängnis. Denn das Gold gehört einer brutalen Diebesbande unter Führung eines Mannes namens Sugarman.",
-    "director": "Andy Wang",
-    "actors": [
-      "Kōki",
-      "Tim Roth",
-      "Jack Lowden"
-    ],
-    "rating": "6.0",
-    "thumb": "https://image.tmdb.org/t/p/w342/5u23YsQjRkAfwkcyNDNdWqKRLAi.jpg",
-    "genres_list": [
-      "Drama",
-      "Action",
-      "Western"
-    ],
-    "channel": "ZDF",
-    "timestamp": 1790712655,
-    "isNew": false,
-    "tmdb_id": 1126915,
-    "tmdb_type": "movie",
-    "url_website": "https://www.zdf.de/filme/tornado-movie-100"
   },
   {
     "title": "Transit",
