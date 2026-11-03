@@ -414,8 +414,8 @@
       "TV-Film"
     ],
     "channel": "ZDF",
-    "timestamp": 1786133397,
-    "isNew": false,
+    "timestamp": 1793648700,
+    "isNew": true,
     "tmdb_id": 1451030,
     "tmdb_type": "movie",
     "url_website": "https://www.zdf.de/filme/acht-movie-100"
@@ -623,7 +623,7 @@
       "Drama"
     ],
     "channel": "ZDF",
-    "timestamp": 1793079421,
+    "timestamp": 1793625659,
     "isNew": true,
     "tmdb_id": 820800,
     "tmdb_type": "movie",
@@ -676,8 +676,8 @@
       "Romanze"
     ],
     "channel": "ARD",
-    "timestamp": 1787481900,
-    "isNew": false,
+    "timestamp": 1794265200,
+    "isNew": true,
     "tmdb_id": 262663,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAxNy0xMC0yMV8xNC0zMC1NRVNa"
@@ -893,32 +893,6 @@
     "tmdb_id": 1218233,
     "tmdb_type": "movie",
     "url_website": "https://www.zdf.de/filme/alles-gelogen-movie-100"
-  },
-  {
-    "title": "Alles in bester Ordnung",
-    "search": "Alles in bester Ordnung",
-    "year": "2022",
-    "video_url": "https://arteptweb-a.akamaihd.net/am/ptweb/087000/087800/087848-000-A_EQ_0_VOA_11554472_MP4-1500_AMM-PTWEB-80863462547800_10fhtf.mp4",
-    "plot": "Früher reiste sie oft durch die Welt, aber im Laufe ihres Lebens ist die 54-jährige Marlen (Corinna Harfouch) zu einer Einsiedlerin geworden. Sie versteckt sich geradezu in ihrer Wohnung und hortet Dinge, die für sie eine große Bedeutung haben und von denen sie sich einfach nicht trennen kann. Fynn (Daniel Sträßer) dagegen ist 32 und reist mit einem kleinen Rollkoffer durch die Welt. Er ist der Meinung, dabei nicht mehr als hundert Dinge zu brauchen. Als Marlen und Fynn aufeinandertreffen, könnten die Unterschiede also größer nicht sein. Humorvoll werfen sie sich miteinander in Diskussionen und merken bald, wie sehr sie einander brauchen.",
-    "mediathek_desc": "Marlen ist viel gereist und sammelt leidenschaftlich Dinge. Alles ist zu wertvoll, um es wegzuschmeißen. Fynn dagegen will mit nur 100 Dingen durch die Welt gehen. \"Ordnung ist das halbe Leben!\", sagt er. \"Willkommen in der anderen Hälfte!\", antwortet sie. – Komödie von Natja Brunckhorst, die ihre Premiere 2021 auf dem Filmfest Hamburg feierte.",
-    "director": "Natja Brunckhorst",
-    "actors": [
-      "Corinna Harfouch",
-      "Daniel Sträßer",
-      "Joachim Król"
-    ],
-    "rating": "6.0",
-    "thumb": "https://image.tmdb.org/t/p/w342/ayLWtnKZ6Yyla7XLxXNo3K7JYqS.jpg",
-    "genres_list": [
-      "Komödie",
-      "Drama"
-    ],
-    "channel": "ARTE.DE",
-    "timestamp": 1790792110,
-    "isNew": false,
-    "tmdb_id": 881687,
-    "tmdb_type": "movie",
-    "url_website": "https://www.arte.tv/de/videos/087848-000-A/alles-in-bester-ordnung/"
   },
   {
     "title": "Alles ist gut",
@@ -1921,7 +1895,7 @@
     "isNew": false,
     "tmdb_id": 570356,
     "tmdb_type": "movie",
-    "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyMS0xMS0yN18xNC0zMC1NRVo"
+    "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyMS0xMS0yN18xNC0zMC1NRVovYXVkaW9kZXNrcmlwdGlvbg"
   },
   {
     "title": "Aus lauter Liebe zu dir",
@@ -5452,31 +5426,6 @@
     "title": "Dennstein & Schwarz - Rufmord",
     "search": "Dennstein & Schwarz - Rufmord",
     "year": "2020",
-    "video_url": "https://pd-videos.daserste.de/int/2024/08/23/DEGSM877904/DEGSM877904_3048790sendeton__1280x720-50p-3200kbit.mp4",
-    "plot": "Therese Schwarz vertritt den mit Paula Dennstein sehr gut befreundeten Politiker Konrad Wagner, der von einer Zeitung an den #MeToo-Pranger gestellt wurde. Deshalb passt der überraschende Besuch ihrer kleinen Schwester Marita auch so gar nicht in ihr Konzept. Noch dazu, wo Marita zusammen mit Ferdinand durch eine Cannabis-Geschichte in heiklen Polizeikontakt kommt. Für Konrads Verteidigung ist es wichtig den Verleumder auszumachen, doch das ist ein Wettlauf gegen die Zeit, da die Landtagswahl vor der Türe steht…",
-    "mediathek_desc": "Spielfilm Deutschland/Österreich 2020\r\n\r\nAuf Frauenpower setzen \"Dennstein & Schwarz\" als Markenzeichen ihrer Anwaltskanzlei. Der neue Fall verspricht viel Publicity, denn sie vertreten den aufstrebenden Politiker, der nun durch eine Zeitungsstory als Grapscher am Pranger steht. \r\n\r\nMit Maria Happel, Martina Ebm, Manuel Rubey, Nele Kiper u.a. | Buch: Konstanze Breitebner | Regie: Michael Rowitz",
-    "director": "Michael Rowitz",
-    "actors": [
-      "Maria Happel",
-      "Martina Ebm",
-      "Manuel Rubey"
-    ],
-    "rating": "6.0",
-    "thumb": "https://image.tmdb.org/t/p/w342/6AP96jy3fR9wc26fb5zlWWdEMS4.jpg",
-    "genres_list": [
-      "Drama"
-    ],
-    "channel": "ARD",
-    "timestamp": 1724500800,
-    "isNew": false,
-    "tmdb_id": 679245,
-    "tmdb_type": "movie",
-    "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyNC0wOC0yNF8xNC0wMC1NRVNa"
-  },
-  {
-    "title": "Dennstein & Schwarz - Rufmord",
-    "search": "Dennstein & Schwarz - Rufmord",
-    "year": "2020",
     "video_url": "https://pd-videos.daserste.de/int/2024/09/06/DEGSM685649/DEGSM685649_3059520_sendeton_1280x720-50p-3200kbit.mp4",
     "plot": "Therese Schwarz vertritt den mit Paula Dennstein sehr gut befreundeten Politiker Konrad Wagner, der von einer Zeitung an den #MeToo-Pranger gestellt wurde. Deshalb passt der überraschende Besuch ihrer kleinen Schwester Marita auch so gar nicht in ihr Konzept. Noch dazu, wo Marita zusammen mit Ferdinand durch eine Cannabis-Geschichte in heiklen Polizeikontakt kommt. Für Konrads Verteidigung ist es wichtig den Verleumder auszumachen, doch das ist ein Wettlauf gegen die Zeit, da die Landtagswahl vor der Türe steht…",
     "mediathek_desc": "Spielfilm Deutschland/Österreich 2020\r\n\r\nAuf Frauenpower setzen \"Dennstein & Schwarz\" als Markenzeichen ihrer Anwaltskanzlei. Der neue Fall verspricht viel Publicity, denn sie vertreten den aufstrebenden Politiker, der nun durch eine Zeitungsstory als Grapscher am Pranger steht. \r\n\r\nMit Maria Happel, Martina Ebm, Manuel Rubey, Nele Kiper u.a. | Buch: Konstanze Breitebner | Regie: Michael Rowitz",
@@ -5497,6 +5446,31 @@
     "tmdb_id": 679245,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyNC0wOS0wN18xNC0wMC1NRVNa"
+  },
+  {
+    "title": "Dennstein & Schwarz - Rufmord",
+    "search": "Dennstein & Schwarz - Rufmord",
+    "year": "2020",
+    "video_url": "http://ctv-videos.daserste.de/int/2024/08/23/DEGSM877904/DEGSM877904_3048790sendeton__1280x720-50p-3200kbit.mp4",
+    "plot": "Therese Schwarz vertritt den mit Paula Dennstein sehr gut befreundeten Politiker Konrad Wagner, der von einer Zeitung an den #MeToo-Pranger gestellt wurde. Deshalb passt der überraschende Besuch ihrer kleinen Schwester Marita auch so gar nicht in ihr Konzept. Noch dazu, wo Marita zusammen mit Ferdinand durch eine Cannabis-Geschichte in heiklen Polizeikontakt kommt. Für Konrads Verteidigung ist es wichtig den Verleumder auszumachen, doch das ist ein Wettlauf gegen die Zeit, da die Landtagswahl vor der Türe steht…",
+    "mediathek_desc": "Spielfilm Deutschland/Österreich 2020\r\n\r\nAuf Frauenpower setzen \"Dennstein & Schwarz\" als Markenzeichen ihrer Anwaltskanzlei. Der neue Fall verspricht viel Publicity, denn sie vertreten den aufstrebenden Politiker, der nun durch eine Zeitungsstory als Grapscher am Pranger steht. \r\n\r\nMit Maria Happel, Martina Ebm, Manuel Rubey, Nele Kiper u.a. | Buch: Konstanze Breitebner | Regie: Michael Rowitz",
+    "director": "Michael Rowitz",
+    "actors": [
+      "Maria Happel",
+      "Martina Ebm",
+      "Manuel Rubey"
+    ],
+    "rating": "6.0",
+    "thumb": "https://image.tmdb.org/t/p/w342/6AP96jy3fR9wc26fb5zlWWdEMS4.jpg",
+    "genres_list": [
+      "Drama"
+    ],
+    "channel": "ARD",
+    "timestamp": 1724500800,
+    "isNew": false,
+    "tmdb_id": 679245,
+    "tmdb_type": "movie",
+    "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyNC0wOC0yNF8xNC0wMC1NRVNa"
   },
   {
     "title": "Dennstein & Schwarz - Schuldenfalle",
@@ -6924,6 +6898,35 @@
     "tmdb_id": 488942,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyNC0xMC0wNl8xNC0wMy1NRVNa"
+  },
+  {
+    "title": "Der Seelenfänger",
+    "search": "Der Seelenfänger",
+    "original_title": "Der Seelenfänger",
+    "year": "2024",
+    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/26/11/261102_2215_sendung_spf/1/261102_2215_sendung_spf_a3a4_3360k_p36v17.mp4",
+    "url_website": "https://www.zdf.de/video/filme/der-seelenfaenger-movie-100/der-seelenfaenger-100",
+    "plot": "Hauptkommissarin Elisabeth Guardiano (Virginie Ledoyen) wird in das abgelegene Bergdorf Roquenoir geschickt, um dort in einem grausamen Doppelmordfall zu ermitteln. Zeitgleich trifft auch Gendarmeriehauptmann Franck de Rolan (Paul Hamy) in der kleinen Gemeinde ein, um die Entführung mehrerer Kinder aus der Gegend aufzuklären. Nichts deutet auf einen Zusammenhang zwischen den Fällen hin. Doch dann stoßen Guardiano und de Rolan auf die uralte Legende des Seelenfängers.",
+    "mediathek_desc": "Polizist Franck de Roland sucht nach sechs vermissten Kindern. Seine einzige Spur ist ein weißer Van. Das Auto wurde immer dann gesehen, wenn ein Kind verschwand.",
+    "director": "Olivier Lambert",
+    "actors": [
+      "Virginie Ledoyen",
+      "Paul Hamy",
+      "Sandrine Bonnaire"
+    ],
+    "rating": "6.2",
+    "thumb": "https://image.tmdb.org/t/p/w342/ckhpwTUHMAzlV0LqU2FDiAd124s.jpg",
+    "genres_list": [
+      "Krimi",
+      "Horror",
+      "Mystery",
+      "Thriller"
+    ],
+    "channel": "ZDF",
+    "timestamp": 1793654100,
+    "isNew": true,
+    "tmdb_id": 1084863,
+    "tmdb_type": "movie"
   },
   {
     "title": "Der Sonnenhof",
@@ -9281,7 +9284,7 @@
     ],
     "channel": "ARTE.DE",
     "timestamp": 1792433700,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 62789,
     "tmdb_type": "movie",
     "url_website": "https://www.arte.tv/de/videos/026377-000-A/die-macht-und-ihr-preis/"
@@ -12659,8 +12662,8 @@
       "Drama"
     ],
     "channel": "ARD",
-    "timestamp": 1778749500,
-    "isNew": false,
+    "timestamp": 1794225600,
+    "isNew": true,
     "tmdb_id": 268511,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyNC0xMS0wM18xNC0wMy1NRVo"
@@ -12686,7 +12689,7 @@
     ],
     "channel": "ARD",
     "timestamp": 1792316400,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 739613,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2FyZC5kZS9wbGFuQVJEXzg5ZGIzNGJlLTA4MTQtNDA4Ni1iYzk1LTgwYmMxNWZmNmVmZF9nYW56ZVNlbmR1bmc"
@@ -12711,7 +12714,7 @@
     ],
     "channel": "ARD",
     "timestamp": 1792407600,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 335941,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyMy0wNy0wNl8wMS01MC1NRVNa"
@@ -13498,8 +13501,8 @@
       "Romanze"
     ],
     "channel": "ARD",
-    "timestamp": 1767525300,
-    "isNew": false,
+    "timestamp": 1794231000,
+    "isNew": true,
     "tmdb_id": 337743,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyNC0wNi0yNl8xNS0zMC1NRVNa"
@@ -13910,8 +13913,8 @@
     "search": "Eternal",
     "original_title": "Eternal",
     "year": "None",
-    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/26/03/260327_0045_sendung_spf/1/260327_0045_sendung_spf_a3a4_3360k_p36v17.mp4",
-    "url_website": "https://www.zdf.de/video/filme/eternal-movie-100/eternal-100",
+    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/26/03/260327_0045_sendung_spf/1/260327_0045_sendung_spf_a1a2_3360k_p36v17.mp4",
+    "url_website": "https://www.zdf.de/filme/eternal-movie-100",
     "plot": "Als die Klimakrise eskaliert, entscheidet sich der junge Forscher Elias gegen eine gemeinsame Zukunft mit Anita. Doch Jahre später holt ihn seine Entscheidung wieder ein.",
     "mediathek_desc": "Als die Klimakrise eskaliert, entscheidet sich der junge Forscher Elias gegen eine gemeinsame Zukunft mit Anita. Doch Jahre später holt ihn seine Entscheidung wieder ein.",
     "director": "",
@@ -13927,8 +13930,8 @@
       "Komödie"
     ],
     "channel": "ZDF",
-    "timestamp": 1774568700,
-    "isNew": false,
+    "timestamp": 1792968300,
+    "isNew": true,
     "tmdb_id": 1543076,
     "tmdb_type": "movie"
   },
@@ -14004,7 +14007,7 @@
     ],
     "channel": "ZDF",
     "timestamp": 1792341148,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 1409383,
     "tmdb_type": "movie",
     "url_website": "https://www.zdf.de/filme/ewig-dein-movie-100"
@@ -14829,7 +14832,7 @@
     "title": "Frauchen und die Deiwelsmilch",
     "search": "Frauchen und die Deiwelsmilch",
     "year": "2014",
-    "video_url": "https://pd-videos.daserste.de/int/2020/12/29/2e7c50a9-d775-4dd1-8fad-4bc62525ef17/JOB_506635__sendeton_1280x720-50p-3200kbit.mp4",
+    "video_url": "http://ctv-videos.daserste.de/int/2020/12/29/2e7c50a9-d775-4dd1-8fad-4bc62525ef17/JOB_506635__sendeton_1280x720-50p-3200kbit.mp4",
     "plot": "Die lebenslustige Miri ist ein Genie im Umgang mit Zahlen. Dieses Talent lebt sie in ihrem Job in der Stadtbank des kleinen Örtchens Hattenstein voll aus, bei dem sie ihrem oftmals überforderten Chef tatkräftig unter die Arme greift. Als ein örtlicher Winzer in einem Waldstück tot aufgefunden wird, entwickelt sie zudem ein Faible für Detektivarbeit. Der Polizist Nils, einer ihrer alten Schulkameraden, glaubt an einen plötzlichen Herzinfarkt. Doch Miris außerordentliche Kombinationsgabe sagt ihr, dass an dem Fall etwas faul ist. Moralisch unterstützt vom herrenlosen Dackel Frauchen kommt sie einem groß angelegten Verbrechen auf die Spur, in das sogar der Bürgermeister der Stadt  verwickelt zu sein scheint.",
     "mediathek_desc": "Spielfilm Deutschland 2014 \r\n\r\n\"Blond heißt nicht gleich blöd\", das müssen Bürgermeister Runge und sein Adlatus Kai erfahren, als sie versuchen, ein international verzweigtes Geschäft über die Stadtkasse abzuwickeln. \r\n\r\nMit Daniela Katzenberger, Klaus Zmorek, Carlos Lobo, Tim Morten Uhlenbrock u. a. | Buch: Holger Badura I Regie: Thomas Bohn",
     "director": "Thomas Bohn",
@@ -16578,7 +16581,7 @@
     "title": "Hatching",
     "search": "Hatching",
     "year": "2022",
-    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/25/10/251006_0035_sendung_spf/1/251006_0035_sendung_spf_a1a2_3360k_p36v17.mp4",
+    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/25/10/251006_0035_sendung_spf/1/251006_0035_sendung_spf_a3a4_3360k_p36v17.mp4",
     "plot": "Die 12-jährige Turnerin Tinja (Siiri Solalinna) möchte unbedingt ihrer Mutter (Sophia Heikkilä) gefallen, die früher einmal Eiskunstläuferin war und nun einen beliebten Blog betreibt, der das idyllische Leben ihrer Familie präsentiert. Nachdem Tinja eines Tages im Wald einen verwundeten Vogel findet, bringt sie sein seltsames Ei nach Hause, versteckt es in ihrem Bett und pflegt es, bis es schlüpft. Die Kreatur, die daraus auftaucht, wird zu ihrer engsten Freundin und einem lebenden Albtraum, der Tinja unter der makellosen Fassade in eine verdrehte Realität stürzt, die ihre Mutter nicht sehen will. Doch Tinja ist nicht die Einzige, die versucht, ein Geheimnis zu bewahren.",
     "mediathek_desc": "Die Nachwuchsturnerin Tinja leidet unter den hohen Ansprüchen ihrer Mutter.\nNach dem Fund eines seltsamen Eies wird sie selbst zur Ziehmutter einer sonderbaren Vogelkreatur - mit bösen Folgen.",
     "director": "Peter Kropénin",
@@ -16594,11 +16597,11 @@
       "Fantasy"
     ],
     "channel": "ZDF",
-    "timestamp": 1759703700,
-    "isNew": false,
+    "timestamp": 1792974000,
+    "isNew": true,
     "tmdb_id": 517302,
     "tmdb_type": "movie",
-    "url_website": "https://www.zdf.de/video/filme/hatching-movie-100/hatching-100"
+    "url_website": "https://www.zdf.de/filme/hatching-movie-100"
   },
   {
     "title": "Hattinger und der Nebel - Ein Chiemseekrimi",
@@ -20184,31 +20187,6 @@
     "url_website": "https://www.zdf.de/filme/krokodil-movie-100"
   },
   {
-    "title": "Kundschafter des Friedens 2",
-    "search": "Kundschafter des Friedens 2",
-    "year": "2025",
-    "video_url": "https://arteptweb-a.akamaihd.net/am/ptweb/113000/113100/113146-000-A_EQ_0_VOA-STA_11563182_MP4-1500_AMM-PTWEB-101193223647842_10sMrf.mp4",
-    "plot": "Einst waren sie die Crème de la Crème unter den Geheimagenten, die Kundschafter des Friedens haben sogar Fidel Castro beim Staatsbesuch an der Ostsee das Leben gerettet. Ausgerechnet auf Kuba schlittern die pensionierten Auslandsspione der DDR jetzt noch einmal in ein großes neues Abenteuer, als sie anlässlich der Beerdigung ihres alten Mentors in ihren Idealen herausgefordert werden, um die letzte Bastion des Sozialismus‘ vor dem nahenden Ausverkauf zu bewahren. Und dabei müssen sie tief in die Trickkiste ihrer Spionage-Kunst greifen und nochmal alles geben. Sie bekommen es mit fiesen Geschäftemachern, Verrat auf höchster Ebene und nicht zuletzt ihren bisher größten Gegnern zu tun: Vollpension und Cuba Libre.",
-    "mediathek_desc": "Einst retteten sie Fidel Castro das Leben, jetzt steht den pensionierten DDR-Spionen ein neues Abenteuer bevor: Auf Kuba geraten die \"Kundschafter des Friedens\" nach dem Tod ihres Mentors in einen Kampf um die letzte Bastion des Sozialismus. Zwischen skrupellosen Investoren, politischem Verrat und den Tücken des Ruhestands müssen sie noch einmal ihre alten Spionagekünste einsetzen.",
-    "director": "Robert Thalheim",
-    "actors": [
-      "Henry Hübchen",
-      "Katharina Thalbach",
-      "Corinna Harfouch"
-    ],
-    "rating": "5.1",
-    "thumb": "https://image.tmdb.org/t/p/w342/qTnPE9ISyOAuozrwZy4yV65jzs0.jpg",
-    "genres_list": [
-      "Komödie"
-    ],
-    "channel": "ARTE.DE",
-    "timestamp": 1790964907,
-    "isNew": false,
-    "tmdb_id": 1220831,
-    "tmdb_type": "movie",
-    "url_website": "https://www.arte.tv/de/videos/113146-000-A/kundschafter-des-friedens-2/"
-  },
-  {
     "title": "Kurhotel Alpenglück",
     "search": "Kurhotel Alpenglück",
     "year": "2006",
@@ -22096,7 +22074,7 @@
     ],
     "channel": "ARD",
     "timestamp": 1792413000,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 342961,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyNS0wMy0wMl8xNC0wMy1NRVo"
@@ -25660,56 +25638,6 @@
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2FyZC5kZS9wbGFuQVJEXzJiNmFkY2YzLTUzODItNGE4NC1iMGE0LTIzMWEyM2Q1YzdlNV9nYW56ZVNlbmR1bmc"
   },
   {
-    "title": "Otto - Der Außerfriesische",
-    "search": "Otto - Der Außerfriesische",
-    "year": "1989",
-    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/19/04/190420_0850_sendung_tto/1/190420_0850_sendung_tto_3360k_p36v15.mp4",
-    "plot": "Um zu verhindern, daß sein geliebter Leuchtturm einer Raketenbahnstrecke weichen muß, braucht Otto dringend seinen in die USA ausgewanderten Bruder Benno, dem das Bauwerk in Wirklichkeit gehört. Also macht sich Otto auf den Weg nach Miami, wo Benno Privatdetektiv geworden ist. Doch Amerika ist groß und fremd und Otto begegnet jeder Menge merkwürdiger Gestalten...",
-    "mediathek_desc": "Über einen Deich soll eine Hochgeschwindigkeits-Teststrecke gebaut werden. Ein Leuchtturm steht allerdings im Weg, in dem der Fremdenführer Otto wohnt.",
-    "director": "Otto Waalkes",
-    "actors": [
-      "Otto Waalkes",
-      "Barbara May",
-      "Hans Peter Hallwachs"
-    ],
-    "rating": "5.6",
-    "thumb": "https://image.tmdb.org/t/p/w342/kWQXW2CVO70qLZnWmtxxlsTX3iS.jpg",
-    "genres_list": [
-      "Komödie"
-    ],
-    "channel": "ZDFneo",
-    "timestamp": 1790967901,
-    "isNew": false,
-    "tmdb_id": 9379,
-    "tmdb_type": "movie",
-    "url_website": "https://www.zdf.de/filme/otto---der-ausserfriesische-movie-100"
-  },
-  {
-    "title": "Otto - Der Katastrofenfilm",
-    "search": "Otto - Der Katastrofenfilm",
-    "year": "2000",
-    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/22/04/220414_2300_sendung_tto/1/220414_2300_sendung_tto_3360k_p36v15.mp4",
-    "plot": "Aus den unendlichen Tiefebenen Ostfrieslands kommt ein Mann nach Hamburg und klopft ans Tor zur Welt. Trotz umfangreicher Sicherheitsvorkehrungen der zuständigen Katastrofenschutzstellen kann er passieren und nimmt mit einem ahnungslosen Dampfer Kurs auf Amerika, um auch diese Neue Welt zu erobern. Was er hinterläßt ist eine Schneise der Verwüstung, eine Bresche der Verwirrung, eine Milchstraße voll Musik, eine Sackgasse voller Wahnwitze und vielleicht eine Spur zu viel Wortspiele auf Kosten anderer. Doch was das Schlimmste ist: Er hat darüber auch noch einen Film gemacht!",
-    "mediathek_desc": "Otto soll Seemann werden. So will es zumindest sein Opa. Als er aber die Prüfung nicht besteht, nimmt Otto die Sache selbst in die Hand und schleicht sich als Teil einer Damenband auf ein Schiff.",
-    "director": "Edzard Onneken",
-    "actors": [
-      "Otto Waalkes",
-      "Eva Haßmann",
-      "Reiner Schöne"
-    ],
-    "rating": "5.2",
-    "thumb": "https://image.tmdb.org/t/p/w342/kIiaNNye4iFslWcohJtiqkLyWth.jpg",
-    "genres_list": [
-      "Komödie"
-    ],
-    "channel": "ZDFneo",
-    "timestamp": 1792992434,
-    "isNew": true,
-    "tmdb_id": 9883,
-    "tmdb_type": "movie",
-    "url_website": "https://www.zdf.de/filme/otto---der-katastrofenfilm-movie-100"
-  },
-  {
     "title": "Otto - Der Liebesfilm",
     "search": "Otto - Der Liebesfilm",
     "year": "2000",
@@ -25733,31 +25661,6 @@
     "tmdb_id": 9883,
     "tmdb_type": "movie",
     "url_website": "https://www.zdf.de/filme/otto---der-liebesfilm-movie-100"
-  },
-  {
-    "title": "Otto - Der neue Film",
-    "search": "Otto - Der neue Film",
-    "year": "1985",
-    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/19/04/190420_1020_sendung_tto/3/190420_1020_sendung_tto_3360k_p36v15.mp4",
-    "plot": "Das naive und arme Landei Otto gerät in der Großstadt in die Fänge des skrupellosen Kredithais Shark. Dieser fordert unmissverständlich und prompt sein Geld zurück. Da kommt es Otto wie gerufen, dass er der jungen Millionärin Silvia von Kohlen und Reibach das Leben rettet. Die beiden verlieben sich ineinander, doch das junge Glück hat einige Abenteuer zu bestehen: Denn da sind noch zwei Bankräuber und Silvias Verlobter Ernesto, die ebenfalls schnell reich werden wollen.",
-    "mediathek_desc": "Otto schlüpft wieder in die Rolle des armen, missverstandenen Außenseiters, der mit seinen unorthodoxen Methoden gegen die Ungerechtigkeiten der Welt ankämpft.",
-    "director": "Otto Waalkes",
-    "actors": [
-      "Otto Waalkes",
-      "Elisabeth Wiedemann",
-      "Sky du Mont"
-    ],
-    "rating": "6.5",
-    "thumb": "https://image.tmdb.org/t/p/w342/zq9WOpfKtNkDKY101aceXm1dft2.jpg",
-    "genres_list": [
-      "Komödie"
-    ],
-    "channel": "ZDFneo",
-    "timestamp": 1790962801,
-    "isNew": false,
-    "tmdb_id": 9657,
-    "tmdb_type": "movie",
-    "url_website": "https://www.zdf.de/filme/otto---der-neue-film-movie-100"
   },
   {
     "title": "Pakt der Wölfe - Director's Cut",
@@ -32324,7 +32227,7 @@
       "Mystery"
     ],
     "channel": "ZDFneo",
-    "timestamp": 1793166442,
+    "timestamp": 1793597523,
     "isNew": true,
     "tmdb_id": 15472,
     "tmdb_type": "movie"
@@ -32951,7 +32854,7 @@
     ],
     "channel": "ARD",
     "timestamp": 1792324980,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 268611,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2FyZC5kZS9wbGFuQVJEXzRjYzRjNTgwLTVkNzEtNDdhNC05ODllLTM4YmM3ODc4ZWRiMl9nYW56ZVNlbmR1bmc"
@@ -34664,7 +34567,7 @@
     "title": "Zitronenherzen",
     "search": "Zitronenherzen",
     "year": "2024",
-    "video_url": "https://nrodlzdf-a.akamaihd.net/none/zdf/24/12/241216_2015_sendung_fdw/1/241216_2015_sendung_fdw_a1a2_3360k_p36v17.mp4",
+    "video_url": "https://nrodlzdf-a.akamaihd.net/dach/zdf/24/12/241216_2015_sendung_fdw/1/241216_2015_sendung_fdw_a1a2_3360k_p36v17.mp4",
     "plot": "Die Journalistin Carla soll ihre entfremdete Mutter, eine erfolgreiche Groschenroman-Autorin, interviewen. Plötzlich findet sie sich in einem malerischen Bergdorf als Alpenbäckerin Lilia LeClerk wieder – eine Romanfigur",
     "mediathek_desc": "Carla und Paolo sollen einen Weihnachtsbeitrag über die berühmte Groschenromanautorin Marlene von Osterburken erstellen, ausgerechnet Carlas Mutter, zu der sie keinen Kontakt hat.",
     "director": "Jan Haering",
