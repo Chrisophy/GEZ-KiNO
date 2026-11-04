@@ -576,32 +576,6 @@
     "url_website": "https://www.zdf.de/filme/air---der-grosse-wurf-movie-100"
   },
   {
-    "title": "Alibi.com 2",
-    "search": "Alibi.com 2",
-    "year": "2023",
-    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/24/08/240820_0310_sendung_spf/1/240820_0310_sendung_spf_a1a2_3360k_p36v17.mp4",
-    "plot": "Greg und Flo wollen heiraten. Und immer ehrlich zueinander sein. Flo und ihre Eltern möchten endlich Gregs Vater und Mutter kennenlernen. Das bringt Greg in enorme Schwierigkeiten. Er hält seine Eltern für nicht vorzeigbar und konstruiert mithilfe seiner Freunde erneut ein Lügengerüst: falsche Eltern für die echte Flo; eine falsche Flo für die echten Eltern. Das Chaos lässt nicht lange auf sich warten und endet in Handgreiflichkeiten. Greg und Flo sind ein glückliches Paar, und Gregs Firma, Alibi.com, ist Geschichte.",
-    "mediathek_desc": "Greg und Flo wollen heiraten. Und immer ehrlich zueinander sein. Flo und ihre Eltern möchten endlich Gregs Vater und Mutter kennenlernen. Das bringt Greg in enorme Schwierigkeiten.",
-    "director": "Philippe Lacheau",
-    "actors": [
-      "Philippe Lacheau",
-      "Tarek Boudali",
-      "Élodie Fontan"
-    ],
-    "rating": "6.6",
-    "thumb": "https://image.tmdb.org/t/p/w342/u2IgcRl1q5iDoag5xBYR4q51gJW.jpg",
-    "genres_list": [
-      "Komödie",
-      "Familie"
-    ],
-    "channel": "ZDF",
-    "timestamp": 1790984701,
-    "isNew": false,
-    "tmdb_id": 967585,
-    "tmdb_type": "movie",
-    "url_website": "https://www.zdf.de/filme/alibicom-2-movie-100"
-  },
-  {
     "title": "Alice im Weihnachtsland",
     "search": "Alice im Weihnachtsland",
     "year": "2021",
@@ -846,7 +820,7 @@
     "title": "Alles für meine Tochter",
     "search": "Alles für meine Tochter",
     "year": "2013",
-    "video_url": "https://pd-videos.daserste.de/int/2020/05/19/80a735ca-3069-49da-835c-619ca6ab0da5/JOB_533713__sendeton_1280x720-50p-3200kbit.mp4",
+    "video_url": "https://ctv-videos.daserste.de/int/2020/05/19/80a735ca-3069-49da-835c-619ca6ab0da5/JOB_533713__sendeton_1280x720-50p-3200kbit.mp4",
     "plot": "Seit 14 Jahren sind die Lehrerin Ines und der Journalist Boris glücklich verheiratet. Vor allem Ines leidet unter ihrer Kinderlosigkeit. Dann wird sie mit einem Kapitel ihres Lebens konfrontiert, das sie über viele Jahre verdrängt hat: In einer neuen Schülerin erkennt sie ihre Tochter, die sie nach der Geburt zur Adoption freigegeben hatte. Da Boris davon nichts weiß, kann Ines sich nur ihrer besten Freundin Simone anvertrauen. Gegen deren Rat sucht sie auch privat die Nähe zu der nichts ahnenden Schülerin. Dabei gerät sie in einen Konflikt zwischen ihrer Verantwortung als Pädagogin und den immer stärker werdenden Muttergefühlen.",
     "mediathek_desc": "Spielfilm Deutschland 2013\r\n\r\nInes Erdmann (Ann-Kathrin Kramer), Mathematik- und Sportlehrerin an einem Kölner Gymnasium, ist bei ihren Schülern beliebt und führt eine glückliche Ehe mit dem Journalisten Boris (Hans-Jochen Wagner). Seit 14 Jahren sind die beiden verheiratet. Das Einzige, was ihnen zum Glück noch immer fehlt, ist ein Kind. Vor allem Ines macht dies schwer zu schaffen. Trotz der Zuv\n.....",
     "director": "René Heisig",
@@ -863,8 +837,8 @@
       "Familie"
     ],
     "channel": "ARD",
-    "timestamp": 1590626400,
-    "isNew": false,
+    "timestamp": 1794915000,
+    "isNew": true,
     "tmdb_id": 262722,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyMC0wNS0yOF8wMi00MC1NRVNa"
@@ -1550,7 +1524,7 @@
     ],
     "channel": "ZDF",
     "timestamp": 1792451100,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 461928,
     "tmdb_type": "movie"
   },
@@ -1895,7 +1869,7 @@
     "isNew": false,
     "tmdb_id": 570356,
     "tmdb_type": "movie",
-    "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyMS0xMS0yN18xNC0zMC1NRVovYXVkaW9kZXNrcmlwdGlvbg"
+    "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyMS0xMS0yN18xNC0zMC1NRVo"
   },
   {
     "title": "Aus lauter Liebe zu dir",
@@ -2782,6 +2756,35 @@
     "tmdb_id": 1530096,
     "tmdb_type": "movie",
     "url_website": "https://www.zdf.de/filme/bloss-nicht-liebe-movie-100"
+  },
+  {
+    "title": "Blutsauger",
+    "search": "Blutsauger",
+    "original_title": "Blutsauger",
+    "year": "2022",
+    "video_url": "https://manifest-arte.akamaized.net/api/manifest/v1/Generate/1faef4e3-f033-4ebf-90c8-ee57ae76242b/de/XQ+KS+CHEV1/088384-000-A.m3u8",
+    "url_website": "https://www.arte.tv/de/videos/088384-000-A/blutsauger/",
+    "plot": "Ein mittelloser sowjetischer Flüchtling verliebt sich in eine junge, wohlhabende deutsche Vampirin, die mit ihrer ungeschickten Assistentin den Sommer am Meer verbringt.",
+    "mediathek_desc": "1928: Der in Russland in Ungnade gefallene Schauspieler Ljowuschka trifft an der Ostsee auf die Fabrik-Erbin Octavia. Die blutsaugende Kapitalistin und der Proletarier haben Interesse aneinander, doch während es für Ljowuschka um wahre Liebe geht, scheint sich Octavia vor allem nach Zerstreuung zu sehnen ... – Eine \"marxistische Vampirkomödie\" (2020) von Julian Radlmaier",
+    "director": "Julian Radlmaier",
+    "actors": [
+      "Alexandre Koberidze",
+      "Lilith Stangenberg",
+      "Alexander Herbst"
+    ],
+    "rating": "5.6",
+    "thumb": "https://image.tmdb.org/t/p/w342/vVZLIshg9t8aIllvW8iarFBqdTG.jpg",
+    "genres_list": [
+      "Drama",
+      "Fantasy",
+      "Historie",
+      "Horror"
+    ],
+    "channel": "ARTE.DE",
+    "timestamp": 1793665359,
+    "isNew": true,
+    "tmdb_id": 633811,
+    "tmdb_type": "movie"
   },
   {
     "title": "Blutspur Antwerpen",
@@ -3703,6 +3706,26 @@
     "url_website": "https://www.3sat.de/film/spielfilm/dark-encounter-100.html"
   },
   {
+    "title": "Dark Water - Besuch aus dem Jenseits",
+    "search": "Dark Water - Besuch aus dem Jenseits",
+    "original_title": "Dark Water - Besuch aus dem Jenseits",
+    "year": "None",
+    "video_url": "https://api.arte.tv/api/player/v2/config/de/133122-000-A",
+    "url_website": "https://www.arte.tv/de/videos/133122-000-A/dark-water/",
+    "plot": "Zermürbt von Sorgerechtsstreit und Geldnöten zieht Yoshimi mit ihrer Tochter in ein verwahrlostes Mietshaus am Rande von Tokio. Vom Dach dringt Wasser in die Wohnung. Pfützen breiten sich aus ... Der Geist eines kleinen Mädchens, das ganz in der Nähe ertrunken ist, spukt durch die Wohnung. Und das unglückliche Geistermädchen will Yoshimis ungeteilte Aufmerksamkeit. Sofort!",
+    "mediathek_desc": "Zermürbt von Sorgerechtsstreit und Geldnöten zieht Yoshimi mit ihrer Tochter in ein verwahrlostes Mietshaus am Rande von Tokio. Vom Dach dringt Wasser in die Wohnung. Pfützen breiten sich aus ... Der Geist eines kleinen Mädchens, das ganz in der Nähe ertrunken ist, spukt durch die Wohnung. Und das unglückliche Geistermädchen will Yoshimis ungeteilte Aufmerksamkeit. Sofort!",
+    "director": "",
+    "actors": [],
+    "rating": "N/A",
+    "thumb": "placeholder.png",
+    "genres_list": [
+      "Sonstige"
+    ],
+    "channel": "ARTE.DE",
+    "timestamp": 1793398101,
+    "isNew": true
+  },
+  {
     "title": "Darling Companion",
     "search": "Darling Companion",
     "year": "2012",
@@ -3964,7 +3987,7 @@
     "title": "Das Geständnis",
     "search": "Das Geständnis",
     "year": "1970",
-    "video_url": "https://arteptweb-a.akamaihd.net/am/ptweb/033000/033100/033130-000-B_EQ_0_VA-STA_11617162_MP4-1500_AMM-PTWEB-60462670413121_1sV8vL16lHqK.mp4",
+    "video_url": "https://manifest-arte.akamaized.net/api/manifest/v1/Generate/2aa9e53e-1738-4e9f-8e43-e1baa49fd88a/de/XQ+KS+CHEV1/033130-000-B.m3u8",
     "plot": "\"Es ist der Sache des Sozialismus nicht gedient, wenn man einfach all die Prozesse, die Komplotte und die Irrtümer unterschlägt, die sein Gesicht entstellen\", sagt Regisseur Costa-Gavras. Wie Hauptdarsteller Yves Montand empfand er die Diktaturen in Osteuropa als Verrat am sozialistischen Ideal. Sein kritischer Kinohit \"Das Geständnis\" basiert auf dem Fall von Anton London (er heißt hier \"Gérard\"). Der stellvertretende Außenminister der Tschechoslowakei wurde 1951 im Auftrag der Stalin hörigen Partei gefoltert, bis er sich zu Unrecht der Spionage bezichtigte. Anton London fungierte bei dem Film als Berater.",
     "mediathek_desc": "Anton Ludvik (Yves Montand), der stellvertretende Außenminister der Tschechoslowakei, wird in Prag von der Regierung festgenommen. Mit zermürbenden Methoden will man ihn zwingen, Verbrechen gegen den kommunistischen Staat zu gestehen, die er nie begangen hat. - Constantin Costa-Gavras' Film (1970) beschreibt eindrücklich die Prozess-Maschinerie des Stalinismus.",
     "director": "Costa-Gavras",
@@ -5340,7 +5363,7 @@
     ],
     "channel": "ZDF",
     "timestamp": 1792613493,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 1426262,
     "tmdb_type": "movie",
     "url_website": "https://www.zdf.de/filme/das-verschwundene-kind-movie-100"
@@ -5451,7 +5474,7 @@
     "title": "Dennstein & Schwarz - Rufmord",
     "search": "Dennstein & Schwarz - Rufmord",
     "year": "2020",
-    "video_url": "http://ctv-videos.daserste.de/int/2024/08/23/DEGSM877904/DEGSM877904_3048790sendeton__1280x720-50p-3200kbit.mp4",
+    "video_url": "https://pd-videos.daserste.de/int/2024/08/23/DEGSM877904/DEGSM877904_3048790sendeton__1280x720-50p-3200kbit.mp4",
     "plot": "Therese Schwarz vertritt den mit Paula Dennstein sehr gut befreundeten Politiker Konrad Wagner, der von einer Zeitung an den #MeToo-Pranger gestellt wurde. Deshalb passt der überraschende Besuch ihrer kleinen Schwester Marita auch so gar nicht in ihr Konzept. Noch dazu, wo Marita zusammen mit Ferdinand durch eine Cannabis-Geschichte in heiklen Polizeikontakt kommt. Für Konrads Verteidigung ist es wichtig den Verleumder auszumachen, doch das ist ein Wettlauf gegen die Zeit, da die Landtagswahl vor der Türe steht…",
     "mediathek_desc": "Spielfilm Deutschland/Österreich 2020\r\n\r\nAuf Frauenpower setzen \"Dennstein & Schwarz\" als Markenzeichen ihrer Anwaltskanzlei. Der neue Fall verspricht viel Publicity, denn sie vertreten den aufstrebenden Politiker, der nun durch eine Zeitungsstory als Grapscher am Pranger steht. \r\n\r\nMit Maria Happel, Martina Ebm, Manuel Rubey, Nele Kiper u.a. | Buch: Konstanze Breitebner | Regie: Michael Rowitz",
     "director": "Michael Rowitz",
@@ -6355,6 +6378,32 @@
     "url_website": "https://www.3sat.de/film/spielfilm/der-mann-aus-laramie-100.html"
   },
   {
+    "title": "Der Mann aus dem Westen",
+    "search": "Der Mann aus dem Westen",
+    "original_title": "Der Mann aus dem Westen",
+    "year": "1958",
+    "video_url": "https://manifest-arte.akamaized.net/api/manifest/v1/Generate/00c6fb0b-bf42-4872-ac65-4c1197596c35/de/XQ+KS+CHEV1/006122-000-B.m3u8",
+    "url_website": "https://www.arte.tv/de/videos/006122-000-A/der-mann-aus-dem-westen/",
+    "plot": "Als der Zug, in dem auch der ehemalige Outlaw Link Jones mitfährt, ausgeraubt wird, kommt es zur unvermuteten Wiederbegegnung mit seiner alten Gang. Dock Tobin, der sadistische und halbverrückte Anführer, hatte Link vor zwanzig Jahren wie seinen Sohn behandelt und will ihn nun wieder in seine Bande zwingen. Um zu überleben, muss Link sein früheres Leben wieder aufnehmen - sein Leben als Killer. Was einmal seine Familie war, wird nun seine Hölle...",
+    "mediathek_desc": "1874, im amerikanischen Westen: Link Jones, ein gutbürgerlicher Familienvater, sieht sich plötzlich von seiner fragwürdigen Vergangenheit eingeholt. Als Opfer eines Zugüberfalls gerät er mit einer jungen Frau und einem Spieler in die Gewalt einer Bande, der er früher selbst angehörte. Western aus dem Jahr 1958 von Anthony Mann nach dem Roman von Will C. Brown, mit Gary Cooper.",
+    "director": "Anthony Mann",
+    "actors": [
+      "Gary Cooper",
+      "Julie London",
+      "Lee J. Cobb"
+    ],
+    "rating": "6.6",
+    "thumb": "https://image.tmdb.org/t/p/w342/jaJQS26X7Q9d9OQfM9J6RI7QVR6.jpg",
+    "genres_list": [
+      "Western"
+    ],
+    "channel": "ARTE.DE",
+    "timestamp": 1793042056,
+    "isNew": true,
+    "tmdb_id": 14674,
+    "tmdb_type": "movie"
+  },
+  {
     "title": "Der Mann, der alles kann",
     "search": "Der Mann, der alles kann",
     "year": "2012",
@@ -6584,7 +6633,7 @@
     ],
     "channel": "ARD",
     "timestamp": 1792574400,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 494914,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyNS0wNi0xNF8xNC0wMC1NRVNa"
@@ -6959,7 +7008,7 @@
     "title": "Der Sternwanderer",
     "search": "Der Sternwanderer",
     "year": "2007",
-    "video_url": "https://arteptweb-a.akamaihd.net/am/ptweb/101000/101300/101328-000-A_EQ_0_VA-STA_11597642_MP4-1500_AMM-PTWEB-60633645469798_16HtCy.mp4",
+    "video_url": "https://arteptweb-a.akamaihd.net/am/ptweb/101000/101300/101328-000-A_EQ_0_VA-STMA_11597646_MP4-1500_AMM-PTWEB-60633549455797_16HtHp.mp4",
     "plot": "Der junge Engländer Tristan hält um die Hand von Victoria an. Er verspricht, ihr eine Sternschnuppe zu Füßen zu legen. Dazu bricht er in das durch eine Mauer getrennte magische Königreich Stormhold auf und findet den gefallenen Stern Yvaine. Doch die Hexe Lamia will ihr Herz und Thronfolger Septimus ihren Schmuck. Bei der abenteuerlichen Flucht vor den Verfolgern sind Gefährten rar gesät. Nur der tuntige Captain Shakespeare ist auf ihrer Seite.",
     "mediathek_desc": "Wall ist ein verschlafenes englisches Dorf. Hier gibt der junge Tristan Thorne dem hübschesten Mädchen, dessen Liebe er zu gewinnen hofft, ein gewagtes Versprechen: Er wird ihr einen herabgefallenen Stern bringen. Dazu muss er jedoch gegen alle Verbote verstoßen ... – Verfilmung (2007) des gleichnamigen Romans von Neil Gaiman. Regie: Matthew Vaughn.",
     "director": "Matthew Vaughn",
@@ -8815,6 +8864,33 @@
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyMi0xMi0yNF8wMS0zMC1NRVo"
   },
   {
+    "title": "Die Kinder der anderen",
+    "search": "Die Kinder der anderen",
+    "original_title": "Die Kinder der anderen",
+    "year": "2022",
+    "video_url": "https://manifest-arte.akamaized.net/api/manifest/v1/Generate/cee0259d-a3da-4cb6-81ea-3513cf49dd6c/de/XQ+KS+CHEV1/130949-000-A.m3u8",
+    "url_website": "https://www.arte.tv/de/videos/130949-000-A/die-kinder-der-anderen/",
+    "plot": "Rachel liebt ihr Leben – ihre Schüler, ihre Freunde, ihren Ex und ihren Gitarrenunterricht. Als sie sich in Ali verliebt, wächst ihr dessen vierjährige Tochter Leila sehr ans Herz. Sie bringt sie ins Bett, kümmert sich um sie und liebt sie wie eine Mutter … was sie jedoch nicht ist. Noch nicht. Rachel ist 40. Der Wunsch nach einer eigenen Familie wird immer stärker – und die Uhr tickt. Ist es zu spät?",
+    "mediathek_desc": "Rachel ist 40, kinderlos und glücklich verliebt in Ali. Mit ihm tritt auch seine kleine Tochter Leïla in ihr Leben, zu der sie eine enge Verbindung aufbaut. Je mehr Rachel Teil dieser Familie wird, desto bewusster wird ihr der eigene Kinderwunsch sowie ihre fragile Rolle in Leïlas Leben. \"Die Kinder der anderen\", ein Drama von Rebecca Zlotowski mit Virginie Efira",
+    "director": "Rebecca Zlotowski",
+    "actors": [
+      "Virginie Efira",
+      "Roschdy Zem",
+      "Chiara Mastroianni"
+    ],
+    "rating": "6.7",
+    "thumb": "https://image.tmdb.org/t/p/w342/bZk6lws4uhKjcvpTisNVfulGBNS.jpg",
+    "genres_list": [
+      "Drama",
+      "Komödie"
+    ],
+    "channel": "ARTE.DE",
+    "timestamp": 1793819700,
+    "isNew": true,
+    "tmdb_id": 803694,
+    "tmdb_type": "movie"
+  },
+  {
     "title": "Die Kinder meiner Braut",
     "search": "Die Kinder meiner Braut",
     "year": "2004",
@@ -9393,34 +9469,6 @@
     "tmdb_id": 925459,
     "tmdb_type": "movie",
     "url_website": "https://www.zdf.de/filme/die-moerder-meines-sohnes-movie-100"
-  },
-  {
-    "title": "Die Nacht der Creeps",
-    "search": "Die Nacht der Creeps",
-    "original_title": "Die Nacht der Creeps",
-    "year": "1986",
-    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/26/10/261025_sony_0125_sendung_nsf/1/261025_sony_0125_sendung_nsf_a3a4_3360k_p36v17.mp4",
-    "url_website": "https://www.zdf.de/filme/die-nacht-der-creeps-movie-100",
-    "plot": "In einer Nacht, in der es für die meisten Jugendlichen der Stadt vor allem ums Feiern geht, kommen seltsame Wesen von allen unbemerkt auf die Erde. Sie sind klein und ähneln ein wenig normalen Würmern, sind jedoch tödlich. Die Studenten bemerken sie nicht, denn sie gelangen durch den Mond ihrer Opfer in den Körper und nisten sich daraufhin im Gehirn ihrer Wirte ein. Dieses verwenden sie als Brutstätte und können so sogar Tote wieder zu vermeintlichem Leben erwecken. Als die Studenten die Gefahr bemerken, ist es bereits zu spät und so ist ihre einzige Chance, sich mit Schrotflinte und Flammenwerfer gegen die bereits infizierten Menschen zur Wehr zu setzen. Der Kampf gegen die sogenannten Creeps um die Zukunft der Menschheit beginnt.",
-    "mediathek_desc": "Die Studenten Chris und Cynthia tauen versehentlich einen eingefrorenen Studenten aus dem Jahr 1959 auf – und entfesseln damit schleimige Aliens, die Menschen in Zombies verwandeln.",
-    "director": "Fred Dekker",
-    "actors": [
-      "Jason Lively",
-      "Steve Marshall",
-      "Jill Whitlow"
-    ],
-    "rating": "6.8",
-    "thumb": "https://image.tmdb.org/t/p/w342/1JhLkE5MNKLzcuAO2BoqTZC4ejT.jpg",
-    "genres_list": [
-      "Horror",
-      "Komödie",
-      "Sci-Fi"
-    ],
-    "channel": "ZDFneo",
-    "timestamp": 1793052668,
-    "isNew": true,
-    "tmdb_id": 15762,
-    "tmdb_type": "movie"
   },
   {
     "title": "Die Nacht der Jäger",
@@ -10104,6 +10152,33 @@
     "tmdb_id": 302150,
     "tmdb_type": "movie",
     "url_website": "https://www.3sat.de/film/spielfilm/die-stunde-des-killers-100.html"
+  },
+  {
+    "title": "Die Sünderin",
+    "search": "Die Sünderin",
+    "original_title": "Die Sünderin",
+    "year": "1951",
+    "video_url": "https://manifest-arte.akamaized.net/api/manifest/v1/Generate/8475dad8-b7ac-4c44-ad43-6cdb21177058/de/XQ+KS+CHEV1/132058-000-A.m3u8",
+    "url_website": "https://www.arte.tv/de/videos/132058-000-A/die-suenderin/",
+    "plot": "Marina ist schön und verführerisch. Mit 14 Jahren wird sie von den Eltern allein gelassen. Ihr Halbbruder nimmt sich seine Schwester zur bezahlten Geliebten. Das ist der Anfang ihrer Karriere als Prostituierte. Marina gefällt das luxuriöse Leben - bis sie den Maler Alexander kennenlernt. Zum ersten Mal erfährt sie die wahre Liebe. Doch Alexander droht zu erblinden. Nur eine teure Operation kann ihn retten. Marina steht vor einer schweren Entscheidung ...",
+    "mediathek_desc": "Im Erscheinungsjahr 1951 sorgte \"Die Sünderin\" in der jungen Bundesrepublik Deutschland für einen Skandal: Hildegard Knef spielt die Prostituierte Marina, die durch ihre Liebe zu dem unheilbar kranken Maler Alexander, gespielt von Gustav Fröhlich, \"geläutert\" wird. Die Thematisierung von Prostitution, Sterbehilfe und Suizid war ein Tabubruch.",
+    "director": "Willi Forst",
+    "actors": [
+      "Hildegard Knef",
+      "Gustav Fröhlich",
+      "Änne Bruck"
+    ],
+    "rating": "6.1",
+    "thumb": "https://image.tmdb.org/t/p/w342/kdiQDHqh3u4ZzOGTWbO2M48afvk.jpg",
+    "genres_list": [
+      "Drama",
+      "Romanze"
+    ],
+    "channel": "ARTE.DE",
+    "timestamp": 1793646900,
+    "isNew": true,
+    "tmdb_id": 4467,
+    "tmdb_type": "movie"
   },
   {
     "title": "Die Tochter",
@@ -11648,60 +11723,6 @@
     "url_website": "https://www.3sat.de/film/spielfilm/edgar-wallace-das-indische-tuch-106.html"
   },
   {
-    "title": "Edgar Wallace: Der Frosch mit der Maske",
-    "search": "Edgar Wallace: Der Frosch mit der Maske",
-    "year": "1983",
-    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/20/04/200412_derfroschmitdermaske_ewa/10/200412_derfroschmitdermaske_ewa_3360k_p36v15.mp4",
-    "plot": "Es ist Nacht auf Marks Priory, dem einsam gelegenen Landsitz der Adelsfamilie Lebanon. Ein Unbekannter schreitet durch den dunklen Park. Im Schloss ist alles still, allerdings hat Aisla Crane, die Nichte der herrschsüchtigen Lady Lebanon, einen unruhigen Schlaf. Plötzlich ertönt ein gellender Schrei. Wenig später findet man William Studd, den Chauffeur des jungen Lord Willie, tot im Park. Das Motiv des Mordes ist unklar, zumal es zunächst so aussieht, als ob der Tote ein Mann ohne Feinde war.  Wie Chief Superintendent Tanner dann jedoch herausfindet, spricht das Tatwerkzeug dagegen: Es handelt sich um ein indisches Tuch, mit dem in seinem Herkunftsland früher Feinden durch Erwürgen der Garaus gemacht wurde.",
-    "mediathek_desc": "\"Der Frosch mit der Maske\" ist Anführer einer Verbrecherorganisation.",
-    "director": "Christopher Menaul",
-    "actors": [
-      "Virginia McKenna",
-      "Warren Clarke",
-      "Tim Woodward"
-    ],
-    "rating": "N/A",
-    "thumb": "https://image.tmdb.org/t/p/w342/l6CF60tKqfoVO6TMELV5hTAsHIY.jpg",
-    "genres_list": [
-      "Krimi",
-      "Drama",
-      "TV-Film"
-    ],
-    "channel": "ZDFneo",
-    "timestamp": 1791985126,
-    "isNew": false,
-    "tmdb_id": 656491,
-    "tmdb_type": "movie",
-    "url_website": "https://www.zdf.de/filme/der-frosch-mit-der-maske-movie-100"
-  },
-  {
-    "title": "Edgar Wallace: Der Mann mit dem Glasauge",
-    "search": "Edgar Wallace: Der Mann mit dem Glasauge",
-    "year": "1969",
-    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/25/01/250103_0435_sendung_ewa/1/250103_0435_sendung_ewa_3360k_p36v17.mp4",
-    "plot": "In einem Londoner Hotel wird ein Mann tot aufgefunden. Das Messer steckt noch fest in der Brust des Opfers, in der Jackentasche findet Inspektor Perkins merkwürdigerweise ein Glasauge. Kurt darauf geschieht ein zweiter, rätselhafter Mord: Eine stadtbekannte Tänzerin des Las Vegas Girls, die im Londoner Odeon-Theater auftreten, wird vergiftet. Gibt es einen Zusammenhang zwischen der hübschen Tänzerin und dem Hotelgast? Inspektor Perkins und seine Kollegen stehen unter Zeitdruck. Der \"Mann mit dem Glasauge\" schlägt immer wieder tödlich zu. Eine erste Spur führt Scotland Yard in einen Billardclub, wo man als Eintrittsberechtigung ein Glasauge vorweisen muss...",
-    "mediathek_desc": "Die Tänzerin Leila stirbt im Theater durch eine giftige Maske. Inspektor Perkins schaltet sich ein.",
-    "director": "Alfred Vohrer",
-    "actors": [
-      "Horst Tappert",
-      "Karin Hübner",
-      "Hubert von Meyerinck"
-    ],
-    "rating": "5.5",
-    "thumb": "https://image.tmdb.org/t/p/w342/oXPCqvQQRlNwwsqQGBI0qBzLm0Y.jpg",
-    "genres_list": [
-      "Krimi",
-      "Drama",
-      "Horror"
-    ],
-    "channel": "ZDFneo",
-    "timestamp": 1791985102,
-    "isNew": false,
-    "tmdb_id": 100124,
-    "tmdb_type": "movie",
-    "url_website": "https://www.zdf.de/filme/der-mann-mit-dem-glasauge-movie-100"
-  },
-  {
     "title": "Edgar Wallace: Der Mönch mit der Peitsche",
     "search": "Edgar Wallace: Der Mönch mit der Peitsche",
     "year": "1983",
@@ -11806,31 +11827,6 @@
     "tmdb_id": 9633,
     "tmdb_type": "movie",
     "url_website": "https://www.3sat.de/film/spielfilm/edgar-wallace-die-toten-augen-von-london-100.html"
-  },
-  {
-    "title": "Edgar Wallace: Im Banne des Unheimlichen",
-    "search": "Edgar Wallace: Im Banne des Unheimlichen",
-    "year": "1968",
-    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/25/01/250103_0600_sendung_ewa/1/250103_0600_sendung_ewa_3360k_p36v17.mp4",
-    "plot": "Der bei einem Flugzeugabsturz verstorbene Sir Oliver Ramsey wird zu Grabe getragen, als ein unheimliches Lachen aus dem Sarg ertönt. Sein Bruder, Sir Cecil, glaubt nicht, dass sein Bruder wirklich tot ist, sondern hält ihn vielmehr für den Mörder des Familienanwalts Dr. Merryl und fürchtet um das eigene Leben. Inspektor Higgins und die Journalistin Peggy Ward entdecken einige Intrigen um Sir Cecil, der dem Wahnsinn immer näher ist.",
-    "mediathek_desc": "Als Sir Oliver Ramsey beerdigt wird, ertönt aus dem Sarg ein unheimliches Lachen.",
-    "director": "Alfred Vohrer",
-    "actors": [
-      "Joachim Fuchsberger",
-      "Siw Mattson",
-      "Hubert von Meyerinck"
-    ],
-    "rating": "6.5",
-    "thumb": "https://image.tmdb.org/t/p/w342/uXdlXaaRvMkyZKnbAcPfJMPsG4g.jpg",
-    "genres_list": [
-      "Krimi"
-    ],
-    "channel": "ZDFneo",
-    "timestamp": 1791985069,
-    "isNew": false,
-    "tmdb_id": 70538,
-    "tmdb_type": "movie",
-    "url_website": "https://www.zdf.de/filme/im-banne-des-unheimlichen-movie-100"
   },
   {
     "title": "Ehrbare Ganoven",
@@ -12196,7 +12192,7 @@
     ],
     "channel": "ARD",
     "timestamp": 1792493700,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 370403,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2FyZC5kZS9wbGFuQVJEX2I3MjVmYjI3LWFjMTctNGZmNy1hMGY2LThhOTFhOWY3NjMzM19nYW56ZVNlbmR1bmc"
@@ -12231,7 +12227,7 @@
     "title": "Ein Mann zuviel",
     "search": "Ein Mann zuviel",
     "year": "1967",
-    "video_url": "https://arteptweb-a.akamaihd.net/am/ptweb/073000/073000/073021-000-A_EQ_0_VA-STA_11617278_MP4-1500_AMM-PTWEB-60510725467144_kVrdm16lIvz.mp4",
+    "video_url": "https://manifest-arte.akamaized.net/api/manifest/v1/Generate/0b9ff0b8-f2c3-4730-a397-a803c4296d23/de/XQ+KS+CHEV1/073021-000-A.m3u8",
     "plot": "Während des Zweiten Weltkriegs werden mit einer Blitz-Befreiungsaktion aus einem deutschen Gefangenenlager zwölf zum Tode verurteilte französische Widerstandskämpfer der Résistance gerettet. Nach der geglückten Aktion, die von Cazal geleitet wurde, stellt sich heraus, dass sich noch ein dreizehnter Mann unter den Entflohenen befindet. Da er deutsche Stiefel trägt und seine Identität nicht feststeht, wird er als Gefangener mitgenommen.",
     "mediathek_desc": "Frankreich, 1943: Eine Gruppe französischer Rebellen unternimmt eine gefährliche Rettungsaktion, um zwölf zum Tode verurteilte Gefangene aus einer deutschen Stellung zu befreien. Bei der Zählung der Befreiten fällt auf: Man hat 13 Gefangene befreit. Doch welcher ist der Mann, der zu viel ist? Was sind seine Absichten?",
     "director": "Costa-Gavras",
@@ -12718,6 +12714,32 @@
     "tmdb_id": 335941,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyMy0wNy0wNl8wMS01MC1NRVNa"
+  },
+  {
+    "title": "Eine Frage der Ehre",
+    "search": "Eine Frage der Ehre",
+    "original_title": "Eine Frage der Ehre",
+    "year": "1992",
+    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/25/03/250315_sony_2015_sendung_nsf/1/250315_sony_2015_sendung_nsf_3360k_p36v17.mp4",
+    "url_website": "https://www.zdf.de/video/filme/eine-frage-der-ehre-movie-100/eine-frage-der-ehre-110",
+    "plot": "Zwei Soldaten der US-Marines-Basis in Guantanamo Bay, Kuba, werden des Mordes an einem Kameraden angeklagt. Die beiden beteuern, sie hätten dem Opfer nur auf Befehl von oben eine Abreibung verpassen wollen. Dem jungen Militäranwalt Daniel Kaffee, der zeitlebens im Schatten seines Vaters stand, sieht sich einem scheinbar übermächtigen Gegner gegenüber: Colonel Jessep führt sein Regiment mit absolutistischer Härte. Im Gerichtssaal kommt es zum Aufeinandertreffen der beiden Gegenspieler.",
+    "mediathek_desc": "Zwei Soldaten der US-Marine stehen vor Gericht. Sie sollen während einer Disziplinierungsmaßnahme einen Kameraden ermordet haben. Der junge Militäranwalt Daniel Kaffee soll sie verteidigen.",
+    "director": "Rob Reiner",
+    "actors": [
+      "Tom Cruise",
+      "Jack Nicholson",
+      "Demi Moore"
+    ],
+    "rating": "7.6",
+    "thumb": "https://image.tmdb.org/t/p/w342/bF9SSLOzTWhBOdHdooWz4oV8yVi.jpg",
+    "genres_list": [
+      "Drama"
+    ],
+    "channel": "ZDFneo",
+    "timestamp": 1577932800,
+    "isNew": false,
+    "tmdb_id": 881,
+    "tmdb_type": "movie"
   },
   {
     "title": "Eine Frau mit berauschenden Talenten",
@@ -14092,6 +14114,32 @@
     "url_website": "https://www.3sat.de/film/spielfilm/eyjafjallajoekull---der-unaussprechliche-vulkanfilm-100.html"
   },
   {
+    "title": "Fabian",
+    "search": "Fabian",
+    "original_title": "Fabian",
+    "year": "1980",
+    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/26/11/261103_0015_sendung_spf/1/261103_0015_sendung_spf_3360k_p36v17.mp4",
+    "url_website": "https://www.zdf.de/video/filme/spielfilm-104/fabian-116",
+    "plot": "Fabian verdient seinen Lebensunterhalt mehr schlecht als recht als Reklametexter einer Zigarettenfirma. Ansonsten lebt er unbekümmert in den Tag hinein. Die Nächte verbringt er gemeinsam mit seinem besten Freund Labude in Berlins Clubs und Bars. Er lernt die Studentin Cornelia kennen und die beiden verlieben sich ineinander. Umso größer die Ernüchterung, als Fabian unerwartet seine Arbeit verliert. Bisher hat er die Arbeitslosen auf den Straßen von Berlin kaum wahrgenommen, jetzt zählt er selbst dazu. Cornelia bekommt ein großzügiges Angebot von einem Filmproduzenten und verlässt Fabian, um Karriere zu machen. Dann nimmt sich auch noch Labude, bei den Nazis als Linker verschrien, das Leben. Fabian verlässt Berlin und kehrt zu seiner Mutter in seine Heimatstadt zurück. Dort geht er - der Nichtschwimmer - bei dem Versuch, ein Kind vor dem Ertrinken zu retten, buchstäblich unter...",
+    "mediathek_desc": "Berlin, um 1930. Fabian arbeitet als Reklametexter für eine Zigarrenfirma und lebt ansonsten unbekümmert in den Tag hinein.",
+    "director": "Wolf Gremm",
+    "actors": [
+      "Hans Peter Hallwachs",
+      "Brigitte Mira",
+      "Hermann Lause"
+    ],
+    "rating": "5.0",
+    "thumb": "https://image.tmdb.org/t/p/w342/lYWwyu47RrYeBIu4qq2p71irLYN.jpg",
+    "genres_list": [
+      "Drama"
+    ],
+    "channel": "ZDF",
+    "timestamp": 1793661300,
+    "isNew": true,
+    "tmdb_id": 197973,
+    "tmdb_type": "movie"
+  },
+  {
     "title": "Familie Lotzmann auf den Barrikaden",
     "search": "Familie Lotzmann auf den Barrikaden",
     "year": "2016",
@@ -14832,7 +14880,7 @@
     "title": "Frauchen und die Deiwelsmilch",
     "search": "Frauchen und die Deiwelsmilch",
     "year": "2014",
-    "video_url": "http://ctv-videos.daserste.de/int/2020/12/29/2e7c50a9-d775-4dd1-8fad-4bc62525ef17/JOB_506635__sendeton_1280x720-50p-3200kbit.mp4",
+    "video_url": "https://pd-videos.daserste.de/int/2020/12/29/2e7c50a9-d775-4dd1-8fad-4bc62525ef17/JOB_506635__sendeton_1280x720-50p-3200kbit.mp4",
     "plot": "Die lebenslustige Miri ist ein Genie im Umgang mit Zahlen. Dieses Talent lebt sie in ihrem Job in der Stadtbank des kleinen Örtchens Hattenstein voll aus, bei dem sie ihrem oftmals überforderten Chef tatkräftig unter die Arme greift. Als ein örtlicher Winzer in einem Waldstück tot aufgefunden wird, entwickelt sie zudem ein Faible für Detektivarbeit. Der Polizist Nils, einer ihrer alten Schulkameraden, glaubt an einen plötzlichen Herzinfarkt. Doch Miris außerordentliche Kombinationsgabe sagt ihr, dass an dem Fall etwas faul ist. Moralisch unterstützt vom herrenlosen Dackel Frauchen kommt sie einem groß angelegten Verbrechen auf die Spur, in das sogar der Bürgermeister der Stadt  verwickelt zu sein scheint.",
     "mediathek_desc": "Spielfilm Deutschland 2014 \r\n\r\n\"Blond heißt nicht gleich blöd\", das müssen Bürgermeister Runge und sein Adlatus Kai erfahren, als sie versuchen, ein international verzweigtes Geschäft über die Stadtkasse abzuwickeln. \r\n\r\nMit Daniela Katzenberger, Klaus Zmorek, Carlos Lobo, Tim Morten Uhlenbrock u. a. | Buch: Holger Badura I Regie: Thomas Bohn",
     "director": "Thomas Bohn",
@@ -15506,6 +15554,33 @@
     "tmdb_id": 311250,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyMC0wNS0xNl8xNC0zMC1NRVNa"
+  },
+  {
+    "title": "Gas-Oil",
+    "search": "Gas-Oil",
+    "original_title": "Gas-Oil",
+    "year": "1955",
+    "video_url": "https://manifest-arte.akamaized.net/api/manifest/v1/Generate/82451d8f-aec9-4219-9a67-cae22563cde7/de/XQ+KS+CHEV1/035043-000-B.m3u8",
+    "url_website": "https://www.arte.tv/de/videos/035043-000-A/gas-oil/",
+    "plot": "Der Lkw-Fahrer Jean Chape und die Lehrerin Alice sind ein Liebespaar. Am frühen Morgen bricht er bei ihr auf, um sich mit seinem Fünftonner erneut auf den Weg zu machen. Doch während der Fahrt spürt er plötzlich etwas unter den Reifen seines LKWs. Er nimmt an, er habe jemanden überfahren, und alarmiert die Polizei. Deren Untersuchungen ergeben jedoch, dass das Opfer ein gesuchter Krimineller war – und bereits tot auf der Straße lag, als Chape ihn überrollte. Von aller Schuld freigesprochen, macht er sich so auf den Heimweg. Plötzlich wird er jedoch von einem Auto verfolgt. Die Kumpane des Toten glauben nämlich, dass sich in Chapes LKW ihr Diebesgut befindet. In seiner Not ruft der bedrohte LKW-Fahrer seine Fernfahrer-Kollegen zu Hilfe. Die umzingeln die Gangsterbande.",
+    "mediathek_desc": "Der Lastwagenfahrer Jean Chape gerät durch einen Hinterhalt in die unangenehme Gesellschaft einiger Gangster, die in seinem Lkw etwas vermuten, was ihnen gehört – ein Klassiker des Film Noir mit Jean Gabin. Regie: Gilles Grangier.",
+    "director": "Gilles Grangier",
+    "actors": [
+      "Jean Gabin",
+      "Jeanne Moreau",
+      "Gaby Basset"
+    ],
+    "rating": "6.6",
+    "thumb": "https://image.tmdb.org/t/p/w342/hkPyb9mx263dteb2T9gSAwgbhPL.jpg",
+    "genres_list": [
+      "Drama",
+      "Krimi"
+    ],
+    "channel": "ARTE.DE",
+    "timestamp": 1786385675,
+    "isNew": false,
+    "tmdb_id": 67431,
+    "tmdb_type": "movie"
   },
   {
     "title": "Gaza mon amour",
@@ -16862,7 +16937,7 @@
     ],
     "channel": "ARD",
     "timestamp": 1792578600,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 330262,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyNC0wOC0xOF8xNC0xMC1NRVNa"
@@ -16890,7 +16965,7 @@
     ],
     "channel": "ZDF",
     "timestamp": 1792527156,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 73262,
     "tmdb_type": "movie",
     "url_website": "https://www.zdf.de/filme/hell-movie-100"
@@ -16998,7 +17073,7 @@
     "isNew": false,
     "tmdb_id": 265294,
     "tmdb_type": "movie",
-    "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2FyZC5kZS9wbGFuQVJEXzgzNjQyNTY5LTdlNzMtNDZlNy1hYTQ4LTY0N2EzM2FkNDhkNl9nYW56ZVNlbmR1bmcvYXVkaW9kZXNrcmlwdGlvbg"
+    "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2FyZC5kZS9wbGFuQVJEXzgzNjQyNTY5LTdlNzMtNDZlNy1hYTQ4LTY0N2EzM2FkNDhkNl9nYW56ZVNlbmR1bmc"
   },
   {
     "title": "Herzlichen Glückwunsch",
@@ -17769,7 +17844,7 @@
     "title": "Ich liebe meine Familie, ehrlich",
     "search": "Ich liebe meine Familie, ehrlich",
     "year": "1999",
-    "video_url": "https://pd-videos.daserste.de/int/2024/01/31/920c148d-e971-4d6f-97bc-529ab8a8604e/JOB_567962__sendeton_1280x720-50p-3200kbit.mp4",
+    "video_url": "https://ctv-videos.daserste.de/int/2024/01/31/920c148d-e971-4d6f-97bc-529ab8a8604e/JOB_567962__sendeton_1280x720-50p-3200kbit.mp4",
     "plot": "Die Journalistin Julia Schiller hat ihren treulosen Mann Wolf vor die Tür gesetzt, doch ihre halbwüchsigen Töchter Anna und Lena sowie die kecken Zwillinge Anton und Philipp halten sie weiter auf Trab. Als ihre rüstige Tante Isolde sich in ihrem Altersheim als Hobby-Detektivin auf die Spur eines Giftmörders begibt, wittern die Kinder ein Abenteuer und helfen ihr. Doch dann ist Isolde plötzlich ebenfalls verschwunden. Julia macht sich große Sorgen und bittet Wolf noch einmal um Hilfe.",
     "mediathek_desc": "Fernsehfilm Deutschland 1998\r\n\r\nDie selbstbewusste Kölner Fernsehjournalistin Julia Schiller hat ihren untreuen Mann Wolf gerade auf die Straße gesetzt, doch ruhiger ist ihr Leben nicht geworden. Dafür sorgen nicht nur ihre vier Kinder: Lena, ihre Schwester Anna und die Zwillinge Anton und Philipp. Sie vermissen ihren Vater. Aus Rücksicht darauf möchte Julia das Verhältnis zu ihrem neuen Liebhaber\n.....",
     "director": "Stefan Lukschy",
@@ -17785,11 +17860,11 @@
       "TV-Film"
     ],
     "channel": "ARD",
-    "timestamp": 1707958200,
-    "isNew": false,
+    "timestamp": 1794317400,
+    "isNew": true,
     "tmdb_id": 294873,
     "tmdb_type": "movie",
-    "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyNC0wMi0xNV8wMS01MC1NRVo"
+    "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2FyZC5kZS9wbGFuQVJEX2FmODJmY2ZhLTVlMDctNDYyNS04MzM3LTZjMzc5NzE5NGI5N19nYW56ZVNlbmR1bmc"
   },
   {
     "title": "Ich schenk dir einen Seitensprung",
@@ -17817,6 +17892,32 @@
     "tmdb_id": 317264,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyNC0wNi0yNV8xNS0zMC1NRVNa"
+  },
+  {
+    "title": "Ich sehe die Sonne",
+    "search": "Ich sehe die Sonne",
+    "original_title": "Ich sehe die Sonne",
+    "year": "2023",
+    "video_url": "https://manifest-arte.akamaized.net/api/manifest/v1/Generate/a1d44d8e-3116-4397-af40-ddf0ece01530/de/XQ+KS+CHEV1/134103-000-A.m3u8",
+    "url_website": "https://www.arte.tv/de/videos/134103-000-A/ich-sehe-die-sonne/",
+    "plot": "In Georgien stellt der Zweite Weltkrieg ein Dorf auf den Kopf. Die Männer ziehen in den Krieg, und Feldwebel Datiko desertiert, bevor er unbeabsichtigt den Dorftrottel tötet. Während sich an der Front die Trauerfälle häufen, blüht die Liebe zwischen dem jungen Sosoia und Khatia, einem blinden Mädchen, auf. Auf ihrer Suche nach Heilung in Batumi bleibt ihre Zukunft ungewiss, aber sie erkennt, was ihr am wichtigsten ist.",
+    "mediathek_desc": "In Georgien stellt der Zweite Weltkrieg ein Dorf auf den Kopf. Die Männer ziehen in den Krieg, und Feldwebel Datiko desertiert, bevor er unbeabsichtigt den Dorftrottel tötet. Während sich an der Front die Trauerfälle häufen, blüht die Liebe zwischen dem jungen Sosoia und Khatia, einem blinden Mädchen, auf. Auf ihrer Suche nach Heilung in Batumi bleibt ihre Zukunft ungewiss, aber sie erkennt, was ihr am wichtigsten ist.",
+    "director": "Lukas Kotthaus",
+    "actors": [
+      "Emelie Pütz",
+      "Anna Saphira Ronsdorf",
+      "Leonard Dumm"
+    ],
+    "rating": "10.0",
+    "thumb": "https://image.tmdb.org/t/p/w342/1tdXtEqptDa4915dOeg4LvyBNg5.jpg",
+    "genres_list": [
+      "Drama"
+    ],
+    "channel": "ARTE.DE",
+    "timestamp": 1793353964,
+    "isNew": true,
+    "tmdb_id": 1400829,
+    "tmdb_type": "movie"
   },
   {
     "title": "Ich war zuhause, aber",
@@ -18941,8 +19042,8 @@
     "search": "It Follows",
     "original_title": "It Follows",
     "year": "2015",
-    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/25/10/251024_0230_sendung_spf/1/251024_0230_sendung_spf_a1a2_3360k_p36v17.mp4",
-    "url_website": "https://www.zdf.de/video/filme/it-follows-movie-100/it-follows-100",
+    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/25/10/251024_0230_sendung_spf/1/251024_0230_sendung_spf_a3a4_3360k_p36v17.mp4",
+    "url_website": "https://www.zdf.de/filme/it-follows-movie-100",
     "plot": "Die 19-Jährige Jay hat Sex mit Hugh, ihrem Date. Doch hätte sie vorher gewusst, was der Beischlaf für Folgen haben wird, wäre sie nicht zu dem jungen Mann auf den Rücksitz geklettert. Als sie, noch benommen vom Chloroform und an einen Stuhl gefesselt, wieder aufwacht, erklärt ihr Hugh reumütig, dass er einen verstörenden Hintergedanken hatte: Er sei von einem Geist verfolgt worden, den er loswerden und zu diesem Zweck transferieren wollte – ein Ziel, dass er mit dem Sex erreicht habe. Jay glaubt Hugh zunächst nicht, sieht den Geist aber bald mit eigenen Augen, er hat sich in unterschiedlichen Erscheinungen an ihre Fersen geheftet: als nackte Frau, großer Mann und kleines Kind. Um ihn loszuwerden, müsse Jay mit einer anderen Person schlafen. Ob der heimgesuchten jungen Frau ein anderer Ausweg gelingt? Verzweifelt bittet sie ihre Schwester Kelly und ihre Freunde Yara und Paul um Hilfe…",
     "mediathek_desc": "Nach einem One-Night-Stand wird die Studentin Jay von einem Gestaltwandler verfolgt. Doch statt den Fluch durch Sex auf ein neues Opfer zu übertragen, entscheidet sich Jay zur Gegenwehr.",
     "director": "David Robert Mitchell",
@@ -18958,8 +19059,8 @@
       "Mystery"
     ],
     "channel": "ZDF",
-    "timestamp": 1761266400,
-    "isNew": false,
+    "timestamp": 1793273548,
+    "isNew": true,
     "tmdb_id": 270303,
     "tmdb_type": "movie"
   },
@@ -20368,6 +20469,34 @@
     "tmdb_id": 2118,
     "tmdb_type": "movie",
     "url_website": "https://www.3sat.de/film/spielfilm/la-confidential-100.html"
+  },
+  {
+    "title": "La Chimera - Die Grabräuber",
+    "search": "La Chimera - Die Grabräuber",
+    "original_title": "La Chimera - Die Grabräuber",
+    "year": "2023",
+    "video_url": "https://manifest-arte.akamaized.net/api/manifest/v1/Generate/03f96576-40c8-4c1f-ba4a-965dcb4b9377/de/XQ+KS+CHEV1/120361-000-A.m3u8",
+    "url_website": "https://www.arte.tv/de/videos/120361-000-A/la-chimera-die-grabraeuber/",
+    "plot": "Gerade aus dem Gefängnis entlassen und immer noch auf der Suche nach seiner verstorbenen Geliebten Beniamina, trifft der zerknitterte englische Archäologe Arthur wieder auf seine unberechenbare Bande von Tombaroli-Komplizen - ein fröhliches Kollektiv von umherziehenden Grabräubern, die damit überleben, etruskische Gräber zu plündern und die ausgegrabenen antiken Schätze einzuzäunen. Arthur ist jedoch nicht an den Artefakten interessiert; er sucht nach einem legendären Tor zur Unterwelt und zu Beniamina.",
+    "mediathek_desc": "Der Archäologe Arthur kehrt in die Toskana zurück und schließt sich Grabräubern an, die etruskische Schätze aufspüren. Doch Arthur sucht weniger nach Reichtum als nach einer Verbindung zu seiner verstorbenen Geliebten. Alice Rohrwacher verbindet in \"La Chimera\" Abenteuerfilm, Liebesgeschichte und poetisches Märchen zu einer melancholischen Suche nach dem, was verloren scheint.",
+    "director": "Alice Rohrwacher",
+    "actors": [
+      "Josh O'Connor",
+      "Carol Duarte",
+      "Alba Rohrwacher"
+    ],
+    "rating": "7.3",
+    "thumb": "https://image.tmdb.org/t/p/w342/mqACe6rkkV9uxjTzNHfRTyABOID.jpg",
+    "genres_list": [
+      "Drama",
+      "Fantasy",
+      "Komödie"
+    ],
+    "channel": "ARTE.DE",
+    "timestamp": 1793828859,
+    "isNew": true,
+    "tmdb_id": 837335,
+    "tmdb_type": "movie"
   },
   {
     "title": "La Dolce Rita",
@@ -22180,31 +22309,6 @@
     "tmdb_id": 434177,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyNS0wOC0wNF8xNS0zMC1NRVNa"
-  },
-  {
-    "title": "Marlowe",
-    "search": "Marlowe",
-    "year": "2023",
-    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/25/06/250609_2200_sendung_spf/1/250609_2200_sendung_spf_a1a2_3360k_p36v17.mp4",
-    "plot": "Die Geschäfte von Privatdetektiv Philip Marlowe laufen eher schlecht, als die wunderschöne Clare Cavendish mit ihrem Antlitz sein heruntergekommenes Büro erhellt. Sie hat einen Auftrag: Ihr Liebhaber Nico Peterson ist spurlos verschwunden, Marlowe soll ihn finden...",
-    "mediathek_desc": "In Los Angeles soll der Privatdetektiv Philip Marlowe 1939 den Liebhaber einer verführerischen Blondine mit Geld wiederfinden. Dabei lernt er die Schattenseiten Hollywoods kennen.",
-    "director": "Neil Jordan",
-    "actors": [
-      "Liam Neeson",
-      "Diane Kruger",
-      "Jessica Lange"
-    ],
-    "rating": "5.7",
-    "thumb": "https://image.tmdb.org/t/p/w342/9d9Uws9C92MRV4lho9E8KTHtRLG.jpg",
-    "genres_list": [
-      "Krimi"
-    ],
-    "channel": "ZDF",
-    "timestamp": 1791062101,
-    "isNew": false,
-    "tmdb_id": 844417,
-    "tmdb_type": "movie",
-    "url_website": "https://www.zdf.de/filme/marlowe-movie-100"
   },
   {
     "title": "Marmorera",
@@ -24748,7 +24852,7 @@
       "Drama"
     ],
     "channel": "ZDF",
-    "timestamp": 1793225954,
+    "timestamp": 1793690222,
     "isNew": true,
     "tmdb_id": 1481869,
     "tmdb_type": "movie"
@@ -25638,31 +25742,6 @@
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2FyZC5kZS9wbGFuQVJEXzJiNmFkY2YzLTUzODItNGE4NC1iMGE0LTIzMWEyM2Q1YzdlNV9nYW56ZVNlbmR1bmc"
   },
   {
-    "title": "Otto - Der Liebesfilm",
-    "search": "Otto - Der Liebesfilm",
-    "year": "2000",
-    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/22/04/220414_2135_sendung_tto/3/220414_2135_sendung_tto_3360k_p36v15.mp4",
-    "plot": "Aus den unendlichen Tiefebenen Ostfrieslands kommt ein Mann nach Hamburg und klopft ans Tor zur Welt. Trotz umfangreicher Sicherheitsvorkehrungen der zuständigen Katastrofenschutzstellen kann er passieren und nimmt mit einem ahnungslosen Dampfer Kurs auf Amerika, um auch diese Neue Welt zu erobern. Was er hinterläßt ist eine Schneise der Verwüstung, eine Bresche der Verwirrung, eine Milchstraße voll Musik, eine Sackgasse voller Wahnwitze und vielleicht eine Spur zu viel Wortspiele auf Kosten anderer. Doch was das Schlimmste ist: Er hat darüber auch noch einen Film gemacht!",
-    "mediathek_desc": "Ein junger Mann verliebt sich in ein junges Mädchen – könnte so einfach sein. Aber der junge Mann heißt Otto, der Otto aus Ostfriesland. Und das bedeutet nur eines: Chaos.",
-    "director": "Edzard Onneken",
-    "actors": [
-      "Otto Waalkes",
-      "Eva Haßmann",
-      "Reiner Schöne"
-    ],
-    "rating": "5.2",
-    "thumb": "https://image.tmdb.org/t/p/w342/kIiaNNye4iFslWcohJtiqkLyWth.jpg",
-    "genres_list": [
-      "Komödie"
-    ],
-    "channel": "ZDFneo",
-    "timestamp": 1792569948,
-    "isNew": true,
-    "tmdb_id": 9883,
-    "tmdb_type": "movie",
-    "url_website": "https://www.zdf.de/filme/otto---der-liebesfilm-movie-100"
-  },
-  {
     "title": "Pakt der Wölfe - Director's Cut",
     "search": "Pakt der Wölfe - Director's Cut",
     "year": "2001",
@@ -26213,33 +26292,6 @@
     "url_website": "https://www.3sat.de/film/spielfilm/pilgerfahrt-nach-padua-100.html"
   },
   {
-    "title": "Plan A",
-    "search": "Plan A",
-    "year": "2021",
-    "video_url": "https://arteptweb-a.akamaihd.net/am/ptweb/083000/083800/083853-000-A_EQ_0_VOA_11609466_MP4-1500_AMM-PTWEB-80843871561300_1P8jwU16crfZ.mp4",
-    "plot": "Deutschland, 1945: Max hat das Konzentrationslager überlebt, aber seine Frau und seinen Sohn verloren. In seiner Verzweiflung schließt er sich einer jüdischen Brigade an, die Nazi-Verbrecher jagt und tötet. Bald landet er in Nürnberg bei einer Gruppe von Holocaust-Überlebenden um die trauernde Anna und den charismatischen Anführer Abba. Max findet heraus, dass diese die größte Racheaktion der Geschichte planen: Mit einem Giftanschlag soll für jeden ermordeten Juden ein Deutscher sterben. Max muss sich fragen, ob er Teil dieses mörderischen Racheplans werden will …",
-    "mediathek_desc": "Basierend auf einer wahren Geschichte: 1945 plante eine Gruppe jüdischer Holocaust-Überlebender das Trinkwasser in Deutschland zu vergiften und sechs Millionen Deutsche zu töten. Der Film der Brüder Yoav und Doron Paz (2021) erzählt von den Planungen der Geheimoperation \"Plan A\" und erinnert an ein vergessenes Kapitel der Nachkriegsgeschichte.",
-    "director": "Amanda Bowers",
-    "actors": [
-      "August Diehl",
-      "Sylvia Hoeks",
-      "מיכאל אלוני"
-    ],
-    "rating": "6.2",
-    "thumb": "https://image.tmdb.org/t/p/w342/bJxghm8NrGEKSkKtlaUzIL8utz0.jpg",
-    "genres_list": [
-      "Thriller",
-      "Drama",
-      "Historie"
-    ],
-    "channel": "ARTE.DE",
-    "timestamp": 1792174511,
-    "isNew": false,
-    "tmdb_id": 714968,
-    "tmdb_type": "movie",
-    "url_website": "https://www.arte.tv/de/videos/083853-000-A/plan-a/"
-  },
-  {
     "title": "Plan A - Was würdest du tun?",
     "search": "Plan A - Was würdest du tun?",
     "year": "2020",
@@ -26478,7 +26530,7 @@
     "title": "Poison - Eine Liebesgeschichte",
     "search": "Poison - Eine Liebesgeschichte",
     "year": "2024",
-    "video_url": "https://arteptweb-a.akamaihd.net/am/ptweb/109000/109000/109098-000-A_EQ_0_VO-STA_11601038_MP4-1500_AMM-PTWEB-101164295492425_16MCv6.mp4",
+    "video_url": "https://manifest-arte.akamaized.net/api/manifest/v1/Generate/531e92c9-b21b-4ab4-983e-e3bfd7f5d8be/de/XQ+KS+CHEV1/109098-000-A.m3u8",
     "plot": "Einst waren Lucas und Edith verheiratet, doch seit Lucas sie verlassen hat, sind sie sich seit zehn Jahren fremd. Auf Ediths Wunsch hin treffen sie sich auf dem Friedhof, auf dem ihr einziges Kind begraben ist. Während des langen Wartens kommen sie miteinander ins Gespräch, lassen ihre gemeinsame Vergangenheit Revue passieren und entwickeln neue Perspektiven für ihre Zukunft.",
     "mediathek_desc": "Der Tod ihres Sohnes brachte sie einst auseinander und bringt sie heute an seinem Grab wieder zusammen: Edith und Lucas sehen sich nach zehn Jahren Funkstille wieder. Ihr Treffen ist geprägt von alten Wunden, unverarbeiteten Gefühlen und Trauer. Désirée Nosbusch verfilmt in ihrem Regiedebüt ein Theaterstück mit Tim Roth und Trine Dyholm in den Hauptrollen.",
     "director": "Désirée Nosbusch",
@@ -26493,8 +26545,8 @@
       "Thriller"
     ],
     "channel": "ARTE.DE",
-    "timestamp": 1792443751,
-    "isNew": true,
+    "timestamp": 1792443957,
+    "isNew": false,
     "tmdb_id": 983521,
     "tmdb_type": "movie",
     "url_website": "https://www.arte.tv/de/videos/109098-000-A/poison-eine-liebesgeschichte/"
@@ -26633,6 +26685,35 @@
     "url_website": "https://www.3sat.de/film/spielfilm/public-enemy-no-1-todestrieb-100.html"
   },
   {
+    "title": "Pulse",
+    "search": "Pulse",
+    "original_title": "Pulse",
+    "year": "2006",
+    "video_url": "https://manifest-arte.akamaized.net/api/manifest/v1/Generate/66abd462-cc07-4400-9997-d6164fd207aa/de/XQ+KS+CHEV1/046131-000-A.m3u8",
+    "url_website": "https://www.arte.tv/de/videos/046131-000-A/pulse/",
+    "plot": "Mattie ist schockiert: Ihr Freund Josh hat sich umgebracht. Doch als sie Emails mit seinem Absender erhält, wird aus dem Schock schnell nackte Angst. Sie und ihre College-Freunde versuchen, Joshs Computer zu finden und stoßen auf den Bastler Dexter, der von ungewöhnlichen Ereignissen berichtet. Schattenhafte Gestalten kommen und gehen, Geister, die nicht in unsere Welt gehören. Im ganzen Land gibt es immer mehr Selbstmorde, immer mehr Menschen verschwinden oder verhalten sich seltsam. Mattie und Dexter kommen schließlich einem Experiment auf die Spur, das auf schreckliche Weise fehlgeschlagen ist.",
+    "mediathek_desc": "Ein Computerexperte bringt sich um; ein anderer, der die Spuren des Toten im Internet verfolgt, verschwindet einfach. Kann es sein, dass eine Seite im Internet selbst der Auslöser für eine tödliche Seuche ist? Wer sich nicht umbringt, verschwindet in einer Parallelwelt: Einem World Wide Web der Geister. Bis niemand mehr übrig ist.",
+    "director": "Jim Sonzero",
+    "actors": [
+      "Kristen Bell",
+      "Ian Somerhalder",
+      "Christina Milian"
+    ],
+    "rating": "5.1",
+    "thumb": "https://image.tmdb.org/t/p/w342/9ePdNzKVvGHsMMphfS3HeoMvuEX.jpg",
+    "genres_list": [
+      "Horror",
+      "Sci-Fi",
+      "Mystery",
+      "Drama"
+    ],
+    "channel": "ARTE.DE",
+    "timestamp": 1344283857,
+    "isNew": false,
+    "tmdb_id": 9682,
+    "tmdb_type": "movie"
+  },
+  {
     "title": "Rasmus und der Vagabund",
     "search": "Rasmus und der Vagabund",
     "year": "1981",
@@ -26710,6 +26791,34 @@
     "tmdb_id": 500438,
     "tmdb_type": "movie",
     "url_website": "https://www.3sat.de/film/spielfilm/ray--liz-100.html"
+  },
+  {
+    "title": "Rebecca",
+    "search": "Rebecca",
+    "original_title": "Rebecca",
+    "year": "2006",
+    "video_url": "https://secure-manifest-arte.akamaized.net/api/manifest/v1/Generate/0d97fd92-2fca-42a6-84f3-3439af9becff/de/XQ+KS+CHEV1/025287-000-C.m3u8",
+    "url_website": "https://www.arte.tv/de/videos/025287-000-A/rebecca/",
+    "plot": "Monte Carlo in den 20er Jahren des vorigen Jahrhunderts. In einem mondänen Hotel lernt ein junges, unbedarftes Mädchen, die in Begleitung einer reichen Amerikanerin reist, den faszinierenden englischen Adeligen Maxim de Winter kennen. Bereits nach wenigen Tagen heiratet sie Maxim und nach der Hochzeitsreise zieht das Paar auf Maxim de Winters legendären Landsitz Manderley an der Küste Cornwalls.Der Geist Rebeccas, die ein Jahr zuvor beim Segeln ertrank, ist allgegenwärtig. Die ihr ergebene Haushälterin Mrs. Danvers pflegt ihr Andenken in jedem Winkel des Hauses und straft Maxims neue Frau mit kalter Verachtung.  Doch über Rebeccas Tod liegt ein düsteres Geheimnis....",
+    "mediathek_desc": "Eine junge, schüchterne Amerikanerin lernt in Monte Carlo den melancholischen Maxim de Winter kennen. Der adelige Witwer macht ihr einen Heiratsantrag, den sie freudig annimmt. Doch als die beiden auf de Winters Landgut Manderley ziehen, ist seine verstorbene erste Frau Rebecca allgegenwärtig. \"Rebecca\", Alfred Hitchcocks oscarprämierter Psychothriller aus dem Jahr 1940",
+    "director": "Francesca Zambello",
+    "actors": [
+      "Christina Patten",
+      "Pia Douwes",
+      "Jan Ammann"
+    ],
+    "rating": "10.0",
+    "thumb": "https://image.tmdb.org/t/p/w342/kwSdWe05IuTl0x97VRX0KJ5uCma.jpg",
+    "genres_list": [
+      "Musik",
+      "Drama",
+      "Mystery"
+    ],
+    "channel": "ARTE.DE",
+    "timestamp": 1793560510,
+    "isNew": true,
+    "tmdb_id": 954936,
+    "tmdb_type": "movie"
   },
   {
     "title": "Reclaim - Auf eigenes Risiko",
@@ -26888,6 +26997,33 @@
     "tmdb_id": 279728,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2FyZC5kZS9wbGFuQVJEX2YwMjc4MTBmLTU1ZDctNDI3MC05MDQxLTE5N2UzYjlkMDkyZl9nYW56ZVNlbmR1bmc"
+  },
+  {
+    "title": "Ring - Das Original",
+    "search": "Ring - Das Original",
+    "original_title": "Ring - Das Original",
+    "year": "1998",
+    "video_url": "https://api.arte.tv/api/player/v2/config/de/133131-000-A",
+    "url_website": "https://www.arte.tv/de/videos/133131-000-A/ring-das-original/",
+    "plot": "In japanischen Schülerkreisen kursiert die Legende von einem geheimnisvollen Videoband, dessen Genuss genau eine Woche später zum unvermeidlichen Ableben des Betrachters führt. Nach dem von rätselhaften Umständen begleiteten Tod ihrer schulpflichtigen Cousine beschließt Zeitungsreporterin Keiko im Angesicht neuer Gerüchte, die Angelegenheit zum Gegenstand einer Story zu machen. Als sie dabei selbst in Besitz des Tapes gerät, beginnt auch für sie die Uhr zu ticken. Gemeinsam mit Ex-Mann Ryuji bricht sie auf, das Geheimnis vor Ablauf der Woche zu lüften …",
+    "mediathek_desc": "Jugendliche, die ein Video ansehen, sterben nach sieben Tagen. Reporterin Reiko geht der Sache auf den Grund. Bald scheint auch sie vom Tod bedroht. Um ihr Leben zu retten, muss sie das Geheimnis des Videos lüften. – Stilprägende Literaturverfilmung vom japanischen Regisseur Hideo Nakata aus dem Jahr 1998, die zu einem weltweiten Phänomen wurde.",
+    "director": "中田秀夫",
+    "actors": [
+      "松嶋菜々子",
+      "Hiroyuki Sanada",
+      "大高力也"
+    ],
+    "rating": "7.1",
+    "thumb": "https://image.tmdb.org/t/p/w342/aHCED5BaXin2l5k2gu97xevRkQ1.jpg",
+    "genres_list": [
+      "Horror",
+      "Thriller"
+    ],
+    "channel": "ARTE.DE",
+    "timestamp": 1793222366,
+    "isNew": true,
+    "tmdb_id": 2671,
+    "tmdb_type": "movie"
   },
   {
     "title": "Rivale",
@@ -27259,7 +27395,7 @@
     "title": "Sanfte Monster",
     "search": "Sanfte Monster",
     "year": "2023",
-    "video_url": "https://arteptweb-a.akamaihd.net/am/ptweb/097000/097400/097471-000-A_EQ_0_VA-STA_11617322_MP4-1500_AMM-PTWEB-101102715496807_16lQlZ.mp4",
+    "video_url": "https://manifest-arte.akamaized.net/api/manifest/v1/Generate/7f8813a3-3cc7-41ad-ad28-7488bd526b27/de/XQ+KS+CHEV1/097471-000-A.m3u8",
     "plot": "Edina, eine Bodybuilderin, ist bereit, alles für den Traum zu opfern, den sie mit Adam, ihrem Partner und Trainer, teilt: den Miss Olympia-Wettbewerb zu gewinnen. Die seltsame Liebe, die sie auf ihrem Weg dorthin findet, lässt sie den Unterschied zwischen ihren Träumen und ihrem wahren Selbst erkennen",
     "mediathek_desc": "Die Bodybuilderin Edina gewinnt unter den Blicken ihres Partners, Trainers und Ex-Bodybuilders Adam einen Wettbewerb, mit dem sie sich für das \"Miss Olympia\"-Turnier qualifiziert. Adam möchte durch sie seine glorreichen Jahre neu durchleben und zwingt Edina in eine Welt aus Doping, Diät und Escort. \"Sanfte Monster\" ist ein Drama von Laszlo Csuja und Anna Nemes aus dem Jahr 2021.",
     "director": "László Csuja",
@@ -27274,8 +27410,8 @@
       "Drama"
     ],
     "channel": "ARTE.DE",
-    "timestamp": 1792448593,
-    "isNew": true,
+    "timestamp": 1792448901,
+    "isNew": false,
     "tmdb_id": 913815,
     "tmdb_type": "movie",
     "url_website": "https://www.arte.tv/de/videos/097471-000-A/sanfte-monster/"
@@ -28007,7 +28143,7 @@
     ],
     "channel": "ARD",
     "timestamp": 1792492200,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 289013,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyMy0wNS0wMV8xNi01NS1NRVNa"
@@ -28139,7 +28275,7 @@
     ],
     "channel": "ARD",
     "timestamp": 1792447200,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 638686,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyNS0xMi0zMF8xNC0wMy1NRVo"
@@ -28199,7 +28335,7 @@
     "title": "Shaolin Kickers",
     "search": "Shaolin Kickers",
     "year": "2001",
-    "video_url": "https://arteptweb-a.akamaihd.net/am/ptweb/033000/033600/033686-000-B_EQ_0_VA-STA_11597501_MP4-1500_AMM-PTWEB-60481842120547_euIrR16Hshj.mp4",
+    "video_url": "https://arteptweb-a.akamaihd.net/am/ptweb/033000/033600/033686-000-B_EQ_0_VO-STA_11597506_MP4-1500_AMM-PTWEB-60481844159411_48hbG16HsUq.mp4",
     "plot": "Einst war „Golden Leg“ Fung (Man Tat Ng) ein heller Stern am Fußballhimmel, bis er sich der Korruption hat hingeben lassen und damit alles verloren hat, was ihm wichtig war. Nach dem glanzlosen Ende seiner Fußballkarriere zog auch sein privates Leben einen turbulenten Abstieg hinter sich her. Nun, viele Jahre später, trifft er auf den jungen Mönch Sing (Stephen Chow), der verzweifelt versucht, die Sportart des Kung-Fu wieder populär in den Vordergrund zu bringen. Fung hat dabei die geniale Idee – die Verbindung von Kung-Fu mit dem Fußballsport. Mit der Hilfe von Sings Mönch-Brüder ist schnell eine Mannschaft aufgestellt, die durch ihre unkonventionelle Spielweise und Akrobatik sowohl das Publikum begeistert, als auch ein Spiel nach dem anderen gewinnt. Bis sie bei einem großen Turnier im Finale auf das „Evil Team“ stoßen, in dem unliebsame alte Bekannte von Fug zugange sind, wodurch ihn seine Vergangenheit wieder einholt…",
     "mediathek_desc": "Ein ehemaliger Fußballprofi trifft auf einen Shaolin-Priester, der versucht, seine Kung-Fu-Leidenschaft weiterzugeben. Er bringt ihm und seinen fünf Brüdern das Fußballspielen bei. Schon bald kommt es zu einem Turnier, bei dem eine Million Dollar auf dem Spiel stehen ... - Wahnwitzige, gut gemachte Martial-Arts-Action (2001) mit unglaublichen Effekten von Stephen Chow",
     "director": "Stephen Chow",
@@ -28274,6 +28410,32 @@
     "tmdb_id": 1310126,
     "tmdb_type": "movie",
     "url_website": "https://www.3sat.de/film/spielfilm/showdown-in-den-bergen-100.html"
+  },
+  {
+    "title": "Sibyl - Therapie zwecklos",
+    "search": "Sibyl - Therapie zwecklos",
+    "original_title": "Sibyl - Therapie zwecklos",
+    "year": "2019",
+    "video_url": "https://manifest-arte.akamaized.net/api/manifest/v1/Generate/97c65636-588f-4dae-9266-356b2a07b1b9/de/XQ+KS+CHEV1/132606-000-A.m3u8",
+    "url_website": "https://www.arte.tv/de/videos/132606-000-A/sibyl-therapie-zwecklos/",
+    "plot": "Schon seit Jahren versauert Sibyl (Virginie Efira) in ihrem Job als Psychotherapeutin. Nach langer Zeit beschließt sie, wieder zu ihrer eigentlichen Leidenschaft zu finden: dem Schreiben. Der Auslöser dafür ist Margot (Adèle Exarchopoulos). Sibyls neueste Patientin ist nicht nur eine aufsteigende Schauspielerin, sondern vor allem auch nervlich am Ende und deswegen eine schier unerschöpfliche Quelle der Inspiration. Sibyl ist fast bis zur Besessenheit von Margot fasziniert und gerät mit der Zeit immer mehr in den Strudel von Margots aufregendem Leben. Dabei wird Sibyl immer öfter auch mit ihrer Vergangenheit konfrontiert.",
+    "mediathek_desc": "Sibyl ist Psychoanalytikerin, würde aber gerne Romane schreiben. Aus diesem Wunsch heraus beschließt sie, die meisten ihrer Patienten aufzugeben. Während sie nach Inspiration sucht, fleht sie junge Schauspielerin Margot sie an, sie als Patientin anzunehmen. Mitten in den Dreharbeiten hat diese entdeckt, dass vom Hauptdarsteller schwanger ist… der in einer Beziehung mit der Regisseurin des Films ist.",
+    "director": "Justine Triet",
+    "actors": [
+      "Virginie Efira",
+      "Adèle Exarchopoulos",
+      "Gaspard Ulliel"
+    ],
+    "rating": "5.7",
+    "thumb": "https://image.tmdb.org/t/p/w342/mdWXyIKeUrEJWHpyjiJtLFefpjV.jpg",
+    "genres_list": [
+      "Drama"
+    ],
+    "channel": "ARTE.DE",
+    "timestamp": 1787587574,
+    "isNew": false,
+    "tmdb_id": 559401,
+    "tmdb_type": "movie"
   },
   {
     "title": "Sie hat es verdient",
@@ -29521,7 +29683,7 @@
     ],
     "channel": "ZDFneo",
     "timestamp": 1792569519,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 1041623,
     "tmdb_type": "movie",
     "url_website": "https://www.zdf.de/filme/sugar-movie-100"
@@ -29922,6 +30084,34 @@
     "url_website": "https://www.3sat.de/film/spielfilm/the-florida-project-100.html"
   },
   {
+    "title": "The Game",
+    "search": "The Game",
+    "original_title": "The Game",
+    "year": "1997",
+    "video_url": "https://secure-manifest-arte.akamaized.net/api/manifest/v1/Generate/ee99d899-0664-42cb-81d6-b2fc76cf3bbc/de/XQ+KS+CHEV1/042694-000-B.m3u8",
+    "url_website": "https://www.arte.tv/de/videos/042694-000-A/the-game/",
+    "plot": "Nicholas Van Orton ist reich, intelligent und erfolgreich. Ein knallharter Geschäftsmann mit Prinzipien und Selbstdisziplin. Er hat die absolute Kontrolle über sein Leben und seine Geschäfte - bis ihm sein Bruder Conrad zu seinem 48.Geburtstag die Eintrittskarte für ein geheimnisvolles Spiel schenkt. Ein Spiel ohne Spielregeln, aber mit höchstem Einsatz. Nur zögernd lässt Van Orten sich auf \"The Game\" ein - und erlebt den Alptraum seines Lebens: Erst verliert er die Kontrolle, dann seinen Besitz und schließlich geht es nur noch um's nackte Überleben...",
+    "mediathek_desc": "Der Multimillionär Nicholas Van Orton überlässt nichts dem Zufall. Als ihm jedoch sein Bruder Conrad einen Teilnahmegutschein für ein Erlebnisspiel schenkt, gerät Nicholas' geordnete Existenz aus den Fugen. Regisseur David Fincher inszenierte den suggestiven Thriller mit Michael Douglas, Deborah Kara Unger und Sean Penn in den Hauptrollen.",
+    "director": "David Fincher",
+    "actors": [
+      "Michael Douglas",
+      "Sean Penn",
+      "Deborah Kara Unger"
+    ],
+    "rating": "7.6",
+    "thumb": "https://image.tmdb.org/t/p/w342/bnxXqCAinEI0WQtHId2SeyEMBye.jpg",
+    "genres_list": [
+      "Drama",
+      "Thriller",
+      "Mystery"
+    ],
+    "channel": "ARTE.DE",
+    "timestamp": 1793214957,
+    "isNew": true,
+    "tmdb_id": 2649,
+    "tmdb_type": "movie"
+  },
+  {
     "title": "The Informer - Wettlauf gegen die Zeit",
     "search": "The Informer - Wettlauf gegen die Zeit",
     "year": "2019",
@@ -30197,7 +30387,7 @@
     "original_title": "The Owners",
     "year": "2020",
     "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/25/02/250222_0320_sendung_spf/1/250222_0320_sendung_spf_a3a4_3360k_p36v17.mp4",
-    "url_website": "https://www.zdf.de/video/filme/the-owners-movie-100/the-owners-100",
+    "url_website": "https://www.zdf.de/filme/the-owners-movie-100",
     "plot": "Eine Gruppe von Freunden finden ein leeres Haus mit gut gefülltem Tresor - ein vermeintlicher Jackpot. Bis die Hausbesitzer, ein älteres Ehepaar, früher als gedacht nach Hause kommen. Es kommt zum tödlichen Katz und Maus-Spiel.",
     "mediathek_desc": "Nathan will mit zwei Freunden in ein abgelegenes Landhaus einbrechen, um einen Safe auszuräumen. Doch seine schwangere Freundin Mary hat gar kein gutes Gefühl bei der Sache.",
     "director": "Julius Berg",
@@ -30214,8 +30404,8 @@
       "Thriller"
     ],
     "channel": "ZDF",
-    "timestamp": 1740189900,
-    "isNew": false,
+    "timestamp": 1793274696,
+    "isNew": true,
     "tmdb_id": 659986,
     "tmdb_type": "movie"
   },
@@ -32147,7 +32337,7 @@
     ],
     "channel": "ARD",
     "timestamp": 1792585800,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 306712,
     "tmdb_type": "movie"
   },
@@ -33149,6 +33339,33 @@
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyMi0xMi0xMV8xNC0wMy1NRVo"
   },
   {
+    "title": "Weihnachtspäckchen ... haben alle zu tragen",
+    "search": "Weihnachtspäckchen ... haben alle zu tragen",
+    "original_title": "Weihnachtspäckchen ... haben alle zu tragen",
+    "year": "2023",
+    "video_url": "https://nrodlzdf-a.akamaihd.net/none/zdf/23/12/231203_2015_sendung_sof/1/231203_2015_sendung_sof_a1a2_3360k_p36v17.mp4",
+    "url_website": "https://www.zdf.de/filme/weihnachtspaeckchen--haben-alle-zu-tragen-movie-100",
+    "plot": "Paketbote Adika, der über die Feiertage als Paketfahrer jobbt, verliert trotz des Stresses und der vielen auszuliefernden Sendungen selten seine gute Laune. Nur wenn er sich mit Tessa um dieselben Parkplätze streiten muss, geht ihm das ein bisschen gegen den Strich. Dabei findet er die Pflegerin ganz interessant, traut sich nur nicht, sie anzusprechen",
+    "mediathek_desc": "Das erste Weihnachtsfest als Witwe, eine kurzfristige Adoption, die Annäherung zweier Fremder - Dieser Heiligabend hält viele Überraschungen bereit.",
+    "director": "Stefan Bühling",
+    "actors": [
+      "Pasquale Aleardi",
+      "Proschat Madani",
+      "Yann Mbiene"
+    ],
+    "rating": "5.0",
+    "thumb": "https://image.tmdb.org/t/p/w342/v9YEe0MoojUapJ1pqS7eeqqipvN.jpg",
+    "genres_list": [
+      "Komödie",
+      "Drama"
+    ],
+    "channel": "ZDF",
+    "timestamp": 1793684109,
+    "isNew": true,
+    "tmdb_id": 1105789,
+    "tmdb_type": "movie"
+  },
+  {
     "title": "Weit hinter dem Horizont",
     "search": "Weit hinter dem Horizont",
     "year": "2013",
@@ -33483,7 +33700,7 @@
     ],
     "channel": "ARD",
     "timestamp": 1792580100,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 698765,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2FyZC5kZS9wbGFuQVJEXzJhYzEzZDZjLTJhMDItNGFkNC1iYjkzLTg4YTIwZTk0OTM1MV9nYW56ZVNlbmR1bmc"
@@ -34432,7 +34649,7 @@
     "title": "Z - Anatomie eines politischen Mordes",
     "search": "Z - Anatomie eines politischen Mordes",
     "year": "1969",
-    "video_url": "https://arteptweb-a.akamaihd.net/am/ptweb/033000/033100/033128-000-C_EQ_0_VA-STA_11617129_MP4-1500_AMM-PTWEB-60781863370151_16lIz8.mp4",
+    "video_url": "https://manifest-arte.akamaized.net/api/manifest/v1/Generate/52bdff4c-a2a3-48c5-b502-6455c8447363/de/XQ+KS+CHEV1/033128-000-C.m3u8",
     "plot": "Als die Opposition einen Friedensmarsch in einem diktatorisch regierten Land abhält, wird ihr führender Kopf, ein linksliberaler Politiker, überfahren und erliegt seinen Verletzungen. Der Vorfall scheint eine geplante Abrechnung des Regimes mit seinen Gegnern zu sein. Um die Tötung zu vertuschen und als Unfall darzustellen, wird ein junger Untersuchungsrichter beauftragt, die von offizieller Seite herausgegebene Version der Geschehnisse zu bestätigen. Doch dieser macht sich trotz seiner politischen Konformität mit einer peniblen Arbeitsmoral daran, im Sumpf eines übermächtigen Politikapparates die Wahrheit ans Licht zu bringen.",
     "mediathek_desc": "Als die Opposition einen Friedensmarsch in einer Diktatur abhält, wird ihr führender Kopf überfahren und erliegt seinen Verletzungen. Um die Tötung als Unfall darzustellen, wird ein Untersuchungsrichter (Jean-Louis Trintignant) beauftragt, die offizielle Version der Geschehnisse zu bestätigen. - Mit zwei Oscars ausgezeichneter Politthriller (1969) von Constantin Costa-Gavras",
     "director": "Costa-Gavras",
@@ -35305,7 +35522,7 @@
     ],
     "channel": "ZDF",
     "timestamp": 1792568947,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 303148,
     "tmdb_type": "movie",
     "url_website": "https://www.zdf.de/filme/zwischen-den-zeiten-movie-100"
@@ -35413,6 +35630,32 @@
     "tmdb_id": 14168,
     "tmdb_type": "movie",
     "url_website": "https://www.3sat.de/film/spielfilm/zaehl-bis-drei-und-bete-100.html"
+  },
+  {
+    "title": "Zünftige Bande",
+    "search": "Zünftige Bande",
+    "original_title": "Zünftige Bande",
+    "year": "1936",
+    "video_url": "https://manifest-arte.akamaized.net/api/manifest/v1/Generate/88c8f378-3d1a-40ab-8783-896c6709359e/de/XQ+KS+CHEV1/065837-000-A.m3u8",
+    "url_website": "https://www.arte.tv/de/videos/065837-000-A/zuenftige-bande/",
+    "plot": "Jean, Charles, Raymond, Jacques und Mario haben - im wahrsten Wortsinn - das große Los gezogen. Mit einem Mal sind die fünf mittellosen Freunde aus Paris all ihre (Geld-)Sorgen los und noch dazu um 100.000 Francs reicher. Schnell sind sie sich einig, wie das Geld investiert werden soll. Gemeinsam kaufen sie ein heruntergekommenes Schlösschen, das sie mit eigenen Händen in ein Tanzlokal verwandeln wollen. Die Pläne nehmen Gestalt an und eigentlich kann nichts die fünf trennen - doch dann kommt die Liebe ins Spiel und das Band der Freundschaft droht zu zerreißen.",
+    "mediathek_desc": "Jean, Charles, Raymond, Jacques und Mario haben das große Los gezogen. Mit einem Mal sind die mittellosen Freunde aus Paris all ihre Geldsorgen los. Gemeinsam kaufen sie ein heruntergekommenes Schlösschen, das sie in ein Tanzlokal verwandeln wollen ... – Ein Schlüsselwerk des Poetischen Realismus von Julien Duvivier aus dem Jahr 1936",
+    "director": "Julien Duvivier",
+    "actors": [
+      "Jean Gabin",
+      "Charles Vanel",
+      "Viviane Romance"
+    ],
+    "rating": "7.4",
+    "thumb": "https://image.tmdb.org/t/p/w342/grLck6iW34L7VlwrUqHPUwwF3Oi.jpg",
+    "genres_list": [
+      "Drama"
+    ],
+    "channel": "ARTE.DE",
+    "timestamp": 1476728229,
+    "isNew": false,
+    "tmdb_id": 67443,
+    "tmdb_type": "movie"
   },
   {
     "title": "und dann kam Wanda",
