@@ -967,8 +967,8 @@
       "Komödie"
     ],
     "channel": "ARD",
-    "timestamp": 1790074500,
-    "isNew": false,
+    "timestamp": 1794395100,
+    "isNew": true,
     "tmdb_id": 442904,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyMC0wMy0yMV8xMy0wMC1NRVo"
@@ -3710,7 +3710,7 @@
     "search": "Dark Water - Besuch aus dem Jenseits",
     "original_title": "Dark Water - Besuch aus dem Jenseits",
     "year": "None",
-    "video_url": "https://api.arte.tv/api/player/v2/config/de/133122-000-A",
+    "video_url": "https://manifest-arte.akamaized.net/api/manifest/v1/Generate/a1a1e37c-24c3-4eda-b408-7eb688079b56/de/XQ+KS+CHEV1/133122-000-A.m3u8",
     "url_website": "https://www.arte.tv/de/videos/133122-000-A/dark-water/",
     "plot": "Zermürbt von Sorgerechtsstreit und Geldnöten zieht Yoshimi mit ihrer Tochter in ein verwahrlostes Mietshaus am Rande von Tokio. Vom Dach dringt Wasser in die Wohnung. Pfützen breiten sich aus ... Der Geist eines kleinen Mädchens, das ganz in der Nähe ertrunken ist, spukt durch die Wohnung. Und das unglückliche Geistermädchen will Yoshimis ungeteilte Aufmerksamkeit. Sofort!",
     "mediathek_desc": "Zermürbt von Sorgerechtsstreit und Geldnöten zieht Yoshimi mit ihrer Tochter in ein verwahrlostes Mietshaus am Rande von Tokio. Vom Dach dringt Wasser in die Wohnung. Pfützen breiten sich aus ... Der Geist eines kleinen Mädchens, das ganz in der Nähe ertrunken ist, spukt durch die Wohnung. Und das unglückliche Geistermädchen will Yoshimis ungeteilte Aufmerksamkeit. Sofort!",
@@ -5449,31 +5449,6 @@
     "title": "Dennstein & Schwarz - Rufmord",
     "search": "Dennstein & Schwarz - Rufmord",
     "year": "2020",
-    "video_url": "https://pd-videos.daserste.de/int/2024/09/06/DEGSM685649/DEGSM685649_3059520_sendeton_1280x720-50p-3200kbit.mp4",
-    "plot": "Therese Schwarz vertritt den mit Paula Dennstein sehr gut befreundeten Politiker Konrad Wagner, der von einer Zeitung an den #MeToo-Pranger gestellt wurde. Deshalb passt der überraschende Besuch ihrer kleinen Schwester Marita auch so gar nicht in ihr Konzept. Noch dazu, wo Marita zusammen mit Ferdinand durch eine Cannabis-Geschichte in heiklen Polizeikontakt kommt. Für Konrads Verteidigung ist es wichtig den Verleumder auszumachen, doch das ist ein Wettlauf gegen die Zeit, da die Landtagswahl vor der Türe steht…",
-    "mediathek_desc": "Spielfilm Deutschland/Österreich 2020\r\n\r\nAuf Frauenpower setzen \"Dennstein & Schwarz\" als Markenzeichen ihrer Anwaltskanzlei. Der neue Fall verspricht viel Publicity, denn sie vertreten den aufstrebenden Politiker, der nun durch eine Zeitungsstory als Grapscher am Pranger steht. \r\n\r\nMit Maria Happel, Martina Ebm, Manuel Rubey, Nele Kiper u.a. | Buch: Konstanze Breitebner | Regie: Michael Rowitz",
-    "director": "Michael Rowitz",
-    "actors": [
-      "Maria Happel",
-      "Martina Ebm",
-      "Manuel Rubey"
-    ],
-    "rating": "6.0",
-    "thumb": "https://image.tmdb.org/t/p/w342/6AP96jy3fR9wc26fb5zlWWdEMS4.jpg",
-    "genres_list": [
-      "Drama"
-    ],
-    "channel": "ARD",
-    "timestamp": 1725710400,
-    "isNew": false,
-    "tmdb_id": 679245,
-    "tmdb_type": "movie",
-    "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyNC0wOS0wN18xNC0wMC1NRVNa"
-  },
-  {
-    "title": "Dennstein & Schwarz - Rufmord",
-    "search": "Dennstein & Schwarz - Rufmord",
-    "year": "2020",
     "video_url": "https://pd-videos.daserste.de/int/2024/08/23/DEGSM877904/DEGSM877904_3048790sendeton__1280x720-50p-3200kbit.mp4",
     "plot": "Therese Schwarz vertritt den mit Paula Dennstein sehr gut befreundeten Politiker Konrad Wagner, der von einer Zeitung an den #MeToo-Pranger gestellt wurde. Deshalb passt der überraschende Besuch ihrer kleinen Schwester Marita auch so gar nicht in ihr Konzept. Noch dazu, wo Marita zusammen mit Ferdinand durch eine Cannabis-Geschichte in heiklen Polizeikontakt kommt. Für Konrads Verteidigung ist es wichtig den Verleumder auszumachen, doch das ist ein Wettlauf gegen die Zeit, da die Landtagswahl vor der Türe steht…",
     "mediathek_desc": "Spielfilm Deutschland/Österreich 2020\r\n\r\nAuf Frauenpower setzen \"Dennstein & Schwarz\" als Markenzeichen ihrer Anwaltskanzlei. Der neue Fall verspricht viel Publicity, denn sie vertreten den aufstrebenden Politiker, der nun durch eine Zeitungsstory als Grapscher am Pranger steht. \r\n\r\nMit Maria Happel, Martina Ebm, Manuel Rubey, Nele Kiper u.a. | Buch: Konstanze Breitebner | Regie: Michael Rowitz",
@@ -5494,6 +5469,31 @@
     "tmdb_id": 679245,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyNC0wOC0yNF8xNC0wMC1NRVNa"
+  },
+  {
+    "title": "Dennstein & Schwarz - Rufmord",
+    "search": "Dennstein & Schwarz - Rufmord",
+    "year": "2020",
+    "video_url": "https://pd-videos.daserste.de/int/2024/09/06/DEGSM685649/DEGSM685649_3059520_sendeton_1280x720-50p-3200kbit.mp4",
+    "plot": "Therese Schwarz vertritt den mit Paula Dennstein sehr gut befreundeten Politiker Konrad Wagner, der von einer Zeitung an den #MeToo-Pranger gestellt wurde. Deshalb passt der überraschende Besuch ihrer kleinen Schwester Marita auch so gar nicht in ihr Konzept. Noch dazu, wo Marita zusammen mit Ferdinand durch eine Cannabis-Geschichte in heiklen Polizeikontakt kommt. Für Konrads Verteidigung ist es wichtig den Verleumder auszumachen, doch das ist ein Wettlauf gegen die Zeit, da die Landtagswahl vor der Türe steht…",
+    "mediathek_desc": "Spielfilm Deutschland/Österreich 2020\r\n\r\nAuf Frauenpower setzen \"Dennstein & Schwarz\" als Markenzeichen ihrer Anwaltskanzlei. Der neue Fall verspricht viel Publicity, denn sie vertreten den aufstrebenden Politiker, der nun durch eine Zeitungsstory als Grapscher am Pranger steht. \r\n\r\nMit Maria Happel, Martina Ebm, Manuel Rubey, Nele Kiper u.a. | Buch: Konstanze Breitebner | Regie: Michael Rowitz",
+    "director": "Michael Rowitz",
+    "actors": [
+      "Maria Happel",
+      "Martina Ebm",
+      "Manuel Rubey"
+    ],
+    "rating": "6.0",
+    "thumb": "https://image.tmdb.org/t/p/w342/6AP96jy3fR9wc26fb5zlWWdEMS4.jpg",
+    "genres_list": [
+      "Drama"
+    ],
+    "channel": "ARD",
+    "timestamp": 1725710400,
+    "isNew": false,
+    "tmdb_id": 679245,
+    "tmdb_type": "movie",
+    "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyNC0wOS0wN18xNC0wMC1NRVNa"
   },
   {
     "title": "Dennstein & Schwarz - Schuldenfalle",
@@ -9445,32 +9445,6 @@
     "url_website": "https://www.3sat.de/film/spielfilm/die-maedels-vom-immenhof-100.html"
   },
   {
-    "title": "Die Mörder meines Sohnes",
-    "search": "Die Mörder meines Sohnes",
-    "year": "2022",
-    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/24/07/240729_2215_sendung_spf/1/240729_2215_sendung_spf_3360k_p36v17.mp4",
-    "plot": "Der aus Spanien stammende Einzelgänger Leo Castaneda (Antonio de la Torre) lebt in Brüssel. Weil er dabei allein sein kann, arbeitet er als Zugführer der U-Bahnlinie 6. Als er eines Abends in eine Station einfährt, trifft sein Blick den eines jungen Mannes am Bahnsteig. Leo erkennt sofort seinen Sohn Hugo (Noé Englebert) in dem Lebensmüden, der sich im nächsten Moment vor seinem Zug auf die Gleise wirft. Das war das erste Mal seit über zwei Jahren, dass Leo ihn gesehen hat. Und es ist auch das letzte Mal. Denn Hugo ist nicht mehr zu retten. Nachdem sein Junge für tot erklärt wurde, erfährt Leo von der Polizistin Virginie (Marine Vacth), dass dieser in einen brutalen Bankraub verwickelt war. Der von Trauer überwältigte Vater ist fest entschlossen, die Gründe für den schrecklichen Suizid seines Sohnes zu finden. So beginnt er, sich an die Fersen von Hugos rücksichtslosen Komplizen zu heften.",
-    "mediathek_desc": "Nachdem sich sein von ihm entfremdeter Sohn vor ihm aufs Gleis gestürzt hat, ermittelt ein U-Bahn-Fahrer die Hintergründe zum Tod des jungen Mannes, der wohl an einem Überfall beteiligt war.",
-    "director": "Giordano Gederlini",
-    "actors": [
-      "Antonio de la Torre",
-      "Marine Vacth",
-      "Olivier Gourmet"
-    ],
-    "rating": "6.0",
-    "thumb": "https://image.tmdb.org/t/p/w342/wSWYcv2eAzQjjO5IG0LIGl6vxms.jpg",
-    "genres_list": [
-      "Drama",
-      "Thriller"
-    ],
-    "channel": "ZDF",
-    "timestamp": 1791063900,
-    "isNew": false,
-    "tmdb_id": 925459,
-    "tmdb_type": "movie",
-    "url_website": "https://www.zdf.de/filme/die-moerder-meines-sohnes-movie-100"
-  },
-  {
     "title": "Die Nacht der Jäger",
     "search": "Die Nacht der Jäger",
     "year": "2011",
@@ -11533,7 +11507,7 @@
       "Komödie"
     ],
     "channel": "ZDF",
-    "timestamp": 1793084150,
+    "timestamp": 1793770804,
     "isNew": true,
     "tmdb_id": 862252,
     "tmdb_type": "movie",
@@ -11721,33 +11695,6 @@
     "tmdb_id": 9634,
     "tmdb_type": "movie",
     "url_website": "https://www.3sat.de/film/spielfilm/edgar-wallace-das-indische-tuch-106.html"
-  },
-  {
-    "title": "Edgar Wallace: Der Mönch mit der Peitsche",
-    "search": "Edgar Wallace: Der Mönch mit der Peitsche",
-    "year": "1983",
-    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/25/01/250102_0220_sendung_ewa/1/250102_0220_sendung_ewa_3360k_p36v17.mp4",
-    "plot": "Es ist Nacht auf Marks Priory, dem einsam gelegenen Landsitz der Adelsfamilie Lebanon. Ein Unbekannter schreitet durch den dunklen Park. Im Schloss ist alles still, allerdings hat Aisla Crane, die Nichte der herrschsüchtigen Lady Lebanon, einen unruhigen Schlaf. Plötzlich ertönt ein gellender Schrei. Wenig später findet man William Studd, den Chauffeur des jungen Lord Willie, tot im Park. Das Motiv des Mordes ist unklar, zumal es zunächst so aussieht, als ob der Tote ein Mann ohne Feinde war.  Wie Chief Superintendent Tanner dann jedoch herausfindet, spricht das Tatwerkzeug dagegen: Es handelt sich um ein indisches Tuch, mit dem in seinem Herkunftsland früher Feinden durch Erwürgen der Garaus gemacht wurde.",
-    "mediathek_desc": "Ein Mönch mit einer Peitsche ermordet Dr. Cabble, den Erfinder eines Giftgases.",
-    "director": "Christopher Menaul",
-    "actors": [
-      "Virginia McKenna",
-      "Warren Clarke",
-      "Tim Woodward"
-    ],
-    "rating": "N/A",
-    "thumb": "https://image.tmdb.org/t/p/w342/l6CF60tKqfoVO6TMELV5hTAsHIY.jpg",
-    "genres_list": [
-      "Krimi",
-      "Drama",
-      "TV-Film"
-    ],
-    "channel": "ZDFneo",
-    "timestamp": 1791985090,
-    "isNew": false,
-    "tmdb_id": 656491,
-    "tmdb_type": "movie",
-    "url_website": "https://www.zdf.de/filme/der-moench-mit-der-peitsche-movie-100"
   },
   {
     "title": "Edgar Wallace: Der Zinker",
@@ -13934,27 +13881,29 @@
     "title": "Eternal",
     "search": "Eternal",
     "original_title": "Eternal",
-    "year": "None",
+    "year": "2004",
     "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/26/03/260327_0045_sendung_spf/1/260327_0045_sendung_spf_a1a2_3360k_p36v17.mp4",
     "url_website": "https://www.zdf.de/filme/eternal-movie-100",
     "plot": "Als die Klimakrise eskaliert, entscheidet sich der junge Forscher Elias gegen eine gemeinsame Zukunft mit Anita. Doch Jahre später holt ihn seine Entscheidung wieder ein.",
     "mediathek_desc": "Als die Klimakrise eskaliert, entscheidet sich der junge Forscher Elias gegen eine gemeinsame Zukunft mit Anita. Doch Jahre später holt ihn seine Entscheidung wieder ein.",
-    "director": "",
+    "director": "Wilhelm Liebenberg",
     "actors": [
-      "Anthony Arcuri",
-      "Stevie Hall",
-      "Kristine Petkovska"
+      "Conrad Pla",
+      "Caroline Néron",
+      "Victoria Sanchez"
     ],
-    "rating": "N/A",
-    "thumb": "placeholder.png",
+    "rating": "4.3",
+    "thumb": "https://image.tmdb.org/t/p/w342/1jhHwF0sMoi8fcmiZh1TAFfG7vF.jpg",
     "genres_list": [
       "Drama",
-      "Komödie"
+      "Horror",
+      "Mystery",
+      "Thriller"
     ],
     "channel": "ZDF",
     "timestamp": 1792968300,
     "isNew": true,
-    "tmdb_id": 1543076,
+    "tmdb_id": 30767,
     "tmdb_type": "movie"
   },
   {
@@ -14119,7 +14068,7 @@
     "original_title": "Fabian",
     "year": "1980",
     "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/26/11/261103_0015_sendung_spf/1/261103_0015_sendung_spf_3360k_p36v17.mp4",
-    "url_website": "https://www.zdf.de/video/filme/spielfilm-104/fabian-116",
+    "url_website": "https://www.zdf.de/video/filme/fabian-movie-100/fabian-116",
     "plot": "Fabian verdient seinen Lebensunterhalt mehr schlecht als recht als Reklametexter einer Zigarettenfirma. Ansonsten lebt er unbekümmert in den Tag hinein. Die Nächte verbringt er gemeinsam mit seinem besten Freund Labude in Berlins Clubs und Bars. Er lernt die Studentin Cornelia kennen und die beiden verlieben sich ineinander. Umso größer die Ernüchterung, als Fabian unerwartet seine Arbeit verliert. Bisher hat er die Arbeitslosen auf den Straßen von Berlin kaum wahrgenommen, jetzt zählt er selbst dazu. Cornelia bekommt ein großzügiges Angebot von einem Filmproduzenten und verlässt Fabian, um Karriere zu machen. Dann nimmt sich auch noch Labude, bei den Nazis als Linker verschrien, das Leben. Fabian verlässt Berlin und kehrt zu seiner Mutter in seine Heimatstadt zurück. Dort geht er - der Nichtschwimmer - bei dem Versuch, ein Kind vor dem Ertrinken zu retten, buchstäblich unter...",
     "mediathek_desc": "Berlin, um 1930. Fabian arbeitet als Reklametexter für eine Zigarrenfirma und lebt ansonsten unbekümmert in den Tag hinein.",
     "director": "Wolf Gremm",
@@ -14452,7 +14401,7 @@
     ],
     "channel": "ZDF",
     "timestamp": 1792648803,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 988402,
     "tmdb_type": "movie"
   },
@@ -20180,7 +20129,7 @@
     ],
     "channel": "ZDF",
     "timestamp": 1792649292,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 852427,
     "tmdb_type": "movie",
     "url_website": "https://www.zdf.de/filme/kompromat---die-macht-der-luege-movie-100"
@@ -21692,7 +21641,7 @@
     "original_title": "Longlegs",
     "year": "2024",
     "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/26/10/261026_2215_sendung_spf/1/261026_2215_sendung_spf_a1a2_3360k_p36v17.mp4",
-    "url_website": "https://www.zdf.de/video/filme/longlegs-movie-100/longlegs-100",
+    "url_website": "https://www.zdf.de/filme/longlegs-movie-100",
     "plot": "Die junge FBI-Agentin Lee Harker entdeckt eine Reihe okkulter Hinweise in einem Serienmörder-Fall. Als sie eine persönliche Verbindung zu dem Serienmörder aufdeckt, nimmt der Fall eine unerwartete Wendung…",
     "mediathek_desc": "Eine FBI-Agentin erhält einen neuen Fall: Seit 30 Jahren treibt ein Serienkiller sein Unwesen. Die Opfer sind ganze Familien, an den Tatorten werden seltsame Botschaften hinterlassen.",
     "director": "Oz Perkins",
@@ -21709,7 +21658,7 @@
       "Mystery"
     ],
     "channel": "ZDF",
-    "timestamp": 1793049300,
+    "timestamp": 1793311881,
     "isNew": true,
     "tmdb_id": 1226578,
     "tmdb_type": "movie"
@@ -23784,8 +23733,8 @@
       "Komödie"
     ],
     "channel": "ARD",
-    "timestamp": 1767433200,
-    "isNew": false,
+    "timestamp": 1794398100,
+    "isNew": true,
     "tmdb_id": 357805,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyMy0xMi0zMV8wMy0wMC1NRVo"
@@ -24699,33 +24648,6 @@
     "url_website": "https://www.arte.tv/de/videos/130524-000-A/nebraska/"
   },
   {
-    "title": "Nelly und das Weihnachtswunder",
-    "search": "Nelly und das Weihnachtswunder",
-    "original_title": "Nelly und das Weihnachtswunder",
-    "year": "2024",
-    "video_url": "https://nrodlzdf-a.akamaihd.net/none/zdf/24/12/241222_2015_sendung_sof/1/241222_2015_sendung_sof_a1a2_3360k_p36v17.mp4",
-    "url_website": "https://www.zdf.de/filme/nelly-und-das-weihnachtswunder-movie-100",
-    "plot": "Eine Paketbotin, die mit Weihnachten nichts am Hut hat, kreuzt zufällig die Wege eines Gelegenheitsdiebes und eines rätselhaften kleinen Jungen, der nicht spricht. Nelly ist verblüfft, als Filou Sonny an der Tankstelle, in der sie einen Zweitjob hat, zwei Whiskeyflaschen und einen Oldtimer klaut. Nick, der plötzlich zwischen den Verkaufsregalen auftaucht und kein Wort von sich gibt, lenkt Nelly während des Diebstahls ab. Da sie davon ausgehen muss, dass es sich bei Nick um Sonnys Komplizen handelt, schnappt sie sich den Jungen und nimmt ihn mit auf die Verfolgung.Dabei erhält sie Unterstützung von der betagten Taxifahrerin Gesine, die eben noch ihren Wagen an der Tankstelle betankt hatte. Als Nelly den gestohlenen Oldtimer zufällig vor einer Villa entdeckt, schickt sie Gesine zurück und bittet sie, sich während ihrer Abwesenheit um die Tankstelle zu kümmern.",
-    "mediathek_desc": "Eine Paketbotin, die mit Weihnachten nichts am Hut hat, kreuzt zufällig die Wege eines Gelegenheitsdiebes und eines rätselhaften kleinen Jungen, der nicht spricht.",
-    "director": "Katja Benrath",
-    "actors": [
-      "Anna Schudt",
-      "Rafael Gareisen",
-      "Joah Lion Goetze"
-    ],
-    "rating": "2.7",
-    "thumb": "https://image.tmdb.org/t/p/w342/2P18ZxyFzAe3Ov3JveEhrARaCXj.jpg",
-    "genres_list": [
-      "Komödie",
-      "TV-Film"
-    ],
-    "channel": "ZDF",
-    "timestamp": 1792738800,
-    "isNew": true,
-    "tmdb_id": 1390109,
-    "tmdb_type": "movie"
-  },
-  {
     "title": "Nestwochen",
     "search": "Nestwochen",
     "year": "2021",
@@ -25579,8 +25501,8 @@
       "Drama"
     ],
     "channel": "ZDF",
-    "timestamp": 1783396641,
-    "isNew": false,
+    "timestamp": 1793816101,
+    "isNew": true,
     "tmdb_id": 1447875,
     "tmdb_type": "movie",
     "url_website": "https://www.zdf.de/filme/olivia-movie-100"
@@ -26156,7 +26078,7 @@
     ],
     "channel": "ARTE.DE",
     "timestamp": 1792615506,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 807862,
     "tmdb_type": "movie",
     "url_website": "https://www.arte.tv/de/videos/129843-000-A/peter-von-kant/"
@@ -27003,7 +26925,7 @@
     "search": "Ring - Das Original",
     "original_title": "Ring - Das Original",
     "year": "1998",
-    "video_url": "https://api.arte.tv/api/player/v2/config/de/133131-000-A",
+    "video_url": "https://manifest-arte.akamaized.net/api/manifest/v1/Generate/0971d389-9d21-4360-8acb-d601c12e7672/de/XQ+KS+CHEV1/133131-000-A.m3u8",
     "url_website": "https://www.arte.tv/de/videos/133131-000-A/ring-das-original/",
     "plot": "In japanischen Schülerkreisen kursiert die Legende von einem geheimnisvollen Videoband, dessen Genuss genau eine Woche später zum unvermeidlichen Ableben des Betrachters führt. Nach dem von rätselhaften Umständen begleiteten Tod ihrer schulpflichtigen Cousine beschließt Zeitungsreporterin Keiko im Angesicht neuer Gerüchte, die Angelegenheit zum Gegenstand einer Story zu machen. Als sie dabei selbst in Besitz des Tapes gerät, beginnt auch für sie die Uhr zu ticken. Gemeinsam mit Ex-Mann Ryuji bricht sie auf, das Geheimnis vor Ablauf der Woche zu lüften …",
     "mediathek_desc": "Jugendliche, die ein Video ansehen, sterben nach sieben Tagen. Reporterin Reiko geht der Sache auf den Grund. Bald scheint auch sie vom Tod bedroht. Um ihr Leben zu retten, muss sie das Geheimnis des Videos lüften. – Stilprägende Literaturverfilmung vom japanischen Regisseur Hideo Nakata aus dem Jahr 1998, die zu einem weltweiten Phänomen wurde.",
@@ -29061,11 +28983,11 @@
       "Thriller"
     ],
     "channel": "ZDF",
-    "timestamp": 1791759900,
-    "isNew": false,
+    "timestamp": 1793311887,
+    "isNew": true,
     "tmdb_id": 1063879,
     "tmdb_type": "movie",
-    "url_website": "https://www.zdf.de/video/filme/spiders---ihr-biss-ist-der-tod-movie-100/spiders---ihr-biss-ist-der-tod-100"
+    "url_website": "https://www.zdf.de/filme/spiders---ihr-biss-ist-der-tod-movie-100"
   },
   {
     "title": "Spinning Man - Mörderischer Zweifel",
@@ -29253,7 +29175,7 @@
     "title": "Stenzels Bescherung",
     "search": "Stenzels Bescherung",
     "year": "2019",
-    "video_url": "https://pd-videos.daserste.de/int/2020/12/15/eb5d4f58-ba20-4457-bf48-26f643584557/JOB_392682_sendeton_1280x720-50p-3200kbit.mp4",
+    "video_url": "https://ctv-videos.daserste.de/int/2020/12/15/eb5d4f58-ba20-4457-bf48-26f643584557/JOB_392682_sendeton_1280x720-50p-3200kbit.mp4",
     "plot": "Volkmar Stenzel ist ein Filialleiter, wie er im Buche steht: korrekt, verantwortungsbewusst und immer für die Kunden da. Typen wie der 57-Jährige werden in der globalen Finanzwelt aber genauso wenig gebraucht wie Zweigstellen auf dem Land. Als ihm der chinesische Konzern, der seine in Frankfurt ansässige Bank gerade geschluckt hat, den jungen Karrieristen Tutz zur Abwicklung seiner Filiale schickt, fühlt sich Stenzel wertlos. Er begehrt gegen die Ungerechtigkeit auf und zeigt endlich Mut.",
     "mediathek_desc": "Spielfilm Deutschland 2019\r\n\r\nVolkmar Stenzel (Herbert Knaup) ist ein Filialleiter, wie er im Buche steht: korrekt, verantwortungsbewusst und immer für die Kunden da. Typen wie der 57-Jährige werden in der globalen Finanzwelt aber genauso wenig gebraucht wie Zweigstellen auf dem Land. Als ihm der chinesische Konzern, der seine in Frankfurt ansässige Bank gerade geschluckt hat, den jungen Karrieris\n.....",
     "director": "Marc-Andreas Bochert",
@@ -29268,8 +29190,8 @@
       "Komödie"
     ],
     "channel": "ARD",
-    "timestamp": 1702737000,
-    "isNew": false,
+    "timestamp": 1796481000,
+    "isNew": true,
     "tmdb_id": 657316,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyMy0xMi0xNl8xNS0zMC1NRVo"
@@ -29375,6 +29297,35 @@
     "tmdb_id": 284293,
     "tmdb_type": "movie",
     "url_website": "https://www.3sat.de/film/spielfilm/still-alice---mein-leben-ohne-gestern-100.html"
+  },
+  {
+    "title": "Stille Nacht, raue Nacht",
+    "search": "Stille Nacht, raue Nacht",
+    "original_title": "Stille Nacht, raue Nacht",
+    "year": "2024",
+    "video_url": "https://nrodlzdf-a.akamaihd.net/none/zdf/24/12/241201_2015_sendung_sof/1/241201_2015_sendung_sof_a1a2_3360k_p36v17.mp4",
+    "url_website": "https://www.zdf.de/filme/stille-nacht-raue-nacht-movie-100",
+    "plot": "Liane, Wissenschaftlerin und Klimaforscherin, trifft auf der Wintersonnenwende-Party ihrer älteren Schwester Svea kurz vor Heiligabend auf Mani, einen faszinierenden und spirituell veranlagen Mann. Sie selbst fühlt sich etwas fremd auf der Feier, denn Liane ist ein rationaler Mensch. Von Räucher-Reinigungsritualen, Wunschzetteln, die in die Feuerschale geworfen werden sollen, und derlei esoterischem Hokuspokus bekommt sie Schnappatmung. Das ganze Raunachtstrara stammt aus Zeiten, in denen der Homo sapiens noch Eis und Schnee fürchten mussten und nicht Starkregen an Weihnachten. Trotzdem werden die stillen Tage und rauen Nächte zwischen dem 21. Dezember und dem Dreikönigstag für Liane zur echten Herausforderung: Ihr Freund Philipp fliegt nach einem Streit alleine nach Gomera. Trennen möchten sie sich nicht, aber bleiben, wie es ist, kann es auch nicht. Und tatsächlich beginnen das Schicksal und das Wetter die zurückbleibende Liane kräftig durchzuschütteln.",
+    "mediathek_desc": "Kurz vor Weihnachten trifft die Klimaforscherin Liane auf der Wintersonnenwende-Party ihrer Schwester Svea auf den rätselhaften Mani – ein faszinierender, seltsamer Mann.",
+    "director": "Sophie Averkamp",
+    "actors": [
+      "Maria Ehrich",
+      "Benito Bause",
+      "Antoine Monot Jr."
+    ],
+    "rating": "5.7",
+    "thumb": "https://image.tmdb.org/t/p/w342/gEqz5jKPVUctkPnFtyrZBHbiIPd.jpg",
+    "genres_list": [
+      "TV-Film",
+      "Drama",
+      "Romanze",
+      "Komödie"
+    ],
+    "channel": "ZDF",
+    "timestamp": 1793798826,
+    "isNew": true,
+    "tmdb_id": 1389664,
+    "tmdb_type": "movie"
   },
   {
     "title": "Stiller Abschied",
@@ -29657,7 +29608,7 @@
     ],
     "channel": "ARD",
     "timestamp": 1792626600,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 229268,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyNS0wMi0yNF8wMS00NS1NRVo"
@@ -32945,32 +32896,6 @@
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyMC0wOC0yOV8xMy0wMC1NRVNa"
   },
   {
-    "title": "Volveréis - Ein fast klassischer Liebesfilm",
-    "search": "Volveréis - Ein fast klassischer Liebesfilm",
-    "year": "2024",
-    "video_url": "https://arteptweb-a.akamaihd.net/am/ptweb/126000/126900/126941-000-A_EQ_0_VO-STA_11579231_MP4-1500_AMM-PTWEB-101223495690205_15slF8.mp4",
-    "plot": "Regisseurin Ale und Schauspieler Alex beschließen nach 15 Jahren Beziehung, getrennte Wege zu gehen. Und das muss gefeiert werden – zumindest, wenn man einem alten Spruch von Ales Vater Glauben schenkt. Der hatte immer behauptet, dass Trennungen und nicht Hochzeiten ein Grund zum Feiern wären. Das enge Umfeld hält die Nachricht allerdings für einen schlechten Scherz. Umso entschlossener ist das Ex-Paar, mit einer Abschiedsparty alle vom Ende ihrer Beziehung zu überzeugen. Vor allem sich selbst. Die absurde Komödie hinterfragt mit klugem Witz gesellschaftliche Normen und zelebriert die »Schönheit der Trennung«.",
-    "mediathek_desc": "Nach 14 Jahren Beziehung wollen Ale und Alex getrennte Wege gehen – und ihre Trennung mit einer großen Party feiern. Ihre Freunde und Familie zweifeln an ihrem Entschluss, doch die beiden stürzen sich begeistert in die Vorbereitungen. Und stellen sich die Frage: Wie beendet man eine Liebe, die sich noch immer lebendig anfühlt? Eine Tragikomödie von Jonás Trueba.",
-    "director": "Jonás Trueba",
-    "actors": [
-      "Itsaso Arana",
-      "Vito Sanz",
-      "Fernando Trueba"
-    ],
-    "rating": "6.3",
-    "thumb": "https://image.tmdb.org/t/p/w342/qaRnkZdAfyh336E2AhOyBOl4jaK.jpg",
-    "genres_list": [
-      "Komödie",
-      "Drama"
-    ],
-    "channel": "ARTE.DE",
-    "timestamp": 1791234691,
-    "isNew": false,
-    "tmdb_id": 1214118,
-    "tmdb_type": "movie",
-    "url_website": "https://www.arte.tv/de/videos/126941-000-A/volvereis-ein-fast-klassischer-liebesfilm/"
-  },
-  {
     "title": "Von Mäusen und Lügen",
     "search": "Von Mäusen und Lügen",
     "year": "2011",
@@ -33307,7 +33232,7 @@
     ],
     "channel": "ZDF",
     "timestamp": 1792702800,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 652617,
     "tmdb_type": "movie"
   },
@@ -33360,7 +33285,7 @@
       "Drama"
     ],
     "channel": "ZDF",
-    "timestamp": 1793684109,
+    "timestamp": 1793798835,
     "isNew": true,
     "tmdb_id": 1105789,
     "tmdb_type": "movie"
@@ -33464,7 +33389,7 @@
     ],
     "channel": "ARD",
     "timestamp": 1792672200,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 325683,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyNS0wMS0wNl8xNC0wNS1NRVo"
@@ -33674,7 +33599,7 @@
       "Historie"
     ],
     "channel": "ARD",
-    "timestamp": 1793836800,
+    "timestamp": 1793839500,
     "isNew": true,
     "tmdb_id": 423612,
     "tmdb_type": "movie",
@@ -35425,6 +35350,35 @@
     "tmdb_type": "movie"
   },
   {
+    "title": "Zwei zu Eins",
+    "search": "Zwei zu Eins",
+    "original_title": "Zwei zu Eins",
+    "year": "2024",
+    "video_url": "https://manifest-arte.akamaized.net/api/manifest/v1/Generate/ce27f048-f06a-4795-a243-93af69fabb71/de/XQ+KS+CHEV1/112793-000-A.m3u8",
+    "url_website": "https://www.arte.tv/de/videos/112793-000-A/zwei-zu-eins/",
+    "plot": "Halberstadt im Sommer 1990. Maren, Robert und Volker kennen und lieben sich seit ihrer Kindheit. Eher zufällig finden sie in einem alten Schacht die Millionen der DDR, die dort eingelagert wurden, um zu verrotten. Die Drei schmuggeln Rucksäcke voll Geld heraus. Gemeinsam mit ihren Freunden und Nachbarn entwickeln sie ein ausgeklügeltes System, um das inzwischen wertlose Geld in Waren zu tauschen und den anrauschenden Westlern und ihrem Kapitalismus ein Schnippchen zu schlagen. Denn wenn man jetzt ein bisschen schlau ist, kann dieser Sommer nicht nur ein großes Abenteuer, sondern auch der endgültige Wendepunkt in ihrem Leben sein.",
+    "mediathek_desc": "Sommer 1990: Maren, Robert und Volker kennen und lieben sich seit ihrer Kindheit. Eher zufällig finden sie in einem alten Stollen die Millionen der DDR, die dort eingelagert wurden. Kurzerhand schmieden die drei einen Plan, das scheinbar wertlose Geld doch zu nutzen – und ziehen dabei bald ihre gesamte Nachbarschaft mit ins Abenteuer. Eine Heist-Komödie von Natja Brunckhorst",
+    "director": "Natja Brunckhorst",
+    "actors": [
+      "Sandra Hüller",
+      "Max Riemelt",
+      "Ronald Zehrfeld"
+    ],
+    "rating": "6.3",
+    "thumb": "https://image.tmdb.org/t/p/w342/z2kFwE2astreSz1TH17ZWWY1gRA.jpg",
+    "genres_list": [
+      "Komödie",
+      "Drama",
+      "Krimi",
+      "Romanze"
+    ],
+    "channel": "ARTE.DE",
+    "timestamp": 1793992500,
+    "isNew": true,
+    "tmdb_id": 1208284,
+    "tmdb_type": "movie"
+  },
+  {
     "title": "Zwei übern Berg",
     "search": "Zwei übern Berg",
     "year": "2012",
@@ -35551,32 +35505,6 @@
     "tmdb_id": 1187092,
     "tmdb_type": "movie",
     "url_website": "https://www.3sat.de/film/spielfilm/zwischen-uns-der-fluss-100.html"
-  },
-  {
-    "title": "Zwischen uns die Nacht",
-    "search": "Zwischen uns die Nacht",
-    "year": "2023",
-    "video_url": "https://nrodlzdf-a.akamaihd.net/dach/zdf/23/08/230808_2315_sendung_dks/1/230808_2315_sendung_dks_3360k_p36v17.mp4",
-    "plot": "Marie (25) ist als junge, mittellose Mutter gefangen in einem Leben, das sie sich so niemals gewünscht hat. Als sie dem Adrenalinjunkie Erich (30) das Leben rettet, ist sie fasziniert von ihm. Erich führt Marie in die Welt der Schausteller ein und geht mit ihr auf die Jagd nach einem intensiven Leben. Der Beginn einer berauschenden Liebe, die Marie vor eine wichtige Entscheidung stellt.",
-    "mediathek_desc": "Marie, eine junge, alleinerziehende Mutter, verliebt sich in den Schausteller und Adrenalin-Junkie Erich. Ein Liebesdrama zwischen Rausch und Sehnsucht, Vertrauen und Verrat.",
-    "director": "Abini Gold",
-    "actors": [
-      "Laura Balzer",
-      "Aaron Altaras",
-      "Paul Boche"
-    ],
-    "rating": "5.6",
-    "thumb": "https://image.tmdb.org/t/p/w342/gZECoUnaQ9iEQu5VYlEYMYG1cwH.jpg",
-    "genres_list": [
-      "Drama",
-      "Romanze"
-    ],
-    "channel": "ZDF",
-    "timestamp": 1787294600,
-    "isNew": false,
-    "tmdb_id": 1144251,
-    "tmdb_type": "movie",
-    "url_website": "https://www.zdf.de/filme/zwischen-uns-die-nacht-movie-100"
   },
   {
     "title": "Zwischen zwei Herzen",
