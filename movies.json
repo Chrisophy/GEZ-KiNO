@@ -203,7 +203,7 @@
     ],
     "channel": "ZDF",
     "timestamp": 1792798201,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 246741,
     "tmdb_type": "movie"
   },
@@ -291,7 +291,7 @@
     "title": "A Quiet Place: Tag Eins",
     "search": "A Quiet Place: Tag Eins",
     "year": "2024",
-    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/26/10/261005_2215_sendung_spf/1/261005_2215_sendung_spf_a1a2_3360k_p36v17.mp4",
+    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/26/10/261005_2215_sendung_spf/1/261005_2215_sendung_spf_a3a4_3360k_p36v17.mp4",
     "plot": "Aus dem Nichts heraus wird New York City Ziel einer Alieninvasion. Die monströsen Kreaturen schnappen sich jeden Menschen, der ihnen über den Weg läuft. Doch die Aliens können offenbar gar nichts sehen, sondern scheinen sich ausschließlich anhand von Geräuschen in ihrer Umgebung zu orientieren. Wer in der Nähe der Aliens auch nur einen Mucks von sich gibt, hat damit praktisch sein Todesurteil unterschrieben. Mittendrin steckt eine junge Frau namens Sam, die alles tun muss, um zu überleben, während die Stadt um sie herum in Chaos und Zerstörung versinkt.",
     "mediathek_desc": "Als Manhattan Ziel eines Alien-Angriffs wird, verbünden sich die todkranke Sam und der hilflose Student Eric zum gemeinsamen Überlebenskampf in den Straßen von New York.",
     "director": "Michael Sarnoski",
@@ -764,6 +764,34 @@
     "tmdb_id": 335681,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyNC0wMi0wNF8wMi0yNS1NRVo"
+  },
+  {
+    "title": "Alles Chefsache!",
+    "search": "Alles Chefsache!",
+    "original_title": "Alles Chefsache!",
+    "year": "2013",
+    "video_url": "https://ctv-videos.daserste.de/int/2026/10/13/942/942_29356_sendeton_1280x720-50p-3200kbit.mp4",
+    "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2FyZC5kZS9wbGFuQVJEX2I4ZjJlMThmLWEwNjAtNGJiNS05MTYzLTUwODE3Zjk4YmVlZl9nYW56ZVNlbmR1bmc",
+    "plot": "Seit dem Tod seiner Frau lebt Theo Hansen nur noch für seine Tütensuppenfabrik, die in letzter Zeit aber nicht mehr gut läuft. Seine Produktpalette ist veraltet, der engstirnig gewordene Firmenpatriarch hat die modernen Essgewohnheiten ignoriert, entsprechend droht der Firma nun die Insolvenz. Den überlebensnotwendigen Kredit verlängert die Bank nur zu einer Bedingung: Theo muss den Chefsessel räumen, damit sein Sohn Markus die Fabrik runderneuert. Nach diesem Hochverrat kehrt der alte Unternehmer seinem Betrieb verbittert den Rücken und trifft, von düsteren Gedanken geplagt, auf die lebenslustige Carla. Da auch seine Villa längst unter den Hammer gekommen ist, zieht er kurz entschlossen in die Pension der bodenständigen Italienerin ein, die dem selbstherrlichen Macho ordentlich Paroli bietet.",
+    "mediathek_desc": "Spielfilm Deutschland 2013 Seit dem Tod seiner Frau lebt Theo Hansen (Günther Maria Halmer) nur noch für seine Tütensuppenfabrik, die in letzter Zeit aber nicht mehr gut läuft. Seine Produktpalette ist veraltet, der engstirnig gewordene Firmenpatriarch hat die modernen Essgewohnheiten ignoriert, entsprechend droht der Firma nun die Insolvenz....",
+    "director": "Edzard Onneken",
+    "actors": [
+      "Günther Maria Halmer",
+      "Angela Roy",
+      "David Rott"
+    ],
+    "rating": "6.0",
+    "thumb": "https://image.tmdb.org/t/p/w342/u99yTVhEO3OpVXdH7BE943fdVYT.jpg",
+    "genres_list": [
+      "TV-Film",
+      "Komödie",
+      "Romanze"
+    ],
+    "channel": "ARD",
+    "timestamp": 1794741900,
+    "isNew": true,
+    "tmdb_id": 256665,
+    "tmdb_type": "movie"
   },
   {
     "title": "Alles Samba",
@@ -1869,7 +1897,7 @@
     "isNew": false,
     "tmdb_id": 570356,
     "tmdb_type": "movie",
-    "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyMS0xMS0yN18xNC0zMC1NRVo"
+    "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyMS0xMS0yN18xNC0zMC1NRVovYXVkaW9kZXNrcmlwdGlvbg"
   },
   {
     "title": "Aus lauter Liebe zu dir",
@@ -2394,6 +2422,33 @@
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAxOC0wNC0wMV8xNC0xMC1NRVNa"
   },
   {
+    "title": "Beste Bescherung",
+    "search": "Beste Bescherung",
+    "original_title": "Beste Bescherung",
+    "year": "2013",
+    "video_url": "https://nrodlzdf-a.akamaihd.net/none/zdf/20/12/201226_161220_2015_sendung_fdw/4/201226_161220_2015_sendung_fdw_3360k_p36v15.mp4",
+    "url_website": "https://www.zdf.de/filme/beste-bescherung-movie-100",
+    "plot": "Im dritten Teil der Mailinger Reihe will Miriam mit ihren 3 Geschwistern auf dem Bauernhof ihres Freundes ein beschauliches Weihnachtsfest feiern. Doch unerwartet taucht auch ihr schwieriger Vater Karl auf, der mit einem Koffer Schwarzgeld auf der Flucht vor der Steuerfahndung ist. Damit hat sich das besinnliche Weihnachtsfest erledigt.",
+    "mediathek_desc": "Kurz vor Heiligabend herrscht bei Großfamilie Maillinger Adventstrubel der etwas anderen Art: Es geht um eine Steuerhinterziehung.",
+    "director": "Rainer Kaufmann",
+    "actors": [
+      "Sophie von Kessel",
+      "Friedrich von Thun",
+      "Mišel Matičević"
+    ],
+    "rating": "4.0",
+    "thumb": "https://image.tmdb.org/t/p/w342/zn3UmSvnlKBzI0s7VNlq47JCFXx.jpg",
+    "genres_list": [
+      "Komödie",
+      "TV-Film"
+    ],
+    "channel": "ZDF",
+    "timestamp": 1793889625,
+    "isNew": true,
+    "tmdb_id": 243739,
+    "tmdb_type": "movie"
+  },
+  {
     "title": "Besuch für Emma",
     "search": "Besuch für Emma",
     "year": "2015",
@@ -2724,8 +2779,8 @@
       "Drama"
     ],
     "channel": "ZDF",
-    "timestamp": 1787648982,
-    "isNew": false,
+    "timestamp": 1793878702,
+    "isNew": true,
     "tmdb_id": 1191945,
     "tmdb_type": "movie",
     "url_website": "https://www.zdf.de/filme/blindspot-movie-100"
@@ -3704,26 +3759,6 @@
     "tmdb_id": 612515,
     "tmdb_type": "movie",
     "url_website": "https://www.3sat.de/film/spielfilm/dark-encounter-100.html"
-  },
-  {
-    "title": "Dark Water - Besuch aus dem Jenseits",
-    "search": "Dark Water - Besuch aus dem Jenseits",
-    "original_title": "Dark Water - Besuch aus dem Jenseits",
-    "year": "None",
-    "video_url": "https://manifest-arte.akamaized.net/api/manifest/v1/Generate/a1a1e37c-24c3-4eda-b408-7eb688079b56/de/XQ+KS+CHEV1/133122-000-A.m3u8",
-    "url_website": "https://www.arte.tv/de/videos/133122-000-A/dark-water/",
-    "plot": "Zermürbt von Sorgerechtsstreit und Geldnöten zieht Yoshimi mit ihrer Tochter in ein verwahrlostes Mietshaus am Rande von Tokio. Vom Dach dringt Wasser in die Wohnung. Pfützen breiten sich aus ... Der Geist eines kleinen Mädchens, das ganz in der Nähe ertrunken ist, spukt durch die Wohnung. Und das unglückliche Geistermädchen will Yoshimis ungeteilte Aufmerksamkeit. Sofort!",
-    "mediathek_desc": "Zermürbt von Sorgerechtsstreit und Geldnöten zieht Yoshimi mit ihrer Tochter in ein verwahrlostes Mietshaus am Rande von Tokio. Vom Dach dringt Wasser in die Wohnung. Pfützen breiten sich aus ... Der Geist eines kleinen Mädchens, das ganz in der Nähe ertrunken ist, spukt durch die Wohnung. Und das unglückliche Geistermädchen will Yoshimis ungeteilte Aufmerksamkeit. Sofort!",
-    "director": "",
-    "actors": [],
-    "rating": "N/A",
-    "thumb": "placeholder.png",
-    "genres_list": [
-      "Sonstige"
-    ],
-    "channel": "ARTE.DE",
-    "timestamp": 1793398101,
-    "isNew": true
   },
   {
     "title": "Darling Companion",
@@ -5449,31 +5484,6 @@
     "title": "Dennstein & Schwarz - Rufmord",
     "search": "Dennstein & Schwarz - Rufmord",
     "year": "2020",
-    "video_url": "https://pd-videos.daserste.de/int/2024/08/23/DEGSM877904/DEGSM877904_3048790sendeton__1280x720-50p-3200kbit.mp4",
-    "plot": "Therese Schwarz vertritt den mit Paula Dennstein sehr gut befreundeten Politiker Konrad Wagner, der von einer Zeitung an den #MeToo-Pranger gestellt wurde. Deshalb passt der überraschende Besuch ihrer kleinen Schwester Marita auch so gar nicht in ihr Konzept. Noch dazu, wo Marita zusammen mit Ferdinand durch eine Cannabis-Geschichte in heiklen Polizeikontakt kommt. Für Konrads Verteidigung ist es wichtig den Verleumder auszumachen, doch das ist ein Wettlauf gegen die Zeit, da die Landtagswahl vor der Türe steht…",
-    "mediathek_desc": "Spielfilm Deutschland/Österreich 2020\r\n\r\nAuf Frauenpower setzen \"Dennstein & Schwarz\" als Markenzeichen ihrer Anwaltskanzlei. Der neue Fall verspricht viel Publicity, denn sie vertreten den aufstrebenden Politiker, der nun durch eine Zeitungsstory als Grapscher am Pranger steht. \r\n\r\nMit Maria Happel, Martina Ebm, Manuel Rubey, Nele Kiper u.a. | Buch: Konstanze Breitebner | Regie: Michael Rowitz",
-    "director": "Michael Rowitz",
-    "actors": [
-      "Maria Happel",
-      "Martina Ebm",
-      "Manuel Rubey"
-    ],
-    "rating": "6.0",
-    "thumb": "https://image.tmdb.org/t/p/w342/6AP96jy3fR9wc26fb5zlWWdEMS4.jpg",
-    "genres_list": [
-      "Drama"
-    ],
-    "channel": "ARD",
-    "timestamp": 1724500800,
-    "isNew": false,
-    "tmdb_id": 679245,
-    "tmdb_type": "movie",
-    "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyNC0wOC0yNF8xNC0wMC1NRVNa"
-  },
-  {
-    "title": "Dennstein & Schwarz - Rufmord",
-    "search": "Dennstein & Schwarz - Rufmord",
-    "year": "2020",
     "video_url": "https://pd-videos.daserste.de/int/2024/09/06/DEGSM685649/DEGSM685649_3059520_sendeton_1280x720-50p-3200kbit.mp4",
     "plot": "Therese Schwarz vertritt den mit Paula Dennstein sehr gut befreundeten Politiker Konrad Wagner, der von einer Zeitung an den #MeToo-Pranger gestellt wurde. Deshalb passt der überraschende Besuch ihrer kleinen Schwester Marita auch so gar nicht in ihr Konzept. Noch dazu, wo Marita zusammen mit Ferdinand durch eine Cannabis-Geschichte in heiklen Polizeikontakt kommt. Für Konrads Verteidigung ist es wichtig den Verleumder auszumachen, doch das ist ein Wettlauf gegen die Zeit, da die Landtagswahl vor der Türe steht…",
     "mediathek_desc": "Spielfilm Deutschland/Österreich 2020\r\n\r\nAuf Frauenpower setzen \"Dennstein & Schwarz\" als Markenzeichen ihrer Anwaltskanzlei. Der neue Fall verspricht viel Publicity, denn sie vertreten den aufstrebenden Politiker, der nun durch eine Zeitungsstory als Grapscher am Pranger steht. \r\n\r\nMit Maria Happel, Martina Ebm, Manuel Rubey, Nele Kiper u.a. | Buch: Konstanze Breitebner | Regie: Michael Rowitz",
@@ -5494,6 +5504,31 @@
     "tmdb_id": 679245,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyNC0wOS0wN18xNC0wMC1NRVNa"
+  },
+  {
+    "title": "Dennstein & Schwarz - Rufmord",
+    "search": "Dennstein & Schwarz - Rufmord",
+    "year": "2020",
+    "video_url": "https://pd-videos.daserste.de/int/2024/08/23/DEGSM877904/DEGSM877904_3048790sendeton__1280x720-50p-3200kbit.mp4",
+    "plot": "Therese Schwarz vertritt den mit Paula Dennstein sehr gut befreundeten Politiker Konrad Wagner, der von einer Zeitung an den #MeToo-Pranger gestellt wurde. Deshalb passt der überraschende Besuch ihrer kleinen Schwester Marita auch so gar nicht in ihr Konzept. Noch dazu, wo Marita zusammen mit Ferdinand durch eine Cannabis-Geschichte in heiklen Polizeikontakt kommt. Für Konrads Verteidigung ist es wichtig den Verleumder auszumachen, doch das ist ein Wettlauf gegen die Zeit, da die Landtagswahl vor der Türe steht…",
+    "mediathek_desc": "Spielfilm Deutschland/Österreich 2020\r\n\r\nAuf Frauenpower setzen \"Dennstein & Schwarz\" als Markenzeichen ihrer Anwaltskanzlei. Der neue Fall verspricht viel Publicity, denn sie vertreten den aufstrebenden Politiker, der nun durch eine Zeitungsstory als Grapscher am Pranger steht. \r\n\r\nMit Maria Happel, Martina Ebm, Manuel Rubey, Nele Kiper u.a. | Buch: Konstanze Breitebner | Regie: Michael Rowitz",
+    "director": "Michael Rowitz",
+    "actors": [
+      "Maria Happel",
+      "Martina Ebm",
+      "Manuel Rubey"
+    ],
+    "rating": "6.0",
+    "thumb": "https://image.tmdb.org/t/p/w342/6AP96jy3fR9wc26fb5zlWWdEMS4.jpg",
+    "genres_list": [
+      "Drama"
+    ],
+    "channel": "ARD",
+    "timestamp": 1724500800,
+    "isNew": false,
+    "tmdb_id": 679245,
+    "tmdb_type": "movie",
+    "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyNC0wOC0yNF8xNC0wMC1NRVNa"
   },
   {
     "title": "Dennstein & Schwarz - Schuldenfalle",
@@ -6058,8 +6093,8 @@
       "Drama"
     ],
     "channel": "ARD",
-    "timestamp": 1785754500,
-    "isNew": false,
+    "timestamp": 1794446400,
+    "isNew": true,
     "tmdb_id": 321784,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyNS0wNi0xOV8wMS01MC1NRVNa"
@@ -8516,7 +8551,7 @@
     ],
     "channel": "3Sat",
     "timestamp": 1792876200,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 185763,
     "tmdb_type": "movie",
     "url_website": "https://www.3sat.de/film/spielfilm/die-gottesanbeterin-100.html"
@@ -8731,31 +8766,6 @@
     "tmdb_id": 360500,
     "tmdb_type": "movie",
     "url_website": "https://www.zdf.de/filme/die-insassen-movie-100"
-  },
-  {
-    "title": "Die Jungfrau auf dem Dach",
-    "search": "Die Jungfrau auf dem Dach",
-    "year": "1953",
-    "video_url": "https://arteptweb-a.akamaihd.net/am/ptweb/130000/130900/130974-000-B_EQ_0_VA_11467988_MP4-1500_AMM-PTWEB-40521222311000_108W1ZuB19U.mp4",
-    "plot": "Die unbefangene, sittenstrenge und auch ein wenig unschuldig-naive Patty begegnet eines Tages auf dem Dach des Empire State Buildings dem jungen Architekten Donald Gresham.",
-    "mediathek_desc": "In New York verliebt sich der junge Architekt Don in die angehende Schauspielerin Patty. Die junge Frau ist nicht auf den Mund gefallen und daher eine harte Prüfung für den Schürzenjäger. Dons Nachbar David ist von der erfrischend natürlichen Patty ebenfalls angetan. Nun steht diese nicht nur vor der Qual der Wahl, sondern auch kurz davor, ihre guten Vorsätze aufzugeben.",
-    "director": "Otto Preminger",
-    "actors": [
-      "Hardy Krüger",
-      "Johannes Heesters",
-      "Johanna Matz"
-    ],
-    "rating": "5.3",
-    "thumb": "https://image.tmdb.org/t/p/w342/w0XR39ibBNmJ3GJYjnmCNHyGkFc.jpg",
-    "genres_list": [
-      "Komödie"
-    ],
-    "channel": "ARTE.DE",
-    "timestamp": 1783071930,
-    "isNew": false,
-    "tmdb_id": 316985,
-    "tmdb_type": "movie",
-    "url_website": "https://www.arte.tv/de/videos/130974-000-A/die-jungfrau-auf-dem-dach/"
   },
   {
     "title": "Die Kamine von Green Knowe",
@@ -10884,6 +10894,33 @@
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyMS0wMi0wNF8wMC0yMC1NRVo"
   },
   {
+    "title": "Die weiße Rose",
+    "search": "Die weiße Rose",
+    "original_title": "Die weiße Rose",
+    "year": "1982",
+    "video_url": "https://nrodlzdf-a.akamaihd.net/dach/3sat/26/11/261106_die_weisse_rose_spielfilm/1/261106_die_weisse_rose_spielfilm_3360k_p36v17.mp4",
+    "url_website": "https://www.3sat.de/film/spielfilm/die-weisse-rose-100.html",
+    "plot": "Ein kleiner Lichtstreifen in Deutschlands dunkelster Zeit. München 1942. Eine Gruppe von fünf Studenten, unter ihnen die Geschwister Hans und Sophie Scholl, ruft mit Flugblättern, unterzeichnet mit „Die weiße Rose“, zum Widerstand gegen Hitler auf. Unter Einsatz ihres Lebens bringen sie die Flugblätter auch in andere Städte. Nachts schreiben sie „Nieder mit Hitler“ an die Hauswände. Während sich die Schlinge der Gestapo immer enger zieht, nehmen sie Kontakt zu anderen Gruppen und zu Widerstandskreisen in der Wehrmacht auf. Im Frühjahr 1943 schlägt die Gestapo zu. Der Volksgerichtshof unter Freisler hat das letzte Wort.",
+    "mediathek_desc": "Während des Zweiten Weltkriegs beginnt eine kleine Gruppe von Münchner Studenten, die Entscheidungen und Praktiken der Naziregierung zu hinterfragen. Die Gruppe gründet eine Widerstandszelle.",
+    "director": "Joschi Arpa",
+    "actors": [
+      "Lena Stolze",
+      "Wulf Kessler",
+      "Oliver Siebert"
+    ],
+    "rating": "6.1",
+    "thumb": "https://image.tmdb.org/t/p/w342/a2LVdGxEcmrL1FFSfonD5n4xtkK.jpg",
+    "genres_list": [
+      "Drama",
+      "Historie"
+    ],
+    "channel": "3Sat",
+    "timestamp": 1793992500,
+    "isNew": true,
+    "tmdb_id": 11057,
+    "tmdb_type": "movie"
+  },
+  {
     "title": "Die zehn Gebote",
     "search": "Die zehn Gebote",
     "year": "1956",
@@ -11507,7 +11544,7 @@
       "Komödie"
     ],
     "channel": "ZDF",
-    "timestamp": 1793770804,
+    "timestamp": 1793870720,
     "isNew": true,
     "tmdb_id": 862252,
     "tmdb_type": "movie",
@@ -14633,7 +14670,7 @@
     ],
     "channel": "ARD",
     "timestamp": 1792707300,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 531491,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2FyZC5kZS9wbGFuQVJEXzdiYzEzOTQzLWJmYTgtNDM1MS05ZjEwLWE2YTllOWExODE2NV9nYW56ZVNlbmR1bmc"
@@ -18954,8 +18991,8 @@
       "Drama"
     ],
     "channel": "ARD",
-    "timestamp": 1779705900,
-    "isNew": false,
+    "timestamp": 1794490200,
+    "isNew": true,
     "tmdb_id": 265619,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyMy0wMi0xMl8xNC0wMy1NRVo"
@@ -20051,7 +20088,7 @@
     ],
     "channel": "ARD",
     "timestamp": 1792871100,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 434173,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyNC0wOC0xNl8wMi0yMC1NRVNa"
@@ -20602,6 +20639,32 @@
     "tmdb_id": 920232,
     "tmdb_type": "movie",
     "url_website": "https://www.3sat.de/film/spielfilm/last-dance-100.html"
+  },
+  {
+    "title": "Late Night with the Devil",
+    "search": "Late Night with the Devil",
+    "original_title": "Late Night with the Devil",
+    "year": "2024",
+    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/26/11/261106_0120_sendung_spf/1/261106_0120_sendung_spf_3360k_p36v17.mp4",
+    "url_website": "https://www.zdf.de/video/filme/late-night-with-the-devil-movie-100/late-night-with-the-devil-100",
+    "plot": "Die Zuschauerzahlen befinden sich schon seit Langem im freien Fall: Die Sendung der Halloween-Nacht von 1977 ist für die Late-Night-Talkshow „Night Owls“ und ihren Moderator Jack Delroy die letzte Chance, sich beim Publikum zu bewähren. Demgemäß plant er mit seinen Gästen die spektakulärste Horror-Show des Jahres: Ein Hellseher nimmt Kontakt zu toten Verwandten auf, bevor er auf offener Bühne einen gewaltigen Schleimstrahl erbricht. Ein Zweifler versucht sich an der Aufdeckung der unerklärlichen Phänomene, die diesen Abend heimsuchen. Und dann ist da noch eine Parapsychologin in Begleitung der 13-jährigen Lilly, die als einzige den Massenselbstmord einer satanischen Sekte überlebt hat und vom mysteriösen Mr. Wiggles besessen sein will. Während sich hinter den Kulissen zunehmend Panik über die beängstigenden Vorkommnisse und die gefährdete Quote breitmacht, nimmt die Show ihren verhängnisvollen Verlauf. Der letzte Mitschnitt wurde nie gesendet … bis heute.",
+    "mediathek_desc": "Halloween 1977: In die Live-TV-Sendung \"Night Owls\" wurden Gäste zum Thema Okkultismus eingeladen. Auch ein angeblich besessenes Mädchen soll auftreten – mit ungeahnten Folgen.",
+    "director": "Joel Anderson",
+    "actors": [
+      "David Dastmalchian",
+      "Laura Gordon",
+      "Ian Bliss"
+    ],
+    "rating": "7.1",
+    "thumb": "https://image.tmdb.org/t/p/w342/bLRBF0fmROM859jbq47qZRGxIEI.jpg",
+    "genres_list": [
+      "Horror"
+    ],
+    "channel": "ZDF",
+    "timestamp": 1793925000,
+    "isNew": true,
+    "tmdb_id": 938614,
+    "tmdb_type": "movie"
   },
   {
     "title": "Lauf Junge lauf",
@@ -21156,7 +21219,7 @@
     ],
     "channel": "ARD",
     "timestamp": 1792747200,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 278326,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyNS0wMS0wMl8xNC0wMy1NRVo"
@@ -30702,32 +30765,6 @@
     "url_website": "http://www.ardmediathek.de/tv/Spielfilm/Tian-Das-Geheimnis-der-Schmuckstraße/NDR-Fernsehen/Video?bcastId=33863522&documentId=57106716"
   },
   {
-    "title": "Tides - Kampf um die Zukunft",
-    "search": "Tides - Kampf um die Zukunft",
-    "year": "2021",
-    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/24/09/240908_0245_sendung_spf/1/240908_0245_sendung_spf_a1a2_3360k_p36v17.mp4",
-    "plot": "Als die Erde für den Menschen unbewohnbar wurde, besiedelte die herrschende Elite den Planeten Kepler 209. Doch seine Atmosphäre macht die neuen Bewohner unfruchtbar. Zwei Generationen später soll ein Programm feststellen, ob Leben auf der Erde wieder möglich ist: Mission Ulysses II soll Gewissheit bringen. Die Raumkapsel gerät beim Eintritt in die Erdatmosphäre außer Kontrolle. Die Astronautin Blake überlebt die Landung als Einzige – doch sie muss feststellen, dass sie auf der Erde nicht alleine ist. Ein Überlebenskampf beginnt, und Blake muss Entscheidungen treffen, die das Schicksal der ganzen Menschheit bestimmen werden.",
-    "mediathek_desc": "Eine Astronautin kehrt nach einer Klimakatastrophe zurück zur Erde, um die Chance einer Neubesiedlung zu prüfen. Dabei sucht sie auch ihren bei einer Mission verschollenen Vater.",
-    "director": "Roland Emmerich",
-    "actors": [
-      "Nora Arnezeder",
-      "Iain Glen",
-      "Sarah-Sofie Boussnina"
-    ],
-    "rating": "5.7",
-    "thumb": "https://image.tmdb.org/t/p/w342/8FhLL4VHFt5UvhAKe8S945U0DOn.jpg",
-    "genres_list": [
-      "Sci-Fi",
-      "Thriller"
-    ],
-    "channel": "ZDF",
-    "timestamp": 1791069301,
-    "isNew": false,
-    "tmdb_id": 760873,
-    "tmdb_type": "movie",
-    "url_website": "https://www.zdf.de/filme/tides---kampf-um-die-zukunft-movie-100"
-  },
-  {
     "title": "Tiger House",
     "search": "Tiger House",
     "year": "2015",
@@ -31840,8 +31877,8 @@
       "Horror"
     ],
     "channel": "ZDF",
-    "timestamp": 1783312032,
-    "isNew": false,
+    "timestamp": 1793878288,
+    "isNew": true,
     "tmdb_id": 1275128,
     "tmdb_type": "movie",
     "url_website": "https://www.zdf.de/filme/unsichtbarer-angreifer-movie-100"
@@ -32129,7 +32166,7 @@
     ],
     "channel": "ARD",
     "timestamp": 1792752900,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 510718,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2FyZC5kZS9wbGFuQVJEXzhmY2FhNDhmLWIyOTAtNDA5ZS04OTgyLWYzMDQzZjU5YjZmM19nYW56ZVNlbmR1bmc"
@@ -32421,8 +32458,8 @@
       "Komödie"
     ],
     "channel": "ARD",
-    "timestamp": 1784548980,
-    "isNew": false,
+    "timestamp": 1795606200,
+    "isNew": true,
     "tmdb_id": 15908,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyMi0xMi0wN18wMi0yNS1NRVo"
@@ -32943,7 +32980,7 @@
     ],
     "channel": "ARD",
     "timestamp": 1792830300,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 326207,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyNS0wNy0yOF8xNS0zMC1NRVNa"
@@ -34381,7 +34418,7 @@
     ],
     "channel": "ARD",
     "timestamp": 1792836000,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 424403,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyMy0wNS0yMF8xNC0wMC1NRVNa"
