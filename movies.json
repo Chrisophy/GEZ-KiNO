@@ -288,33 +288,6 @@
     "url_website": "https://www.3sat.de/film/spielfilm/a-breath-away-100.html"
   },
   {
-    "title": "A Quiet Place: Tag Eins",
-    "search": "A Quiet Place: Tag Eins",
-    "year": "2024",
-    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/26/10/261005_2215_sendung_spf/1/261005_2215_sendung_spf_a3a4_3360k_p36v17.mp4",
-    "plot": "Aus dem Nichts heraus wird New York City Ziel einer Alieninvasion. Die monströsen Kreaturen schnappen sich jeden Menschen, der ihnen über den Weg läuft. Doch die Aliens können offenbar gar nichts sehen, sondern scheinen sich ausschließlich anhand von Geräuschen in ihrer Umgebung zu orientieren. Wer in der Nähe der Aliens auch nur einen Mucks von sich gibt, hat damit praktisch sein Todesurteil unterschrieben. Mittendrin steckt eine junge Frau namens Sam, die alles tun muss, um zu überleben, während die Stadt um sie herum in Chaos und Zerstörung versinkt.",
-    "mediathek_desc": "Als Manhattan Ziel eines Alien-Angriffs wird, verbünden sich die todkranke Sam und der hilflose Student Eric zum gemeinsamen Überlebenskampf in den Straßen von New York.",
-    "director": "Michael Sarnoski",
-    "actors": [
-      "Lupita Nyong'o",
-      "Joseph Quinn",
-      "Alex Wolff"
-    ],
-    "rating": "6.6",
-    "thumb": "https://image.tmdb.org/t/p/w342/rTz7VGuUcHovmR8x6Cf6ZX6CFjH.jpg",
-    "genres_list": [
-      "Horror",
-      "Sci-Fi",
-      "Thriller"
-    ],
-    "channel": "ZDF",
-    "timestamp": 1791490273,
-    "isNew": false,
-    "tmdb_id": 762441,
-    "tmdb_type": "movie",
-    "url_website": "https://www.zdf.de/filme/a-quiet-place-tag-eins-movie-100"
-  },
-  {
     "title": "A Royal Night - Ein königliches Vergnügen",
     "search": "A Royal Night - Ein königliches Vergnügen",
     "year": "2014",
@@ -788,7 +761,7 @@
       "Romanze"
     ],
     "channel": "ARD",
-    "timestamp": 1794741900,
+    "timestamp": 1796382600,
     "isNew": true,
     "tmdb_id": 256665,
     "tmdb_type": "movie"
@@ -1897,7 +1870,7 @@
     "isNew": false,
     "tmdb_id": 570356,
     "tmdb_type": "movie",
-    "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyMS0xMS0yN18xNC0zMC1NRVovYXVkaW9kZXNrcmlwdGlvbg"
+    "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyMS0xMS0yN18xNC0zMC1NRVo"
   },
   {
     "title": "Aus lauter Liebe zu dir",
@@ -2443,7 +2416,7 @@
       "TV-Film"
     ],
     "channel": "ZDF",
-    "timestamp": 1793889625,
+    "timestamp": 1793969136,
     "isNew": true,
     "tmdb_id": 243739,
     "tmdb_type": "movie"
@@ -2522,7 +2495,7 @@
     ],
     "channel": "ARD",
     "timestamp": 1792876500,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 434168,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyNC0wOC0yM18wMi0yMC1NRVNa"
@@ -2813,6 +2786,32 @@
     "url_website": "https://www.zdf.de/filme/bloss-nicht-liebe-movie-100"
   },
   {
+    "title": "Bluff",
+    "search": "Bluff",
+    "original_title": "Bluff",
+    "year": "1916",
+    "video_url": "https://ctv-videos.daserste.de/de/2026/10/06/1736/1736_28804_originalversion_1280x720-50p-3200kbit.mp4",
+    "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2FyZC5kZS9wbGFuQVJEX2I3NzBiZjBhLTIxZDgtNDcwYy05MTE3LWRmMTI3ZTk1OTI1Ml9nYW56ZVNlbmR1bmc",
+    "plot": "Italienischer Spielfilm von 1976 Während des Transports in ein anderes Gefängnis will der Verbrecher Philippe Bang dank eines genialen Planes die Flucht ergreifen. Doch sein Mithäftling Felix überwältigt ihn und flieht an seiner Stelle. Erst die Bandenchefin Duke erkennt, dass der falsche Mann ausbrechen konnte. Sie zwingt Felix dazu, Bang mit einem riskanten Plan zu befreien....",
+    "mediathek_desc": "Italienischer Spielfilm von 1976 Während des Transports in ein anderes Gefängnis will der Verbrecher Philippe Bang dank eines genialen Planes die Flucht ergreifen. Doch sein Mithäftling Felix überwältigt ihn und flieht an seiner Stelle. Erst die Bandenchefin Duke erkennt, dass der falsche Mann ausbrechen konnte. Sie zwingt Felix dazu, Bang mit einem riskanten Plan zu befreien....",
+    "director": "Rae Berger",
+    "actors": [
+      "Clarence Kolb",
+      "Max Dill",
+      "May Cloy"
+    ],
+    "rating": "7.0",
+    "thumb": "https://image.tmdb.org/t/p/w342/5hW2SxOJxVKGx6pj0Q3qtH4mKWz.jpg",
+    "genres_list": [
+      "Komödie"
+    ],
+    "channel": "ARD",
+    "timestamp": 1794009300,
+    "isNew": true,
+    "tmdb_id": 1105906,
+    "tmdb_type": "movie"
+  },
+  {
     "title": "Blutsauger",
     "search": "Blutsauger",
     "original_title": "Blutsauger",
@@ -2836,7 +2835,7 @@
       "Horror"
     ],
     "channel": "ARTE.DE",
-    "timestamp": 1793665359,
+    "timestamp": 1793665839,
     "isNew": true,
     "tmdb_id": 633811,
     "tmdb_type": "movie"
@@ -3077,6 +3076,31 @@
     "url_website": "https://www.3sat.de/film/spielfilm/brandnacht-100.html"
   },
   {
+    "title": "Breathing Underwater",
+    "search": "Breathing Underwater",
+    "original_title": "Breathing Underwater",
+    "year": "2018",
+    "video_url": "https://manifest-arte.akamaized.net/api/manifest/v1/Generate/b7c6ee98-ee52-4203-b1d6-2f2be72e128d/de/XQ+KS+CHEV1/133116-000-A.m3u8",
+    "url_website": "https://www.arte.tv/de/videos/133116-000-A/breathing-underwater/",
+    "plot": "Emma, die voller blauer Flecken und unerwartet schwanger ist, wird direkt aus der Notaufnahme vor ihrem Mann in Sicherheit in ein Frauenhaus gebracht. Während sie noch mit ihrer neuen Umgebung und ihrer ungeplanten Schwangerschaft hadert, entdeckt Emma lange verlorene Seiten ihrer selbst wieder. Und unverhofft findet sie in den anderen Frauen und Kindern des Frauenhauses neue Hoffnung und Trost.",
+    "mediathek_desc": "Emma, die voller blauer Flecken und unerwartet schwanger ist, wird direkt aus der Notaufnahme vor ihrem Mann in Sicherheit in ein Frauenhaus gebracht. Während sie noch mit ihrer neuen Umgebung und ihrer ungeplanten Schwangerschaft hadert, entdeckt Emma lange verlorene Seiten ihrer selbst wieder. Und unverhofft findet sie in den anderen Frauen und Kindern des Frauenhauses neue Hoffnung und Trost.",
+    "director": "Raven Jackson",
+    "actors": [
+      "Donald C. Shorter aka Francesca"
+    ],
+    "rating": "1.0",
+    "thumb": "https://image.tmdb.org/t/p/w342/43vWDNy9HTNTlXJsko7GUgWSE6g.jpg",
+    "genres_list": [
+      "Musik",
+      "Doku"
+    ],
+    "channel": "ARTE.DE",
+    "timestamp": 1787591969,
+    "isNew": false,
+    "tmdb_id": 736574,
+    "tmdb_type": "movie"
+  },
+  {
     "title": "Brezeln für den Pott",
     "search": "Brezeln für den Pott",
     "year": "2014",
@@ -3256,8 +3280,8 @@
       "Drama"
     ],
     "channel": "ARD",
-    "timestamp": 1779680100,
-    "isNew": false,
+    "timestamp": 1796123100,
+    "isNew": true,
     "tmdb_id": 595328,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyMi0xMC0wM18xNS0xNS1NRVNa"
@@ -6232,6 +6256,33 @@
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyNC0wOC0wN18xNC0wMy1NRVNa"
   },
   {
+    "title": "Der Junge, dem die Welt gehört",
+    "search": "Der Junge, dem die Welt gehört",
+    "original_title": "Der Junge, dem die Welt gehört",
+    "year": "2024",
+    "video_url": "https://manifest-arte.akamaized.net/api/manifest/v1/Generate/e20da6d6-7400-4260-9b49-699e70bffc5b/de/XQ+KS+CHEV1/131527-000-A.m3u8",
+    "url_website": "https://www.arte.tv/de/videos/131527-000-A/der-junge-dem-die-welt-gehoert/",
+    "plot": "Basilio lebt in einer verlassenen Villa auf Sizilien mit seinem geheimnisvollen älteren Mentor Kasimir, der ihm helfen soll, wahre Poesie zu finden. Er versucht dort, die Symbole seiner inneren Welt in Musik zu übersetzen. Eines Tages trifft Basilio die ebenso seltsame Karla, deren Leben auf mysteriöse Weise bereits mit seinem verknüpft zu sein scheint. Die Symbolik der Welt um sie herum lässt sie eine ungeahnte Entdeckung machen.",
+    "mediathek_desc": "Der junge Musiker Basilio lebt allein in einer alten sizilianischen Villa und schreibt Musik. Er wird heimgesucht von einem mysteriösen Mentor, der ihn dazu antreibt, die \"wahre Poesie\" zu suchen. Basilio hat damit jedoch große Schwierigkeiten. Als er wenig später auf die ebenfalls mysteriöse Karla trifft, beginnt seine Welt sich mehr und mehr in ein Gedicht zu verwandeln…",
+    "director": "Robert Gwisdek",
+    "actors": [
+      "Julian Pollina",
+      "Denis Lavant",
+      "Paolo Mannina"
+    ],
+    "rating": "8.5",
+    "thumb": "https://image.tmdb.org/t/p/w342/bcKHMoIM9xA60ObTzo6km5UAVGF.jpg",
+    "genres_list": [
+      "Romanze",
+      "Drama"
+    ],
+    "channel": "ARTE.DE",
+    "timestamp": 1787592914,
+    "isNew": false,
+    "tmdb_id": 1198003,
+    "tmdb_type": "movie"
+  },
+  {
     "title": "Der Kardinal",
     "search": "Der Kardinal",
     "year": "2011",
@@ -7197,6 +7248,34 @@
     "tmdb_id": 197950,
     "tmdb_type": "movie",
     "url_website": "https://www.3sat.de/film/spielfilm/der-unbestechliche-moerderisches-marseille-104.html"
+  },
+  {
+    "title": "Der Untergang des Römischen Reiches",
+    "search": "Der Untergang des Römischen Reiches",
+    "original_title": "Der Untergang des Römischen Reiches",
+    "year": "1964",
+    "video_url": "https://manifest-arte.akamaized.net/api/manifest/v1/Generate/7d36c2b1-1564-4e4a-9ae6-429e767be743/de/XQ+KS+CHEV1/062854-000-A.m3u8",
+    "url_website": "https://www.arte.tv/de/videos/062854-000-A/der-untergang-des-roemischen-reiches/",
+    "plot": "Im zweiten Jahrhundert nach Christi: Marc Aurel ist Herrscher über das Römische Reich. Da er seinen Sohn Commodus nicht als seinen Nachfolger benennen will, setzt er Tribun Livius, der in seine Tochter Lucilla verliebt ist, als Erben ein. Lucilla wird jedoch gegen ihren Willen mit dem König von Armenien vermählt. Als Commodus nach einem Attentat auf Marc Aurel doch Kaiser von Rom wird, führt er das Römische Reich wie befürchtet ins Chaos. In einem dramatischen Kampf gegen Livius stirbt Commodus. Doch Livius lehnt die Krone ab.",
+    "mediathek_desc": "Marcus Aurelius, Kaiser des Römischen Reiches, hat seinen Ziehsohn Livius als seinen Nachfolger auserwählt. Doch das Vorhaben scheitert: Aurelius wird vergiftet und sein leiblicher Sohn Commodus besteigt den Thron. – Meisterwerk (1963) des Monumental- oder auch Sandalenfilms. Stephen Boyd, überzeugender Hauptdarsteller, wird flankiert von Sophia Loren, Alec Guinness und Mel Ferrer.",
+    "director": "Anthony Mann",
+    "actors": [
+      "Sophia Loren",
+      "Stephen Boyd",
+      "Alec Guinness"
+    ],
+    "rating": "6.5",
+    "thumb": "https://image.tmdb.org/t/p/w342/wvAdQSAqZC8bTr0g054J56VYQgo.jpg",
+    "genres_list": [
+      "Drama",
+      "Historie",
+      "Krieg"
+    ],
+    "channel": "ARTE.DE",
+    "timestamp": 1482779731,
+    "isNew": false,
+    "tmdb_id": 17277,
+    "tmdb_type": "movie"
   },
   {
     "title": "Der Untertan",
@@ -8895,7 +8974,7 @@
       "Komödie"
     ],
     "channel": "ARTE.DE",
-    "timestamp": 1793819700,
+    "timestamp": 1793819757,
     "isNew": true,
     "tmdb_id": 803694,
     "tmdb_type": "movie"
@@ -10159,7 +10238,7 @@
       "Romanze"
     ],
     "channel": "ARTE.DE",
-    "timestamp": 1793646900,
+    "timestamp": 1793646887,
     "isNew": true,
     "tmdb_id": 4467,
     "tmdb_type": "movie"
@@ -12044,7 +12123,7 @@
     ],
     "channel": "ARD",
     "timestamp": 1792930200,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 289650,
     "tmdb_type": "movie"
   },
@@ -12180,6 +12259,34 @@
     "tmdb_id": 370403,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2FyZC5kZS9wbGFuQVJEX2I3MjVmYjI3LWFjMTctNGZmNy1hMGY2LThhOTFhOWY3NjMzM19nYW56ZVNlbmR1bmc"
+  },
+  {
+    "title": "Ein Lächeln nachts um vier",
+    "search": "Ein Lächeln nachts um vier",
+    "original_title": "Ein Lächeln nachts um vier",
+    "year": "2017",
+    "video_url": "https://nrodlzdf-a.akamaihd.net/none/zdf/19/12/191226_1645_sendung_sof/7/191226_1645_sendung_sof_a1a2_3328k_p36v14.mp4",
+    "url_website": "https://www.zdf.de/filme/ein-laecheln-nachts-um-vier-movie-100",
+    "plot": "Dezember in Hamburg: Die Stadt erstrahlt im Lichterglanz. Jule hat ihr Jura-Examen endlich in der Tasche und einen genauen Plan für ihr Leben. Die charmante Zufallsbegegnung mit Max passt da so gar nicht rein.",
+    "mediathek_desc": "Jule hat einen genauen Plan für ihr Leben. Dann trifft sie Max.",
+    "director": "Jan Ruzicka",
+    "actors": [
+      "Natalia Belitski",
+      "August Wittgenstein",
+      "Cornelia Froboess"
+    ],
+    "rating": "6.0",
+    "thumb": "https://image.tmdb.org/t/p/w342/hnWSdKwRSHP9SfvDlohktB6aIcf.jpg",
+    "genres_list": [
+      "Komödie",
+      "Romanze",
+      "Drama"
+    ],
+    "channel": "ZDF",
+    "timestamp": 1793943462,
+    "isNew": true,
+    "tmdb_id": 492390,
+    "tmdb_type": "movie"
   },
   {
     "title": "Ein Mann namens Ove",
@@ -12411,6 +12518,32 @@
     "tmdb_id": 139938,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyMy0xMC0xNF8xNC0wMC1NRVNa"
+  },
+  {
+    "title": "Ein Tag",
+    "search": "Ein Tag",
+    "original_title": "Ein Tag",
+    "year": "2017",
+    "video_url": "https://manifest-arte.akamaized.net/api/manifest/v1/Generate/eeb8c4dd-2350-403e-b2e1-042ac1c0598a/de/XQ+KS+CHEV1/133129-000-A.m3u8",
+    "url_website": "https://www.arte.tv/de/videos/133129-000-A/ein-tag/",
+    "plot": "Für Fuchs und Wildschwein beginnt ein sonniger Tag. Doch es ist auch Eintagsfliegen-Schlüpf-Tag. Wildschwein will eigentlich keinen Kontakt zu Eintagsfliege, denn wenn sie am Ende des Tages sterben muss, wird er traurig sein. Doch es kommt, wie es kommen muss: Fuchs, Wildschwein und Eintagsfliege lernen sich kennen. Eintagsfliege vermutet ganz recht, dass Wildschwein traurig ist. Doch Wildschwein erfindet schnell die Notlüge, dass Fuchs nur diesen einen Tag hat. Und so versucht Eintagsfliege, die sich für eine Maifliege hält, dem Fuchs den schönsten Tag des Lebens zu bereiten und das Trio macht sich auf die Reise durch den Wald und in den Tag.",
+    "mediathek_desc": "Anna kocht, bringt ihre Kinder zum Ballett- und Cellounterricht, macht die Wäsche, unterrichtet Italienisch und kocht wieder. In ihrem Familienalltag lebt sie nur für die Anderen. Dazu kommen finanzielle Probleme, die sich in die lange Liste ihrer Sorgen einreihen. Während sie versucht, all dies zu bewältigen, erfährt sie, dass sich ihr Mann ausgerechnet in eine gute Freundin von ihr verliebt hat.",
+    "director": "Martin Baltscheit",
+    "actors": [
+      "Karoline Schuch",
+      "Anke Engelke",
+      "Lars Rudolph"
+    ],
+    "rating": "6.6",
+    "thumb": "https://image.tmdb.org/t/p/w342/oebIsIEvWusjdAaI63o6rnANBol.jpg",
+    "genres_list": [
+      "Familie"
+    ],
+    "channel": "ARTE.DE",
+    "timestamp": 1787590244,
+    "isNew": false,
+    "tmdb_id": 433597,
+    "tmdb_type": "movie"
   },
   {
     "title": "Ein Vater zum Verlieben",
@@ -14669,8 +14802,8 @@
       "Komödie"
     ],
     "channel": "ARD",
-    "timestamp": 1792707300,
-    "isNew": false,
+    "timestamp": 1796212500,
+    "isNew": true,
     "tmdb_id": 531491,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2FyZC5kZS9wbGFuQVJEXzdiYzEzOTQzLWJmYTgtNDM1MS05ZjEwLWE2YTllOWExODE2NV9nYW56ZVNlbmR1bmc"
@@ -15329,7 +15462,7 @@
     ],
     "channel": "ARD",
     "timestamp": 1792935900,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 347389,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyNS0xMS0wMV8xNC0xMC1NRVo"
@@ -15354,7 +15487,7 @@
     ],
     "channel": "ARD",
     "timestamp": 1792915200,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 311252,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyNC0wMy0wM18xNS0zMC1NRVo"
@@ -16351,6 +16484,33 @@
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyNC0wMS0yNl8wMS01MC1NRVo"
   },
   {
+    "title": "Hallo Spencer - Der Film",
+    "search": "Hallo Spencer - Der Film",
+    "original_title": "Hallo Spencer - Der Film",
+    "year": "2024",
+    "video_url": "https://nrodlzdf-a.akamaihd.net/none/zdf/24/12/241225_2015_sendung_fis/1/241225_2015_sendung_fis_a1a2_3360k_p36v17.mp4",
+    "url_website": "https://www.zdf.de/filme/hallo-spencer---der-film-movie-100",
+    "plot": "Jakob Sesam (Rainer Bock), früher ein gefeierter Erfinder und Schöpfer der Spencer-Geschichten, lebt 20 Jahre später ein ganz anderes Leben. In der alten Disco \"Coconut Cave\" kümmert er sich hingebungsvoll um seine Puppen und tritt bei Kindergeburtstagen und Familienfeiern auf. Doch seine Idylle wird jäh von Peggy (Victoria Trauttmansdorff), der Besitzerin der Disco, bedroht. Sie hat ein lukratives Angebot für das Grundstück erhalten und nun beschlossen, dass die Disco einem Altenheim weichen soll, das ihr einen Millionengewinn einbringen würde. Das bedeutet jedoch, dass Jakob samt seinen Puppen ausziehen muss. Zusammen mit seiner langjährigen Freundin Luise (Margarita Broich) schmiedet Jakob einen verzweifelten Plan, um die Abrisspläne zu durchkreuzen. Da kommt ihm die rettende Idee: Er beschließt, einen Film zu drehen, um die zehn Millionen zusammenzukriegen. Doch leichter gesagt als getan, denn seine Idee stellt ihn vor ungeahnte Herausforderungen.",
+    "mediathek_desc": "Jakob Sesam, einstmals erfolgreicher Erfinder und das Mastermind hinter den Geschichten der Puppenserie \"Hallo Spencer\", lebt mit seinen Puppen in einer alten Disco.",
+    "director": "Timo Schierhorn",
+    "actors": [
+      "Rainer Bock",
+      "Victoria Trauttmansdorff",
+      "Margarita Broich"
+    ],
+    "rating": "6.1",
+    "thumb": "https://image.tmdb.org/t/p/w342/nN1dMRu8aSFTAFKqqmz2we1bWxN.jpg",
+    "genres_list": [
+      "Komödie",
+      "Familie"
+    ],
+    "channel": "ZDF",
+    "timestamp": 1793952420,
+    "isNew": true,
+    "tmdb_id": 1371536,
+    "tmdb_type": "movie"
+  },
+  {
     "title": "Halt nicht an!",
     "search": "Halt nicht an!",
     "year": "2019",
@@ -17059,7 +17219,7 @@
     "isNew": false,
     "tmdb_id": 265294,
     "tmdb_type": "movie",
-    "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2FyZC5kZS9wbGFuQVJEXzgzNjQyNTY5LTdlNzMtNDZlNy1hYTQ4LTY0N2EzM2FkNDhkNl9nYW56ZVNlbmR1bmc"
+    "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2FyZC5kZS9wbGFuQVJEXzgzNjQyNTY5LTdlNzMtNDZlNy1hYTQ4LTY0N2EzM2FkNDhkNl9nYW56ZVNlbmR1bmcvYXVkaW9kZXNrcmlwdGlvbg"
   },
   {
     "title": "Herzlichen Glückwunsch",
@@ -17696,6 +17856,33 @@
     "tmdb_id": 524251,
     "tmdb_type": "movie",
     "url_website": "https://www.3sat.de/film/spielfilm/i-see-you-das-boese-ist-naeher-als-du-denkst-100.html"
+  },
+  {
+    "title": "Ich Ich Ich",
+    "search": "Ich Ich Ich",
+    "original_title": "Ich Ich Ich",
+    "year": "1968",
+    "video_url": "https://manifest-arte.akamaized.net/api/manifest/v1/Generate/a2248fe5-6a4e-4acd-9c55-55326deae91d/de/XQ+KS+CHEV1/133124-000-A.m3u8",
+    "url_website": "https://www.arte.tv/de/videos/133124-000-A/ich-ich-ich/",
+    "plot": "Marie wird von ihrem Freund Julian auf der Hochzeit seines Bruders vor versammelter Familie mit einem Heiratsantrag überrumpelt. Sie hat keinen Schimmer, wie sie darauf reagieren soll und flieht aufs Land, um allein über sich, ihr Leben und ihre Beziehung nachzudenken. ",
+    "mediathek_desc": "Marie wird von ihrem Freund Julian auf der Hochzeit seines Bruders vor versammelter Familie mit einem Heiratsantrag überrumpelt. Sie hat keinen Schimmer, wie sie darauf reagieren soll und flieht aufs Land, um allein über sich, ihr Leben und ihre Beziehung nachzudenken. ",
+    "director": "Rainer von Diez",
+    "actors": [
+      "Christine Mainka",
+      "Nancy Illig",
+      "Frieder W. Anders"
+    ],
+    "rating": "N/A",
+    "thumb": "https://image.tmdb.org/t/p/w342/vBD8gUbE5fcM2ud3FyyYvfWHEbS.jpg",
+    "genres_list": [
+      "Drama",
+      "Komödie"
+    ],
+    "channel": "ARTE.DE",
+    "timestamp": 1787592149,
+    "isNew": false,
+    "tmdb_id": 870834,
+    "tmdb_type": "movie"
   },
   {
     "title": "Ich bin! Margot Friedländer",
@@ -19672,6 +19859,34 @@
     "url_website": "https://www.3sat.de/film/spielfilm/kaviar-100.html"
   },
   {
+    "title": "Kein Herz für Inder",
+    "search": "Kein Herz für Inder",
+    "original_title": "Kein Herz für Inder",
+    "year": "2017",
+    "video_url": "https://ctv-videos.daserste.de/int/2026/11/06/DEGSM301697/DEGSM301697_3892482_sendeton_1280x720-50p-3200kbit.mp4",
+    "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2FyZC5kZS9wbGFuQVJEXzYwMzEwYWYzLTE0ZjctNDJiNy1hNmJmLTA0OTM1ODEwMjBmM19nYW56ZVNlbmR1bmc",
+    "plot": "Familie Neufund steht eine Austauschschülerin aus England ins Haus! Die Gasteltern Martin Brambach und Aglaia Szyszkowitz sehen hierin die Chance, für ihre eigenwillige 16-jährige Tochter endlich eine Freundin zu gewinnen. Doch auf dem Flughafen steht nun nicht die erwartete \"hippe\" Sandy McCartney aus London vor ihnen, sondern ein 13-jähriger indischer Junge! Man will den kleinen Hindu so schnell wie möglich wieder loswerden. Auf Umwegen werden Zayn Baig in der Rolle des unerwünschten Gastes und Lena Urzendowsky als Einzelgängerin doch noch zu ziemlich besten Freunden.",
+    "mediathek_desc": "Spielfilm Deutschland 2017 Die 16-jährige Fiona Neufund (Lena Urzendowsky) ist eine echte Einzelgängerin. Um endlich eine Freundin für sie zu finden, versuchen es ihre Eltern Charlotte (Aglaia Szyszkowitz) und Erik (Martin Brambach) auf Anraten der Klassenlehrerin (Anna Stieblich) mit einem Schüleraustausch. Ohne lange nachzufragen, wählen die passionierten Beatles-Fans ein Kind namens „Sandy McCartney“ von der Liste aus....",
+    "director": "Viviane Andereggen",
+    "actors": [
+      "Zayn Baig",
+      "Lena Urzendowsky",
+      "Aglaia Szyszkowitz"
+    ],
+    "rating": "3.6",
+    "thumb": "https://image.tmdb.org/t/p/w342/pjJNwNmTZ2GSVu64BSaKkoU7DFz.jpg",
+    "genres_list": [
+      "TV-Film",
+      "Familie",
+      "Komödie"
+    ],
+    "channel": "ARD",
+    "timestamp": 1794056400,
+    "isNew": true,
+    "tmdb_id": 433260,
+    "tmdb_type": "movie"
+  },
+  {
     "title": "Keine Ehe ohne Pause",
     "search": "Keine Ehe ohne Pause",
     "year": "2016",
@@ -20479,7 +20694,7 @@
       "Komödie"
     ],
     "channel": "ARTE.DE",
-    "timestamp": 1793828859,
+    "timestamp": 1793829078,
     "isNew": true,
     "tmdb_id": 837335,
     "tmdb_type": "movie"
@@ -21378,7 +21593,7 @@
     ],
     "channel": "ARD",
     "timestamp": 1792927800,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 687122,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyNC0wNS0yMF8xOC0zMC1NRVNa"
@@ -21404,7 +21619,7 @@
     ],
     "channel": "ARD",
     "timestamp": 1792904100,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 293418,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyNC0xMS0xN18xNS0zMC1NRVo"
@@ -23170,7 +23385,7 @@
     ],
     "channel": "ARD",
     "timestamp": 1792929300,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 373697,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyNC0wNi0yMl8xMy01MC1NRVNa"
@@ -23200,33 +23415,6 @@
     "tmdb_id": 758330,
     "tmdb_type": "movie",
     "url_website": "https://www.3sat.de/film/spielfilm/meine-stunden-mit-leo-102.html"
-  },
-  {
-    "title": "Meine Tochter und der Millionär",
-    "search": "Meine Tochter und der Millionär",
-    "year": "2009",
-    "video_url": "https://pd-videos.daserste.de/int/2019/01/03/f9fdb51b-b56d-4efa-9542-8d0dc8dea4c9/JOB_527367__sendeton_1280x720-50p-3200kbit.mp4",
-    "plot": "Hannes Schmitz ist Müllmann in Hamburg. Er ist ehemaliger Fußballspieler vom HSV, trainiert nun jedoch aufgrund einer Sportverletzung die Jugendmannschaft eines Hamburger Vorortes. Hannes Tochter Annika, die er allein aufgezogen hat, arbeitet in einem Hotel und ist mit ihrem Arbeitskollegen, dem Koch Alexander, liiert. Nachdem Alexander Hannes und Annika seine Eltern vorstellt und Annika gleichzeitig einen Heiratsantrag macht, staunen diese nicht schlecht, als sie erfahren, dass Alexander der Sohn der Multi-Millionäre Verena und Moritz von Wrede ist. Da Alexander Annika seine wahre Identität verschwiegen hat, ist diese empört und flüchtet mit ihrem Vater Hannes aus Alexanders Familienhaus in Hamburg-Blankenese. Es kommt zum Bruch der Beziehung, jedoch merkt Hannes schnell, dass sich Annika und Alexander immer noch lieben und diese ihre Beziehung neu auffrischen wollen.",
-    "mediathek_desc": "Spielfilm Deutschland 2009\r\n\r\nMüllmann Hannes begleitet seine attraktive Tochter Annika nach Hamburg-Blankenese, wo er seinen künftigen Schwiegersohn Alexander kennenlernen soll. Der junge Koch, in den sie sich während der gemeinsamen Lehre verliebte, erweist sich jedoch als millionenschwerer Erbe einer Hotelkette. Seine verdutzten Eltern sind „not amused\", als sie erfahren, dass ihr Sohn die Toch\n.....",
-    "director": "Stephan Meyer",
-    "actors": [
-      "Jan Fedder",
-      "Anja Knauer",
-      "Mareike Carrière"
-    ],
-    "rating": "6.0",
-    "thumb": "https://image.tmdb.org/t/p/w342/nF8nRUHykdkKR8018Syn9vYFbys.jpg",
-    "genres_list": [
-      "Komödie",
-      "Romanze",
-      "Familie"
-    ],
-    "channel": "ARD",
-    "timestamp": 1547299800,
-    "isNew": false,
-    "tmdb_id": 73224,
-    "tmdb_type": "movie",
-    "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAxOS0wMS0xMl8xNC0zMC1NRVo"
   },
   {
     "title": "Meine Tochter, Kreta und ich",
@@ -23622,7 +23810,7 @@
     "original_title": "Midsommar",
     "year": "2019",
     "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/25/10/251003_0235_sendung_spf/1/251003_0235_sendung_spf_3360k_p36v17.mp4",
-    "url_website": "https://www.zdf.de/video/filme/midsommar-movie-100/midsommar-100",
+    "url_website": "https://www.zdf.de/filme/midsommar-movie-100",
     "plot": "Obwohl ihre Beziehung kriselt, schließt sich Dani ihrem Freund Christian auf einen Sommertrip in einen kleinen Ort in Schweden an. Gemeinsam mit Christians Clique sind sie zu einem einmaligen Mittsommer-Festival eingeladen. Doch der anfänglich idyllische Eindruck der abgelegenen Gemeinschaft trügt und die freundlichen Dorfbewohner verhalten sich nach und nach merkwürdiger: Sie bereiten sich auf ein besonderes Mittsommer-Ritual vor, das nur alle 90 Jahre zelebriert wird. Was als puritanisches Fest der Liebe und Glückseligkeit beginnt, nimmt eine unheimliche Wendung, die das sonnengeflutete Paradies bis in die Eingeweide erschüttert.",
     "mediathek_desc": "Nach einem tragischen Familienvorfall schließt sich Dani ihrem insgeheim trennungswilligen Freund Christian und seiner Clique zu einer Reise nach Schweden an. Diese wird zum Horrortrip.",
     "director": "Ari Aster",
@@ -23639,8 +23827,8 @@
       "Mystery"
     ],
     "channel": "ZDF",
-    "timestamp": 1759452300,
-    "isNew": false,
+    "timestamp": 1793315700,
+    "isNew": true,
     "tmdb_id": 530385,
     "tmdb_type": "movie"
   },
@@ -24423,31 +24611,6 @@
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyNS0xMS0wOF8xNC0wMC1NRVo"
   },
   {
-    "title": "Männer sind wie Schokolade",
-    "search": "Männer sind wie Schokolade",
-    "year": "1999",
-    "video_url": "https://pd-videos.daserste.de/int/2017/12/26/0413e80b-768b-403d-8827-79e4c869f5c5/JOB_522982__sendeton_1280x720-50p-3200kbit.mp4",
-    "plot": "Linda, 32 und Artdirektorin bei der Werbeagentur König  und König, ist Single. Sie verfolgt das Liebesleben glücklicher Paare lieber am Fernseher, zusammen mit ihrem schwulen Kollegen Donald. Linda soll ein Konzept für den neuen Großkunden Mike Badon vorbereiten: er will eine Werbekampagne in Auftrag geben für eine Windel, die klingelt, wenn sie voll ist. Leider kann Linda ihn überhaupt nicht ausstehen und gefährdet mit ihrer Streitlust nicht nur Badons Großauftrag, sondern auch den Fortbestand der Agentur ihres Chefs Peter. Privat geht es auch nicht besser. Obwohl Lindas Eltern - seit vielen Jahren getrennt - wieder zusammenleben wollen, versucht Linda alles, um das zu verhindern. Um ihr eigenes Liebesleben kümmert sie sich wenig. Als Linda und ihre Familie schließlich ernsthaft daran zweifeln, ob sie je den \"Richtigen\" finden wird, passiert es dann doch: Sie verliebt sich ganz unerwartet in den von ihr so geschmähten Macho Mike.",
-    "mediathek_desc": "Deutscher Spielfilm von 1998\r\n\r\nLinda, 32 Jahre alt und Artdirektorin bei der Werbeagentur König & König, ist Single. Sie verfolgt das Liebesleben glücklicher Paare lieber am Fernseher, zusammen mit ihrem schwulen Kollegen Donald, mit viel bissigen Kommentaren und einer dicken Portion Schokoladeneis.\r\nDa erhält Linda den Auftrag, ein Konzept für den neuen Großkunden Mike Badon vorzubereiten: Er wi\n.....",
-    "director": "Uwe Wilhelm",
-    "actors": [
-      "Jennifer Nitsch",
-      "Max Tidof",
-      "Stefan Jürgens"
-    ],
-    "rating": "7.0",
-    "thumb": "https://image.tmdb.org/t/p/w342/j5JBja1zEsaD3AdHjtJC0p2eLho.jpg",
-    "genres_list": [
-      "Komödie"
-    ],
-    "channel": "ARD",
-    "timestamp": 1514880300,
-    "isNew": false,
-    "tmdb_id": 310928,
-    "tmdb_type": "movie",
-    "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAxOC0wMS0wMl8wOS0wNS1NRVo"
-  },
-  {
     "title": "Männer sind zum Abgewöhnen",
     "search": "Männer sind zum Abgewöhnen",
     "year": "2001",
@@ -24688,7 +24851,7 @@
     "title": "Nebraska",
     "search": "Nebraska",
     "year": "2013",
-    "video_url": "https://arteptweb-a.akamaihd.net/am/ptweb/130000/130500/130524-000-A_EQ_0_VA-STMA_11582403_MP4-1500_AMM-PTWEB-60783003534330_18s08X1618Og.mp4",
+    "video_url": "https://manifest-arte.akamaized.net/api/manifest/v1/Generate/d3c1aff5-5911-467b-8962-b80d8ea1f60c/de/XQ+KS+CHEV1/130524-000-A.m3u8",
     "plot": "Woody Grant leidet an Demenz. Da er glaubt, dass er bei einem Gewinnspiel eine Million Dollar gewonnen hat, will er nun von seinem Haus in Billings nach Lincoln reisen, um das Geld abzuholen. Nach langem hin und her erklärt sich sein entfremdeter Sohn David dazu bereit, ihn zu fahren. Doch durch einen Unfall sind die beiden dazu gezwungen, einen Zwischenstopp in Hawthorne, einem Städtchen in Nebraska, einzulegen: Woodys Geburtsstadt.",
     "mediathek_desc": "Ein Vater und sein erwachsener Sohn begeben sich auf eine Reise, um einen vermeintlichen Millionen-Dollar-Gewinn abzuholen. Was als mühsamer, aber vergeblicher Roadtrip beginnt, wird schließlich zur Suche nach einem Weg zur Wiedergutmachung. Ein ergreifendes Roadmovie von Alexander Payne über Würde, das Älterwerden und eine tiefe Vater-Sohn-Beziehung.",
     "director": "Doug Mankoff",
@@ -27242,7 +27405,7 @@
     ],
     "channel": "3Sat",
     "timestamp": 1792966200,
-    "isNew": true
+    "isNew": false
   },
   {
     "title": "Rückkehr nach Rimini",
@@ -29385,7 +29548,7 @@
       "Komödie"
     ],
     "channel": "ZDF",
-    "timestamp": 1793798826,
+    "timestamp": 1793965744,
     "isNew": true,
     "tmdb_id": 1389664,
     "tmdb_type": "movie"
@@ -32651,7 +32814,7 @@
     "title": "Verliebte Diebe",
     "search": "Verliebte Diebe",
     "year": "2003",
-    "video_url": "https://pd-videos.daserste.de/int/2022/01/06/ecc92d2b-84ad-4061-98b6-eed6cbf947f8/JOB_546287__sendeton_1280x720-50p-3200kbit.mp4",
+    "video_url": "https://ctv-videos.daserste.de/int/2022/01/06/ecc92d2b-84ad-4061-98b6-eed6cbf947f8/JOB_546287__sendeton_1280x720-50p-3200kbit.mp4",
     "plot": "Nach einem gelungenen Coup in einem Lichtensteiner Luxushotel traut die Juwelendiebin Claire ihren Augen kaum: Unter den Gästen weilt ihr alter \"Kollege\" und ehemaliger Geliebter Vinzenz Kröger, der mittlerweile ein bürgerliches Leben führt. Eigentlich will Claire nichts mehr mit dem charmanten Schlitzohr zu tun haben. Der ist jedoch nicht bereit, Claire einfach wieder verschwinden zu lassen, nachdem er sie endlich wieder gefunden hat. Von einem spektakulären Juwelenraub bis hin zu ausgetüftelter Hochstapelei durchlebt das Duo so manche Turbulenzen - und auch das Gefühlsleben der beiden gerät dabei gehörig in Wallung...",
     "mediathek_desc": "Spielfilm Deutschland 2003 \r\n\r\nNach außen eine elegante Dame, in Wahrheit jedoch eine gerissene Juwelendiebin: für Claire Vanderboldt, bürgerlich: Klara Waldleitner (Gudrun Landgrebe), ist kein Coup zu kompliziert. Je höher die Sicherheitsvorkehrungen, desto größer Claires Ehrgeiz, an das Objekt ihrer Begierde heranzukommen. Nach ihrer jüngsten Einbruchserie in einem Lichtensteiner Luxushotel mach\n.....",
     "director": "Peter Patzak",
@@ -32668,8 +32831,8 @@
       "Krimi"
     ],
     "channel": "ARD",
-    "timestamp": 1642641000,
-    "isNew": false,
+    "timestamp": 1794571200,
+    "isNew": true,
     "tmdb_id": 280395,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyMi0wMS0yMF8wMi0xMC1NRVo"
@@ -33219,31 +33382,6 @@
     "tmdb_id": 306986,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAxOS0xMi0yNF8xNC00NS1NRVo"
-  },
-  {
-    "title": "Weihnachten im Morgenland",
-    "search": "Weihnachten im Morgenland",
-    "year": "2010",
-    "video_url": "https://nrodlzdf-a.akamaihd.net/none/zdf/21/12/211213_sendung_fis/1/211213_sendung_fis_a1a2_3360k_p36v17.mp4",
-    "plot": "Alle Jahre wieder ordert Scheich Scharif eine Tanne bei Förster Droste im Sauerland. In diesem Jahr will der Araber gleich einen ganzen Wald. Obwohl Tannen in der Wüste keine Chance haben, düst der verwitwete Droste mit der Scheichvertrauten Milena nach Dubai. Denn lieber in der Wüste darben, als mit der nervigen Verwandtschaft Weihnachten feiern.",
-    "mediathek_desc": "Florian Droste, Forstwirt im Sauerland, lebt ein Jahr nach dem Tod seiner Frau zurückgezogen in seinem Forsthaus und widmet sich nur noch \"seinem\" Wald und seiner Trauer.",
-    "director": "Martin Gies",
-    "actors": [
-      "Walter Sittler",
-      "Anica Dobra",
-      "Anja Boche"
-    ],
-    "rating": "5.5",
-    "thumb": "https://image.tmdb.org/t/p/w342/wmjPKJhE5wdtldjWHevItsSG5ul.jpg",
-    "genres_list": [
-      "Komödie"
-    ],
-    "channel": "ZDF",
-    "timestamp": 1779775880,
-    "isNew": false,
-    "tmdb_id": 292282,
-    "tmdb_type": "movie",
-    "url_website": "https://www.zdf.de/filme/weihnachten-im-morgenland-movie-100"
   },
   {
     "title": "Weihnachten im Schnee",
