@@ -1020,8 +1020,8 @@
       "Komödie"
     ],
     "channel": "ARD",
-    "timestamp": 1779100200,
-    "isNew": false,
+    "timestamp": 1794714600,
+    "isNew": true,
     "tmdb_id": 446445,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAxNy0wNC0wMV8xMy0wMC1NRVNa"
@@ -2790,7 +2790,7 @@
     "search": "Bluff",
     "original_title": "Bluff",
     "year": "1916",
-    "video_url": "https://ctv-videos.daserste.de/de/2026/10/06/1736/1736_28804_originalversion_1280x720-50p-3200kbit.mp4",
+    "video_url": "https://ctv-videos.daserste.de/de/2026/10/06/1736/1736_28804_sendeton_1280x720-50p-3200kbit.mp4",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2FyZC5kZS9wbGFuQVJEX2I3NzBiZjBhLTIxZDgtNDcwYy05MTE3LWRmMTI3ZTk1OTI1Ml9nYW56ZVNlbmR1bmc",
     "plot": "Italienischer Spielfilm von 1976 Während des Transports in ein anderes Gefängnis will der Verbrecher Philippe Bang dank eines genialen Planes die Flucht ergreifen. Doch sein Mithäftling Felix überwältigt ihn und flieht an seiner Stelle. Erst die Bandenchefin Duke erkennt, dass der falsche Mann ausbrechen konnte. Sie zwingt Felix dazu, Bang mit einem riskanten Plan zu befreien....",
     "mediathek_desc": "Italienischer Spielfilm von 1976 Während des Transports in ein anderes Gefängnis will der Verbrecher Philippe Bang dank eines genialen Planes die Flucht ergreifen. Doch sein Mithäftling Felix überwältigt ihn und flieht an seiner Stelle. Erst die Bandenchefin Duke erkennt, dass der falsche Mann ausbrechen konnte. Sie zwingt Felix dazu, Bang mit einem riskanten Plan zu befreien....",
@@ -4355,7 +4355,7 @@
     ],
     "channel": "ARD",
     "timestamp": 1793010000,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 198092,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyNS0wNy0wM18wMi0wMC1NRVNa"
@@ -10322,6 +10322,33 @@
     "url_website": "https://www.zdf.de/filme/die-toten-von-hameln-movie-100"
   },
   {
+    "title": "Die Trapp-Familie - Ein Leben für die Musik",
+    "search": "Die Trapp-Familie - Ein Leben für die Musik",
+    "original_title": "Die Trapp-Familie - Ein Leben für die Musik",
+    "year": "2015",
+    "video_url": "https://nrodlzdf-a.akamaihd.net/none/3sat/26/11/261108_trapp_familie_spielfilm/1/261108_trapp_familie_spielfilm_3360k_p36v17.mp4",
+    "url_website": "https://www.3sat.de/film/spielfilm/die-trapp-familie---ein-leben-fuer-die-musik-100.html",
+    "plot": "Agathe von Trapp wächst mit ihren sechs Geschwistern behütet auf dem Familiensitz im Salzburger Land auf. Mit dem Tod der geliebten Mutter bricht für sie eine Welt zusammen. Das Mädchen mit der goldenen Stimme beschließt, nie wieder zu singen. Stattdessen kümmert sie sich aufopferungsvoll um Haushalt, Geschwister und ihren Vater Georg von Trapp. Der sieht das mit gemischten Gefühlen und ermuntert sie, ihr eigenes Leben aufzunehmen. Die Familie zieht nach Salzburg und in dem Kindermädchen Maria Gustl findet der Vater eine neue Liebe sowie eine Ersatzmutter für seine Kinder. Agathe empfindet Maria als Konkurrenz und reagiert mit Ablehnung …",
+    "mediathek_desc": "Die Trapp-Familie war und ist eine der berühmtesten Familien der Welt. Ihr Gesang machte sie unsterblich. Der Spielfilm erzählt, wie alles begann.",
+    "director": "Ben Verbong",
+    "actors": [
+      "Matthew Macfadyen",
+      "Eliza Bennett",
+      "Rosemary Harris"
+    ],
+    "rating": "5.9",
+    "thumb": "https://image.tmdb.org/t/p/w342/wiA76e7gIv8gHTVxpZcHXNMCHct.jpg",
+    "genres_list": [
+      "Drama",
+      "Musik"
+    ],
+    "channel": "3Sat",
+    "timestamp": 1605449100,
+    "isNew": false,
+    "tmdb_id": 367416,
+    "tmdb_type": "movie"
+  },
+  {
     "title": "Die Trödelqueen - Gelegenheit macht Liebe",
     "search": "Die Trödelqueen - Gelegenheit macht Liebe",
     "year": "2011",
@@ -10475,6 +10502,32 @@
     "tmdb_id": 1042650,
     "tmdb_type": "movie",
     "url_website": "https://www.3sat.de/film/spielfilm/die-witwe-clicquot-100.html"
+  },
+  {
+    "title": "Die Wutprobe",
+    "search": "Die Wutprobe",
+    "original_title": "Die Wutprobe",
+    "year": "2003",
+    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/26/01/260117_sony_2205_sendung_nsf/1/260117_sony_2205_sendung_nsf_3360k_p36v17.mp4",
+    "url_website": "https://www.zdf.de/video/filme/die-wutprobe-movie-100/die-wutprobe-100",
+    "plot": "Per Gerichtsbeschluss verdonnert man den sanftmütigen Marketing-Angestellten Dave Buznik dazu, bei dem offensichtlich geistesgestörten Therapeuten Buddy Rydell vier Wochen Anti-Aggressionstraining zu absolvieren. Der mutterfixierte Seelenklempner erweist sich nicht nur selbst als cholerischer Psychopath, sondern schafft es zusammen mit Buzniks Mit-Patienten - darunter der gemeingefährliche Chuck - innerhalb kürzester Zeit, dessen Leben sowie die vormals wunderbare Beziehung zu Linda in einen Trümmerhaufen zu verwandeln.",
+    "mediathek_desc": "Der zurückhaltende Dave Buznik wird nach einem Streit mit dem Flugpersonal zu einer Anti-Aggressionstherapie verdonnert. Diese leitet ausgerechnet der aufbrausende Dr. Buddy Rydell.",
+    "director": "Peter Segal",
+    "actors": [
+      "Adam Sandler",
+      "Jack Nicholson",
+      "Marisa Tomei"
+    ],
+    "rating": "6.2",
+    "thumb": "https://image.tmdb.org/t/p/w342/8izWfHg7Ta9DcRvdLN4eWNHpCPC.jpg",
+    "genres_list": [
+      "Komödie"
+    ],
+    "channel": "ZDFneo",
+    "timestamp": 1768683900,
+    "isNew": false,
+    "tmdb_id": 9506,
+    "tmdb_type": "movie"
   },
   {
     "title": "Die Zeit mit Euch",
@@ -11126,6 +11179,32 @@
     "tmdb_id": 10772,
     "tmdb_type": "movie",
     "url_website": "https://www.3sat.de/film/spielfilm/django-100.html"
+  },
+  {
+    "title": "Domino",
+    "search": "Domino",
+    "original_title": "Domino",
+    "year": "1988",
+    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/26/11/261108_0105_sendung_nsf/3/261108_0105_sendung_nsf_3360k_p36v17.mp4",
+    "url_website": "https://www.zdf.de/filme/spielfilme/domino-100.html",
+    "plot": "Domino hat sich gerade von ihrem Geliebten getrennt. Sie arbeitet an einem Video über die Sängerin Billie Holiday. Ebenso wie diese leidet Domino an der Liebe und ist auf der Suche nach ihrer Identität als Frau und Künstlerin. Ein geheimnisvoller Anrufer weckt ihr Interesse, doch ihr Kontakt beschränkt sich auf das Sprechen. Kurze, heftige Affären, u.a. mit dem Toningenieur des Studios, sind für Domino erst in der Erinnerung erregend. Als sie ihren Anrufer treffen möchte, gibt dieser zu erkennen, daß er genau wie Domino nur aus der Distanz lieben kann. Er wird in Zukunft eine andere Frau anrufen.",
+    "mediathek_desc": "Domino Harvey wächst in wohlhabenden und privilegierten Verhältnissen auf. Doch statt den vorgezeichneten Weg zu gehen, entscheidet sie sich für ein gefährliches Leben als Kopfgeldjägerin.",
+    "director": "Ivana Massetti",
+    "actors": [
+      "Brigitte Nielsen",
+      "Antonella Tinazzo",
+      "Geretta Geretta"
+    ],
+    "rating": "5.3",
+    "thumb": "https://image.tmdb.org/t/p/w342/yGblOatDTlD06GwCUyMGC7IlTaP.jpg",
+    "genres_list": [
+      "Drama"
+    ],
+    "channel": "ZDFneo",
+    "timestamp": 1794096300,
+    "isNew": true,
+    "tmdb_id": 244122,
+    "tmdb_type": "movie"
   },
   {
     "title": "Donna Leon - Stille Wasser",
@@ -13009,7 +13088,7 @@
     ],
     "channel": "ARD",
     "timestamp": 1793016000,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 323168,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyNC0xMS0wOV8xNS0zMC1NRVo"
@@ -14072,7 +14151,7 @@
     ],
     "channel": "ZDF",
     "timestamp": 1792968300,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 30767,
     "tmdb_type": "movie"
   },
@@ -16376,6 +16455,32 @@
     "url_website": "https://www.3sat.de/film/spielfilm/guglhupfgeschwader-100.html"
   },
   {
+    "title": "Gäste zum Essen",
+    "search": "Gäste zum Essen",
+    "original_title": "Gäste zum Essen",
+    "year": "2023",
+    "video_url": "https://nrodlzdf-a.akamaihd.net/none/zdf/23/09/230914_2015_sendung_fis/1/230914_2015_sendung_fis_a1a2_3360k_p36v17.mp4",
+    "url_website": "https://www.zdf.de/filme/gaeste-zum-essen-movie-100",
+    "plot": "Zwei Familien aus völlig unterschiedlichen gesellschaftlichen Welten prallen bei einem Abendessen aufeinander. Das so harmlos geplante Kennenlernen eskaliert. Soraya und André Faber, ein Hamburger Architekten-Ehepaar, machen sich Sorgen um ihre 16-jährige Tochter Mila, die ihnen und in der Schule zu entgleiten droht. Ihre Vermutung: Das kann nur am schlechten Einfluss ihres Freundes Leon liegen. Da müssen sie handeln!  Entschlossen laden die Fabers Leons Eltern Viktor und Monika Popov in ihr großzügiges Zuhause zum festlichen Abendessen ein. Während die reichen Gastgeber noch über einen rücksichtsvollen Kleidungsstil im Understatement nachdenken, fahren Viktor und die Supermarktverkäuferin Monika bereits aufgebrezelt auf dem Motorrad vor – in Kampfstimmung: Sie werden sich von diesen Bonzen nicht unterbuttern lassen!",
+    "mediathek_desc": "Zwei Familien aus völlig unterschiedlichen gesellschaftlichen Welten prallen bei einem Abendessen aufeinander. Das so harmlos geplante Kennenlernen eskaliert.",
+    "director": "Carolin Otterbach",
+    "actors": [
+      "Neda Rahmanian",
+      "Matthias Koeberlin",
+      "Hannah Schiller"
+    ],
+    "rating": "5.8",
+    "thumb": "https://image.tmdb.org/t/p/w342/uCRLMnSfCXWAnM6LQrqrHPHlqxs.jpg",
+    "genres_list": [
+      "Sonstige"
+    ],
+    "channel": "ZDF",
+    "timestamp": 1792553906,
+    "isNew": false,
+    "tmdb_id": 1174820,
+    "tmdb_type": "movie"
+  },
+  {
     "title": "Göttliche Funken",
     "search": "Göttliche Funken",
     "year": "2014",
@@ -16408,7 +16513,7 @@
     "original_title": "Haben Sie das von den Morgans gehört?",
     "year": "2009",
     "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/24/04/240409_sony_2155_sendung_sp/1/240409_sony_2155_sendung_sp_3360k_p36v17.mp4",
-    "url_website": "https://www.zdf.de/video/filme/haben-sie-das-von-den-morgans-gehoert-movie-100/haben-sie-das-von-den-morgans-gehoert-100",
+    "url_website": "https://www.zdf.de/filme/haben-sie-das-von-den-morgans-gehoert-movie-100",
     "plot": "Seit drei Monaten lebt das einst glückliche Ehepaar Morgan getrennt, weil Jurist Paul Immobilienmaklerin Meryl mit einer anderen Frau betrogen hat. Alle folgenden Entschuldigungen und Liebesbeteuerungen von Paul kommen bei seiner Frau nicht an. Bis beide zufällig Zeugen eines Mordes werden und deswegen vom FBI zu ihrem eigenen Schutz auf dem Land untergebracht werden. Unter der Betreuung von Sheriff Wheeler und seiner Frau kommen die New Yorker Workaholics den speziellen Reizen des Lebens in Wyoming und dabei auch sich selbst wieder näher.",
     "mediathek_desc": "Zwei erfolgreiche New Yorker, Paul und Meryl, wissen nicht mehr, wie sie ihre zerrüttete Ehe noch retten sollen. Da gibt ein völlig unerwartetes Ereignis ihrer Beziehung eine neue Richtung.",
     "director": "Anthony Katagas",
@@ -16425,8 +16530,8 @@
       "Romanze"
     ],
     "channel": "ZDFneo",
-    "timestamp": 1694202900,
-    "isNew": false,
+    "timestamp": 1793625526,
+    "isNew": true,
     "tmdb_id": 24438,
     "tmdb_type": "movie"
   },
@@ -16505,7 +16610,7 @@
       "Familie"
     ],
     "channel": "ZDF",
-    "timestamp": 1793952420,
+    "timestamp": 1794055345,
     "isNew": true,
     "tmdb_id": 1371536,
     "tmdb_type": "movie"
@@ -16819,7 +16924,7 @@
     ],
     "channel": "ZDF",
     "timestamp": 1792974000,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 517302,
     "tmdb_type": "movie",
     "url_website": "https://www.zdf.de/filme/hatching-movie-100"
@@ -17219,7 +17324,7 @@
     "isNew": false,
     "tmdb_id": 265294,
     "tmdb_type": "movie",
-    "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2FyZC5kZS9wbGFuQVJEXzgzNjQyNTY5LTdlNzMtNDZlNy1hYTQ4LTY0N2EzM2FkNDhkNl9nYW56ZVNlbmR1bmcvYXVkaW9kZXNrcmlwdGlvbg"
+    "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2FyZC5kZS9wbGFuQVJEXzgzNjQyNTY5LTdlNzMtNDZlNy1hYTQ4LTY0N2EzM2FkNDhkNl9nYW56ZVNlbmR1bmc"
   },
   {
     "title": "Herzlichen Glückwunsch",
@@ -18723,8 +18828,8 @@
     "search": "Immaculate",
     "original_title": "Immaculate",
     "year": "2024",
-    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/26/10/261031_0315_sendung_spf/1/261031_0315_sendung_spf_a1a2_3360k_p36v17.mp4",
-    "url_website": "https://www.zdf.de/video/filme/immaculate-movie-100/immaculate-100",
+    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/26/10/261031_0315_sendung_spf/1/261031_0315_sendung_spf_a3a4_3360k_p36v17.mp4",
+    "url_website": "https://www.zdf.de/filme/immaculate-movie-100",
     "plot": "Die gläubige amerikanische Nonne Cecilia begibt sich auf eine neue Reise in ein abgelegenes Kloster in der pittoresken Landschaft Italiens. Der herzliche Empfang Cecilias entwickelt sich schnell zu einem Albtraum, als klar wird, dass ihr neues Zuhause ein düsteres Geheimnis und unaussprechliche Schrecken birgt.",
     "mediathek_desc": "Die junge Amerikanerin Cecilia zieht in ein abgelegenes, italienisches Kloster. Als sich dort beunruhigende Vorfälle ereignen, beginnt die Nonne nicht nur an ihrem Glauben zu zweifeln.",
     "director": "Michael Mohan",
@@ -18741,7 +18846,7 @@
       "Thriller"
     ],
     "channel": "ZDF",
-    "timestamp": 1793412900,
+    "timestamp": 1793606025,
     "isNew": true,
     "tmdb_id": 1041613,
     "tmdb_type": "movie"
@@ -20074,6 +20179,32 @@
     "url_website": "https://www.3sat.de/film/spielfilm/kindeswohl-100.html"
   },
   {
+    "title": "Kindsköpfe",
+    "search": "Kindsköpfe",
+    "original_title": "Kindsköpfe",
+    "year": "2010",
+    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/24/05/240519_sony_1840_sendung_nsf/1/240519_sony_1840_sendung_nsf_3360k_p36v17.mp4",
+    "url_website": "https://www.zdf.de/video/filme/kindskoepfe-movie-100/kindskoepfe-100",
+    "plot": "Fünf alte Freunde und ehemalige Sportkameraden treffen sich nach vielen Jahren wieder, um ihrem verstorbenen Basketball-Trainer aus Kindheitstagen die letzte Ehre zu erweisen. Zusammen mit ihren Ehefrauen und Kindern verbringen sie das lange Feiertagswochenende rund um den 4. Juli in einem Haus am See, wo sie vor langer Zeit einmal ihre Meisterschaft gefeiert haben. Die Freunde versuchen, da anzuknüpfen, wo sie damals aufgehört haben, und stellen fest, dass Älterwerden nicht automatisch auch Erwachsenwerden bedeutet.",
+    "mediathek_desc": "Lenny Feder und seine Freunde Eric, Marcus, Kurt und Rob wollen ihrem verstorbenen Basketballcoach die letzte Ehre erweisen. Lenny mietet eine Waldhütte für alle, was im Chaos endet.",
+    "director": "Tim Herlihy",
+    "actors": [
+      "Adam Sandler",
+      "Kevin James",
+      "Chris Rock"
+    ],
+    "rating": "6.4",
+    "thumb": "https://image.tmdb.org/t/p/w342/573nvW3wF8eWFLIxDuINosyk5Sx.jpg",
+    "genres_list": [
+      "Komödie"
+    ],
+    "channel": "ZDFneo",
+    "timestamp": 1716136800,
+    "isNew": false,
+    "tmdb_id": 38365,
+    "tmdb_type": "movie"
+  },
+  {
     "title": "Kings of Hollywood",
     "search": "Kings of Hollywood",
     "year": "2020",
@@ -20829,6 +20960,35 @@
     "tmdb_id": 1135089,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyMy0wNi0wMl8yMC0xNS1NRVNa"
+  },
+  {
+    "title": "Largo Winch - Tödliches Erbe",
+    "search": "Largo Winch - Tödliches Erbe",
+    "original_title": "Largo Winch - Tödliches Erbe",
+    "year": "2008",
+    "video_url": "https://nrodlzdf-a.akamaihd.net/dach/3sat/26/11/261108_largo_winch_toedliches_erbe_spielfilm/1/261108_largo_winch_toedliches_erbe_spielfilm_3360k_p36v17.mp4",
+    "url_website": "https://www.3sat.de/film/spielfilm/largo-winch---toedliches-erbe-100.html",
+    "plot": "Der schwerreiche Konzern-Mogul Nerio Winch kommt unter mysteriösen Umständen ums Leben. Beim Gerangel um die Firmennachfolge taucht plötzlich sein bisher unbekannter Adoptivsohn auf - Largo Winch. Dieser soll nun den Chefposten übernehmen, worüber die Führungsetage wenig begeistert ist zumal der lässige Abenteurer nicht gerade ins Firmenprofil passt. Doch Largo ist mit allen Wassern gewaschen und kennt die knallharten Regeln der Weltwirtschaft. Allerdings will er zuerst diejenigen finden, die für den Tod seines Vaters verantwortlich sind. Eine Verschwörung in den eigenen Reihen wird zu einem lebensgefährlichen Abenteuer und Largo gerät in ein mörderisches Geflecht aus Geld, Macht, Korruption ..",
+    "mediathek_desc": "Als der mächtige Firmenboss Nerio Winch ermordet wird, erbt sein einziger Sohn Largo alles, wodurch er der eiskalten Managerin Ferguson sowie Geschäftskonkurrenten im Wege steht.",
+    "director": "Jérôme Salle",
+    "actors": [
+      "Tomer Sisley",
+      "Kristin Scott Thomas",
+      "Mélanie Thierry"
+    ],
+    "rating": "6.0",
+    "thumb": "https://image.tmdb.org/t/p/w342/txZ2GumdS8bEtdW1cO8dmBLGsek.jpg",
+    "genres_list": [
+      "Abenteuer",
+      "Drama",
+      "Action",
+      "Thriller"
+    ],
+    "channel": "3Sat",
+    "timestamp": 1465417500,
+    "isNew": false,
+    "tmdb_id": 14400,
+    "tmdb_type": "movie"
   },
   {
     "title": "Last Dance",
@@ -25188,6 +25348,34 @@
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyMy0wOC0xMl8xNC0wMC1NRVNa"
   },
   {
+    "title": "Nichts wie weg",
+    "search": "Nichts wie weg",
+    "original_title": "Nichts wie weg",
+    "year": "2026",
+    "video_url": "https://nrodlzdf-a.akamaihd.net/none/zdf/26/11/261109_2015_sendung_fdw/1/261109_2015_sendung_fdw_a1a2_3360k_p36v17.mp4",
+    "url_website": "https://www.zdf.de/filme/nichts-wie-weg-movie-100",
+    "plot": "Hannah ist von ihrer Mutter Luise zutiefst enttäuscht, weil diese heimlich freiwillig aus dem Leben gehen wollte. Die Krankenschwester Anke Bender hat angeblich einen Patienten auf dem Gewissen. Sie flüchtet vor dem Zugriff der Polizei mit einem Krankenwagen – nicht ahnend, dass sich darin die verletzte Pianistin Luise Dobertin befindet. Die demenzkranke 70-Jährige verfolgt den festen Entschluss zu sterben und bietet Anke ihren alten Pkw zur Flucht an, wenn Anke sie im Gegenzug zur Sterbehilfe in die Schweiz fährt.",
+    "mediathek_desc": "Statt Sterbehilfe in der Schweiz wartet die Familie in Kiel: Anke entführt Luise auf einen emotionalen Roadtrip, bei dem Verfolger und verdrängte Ängste zu ständigen Begleitern werden.",
+    "director": "Sophie Averkamp",
+    "actors": [
+      "Tamara Romera Ginés",
+      "Ulrike Kriener",
+      "Anton von Lucke"
+    ],
+    "rating": "N/A",
+    "thumb": "https://image.tmdb.org/t/p/w342/miiZBzWX2rku7idhqw4Ce7ssSKz.jpg",
+    "genres_list": [
+      "TV-Film",
+      "Drama",
+      "Komödie"
+    ],
+    "channel": "ZDF",
+    "timestamp": 1793621970,
+    "isNew": true,
+    "tmdb_id": 1746471,
+    "tmdb_type": "movie"
+  },
+  {
     "title": "Niemand stirbt gern allein. Ein Krimi aus Passau",
     "search": "Niemand stirbt gern allein. Ein Krimi aus Passau",
     "year": "2025",
@@ -27278,6 +27466,26 @@
     "url_website": "https://www.3sat.de/film/spielfilm/robin-hood---koenig-der-diebe-100.html"
   },
   {
+    "title": "Rogue Agent - Er liebt nur dich",
+    "search": "Rogue Agent - Er liebt nur dich",
+    "original_title": "Rogue Agent - Er liebt nur dich",
+    "year": "None",
+    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/25/08/250818_2215_sendung_spf/1/250818_2215_sendung_spf_a1a2_3360k_p36v17.mp4",
+    "url_website": "https://www.zdf.de/video/filme/rogue-agent---er-liebt-nur-dich-movie-100/rogue-agent---er-liebt-nur-dich-100",
+    "plot": "Die Londoner Rechtsanwältin Alice hat sich in Robert verliebt, doch etwas stimmt nicht mit ihm. Angesprochen auf seine Geheimniskrämerei, gibt er sich ihr als Geheimagent zu erkennen.",
+    "mediathek_desc": "Die Londoner Rechtsanwältin Alice hat sich in Robert verliebt, doch etwas stimmt nicht mit ihm. Angesprochen auf seine Geheimniskrämerei, gibt er sich ihr als Geheimagent zu erkennen.",
+    "director": "",
+    "actors": [],
+    "rating": "N/A",
+    "thumb": "placeholder.png",
+    "genres_list": [
+      "Sonstige"
+    ],
+    "channel": "ZDF",
+    "timestamp": 1755548400,
+    "isNew": false
+  },
+  {
     "title": "Ronja, die Räubertochter",
     "search": "Ronja, die Räubertochter",
     "year": "1984",
@@ -29216,6 +29424,34 @@
     "url_website": "https://www.zdf.de/filme/spiders---ihr-biss-ist-der-tod-movie-100"
   },
   {
+    "title": "Spiel ohne Regeln",
+    "search": "Spiel ohne Regeln",
+    "original_title": "Spiel ohne Regeln",
+    "year": "2005",
+    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/25/10/251029_sony_0420_sendung_nsf/1/251029_sony_0420_sendung_nsf_3360k_p36v17.mp4",
+    "url_website": "https://www.zdf.de/video/filme/spiel-ohne-regeln-movie-100/spiel-ohne-regeln-100",
+    "plot": "Als der frühere Profi-Quarterback Paul “Wrecking” Crewe eine Haftstrafe wegen Körperverletzung abzusitzen hat, trifft er im Gefängnis auf den ehemaligen College-Champion und Trainer Nate Scarborough. Auf Weisung eines ebenso korrupten wie sadistischen Aufsehers muss Paul aus den Insassen ein Football-Team zusammenstellen, das bei einem Wettkampf Wärter gegen Gefangene antreten und um einen hohen Einsatz spielen soll. Doch schon bald muss der verwöhnte Ex-Profi feststellen, dass sich aus einem Haufen Rowdys so leicht keine Mannschaft formen lässt – zumal der Ausgang des großen Spiels bereits beschlossene Sache zu sein scheint. Also bittet er Nate um Hilfe. Gemeinsam wollen sie ihren Mitgefangenen und vor allem den Wärtern zeigen, wo der Hammer hängt!",
+    "mediathek_desc": "Während eines Footballspiels in einem Hochsicherheitsgefängnis wird der ehemalige NFL-Star Paul Crewe gezwungen, ein Team aus Häftlingen gegen die brutalen Wärter aufzustellen.",
+    "director": "Peter Segal",
+    "actors": [
+      "Adam Sandler",
+      "Chris Rock",
+      "Burt Reynolds"
+    ],
+    "rating": "6.7",
+    "thumb": "https://image.tmdb.org/t/p/w342/neLhsbydVMkbl9FxYoKSvHXe7vo.jpg",
+    "genres_list": [
+      "Drama",
+      "Komödie",
+      "Krimi"
+    ],
+    "channel": "ZDFneo",
+    "timestamp": 1761708000,
+    "isNew": false,
+    "tmdb_id": 9291,
+    "tmdb_type": "movie"
+  },
+  {
     "title": "Spinning Man - Mörderischer Zweifel",
     "search": "Mörderischer Zweifel",
     "year": "2018",
@@ -30696,7 +30932,7 @@
     "title": "The Replacement Killers - Die Ersatzkiller",
     "search": "The Replacement Killers - Die Ersatzkiller",
     "year": "1998",
-    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/25/09/250927_sony_2340_sendung_nsf/1/250927_sony_2340_sendung_nsf_3360k_p36v17.mp4",
+    "video_url": "https://rodlzdf-a.akamaihd.net/dach/3sat/24/07/240707_the_replacement_killers_die_ersatzkiller_spielfilm/1/240707_the_replacement_killers_die_ersatzkiller_spielfilm_2360k_p35v17.mp4",
     "plot": "Der Sohn eines chinesischen Triadenbosses ist von einem amerikanischen Police Detective erschossen worden, und nun schickt der zornige Vater seinen besten Killer los, um den kleinen Sohn des Polizisten zu töten. Als der Killer den Auftrag jedoch nicht ausführt und lieber an der Seite einer schönen Fälscherin untertaucht, werden Gangster losgeschickt, um den Verräter zu töten ...",
     "mediathek_desc": "John Lee ist der beste Killer der chinesischen Mafia. Doch als er seinen letzten Auftrag, einen kleinen Jungen zu töten, nicht ausführt, muss der Profi selbst um sein Leben fürchten.",
     "director": "Antoine Fuqua",
@@ -30713,11 +30949,11 @@
       "Thriller"
     ],
     "channel": "3Sat",
-    "timestamp": 1673831700,
+    "timestamp": 1551571500,
     "isNew": false,
     "tmdb_id": 11702,
     "tmdb_type": "movie",
-    "url_website": "https://www.zdf.de/video/filme/the-replacement-killers---die-ersatzkiller-movie-100/the-replacement-killers---die-ersatzkiller-100"
+    "url_website": "https://www.3sat.de/film/spielfilm/the-replacement-killers---die-ersatzkiller-100.html"
   },
   {
     "title": "The Resident - Ich sehe dich",
@@ -32915,6 +33151,26 @@
     "url_website": "https://www.3sat.de/film/spielfilm/verso---die-dunkle-seite-100.html"
   },
   {
+    "title": "Vertical Limit - In größter Gefahr",
+    "search": "Vertical Limit - In größter Gefahr",
+    "original_title": "Vertical Limit - In größter Gefahr",
+    "year": "None",
+    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/25/06/250621_sony_2015_sendung_spf/1/250621_sony_2015_sendung_spf_3360k_p36v17.mp4",
+    "url_website": "https://www.zdf.de/video/filme/vertical-limit---in-groesster-gefahr-movie-100/vertical-limit---in-groesster-gefahr-100",
+    "plot": "Annie, routinierte Bergsteigerin, stürzt auf dem K2 mit ihren Begleitern in eine Gletscherspalte. In über 8000 Metern Höhe gefangen, können sie ohne Hilfe nur 36 Stunden überleben.",
+    "mediathek_desc": "Annie, routinierte Bergsteigerin, stürzt auf dem K2 mit ihren Begleitern in eine Gletscherspalte. In über 8000 Metern Höhe gefangen, können sie ohne Hilfe nur 36 Stunden überleben.",
+    "director": "",
+    "actors": [],
+    "rating": "N/A",
+    "thumb": "placeholder.png",
+    "genres_list": [
+      "Sonstige"
+    ],
+    "channel": "ZDFneo",
+    "timestamp": 1643483700,
+    "isNew": false
+  },
+  {
     "title": "Viele Kühe und ein schwarzes Schaf",
     "search": "Viele Kühe und ein schwarzes Schaf",
     "year": "2020",
@@ -33356,62 +33612,6 @@
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyMi0xMi0xMV8xNS0zMC1NRVo"
   },
   {
-    "title": "Weihnachten für Einsteiger",
-    "search": "Weihnachten für Einsteiger",
-    "year": "2014",
-    "video_url": "https://pd-videos.daserste.de/de/2019/12/16/13f4e9f3-81b9-45c4-bb23-8ddea86e8e3a/JOB_505853__sendeton_1280x720-50p-3200kbit.mp4",
-    "plot": "Auf der Flucht vor Gangstern springt Trickbetrügerin Katharina in den Zug und wirft sich in die Arme eines fremden, verdutzten Mitreisenden. Im Eifelstädtchen Monschau bietet Matthias, Erbe einer Fabrik für Daunenbetten, seiner Zugbekanntschaft vorerst Asyl an. Sofort wirft Katharina einen Blick auf den Firmentresor. Aber der ist leer, der kleine Familienbetrieb ist so pleite wie Katharina. Gerissen wie sie ist, hilft sie dem ahnungslosen Matthias, einen überlebenswichtigen – und in bar bezahlten – Auftrag an Land zu ziehen. Schwierig wird es, als Katharinas ungeduldiger Komplize Rocko auftaucht und die plötzlich gar nicht mehr so abgebrühte Ganovin Gefühle für Matthias und seine “Dorftrottel”-Belegschaft entwickelt…",
-    "mediathek_desc": "Spielfilm Deutschland 2014\r\n\r\nTrickbetrügerin Katharina steckt in der Klemme. Nachdem sie einen schwerreichen Russen um einen Koffer voll Geld erleichtert hat, sind ihr dessen Handlanger dicht auf den Fersen. In dem sympathischen Matthias wittert sie ein leichtes Opfer.\r\n\r\nMit Anna Fischer, Oliver Wnuk, Patrick Mölleken, Sonja Gerhardt, Barnaby Metschurat u.a. | Buch: Sven Bohse, Adrienne Bortoli \n.....",
-    "director": "Sven Bohse",
-    "actors": [
-      "Anna Fischer",
-      "Oliver Wnuk",
-      "Patrick Mölleken"
-    ],
-    "rating": "5.8",
-    "thumb": "https://image.tmdb.org/t/p/w342/3KV9X1i9atk53CNXp9o7binYHe9.jpg",
-    "genres_list": [
-      "Komödie",
-      "TV-Film",
-      "Romanze",
-      "Krimi"
-    ],
-    "channel": "ARD",
-    "timestamp": 1577195100,
-    "isNew": false,
-    "tmdb_id": 306986,
-    "tmdb_type": "movie",
-    "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAxOS0xMi0yNF8xNC00NS1NRVo"
-  },
-  {
-    "title": "Weihnachten im Schnee",
-    "search": "Weihnachten im Schnee",
-    "original_title": "Weihnachten im Schnee",
-    "year": "2019",
-    "video_url": "https://nrodlzdf-a.akamaihd.net/none/zdf/19/12/191215_2015_sendung_sof/7/191215_2015_sendung_sof_a1a2_3328k_p36v14.mp4",
-    "url_website": "https://www.zdf.de/filme/weihnachten-im-schnee-movie-100",
-    "plot": "Die erwachsenen Geschwister Annika, Sanne und Bastian fallen aus allen Wolken: Weihnachten soll dieses Jahr im Schnee stattfinden, genauer gesagt in einer Hütte in Norwegen. Eigentlich feiert die Familie das Fest der Liebe immer gemeinsam in Hamburg. Doch Gitta und Henri Johnen haben kurzerhand das Ferienhaus von Finja Lund gebucht. Die E-Mail, die sie ihren Kindern kurz vor den Feiertagen schicken, stellt die alljährliche Weihnachtsroutine erst mal auf den Kopf. Buchhalterin Annika, die gemeinsam mit Ehemann Christoph den 15-jährigen Sohn Simon hat, ist nicht gerade besinnlicher Stimmung",
-    "mediathek_desc": "Die erwachsenen Geschwister Annika, Sanne und Bastian fallen aus allen Wolken: Weihnachten soll dieses Jahr im Schnee stattfinden, genauer gesagt in einer Hütte in Norwegen.",
-    "director": "Till Franzen",
-    "actors": [
-      "Wencke Myhre",
-      "Katharina Schüttler",
-      "Ulrike Kriener"
-    ],
-    "rating": "3.5",
-    "thumb": "https://image.tmdb.org/t/p/w342/liubDHfrbqkjFLhSl6DtpEVmmuq.jpg",
-    "genres_list": [
-      "Romanze",
-      "Familie",
-      "Komödie"
-    ],
-    "channel": "ZDF",
-    "timestamp": 1792702800,
-    "isNew": false,
-    "tmdb_id": 652617,
-    "tmdb_type": "movie"
-  },
-  {
     "title": "Weihnachts-Männer",
     "search": "Weihnachts-Männer",
     "year": "2015",
@@ -33726,6 +33926,32 @@
     "tmdb_id": 821980,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyNS0wNi0wOV8xNy00NS1NRVNa"
+  },
+  {
+    "title": "Wer hat dem Affen den Zucker geklaut?",
+    "search": "Wer hat dem Affen den Zucker geklaut?",
+    "original_title": "Wer hat dem Affen den Zucker geklaut?",
+    "year": "1982",
+    "video_url": "https://ctv-videos.daserste.de/de/2026/11/07/DEGSM302131/DEGSM302131_3892843_sendeton_1280x720-50p-3200kbit.mp4",
+    "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2FyZC5kZS9wbGFuQVJEXzYzZDBlY2MwLWRhZTYtNGFiNS04NWEzLWFiMGVlMjFjZmQ2MF9nYW56ZVNlbmR1bmc",
+    "plot": "Im exklusiven und extravaganten Luxushotel Grand Hotel Excelsior sorgt ein mystischer Magier mit seiner hellseherischen Begabung für Fassungslosigkeit unter den Gästen. Schrullige Hotelgäste sorgen ebenfalls für Verwirrung und verbreiten Stress beim Hotelpersonal. Der herrschsüchtige Hotelinhaber Taddeus treibt mit seinem Tatendrang während der Hauptsaison das Personal an den Rand ihrer Kräfte. Außerdem hat die sehr wohlhabende Ilde ein Auge auf den Alleinstehenden geworfen. Ein Kellner hat seiner Tochter jahrelang vorgetäuscht, dass er Stammgast im glamourösen Hotel sei. Nun will die Tochter ihn besuchen. Seine Kollegen helfen ihm und bieten dem Mädchen eine beispiellose Maskerade an, damit der Schwindel nicht auffliegt.",
+    "mediathek_desc": "Italienischer Spielfilm von 1982 Direktor Taddeus (Adriano Celentano) ist ein Muffel mit Feldwebel-Allüren. Er piesackt sein Personal mit Wonne und hat doch das Herz auf dem rechten Fleck. Zu den Kellnern des Hauses gehört Egisto Costanzi (Enrico Montesano). Er hat seiner kleinen Tochter vorgeflunkert, was für ein hohes Tier er sei, und gerät in große Bedrängnis, als sie zu Saisonbeginn überraschend im Hotel Excelsior auftaucht....",
+    "director": "Pipolo",
+    "actors": [
+      "Adriano Celentano",
+      "Enrico Montesano",
+      "Diego Abatantuono"
+    ],
+    "rating": "6.1",
+    "thumb": "https://image.tmdb.org/t/p/w342/8RxWIWOgiHJuTlDQD7QY9bQyWRg.jpg",
+    "genres_list": [
+      "Komödie"
+    ],
+    "channel": "ARD",
+    "timestamp": 1766880900,
+    "isNew": false,
+    "tmdb_id": 38271,
+    "tmdb_type": "movie"
   },
   {
     "title": "Wer zu lieben wagt",
@@ -35117,7 +35343,7 @@
     "title": "Zurück aufs Eis",
     "search": "Zurück aufs Eis",
     "year": "2022",
-    "video_url": "https://pd-videos.daserste.de/int/2024/12/13/DEGSM685653/DEGSM685653_3153499_sendeton_1280x720-50p-3200kbit.mp4",
+    "video_url": "https://ctv-videos.daserste.de/int/2024/12/13/DEGSM685653/DEGSM685653_3153499_sendeton_1280x720-50p-3200kbit.mp4",
     "plot": "Die geschiedene Polizistin Maren und ihre Tochter Amelie leben zusammen in Bad Tölz und sind ein eingeschworenes Team. Nicht nur Mutter und Tochter, sondern beste Freundinnen. Doch dann beginnt Amelie zu studieren, verliebt sich Hals über Kopf in ihren Kommilitonen Erik und zieht zu ihm in die Studenten WG nach München. Maren fühlt sich ohne Amelie nicht nur sehr alleine in der Wohnung, sondern auch im Leben. Sie muss erkennen, dass sie sich in den letzten acht Jahren nach der Scheidung hinter Amelie versteckt hat und kein eigenes Leben führte. So geht sie langsam wieder \"Zurück aufs Eis\". Auf das unsichere, rutschige und manchmal schmerzhafte Eis, was sich \"Leben\" nennt.",
     "mediathek_desc": "Spielfilm Deutschland 2022 Polizistin Maren (Inka Friedrich) und ihre Tochter Amelie (Anouk Elias) sind ein eingeschworenes Team, nicht nur Mutter und Tochter, sondern beste Freundinnen. Doch dann beginnt Amelie zu studieren und verliebt sich Hals über Kopf in ihren Kommilitonen Erik (Leonard Burkhardt), der nun eines Morgens halbnackt vor Maren im Bad steht. Maren kennt es, dass sich Amelie gerne und heftig verliebt....",
     "director": "Hanno Olderdissen",
@@ -35132,7 +35358,7 @@
       "Komödie"
     ],
     "channel": "ARD",
-    "timestamp": 1734186600,
+    "timestamp": 1766052900,
     "isNew": false,
     "tmdb_id": 977925,
     "tmdb_type": "movie",
