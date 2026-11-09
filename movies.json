@@ -523,32 +523,6 @@
     "url_website": "https://www.3sat.de/film/spielfilm/aftersun-100.html"
   },
   {
-    "title": "Air - Der große Wurf",
-    "search": "Air - Der große Wurf",
-    "year": "2023",
-    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/26/10/261009_0115_sendung_spf/4/261009_0115_sendung_spf_a1a2_3360k_p36v17.mp4",
-    "plot": "Anfang der 1980er-Jahre ist Nike-Mitarbeiter Sonny Vaccaro davon überzeugt, dass seine Firma das aufstrebende Basketball-Talent Michael Jordan unter Vertrag nehmen sollte. Doch sein Boss, Nike-Gründer Phil Knight, ist skeptisch. Eine derartige Rekordsumme für einen jungen Spieler auf den Tisch legen, der noch keine einzige Minute in der Spitzenliga NBA gespielt hat? Doch Vaccaro hat große Pläne, will sogar einen eigenen Schuh für den Jungstar konzipieren. Und die Zeit drängt, baggert doch auch die deutsche Konkurrenz von Adidas an Jordan. Der ist sich noch nicht sicher, wo und ob er unterschreiben soll. Doch Vaccaro hat ein Ass im Ärmel: Er hat erkannt, dass Jordans Mutter Deloris (Viola Davis) der Schlüssel zu seinem Erfolg ist. Für welches Unternehmen das Basketball-Wunderkind künftig auflaufen wird, hängt auch von ihrer Meinung und ihrem Rat an ihren Sohn ab.",
-    "mediathek_desc": "1984 steht das Basketballgeschäft von Nike vor dem Aus, doch der Sonderbeauftragte Sonny Vaccaro setzt alles daran, um den Nachwuchsstar Michael Jordan als Markenbotschafter zu gewinnen.",
-    "director": "Ben Affleck",
-    "actors": [
-      "Matt Damon",
-      "Jason Bateman",
-      "Ben Affleck"
-    ],
-    "rating": "7.3",
-    "thumb": "https://image.tmdb.org/t/p/w342/jzJGIgz1ZsFsisNqTPXtxtBUS5K.jpg",
-    "genres_list": [
-      "Drama",
-      "Historie"
-    ],
-    "channel": "ZDF",
-    "timestamp": 1791881591,
-    "isNew": false,
-    "tmdb_id": 964980,
-    "tmdb_type": "movie",
-    "url_website": "https://www.zdf.de/filme/air---der-grosse-wurf-movie-100"
-  },
-  {
     "title": "Alice im Weihnachtsland",
     "search": "Alice im Weihnachtsland",
     "year": "2021",
@@ -2416,7 +2390,7 @@
       "TV-Film"
     ],
     "channel": "ZDF",
-    "timestamp": 1793969136,
+    "timestamp": 1794116008,
     "isNew": true,
     "tmdb_id": 243739,
     "tmdb_type": "movie"
@@ -3076,6 +3050,33 @@
     "url_website": "https://www.3sat.de/film/spielfilm/brandnacht-100.html"
   },
   {
+    "title": "Breaking Surface - Tödliche Tiefen",
+    "search": "Breaking Surface - Tödliche Tiefen",
+    "original_title": "Breaking Surface - Tödliche Tiefen",
+    "year": "2020",
+    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/22/01/220110_2215_sendung_spf/1/220110_2215_sendung_spf_a1a2_3360k_p36v15.mp4",
+    "url_website": "https://www.zdf.de/video/filme/breaking-surface---toedliche-tiefen-movie-102/breaking-surface---toedliche-tiefen-100",
+    "plot": "Einige Tage nach Weihnachten machen sich die schwedisch-norwegischen Halbschwestern Ida und Tuva auf den Weg zu einem Wintertauchgang in einem abgelegenen Teil der norwegischen Küste. Gegen Ende des Tauchgangs schließt ein Steinschlag Tuva unter Wasser ein. Als Ida auftaucht, um um Hilfe zu rufen, entdeckt sie, dass der Steinschlag auch über Wasser einschlug und ihre Ausrüstung, Telefone und Autoschlüssel vergraben hat. Sie sind von jeder Möglichkeit einer Rettung von außen abgeschnitten...",
+    "mediathek_desc": "Kurz vor Weihnachten gehen die Schwestern Ida und Tuva auf Tauchgang. Nach einem Felsrutsch ist Tuva unter Wasser eingeklemmt, und Ida ist mit der Rettung auf sich allein gestellt.",
+    "director": "Beata Saboova",
+    "actors": [
+      "Moa Gammel",
+      "Madeleine Martin",
+      "Lena Hope"
+    ],
+    "rating": "6.7",
+    "thumb": "https://image.tmdb.org/t/p/w342/7GzWqIvEJIoCrUaVjaYzD8N66xQ.jpg",
+    "genres_list": [
+      "Drama",
+      "Thriller"
+    ],
+    "channel": "ZDF",
+    "timestamp": 1641849300,
+    "isNew": false,
+    "tmdb_id": 616803,
+    "tmdb_type": "movie"
+  },
+  {
     "title": "Breathing Underwater",
     "search": "Breathing Underwater",
     "original_title": "Breathing Underwater",
@@ -3491,6 +3492,34 @@
     "tmdb_id": 591289,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyNC0wMy0wMl8xNS0zMC1NRVo"
+  },
+  {
+    "title": "Code 3",
+    "search": "Code 3",
+    "original_title": "Code 3",
+    "year": "2025",
+    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/26/08/260828_0315_sendung_spf/1/260828_0315_sendung_spf_a1a2_3360k_p36v17.mp4",
+    "url_website": "https://www.zdf.de/video/filme/code-3-movie-100/code-3-100",
+    "plot": "Randy ist ein talentierter, aber erschöpfter Notfallsanitäter, der kurz vor dem beruflichen Neuanfang steht. Ein Bürojob mit festen Arbeitszeiten, echter Mittagspause und fairer Bezahlung scheint endlich greifbar. Doch bevor er endgültig den Dienstwagen gegen den Schreibtisch tauschen kann, liegt noch eine letzte 24-Stunden-Schicht in Los Angeles vor ihm. Gemeinsam mit seinem Kollegen Mike navigiert er durch das übliche Chaos - bis ihre Vorgesetzte ihm zusätzlich Jessica zuteilt, eine Medizinstudentin mit unerschütterlichem Idealismus. Während die Nacht voranschreitet, prallen Weltbilder aufeinander, und zwischen überforderten Ärzten, ungewöhnlichen Einsätzen und Randys wachsender Erschöpfung wird klar: Der Abschied fällt schwerer als gedacht.",
+    "mediathek_desc": "In seiner letzten 24-Stunden-Schicht erlebt der ausgebrannte Rettungssanitäter Randy eine weitere Nacht mit vielen schicksalhaften Begegnungen auf den Straßen von Los Angeles.",
+    "director": "Christopher Leone",
+    "actors": [
+      "Rainn Wilson",
+      "Lil Rel Howery",
+      "Aimee Carrero"
+    ],
+    "rating": "7.1",
+    "thumb": "https://image.tmdb.org/t/p/w342/fyTr8xyMDEa2MyEuhm418U7DgRm.jpg",
+    "genres_list": [
+      "Komödie",
+      "Action",
+      "Drama"
+    ],
+    "channel": "ZDF",
+    "timestamp": 1787880000,
+    "isNew": false,
+    "tmdb_id": 1161617,
+    "tmdb_type": "movie"
   },
   {
     "title": "Cop Land",
@@ -5839,6 +5868,34 @@
     "url_website": "https://www.3sat.de/film/spielfilm/der-eid-100.html"
   },
   {
+    "title": "Der Eisenhans",
+    "search": "Der Eisenhans",
+    "original_title": "Der Eisenhans",
+    "year": "2011",
+    "video_url": "https://nrodlzdf-a.akamaihd.net/none/tivi/14/12/141219_der_eisenhans_mae/25/141219_der_eisenhans_mae_a1a2_3360k_p36v17.mp4",
+    "url_website": "https://www.3sat.de/film/spielfilm/der-eisenhans-102.html",
+    "plot": "Der zaubermächtige Naturgeist Eisenhans lebt seit Menschengedenken im Wald und verbreitet Angst und Schrecken. Als der verwegene Schwarze Ritter den Eisenhans eines Tages gefangen nimmt und an den Königshof bringt, verwehren der König und die Königin ihm jedoch den verlangten Lohn. Der Schwarze Ritter beraubt daraufhin die erstaunte Hofgesellschaft und verschwindet. Den Eisenhans lässt er im Kerker zurück. Der kleine Prinz Johannes ist sofort fasziniert von dem wilden Mann. In der Nacht befreit er den Gefangenen und folgt ihm in den dunklen Wald. An der ihm vom Eisenhans gestellten Aufgabe, den Zauberbrunnen rein zu halten, scheitert der Prinz jedoch kläglich. Ein Moment der Unaufmerksamkeit genügt, schon fallen seine Haare ins Brunnenwasser und färben sich unauslöschlich golden. Der Prinz wird zur Bestrafung vom Eisenhans aus dem Wald vertrieben …",
+    "mediathek_desc": "Im wilden Wald eines Königreiches haust ein geheimnisvoller Naturgeist - der Eisenhans. Weil schon viele Jäger im Wald verschwunden sind, darf niemand den Wald betreten.",
+    "director": "Manuel Siebenmann",
+    "actors": [
+      "Laurence Rupp",
+      "Paula Schramm",
+      "Michael Mendl"
+    ],
+    "rating": "5.0",
+    "thumb": "https://image.tmdb.org/t/p/w342/23hkauzOD4NZM5ydf4KbcrOEwXk.jpg",
+    "genres_list": [
+      "Familie",
+      "Fantasy",
+      "TV-Film"
+    ],
+    "channel": "3Sat",
+    "timestamp": 1608474900,
+    "isNew": false,
+    "tmdb_id": 111550,
+    "tmdb_type": "movie"
+  },
+  {
     "title": "Der Engel mit der Posaune",
     "search": "Der Engel mit der Posaune",
     "original_title": "Der Engel mit der Posaune",
@@ -5863,32 +5920,6 @@
     "isNew": false,
     "tmdb_id": 262021,
     "tmdb_type": "movie"
-  },
-  {
-    "title": "Der Fall Nevenka",
-    "search": "Der Fall Nevenka",
-    "year": "2024",
-    "video_url": "https://arteptweb-a.akamaihd.net/am/ptweb/129000/129300/129315-000-A_EQ_0_VO-STA_11492580_MP4-1500_AMM-PTWEB-60782521458956_zNyOy.mp4",
-    "plot": "Im Jahr 2000 wird Nevenka Fernández, Finanzstadträtin von Ponferrada, vom Bürgermeister, der es gewohnt ist, seine eigenen politischen und persönlichen Wünsche zu erfüllen, unerbittlich verfolgt. Nevenka beschliesst zu denunzieren, obwohl sie weiss, dass sie dafür einen hohen Preis zahlen muss. Eine von wahren Begebenheiten inspirierte Geschichte, die ihre Protagonistin zu einer Pionierin der #metoo-Bewegung in Spanien macht, indem sie einen einflussreichen Politiker zum ersten Mal wegen sexueller Belästigung und Mobbing am Arbeitsplatz vor Gericht bringt.",
-    "mediathek_desc": "Die 24-jährige Nevenka startet ihre politische Karriere im Rathaus der Stadt Ponferrada. Doch Bürgermeister Ismael Álvarez nutzt seine Macht aus und beginnt, sie sexuell zu belästigen. Als Nevenka ihn anzeigt, stellt sie sich gegen einen einflussreichen Politiker und gegen eine patriarchale Gesellschaft, die lieber ihr als ihm die Schuld gibt. Ein Biopic von Icíar Bollaín.",
-    "director": "Icíar Bollaín",
-    "actors": [
-      "Mireia Oriol",
-      "Urko Olazábal",
-      "Ricardo Gómez"
-    ],
-    "rating": "6.9",
-    "thumb": "https://image.tmdb.org/t/p/w342/1QNodNqGVP8gcS5ewnP0mnpdMey.jpg",
-    "genres_list": [
-      "Drama",
-      "Historie"
-    ],
-    "channel": "ARTE.DE",
-    "timestamp": 1788987552,
-    "isNew": false,
-    "tmdb_id": 1235922,
-    "tmdb_type": "movie",
-    "url_website": "https://www.arte.tv/de/videos/129315-000-A/der-fall-nevenka/"
   },
   {
     "title": "Der Fremde am See",
@@ -10737,31 +10768,6 @@
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyMy0xMi0yN18xNC0wMC1NRVo"
   },
   {
-    "title": "Die innere Sicherheit",
-    "search": "Die innere Sicherheit",
-    "year": "2001",
-    "video_url": "https://arteptweb-a.akamaihd.net/am/ptweb/021000/021900/021939-000-C_EQ_0_VOA-STF_11393232_MP4-1500_AMM-PTWEB-101223499551328_sgi7G.mp4",
-    "plot": "Seit 15 Jahren leben Clara und Hans im Untergrund. Als Staatsfeinde von der Polizei gejagt, müssen die beiden immer wieder über Nacht den Wohnort wechseln. Mit ihnen auf der Flucht ist ihre 15-jährige Tochter Jeanne, die sich auch dem Leben im Geheimen unterzuordnen hat - bis sie sich verliebt. Die Ausreise aus Portugal steht bevor, als plötzlich der ganze Plan zusammenbricht: Die Familie tritt die Flucht nach Deutschland an ...",
-    "mediathek_desc": "Zusammen mit ihren Eltern hat die 15-jährige Jeanne ihr Leben lang im Untergrund gelebt. Die Ausreise aus Portugal steht bevor, als plötzlich der ganze Plan zusammenbricht: Die Familie tritt die Flucht nach Deutschland an...",
-    "director": "Christian Petzold",
-    "actors": [
-      "Julia Hummer",
-      "Barbara Auer",
-      "Richy Müller"
-    ],
-    "rating": "6.8",
-    "thumb": "https://image.tmdb.org/t/p/w342/yqqywIjlHImn2OXCU2rz40OW17g.jpg",
-    "genres_list": [
-      "Drama"
-    ],
-    "channel": "ARTE.DE",
-    "timestamp": 1787773723,
-    "isNew": false,
-    "tmdb_id": 191,
-    "tmdb_type": "movie",
-    "url_website": "https://www.arte.tv/de/videos/021939-000-A/die-innere-sicherheit/"
-  },
-  {
     "title": "Die kleine Hexe",
     "search": "Die kleine Hexe",
     "year": "2018",
@@ -13384,6 +13390,32 @@
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyMy0wNS0xOF8xMS01MC1NRVNa"
   },
   {
+    "title": "Eine stürmische Bescherung",
+    "search": "Eine stürmische Bescherung",
+    "original_title": "Eine stürmische Bescherung",
+    "year": "2007",
+    "video_url": "https://nrodlzdf-a.akamaihd.net/none/zdf/19/12/191217_2015_sendung_fdw/1/191217_2015_sendung_fdw_a1a2_3360k_p36v17.mp4",
+    "url_website": "https://www.zdf.de/filme/eine-stuermische-bescherung-movie-100",
+    "plot": "Toftlund-Holst, der beschauliche Ort an der Ostsee, kurz vor Weihnachten: Alles könnte so besinnlich sein, doch im Hause Torkelsen herrscht getrübte Stimmung.",
+    "mediathek_desc": "Toftlund-Holst, der beschauliche Ort an der Ostsee, kurz vor Weihnachten: Alles könnte so besinnlich sein, doch im Hause Torkelsen herrscht getrübte Stimmung.",
+    "director": "Ulrich Zrenner",
+    "actors": [
+      "Hannelore Hoger",
+      "Nina Hoger",
+      "Susanne Schäfer"
+    ],
+    "rating": "6.3",
+    "thumb": "https://image.tmdb.org/t/p/w342/5ujiK98j7ZMZJqmUSrcSJqjOHXF.jpg",
+    "genres_list": [
+      "Komödie"
+    ],
+    "channel": "ZDF",
+    "timestamp": 1794115769,
+    "isNew": true,
+    "tmdb_id": 5830,
+    "tmdb_type": "movie"
+  },
+  {
     "title": "Eine verhängnisvolle Affäre",
     "search": "Eine verhängnisvolle Affäre",
     "year": "1987",
@@ -14888,32 +14920,6 @@
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2FyZC5kZS9wbGFuQVJEXzdiYzEzOTQzLWJmYTgtNDM1MS05ZjEwLWE2YTllOWExODE2NV9nYW56ZVNlbmR1bmc"
   },
   {
-    "title": "Fitting In",
-    "search": "Fitting In",
-    "year": "2024",
-    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/25/04/250401_0245_sendung_spf/1/250401_0245_sendung_spf_a3a4_3360k_p36v17.mp4",
-    "plot": "Bei einem Teenager-Mädchen wird eine Fortpflanzungsstörung diagnostiziert, die ihre Pläne für ein Sexualleben über den Haufen wirft und sie dazu bringt, ungewöhnliche Methoden zu erforschen. Ihre Beziehungen zu allen Menschen in ihrem Leben werden in Frage gestellt, vor allem aber zu sich selbst.",
-    "mediathek_desc": "Lindy fühlt sich wie ein normaler Teenager, bis ein Arztbesuch ihr Leben auf den Kopf stellt. Eine Diagnose zwingt sie dazu, ihre Vorstellung von Normalität zu hinterfragen.",
-    "director": "Brendan Brady",
-    "actors": [
-      "Maddie Ziegler",
-      "Emily Hampshire",
-      "D'Pharaoh Woon-A-Tai"
-    ],
-    "rating": "6.5",
-    "thumb": "https://image.tmdb.org/t/p/w342/en64gpXZiwbBewh0om3mOGWuPpz.jpg",
-    "genres_list": [
-      "Komödie",
-      "Drama"
-    ],
-    "channel": "ZDF",
-    "timestamp": 1791352803,
-    "isNew": false,
-    "tmdb_id": 986175,
-    "tmdb_type": "movie",
-    "url_website": "https://www.zdf.de/filme/fitting-in-movie-100"
-  },
-  {
     "title": "Fliegen lernen",
     "search": "Fliegen lernen",
     "year": "2012",
@@ -15043,7 +15049,7 @@
     ],
     "channel": "ZDF",
     "timestamp": 1793018636,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 652614,
     "tmdb_type": "movie"
   },
@@ -15938,31 +15944,6 @@
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2FyZC5kZS9wbGFuQVJEX2YzNDEwNDEwLTNmMDctNDgxNi04NDI5LTExMWM2ODljY2E0NV9nYW56ZVNlbmR1bmc"
   },
   {
-    "title": "Gespenster",
-    "search": "Gespenster",
-    "year": "2005",
-    "video_url": "https://arteptweb-a.akamaihd.net/am/ptweb/031000/031000/031088-000-B_EQ_0_VOA-STF_11403932_MP4-1500_AMM-PTWEB-80962988520357_14SEtFstIyl.mp4",
-    "plot": "Der Film erzählt episodisch 24 Stunden aus dem Leben des etwa 16-jährigen Berliner Waisenmädchens Nina (Julia Hummer), die im Zeichen von zwei Begegnungen stehen, durch die sich in beiden Fällen Wünsche erfüllen, im ersten von Nina selbst. Diese vollzieht sich in einer allmählichen Annäherung an die etwas ältere Toni (Sabine Timoteo), mit der sie im Grunde nur eins gemeinsam hat: Beide sind sie Außenseiterinnen. In ihrem Temperament könnten sie kaum unterschiedlicher sein: Nina, ein Heimkind, ist scheu, in sich gekehrt und lebt ganz in ihren Träumen, die sie in Tagebüchern zu verarbeiten sucht, wogegen die vagabundierende Toni impulsiv, dominant und besitzergreifend ist – Letzteres auch im Wortsinn, denn sie ist eine notorische Diebin und macht die oft völlig überrumpelte Nina wie selbstverständlich zur Komplizin.",
-    "mediathek_desc": "Gespenstische Erinnerungen verfolgen die Französin Françoise und rufen sie immer wieder nach Berlin zurück – in die Stadt, in der vor vielen Jahren ihre dreijährige Tochter spurlos verschwand. Bei ihren Streifzügen durch Berlin trifft sie auf die Außenseiterin Nina, die in einem betreuten Wohnprojekt untergebracht ist. Schon bald ist Françoise von der Idee besessen, Nina könne ihr verlorenes Kind sein…",
-    "director": "Christian Petzold",
-    "actors": [
-      "Julia Hummer",
-      "Sabine Timoteo",
-      "Marianne Basler"
-    ],
-    "rating": "6.1",
-    "thumb": "https://image.tmdb.org/t/p/w342/qZEDfPueyhu4Qy7s175XoPrUBC3.jpg",
-    "genres_list": [
-      "Drama"
-    ],
-    "channel": "ARTE.DE",
-    "timestamp": 1200519948,
-    "isNew": false,
-    "tmdb_id": 1115,
-    "tmdb_type": "movie",
-    "url_website": "https://www.arte.tv/de/videos/031088-000-A/gespenster/"
-  },
-  {
     "title": "Gestern waren wir Fremde",
     "search": "Gestern waren wir Fremde",
     "year": "2012",
@@ -16506,34 +16487,6 @@
     "tmdb_id": 323592,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyMy0xMS0wNF8xNC0wMC1NRVo"
-  },
-  {
-    "title": "Haben Sie das von den Morgans gehört?",
-    "search": "Haben Sie das von den Morgans gehört?",
-    "original_title": "Haben Sie das von den Morgans gehört?",
-    "year": "2009",
-    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/24/04/240409_sony_2155_sendung_sp/1/240409_sony_2155_sendung_sp_3360k_p36v17.mp4",
-    "url_website": "https://www.zdf.de/filme/haben-sie-das-von-den-morgans-gehoert-movie-100",
-    "plot": "Seit drei Monaten lebt das einst glückliche Ehepaar Morgan getrennt, weil Jurist Paul Immobilienmaklerin Meryl mit einer anderen Frau betrogen hat. Alle folgenden Entschuldigungen und Liebesbeteuerungen von Paul kommen bei seiner Frau nicht an. Bis beide zufällig Zeugen eines Mordes werden und deswegen vom FBI zu ihrem eigenen Schutz auf dem Land untergebracht werden. Unter der Betreuung von Sheriff Wheeler und seiner Frau kommen die New Yorker Workaholics den speziellen Reizen des Lebens in Wyoming und dabei auch sich selbst wieder näher.",
-    "mediathek_desc": "Zwei erfolgreiche New Yorker, Paul und Meryl, wissen nicht mehr, wie sie ihre zerrüttete Ehe noch retten sollen. Da gibt ein völlig unerwartetes Ereignis ihrer Beziehung eine neue Richtung.",
-    "director": "Anthony Katagas",
-    "actors": [
-      "Hugh Grant",
-      "Sarah Jessica Parker",
-      "Sam Elliott"
-    ],
-    "rating": "5.4",
-    "thumb": "https://image.tmdb.org/t/p/w342/uyAxCMtgT24SsYo65uQad6zlCuD.jpg",
-    "genres_list": [
-      "Komödie",
-      "Drama",
-      "Romanze"
-    ],
-    "channel": "ZDFneo",
-    "timestamp": 1793625526,
-    "isNew": true,
-    "tmdb_id": 24438,
-    "tmdb_type": "movie"
   },
   {
     "title": "Hacked - Kein Leben ist sicher",
@@ -17324,7 +17277,7 @@
     "isNew": false,
     "tmdb_id": 265294,
     "tmdb_type": "movie",
-    "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2FyZC5kZS9wbGFuQVJEXzgzNjQyNTY5LTdlNzMtNDZlNy1hYTQ4LTY0N2EzM2FkNDhkNl9nYW56ZVNlbmR1bmc"
+    "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2FyZC5kZS9wbGFuQVJEXzgzNjQyNTY5LTdlNzMtNDZlNy1hYTQ4LTY0N2EzM2FkNDhkNl9nYW56ZVNlbmR1bmcvYXVkaW9kZXNrcmlwdGlvbg"
   },
   {
     "title": "Herzlichen Glückwunsch",
@@ -19108,6 +19061,26 @@
     "tmdb_id": 724735,
     "tmdb_type": "movie",
     "url_website": "https://www.3sat.de/film/spielfilm/in-berlin-waechst-kein-orangenbaum-104.html"
+  },
+  {
+    "title": "In Sachen Sohee",
+    "search": "In Sachen Sohee",
+    "original_title": "In Sachen Sohee",
+    "year": "None",
+    "video_url": "https://manifest-arte.akamaized.net/api/manifest/v1/Generate/dfb45f7a-faaf-4ea5-8387-6374be133006/de/XQ+KS+CHEV1/120917-000-A.m3u8",
+    "url_website": "https://www.arte.tv/de/videos/120917-000-A/in-sachen-sohee/",
+    "plot": "Sohee absolviert ein Praktikum in einem Callcenter. Die Zielvorgaben der Vorgesetzten sind unmöglich zu erfüllen. Gleichzeitig sieht sie sich am Telefon sexueller Gewalt ausgesetzt. Als ein Mitarbeiter Suizid begeht, tritt Kommissarin Yoon-jin auf den Plan ... – Das Drama ist eine Anklage gegen ein ausbeuterisches, korruptes System. Mit Bae Doona (\"The Host\", \"Cloud Atlas\")",
+    "mediathek_desc": "Sohee absolviert ein Praktikum in einem Callcenter. Die Zielvorgaben der Vorgesetzten sind unmöglich zu erfüllen. Gleichzeitig sieht sie sich am Telefon sexueller Gewalt ausgesetzt. Als ein Mitarbeiter Suizid begeht, tritt Kommissarin Yoon-jin auf den Plan ... – Das Drama ist eine Anklage gegen ein ausbeuterisches, korruptes System. Mit Bae Doona (\"The Host\", \"Cloud Atlas\")",
+    "director": "",
+    "actors": [],
+    "rating": "N/A",
+    "thumb": "placeholder.png",
+    "genres_list": [
+      "Sonstige"
+    ],
+    "channel": "ARTE.DE",
+    "timestamp": 1794263374,
+    "isNew": true
   },
   {
     "title": "In aller Freundschaft - Was wirklich zählt",
@@ -21805,8 +21778,8 @@
       "Komödie"
     ],
     "channel": "ARD",
-    "timestamp": 1689350924,
-    "isNew": false,
+    "timestamp": 1794788100,
+    "isNew": true,
     "tmdb_id": 430939,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyMy0wNS0wN18xNS0zMC1NRVNa"
@@ -24612,7 +24585,7 @@
     ],
     "channel": "ARD",
     "timestamp": 1793021400,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 286807,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2FyZC5kZS9wbGFuQVJEXzQ1MmNjNTYyLTE2ZmUtNDhlYi1iNjgzLTdmMmIxMzZmNTk5MF9nYW56ZVNlbmR1bmc"
@@ -26394,6 +26367,26 @@
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2FyZC5kZS9wbGFuQVJEX2UxMjQ1MzcxLWRlZjYtNDFjYy05ODUxLWFlY2MxNWNlMjkyMF9nYW56ZVNlbmR1bmc"
   },
   {
+    "title": "Paris wiedersehen",
+    "search": "Paris wiedersehen",
+    "original_title": "Paris wiedersehen",
+    "year": "None",
+    "video_url": "https://secure-manifest-arte.akamaized.net/api/manifest/v1/Generate/9422d65e-dd83-47d3-9acd-995198f00894/de/XQ+KS+CHEV1/127947-000-A.m3u8",
+    "url_website": "https://www.arte.tv/de/videos/127947-000-A/paris-wiedersehen/",
+    "plot": "Dolmetscherin Mia flieht bei Regen in ein Restaurant. Dann wird dort ein Anschlag verübt. Mia überlebt, kann sich aber kaum an etwas erinnern. Sie versteht, dass sie die Erinnerung zurückgewinnen muss, um zu heilen ... – Der Film ist dem Bruder der Regisseurin Alice Winocour gewidmet. Jérémie Winocour hat den Terroranschlag auf das Pariser Bataclan am 13. November 2015 überlebt.",
+    "mediathek_desc": "Dolmetscherin Mia flieht bei Regen in ein Restaurant. Dann wird dort ein Anschlag verübt. Mia überlebt, kann sich aber kaum an etwas erinnern. Sie versteht, dass sie die Erinnerung zurückgewinnen muss, um zu heilen ... – Der Film ist dem Bruder der Regisseurin Alice Winocour gewidmet. Jérémie Winocour hat den Terroranschlag auf das Pariser Bataclan am 13. November 2015 überlebt.",
+    "director": "",
+    "actors": [],
+    "rating": "N/A",
+    "thumb": "placeholder.png",
+    "genres_list": [
+      "Sonstige"
+    ],
+    "channel": "ARTE.DE",
+    "timestamp": 1794251700,
+    "isNew": true
+  },
+  {
     "title": "Passion Simple",
     "search": "Passion Simple",
     "year": "2020",
@@ -26521,31 +26514,6 @@
     "timestamp": 1504366140,
     "isNew": false,
     "url_website": "https://www.3sat.de/film/spielfilm/pfarrer-braun-schwein-gehabt-100.html"
-  },
-  {
-    "title": "Phoenix",
-    "search": "Phoenix",
-    "year": "2014",
-    "video_url": "https://arteptweb-a.akamaihd.net/am/ptweb/050000/050800/050833-000-A_EQ_0_VOA-STMA_11393402_MP4-1500_AMM-PTWEB-100925329543459_sgf9g.mp4",
-    "plot": "Nelly wird von allen für tot gehalten, doch sie hat Auschwitz überlebt. Wie ein Phönix aus der Asche erlangt sie im Juni 1945 wieder das Bewusstsein. Lene, Mitarbeiterin der Jewish Agency und alte Freundin, bringt die Verletzte in die frühere Heimat Berlin. Dort wird Nelly am Gesicht operiert. Lene will mit ihr nach Palästina auswandern, aber Nelly zieht es vor, nach ihrem nichtjüdischen Ehemann Johnny zu suchen. Tatsächlich findet sie ihn schon bald, doch er er erkennt Nelly nicht wieder. Er fühlt sich aber an seine Gemahlin erinnert und schlägt der ihm Unbekannten vor, in die Rolle seiner Frau zu schlüpfen, um an das Erbe ihrer im Holocaust ermordeten Familie zu kommen. Die Heimkehrerin willigt ein und verkörpert von nun an ihre eigene Doppelgängerin. Die Situation spitzt sich zu...",
-    "mediathek_desc": "Deutschland nach dem Krieg: Schwer verletzt hat Nelly das Konzentrationslager überlebt und trifft nach einer Gesichtsoperation auf ihren Mann. Doch Johnny erkennt sie nicht. Er engagiert sie jedoch, in dem Glauben, dass seine Frau tot ist, als Doppelgängerin, um an das Erbe ihrer Familie zu kommen. Nelly möchte wissen: Hat Johnny sie je geliebt – oder vielleicht sogar verraten?",
-    "director": "Christian Petzold",
-    "actors": [
-      "Nina Hoss",
-      "Ronald Zehrfeld",
-      "Nina Kunzendorf"
-    ],
-    "rating": "6.8",
-    "thumb": "https://image.tmdb.org/t/p/w342/b6ge0RM3Adgvc5rScrMDAgkW4MM.jpg",
-    "genres_list": [
-      "Drama"
-    ],
-    "channel": "ARTE.DE",
-    "timestamp": 1787768087,
-    "isNew": false,
-    "tmdb_id": 254578,
-    "tmdb_type": "movie",
-    "url_website": "https://www.arte.tv/de/videos/050833-000-A/phoenix/"
   },
   {
     "title": "Picknick mit Bären",
@@ -29784,7 +29752,7 @@
       "Komödie"
     ],
     "channel": "ZDF",
-    "timestamp": 1793965744,
+    "timestamp": 1794116193,
     "isNew": true,
     "tmdb_id": 1389664,
     "tmdb_type": "movie"
@@ -30495,6 +30463,33 @@
     "tmdb_id": 605931,
     "tmdb_type": "movie",
     "url_website": "https://www.3sat.de/film/spielfilm/the-florida-project-100.html"
+  },
+  {
+    "title": "The Founder",
+    "search": "The Founder",
+    "original_title": "The Founder",
+    "year": "2016",
+    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/26/09/260911_0100_sendung_spf/2/260911_0100_sendung_spf_a1a2_3360k_p36v17.mp4",
+    "url_website": "https://www.zdf.de/video/filme/the-founder-movie-100/the-founder-100",
+    "plot": "Ray Kroc ist als Vertreter für Milkshake-Maschinen in Illinois unterwegs und hat wenig Erfolg – bis er bei seinen Touren auf die Brüder Mac und Dick McDonald und ihr kleines Burger-Restaurant trifft. Die Brüder McDonald haben die Arbeitsprozesse so optimiert, dass der bestellte Burger nur wenige Sekunden später beim Kunden ist. Ray ist begeistert und sieht das enorme Potential der Idee: McDonald’s soll zum Franchise werden. Zum Entsetzen seiner Frau Ethel riskiert er sein ganzes Vermögen und sogar das geliebte Eigenheim. Und doch läuft sein Vorhaben nicht richtig an, bis ihm schließlich eine zündende Idee kommt – von nichts und niemandem lässt sich Ray von seinem ambitionierten Plan, ein Imperium zu erschaffen, abhalten, nicht einmal von den eigentlichen McDonald’s-Gründern…",
+    "mediathek_desc": "Der erfolglose Vertreter Ray Kroc verfolgt den amerikanischen Traum. Als er einen beliebten Schnellimbiss besucht, entwickelt er einen visionären Plan. Er will Franchiserechte erwerben.",
+    "director": "John Lee Hancock",
+    "actors": [
+      "Michael Keaton",
+      "Nick Offerman",
+      "John Carroll Lynch"
+    ],
+    "rating": "7.2",
+    "thumb": "https://image.tmdb.org/t/p/w342/n0st9XVCIPTwsmI8rrRMrFbPnLS.jpg",
+    "genres_list": [
+      "Drama",
+      "Historie"
+    ],
+    "channel": "ZDF",
+    "timestamp": 1789081500,
+    "isNew": false,
+    "tmdb_id": 310307,
+    "tmdb_type": "movie"
   },
   {
     "title": "The Game",
@@ -31532,32 +31527,6 @@
     "url_website": "https://www.3sat.de/film/spielfilm/topside--flucht-ins-ungewisse-100.html"
   },
   {
-    "title": "Transit",
-    "search": "Transit",
-    "year": "2018",
-    "video_url": "https://arteptweb-a.akamaihd.net/am/ptweb/075000/075700/075743-000-A_EQ_0_VOA-STA_11393465_MP4-1500_AMM-PTWEB-101004006656945_sgYBC.mp4",
-    "plot": "Die deutschen Truppen stehen vor Paris. Georg, deutscher Flüchtling, entkommt im letzten Moment nach Marseille. Im Gepäck hat er die Hinterlassenschaft des Schriftstellers Weidel, der sich das Leben genommen hat: Ein Manuskript, Briefe, die Zusicherung eines Visums durch die mexikanische Botschaft. In Marseille darf nur bleiben, wer beweisen kann, dass er gehen wird. Visa für die möglichen Aufnahmeländer werden gebraucht, Transitvisa, die raren Tickets für die Schiffspassage. Georg erinnert sich der Papiere Weidels und nimmt dessen Identität an.",
-    "mediathek_desc": "Basierend auf dem Roman \"Transit\" von Anna Seghers erzählt Christian Petzold die zeitlose Geschichte von Menschen auf der Flucht, gestrandet in einer Hafenstadt, Marseille, auf ein Einreisevisum wartend – im Transit. So auch Georg, der aus Angst vor Verfolgung die Identität eines toten Schriftstellers einnimmt, sich dann jedoch in dessen Frau verliebt, die immer noch hofft, Ihren Mann zu finden.",
-    "director": "Christian Petzold",
-    "actors": [
-      "Franz Rogowski",
-      "Paula Beer",
-      "Godehard Giese"
-    ],
-    "rating": "6.7",
-    "thumb": "https://image.tmdb.org/t/p/w342/y4yn3H5yhklqYVdDP3oUlXQd0RP.jpg",
-    "genres_list": [
-      "Drama",
-      "Romanze"
-    ],
-    "channel": "ARTE.DE",
-    "timestamp": 1604949350,
-    "isNew": false,
-    "tmdb_id": 471853,
-    "tmdb_type": "movie",
-    "url_website": "https://www.arte.tv/de/videos/075743-000-A/transit/"
-  },
-  {
     "title": "Trautes Heim",
     "search": "Trautes Heim",
     "original_title": "Trautes Heim",
@@ -32020,33 +31989,6 @@
     "tmdb_id": 606786,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyMy0xMi0zMV8xNS0xNS1NRVo"
-  },
-  {
-    "title": "Undine",
-    "search": "Undine",
-    "year": "1992",
-    "video_url": "https://arteptweb-a.akamaihd.net/am/ptweb/091000/091100/091156-000-A_EQ_0_VOA-STF_11393598_MP4-1500_AMM-PTWEB-101104299527838_CVzwFsga3L.mp4",
-    "plot": "“Wenn du mich betrügst, werde ich dich mit einem Kuss töten”. Schon einmal hat die hinreißende See-Nixe Undine ihren Geliebten Raoul gewarnt. Ihre feucht-romantische Märchen-liebe ist in Gefahr, weil Raouls Bruder die unberührte Bergsee-Idylle durch ein ehrgeiziges Hotel-Projekt zerstören will. Undine verteidigt ihr Paradies. Sie ist verlockend, aber auch pervers und unberechenbar. Sie kann viel Liebe geben, aber sie kann auch töten.",
-    "mediathek_desc": "Regisseur Christian Petzold bearbeitet den Mythos der Nymphe Undine, einer Sagenfigur, deren Geschichte in einem frühen Gedicht enthalten ist und vielfach adaptiert wurde. Petzolds Undine lebt in Berlin. Sie arbeitet und liebt dort. Als ihre Liebe verraten wird, da will sie nicht töten. Sie will dem Fluch entfliehen.",
-    "director": "Eckhart Schmidt",
-    "actors": [
-      "Christopher Buchholz",
-      "Isabelle Pasco",
-      "Anouschka Renzi"
-    ],
-    "rating": "4.1",
-    "thumb": "https://image.tmdb.org/t/p/w342/jNY0dmKIimJb5MVromeZLKzM9Xr.jpg",
-    "genres_list": [
-      "Drama",
-      "Fantasy",
-      "Romanze"
-    ],
-    "channel": "ARTE.DE",
-    "timestamp": 1665771360,
-    "isNew": false,
-    "tmdb_id": 361669,
-    "tmdb_type": "movie",
-    "url_website": "https://www.arte.tv/de/videos/091156-000-A/undine/"
   },
   {
     "title": "Ungarische Rhapsodie",
@@ -32786,7 +32728,7 @@
     "original_title": "Verblendung",
     "year": "2009",
     "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/25/06/250621_sony_2340_sendung_spf/1/250621_sony_2340_sendung_spf_3360k_p36v17.mp4",
-    "url_website": "https://www.zdf.de/filme/verblendung-movie-100",
+    "url_website": "https://www.zdf.de/video/filme/verblendung-movie-100/verblendung-102",
     "plot": "Harriet Vanger verschwindet spurlos während eines Familientreffens. Jahrzehnte bleibt ihr Schicksal ungeklärt. Was ist nur damals mit Harriet geschehen? Mittlerweile 82 Jahre alt, lässt Henrik Vanger diese Frage keine Ruhe. Ein letztes Mal versucht er, doch noch eine Antwort zu finden, und kontaktiert den renommierten Enthüllungsjournalisten Mikael Blomkvist. Gemeinsam mit der ebenso genialen wie kompromisslosen Hackerin Lisbeth Salander, von der er unerwartet Unterstützung erhält, stößt Blomkvist schnell auf erste Spuren. Schon bald tauchen die beiden immer tiefer in die Geschichte der einflussreichen Industriellenfamilie Vanger ein – und entdecken dabei Grausames.",
     "mediathek_desc": "Nach einem Presse-Skandal reist Journalist Mikael Blomkvist in Schwedens Norden, wo die Familie Vanger residiert. Mikael soll herausfinden, was mit Harriet Vanger passiert ist.",
     "director": "Niels Arden Oplev",
@@ -32804,8 +32746,8 @@
       "Mystery"
     ],
     "channel": "ZDFneo",
-    "timestamp": 1793597523,
-    "isNew": true,
+    "timestamp": 1653076800,
+    "isNew": false,
     "tmdb_id": 15472,
     "tmdb_type": "movie"
   },
@@ -34944,34 +34886,6 @@
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyMC0wMS0xOF8xNC0zMC1NRVo"
   },
   {
-    "title": "Yella",
-    "search": "Yella",
-    "year": "2007",
-    "video_url": "https://arteptweb-a.akamaihd.net/am/ptweb/035000/035700/035749-000-B_EQ_0_VOA_11393348_MP4-1500_AMM-PTWEB-80703108581700_lJz29sgXnc.mp4",
-    "plot": "Yella wagt einen Neubeginn. Nachdem ihr Mann Ben Insolvenz angemeldet hat, hält sie es in Wittenberge in Ostdeutschland nicht mehr aus. Am Tag ihrer Abreise bringt Ben sie zum Bahnhof. Die Fahrt in den Westen endet jäh, als der Wagen ein Brückengeländer durchbricht und in die Elbe stürzt. Yella kann sich retten. Gerade noch erreicht sie ihren Zug nach Hannover. Sie lernt Philipp kennen, der für eine Private Equity-Firma unterwegs ist und entdeckt die Welt des Venture Capitals, der gläsernen, kabellos vernetzten Konferenzräume, der lautlos schnurrenden Leasing-Limousinen, der unentwegten Bewegung. Alles scheint leicht, ein Spiel, das keine Verlierer kennt. Yella bewährt sich. Bald schon arbeitet sie als Assistentin von Philipp. Aus der Zusammenarbeit wird mehr, doch Yella kann die Gespenster ihrer Vergangenheit nicht verdrängen.",
-    "mediathek_desc": "Yella flieht aus einer Kleinstadt in Ostdeutschland und vor ihrem Mann. Sie will ein neues Leben in Westdeutschland beginnen, dem gelobten Land des Kapitalismus. In Hannover begegnet sie Philipp und entdeckt die Welt des Venture Capitals. Doch die Geister der Vergangenheit holen sie wieder ein… Nina Hoss erhielt für ihre Rolle den Deutschen Filmpreis 2008 und den Silbernen Bären der Berlinale 2007.",
-    "director": "Christian Petzold",
-    "actors": [
-      "Nina Hoss",
-      "Devid Striesow",
-      "Hinnerk Schönemann"
-    ],
-    "rating": "6.2",
-    "thumb": "https://image.tmdb.org/t/p/w342/kR0UCiB2qXA0CMQUTLQ5498W4Yt.jpg",
-    "genres_list": [
-      "Drama",
-      "Thriller",
-      "Horror",
-      "Fantasy"
-    ],
-    "channel": "ARTE.DE",
-    "timestamp": 1392065011,
-    "isNew": false,
-    "tmdb_id": 3037,
-    "tmdb_type": "movie",
-    "url_website": "https://www.arte.tv/de/videos/035749-000-A/yella/"
-  },
-  {
     "title": "Z - Anatomie eines politischen Mordes",
     "search": "Z - Anatomie eines politischen Mordes",
     "year": "1969",
@@ -35774,7 +35688,7 @@
       "Romanze"
     ],
     "channel": "ARTE.DE",
-    "timestamp": 1793992500,
+    "timestamp": 1793992493,
     "isNew": true,
     "tmdb_id": 1208284,
     "tmdb_type": "movie"
