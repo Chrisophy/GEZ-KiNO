@@ -1844,7 +1844,7 @@
     "isNew": false,
     "tmdb_id": 570356,
     "tmdb_type": "movie",
-    "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyMS0xMS0yN18xNC0zMC1NRVo"
+    "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyMS0xMS0yN18xNC0zMC1NRVovYXVkaW9kZXNrcmlwdGlvbg"
   },
   {
     "title": "Aus lauter Liebe zu dir",
@@ -2571,7 +2571,7 @@
     ],
     "channel": "ARD",
     "timestamp": 1793100600,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 304414,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2FyZC5kZS9wbGFuQVJEX2QyYTM0ZjQ2LWE0OWEtNDc2My04MjMzLWJhN2UxMDg2ZDE0N19nYW56ZVNlbmR1bmc"
@@ -3682,6 +3682,33 @@
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyNC0wNS0yNF8yMC0xNS1NRVNa"
   },
   {
+    "title": "Dahlmanns letzte Bescherung",
+    "search": "Dahlmanns letzte Bescherung",
+    "original_title": "Dahlmanns letzte Bescherung",
+    "year": "2025",
+    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/25/12/251222_2015_sendung_fdw/1/251222_2015_sendung_fdw_a1a2_3360k_p36v17.mp4",
+    "url_website": "https://www.zdf.de/filme/dahlmanns-letzte-bescherung-movie-100",
+    "plot": "Alfons Dahlmann erfolgreicher Unternehmer und Gründer der Fleisch- und Wurstwarenfabrik Dahlmann, lädt seine drei erwachsenen Kinder Leander, Therese und Jochen samt Anhang über die Weihnachtsfeiertage in sein Jagdschloss in den Bergen ein. Zur Überraschung aller steht auch Alfons' ärgster Konkurrent, Leonard Windemeyer auf der Gästeliste. Alfons verkündet den Anwesenden, dass er sich zum Jahresende aus der Firma zurückziehen wird",
+    "mediathek_desc": "Alle Jahre wieder versammelt Unternehmer Alfons Dahlmann die Familie in der verschneiten Villa. Dieses Weihnachten will er seine Nachfolge verkünden. Doch am nächsten Morgen ist er tot.",
+    "director": "Isabel Braak",
+    "actors": [
+      "Heino Ferch",
+      "Ulrike C. Tscharre",
+      "Jürgen Vogel"
+    ],
+    "rating": "6.4",
+    "thumb": "https://image.tmdb.org/t/p/w342/mAlHjuEzD9Xx9fa9ShEVY0vLtWl.jpg",
+    "genres_list": [
+      "Komödie",
+      "Krimi"
+    ],
+    "channel": "ZDF",
+    "timestamp": 1794232146,
+    "isNew": true,
+    "tmdb_id": 1476281,
+    "tmdb_type": "movie"
+  },
+  {
     "title": "Dampfnudelblues. Ein Eberhoferkrimi",
     "search": "Dampfnudelblues. Ein Eberhoferkrimi",
     "year": "2013",
@@ -4066,7 +4093,7 @@
     ],
     "channel": "ARD",
     "timestamp": 1793194200,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 333838,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyMy0wOC0yMF8xMS00NS1NRVNa"
@@ -4248,7 +4275,7 @@
     ],
     "channel": "ARD",
     "timestamp": 1793187000,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 342962,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyMS0wNS0xNl8xMy00MC1NRVNa"
@@ -4437,7 +4464,7 @@
     ],
     "channel": "ARD",
     "timestamp": 1793096400,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 309798,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyNS0wMi0yNV8wMC0zMC1NRVo"
@@ -6516,7 +6543,7 @@
     ],
     "channel": "ARTE.DE",
     "timestamp": 1793042056,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 14674,
     "tmdb_type": "movie"
   },
@@ -13337,6 +13364,34 @@
     "url_website": "https://www.zdf.de/filme/eine-bessere-welt-movie-100"
   },
   {
+    "title": "Eine fast perfekte Bescherung",
+    "search": "Eine fast perfekte Bescherung",
+    "original_title": "Eine fast perfekte Bescherung",
+    "year": "2025",
+    "video_url": "https://nrodlzdf-a.akamaihd.net/none/zdf/25/12/251214_2015_sendung_sof/1/251214_2015_sendung_sof_a1a2_3360k_p36v17.mp4",
+    "url_website": "https://www.zdf.de/filme/eine-fast-perfekte-bescherung-movie-100",
+    "plot": "Als an Heiligabend eine Weltkriegsbombe entschärft werden muss, werden die Leute aus der Umgebung in einer Turnhalle untergebracht. Dort treffen nun Menschen aufeinander, die sich sonst nie begegnet wären. Aufgrund der vielen Schicksale etwas episodisch, aber gerade wegen des gut zusammengestellten Ensembles  sehenswert.",
+    "mediathek_desc": "Ausgerechnet an Weihnachten müssen die Anwohner des Berliner Landwehrkanals wegen eines Bombenfunds evakuiert werden und Heiligabend in einer kalten Turnhalle verbringen.",
+    "director": "Ulli Baumann",
+    "actors": [
+      "Christine Eixenberger",
+      "Steve Windolf",
+      "Andrea L'Arronge"
+    ],
+    "rating": "8.0",
+    "thumb": "https://image.tmdb.org/t/p/w342/rRgh3cOwkZG6MVrLmsEMHOWHRtG.jpg",
+    "genres_list": [
+      "Komödie",
+      "Romanze",
+      "Drama"
+    ],
+    "channel": "ZDF",
+    "timestamp": 1794216161,
+    "isNew": true,
+    "tmdb_id": 1580654,
+    "tmdb_type": "movie"
+  },
+  {
     "title": "Eine ganz private Affäre",
     "search": "Eine ganz private Affäre",
     "year": "2002",
@@ -14388,8 +14443,8 @@
       "Komödie"
     ],
     "channel": "ARD",
-    "timestamp": 1780525800,
-    "isNew": false,
+    "timestamp": 1794828600,
+    "isNew": true,
     "tmdb_id": 434103,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAxOC0wOC0yOF8yMi00NS1NRVNa"
@@ -16092,7 +16147,7 @@
     ],
     "channel": "ARD",
     "timestamp": 1793107800,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 355427,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyNS0wOC0xNF8xNS0zMC1NRVNa"
@@ -17994,6 +18049,33 @@
     "url_website": "https://www.arte.tv/de/videos/047881-000-A/ich-fuehl-mich-disco/"
   },
   {
+    "title": "Ich hab den Weihnachtsmann geküsst",
+    "search": "Ich hab den Weihnachtsmann geküsst",
+    "original_title": "Ich hab den Weihnachtsmann geküsst",
+    "year": "2024",
+    "video_url": "https://nrodlzdf-a.akamaihd.net/none/zdf/24/12/241208_2015_sendung_sof/1/241208_2015_sendung_sof_a1a2_3360k_p36v17.mp4",
+    "url_website": "https://www.zdf.de/filme/ich-hab-den-weihnachtsmann-gekuesst-movie-100",
+    "plot": "Weihnachtshasserin Laura absolviert ihren alljährlichen Pflichtbesuch über die Feiertage bei ihrer Familie. Doch dieses Mal entwickelt sich das \"Fest der Liebe\" völlig anders und verrückt. Am Morgen des ersten Weihnachtstages ist Oma verschwunden, im gesamten Ort sind seltsame Dinge passiert, und in Lauras Elternhaus herrscht komplettes Chaos. Was ist in dieser scheinbar unheiligen Nacht passiert? Und was hatte Laura damit zu tun? Laura hat noch nie verstanden, warum man sich jährlich dem Weihnachtsstress aussetzt. Das stete Wettrennen, wer sich unter dem toten Baum bei Mama und Papa als Erstes in die Haare bekommt. Dazu die immer gleichen Traditionen und Rituale. Alles nix für Laura. Aber ihre kleine Tochter Miri liebt Weihnachten, und so kommen sie wie jedes Jahr aus der Großstadt zurück ins beschauliche Bad Seefeld.",
+    "mediathek_desc": "Weihnachtshasserin Laura absolviert ihren alljährlichen Pflichtbesuch über die Feiertage bei ihrer Familie. Doch dieses Mal entwickelt sich das \"Fest der Liebe\" völlig anders.",
+    "director": "Alex Schmidt",
+    "actors": [
+      "Henriette Richter-Röhl",
+      "Leonard Lansink",
+      "Birge Schade"
+    ],
+    "rating": "3.0",
+    "thumb": "https://image.tmdb.org/t/p/w342/8C25PPNKMIfWu1q43pmu2XmJAPT.jpg",
+    "genres_list": [
+      "Komödie",
+      "Romanze"
+    ],
+    "channel": "ZDF",
+    "timestamp": 1794221975,
+    "isNew": true,
+    "tmdb_id": 1390619,
+    "tmdb_type": "movie"
+  },
+  {
     "title": "Ich heirate meine Frau",
     "search": "Ich heirate meine Frau",
     "year": "2007",
@@ -18118,8 +18200,8 @@
       "Romanze"
     ],
     "channel": "BR",
-    "timestamp": 1791626400,
-    "isNew": false,
+    "timestamp": 1794835800,
+    "isNew": true,
     "tmdb_id": 317264,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyNC0wNi0yNV8xNS0zMC1NRVNa"
@@ -22305,32 +22387,6 @@
     "url_website": "https://www.zdf.de/video/filme/mackie-messer---brechts-dreigroschenfilm-movie-100/mackie-messer-brechts-dreigroschenfilm-102"
   },
   {
-    "title": "Magic Mike",
-    "search": "Magic Mike",
-    "year": "2012",
-    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/26/10/261010_2015_sendung_nsf/3/261010_2015_sendung_nsf_a1a2_3360k_p36v17.mp4",
-    "plot": "Wenn die Sonne untergeht, geht die Party im Xquisite, dem Stripclub von Dallas, erst richtig los. Der ehemalige Tänzer hat sich mit dem Club einen Traum erfüllt und Xquisite zu einer exqusiten Anlaufstelle für Nachtschwärmer aufgebaut. Sein bestes Pferd im Stall ist Magic Mike, der eigentlich Mike Martingano heißt und den Club mit seinem Waschbrettbauch regelmäßig zum Beben bringt. Heimlich träumt Mike, der nebenbei als Dachdecker arbeitet, jedoch davon, sich als Handwerker selbständig zu machen. Eines Tages lernt er auf einer Baustelle The Kid kennen, einen rastlosen Jungen, der nichts mit sich anzufangen weiß und bei seiner älteren Schwester Paige lebt. Mike nimmt The Kid unter seine Fittiche und führt ihn in die Welt des Strippens, des exklusiven Partymachens und des schnellen Geldes ein. Doch diese Welt hat auch ihre Schattenseiten...",
-    "mediathek_desc": "Der 19-jährige Adam ist von Mike ziemlich beeindruckt. Als erfolgreicher Stripper verdient er sich als Magic Mike im \"Xquisite\" eine goldene Nase und nimmt ihn schnell unter seine Fittiche.",
-    "director": "Steven Soderbergh",
-    "actors": [
-      "Channing Tatum",
-      "Matthew McConaughey",
-      "Alex Pettyfer"
-    ],
-    "rating": "6.2",
-    "thumb": "https://image.tmdb.org/t/p/w342/3PcJtJxLWS6RAkY3o9yw3hQ4hSP.jpg",
-    "genres_list": [
-      "Drama",
-      "Komödie"
-    ],
-    "channel": "ZDFneo",
-    "timestamp": 1791655200,
-    "isNew": false,
-    "tmdb_id": 77930,
-    "tmdb_type": "movie",
-    "url_website": "https://www.zdf.de/filme/magic-mike-movie-100"
-  },
-  {
     "title": "Maigret und das tote Mädchen",
     "search": "Maigret und das tote Mädchen",
     "year": "2021",
@@ -23363,7 +23419,7 @@
     ],
     "channel": "ARD",
     "timestamp": 1793192100,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 570167,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2FyZC5kZS9wbGFuQVJEX2M5MDliZGY1LTBkYjQtNDZkNy05NTU1LTczODBiN2UzZjNkNl9nYW56ZVNlbmR1bmc"
@@ -25343,7 +25399,7 @@
       "Komödie"
     ],
     "channel": "ZDF",
-    "timestamp": 1793621970,
+    "timestamp": 1794238260,
     "isNew": true,
     "tmdb_id": 1746471,
     "tmdb_type": "movie"
@@ -31082,6 +31138,34 @@
     "url_website": "https://www.3sat.de/film/spielfilm/the-trouble-with-being-born-100.html"
   },
   {
+    "title": "The Zone of Interest",
+    "search": "The Zone of Interest",
+    "original_title": "The Zone of Interest",
+    "year": "2023",
+    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/26/11/261109_2215_sendung_spf/1/261109_2215_sendung_spf_a1a2_3360k_p36v17.mp4",
+    "url_website": "https://www.zdf.de/video/filme/the-zone-of-interest-movie-100/the-zone-of-interest-100",
+    "plot": "Hedwig Höß heißt ihre Mutter willkommen. Es ist deren erster Besuch in der stuckverzierten Villa, in der Hedwig zusammen mit ihren Kindern und ihrem Mann Rudolf lebt. Die Sonne scheint, der Garten ist gepflegt, die Blumen blühen, der Hund lässt sich von seiner Nase durch das Grün treiben, Gemüse und Kräuter gedeihen, die Sonnenblumen stehen übermannshoch, die Kinder planschen im Wasser. Die Familie Höß scheint in einer Bilderbuchidylle zu leben. Nur abseits der Grundstücksmauern wird klar, dass hier – am Rande des Vernichtungslagers Auschwitz – die Hölle auf Erden und SS-Obersturmbannführer Rudolf Höß der Teufel persönlich ist…\r Basiert auf dem gleichnamigen Roman von Martin Amis.",
+    "mediathek_desc": "Haus und Garten sind ein Traum, Mann, Frau und Kinder glücklich. Manchmal wird die Idylle gestört: Knochen und Asche schwimmen im Fluss, nachts lodern Feuer.",
+    "director": "Jonathan Glazer",
+    "actors": [
+      "Christian Friedel",
+      "Sandra Hüller",
+      "Johann Karthaus"
+    ],
+    "rating": "7.0",
+    "thumb": "https://image.tmdb.org/t/p/w342/3gTx0GqZaLcB61aeoy7NcSAStN7.jpg",
+    "genres_list": [
+      "Drama",
+      "Historie",
+      "Krieg"
+    ],
+    "channel": "ZDF",
+    "timestamp": 1794258900,
+    "isNew": true,
+    "tmdb_id": 467244,
+    "tmdb_type": "movie"
+  },
+  {
     "title": "Therapie und Praxis",
     "search": "Therapie und Praxis",
     "year": "2002",
@@ -32930,7 +33014,7 @@
     ],
     "channel": "ARD",
     "timestamp": 1793182800,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 678900,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2FyZC5kZS9wbGFuQVJEX2YzMmU4ODJkLTYxZTAtNDFiZS05OWYxLWYwYmEyNTVjZWU0Ml9nYW56ZVNlbmR1bmc"
@@ -33552,6 +33636,32 @@
     "tmdb_id": 239158,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyMi0xMi0xMV8xNS0zMC1NRVo"
+  },
+  {
+    "title": "Weihnachten im Morgenland",
+    "search": "Weihnachten im Morgenland",
+    "original_title": "Weihnachten im Morgenland",
+    "year": "2010",
+    "video_url": "https://nrodlzdf-a.akamaihd.net/none/zdf/21/12/211213_sendung_fis/1/211213_sendung_fis_a1a2_3360k_p36v17.mp4",
+    "url_website": "https://www.zdf.de/filme/weihnachten-im-morgenland-movie-100",
+    "plot": "Alle Jahre wieder ordert Scheich Scharif eine Tanne bei Förster Droste im Sauerland. In diesem Jahr will der Araber gleich einen ganzen Wald. Obwohl Tannen in der Wüste keine Chance haben, düst der verwitwete Droste mit der Scheichvertrauten Milena nach Dubai. Denn lieber in der Wüste darben, als mit der nervigen Verwandtschaft Weihnachten feiern.",
+    "mediathek_desc": "Florian Droste, Forstwirt im Sauerland, lebt ein Jahr nach dem Tod seiner Frau zurückgezogen in seinem Forsthaus und widmet sich nur noch \"seinem\" Wald und seiner Trauer.",
+    "director": "Martin Gies",
+    "actors": [
+      "Walter Sittler",
+      "Anica Dobra",
+      "Anja Boche"
+    ],
+    "rating": "5.5",
+    "thumb": "https://image.tmdb.org/t/p/w342/wmjPKJhE5wdtldjWHevItsSG5ul.jpg",
+    "genres_list": [
+      "Komödie"
+    ],
+    "channel": "ZDF",
+    "timestamp": 1794229438,
+    "isNew": true,
+    "tmdb_id": 292282,
+    "tmdb_type": "movie"
   },
   {
     "title": "Weihnachts-Männer",
@@ -34205,7 +34315,7 @@
     ],
     "channel": "ARD",
     "timestamp": 1793102100,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 7864,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyNC0xMi0yOV8xMy0zNS1NRVo"
@@ -35039,8 +35149,8 @@
       "Komödie"
     ],
     "channel": "ZDF",
-    "timestamp": 1787541907,
-    "isNew": false,
+    "timestamp": 1794227850,
+    "isNew": true,
     "tmdb_id": 1390285,
     "tmdb_type": "movie",
     "url_website": "https://www.zdf.de/filme/zitronenherzen-movie-100"
@@ -35501,8 +35611,8 @@
       "Komödie"
     ],
     "channel": "ARD",
-    "timestamp": 1777803600,
-    "isNew": false,
+    "timestamp": 1795001700,
+    "isNew": true,
     "tmdb_id": 349801,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2FyZC5kZS9wbGFuQVJEXzE0M2M4NDVmLTQ0OWItNGQ5ZS1iOWM5LWEwYjY2MzFkMTA5OF9nYW56ZVNlbmR1bmc"
