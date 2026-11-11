@@ -387,7 +387,7 @@
       "TV-Film"
     ],
     "channel": "ZDF",
-    "timestamp": 1793648700,
+    "timestamp": 1794298547,
     "isNew": true,
     "tmdb_id": 1451030,
     "tmdb_type": "movie",
@@ -551,6 +551,34 @@
     "url_website": "https://www.zdf.de/filme/alice-im-weihnachtsland-movie-100"
   },
   {
+    "title": "Alle Mörder sind schon da",
+    "search": "Alle Mörder sind schon da",
+    "original_title": "Alle Mörder sind schon da",
+    "year": "1985",
+    "video_url": "https://manifest-arte.akamaized.net/api/manifest/v1/Generate/d0e0de31-f59e-4888-961d-42340a370cfd/de/XQ+KS+CHEV1/080085-000-B.m3u8",
+    "url_website": "https://www.arte.tv/de/videos/080085-000-A/alle-moerder-sind-schon-da/",
+    "plot": "Das weltberühmte Brettspiel Cluedo stand Pate für diese mörderische Komödie. Hat Colonel Mustard den Mord im Arbeitszimmer mit dem Revolver begangen? War es Miss Scarlet im Billard-Zimmer mit einem Strick oder gar Wadsworth, der Butler?",
+    "mediathek_desc": "Sechs Personen erhalten eine geheimnisvolle Einladung in eine Villa. Alle Gäste haben etwas gemeinsam: Sie haben etwas zu vertuschen und werden erpresst. In der Nacht kommt es zu einem Mord. Wo hat er stattgefunden, wer war der Täter und welche Tatwaffe wurde benutzt? – Eine auf dem Gesellschaftsspiel \"Cluedo\" basierende Krimikomödie von Jonathan Lynn aus dem Jahr 1985",
+    "director": "Peter Guber",
+    "actors": [
+      "Tim Curry",
+      "Eileen Brennan",
+      "Madeline Kahn"
+    ],
+    "rating": "7.2",
+    "thumb": "https://image.tmdb.org/t/p/w342/4NfclD815SjdWjieXkVUYFLzUc5.jpg",
+    "genres_list": [
+      "Komödie",
+      "Krimi",
+      "Mystery"
+    ],
+    "channel": "ARTE.DE",
+    "timestamp": 1794424500,
+    "isNew": true,
+    "tmdb_id": 15196,
+    "tmdb_type": "movie"
+  },
+  {
     "title": "Alle Sehnsucht dieser Erde",
     "search": "Alle Sehnsucht dieser Erde",
     "year": "2009",
@@ -602,6 +630,32 @@
     "tmdb_id": 262663,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAxNy0xMC0yMV8xNC0zMC1NRVNa"
+  },
+  {
+    "title": "Alle in einem Boot",
+    "search": "Alle in einem Boot",
+    "original_title": "Alle in einem Boot",
+    "year": "2020",
+    "video_url": "https://manifest-arte.akamaized.net/api/manifest/v1/Generate/d11d702d-e72d-4d61-abfd-88ea4b5678e3/de/XQ+KS+CHEV1/123821-000-A.m3u8",
+    "url_website": "https://www.arte.tv/de/videos/123821-000-A/alle-in-einem-boot/",
+    "plot": "Eigentlich wollte Paul einen Film über die Flucht seines Großvaters und dessen jüdischer Frau vor den Nazis im Jahr 1939 nach Kuba drehen. Doch das Geld reicht nicht, und so entscheidet er sich, stattdessen ein Theaterstück über die dramatischen Erfahrungen der beiden zu inszenieren",
+    "mediathek_desc": "Justine, ihr Mann und ihre Clique finden eine Lösung für ihre Geldsorgen: Sie organisieren eine romantische Kreuzfahrt für den Großinvestor Franck, Justines Chef, der eine Frau für sich gewinnen will. Dummerweise hat niemand geahnt, wem das Interesse des alten weißen Mannes gilt ... – Französische Filmkomödie von Bruno Podalydès",
+    "director": "Tobias Stille",
+    "actors": [
+      "Meral Perin",
+      "Thilo Prothmann",
+      "Wolfgang Riehm"
+    ],
+    "rating": "N/A",
+    "thumb": "https://image.tmdb.org/t/p/w342/pFk0TMcomY2FBGpggILA0BcMUzB.jpg",
+    "genres_list": [
+      "Drama"
+    ],
+    "channel": "ARTE.DE",
+    "timestamp": 1795029300,
+    "isNew": true,
+    "tmdb_id": 594640,
+    "tmdb_type": "movie"
   },
   {
     "title": "Alle nicht ganz dicht",
@@ -915,11 +969,11 @@
       "Drama"
     ],
     "channel": "ARD",
-    "timestamp": 1789988100,
+    "timestamp": 1793019406,
     "isNew": false,
     "tmdb_id": 440757,
     "tmdb_type": "movie",
-    "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2FyZC5kZS9wbGFuQVJEX2VjMDFmNTExLTMzNTgtNDU0OS1iYTY2LTcxODBjMTExNWUwY19nYW56ZVNlbmR1bmc"
+    "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2FyZC5kZS8xZDhmZWE2OS1jYmI0LTQ4MzktYjkzMC1kOWRhMWI3MTExYTBfZ2FuemVTZW5kdW5n"
   },
   {
     "title": "Alles was recht ist - Die italienische Variante",
@@ -2390,7 +2444,7 @@
       "TV-Film"
     ],
     "channel": "ZDF",
-    "timestamp": 1794116008,
+    "timestamp": 1794286506,
     "isNew": true,
     "tmdb_id": 243739,
     "tmdb_type": "movie"
@@ -3703,7 +3757,7 @@
       "Krimi"
     ],
     "channel": "ZDF",
-    "timestamp": 1794232146,
+    "timestamp": 1794294123,
     "isNew": true,
     "tmdb_id": 1476281,
     "tmdb_type": "movie"
@@ -3891,6 +3945,32 @@
     "tmdb_id": 366032,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2FyZC5kZS9wbGFuQVJEX2ZjNmY1NzgxLTk0OWUtNGYwYS04MGQ5LWNjNTNjOTNkZThhN19nYW56ZVNlbmR1bmc"
+  },
+  {
+    "title": "Das Biest",
+    "search": "Das Biest",
+    "original_title": "Das Biest",
+    "year": "1977",
+    "video_url": "https://manifest-arte.akamaized.net/api/manifest/v1/Generate/3607d86f-531a-49ab-8a9e-c69314c4eea8/de/XQ+KS+CHEV1/123314-000-A.m3u8",
+    "url_website": "https://www.arte.tv/de/videos/123314-000-A/das-biest/",
+    "plot": "Zwei Menschen begegnen sich in drei Zeitepochen: Im Jahr 2044 soll Gabrielle mit Hilfe einer Zeitmaschine Traumata aus früheren Leben verarbeiten. 1910 in Paris ist sie eine verheiratete Pianistin und lernt Louis kennen. 2014 versucht sie sich als Model in Los Angeles und Louis ist ein frustrierter Single, der sich an den Frauen rächen will. – Near-Future-Drama mit Léa Seydoux",
+    "mediathek_desc": "Zwei Menschen begegnen sich in drei Zeitepochen: Im Jahr 2044 soll Gabrielle mit Hilfe einer Zeitmaschine Traumata aus früheren Leben verarbeiten. 1910 in Paris ist sie eine verheiratete Pianistin und lernt Louis kennen. 2014 versucht sie sich als Model in Los Angeles und Louis ist ein frustrierter Single, der sich an den Frauen rächen will. – Near-Future-Drama mit Léa Seydoux",
+    "director": "Wolfgang Spier",
+    "actors": [
+      "Viktoria Brams",
+      "Hans Elwenspoek",
+      "Charles Regnier"
+    ],
+    "rating": "7.0",
+    "thumb": "placeholder.png",
+    "genres_list": [
+      "Drama"
+    ],
+    "channel": "ARTE.DE",
+    "timestamp": 1795034871,
+    "isNew": true,
+    "tmdb_id": 295547,
+    "tmdb_type": "movie"
   },
   {
     "title": "Das Blaue vom Himmel",
@@ -4569,7 +4649,7 @@
     ],
     "channel": "ARD",
     "timestamp": 1793269200,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 324766,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyNC0wNi0yOF8xNS0zMC1NRVNa"
@@ -6175,7 +6255,7 @@
       "Drama"
     ],
     "channel": "ARD",
-    "timestamp": 1794446400,
+    "timestamp": 1794446700,
     "isNew": true,
     "tmdb_id": 321784,
     "tmdb_type": "movie",
@@ -7152,7 +7232,7 @@
     "title": "Der Sternwanderer",
     "search": "Der Sternwanderer",
     "year": "2007",
-    "video_url": "https://arteptweb-a.akamaihd.net/am/ptweb/101000/101300/101328-000-A_EQ_0_VA-STMA_11597646_MP4-1500_AMM-PTWEB-60633549455797_16HtHp.mp4",
+    "video_url": "https://manifest-arte.akamaized.net/api/manifest/v1/Generate/ee6d1648-209f-4574-b2f9-04b5b28a4953/de/XQ+KS+CHEV1/101328-000-A.m3u8",
     "plot": "Der junge Engländer Tristan hält um die Hand von Victoria an. Er verspricht, ihr eine Sternschnuppe zu Füßen zu legen. Dazu bricht er in das durch eine Mauer getrennte magische Königreich Stormhold auf und findet den gefallenen Stern Yvaine. Doch die Hexe Lamia will ihr Herz und Thronfolger Septimus ihren Schmuck. Bei der abenteuerlichen Flucht vor den Verfolgern sind Gefährten rar gesät. Nur der tuntige Captain Shakespeare ist auf ihrer Seite.",
     "mediathek_desc": "Wall ist ein verschlafenes englisches Dorf. Hier gibt der junge Tristan Thorne dem hübschesten Mädchen, dessen Liebe er zu gewinnen hofft, ein gewagtes Versprechen: Er wird ihr einen herabgefallenen Stern bringen. Dazu muss er jedoch gegen alle Verbote verstoßen ... – Verfilmung (2007) des gleichnamigen Romans von Neil Gaiman. Regie: Matthew Vaughn.",
     "director": "Matthew Vaughn",
@@ -10426,7 +10506,7 @@
     ],
     "channel": "ARD",
     "timestamp": 1793274900,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 328629,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyNS0wNy0zMF8xNS0zMC1NRVNa"
@@ -12527,8 +12607,8 @@
       "Drama"
     ],
     "channel": "ZDF",
-    "timestamp": 1791403783,
-    "isNew": false,
+    "timestamp": 1794275100,
+    "isNew": true,
     "tmdb_id": 1204957,
     "tmdb_type": "movie",
     "url_website": "https://www.zdf.de/filme/ein-regenbogen-zu-weihnachten-movie-100"
@@ -12655,6 +12735,35 @@
     "timestamp": 1787590244,
     "isNew": false,
     "tmdb_id": 433597,
+    "tmdb_type": "movie"
+  },
+  {
+    "title": "Ein Taxi zur Bescherung",
+    "search": "Ein Taxi zur Bescherung",
+    "original_title": "Ein Taxi zur Bescherung",
+    "year": "2022",
+    "video_url": "https://nrodlzdf-a.akamaihd.net/none/zdf/22/12/221218_2015_sendung_sof/1/221218_2015_sendung_sof_a1a2_3360k_p36v15.mp4",
+    "url_website": "https://www.zdf.de/filme/ein-taxi-zur-bescherung-movie-100",
+    "plot": "Den Hamburger Taxifahrer Axel Parschke verschlägt es kurz vor Heiligabend ins weihnachtliche Erzgebirge: Was als lukrativer Auftrag für den nach einem Unfall erblindeten IT-Analysten Jan Olsmer beginnt, der im kleinen Örtchen Bergroda seine Internetbekanntschaft Jenny Feller treffen möchte, wird für den nach langen Ehejahren Geschiedenen zu einer emotionalen Reise in ein neues Leben. Mit Fremden, die auf dem Weg zu Freunden werden, wie sein Fahrgast Jan oder die Abiturientin Linh Ngyuen, die unterwegs eingesammelt werden. Und da gibt es noch die Kfz-Mechanikerin Sofia Lieberwirth, in deren Werkstatt Axel und sein bei einem Unfall beschädigtes Taxi unfreiwillig stranden. Nach der Feier im Ort Mettenschicht und einem gemeinsamen Heiligabend wider Willen werden die Karten für alle noch einmal neu gemischt.",
+    "mediathek_desc": "Taxifahrer Axel Parschke wollte wie jedes Weihnachten durcharbeiten, doch am Bahnhof Hamburg-Dammtor macht ihm IT-Analyst Jan Olsmer ein verlockendes Angebot.",
+    "director": "Dirk Kummer",
+    "actors": [
+      "Dietmar Bär",
+      "Max Riemelt",
+      "Gabriele Völsch"
+    ],
+    "rating": "6.0",
+    "thumb": "https://image.tmdb.org/t/p/w342/3eMiUly10nlWdSIGEroN1VLpGd9.jpg",
+    "genres_list": [
+      "TV-Film",
+      "Komödie",
+      "Drama",
+      "Romanze"
+    ],
+    "channel": "ZDF",
+    "timestamp": 1794269700,
+    "isNew": true,
+    "tmdb_id": 1056535,
     "tmdb_type": "movie"
   },
   {
@@ -12943,32 +13052,6 @@
     "tmdb_id": 335941,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyMy0wNy0wNl8wMS01MC1NRVNa"
-  },
-  {
-    "title": "Eine Frage der Ehre",
-    "search": "Eine Frage der Ehre",
-    "original_title": "Eine Frage der Ehre",
-    "year": "1992",
-    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/25/03/250315_sony_2015_sendung_nsf/1/250315_sony_2015_sendung_nsf_3360k_p36v17.mp4",
-    "url_website": "https://www.zdf.de/video/filme/eine-frage-der-ehre-movie-100/eine-frage-der-ehre-110",
-    "plot": "Zwei Soldaten der US-Marines-Basis in Guantanamo Bay, Kuba, werden des Mordes an einem Kameraden angeklagt. Die beiden beteuern, sie hätten dem Opfer nur auf Befehl von oben eine Abreibung verpassen wollen. Dem jungen Militäranwalt Daniel Kaffee, der zeitlebens im Schatten seines Vaters stand, sieht sich einem scheinbar übermächtigen Gegner gegenüber: Colonel Jessep führt sein Regiment mit absolutistischer Härte. Im Gerichtssaal kommt es zum Aufeinandertreffen der beiden Gegenspieler.",
-    "mediathek_desc": "Zwei Soldaten der US-Marine stehen vor Gericht. Sie sollen während einer Disziplinierungsmaßnahme einen Kameraden ermordet haben. Der junge Militäranwalt Daniel Kaffee soll sie verteidigen.",
-    "director": "Rob Reiner",
-    "actors": [
-      "Tom Cruise",
-      "Jack Nicholson",
-      "Demi Moore"
-    ],
-    "rating": "7.6",
-    "thumb": "https://image.tmdb.org/t/p/w342/bF9SSLOzTWhBOdHdooWz4oV8yVi.jpg",
-    "genres_list": [
-      "Drama"
-    ],
-    "channel": "ZDFneo",
-    "timestamp": 1577932800,
-    "isNew": false,
-    "tmdb_id": 881,
-    "tmdb_type": "movie"
   },
   {
     "title": "Eine Frau mit berauschenden Talenten",
@@ -14404,7 +14487,7 @@
     "original_title": "Fabian",
     "year": "1980",
     "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/26/11/261103_0015_sendung_spf/1/261103_0015_sendung_spf_3360k_p36v17.mp4",
-    "url_website": "https://www.zdf.de/video/filme/fabian-movie-100/fabian-116",
+    "url_website": "https://www.zdf.de/filme/fabian-movie-100",
     "plot": "Fabian verdient seinen Lebensunterhalt mehr schlecht als recht als Reklametexter einer Zigarettenfirma. Ansonsten lebt er unbekümmert in den Tag hinein. Die Nächte verbringt er gemeinsam mit seinem besten Freund Labude in Berlins Clubs und Bars. Er lernt die Studentin Cornelia kennen und die beiden verlieben sich ineinander. Umso größer die Ernüchterung, als Fabian unerwartet seine Arbeit verliert. Bisher hat er die Arbeitslosen auf den Straßen von Berlin kaum wahrgenommen, jetzt zählt er selbst dazu. Cornelia bekommt ein großzügiges Angebot von einem Filmproduzenten und verlässt Fabian, um Karriere zu machen. Dann nimmt sich auch noch Labude, bei den Nazis als Linker verschrien, das Leben. Fabian verlässt Berlin und kehrt zu seiner Mutter in seine Heimatstadt zurück. Dort geht er - der Nichtschwimmer - bei dem Versuch, ein Kind vor dem Ertrinken zu retten, buchstäblich unter...",
     "mediathek_desc": "Berlin, um 1930. Fabian arbeitet als Reklametexter für eine Zigarrenfirma und lebt ansonsten unbekümmert in den Tag hinein.",
     "director": "Wolf Gremm",
@@ -14419,7 +14502,7 @@
       "Drama"
     ],
     "channel": "ZDF",
-    "timestamp": 1793661300,
+    "timestamp": 1794218590,
     "isNew": true,
     "tmdb_id": 197973,
     "tmdb_type": "movie"
@@ -15080,33 +15163,6 @@
     "tmdb_id": 1788,
     "tmdb_type": "movie",
     "url_website": "https://www.3sat.de/film/spielfilm/footloose-104.html"
-  },
-  {
-    "title": "Frau Holles Garten",
-    "search": "Frau Holles Garten",
-    "original_title": "Frau Holles Garten",
-    "year": "2019",
-    "video_url": "https://nrodlzdf-a.akamaihd.net/none/zdf/20/12/201213_0405_sendung_sof/5/201213_0405_sendung_sof_a1a2_3360k_p36v15.mp4",
-    "url_website": "https://www.zdf.de/filme/frau-holles-garten-movie-100",
-    "plot": "Mia Goldig liebt ihren Job im Botanischen Garten. Doch ihre Mutter, die scheidende Leiterin des Gartens, zieht ihre Schwester als Nachfolgerin vor. Kann Frau Holle für die richtige Entscheidung sorgen? Die neue Leiterin muss vor allem finanzkräftige Sponsoren finden, da sich der Garten in finanziellen Nöten befindet. Eine Aufgabe, die sich die zurückhaltende Chefgärtnerin Mia selbst nicht zutraut. Sie liebt die Pflanzen, nicht aber den großen Auftritt. Ganz im Gegensatz zu ihrer selbstsicheren Schwester Marissa.Auch ihre Mutter Helene sieht in Mia, die stottert, wenn sie vor mehreren Menschen sprechen muss, nicht die richtige Wahl für diesen repräsentativen Posten. Dagegen scheint ihr die zielstrebige Marissa wie geschaffen für die Stelle. Dass Marissa der Garten völlig egal ist und sie ein intrigantes Spiel treibt, entgeht Helene.Aber Frau Holle, der guten Seele des Gartens, die dort einen Laden betreibt, bleibt nichts verborgen.",
-    "mediathek_desc": "Mia liebt ihren Job im botanischen Garten. Wird sie die neue Leiterin, obwohl ihre Mutter ihre Schwester als Nachfolgerin vorzieht. Kann Frau Holle für die richtige Entscheidung sorgen?",
-    "director": "Seyhan Derin",
-    "actors": [
-      "Cornelia Froboess",
-      "Klara Deutschmann",
-      "Lavinia Wilson"
-    ],
-    "rating": "8.0",
-    "thumb": "https://image.tmdb.org/t/p/w342/h8I6m9dOSV5AXJvdNEY2GAsRFci.jpg",
-    "genres_list": [
-      "Drama",
-      "Romanze"
-    ],
-    "channel": "ZDF",
-    "timestamp": 1793018636,
-    "isNew": false,
-    "tmdb_id": 652614,
-    "tmdb_type": "movie"
   },
   {
     "title": "Frau Pfarrer & Herr Priester",
@@ -16595,6 +16651,34 @@
     "tmdb_id": 265504,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyNC0wMS0yNl8wMS01MC1NRVo"
+  },
+  {
+    "title": "Hafen im Nebel",
+    "search": "Hafen im Nebel",
+    "original_title": "Hafen im Nebel",
+    "year": "1938",
+    "video_url": "https://manifest-arte.akamaized.net/api/manifest/v1/Generate/71efa42c-caa4-40b6-a76f-01782e9b6146/de/XQ+KS+CHEV1/021416-000-C.m3u8",
+    "url_website": "https://www.arte.tv/de/videos/021416-000-A/hafen-im-nebel/",
+    "plot": "Jean, Deserteur des Indochinakrieges, sucht Zuflucht in der französischen Hafenstadt Le Havre, Treffpunkt zwielichtiger Gestalten. Von hier soll es per Schiff in die Freiheit gehen. Auf der Suche nach einer Unterkunft lernt er die schöne Nelly kennen und verliebt sich in sie. Aber auch der Gauner Lucien buhlt um Nellys Gunst. Und Zabel, Nellys Vormund, hegt mehr als väterliche Gefühle für die junge Frau.",
+    "mediathek_desc": "Normandie, in den 1930er Jahren: Der desertierte Soldat Jean verliebt sich in die schöne Nelly. Doch das junge Liebesglück ist in Gefahr. Der Verbrecher Lucien und seine Leute bedrängen Nelly, die von Jean verteidigt wird, was Lucien rachsüchtig stimmt ... – Marcel Carnés \"Hafen im Nebel\" ist einer der herausragenden Filme des französischen Poetischen Realismus.",
+    "director": "Marcel Carné",
+    "actors": [
+      "Jean Gabin",
+      "Michel Simon",
+      "Michèle Morgan"
+    ],
+    "rating": "7.4",
+    "thumb": "https://image.tmdb.org/t/p/w342/6y4MWjaURzdLjCg7EoVobWpjK8D.jpg",
+    "genres_list": [
+      "Romanze",
+      "Drama",
+      "Krimi"
+    ],
+    "channel": "ARTE.DE",
+    "timestamp": 1794430070,
+    "isNew": true,
+    "tmdb_id": 46326,
+    "tmdb_type": "movie"
   },
   {
     "title": "Hallo Spencer - Der Film",
@@ -19393,7 +19477,7 @@
     ],
     "channel": "ZDF",
     "timestamp": 1793273548,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 270303,
     "tmdb_type": "movie"
   },
@@ -20550,7 +20634,7 @@
     "title": "Kompromat - Die Macht der Lüge",
     "search": "Kompromat - Die Macht der Lüge",
     "year": "2022",
-    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/23/09/230925_2215_sendung_spf/1/230925_2215_sendung_spf_a1a2_3360k_p36v17.mp4",
+    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/23/09/230925_2215_sendung_spf/1/230925_2215_sendung_spf_a3a4_3360k_p36v17.mp4",
     "plot": "Sibirien, 2017: Der französische Diplomat Mathieu wird Opfer einer Intrige des russischen Geheimdienstes. Vor den Augen seiner Tochter wird er verhaftet, inhaftiert und isoliert. Ohne Chance auf Verteidigung oder Hilfe von der eigenen Regierung bleibt dem Staatsfeind nur ein Ausweg, wenn er seine Familie je wiedersehen will: die abenteuerliche Flucht auf eigene Faust durch ein fremdes und feindseliges Land.",
     "mediathek_desc": "Der Franzose Mathieu Roussel wird in Russland beschuldigt, ein Kinderschänder zu sein. Ihm drohen 15 Jahre Lagerhaft. Selbst sein Anwalt rät ihm zur Flucht.",
     "director": "Jérôme Salle",
@@ -20566,8 +20650,8 @@
       "Drama"
     ],
     "channel": "ZDF",
-    "timestamp": 1792649292,
-    "isNew": false,
+    "timestamp": 1794311985,
+    "isNew": true,
     "tmdb_id": 852427,
     "tmdb_type": "movie",
     "url_website": "https://www.zdf.de/filme/kompromat---die-macht-der-luege-movie-100"
@@ -22133,7 +22217,7 @@
     "search": "Longlegs",
     "original_title": "Longlegs",
     "year": "2024",
-    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/26/10/261026_2215_sendung_spf/1/261026_2215_sendung_spf_a1a2_3360k_p36v17.mp4",
+    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/26/10/261026_2215_sendung_spf/1/261026_2215_sendung_spf_a3a4_3360k_p36v17.mp4",
     "url_website": "https://www.zdf.de/filme/longlegs-movie-100",
     "plot": "Die junge FBI-Agentin Lee Harker entdeckt eine Reihe okkulter Hinweise in einem Serienmörder-Fall. Als sie eine persönliche Verbindung zu dem Serienmörder aufdeckt, nimmt der Fall eine unerwartete Wendung…",
     "mediathek_desc": "Eine FBI-Agentin erhält einen neuen Fall: Seit 30 Jahren treibt ein Serienkiller sein Unwesen. Die Opfer sind ganze Familien, an den Tatorten werden seltsame Botschaften hinterlassen.",
@@ -22151,7 +22235,7 @@
       "Mystery"
     ],
     "channel": "ZDF",
-    "timestamp": 1793311881,
+    "timestamp": 1794303151,
     "isNew": true,
     "tmdb_id": 1226578,
     "tmdb_type": "movie"
@@ -23082,7 +23166,7 @@
     ],
     "channel": "ARD",
     "timestamp": 1793280600,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 290894,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2FyZC5kZS9wbGFuQVJEXzg2YWNmYmY4LTVjNWYtNGNiYS05ODRhLWZhN2Y1ZmI0Y2ZlMV9nYW56ZVNlbmR1bmc"
@@ -24388,33 +24472,6 @@
     "url_website": "https://www.arte.tv/de/videos/073010-000-A/mord-im-fahrpreis-inbegriffen/"
   },
   {
-    "title": "Mord im Orient-Express",
-    "search": "Mord im Orient-Express",
-    "year": "1974",
-    "video_url": "https://nrodlzdf-a.akamaihd.net/none/3sat/20/11/201101_mord_im_orientexpress_spielfilm/4/201101_mord_im_orientexpress_spielfilm_3328k_p36v13.mp4",
-    "plot": "Hercule Poirot steht vor einem seiner schwierigsten Fälle: In einer eisigen Winternacht muss der Orient Express aus Istanbul anhalten und am nächsten Morgen wird die Leiche eines, mit 12 Messerstichen ermordeten, reichen Geschäftsmannes aufgefunden.",
-    "mediathek_desc": "Auf dem Balkan bleibt der Orient-Express im Schnee stecken. Als die Leiche eines US-Millionärs entdeckt wird, ermittelt Meisterdetektiv Hercule Poirot, der zufällig an Bord des Zuges ist.",
-    "director": "Sidney Lumet",
-    "actors": [
-      "Albert Finney",
-      "Lauren Bacall",
-      "Martin Balsam"
-    ],
-    "rating": "7.1",
-    "thumb": "https://image.tmdb.org/t/p/w342/6yQvJdSi4t3XVxSfxSYxRvMACSk.jpg",
-    "genres_list": [
-      "Drama",
-      "Thriller",
-      "Mystery"
-    ],
-    "channel": "3Sat",
-    "timestamp": 1499611020,
-    "isNew": false,
-    "tmdb_id": 4176,
-    "tmdb_type": "movie",
-    "url_website": "https://www.3sat.de/film/spielfilm/mord-im-orient-express-102.html"
-  },
-  {
     "title": "Mord in der Lagune",
     "search": "Mord in der Lagune",
     "year": "2011",
@@ -25405,31 +25462,6 @@
     "tmdb_type": "movie"
   },
   {
-    "title": "Niemand stirbt gern allein. Ein Krimi aus Passau",
-    "search": "Niemand stirbt gern allein. Ein Krimi aus Passau",
-    "year": "2025",
-    "video_url": "https://cdn-storage.br.de/geo/b0/01/b001a993-5f54-4aa8-8797-5f424b8df550/b001a993-5f54-4aa8-8797-5f424b8df550_X.mp4",
-    "plot": "Auf einem Passauer Fußballfeld finden Ex-Polizistin Frederike Bader und Detektiv Ferdinand Zankl die Leiche von Alois Morath. War es Mord oder Suizid?",
-    "mediathek_desc": "Auf einem Fußballfeld finden Ex-Polizistin Frederike Bader und Privatermittler Ferdinand Zankl die Leiche eines Mannes. Wurde Platzwart Alois Morath ermordet oder war es Suizid? Kurz zuvor bittet die hochschwangere Charlotte Ambrosius das Ermittlerduo um Hilfe: Bei ihrem Verlobten Phillip Danner wurden bei einem Freigang aus der JVA Passau Drogen gefunden. Die junge Frau ist sich sicher: Der Stoff wurde ihm untergeschoben....",
-    "director": "Jan Fehse",
-    "actors": [
-      "Marie Leuenberger",
-      "Michael Ostrowski",
-      "Nadja Sabersky"
-    ],
-    "rating": "6.5",
-    "thumb": "https://image.tmdb.org/t/p/w342/jabO0E6HOk4zXHN1UiWTAChIBdU.jpg",
-    "genres_list": [
-      "Krimi"
-    ],
-    "channel": "BR",
-    "timestamp": 1780424100,
-    "isNew": false,
-    "tmdb_id": 1425772,
-    "tmdb_type": "movie",
-    "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2JyLmRlL2Jyb2FkY2FzdC9GMjAyNFdPMDAxOTc3QTAvYXVkaW9kZXNrcmlwdGlvbg"
-  },
-  {
     "title": "Niete zieht Hauptgewinn",
     "search": "Niete zieht Hauptgewinn",
     "year": "2007",
@@ -25944,7 +25976,7 @@
       "Drama"
     ],
     "channel": "ZDF",
-    "timestamp": 1793816101,
+    "timestamp": 1794306428,
     "isNew": true,
     "tmdb_id": 1447875,
     "tmdb_type": "movie",
@@ -26156,7 +26188,7 @@
     ],
     "channel": "ARD",
     "timestamp": 1793231700,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 363186,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyMy0wNC0yN18wMS01MC1NRVNa"
@@ -27381,7 +27413,7 @@
     ],
     "channel": "ARTE.DE",
     "timestamp": 1793222366,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 2671,
     "tmdb_type": "movie"
   },
@@ -30285,32 +30317,6 @@
     "url_website": "https://www.3sat.de/film/spielfilm/tagundnachtgleiche-100.html"
   },
   {
-    "title": "Tatami",
-    "search": "Tatami",
-    "year": "2024",
-    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/26/09/260915_0230_sendung_spf/1/260915_0230_sendung_spf_a3a4_3360k_p36v17.mp4",
-    "plot": "Die iranischen Judokas Leila und ihre Trainerin Maryam reisen zur Judo-Weltmeisterschaft mit der Absicht, Irans erste Goldmedaille mit nach Hause zu holen. Mitten in der Judo-Weltmeisterschaft erhalten sie von der Islamischen Republik ein Ultimatum, in dem Leila angewiesen wird, eine Verletzung vorzutäuschen und zu verlieren, sonst wird sie als Staatsverräterin gebrandmarkt. Da ihre eigene Freiheit und die ihrer Familie auf dem Spiel stehen, steht Leila vor einer unmöglichen Wahl: Sie muss sich dem iranischen Regime fügen, während ihre Trainerin Maryam sie anfleht, Gold zu gewinnen oder weiterzukämpfen.",
-    "mediathek_desc": "Die iranische Judoka Leila hat bei der WM gute Chancen auf Gold, doch als sich ein Duell mit der israelischen Favoritin abzeichnet, soll Leila auf Befehl ihres Landes das Turnier abbrechen.",
-    "director": "Guy Nattiv",
-    "actors": [
-      "Arienne Mandi",
-      "Zar Amir Ebrahimi",
-      "Jaime Ray Newman"
-    ],
-    "rating": "7.7",
-    "thumb": "https://image.tmdb.org/t/p/w342/k6rkXQLATrhdO9GGZJh44jnxnr1.jpg",
-    "genres_list": [
-      "Thriller",
-      "Drama"
-    ],
-    "channel": "ZDF",
-    "timestamp": 1793404800,
-    "isNew": true,
-    "tmdb_id": 1084066,
-    "tmdb_type": "movie",
-    "url_website": "https://www.zdf.de/filme/tatami-movie-100"
-  },
-  {
     "title": "Tausche Firma gegen Haushalt",
     "search": "Tausche Firma gegen Haushalt",
     "year": "2003",
@@ -30365,7 +30371,7 @@
     "title": "The Apprentice - The Trump Story",
     "search": "The Apprentice - The Trump Story",
     "year": "2024",
-    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/26/06/260620_0045_sendung_spf/4/260620_0045_sendung_spf_a3a4_3360k_p36v17.mp4",
+    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/26/06/260620_0045_sendung_spf/4/260620_0045_sendung_spf_a1a2_3360k_p36v17.mp4",
     "plot": "Der junge New Yorker Millionenerbe Donald Trump ist von der Macht besessen. Doch um überhaupt nach ihr greifen zu können, muss er mehr oder weniger sinnbildlich über Leichen gehen. Auch deshalb tut er sich mit dem Rechtsanwalt und ehemaligen Berater des homophoben republikanischen Hardliners Joseph McCarthy, Roy Cohn, zusammen. Der verteidigt Trump nicht nur vor Gericht wegen dessen rassistischer Vermietungspolitik, sondern sorgt auch durch Hinterzimmerdeals mit Konzernen, Gewerkschaften und sogar der Mafia dafür, dass Trump auf dem umkämpften New Yorker Immobilienmarkt trotz unternehmerischer Instinktlosigkeit zunehmend an Einfluss gewinnen kann.",
     "mediathek_desc": "Die erstaunliche Geschichte des jungen Donald Trump, der im New York der 70er- und 80er-Jahre zunächst sein Immobilienimperium aufbaut - und dann nach immer mehr Macht strebt.",
     "director": "Ali Abbasi",
@@ -30382,8 +30388,8 @@
       "Komödie"
     ],
     "channel": "ZDF",
-    "timestamp": 1792267304,
-    "isNew": false,
+    "timestamp": 1794311982,
+    "isNew": true,
     "tmdb_id": 1182047,
     "tmdb_type": "movie",
     "url_website": "https://www.zdf.de/filme/the-apprentice--the-trump-story-movie-100"
@@ -30525,7 +30531,7 @@
     "search": "The Founder",
     "original_title": "The Founder",
     "year": "2016",
-    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/26/09/260911_0100_sendung_spf/2/260911_0100_sendung_spf_a1a2_3360k_p36v17.mp4",
+    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/26/09/260911_0100_sendung_spf/2/260911_0100_sendung_spf_a3a4_3360k_p36v17.mp4",
     "url_website": "https://www.zdf.de/video/filme/the-founder-movie-100/the-founder-100",
     "plot": "Ray Kroc ist als Vertreter für Milkshake-Maschinen in Illinois unterwegs und hat wenig Erfolg – bis er bei seinen Touren auf die Brüder Mac und Dick McDonald und ihr kleines Burger-Restaurant trifft. Die Brüder McDonald haben die Arbeitsprozesse so optimiert, dass der bestellte Burger nur wenige Sekunden später beim Kunden ist. Ray ist begeistert und sieht das enorme Potential der Idee: McDonald’s soll zum Franchise werden. Zum Entsetzen seiner Frau Ethel riskiert er sein ganzes Vermögen und sogar das geliebte Eigenheim. Und doch läuft sein Vorhaben nicht richtig an, bis ihm schließlich eine zündende Idee kommt – von nichts und niemandem lässt sich Ray von seinem ambitionierten Plan, ein Imperium zu erschaffen, abhalten, nicht einmal von den eigentlichen McDonald’s-Gründern…",
     "mediathek_desc": "Der erfolglose Vertreter Ray Kroc verfolgt den amerikanischen Traum. Als er einen beliebten Schnellimbiss besucht, entwickelt er einen visionären Plan. Er will Franchiserechte erwerben.",
@@ -30571,7 +30577,7 @@
     ],
     "channel": "ARTE.DE",
     "timestamp": 1793214957,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 2649,
     "tmdb_type": "movie"
   },
@@ -30869,7 +30875,7 @@
     ],
     "channel": "ZDF",
     "timestamp": 1793274696,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 659986,
     "tmdb_type": "movie"
   },
@@ -33343,8 +33349,8 @@
       "Drama"
     ],
     "channel": "ZDF",
-    "timestamp": 1784278719,
-    "isNew": false,
+    "timestamp": 1794304572,
+    "isNew": true,
     "tmdb_id": 835363,
     "tmdb_type": "movie",
     "url_website": "https://www.zdf.de/filme/viva-forever-movie-100"
@@ -33875,6 +33881,26 @@
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyMy0xMi0yNF8yMC0xNS1NRVo"
   },
   {
+    "title": "Wenn du nach dem Tod erwachst",
+    "search": "Wenn du nach dem Tod erwachst",
+    "original_title": "Wenn du nach dem Tod erwachst",
+    "year": "None",
+    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/25/01/250102_0055_sendung_spf/1/250102_0055_sendung_spf_a1a2_3360k_p36v15.mp4",
+    "url_website": "https://www.zdf.de/video/filme/wenn-du-nach-dem-tod-erwachst-movie-100/wenn-du-nach-dem-tod-erwachst-100",
+    "plot": "Russ Potter hat zahlreichen Nachbarn schlechte Anlagetipps gegeben, wodurch diese Geld verloren haben. Der Broker gerät ins Abseits der Gemeinschaft und erhält beunruhigende Drohanrufe.",
+    "mediathek_desc": "Russ Potter hat zahlreichen Nachbarn schlechte Anlagetipps gegeben, wodurch diese Geld verloren haben. Der Broker gerät ins Abseits der Gemeinschaft und erhält beunruhigende Drohanrufe.",
+    "director": "",
+    "actors": [],
+    "rating": "N/A",
+    "thumb": "placeholder.png",
+    "genres_list": [
+      "Sonstige"
+    ],
+    "channel": "ZDF",
+    "timestamp": 1735775700,
+    "isNew": false
+  },
+  {
     "title": "Wenn wir uns begegnen",
     "search": "Wenn wir uns begegnen",
     "year": "2008",
@@ -34114,7 +34140,7 @@
     "title": "Wie buchstabiert man Liebe?",
     "search": "Wie buchstabiert man Liebe?",
     "year": "2001",
-    "video_url": "https://pd-videos.daserste.de/int/2023/03/23/b476ed6a-d64c-4ae3-afcc-cf31c6c53055/JOB_557993__sendeton_1280x720-50p-3200kbit.mp4",
+    "video_url": "https://ctv-videos.daserste.de/int/2023/03/23/b476ed6a-d64c-4ae3-afcc-cf31c6c53055/JOB_557993__sendeton_1280x720-50p-3200kbit.mp4",
     "plot": "Wie buchstabiert man Liebe?: Die alleinerziehende Mutter Anna verliebt sich in den Schriftsteller Tom - doch woher soll sie den Mut nehmen, ausgerechnet ihm zu erklären, dass sie weder lesen noch schreiben kann?",
     "mediathek_desc": "Spielfilm Deutschland 2001\r\n\r\nNach der Trennung von ihrem Mann schlägt Anna sich als allein erziehende Mutter ohne Beruf mit Gelegenheitsjobs durch. Beim Kellnern lernt sie den Bestsellerautor Tom kennen, der sich in die bodenständige und lebenskluge Frau verliebt.\r\n\r\nMit Suzanne von Borsody, Peter Sattmann, Pamela Marquardt, Marco Bretscher-Coschignano, Marie-Lou Sellem u. a. | Regie: Christine H\n.....",
     "director": "Christine Hartmann",
@@ -34131,8 +34157,8 @@
       "Drama"
     ],
     "channel": "ARD",
-    "timestamp": 1680652800,
-    "isNew": false,
+    "timestamp": 1794916500,
+    "isNew": true,
     "tmdb_id": 296516,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyMy0wNC0wNV8wMi0wMC1NRVNa"
@@ -34945,7 +34971,7 @@
     "title": "Wunschkind",
     "search": "Wunschkind",
     "year": "2012",
-    "video_url": "https://pd-videos.daserste.de/int/2024/05/16/0c8bb08e-64e6-4089-9484-0360e7eec1ca/JOB_474045_sendeton_1280x720-50p-3200kbit.mp4",
+    "video_url": "https://ctv-videos.daserste.de/int/2026/09/25/DEGSM199931/DEGSM199931_3860154_sendeton_1280x720-50p-3200kbit.mp4",
     "plot": "Kinderärztin Claudia Kayser und ihre fast 17-jährige Tochter Carolin sind ein harmonisches Mutter-Tochter-Gespann. Seit dem Tod des Vaters sind Mutter und Tochter noch näher zusammengerückt. Mit dem Familienanwalt Thomas hat Claudia einen neuen Lebenspartner gefunden. An ihrem 17. Geburtstag findet Carolin heraus, dass sie adoptiert wurde. Sie macht sich auf eigen Faust auf den Weg, um ihre leibliche Mutter zu finden. Mit Hilfe des Jugendamtes wird sie fündig: Ihre Mutter heißt Chantal, ist Mitte 30, chronisch pleite und immer gut drauf. Sie arbeitet als Kosmetikerin und führt ein lockeres Leben ohne familiäre Verpflichtungen. Der Versuch, ihre beiden Mütter miteinander bekanntzumachen, endet im Eklat. Carolin fühlt sich hin- und hergerissen und muss dann doch wieder eine Enttäuschung hinnehmen.",
     "mediathek_desc": "Spielfilm Deutschland 2012\r\n\r\nEigentlich sind sie ein Mutter-Tochter-Gespann, wie es harmonischer kaum sein könnte: Die angesehene Hamburger Kinderärztin Claudia Kayser (Kirsten Block) und ihre fast 17-jährige Tochter Carolin (Carolyn Genzkow). Seit dem tragischen Tod des geliebten Vaters sind die beiden noch enger zusammengerückt – damals half das Mädchen ihrer trauernden Mutter, ein schweres see\n.....",
     "director": "Stefan Kruppa",
@@ -34960,11 +34986,11 @@
       "Drama"
     ],
     "channel": "ARD",
-    "timestamp": 1717848000,
+    "timestamp": 1790424000,
     "isNew": false,
     "tmdb_id": 378430,
     "tmdb_type": "movie",
-    "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyNC0wNi0wOF8xNC0wMC1NRVNa"
+    "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2FyZC5kZS9wbGFuQVJEX2E1NzdiYzhmLTc3YzItNDFmZC1iMzZmLTdjNjFmMDIxZTkxY19nYW56ZVNlbmR1bmc"
   },
   {
     "title": "Wunschkinder und andere Zufälle",
@@ -35149,7 +35175,7 @@
       "Komödie"
     ],
     "channel": "ZDF",
-    "timestamp": 1794227850,
+    "timestamp": 1794289570,
     "isNew": true,
     "tmdb_id": 1390285,
     "tmdb_type": "movie",
@@ -35852,7 +35878,7 @@
     ],
     "channel": "ZDF",
     "timestamp": 1793264756,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 434364,
     "tmdb_type": "movie"
   },
