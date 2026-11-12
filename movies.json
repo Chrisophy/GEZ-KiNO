@@ -1898,7 +1898,7 @@
     "isNew": false,
     "tmdb_id": 570356,
     "tmdb_type": "movie",
-    "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyMS0xMS0yN18xNC0zMC1NRVovYXVkaW9kZXNrcmlwdGlvbg"
+    "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyMS0xMS0yN18xNC0zMC1NRVo"
   },
   {
     "title": "Aus lauter Liebe zu dir",
@@ -2444,7 +2444,7 @@
       "TV-Film"
     ],
     "channel": "ZDF",
-    "timestamp": 1794286506,
+    "timestamp": 1794405437,
     "isNew": true,
     "tmdb_id": 243739,
     "tmdb_type": "movie"
@@ -2474,6 +2474,34 @@
     "tmdb_id": 381168,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyMi0wNy0wMl8xMy0wMC1NRVNa"
+  },
+  {
+    "title": "Better Watch Out",
+    "search": "Better Watch Out",
+    "original_title": "Better Watch Out",
+    "year": "2017",
+    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/25/11/251110_0000_sendung_nsf/1/251110_0000_sendung_nsf_3360k_p36v17.mp4",
+    "url_website": "https://www.zdf.de/video/filme/better-watch-out-movie-100/better-watch-out-100",
+    "plot": "Weihnachten steht vor der Tür und auch in einem kleinen, ruhigen Vorort stimmt man sich schon mal auf die Festzeit ein. Die beiden Jungs Luke und Garrett haben jedoch anderes im Sinn: Die möchten am liebsten gruselige Horrorfilme mit ihrer Babysitterin Ashley schauen, als sie für einen Abend allein gelassen werden. Und alles deutet darauf hin, dass der Abend tatsächlich so verläuft, wie sie es sich vorgestellt haben. Doch dann verschafft sich ein ungebetener Gast Zugang zum Haus und droht damit, für Chaos zu sorgen. Der Eindringling hat allerdings die Rechnung ohne Luke und Garrett gemacht – die zwei Knirpse drehen nämlich den Spieß kurzerhand um und nehmen ihn gefangen. Kurz darauf verwandelt sich das festlich dekorierte Heim in ein blutiges Schlachtfeld voll tückischer Fallen…",
+    "mediathek_desc": "Luke ist heimlich in seine Babysitterin Ashley verliebt, die am Abend vor Weihnachten auf ihn aufpassen soll. Doch die Nacht verläuft alles andere als friedlich.",
+    "director": "Chris Peckover",
+    "actors": [
+      "Olivia DeJonge",
+      "Levi Miller",
+      "Ed Oxenbould"
+    ],
+    "rating": "6.6",
+    "thumb": "https://image.tmdb.org/t/p/w342/zOvmKg337K72ZmUTgIb0oNBvrCe.jpg",
+    "genres_list": [
+      "Horror",
+      "Thriller",
+      "Komödie"
+    ],
+    "channel": "ZDFneo",
+    "timestamp": 1762729500,
+    "isNew": false,
+    "tmdb_id": 406994,
+    "tmdb_type": "movie"
   },
   {
     "title": "Bezaubernde Marie",
@@ -3895,6 +3923,26 @@
     "url_website": "https://www.3sat.de/film/spielfilm/dark-encounter-100.html"
   },
   {
+    "title": "Dark Water - Besuch aus dem Jenseits",
+    "search": "Dark Water - Besuch aus dem Jenseits",
+    "original_title": "Dark Water - Besuch aus dem Jenseits",
+    "year": "None",
+    "video_url": "https://manifest-arte.akamaized.net/api/manifest/v1/Generate/a1a1e37c-24c3-4eda-b408-7eb688079b56/de/XQ+KS+CHEV1/133122-000-A.m3u8",
+    "url_website": "https://www.arte.tv/de/videos/133122-000-A/dark-water/",
+    "plot": "Zermürbt von Sorgerechtsstreit und Geldnöten zieht Yoshimi mit ihrer Tochter in ein verwahrlostes Mietshaus am Rande von Tokio. Vom Dach dringt Wasser in die Wohnung. Pfützen breiten sich aus ... Der Geist eines kleinen Mädchens, das ganz in der Nähe ertrunken ist, spukt durch die Wohnung. Und das unglückliche Geistermädchen will Yoshimis ungeteilte Aufmerksamkeit. Sofort!",
+    "mediathek_desc": "Zermürbt von Sorgerechtsstreit und Geldnöten zieht Yoshimi mit ihrer Tochter in ein verwahrlostes Mietshaus am Rande von Tokio. Vom Dach dringt Wasser in die Wohnung. Pfützen breiten sich aus ... Der Geist eines kleinen Mädchens, das ganz in der Nähe ertrunken ist, spukt durch die Wohnung. Und das unglückliche Geistermädchen will Yoshimis ungeteilte Aufmerksamkeit. Sofort!",
+    "director": "",
+    "actors": [],
+    "rating": "N/A",
+    "thumb": "placeholder.png",
+    "genres_list": [
+      "Sonstige"
+    ],
+    "channel": "ARTE.DE",
+    "timestamp": 1793398101,
+    "isNew": false
+  },
+  {
     "title": "Darling Companion",
     "search": "Darling Companion",
     "year": "2012",
@@ -4203,32 +4251,6 @@
     "tmdb_id": 60859,
     "tmdb_type": "movie",
     "url_website": "https://www.arte.tv/de/videos/033130-000-A/das-gestaendnis/"
-  },
-  {
-    "title": "Das Gewinnerlos",
-    "search": "Das Gewinnerlos",
-    "year": "2015",
-    "video_url": "https://pd-videos.daserste.de/int/2020/04/02/016c76fd-1856-4289-a9f0-8e6d605bdc83/JOB_515710__sendeton_1280x720-50p-3200kbit.mp4",
-    "plot": "Witwer Georg hat sich mit seiner Trauer im Haus eingeigelt und verwahrlost allmählich. Seine Tochter Judith möchte ihn ins Heim schicken. Doch dann haben Georg und Schwager Heinrich gemeinsam einen Sechser im Lotto! Alle Sorgen futsch? Denkste: Die Quittung ist weg! Vielleicht genügt es ja, wenn alle an den Gewinn glauben. Um die Täuschung perfekt zu machen, mimt die Ex-schauspielerin Sylva Georgs neue Freundin…",
-    "mediathek_desc": "Spielfilm Deutschland 2015\r\n\r\nSeit seine Frau gestorben ist, verkriecht sich Georg in seinem Haus. Tochter Judith würde ihn lieber in ein betreutes Wohnen integrieren. Doch Georg bleibt stur. Bis er gemeinsam mit Heinrich das große Los zieht: sechs Richtige im Lotto!\r\n\r\nMit Matthias Habich, Angela Winkler, Peter Franke, Dietrich Mattausch u.a. | Buch: Edda Leesch | Regie: Patrick Winczewski",
-    "director": "Patrick Winczewski",
-    "actors": [
-      "Angela Winkler",
-      "Matthias Habich",
-      "Lisa Kreuzer"
-    ],
-    "rating": "6.5",
-    "thumb": "https://image.tmdb.org/t/p/w342/kPESa0r4B7cKISLQPzkNgHw9xc7.jpg",
-    "genres_list": [
-      "Komödie",
-      "Drama"
-    ],
-    "channel": "ARD",
-    "timestamp": 1586600100,
-    "isNew": false,
-    "tmdb_id": 338432,
-    "tmdb_type": "movie",
-    "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyMC0wNC0xMV8xMi0xNS1NRVNa"
   },
   {
     "title": "Das Glaszimmer",
@@ -4653,31 +4675,6 @@
     "tmdb_id": 324766,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyNC0wNi0yOF8xNS0zMC1NRVNa"
-  },
-  {
-    "title": "Das Leben ist kein Kindergarten",
-    "search": "Das Leben ist kein Kindergarten",
-    "year": "2020",
-    "video_url": "https://pd-videos.daserste.de/int/2020/09/17/25974773-1bfb-4192-8cda-38a4825748fe/JOB_526423__sendeton_1280x720-50p-3200kbit.mp4",
-    "plot": "Freddy steht kaum in Verdacht, ein Familienvater vom alten Schlag zu sein: Während seine Ehefrau Juliana als Ärztin nach Zürich pendelt, ist er im heimischen Konstanz für die 13-jährige Tochter Zoë und den kleinen Niko da. Dass Freddy sein Medizinstudium abgebrochen hat und nun als Erzieher in der Kita arbeitet, hält er für die beste Entscheidung seines Lebens.  Als Juliana das Angebot bekommt, die Leitung der Kinderonkologie zu übernehmen, will sie mit der ganzen Familie nach Zürich ziehen. Für sie würde das bedeuten: Schluss mit der anstrengenden Fahrerei, endlich mehr Zeit mit der Familie und ein höheres Einkommen. Freddy jedoch möchte nicht aus seinem gewohnten Umfeld. So ganz ohne Ehrgeiz ist nämlich auch er in seinem schlechtbezahlten Job nicht, denn Freddy hat seine eigenen pädagogischen Ideen – und bekommt die Aussicht.",
-    "mediathek_desc": "Spielfilm Deutschland 2020 Freddy (Oliver Wnuk) steht kaum in Verdacht, ein Familienvater vom alten Schlag zu sein: Während seine Ehefrau Juliana (Meike Droste) als Ärztin nach Zürich pendelt, ist er im heimischen Konstanz für die 13-jährige Tochter Zoë (Sophie Reiling) und den kleinen Niko (Karl von Klot) da....",
-    "director": "Katja Benrath",
-    "actors": [
-      "Oliver Wnuk",
-      "Meike Droste",
-      "Franziska Wulf"
-    ],
-    "rating": "N/A",
-    "thumb": "https://image.tmdb.org/t/p/w342/mxN4LXoOac9rH98e7Gt7vkhtbIA.jpg",
-    "genres_list": [
-      "Komödie"
-    ],
-    "channel": "ARD",
-    "timestamp": 1601057700,
-    "isNew": false,
-    "tmdb_id": 746314,
-    "tmdb_type": "movie",
-    "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyMC0wOS0yNV8yMC0xNS1NRVNa"
   },
   {
     "title": "Das Leben ist kein Kindergarten - Umzugschaos",
@@ -7177,8 +7174,8 @@
     "search": "Der Seelenfänger",
     "original_title": "Der Seelenfänger",
     "year": "2024",
-    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/26/11/261102_2215_sendung_spf/1/261102_2215_sendung_spf_a3a4_3360k_p36v17.mp4",
-    "url_website": "https://www.zdf.de/video/filme/der-seelenfaenger-movie-100/der-seelenfaenger-100",
+    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/26/11/261102_2215_sendung_spf/1/261102_2215_sendung_spf_a1a2_3360k_p36v17.mp4",
+    "url_website": "https://www.zdf.de/filme/der-seelenfaenger-movie-100",
     "plot": "Hauptkommissarin Elisabeth Guardiano (Virginie Ledoyen) wird in das abgelegene Bergdorf Roquenoir geschickt, um dort in einem grausamen Doppelmordfall zu ermitteln. Zeitgleich trifft auch Gendarmeriehauptmann Franck de Rolan (Paul Hamy) in der kleinen Gemeinde ein, um die Entführung mehrerer Kinder aus der Gegend aufzuklären. Nichts deutet auf einen Zusammenhang zwischen den Fällen hin. Doch dann stoßen Guardiano und de Rolan auf die uralte Legende des Seelenfängers.",
     "mediathek_desc": "Polizist Franck de Roland sucht nach sechs vermissten Kindern. Seine einzige Spur ist ein weißer Van. Das Auto wurde immer dann gesehen, wenn ein Kind verschwand.",
     "director": "Olivier Lambert",
@@ -7196,7 +7193,7 @@
       "Thriller"
     ],
     "channel": "ZDF",
-    "timestamp": 1793654100,
+    "timestamp": 1793916563,
     "isNew": true,
     "tmdb_id": 1084863,
     "tmdb_type": "movie"
@@ -10746,6 +10743,35 @@
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyMy0xMi0wMl8xNC0wMC1NRVo"
   },
   {
+    "title": "Die drei Musketiere - D'Artagnan",
+    "search": "Die drei Musketiere - D'Artagnan",
+    "original_title": "Die drei Musketiere - D'Artagnan",
+    "year": "2023",
+    "video_url": "https://nrodlzdf-a.akamaihd.net/dach/zdf/25/12/251228_2200_sendung_spf/4/251228_2200_sendung_spf_a1a2_3360k_p36v17.mp4",
+    "url_website": "https://www.zdf.de/filme/die-drei-musketiere---dartagnan-movie-100",
+    "plot": "D’Artagnan zieht es aus der verschlafenen Gascogne im Südwesten Frankreichs ins Herz der Nation: Paris. Dort schließ er sich den drei Musketieren des Königs – Athos, Porthos und Aramis – an. Das Quartett will in einem von Religionskriegen gespaltenen und von der britischen Armee bedrohten Land für Stabilität Sorgen. Zunächst müssen sie aber gegen Kardinal Richelieu, der dunkle Pläne hegt, in die Spur gehen. Wirklich ernst wird es für D’Artagnan jedoch erst, als er sein Herz an Constance Bonacieux, eine Vertraute der Königin, verliert. Denn die Nähe zu ihr lässt auch zwielichtige Gestalten auf ihn aufmerksam werden. So hat es Milady de Winter schnell auf sein Leben abgesehen.",
+    "mediathek_desc": "Der junge D'Artagnan kommt voller Mut nach Paris, um ein Musketier zu werden. Doch schon bald steckt er mitten in einem Abenteuer, das ihn mit drei tapferen Freunden zusammenbringt.",
+    "director": "Martin Bourboulon",
+    "actors": [
+      "François Civil",
+      "Vincent Cassel",
+      "Romain Duris"
+    ],
+    "rating": "6.9",
+    "thumb": "https://image.tmdb.org/t/p/w342/2KDO9WTDK185JIjjOcqmtc5KoOR.jpg",
+    "genres_list": [
+      "Abenteuer",
+      "Action",
+      "Drama",
+      "Historie"
+    ],
+    "channel": "ZDF",
+    "timestamp": 1794384001,
+    "isNew": true,
+    "tmdb_id": 796185,
+    "tmdb_type": "movie"
+  },
+  {
     "title": "Die drei Tage des Condor",
     "search": "Die drei Tage des Condor",
     "year": "1975",
@@ -12475,7 +12501,7 @@
       "Drama"
     ],
     "channel": "ZDF",
-    "timestamp": 1793943462,
+    "timestamp": 1794383084,
     "isNew": true,
     "tmdb_id": 492390,
     "tmdb_type": "movie"
@@ -12607,7 +12633,7 @@
       "Drama"
     ],
     "channel": "ZDF",
-    "timestamp": 1794275100,
+    "timestamp": 1794381964,
     "isNew": true,
     "tmdb_id": 1204957,
     "tmdb_type": "movie",
@@ -12761,7 +12787,7 @@
       "Romanze"
     ],
     "channel": "ZDF",
-    "timestamp": 1794269700,
+    "timestamp": 1794383297,
     "isNew": true,
     "tmdb_id": 1056535,
     "tmdb_type": "movie"
@@ -13469,7 +13495,7 @@
       "Drama"
     ],
     "channel": "ZDF",
-    "timestamp": 1794216161,
+    "timestamp": 1794382613,
     "isNew": true,
     "tmdb_id": 1580654,
     "tmdb_type": "movie"
@@ -14323,6 +14349,33 @@
     "timestamp": 1792968300,
     "isNew": false,
     "tmdb_id": 30767,
+    "tmdb_type": "movie"
+  },
+  {
+    "title": "Eureka",
+    "search": "Eureka",
+    "original_title": "Eureka",
+    "year": "1983",
+    "video_url": "https://manifest-arte.akamaized.net/api/manifest/v1/Generate/dc9f187b-c4d7-4cc2-a799-1ac9491962cd/de/XQ+KS+CHEV1/123297-000-A.m3u8",
+    "url_website": "https://www.arte.tv/de/videos/123297-000-A/eureka/",
+    "plot": "Als Jack McCann durch die Entdeckung einer Goldader zu unermeßlichem Reichtum kommt, scheinen sich all seine Träume zu erfüllen. Doch während er im Geld schwimmt, verläßt ihn zusehends sein Lebensmut. Nicht nur das familiäre Glück steht auf dem Spiel, auch Jack selbst gerät in tödliche Gefahr, als er von mafiaähnlichen Geschäftshaien auf`s Korn genommen wird.",
+    "mediathek_desc": "Ein Revolverheld auf der Suche nach seiner Tochter, eine Polizistin im Pine-Ridge-Reservat und eine Reise in den brasilianischen Regenwald: Drei Geschichten, getrennt durch Raum und Zeit, führen in \"Eureka\" in indigene Lebenswelten und folgen den Spuren der Vergangenheit, um das Heute zu verstehen. Der Argentinier Lisandro Alonso ist Spezialist für filmische Fieberträume.",
+    "director": "Nicolas Roeg",
+    "actors": [
+      "Gene Hackman",
+      "Theresa Russell",
+      "Rutger Hauer"
+    ],
+    "rating": "5.3",
+    "thumb": "https://image.tmdb.org/t/p/w342/fkeXtf4ePBRvrAAtOeytNwsUHxn.jpg",
+    "genres_list": [
+      "Drama",
+      "Thriller"
+    ],
+    "channel": "ARTE.DE",
+    "timestamp": 1795128565,
+    "isNew": true,
+    "tmdb_id": 37943,
     "tmdb_type": "movie"
   },
   {
@@ -17416,7 +17469,7 @@
     "isNew": false,
     "tmdb_id": 265294,
     "tmdb_type": "movie",
-    "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2FyZC5kZS9wbGFuQVJEXzgzNjQyNTY5LTdlNzMtNDZlNy1hYTQ4LTY0N2EzM2FkNDhkNl9nYW56ZVNlbmR1bmcvYXVkaW9kZXNrcmlwdGlvbg"
+    "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2FyZC5kZS9wbGFuQVJEXzgzNjQyNTY5LTdlNzMtNDZlNy1hYTQ4LTY0N2EzM2FkNDhkNl9nYW56ZVNlbmR1bmc"
   },
   {
     "title": "Herzlichen Glückwunsch",
@@ -18312,7 +18365,7 @@
     ],
     "channel": "ARTE.DE",
     "timestamp": 1793353964,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 1400829,
     "tmdb_type": "movie"
   },
@@ -18867,31 +18920,6 @@
     "url_website": "https://www.3sat.de/film/spielfilm/im-visier-des-killers-100.html"
   },
   {
-    "title": "Im Weißen Rössl",
-    "search": "Im Weißen Rössl",
-    "year": "1960",
-    "video_url": "https://nrodlzdf-a.akamaihd.net/dach/3sat/24/02/240204_im_weissen_roessl_spielfilm/1/240204_im_weissen_roessl_spielfilm_3360k_p36v15.mp4",
-    "plot": "Leopold arbeitet im Hotel „Zum weißen Rößl“ und begeistert die Gäste mit seinem Gesang. Doch sein Charme hilft ihm nicht das Herz seiner verehrten Chefin Josepha zu gewinnen. Als eines Tages der Berliner Rechtsanwalt Dr. Siedler im Hotel absteigt, in den Josepha seit langem verliebt ist, kommt es zu einem Streit zwischen ihr und Leopold, in dessen Folge Leopold gefeuert wird. Außerdem wohnt zur Zeit auch noch der Fabrikant Wilhelm Giesecke im Hotel, der einst einen Prozess gegen Siedler verloren hatte. Er macht zusammen mit seinen Kindern Brigitte und Sigismund, der sich sofort nach seiner Ankunft in das lispelnde Klärchen verliebt hat, hier Urlaub. Um das Chaos perfekt zu machen, beschließt Leopold nach seinem Rausschmiss als Gast in das Hotel zurückzukehren, um Josepha endlich doch noch Josephas Liebe zu gewinnen.",
-    "mediathek_desc": "Es ist Feriensaison am Wolfgangsee im Salzkammergut. Auch im „Weißen Rössl“ bereitet man sich auf den Touristen-Ansturm vor. Doch der Oberkellner Leopold ist gar nicht gut aufgelegt.",
-    "director": "Werner Jacobs",
-    "actors": [
-      "Peter Alexander",
-      "Waltraut Haas",
-      "Karin Dor"
-    ],
-    "rating": "6.7",
-    "thumb": "https://image.tmdb.org/t/p/w342/osykq2Sgw3odStIESCm6DgkrSeE.jpg",
-    "genres_list": [
-      "Komödie"
-    ],
-    "channel": "3Sat",
-    "timestamp": 1527773580,
-    "isNew": false,
-    "tmdb_id": 6792,
-    "tmdb_type": "movie",
-    "url_website": "https://www.3sat.de/film/spielfilm/im-weissen-roessl-102.html"
-  },
-  {
     "title": "Im Zweifel",
     "search": "Im Zweifel",
     "year": "2016",
@@ -19245,7 +19273,7 @@
       "Sonstige"
     ],
     "channel": "ARTE.DE",
-    "timestamp": 1794263374,
+    "timestamp": 1794263626,
     "isNew": true
   },
   {
@@ -20421,31 +20449,6 @@
     "tmdb_id": 1126705,
     "tmdb_type": "movie",
     "url_website": "https://www.zdf.de/filme/kleine-eheverbrechen-movie-100"
-  },
-  {
-    "title": "Kleine Schiffe",
-    "search": "Kleine Schiffe",
-    "year": "2013",
-    "video_url": "https://pd-videos.daserste.de/int/2020/04/30/183dbf83-59dc-44d7-9713-a94a117f05fa/JOB_504562__sendeton_1280x720-50p-3200kbit.mp4",
-    "plot": "Die Hamburger Krankengymnastin Franziska wird schwanger, obwohl sie sich mit ihrer unerwünschten Kinderlosigkeit abgefunden hatte. Zudem wird sie von ihrem Mann verlassen bevor sie ihn von der Schwangerschaft erzählen kann. Schon zu einer Abtreibung entschlossen lernt sie zufällig die 19-jährige Lilli kennen. Diese ist ebenfalls schwanger, freut sich aber trotz aller Probleme auf die Mutterschaft.",
-    "mediathek_desc": "Spielfilm Deutschland 2013\r\n\r\nEine unerwartete Nachricht kommt selten allein: Erst erfährt die Mittvierzigerin Franziska, dass sie schwanger ist, dann verlässt sie ihr Mann. Franziska will abtreiben, bis sie die 19-jährige, schwangere Lilli trifft.\r\n\r\nMit Katja Riemann, Aylin Tezel, Hans-Werner Meyer, Peter Franke u.a. | Buch: Volker Krappen | Regie: Matthias Steurer",
-    "director": "Matthias Steurer",
-    "actors": [
-      "Katja Riemann",
-      "Aylin Tezel",
-      "Hans-Werner Meyer"
-    ],
-    "rating": "6.5",
-    "thumb": "https://image.tmdb.org/t/p/w342/aTOpIBhEx0jxBFfgnp9ql5ict7P.jpg",
-    "genres_list": [
-      "TV-Film"
-    ],
-    "channel": "ARD",
-    "timestamp": 1589027400,
-    "isNew": false,
-    "tmdb_id": 243122,
-    "tmdb_type": "movie",
-    "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyMC0wNS0wOV8xNC0zMC1NRVNa"
   },
   {
     "title": "Klima retten für Anfänger",
@@ -24101,7 +24104,7 @@
     ],
     "channel": "ZDF",
     "timestamp": 1793315700,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 530385,
     "tmdb_type": "movie"
   },
@@ -24799,7 +24802,7 @@
     ],
     "channel": "ARD",
     "timestamp": 1793355600,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 276862,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyMy0wNC0zMF8xNC0wMy1NRVNa"
@@ -25456,7 +25459,7 @@
       "Komödie"
     ],
     "channel": "ZDF",
-    "timestamp": 1794238260,
+    "timestamp": 1794435022,
     "isNew": true,
     "tmdb_id": 1746471,
     "tmdb_type": "movie"
@@ -25976,7 +25979,7 @@
       "Drama"
     ],
     "channel": "ZDF",
-    "timestamp": 1794306428,
+    "timestamp": 1794402850,
     "isNew": true,
     "tmdb_id": 1447875,
     "tmdb_type": "movie",
@@ -26471,7 +26474,7 @@
       "Sonstige"
     ],
     "channel": "ARTE.DE",
-    "timestamp": 1794251700,
+    "timestamp": 1794251677,
     "isNew": true
   },
   {
@@ -29474,7 +29477,7 @@
     ],
     "channel": "ZDF",
     "timestamp": 1793311887,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 1063879,
     "tmdb_type": "movie",
     "url_website": "https://www.zdf.de/filme/spiders---ihr-biss-ist-der-tod-movie-100"
@@ -29583,6 +29586,32 @@
     "tmdb_id": 874921,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2FyZC5kZS9wbGFuQVJEXzUwMDE3NWRlLWE3ZTktNDRiNi04YWJhLTc5ODIxNWVjMmRiN19nYW56ZVNlbmR1bmc"
+  },
+  {
+    "title": "St. Josef am Berg - Berge auf Probe",
+    "search": "St. Josef am Berg - Berge auf Probe",
+    "original_title": "St. Josef am Berg - Berge auf Probe",
+    "year": "2018",
+    "video_url": "https://ctv-videos.daserste.de/de/2026/10/20/10313/10313_30099_sendeton_1280x720-50p-3200kbit.mp4",
+    "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2FyZC5kZS9wbGFuQVJEXzM4NzhkNDZhLTE1MTQtNGUwOS1iNDk0LTllMTQ2MDU3M2ZiY19nYW56ZVNlbmR1bmc",
+    "plot": "Svea Classen und Peter Pirnegger führen in Stralsund eine glückliche Beziehung. Sie sind standesamtlich verheiratet, nachdem Svea schwanger ist planen die beiden auch kirchlich in Peters Heimatort, dem Alpendorf St. Josef, zu heiraten. Dort leben Peters Eltern Inge und Joseph Pirnegger, der Hotelier und Bürgermeister von St. Josef ist. Eigentlich kann sich Svea eine kirchliche Hochzeit in den österreichischen Bergen nicht vorstellen. Nach einigem Zögern lässt sie sich aber trotzdem auf eine solche ein. Joseph plant, die beiden langfristig im Ort zu halten. Peter erhält das Angebot, Chefveterinär im dort geplanten Nationalpark zu werden, für Peter würde damit ein Traum in Erfüllung gehen.",
+    "mediathek_desc": "Spielfilm Deutschland 2018 Ein Leben ohne das geliebte Meeresrauschen kann sich die Stralsunderin Svea Classen (Paula Kalenberg) kaum vorstellen. Als sich Nachwuchs ankündigt, muss die Hanseatin aufgeschobenes Versprechen einlösen: die kirchliche Hochzeit in dem Alpendorf St. Josef, der Heimat ihres Ehemanns Peter Pirnegger (Sebastian Wendelin)....",
+    "director": "Lars Montag",
+    "actors": [
+      "Harald Krassnitzer",
+      "Anna Stieblich",
+      "Paula Kalenberg"
+    ],
+    "rating": "7.0",
+    "thumb": "https://image.tmdb.org/t/p/w342/toGB6H8CyefzUCzsG3aUCH0Drmb.jpg",
+    "genres_list": [
+      "Drama"
+    ],
+    "channel": "ARD",
+    "timestamp": 1795258200,
+    "isNew": true,
+    "tmdb_id": 864912,
+    "tmdb_type": "movie"
   },
   {
     "title": "Stankowskis Millionen",
@@ -33881,6 +33910,33 @@
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyMy0xMi0yNF8yMC0xNS1NRVo"
   },
   {
+    "title": "Wenn der Vater mit dem Sohne",
+    "search": "Wenn der Vater mit dem Sohne",
+    "original_title": "Wenn der Vater mit dem Sohne",
+    "year": "1955",
+    "video_url": "https://ctv-videos.daserste.de/de/2026/10/19/13840/13840_29959_sendeton_1280x720-50p-3200kbit.mp4",
+    "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2FyZC5kZS9wbGFuQVJEX2U1OTVmMjhmLTdmMWUtNDI3ZC05YTViLTYxMzUyYWEyYWY5ZV9nYW56ZVNlbmR1bmc",
+    "plot": "Teddy Lemke, ein ehemaliger Musikclown, kümmert sich aufopfernd um den kleinen Ulli, der glaubt, daß Teddy sein Vater ist. Ullis Mutter ging schon vor Jahren nach Amerika. Ulli kann Teddy dazu überreden, in einer gemeinsamen Clownnummer bei einem Zirkus aufzutreten. Sie haben großen Erfolg, bis sie die Nachricht erreicht, daß Ullis Mutter mit ihrem neuen Ehemann aus Amerika angereist ist, um ihren Sohn zurückzuholen. Teddy flieht mit dem kleinen Ulli ins Ausland. Doch bald sieht er ein, daß er das Recht der Mutter auf ihr Kind respektieren muß. Teddy trifft wieder als Musikclown auf. Allein macht er jetzt das, was er gemeinsam mit Ulli eingeübt hat.",
+    "mediathek_desc": "Spielfilm Deutschland 1955 Teddy Lemke (Heinz Rühmann) wohnt als Untermieter bei Fräulein Biermann (Fita Benkhoff). Sie hat ein Auge auf ihn geworfen, aber das interessiert ihn wenig. Umso mehr ist ihm der sechsjährige Ulli (Oliver Grimm) ans Herz gewachsen, den Fräulein Biermann in Pflege nahm, als seine Mutter Gerti (Waltraut Haas) nach Amerika ging....",
+    "director": "Hans Quest",
+    "actors": [
+      "Heinz Rühmann",
+      "Oliver Grimm",
+      "Waltraut Haas"
+    ],
+    "rating": "6.6",
+    "thumb": "https://image.tmdb.org/t/p/w342/A9VYcos5R5kfm2qLoJUlHfZB6gi.jpg",
+    "genres_list": [
+      "Komödie",
+      "Drama"
+    ],
+    "channel": "ARD",
+    "timestamp": 1767453900,
+    "isNew": false,
+    "tmdb_id": 11715,
+    "tmdb_type": "movie"
+  },
+  {
     "title": "Wenn du nach dem Tod erwachst",
     "search": "Wenn du nach dem Tod erwachst",
     "original_title": "Wenn du nach dem Tod erwachst",
@@ -34781,8 +34837,8 @@
       "TV-Film"
     ],
     "channel": "ZDF",
-    "timestamp": 1792183660,
-    "isNew": false,
+    "timestamp": 1794379897,
+    "isNew": true,
     "tmdb_id": 1176282,
     "tmdb_type": "movie",
     "url_website": "https://www.zdf.de/filme/wir-haben-einen-deal-movie-100"
