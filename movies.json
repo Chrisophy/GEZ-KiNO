@@ -1898,7 +1898,7 @@
     "isNew": false,
     "tmdb_id": 570356,
     "tmdb_type": "movie",
-    "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyMS0xMS0yN18xNC0zMC1NRVo"
+    "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyMS0xMS0yN18xNC0zMC1NRVovYXVkaW9kZXNrcmlwdGlvbg"
   },
   {
     "title": "Aus lauter Liebe zu dir",
@@ -1920,7 +1920,7 @@
     ],
     "channel": "ARD",
     "timestamp": 1793438700,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 345591,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyMy0wNy0xM18wMS01MC1NRVNa"
@@ -2607,31 +2607,6 @@
     "tmdb_id": 369770,
     "tmdb_type": "movie",
     "url_website": "https://www.3sat.de/film/spielfilm/birnenkuchen-mit-lavendel-100.html"
-  },
-  {
-    "title": "Bis auf den Knochen. Ein Krimi aus Passau",
-    "search": "Bis auf den Knochen. Ein Krimi aus Passau",
-    "year": "2025",
-    "video_url": "https://cdn-storage.br.de/geo/2f/d7/2fd76df4-b680-44cf-b183-d51a2d4334f5/2fd76df4-b680-44cf-b183-d51a2d4334f5_X.mp4",
-    "plot": "Serienkiller lieben Trophäen. Berti Ottensamer Werkstattbesitzer für Trachtenschmuck, hat statt Anhängseln von heimischen Wildtieren kleine Körperteile seiner menschlichen Opfer in sein traditionelles bayerisches Accessoire \"Charivari\" eingearbeitet.",
-    "mediathek_desc": "Mit einer ungewöhnlichen Bauchkette zeigt sich Berti Ottensamer, Betreiber einer Trachtenschmuck-Werkstatt, stolz auf einem Passauer Markt. Ottensamer ist ein Serienkiller, der Knochen seiner Opfer in die Kette eingearbeitet hat. Dort unterwegs sind auch Mia Bader, Tochter der Ex-Polizistin Frederike Bader sowie ihre WG-Mitbewohnerin Tessa, eine militante Veganerin und Franz Hertel, Sohn der Passauer Bäckerin Roswitha Hertel....",
-    "director": "Jan Fehse",
-    "actors": [
-      "Marie Leuenberger",
-      "Michael Ostrowski",
-      "Nadja Sabersky"
-    ],
-    "rating": "6.7",
-    "thumb": "https://image.tmdb.org/t/p/w342/ku0YvTM5jtcO6Iq3NZ4GG3hXjuC.jpg",
-    "genres_list": [
-      "Krimi"
-    ],
-    "channel": "BR",
-    "timestamp": 1781028900,
-    "isNew": false,
-    "tmdb_id": 1425748,
-    "tmdb_type": "movie",
-    "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2JyLmRlL2Jyb2FkY2FzdC9GMjAyNFdPMDAxOTc4QTA"
   },
   {
     "title": "Bis zum Ende der Welt",
@@ -4351,8 +4326,8 @@
       "Romanze"
     ],
     "channel": "ZDF",
-    "timestamp": 1791443475,
-    "isNew": false,
+    "timestamp": 1794494087,
+    "isNew": true,
     "tmdb_id": 284061,
     "tmdb_type": "movie",
     "url_website": "https://www.zdf.de/filme/das-glueck-der-anderen-movie-100"
@@ -5641,31 +5616,6 @@
     "title": "Dennstein & Schwarz - Rufmord",
     "search": "Dennstein & Schwarz - Rufmord",
     "year": "2020",
-    "video_url": "https://pd-videos.daserste.de/int/2024/09/06/DEGSM685649/DEGSM685649_3059520_sendeton_1280x720-50p-3200kbit.mp4",
-    "plot": "Therese Schwarz vertritt den mit Paula Dennstein sehr gut befreundeten Politiker Konrad Wagner, der von einer Zeitung an den #MeToo-Pranger gestellt wurde. Deshalb passt der überraschende Besuch ihrer kleinen Schwester Marita auch so gar nicht in ihr Konzept. Noch dazu, wo Marita zusammen mit Ferdinand durch eine Cannabis-Geschichte in heiklen Polizeikontakt kommt. Für Konrads Verteidigung ist es wichtig den Verleumder auszumachen, doch das ist ein Wettlauf gegen die Zeit, da die Landtagswahl vor der Türe steht…",
-    "mediathek_desc": "Spielfilm Deutschland/Österreich 2020\r\n\r\nAuf Frauenpower setzen \"Dennstein & Schwarz\" als Markenzeichen ihrer Anwaltskanzlei. Der neue Fall verspricht viel Publicity, denn sie vertreten den aufstrebenden Politiker, der nun durch eine Zeitungsstory als Grapscher am Pranger steht. \r\n\r\nMit Maria Happel, Martina Ebm, Manuel Rubey, Nele Kiper u.a. | Buch: Konstanze Breitebner | Regie: Michael Rowitz",
-    "director": "Michael Rowitz",
-    "actors": [
-      "Maria Happel",
-      "Martina Ebm",
-      "Manuel Rubey"
-    ],
-    "rating": "6.0",
-    "thumb": "https://image.tmdb.org/t/p/w342/6AP96jy3fR9wc26fb5zlWWdEMS4.jpg",
-    "genres_list": [
-      "Drama"
-    ],
-    "channel": "ARD",
-    "timestamp": 1725710400,
-    "isNew": false,
-    "tmdb_id": 679245,
-    "tmdb_type": "movie",
-    "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyNC0wOS0wN18xNC0wMC1NRVNa"
-  },
-  {
-    "title": "Dennstein & Schwarz - Rufmord",
-    "search": "Dennstein & Schwarz - Rufmord",
-    "year": "2020",
     "video_url": "https://pd-videos.daserste.de/int/2024/08/23/DEGSM877904/DEGSM877904_3048790sendeton__1280x720-50p-3200kbit.mp4",
     "plot": "Therese Schwarz vertritt den mit Paula Dennstein sehr gut befreundeten Politiker Konrad Wagner, der von einer Zeitung an den #MeToo-Pranger gestellt wurde. Deshalb passt der überraschende Besuch ihrer kleinen Schwester Marita auch so gar nicht in ihr Konzept. Noch dazu, wo Marita zusammen mit Ferdinand durch eine Cannabis-Geschichte in heiklen Polizeikontakt kommt. Für Konrads Verteidigung ist es wichtig den Verleumder auszumachen, doch das ist ein Wettlauf gegen die Zeit, da die Landtagswahl vor der Türe steht…",
     "mediathek_desc": "Spielfilm Deutschland/Österreich 2020\r\n\r\nAuf Frauenpower setzen \"Dennstein & Schwarz\" als Markenzeichen ihrer Anwaltskanzlei. Der neue Fall verspricht viel Publicity, denn sie vertreten den aufstrebenden Politiker, der nun durch eine Zeitungsstory als Grapscher am Pranger steht. \r\n\r\nMit Maria Happel, Martina Ebm, Manuel Rubey, Nele Kiper u.a. | Buch: Konstanze Breitebner | Regie: Michael Rowitz",
@@ -5686,6 +5636,31 @@
     "tmdb_id": 679245,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyNC0wOC0yNF8xNC0wMC1NRVNa"
+  },
+  {
+    "title": "Dennstein & Schwarz - Rufmord",
+    "search": "Dennstein & Schwarz - Rufmord",
+    "year": "2020",
+    "video_url": "https://pd-videos.daserste.de/int/2024/09/06/DEGSM685649/DEGSM685649_3059520_sendeton_1280x720-50p-3200kbit.mp4",
+    "plot": "Therese Schwarz vertritt den mit Paula Dennstein sehr gut befreundeten Politiker Konrad Wagner, der von einer Zeitung an den #MeToo-Pranger gestellt wurde. Deshalb passt der überraschende Besuch ihrer kleinen Schwester Marita auch so gar nicht in ihr Konzept. Noch dazu, wo Marita zusammen mit Ferdinand durch eine Cannabis-Geschichte in heiklen Polizeikontakt kommt. Für Konrads Verteidigung ist es wichtig den Verleumder auszumachen, doch das ist ein Wettlauf gegen die Zeit, da die Landtagswahl vor der Türe steht…",
+    "mediathek_desc": "Spielfilm Deutschland/Österreich 2020\r\n\r\nAuf Frauenpower setzen \"Dennstein & Schwarz\" als Markenzeichen ihrer Anwaltskanzlei. Der neue Fall verspricht viel Publicity, denn sie vertreten den aufstrebenden Politiker, der nun durch eine Zeitungsstory als Grapscher am Pranger steht. \r\n\r\nMit Maria Happel, Martina Ebm, Manuel Rubey, Nele Kiper u.a. | Buch: Konstanze Breitebner | Regie: Michael Rowitz",
+    "director": "Michael Rowitz",
+    "actors": [
+      "Maria Happel",
+      "Martina Ebm",
+      "Manuel Rubey"
+    ],
+    "rating": "6.0",
+    "thumb": "https://image.tmdb.org/t/p/w342/6AP96jy3fR9wc26fb5zlWWdEMS4.jpg",
+    "genres_list": [
+      "Drama"
+    ],
+    "channel": "ARD",
+    "timestamp": 1725710400,
+    "isNew": false,
+    "tmdb_id": 679245,
+    "tmdb_type": "movie",
+    "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyNC0wOS0wN18xNC0wMC1NRVNa"
   },
   {
     "title": "Dennstein & Schwarz - Schuldenfalle",
@@ -6150,7 +6125,7 @@
     ],
     "channel": "ARD",
     "timestamp": 1793531700,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 289517,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyMi0wOC0yOF8xNC0wMy1NRVNa"
@@ -8352,8 +8327,8 @@
       "TV-Film"
     ],
     "channel": "ARD",
-    "timestamp": 1790506500,
-    "isNew": false,
+    "timestamp": 1795095000,
+    "isNew": true,
     "tmdb_id": 73899,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAxMy0xMi0zMV8xNy0wMC1NRVo"
@@ -10748,7 +10723,7 @@
     "original_title": "Die drei Musketiere - D'Artagnan",
     "year": "2023",
     "video_url": "https://nrodlzdf-a.akamaihd.net/dach/zdf/25/12/251228_2200_sendung_spf/4/251228_2200_sendung_spf_a1a2_3360k_p36v17.mp4",
-    "url_website": "https://www.zdf.de/filme/die-drei-musketiere---dartagnan-movie-100",
+    "url_website": "https://www.zdf.de/video/filme/die-drei-musketiere---dartagnan-movie-100/die-drei-musketiere---dartagnan-100",
     "plot": "D’Artagnan zieht es aus der verschlafenen Gascogne im Südwesten Frankreichs ins Herz der Nation: Paris. Dort schließ er sich den drei Musketieren des Königs – Athos, Porthos und Aramis – an. Das Quartett will in einem von Religionskriegen gespaltenen und von der britischen Armee bedrohten Land für Stabilität Sorgen. Zunächst müssen sie aber gegen Kardinal Richelieu, der dunkle Pläne hegt, in die Spur gehen. Wirklich ernst wird es für D’Artagnan jedoch erst, als er sein Herz an Constance Bonacieux, eine Vertraute der Königin, verliert. Denn die Nähe zu ihr lässt auch zwielichtige Gestalten auf ihn aufmerksam werden. So hat es Milady de Winter schnell auf sein Leben abgesehen.",
     "mediathek_desc": "Der junge D'Artagnan kommt voller Mut nach Paris, um ein Musketier zu werden. Doch schon bald steckt er mitten in einem Abenteuer, das ihn mit drei tapferen Freunden zusammenbringt.",
     "director": "Martin Bourboulon",
@@ -10766,8 +10741,8 @@
       "Historie"
     ],
     "channel": "ZDF",
-    "timestamp": 1794384001,
-    "isNew": true,
+    "timestamp": 1766955600,
+    "isNew": false,
     "tmdb_id": 796185,
     "tmdb_type": "movie"
   },
@@ -11646,6 +11621,33 @@
     "tmdb_id": 1188589,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyMy0xMi0xM18wMS01MC1NRVo"
+  },
+  {
+    "title": "Dream Scenario",
+    "search": "Dream Scenario",
+    "original_title": "Dream Scenario",
+    "year": "2023",
+    "video_url": "https://ctv-videos.daserste.de/de/2026/11/13/DEGSM313938/DEGSM313938_3894128_originalversion_1280x720-50p-3200kbit.mp4",
+    "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2FyZC5kZS9wbGFuQVJEXzFmNzFiZjU5LTkyMDEtNGM3MC1hOWIyLTE4YmYzY2Q2NDBiOF9nYW56ZVNlbmR1bmc",
+    "plot": "Paul Matthews ist ein lustloser Familienvater und Professor mit einer Vorliebe für Evolutionsbiologie und Sorge um seine eigene Anonymität. Eines Tages stellt er fest, dass er mit zunehmender Häufigkeit in den Träumen anderer Menschen auftaucht. Wie im Leben ist seine Anwesenheit in diesen Träumen banal und nicht aufdringlich: Er ist einfach da und starrt gleichgültig auf die Fantasien und Albträume von Fremden. Dennoch wird er über Nacht berühmt und erhält bald die Aufmerksamkeit, die ihm lange verwehrt blieb. Doch als Paul einem Träumer begegnet, dessen Visionen von ihm erheblich von der Norm abweichen, sieht er sich mit dem faustischen Handel des Ruhms konfrontiert, als seine Traum-Ichs in ihrem jeweiligen Unterbewusstsein auf unerklärliche Weise gewalttätig zu werden beginnen.",
+    "mediathek_desc": "Spielfilm USA/Kanada 2023 Paul Matthews (Nicolas Cage), College-Professor für Evolutionsbiologie und Familienvater, führt ein unspektakuläres Leben. Ihn schmerzt es, weder im Hörsaal noch zu Hause bei seiner Frau Janet (Julianne Nicholson) und den beiden Töchtern die heimlich ersehnte Bewunderung zu bekommen....",
+    "director": "Kristoffer Borgli",
+    "actors": [
+      "Nicolas Cage",
+      "Julianne Nicholson",
+      "Michael Cera"
+    ],
+    "rating": "6.6",
+    "thumb": "https://image.tmdb.org/t/p/w342/fwS9NOCGAW0V2ijKRrtIUDXjWlw.jpg",
+    "genres_list": [
+      "Komödie",
+      "Fantasy"
+    ],
+    "channel": "ARD",
+    "timestamp": 1794782100,
+    "isNew": true,
+    "tmdb_id": 823482,
+    "tmdb_type": "movie"
   },
   {
     "title": "Dreamland - Tödliche Geschäfte",
@@ -15245,33 +15247,6 @@
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAxOS0wNi0yOV8xMy0wMC1NRVNa"
   },
   {
-    "title": "Frauchen und die Deiwelsmilch",
-    "search": "Frauchen und die Deiwelsmilch",
-    "year": "2014",
-    "video_url": "https://pd-videos.daserste.de/int/2020/12/29/2e7c50a9-d775-4dd1-8fad-4bc62525ef17/JOB_506635__sendeton_1280x720-50p-3200kbit.mp4",
-    "plot": "Die lebenslustige Miri ist ein Genie im Umgang mit Zahlen. Dieses Talent lebt sie in ihrem Job in der Stadtbank des kleinen Örtchens Hattenstein voll aus, bei dem sie ihrem oftmals überforderten Chef tatkräftig unter die Arme greift. Als ein örtlicher Winzer in einem Waldstück tot aufgefunden wird, entwickelt sie zudem ein Faible für Detektivarbeit. Der Polizist Nils, einer ihrer alten Schulkameraden, glaubt an einen plötzlichen Herzinfarkt. Doch Miris außerordentliche Kombinationsgabe sagt ihr, dass an dem Fall etwas faul ist. Moralisch unterstützt vom herrenlosen Dackel Frauchen kommt sie einem groß angelegten Verbrechen auf die Spur, in das sogar der Bürgermeister der Stadt  verwickelt zu sein scheint.",
-    "mediathek_desc": "Spielfilm Deutschland 2014 \r\n\r\n\"Blond heißt nicht gleich blöd\", das müssen Bürgermeister Runge und sein Adlatus Kai erfahren, als sie versuchen, ein international verzweigtes Geschäft über die Stadtkasse abzuwickeln. \r\n\r\nMit Daniela Katzenberger, Klaus Zmorek, Carlos Lobo, Tim Morten Uhlenbrock u. a. | Buch: Holger Badura I Regie: Thomas Bohn",
-    "director": "Thomas Bohn",
-    "actors": [
-      "Daniela Katzenberger",
-      "Klaus Zmorek",
-      "Carlos Lobo"
-    ],
-    "rating": "4.0",
-    "thumb": "https://image.tmdb.org/t/p/w342/ny70UHMz11wrsE7jb4jh0fCg1iF.jpg",
-    "genres_list": [
-      "TV-Film",
-      "Komödie",
-      "Krimi"
-    ],
-    "channel": "ARD",
-    "timestamp": 1610068500,
-    "isNew": false,
-    "tmdb_id": 264177,
-    "tmdb_type": "movie",
-    "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyMS0wMS0wOF8wMi0xNS1NRVo"
-  },
-  {
     "title": "Frauen verstehen",
     "search": "Frauen verstehen",
     "year": "2014",
@@ -17469,7 +17444,7 @@
     "isNew": false,
     "tmdb_id": 265294,
     "tmdb_type": "movie",
-    "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2FyZC5kZS9wbGFuQVJEXzgzNjQyNTY5LTdlNzMtNDZlNy1hYTQ4LTY0N2EzM2FkNDhkNl9nYW56ZVNlbmR1bmc"
+    "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2FyZC5kZS9wbGFuQVJEXzgzNjQyNTY5LTdlNzMtNDZlNy1hYTQ4LTY0N2EzM2FkNDhkNl9nYW56ZVNlbmR1bmcvYXVkaW9kZXNrcmlwdGlvbg"
   },
   {
     "title": "Herzlichen Glückwunsch",
@@ -17705,7 +17680,7 @@
     ],
     "channel": "ARD",
     "timestamp": 1793540700,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 436742,
     "tmdb_type": "movie"
   },
@@ -20073,8 +20048,8 @@
       "TV-Film"
     ],
     "channel": "ARD",
-    "timestamp": 1787567400,
-    "isNew": false,
+    "timestamp": 1795089300,
+    "isNew": true,
     "tmdb_id": 927132,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyNS0xMC0wM18xNy0wMC1NRVNa"
@@ -21423,6 +21398,26 @@
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyNC0xMC0wNV8xNC0wMC1NRVNa"
   },
   {
+    "title": "Liberace - Zu viel des Guten ist wundervoll",
+    "search": "Liberace - Zu viel des Guten ist wundervoll",
+    "original_title": "Liberace - Zu viel des Guten ist wundervoll",
+    "year": "None",
+    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/26/09/260908_0125_sendung_spf/1/260908_0125_sendung_spf_a1a2_3360k_p36v17.mp4",
+    "url_website": "https://www.zdf.de/video/filme/liberace--zu-viel-des-guten-ist-wundervoll-movie-100/liberace--zu-viel-des-guten-ist-wundervoll-100",
+    "plot": "Als ein junger Mann zufällig einen weltberühmten Entertainer kennenlernt, verändert sich sein Leben komplett. Zwischen den unterschiedlichen Männern entwickelt sich eine Affäre.",
+    "mediathek_desc": "Als ein junger Mann zufällig einen weltberühmten Entertainer kennenlernt, verändert sich sein Leben komplett. Zwischen den unterschiedlichen Männern entwickelt sich eine Affäre.",
+    "director": "",
+    "actors": [],
+    "rating": "N/A",
+    "thumb": "placeholder.png",
+    "genres_list": [
+      "Sonstige"
+    ],
+    "channel": "ZDF",
+    "timestamp": 1788827400,
+    "isNew": false
+  },
+  {
     "title": "Libertad",
     "search": "Libertad",
     "year": "2021",
@@ -21655,7 +21650,7 @@
     ],
     "channel": "ARD",
     "timestamp": 1793543400,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 291652,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyMy0wNS0wMV8xNS0xNS1NRVNa"
@@ -22628,7 +22623,7 @@
     ],
     "channel": "ARD",
     "timestamp": 1793490300,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 172056,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyNi0wMS0wMl8xNS0zMC1NRVo"
@@ -23921,7 +23916,7 @@
     ],
     "channel": "ARD",
     "timestamp": 1793451600,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 330583,
     "tmdb_type": "movie"
   },
@@ -25979,7 +25974,7 @@
       "Drama"
     ],
     "channel": "ZDF",
-    "timestamp": 1794402850,
+    "timestamp": 1794502933,
     "isNew": true,
     "tmdb_id": 1447875,
     "tmdb_type": "movie",
@@ -27626,6 +27621,33 @@
     "tmdb_id": 1456432,
     "tmdb_type": "movie",
     "url_website": "https://www.zdf.de/filme/rosenthal-movie-100"
+  },
+  {
+    "title": "Rote Sterne überm Feld",
+    "search": "Rote Sterne überm Feld",
+    "original_title": "Rote Sterne überm Feld",
+    "year": "2025",
+    "video_url": "https://manifest-arte.akamaized.net/api/manifest/v1/Generate/472cd1e9-440f-40fc-a8c1-d36cb1b6afb4/de/XQ+KS+CHEV1/108541-000-A.m3u8",
+    "url_website": "https://www.arte.tv/de/videos/108541-000-A/rote-sterne-ueberm-feld/",
+    "plot": "Mitten in der ostdeutschen Provinz wird ein wohlkonserviertes Skelett aus dem Moor gezogen. Tine und das Dorf spekulieren: Wer könnte das gewesen sein? Ein desertierter Wehrmachtssoldat? Ein verzweifelter LPGler? Der ominöse 3. Mann vom BND? Es entspinnt sich ein historisches Rätsel, in dem das letzte deutsche Jahrhundert im Heute eines Landstrichs aufscheint. Tine fragt sich: Was geht mich das an? Bis sie am eigenen Leib erfährt, wie sich die Geschichte in ihr Leben mischt.",
+    "mediathek_desc": "Tine muss nach einer politischen Aktion am Reichstag untertauchen und kehrt zurück in ihren Heimatort. Dort wird plötzlich eine Moorleiche gefunden. Der ganze Ort ist in Aufruhr ...",
+    "director": "Laura Laabs",
+    "actors": [
+      "Hannah Ehrlichmann",
+      "Hermann Beyer",
+      "Jenny Schily"
+    ],
+    "rating": "4.0",
+    "thumb": "https://image.tmdb.org/t/p/w342/d9biUvRR2XgYFeIhBR8TeDYFHTU.jpg",
+    "genres_list": [
+      "Krimi",
+      "Drama"
+    ],
+    "channel": "ARTE.DE",
+    "timestamp": 1795213557,
+    "isNew": true,
+    "tmdb_id": 1174023,
+    "tmdb_type": "movie"
   },
   {
     "title": "Roter Himmel",
@@ -29869,7 +29891,7 @@
       "Komödie"
     ],
     "channel": "ZDF",
-    "timestamp": 1794116193,
+    "timestamp": 1794495282,
     "isNew": true,
     "tmdb_id": 1389664,
     "tmdb_type": "movie"
@@ -30190,7 +30212,7 @@
     "title": "Survive - Gestrandet im Ozean",
     "search": "Survive - Gestrandet im Ozean",
     "year": "2024",
-    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/26/10/261012_2215_sendung_spf/1/261012_2215_sendung_spf_a3a4_3360k_p36v17.mp4",
+    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/26/10/261012_2215_sendung_spf/1/261012_2215_sendung_spf_a1a2_3360k_p36v17.mp4",
     "plot": "Der gemeinsame Urlaub auf hoher See wird für Tom und seine Familie zum Horrortrip, als sie mitten auf dem Ozean in einen heftigen Sturm geraten, der ihr Boot fast zum Kentern bringt. Kurz darauf finden sie sich im Wrack ihres Bootes auf dem trockenen Meeresgrund wieder. Eine Polaritätsumkehr hat das Wasser abziehen und das Festland überschwemmen lassen. Doch die Wassermassen drohen zurückzukommen. Für die Familie beginnt ein verzweifelter Wettlauf gegen die Zeit, während sich hungrige Meereskreaturen auf die Jagd nach Nahrung machen ...",
     "mediathek_desc": "Eine vierköpfige Familie macht mit ihrer Yacht Urlaub auf dem Atlantik.\nPlötzlich häufen sich lebensbedrohliche Szenarien. Nach einem schweren Sturm hat sich das Wasser zurückgezogen.",
     "director": "Frantz Richard",
@@ -30344,6 +30366,32 @@
     "tmdb_id": 567017,
     "tmdb_type": "movie",
     "url_website": "https://www.3sat.de/film/spielfilm/tagundnachtgleiche-100.html"
+  },
+  {
+    "title": "Tandem - In welcher Sprache träumst du?",
+    "search": "Tandem - In welcher Sprache träumst du?",
+    "original_title": "Tandem - In welcher Sprache träumst du?",
+    "year": "2024",
+    "video_url": "https://manifest-arte.akamaized.net/api/manifest/v1/Generate/921797a9-f0e5-4952-be65-86d2ae8846be/de/XQ+KS+CHEV1/112867-000-A.m3u8",
+    "url_website": "https://www.arte.tv/de/videos/112867-000-A/tandem-in-welcher-sprache-traeumst-du/",
+    "plot": "Ein Sprachaustausch zwischen Frankreich und Deutschland bringt Fanny und Lena, zwei 16jährige Teenager, in Leipzig zusammen. Sie könnten Freundinnen werden, doch das fällt beiden schwerer, als es auf den ersten Blick scheint.",
+    "mediathek_desc": "Ein Schüleraustausch zwischen Deutschland und Frankreich: Fanny aus Straßburg begibt sich auf eine Sprachreise nach Leipzig zu Lena. Lena träumt davon, politische Aktivistin zu werden. Um ihre Aufmerksamkeit zu gewinnen, erfindet Fanny ein spannenderes Leben ... – Ein deutsch-französisch-belgischer Film, hochkarätig besetzt mit Nina Hoss und Chiara Mastroianni",
+    "director": "Luc Dardenne",
+    "actors": [
+      "Lilith Grasmug",
+      "Josefa Heinsius",
+      "Nina Hoss"
+    ],
+    "rating": "6.8",
+    "thumb": "https://image.tmdb.org/t/p/w342/xs0YgZetGP6YuZSJueoCyq1CAyd.jpg",
+    "genres_list": [
+      "Drama"
+    ],
+    "channel": "ARTE.DE",
+    "timestamp": 1795207760,
+    "isNew": true,
+    "tmdb_id": 803690,
+    "tmdb_type": "movie"
   },
   {
     "title": "Tausche Firma gegen Haushalt",
@@ -33747,7 +33795,7 @@
       "Drama"
     ],
     "channel": "ZDF",
-    "timestamp": 1793798835,
+    "timestamp": 1794477807,
     "isNew": true,
     "tmdb_id": 1105789,
     "tmdb_type": "movie"
@@ -34031,7 +34079,7 @@
     ],
     "channel": "ARD",
     "timestamp": 1793490600,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 403793,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyMS0xMS0yMl8wMi0wNS1NRVo"
@@ -35042,8 +35090,8 @@
       "Drama"
     ],
     "channel": "ARD",
-    "timestamp": 1790424000,
-    "isNew": false,
+    "timestamp": 1796990100,
+    "isNew": true,
     "tmdb_id": 378430,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2FyZC5kZS9wbGFuQVJEX2E1NzdiYzhmLTc3YzItNDFmZC1iMzZmLTdjNjFmMDIxZTkxY19nYW56ZVNlbmR1bmc"
@@ -35982,8 +36030,8 @@
       "Drama"
     ],
     "channel": "ZDF",
-    "timestamp": 1792568947,
-    "isNew": false,
+    "timestamp": 1794491754,
+    "isNew": true,
     "tmdb_id": 303148,
     "tmdb_type": "movie",
     "url_website": "https://www.zdf.de/filme/zwischen-den-zeiten-movie-100"
