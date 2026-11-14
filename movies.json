@@ -545,7 +545,7 @@
     ],
     "channel": "ZDF",
     "timestamp": 1793625659,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 820800,
     "tmdb_type": "movie",
     "url_website": "https://www.zdf.de/filme/alice-im-weihnachtsland-movie-100"
@@ -573,7 +573,7 @@
       "Mystery"
     ],
     "channel": "ARTE.DE",
-    "timestamp": 1794424500,
+    "timestamp": 1794424503,
     "isNew": true,
     "tmdb_id": 15196,
     "tmdb_type": "movie"
@@ -1670,7 +1670,7 @@
     "title": "Arabeske",
     "search": "Arabeske",
     "year": "1966",
-    "video_url": "https://arteptweb-a.akamaihd.net/am/ptweb/102000/102900/102939-000-B_EQ_0_VA-STMA_11603174_MP4-1500_AMM-PTWEB-60722062397915_16UVM8.mp4",
+    "video_url": "https://secure-manifest-arte.akamaized.net/api/manifest/v1/Generate/6cb4ffb2-ea61-4bf6-b347-f2c3420afb18/de/XQ+KS+CHEV1/102939-000-B.m3u8",
     "plot": "Professor Ragheeb will sich beim Augenarzt nur die Sehstärke kontrollieren lassen. In der Praxis ist allerdings nur seine Vertretung, ein Mr. Sloane, der etwas anderes im Sinne hat: Er pustet Ragheeb nicht nur das Augenlicht für immer aus. Denn in seinem Brillenbügel hat der Prof. einen Zettel mit Hieroglyphen stecken, den Sloane im Auftrag seines Arbeitgebers, dem Reeder Beshraavi beschaffen soll. Kurz darauf besucht Sloane einen anderen Professor: David Pollock  ist Experte für alte Schriftzeichen und soll das Papier entziffern.",
     "mediathek_desc": "Der Sprachwissenschaftler David Pollock soll eine Geheimbotschaft in alten Schriftzeichen entschlüsseln. Dabei gerät er in die Schusslinie zwischen dem Reeder Beshraavi und einem arabischen Premier, die ihn beide engagieren wollen. Beshraavis Geliebte verbündet sich mit David. Doch kann er ihr trauen? Agententhriller (1966) in Hitchcock-Manier. Mit Sophia Loren und Gregory Peck.",
     "director": "Stanley Donen",
@@ -5168,7 +5168,7 @@
     ],
     "channel": "ARD",
     "timestamp": 1793620500,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 233476,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyMy0xMC0yMl8xNC0wMC1NRVNa"
@@ -5616,31 +5616,6 @@
     "title": "Dennstein & Schwarz - Rufmord",
     "search": "Dennstein & Schwarz - Rufmord",
     "year": "2020",
-    "video_url": "https://pd-videos.daserste.de/int/2024/08/23/DEGSM877904/DEGSM877904_3048790sendeton__1280x720-50p-3200kbit.mp4",
-    "plot": "Therese Schwarz vertritt den mit Paula Dennstein sehr gut befreundeten Politiker Konrad Wagner, der von einer Zeitung an den #MeToo-Pranger gestellt wurde. Deshalb passt der überraschende Besuch ihrer kleinen Schwester Marita auch so gar nicht in ihr Konzept. Noch dazu, wo Marita zusammen mit Ferdinand durch eine Cannabis-Geschichte in heiklen Polizeikontakt kommt. Für Konrads Verteidigung ist es wichtig den Verleumder auszumachen, doch das ist ein Wettlauf gegen die Zeit, da die Landtagswahl vor der Türe steht…",
-    "mediathek_desc": "Spielfilm Deutschland/Österreich 2020\r\n\r\nAuf Frauenpower setzen \"Dennstein & Schwarz\" als Markenzeichen ihrer Anwaltskanzlei. Der neue Fall verspricht viel Publicity, denn sie vertreten den aufstrebenden Politiker, der nun durch eine Zeitungsstory als Grapscher am Pranger steht. \r\n\r\nMit Maria Happel, Martina Ebm, Manuel Rubey, Nele Kiper u.a. | Buch: Konstanze Breitebner | Regie: Michael Rowitz",
-    "director": "Michael Rowitz",
-    "actors": [
-      "Maria Happel",
-      "Martina Ebm",
-      "Manuel Rubey"
-    ],
-    "rating": "6.0",
-    "thumb": "https://image.tmdb.org/t/p/w342/6AP96jy3fR9wc26fb5zlWWdEMS4.jpg",
-    "genres_list": [
-      "Drama"
-    ],
-    "channel": "ARD",
-    "timestamp": 1724500800,
-    "isNew": false,
-    "tmdb_id": 679245,
-    "tmdb_type": "movie",
-    "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyNC0wOC0yNF8xNC0wMC1NRVNa"
-  },
-  {
-    "title": "Dennstein & Schwarz - Rufmord",
-    "search": "Dennstein & Schwarz - Rufmord",
-    "year": "2020",
     "video_url": "https://pd-videos.daserste.de/int/2024/09/06/DEGSM685649/DEGSM685649_3059520_sendeton_1280x720-50p-3200kbit.mp4",
     "plot": "Therese Schwarz vertritt den mit Paula Dennstein sehr gut befreundeten Politiker Konrad Wagner, der von einer Zeitung an den #MeToo-Pranger gestellt wurde. Deshalb passt der überraschende Besuch ihrer kleinen Schwester Marita auch so gar nicht in ihr Konzept. Noch dazu, wo Marita zusammen mit Ferdinand durch eine Cannabis-Geschichte in heiklen Polizeikontakt kommt. Für Konrads Verteidigung ist es wichtig den Verleumder auszumachen, doch das ist ein Wettlauf gegen die Zeit, da die Landtagswahl vor der Türe steht…",
     "mediathek_desc": "Spielfilm Deutschland/Österreich 2020\r\n\r\nAuf Frauenpower setzen \"Dennstein & Schwarz\" als Markenzeichen ihrer Anwaltskanzlei. Der neue Fall verspricht viel Publicity, denn sie vertreten den aufstrebenden Politiker, der nun durch eine Zeitungsstory als Grapscher am Pranger steht. \r\n\r\nMit Maria Happel, Martina Ebm, Manuel Rubey, Nele Kiper u.a. | Buch: Konstanze Breitebner | Regie: Michael Rowitz",
@@ -5661,6 +5636,31 @@
     "tmdb_id": 679245,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyNC0wOS0wN18xNC0wMC1NRVNa"
+  },
+  {
+    "title": "Dennstein & Schwarz - Rufmord",
+    "search": "Dennstein & Schwarz - Rufmord",
+    "year": "2020",
+    "video_url": "https://pd-videos.daserste.de/int/2024/08/23/DEGSM877904/DEGSM877904_3048790sendeton__1280x720-50p-3200kbit.mp4",
+    "plot": "Therese Schwarz vertritt den mit Paula Dennstein sehr gut befreundeten Politiker Konrad Wagner, der von einer Zeitung an den #MeToo-Pranger gestellt wurde. Deshalb passt der überraschende Besuch ihrer kleinen Schwester Marita auch so gar nicht in ihr Konzept. Noch dazu, wo Marita zusammen mit Ferdinand durch eine Cannabis-Geschichte in heiklen Polizeikontakt kommt. Für Konrads Verteidigung ist es wichtig den Verleumder auszumachen, doch das ist ein Wettlauf gegen die Zeit, da die Landtagswahl vor der Türe steht…",
+    "mediathek_desc": "Spielfilm Deutschland/Österreich 2020\r\n\r\nAuf Frauenpower setzen \"Dennstein & Schwarz\" als Markenzeichen ihrer Anwaltskanzlei. Der neue Fall verspricht viel Publicity, denn sie vertreten den aufstrebenden Politiker, der nun durch eine Zeitungsstory als Grapscher am Pranger steht. \r\n\r\nMit Maria Happel, Martina Ebm, Manuel Rubey, Nele Kiper u.a. | Buch: Konstanze Breitebner | Regie: Michael Rowitz",
+    "director": "Michael Rowitz",
+    "actors": [
+      "Maria Happel",
+      "Martina Ebm",
+      "Manuel Rubey"
+    ],
+    "rating": "6.0",
+    "thumb": "https://image.tmdb.org/t/p/w342/6AP96jy3fR9wc26fb5zlWWdEMS4.jpg",
+    "genres_list": [
+      "Drama"
+    ],
+    "channel": "ARD",
+    "timestamp": 1724500800,
+    "isNew": false,
+    "tmdb_id": 679245,
+    "tmdb_type": "movie",
+    "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyNC0wOC0yNF8xNC0wMC1NRVNa"
   },
   {
     "title": "Dennstein & Schwarz - Schuldenfalle",
@@ -7605,7 +7605,7 @@
     "title": "Der beste Film aller Zeiten",
     "search": "Der beste Film aller Zeiten",
     "year": "2021",
-    "video_url": "https://arteptweb-a.akamaihd.net/am/ptweb/132000/132000/132042-000-A_EQ_0_VA-STMA_11604116_MP4-1500_AMM-PTWEB-60782246364636_16UY8M.mp4",
+    "video_url": "https://manifest-arte.akamaized.net/api/manifest/v1/Generate/bd7500c3-6a02-4f26-b69a-a0827b026be8/de/XQ+KS+CHEV1/132042-000-A.m3u8",
     "plot": "Wenn ein milliardenschwerer Unternehmer impulsiv beschließt, einen Kultfilm zu drehen, verlangt er das Beste. Die renommierte Filmemacherin Lola Cuevas wird angeworben, um dieses ehrgeizige Unterfangen zu leiten. Abgerundet wird das All-Star-Team durch zwei Schauspieler mit enormem Talent, aber noch größeren Egos: Hollywood-Herzensbrecher Félix Rivero und der radikale Theaterschauspieler Iván Torres. Beide sind Legenden, aber nicht gerade beste Freunde. Durch eine Reihe von immer exzentrischeren Prüfungen, die von Lola gestellt werden, müssen Félix und Iván nicht nur einander, sondern auch ihre eigenen Hinterlassenschaften konfrontieren. Wer bleibt übrig, wenn endlich die Kameras laufen?",
     "mediathek_desc": "Im Designer-Bungalow zwischen Sichtbeton und gekränkten Eitelkeiten entfaltet sich eine Komödie: Für \"den besten Film aller Zeiten\" muss Penélope Cruz als überspannte Star-Regisseurin zwei egozentrische Schauspiel-Legenden, dargestellt von Antonio Banderas und Oscar Martínez, zu Höchstleistungen bringen.",
     "director": "Javier Méndez",
@@ -8310,7 +8310,7 @@
     "title": "Die Diebin & der General",
     "search": "Die Diebin & der General",
     "year": "2005",
-    "video_url": "https://ctv-videos.daserste.de/de/2013/12/30/bca72412-4b49-43d3-a92d-32ca7597cac6/JOB_542022__sendeton_1280x720-50p-3200kbit.mp4",
+    "video_url": "https://ctv-videos.daserste.de/int/2013/12/30/bca72412-4b49-43d3-a92d-32ca7597cac6/JOB_542022__sendeton_1280x720-50p-3200kbit.mp4",
     "plot": "Jessie hat es diesmal übertrieben. Wegen wiederholtem Ladendiebstahl wird die allein erziehende Mutter zu gemeinnütziger Arbeit in einem Altenheim verurteilt.  Dort trifft sie auf „den General“ Walter Voss Er ist als überaus störrisch verschrien und natürlich geraten die Beiden erst einmal ordentlich aneinander. Doch langsam gelingt es Jessie, hinter die Fassade des herrischen Alten zu blicken. Nach dem Tod seiner Frau hatten seine Kinder ihn entmüdigen lassen. Jetzt sind sie im Besitz von Haus und Vermögen und Voss muss im Altenheim seinen Lebensabend verbringen. Jessie ist empört, denn mittlerweile haben sie und der General einen guten draht zueinander gefunden. Also versucht sie Alles, um die Entmündigung rückgängig zu machen. Das gefällt den Kindern von Voss natürlich gar nicht.",
     "mediathek_desc": "Spielfilm Deutschland 2005 Jessie Fischer (Katja Riemann) ist eine allein erziehende Mutter, die sich mehr schlecht als recht durchwurschtelt. Dank ihrer großen Klappe und einem eigenwilligen Gerechtigkeitssinn bleibt sie nie lange in einem Job....",
     "director": "Miguel Alexandre",
@@ -8718,6 +8718,34 @@
     "tmdb_id": 342955,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyNC0xMC0xMl8xNC0wMC1NRVNa"
+  },
+  {
+    "title": "Die Glasbläserin",
+    "search": "Die Glasbläserin",
+    "original_title": "Die Glasbläserin",
+    "year": "2016",
+    "video_url": "https://nrodlzdf-a.akamaihd.net/dach/zdf/16/12/161212_sendung_fdw/8/161212_sendung_fdw_a1a2_3360k_p36v17.mp4",
+    "url_website": "https://www.zdf.de/filme/die-glasblaeserin-movie-100",
+    "plot": "Thüringen, 1890: Nach dem Tod ihrer Eltern stehen die jungen Schwestern Marie und Johanna vor dem Nichts. Marie möchte die Glasbläserei des Vaters weiterführen, doch die Zunftordnung verbietet dies. Die Schwestern nehmen Arbeit in anderen Handwerksbetrieben an, doch bald schon wird deutlich, dass die beiden Frauen sich in der patriarchalischen Gesellschaft ihren eigenen Weg erkämpfen müssen.",
+    "mediathek_desc": "Thüringer Wald 1890: Nach dem Tod ihres Vaters versuchen die Steinmann-Schwestern gegen größte Widerstände, die Glasbläserei fortzuführen.",
+    "director": "Christiane Balthasar",
+    "actors": [
+      "Luise Heyer",
+      "Maria Ehrich",
+      "Robert Gwisdek"
+    ],
+    "rating": "6.4",
+    "thumb": "https://image.tmdb.org/t/p/w342/3ux2V2U77lJ1LQTjaPt8GXYCMjV.jpg",
+    "genres_list": [
+      "Drama",
+      "Historie",
+      "TV-Film"
+    ],
+    "channel": "ZDF",
+    "timestamp": 1794556805,
+    "isNew": true,
+    "tmdb_id": 422154,
+    "tmdb_type": "movie"
   },
   {
     "title": "Die Gottesanbeterin",
@@ -10349,7 +10377,7 @@
     ],
     "channel": "ARTE.DE",
     "timestamp": 1793646887,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 4467,
     "tmdb_type": "movie"
   },
@@ -16703,7 +16731,7 @@
       "Krimi"
     ],
     "channel": "ARTE.DE",
-    "timestamp": 1794430070,
+    "timestamp": 1794430125,
     "isNew": true,
     "tmdb_id": 46326,
     "tmdb_type": "movie"
@@ -17820,6 +17848,34 @@
     "tmdb_id": 10171,
     "tmdb_type": "movie",
     "url_website": "https://www.3sat.de/film/spielfilm/homo-faber-104.html"
+  },
+  {
+    "title": "Honecker und der Pastor",
+    "search": "Honecker und der Pastor",
+    "original_title": "Honecker und der Pastor",
+    "year": "2022",
+    "video_url": "https://nrodlzdf-a.akamaihd.net/dach/zdf/22/03/220321_2015_sendung_fdw/4/220321_2015_sendung_fdw_a1a2_3360k_p36v15.mp4",
+    "url_website": "https://www.zdf.de/filme/honecker-und-der-pastor-movie-100",
+    "plot": "DDR, Januar 1990. Nach seiner Absetzung und dem Fall der Mauer sind Diktator Erich Honecker und seine Frau Margot praktisch obdachlos. Nur der evangelische Pfarrer Uwe Holmer und seine Familie, die wie viele andere unter dem tyrannischen Regime gelitten haben, bieten ihnen Zuflucht.",
+    "mediathek_desc": "Januar 1990: Nachdem sie entmachtet worden sind und die Mauer gefallen ist, sind Erich und Margot Honecker praktisch obdachlos. Denn die Regierungssiedlung in Wandlitz wurde aufgelöst.",
+    "director": "Jan Josef Liefers",
+    "actors": [
+      "Edgar Selge",
+      "Hans-Uwe Bauer",
+      "Barbara Schnitzler"
+    ],
+    "rating": "6.0",
+    "thumb": "https://image.tmdb.org/t/p/w342/eNOMLWJtWv5nzFwMgW9cpB9svU0.jpg",
+    "genres_list": [
+      "Drama",
+      "Historie",
+      "TV-Film"
+    ],
+    "channel": "ZDF",
+    "timestamp": 1794597852,
+    "isNew": true,
+    "tmdb_id": 948182,
+    "tmdb_type": "movie"
   },
   {
     "title": "Hopfensommer",
@@ -18940,7 +18996,7 @@
     ],
     "channel": "ARD",
     "timestamp": 1793617200,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 330267,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyMy0wNC0wMV8xNC0wMC1NRVNa"
@@ -18969,7 +19025,7 @@
     ],
     "channel": "ZDF",
     "timestamp": 1793606025,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 1041613,
     "tmdb_type": "movie"
   },
@@ -21138,7 +21194,7 @@
     "original_title": "Late Night with the Devil",
     "year": "2024",
     "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/26/11/261106_0120_sendung_spf/1/261106_0120_sendung_spf_3360k_p36v17.mp4",
-    "url_website": "https://www.zdf.de/video/filme/late-night-with-the-devil-movie-100/late-night-with-the-devil-100",
+    "url_website": "https://www.zdf.de/filme/late-night-with-the-devil-movie-100",
     "plot": "Die Zuschauerzahlen befinden sich schon seit Langem im freien Fall: Die Sendung der Halloween-Nacht von 1977 ist für die Late-Night-Talkshow „Night Owls“ und ihren Moderator Jack Delroy die letzte Chance, sich beim Publikum zu bewähren. Demgemäß plant er mit seinen Gästen die spektakulärste Horror-Show des Jahres: Ein Hellseher nimmt Kontakt zu toten Verwandten auf, bevor er auf offener Bühne einen gewaltigen Schleimstrahl erbricht. Ein Zweifler versucht sich an der Aufdeckung der unerklärlichen Phänomene, die diesen Abend heimsuchen. Und dann ist da noch eine Parapsychologin in Begleitung der 13-jährigen Lilly, die als einzige den Massenselbstmord einer satanischen Sekte überlebt hat und vom mysteriösen Mr. Wiggles besessen sein will. Während sich hinter den Kulissen zunehmend Panik über die beängstigenden Vorkommnisse und die gefährdete Quote breitmacht, nimmt die Show ihren verhängnisvollen Verlauf. Der letzte Mitschnitt wurde nie gesendet … bis heute.",
     "mediathek_desc": "Halloween 1977: In die Live-TV-Sendung \"Night Owls\" wurden Gäste zum Thema Okkultismus eingeladen. Auch ein angeblich besessenes Mädchen soll auftreten – mit ungeahnten Folgen.",
     "director": "Joel Anderson",
@@ -21153,7 +21209,7 @@
       "Horror"
     ],
     "channel": "ZDF",
-    "timestamp": 1793925000,
+    "timestamp": 1794089479,
     "isNew": true,
     "tmdb_id": 938614,
     "tmdb_type": "movie"
@@ -21402,7 +21458,7 @@
     "search": "Liberace - Zu viel des Guten ist wundervoll",
     "original_title": "Liberace - Zu viel des Guten ist wundervoll",
     "year": "None",
-    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/26/09/260908_0125_sendung_spf/1/260908_0125_sendung_spf_a1a2_3360k_p36v17.mp4",
+    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/26/09/260908_0125_sendung_spf/1/260908_0125_sendung_spf_a3a4_3360k_p36v17.mp4",
     "url_website": "https://www.zdf.de/video/filme/liberace--zu-viel-des-guten-ist-wundervoll-movie-100/liberace--zu-viel-des-guten-ist-wundervoll-100",
     "plot": "Als ein junger Mann zufällig einen weltberühmten Entertainer kennenlernt, verändert sich sein Leben komplett. Zwischen den unterschiedlichen Männern entwickelt sich eine Affäre.",
     "mediathek_desc": "Als ein junger Mann zufällig einen weltberühmten Entertainer kennenlernt, verändert sich sein Leben komplett. Zwischen den unterschiedlichen Männern entwickelt sich eine Affäre.",
@@ -24107,7 +24163,7 @@
     "title": "Misericordia",
     "search": "Misericordia",
     "year": "2024",
-    "video_url": "https://arteptweb-a.akamaihd.net/am/ptweb/128000/128600/128673-000-A_EQ_0_VOF-STA_11603912_MP4-1500_AMM-PTWEB-101224093618561_2B6oYy16UaNG.mp4",
+    "video_url": "https://manifest-arte.akamaized.net/api/manifest/v1/Generate/36748772-3321-4a5e-ace1-dd12ed870246/de/XQ+KS+CHEV1/128673-000-A.m3u8",
     "plot": "Nach zehn Jahren kehrt Jérémie in seinen Heimatort Saint-Martial im Südosten Frankreichs zurück, um an der Beerdigung des Dorfbäckers Jean-Pierres teilzunehmen. Als Teenager war Jérémie dessen Lehrling – und vielleicht noch mehr. Von Vincent, dem latent gewalttätigen Sohn des Verstorbenen, wird Jérémie mit Argwohn empfangen, aber auch mit unterschwelligem Begehren. Die Bäckerswitwe Martine bietet ihm einen Schlafplatz an und sucht etwas direkter seine körperliche Nähe. Ambivalente sexuelle Spannungen erzeugt der mysteriöse Rückkehrer auch bei Bauer Walter und dem neugierigen Pfarrer Grisolles. Als Vincent spurlos verschwindet, fällt der Verdacht schnell auf Jérémie.",
     "mediathek_desc": "Jérémie kehrt zur Beerdigung seines ehemaligen Arbeitgebers in ein abgelegenes Dorf zurück. Dessen Witwe nimmt ihn bei sich auf. Ihr Sohn Vincent glaubt, Jérémie wolle die Trauer seiner Mutter ausnutzen, um sich bei ihr einzuquartieren. Alain Guiraudies Psychothriller erzählt von Begehren, Eifersucht und einer Schuld, die ein Dorf vor eine ungewöhnliche moralische Prüfung stellt.",
     "director": "Alain Guiraudie",
@@ -27206,7 +27262,7 @@
     ],
     "channel": "ARTE.DE",
     "timestamp": 1793560510,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 954936,
     "tmdb_type": "movie"
   },
@@ -30209,34 +30265,6 @@
     "url_website": "https://www.zdf.de/filme/sugar-movie-100"
   },
   {
-    "title": "Survive - Gestrandet im Ozean",
-    "search": "Survive - Gestrandet im Ozean",
-    "year": "2024",
-    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/26/10/261012_2215_sendung_spf/1/261012_2215_sendung_spf_a1a2_3360k_p36v17.mp4",
-    "plot": "Der gemeinsame Urlaub auf hoher See wird für Tom und seine Familie zum Horrortrip, als sie mitten auf dem Ozean in einen heftigen Sturm geraten, der ihr Boot fast zum Kentern bringt. Kurz darauf finden sie sich im Wrack ihres Bootes auf dem trockenen Meeresgrund wieder. Eine Polaritätsumkehr hat das Wasser abziehen und das Festland überschwemmen lassen. Doch die Wassermassen drohen zurückzukommen. Für die Familie beginnt ein verzweifelter Wettlauf gegen die Zeit, während sich hungrige Meereskreaturen auf die Jagd nach Nahrung machen ...",
-    "mediathek_desc": "Eine vierköpfige Familie macht mit ihrer Yacht Urlaub auf dem Atlantik.\nPlötzlich häufen sich lebensbedrohliche Szenarien. Nach einem schweren Sturm hat sich das Wasser zurückgezogen.",
-    "director": "Frantz Richard",
-    "actors": [
-      "Émilie Dequenne",
-      "Andreas Pietschmann",
-      "Lisa Delamar"
-    ],
-    "rating": "5.9",
-    "thumb": "https://image.tmdb.org/t/p/w342/uOvYmZMl6U6MAwKQZ82f8pUj8eM.jpg",
-    "genres_list": [
-      "Sci-Fi",
-      "Thriller",
-      "Abenteuer",
-      "Action"
-    ],
-    "channel": "ZDF",
-    "timestamp": 1792095128,
-    "isNew": false,
-    "tmdb_id": 1196470,
-    "tmdb_type": "movie",
-    "url_website": "https://www.zdf.de/filme/survive---gestrandet-im-ozean-movie-100"
-  },
-  {
     "title": "Swimming Pool",
     "search": "Swimming Pool",
     "year": "2003",
@@ -30289,6 +30317,32 @@
     "tmdb_id": 361577,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyMy0wOS0xNl8xNS0zMC1NRVNa"
+  },
+  {
+    "title": "Süßer die Lügen nie klingen",
+    "search": "Süßer die Lügen nie klingen",
+    "original_title": "Süßer die Lügen nie klingen",
+    "year": "2026",
+    "video_url": "https://nrodlzdf-a.akamaihd.net/none/zdf/26/12/261206_2015_sendung_sof/3/261206_2015_sendung_sof_a1a2_3360k_p36v17.mp4",
+    "url_website": "https://www.zdf.de/filme/suesser-die-luegen-nie-klingen-movie-100",
+    "plot": "Ein gemeinsames Weihnachtsfest in den Bergen bringt mehr als nur festliche Stimmung: Als Andrea mit ihrer Familie und den Eltern des Freundes ihrer Tochter zusammenkommt, prallen unterschiedliche Vorstellungen von Weihnachten aufeinander. Doch die wahre Herausforderung liegt in der Vergangenheit, denn einer der Gäste verbindet Andrea mit einem schmerzhaften Geheimnis aus ihrer Jugend. Während alle versuchen, das Fest harmonisch zu gestalten, drohen alte Gefühle und lange verdrängte Wahrheiten ans Licht zu kommen – und Weihnachten gerät aus den Fugen.",
+    "mediathek_desc": "Zwei völlig gegensätzliche Familien wollen gemeinsam das schönste Weihnachten feiern. Doch schon bald fliegen nicht nur die Fetzen, sondern auch ihre bestgehüteten Geheimnisse auf.",
+    "director": "Alex Schmidt",
+    "actors": [
+      "Barbara Philipp",
+      "Simone Thomalla",
+      "Thomas Sarbacher"
+    ],
+    "rating": "N/A",
+    "thumb": "https://image.tmdb.org/t/p/w342/k0EZqdsX0kdzD1IXMUUvc0y2FTl.jpg",
+    "genres_list": [
+      "Komödie"
+    ],
+    "channel": "ZDF",
+    "timestamp": 1796580900,
+    "isNew": true,
+    "tmdb_id": 1588939,
+    "tmdb_type": "movie"
   },
   {
     "title": "Tage am Strand",
@@ -32056,6 +32110,33 @@
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyMy0xMi0xN18xNS0wMC1NRVo"
   },
   {
+    "title": "Unaufhaltsam",
+    "search": "Unaufhaltsam",
+    "original_title": "Unaufhaltsam",
+    "year": "2024",
+    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/26/09/260911_0245_sendung_spf/1/260911_0245_sendung_spf_a1a2_3360k_p36v17.mp4",
+    "url_website": "https://www.zdf.de/video/filme/unaufhaltsam-movie-100/unaufhaltsam-100",
+    "plot": "Erzählt die inspirierende, wahre Geschichte von Anthony Robles, der mit nur einem Bein geboren wurde. Mit unbeirrbarem Kampfgeist und wilder Entschlossenheit trotzt er allen Hindernissen, um seine Träume zu verwirklichen.",
+    "mediathek_desc": "Der junge Ringer Anthony möchte seinen Traum verwirklichen und eine Karriere im Profisport starten. Im Gegensatz zu seinen zahlreichen Konkurrenten hat er allerdings nur ein Bein.",
+    "director": "William Goldenberg",
+    "actors": [
+      "Jharrel Jerome",
+      "Anthony Robles",
+      "Jennifer Lopez"
+    ],
+    "rating": "5.3",
+    "thumb": "https://image.tmdb.org/t/p/w342/kBYvOf8mZ31NtvqMtOkUdrkCmlJ.jpg",
+    "genres_list": [
+      "Drama",
+      "Historie"
+    ],
+    "channel": "ZDF",
+    "timestamp": 1789087800,
+    "isNew": false,
+    "tmdb_id": 1101448,
+    "tmdb_type": "movie"
+  },
+  {
     "title": "Und alle haben geschwiegen",
     "search": "Und alle haben geschwiegen",
     "year": "2013",
@@ -32099,8 +32180,8 @@
       "Drama"
     ],
     "channel": "ARD",
-    "timestamp": 1689319881,
-    "isNew": false,
+    "timestamp": 1795175700,
+    "isNew": true,
     "tmdb_id": 982389,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyMy0wNC0wN18yMC0xNS1NRVNa"
@@ -33433,6 +33514,33 @@
     "url_website": "https://www.zdf.de/filme/viva-forever-movie-100"
   },
   {
+    "title": "Voll verschleiert",
+    "search": "Voll verschleiert",
+    "original_title": "Voll verschleiert",
+    "year": "2017",
+    "video_url": "https://nrodlzdf-a.akamaihd.net/dach/3sat/26/11/261114_voll_verschleiert_spielfilm/1/261114_voll_verschleiert_spielfilm_a1a2_3360k_p36v17.mp4",
+    "url_website": "https://www.3sat.de/film/spielfilm/voll-verschleiert-100.html",
+    "plot": "Die Studenten Armand (Félix Moati) und Leila (Camélia Jordana) sind schon seit längerem ein Paar und planen demnächst einen gemeinsamen Studienaufenthalt in den USA. Doch als Leilas Bruder Mahmoud (William Lebghil) nach einem längeren Aufenthalt im Jemen stark verändert zurückkehrt, ist die Beziehung der beiden gefährdet: Denn Mahmoud ist nun tief religiös und will nicht, dass seine Schwester eine Beziehung mit einem Nicht-Muslim führt. Um auch weiterhin mit Leila zusammensein zu können, ersinnt Armand also einen Plan: Er absolviert einen Crashkurs in Sachen Islam, verkleidet sich als voll verschleierte Muslima namens Scheherazade und gibt sich als Studienkollegin von Leila aus. Doch mit einer Sache haben Armand und Felix nicht gerechnet: Mahmoud verliebt sich nach und nach in die mysteriöse Scheherazade...",
+    "mediathek_desc": "Die Zukunft des studentischen Liebespaars Armand und Leila wird durch Leilas abrupt strenggläubigen Bruder Mahmoud bedroht. Um Leila weiter zu sehen, tarnt sich Armand als Frau mit Nikab.",
+    "director": "Sou Abadi",
+    "actors": [
+      "Félix Moati",
+      "Camélia Jordana",
+      "William Lebghil"
+    ],
+    "rating": "6.1",
+    "thumb": "https://image.tmdb.org/t/p/w342/ofJnfCrc1AL5heAnp1WyvKFEpw8.jpg",
+    "genres_list": [
+      "Komödie",
+      "Romanze"
+    ],
+    "channel": "3Sat",
+    "timestamp": 1719624300,
+    "isNew": false,
+    "tmdb_id": 446039,
+    "tmdb_type": "movie"
+  },
+  {
     "title": "Vollweib sucht Halbtagsmann",
     "search": "Vollweib sucht Halbtagsmann",
     "year": "2002",
@@ -34212,6 +34320,32 @@
     "tmdb_id": 698765,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2FyZC5kZS9wbGFuQVJEXzJhYzEzZDZjLTJhMDItNGFkNC1iYjkzLTg4YTIwZTk0OTM1MV9nYW56ZVNlbmR1bmc"
+  },
+  {
+    "title": "When We Were Sisters",
+    "search": "When We Were Sisters",
+    "original_title": "When We Were Sisters",
+    "year": "2024",
+    "video_url": "https://manifest-arte.akamaized.net/api/manifest/v1/Generate/356fcf4f-cdef-4b46-81e0-3a16280ff925/de/XQ+KS+CHEV1/115124-000-A.m3u8",
+    "url_website": "https://www.arte.tv/de/videos/115124-000-A/when-we-were-sisters/",
+    "plot": "1996: Die fünfzehnjährige Valeska fährt mit ihrer Mutter Monica nach Kreta in die Ferien. Mit dabei ist auch Jacques, der neue Freund der Mutter, und dessen Tochter Lena, mit der Valeska zuerst nichts anfangen kann. Langsam entwickelt sich aber doch eine Freundschaft zwischen den beiden. Während die Mädchen ineinander eine Schwester finden, läuft die Beziehung der Erwachsenen aus dem Ruder. Valeska muss sich von ihrer Mutter emanzipieren und dafür den Traum einer Familie aufgeben.",
+    "mediathek_desc": "1996: Die 15-jährige Valeska fährt mit ihrer Mutter Monica in die Ferien. Mit dabei ist auch Jacques, der neue Freund der Mutter, und dessen Tochter Lena, mit der Valeska nichts anfangen kann. Langsam entwickelt sich jedoch eine Freundschaft zwischen den beiden Mädchen. Aber die Beziehung der Erwachsenen läuft immer mehr aus dem Ruder. Ein Familiendrama von Lisa Brühlmann",
+    "director": "Lisa Brühlmann",
+    "actors": [
+      "Paula Rappaport",
+      "Malou Mösli",
+      "Lisa Brühlmann"
+    ],
+    "rating": "N/A",
+    "thumb": "https://image.tmdb.org/t/p/w342/bHxhLm785FhgNUvIwnxKPfDKsV5.jpg",
+    "genres_list": [
+      "Drama"
+    ],
+    "channel": "ARTE.DE",
+    "timestamp": 1794865154,
+    "isNew": true,
+    "tmdb_id": 1275374,
+    "tmdb_type": "movie"
   },
   {
     "title": "Wie Tag und Nacht",
@@ -35773,6 +35907,33 @@
     "tmdb_id": 1354471,
     "tmdb_type": "movie",
     "url_website": "https://www.zdf.de/filme/zwei-am-zug-movie-100"
+  },
+  {
+    "title": "Zwei an Weihnachten",
+    "search": "Zwei an Weihnachten",
+    "original_title": "Zwei an Weihnachten",
+    "year": "2026",
+    "video_url": "https://nrodlzdf-a.akamaihd.net/none/zdf/26/11/261129_2015_sendung_sof/1/261129_2015_sendung_sof_a1a2_3360k_p36v17.mp4",
+    "url_website": "https://www.zdf.de/filme/zwei-an-weihnachten-movie-100",
+    "plot": "Als Kinder versprechen sie sich, zu heiraten. Doch über drei Jahrzehnte finden Toni und Selma nicht zusammen. Bis Weihnachten ihnen eine letzte Chance bietet.",
+    "mediathek_desc": "Als Kinder versprechen sie sich, zu heiraten. Doch über drei Jahrzehnte finden Toni und Selma nicht zusammen. Bis Weihnachten ihnen eine letzte Chance bietet.",
+    "director": "Thorsten Schmidt",
+    "actors": [
+      "Merlin Rose",
+      "Dominique Devenport",
+      "Julia Brendler"
+    ],
+    "rating": "N/A",
+    "thumb": "https://image.tmdb.org/t/p/w342/fdyeUjPu5Z1ndHKoKqgXYlDaIRn.jpg",
+    "genres_list": [
+      "Drama",
+      "Romanze"
+    ],
+    "channel": "ZDF",
+    "timestamp": 1795976100,
+    "isNew": true,
+    "tmdb_id": 1824823,
+    "tmdb_type": "movie"
   },
   {
     "title": "Zwei auf der Flucht",
