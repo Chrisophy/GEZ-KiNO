@@ -50,6 +50,34 @@
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyNS0wNy0zMF8xNC0wMy1NRVNa"
   },
   {
+    "title": "2 Guns",
+    "search": "2 Guns",
+    "original_title": "2 Guns",
+    "year": "2013",
+    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/23/12/231228_sony_2225_sendung_spf/1/231228_sony_2225_sendung_spf_3360k_p36v17.mp4",
+    "url_website": "https://www.zdf.de/video/filme/2-guns-movie-100/2-guns-100",
+    "plot": "Seit 12 Monaten müssen der DEA Agent Bobby Trench und der U.S. Naval Intelligence Officer Michael Stigman nun schon gegen ihren Willen zusammenarbeiten, denn die beiden wurden undercover in ein Drogen-Syndikat eingeschleust. Jeder der beiden misstraut seinem Partner mindestens genauso sehr wie den Kriminellen, die sie zur Strecke bringen sollen. Als ihr Versuch, ein mexikanisches Drogenkartell zu unterwandern und Millionen von Dollar sicher zu stellen, schief geht, werden Trench und Stigman plötzlich von ihren Vorgesetzten fallen gelassen. Jetzt, da jeder sie im Gefängnis oder tot sehen will, gibt es nur noch eine Person, auf die sie sich verlassen können – auf den jeweils anderen. Zum Leidwesen ihrer Verfolger. Denn die müssen bald feststellen, dass gute Jungs, die jahrelang so getan haben, als wären sie böse Jungs, nebenbei auch ein paar entsprechende Tricks aufgeschnappt haben ...",
+    "mediathek_desc": "Zwei Undercover-Agenten rächen sich am Boss eines mexikanischen Drogenkartells, geraten dabei aber auch einem korrupten CIA-Mann in die Quere.",
+    "director": "Baltasar Kormákur",
+    "actors": [
+      "Denzel Washington",
+      "Mark Wahlberg",
+      "Paula Patton"
+    ],
+    "rating": "6.5",
+    "thumb": "https://image.tmdb.org/t/p/w342/kzDEuMbyaD3sv6y5mUP6Rcyg2yL.jpg",
+    "genres_list": [
+      "Action",
+      "Komödie",
+      "Krimi"
+    ],
+    "channel": "ZDF",
+    "timestamp": 1703798700,
+    "isNew": false,
+    "tmdb_id": 136400,
+    "tmdb_type": "movie"
+  },
+  {
     "title": "2 Sturköpfe im Dreivierteltakt",
     "search": "2 Sturköpfe im Dreivierteltakt",
     "year": "2017",
@@ -1898,7 +1926,7 @@
     "isNew": false,
     "tmdb_id": 570356,
     "tmdb_type": "movie",
-    "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyMS0xMS0yN18xNC0zMC1NRVovYXVkaW9kZXNrcmlwdGlvbg"
+    "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyMS0xMS0yN18xNC0zMC1NRVo"
   },
   {
     "title": "Aus lauter Liebe zu dir",
@@ -2867,7 +2895,7 @@
     ],
     "channel": "ARTE.DE",
     "timestamp": 1793665839,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 633811,
     "tmdb_type": "movie"
   },
@@ -8880,6 +8908,32 @@
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyMy0wNi0xMF8xNS0zMC1NRVNa"
   },
   {
+    "title": "Die Holzbaronin",
+    "search": "Die Holzbaronin",
+    "original_title": "Die Holzbaronin",
+    "year": "2013",
+    "video_url": "https://nrodlzdf-a.akamaihd.net/none/zdf/20/04/200410_1600_sendung_fis/5/200410_1600_sendung_fis_3360k_p36v17.mp4",
+    "url_website": "https://www.zdf.de/filme/die-holzbaronin-movie-100",
+    "plot": "Die Holzbaronin ist ein deutsch-österreichischer Fernsehfilm aus dem Jahr 2012. Christine Neubauer und Henriette Confurius spielen die Hauptrolle einer Schwarzwälder Holzindustriellen, die sich in der ersten Hälfte des 20. Jahrhunderts gegen die Vorherrschaft der Männer sowie wirtschaftliche Schwierigkeiten behaupten muss.",
+    "mediathek_desc": "Schwarzwald 1953: Elly Seitz hat endlich ihr Ziel erreicht. Viele Jahre hat sie darauf hingearbeitet, den traditionsreichen Betrieb ihrer Familie zu leiten.",
+    "director": "Marcus O. Rosenmüller",
+    "actors": [
+      "Christine Neubauer",
+      "Henriette Confurius",
+      "Simon Schwarz"
+    ],
+    "rating": "7.0",
+    "thumb": "https://image.tmdb.org/t/p/w342/pLnCADfXsuVvgom2OhpMBhZkHkt.jpg",
+    "genres_list": [
+      "Drama"
+    ],
+    "channel": "ZDF",
+    "timestamp": 1794232002,
+    "isNew": true,
+    "tmdb_id": 265401,
+    "tmdb_type": "movie"
+  },
+  {
     "title": "Die Hölle - Inferno",
     "search": "Die Hölle",
     "year": "2017",
@@ -10642,32 +10696,6 @@
     "url_website": "https://www.3sat.de/film/spielfilm/die-witwe-clicquot-100.html"
   },
   {
-    "title": "Die Wutprobe",
-    "search": "Die Wutprobe",
-    "original_title": "Die Wutprobe",
-    "year": "2003",
-    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/26/01/260117_sony_2205_sendung_nsf/1/260117_sony_2205_sendung_nsf_3360k_p36v17.mp4",
-    "url_website": "https://www.zdf.de/video/filme/die-wutprobe-movie-100/die-wutprobe-100",
-    "plot": "Per Gerichtsbeschluss verdonnert man den sanftmütigen Marketing-Angestellten Dave Buznik dazu, bei dem offensichtlich geistesgestörten Therapeuten Buddy Rydell vier Wochen Anti-Aggressionstraining zu absolvieren. Der mutterfixierte Seelenklempner erweist sich nicht nur selbst als cholerischer Psychopath, sondern schafft es zusammen mit Buzniks Mit-Patienten - darunter der gemeingefährliche Chuck - innerhalb kürzester Zeit, dessen Leben sowie die vormals wunderbare Beziehung zu Linda in einen Trümmerhaufen zu verwandeln.",
-    "mediathek_desc": "Der zurückhaltende Dave Buznik wird nach einem Streit mit dem Flugpersonal zu einer Anti-Aggressionstherapie verdonnert. Diese leitet ausgerechnet der aufbrausende Dr. Buddy Rydell.",
-    "director": "Peter Segal",
-    "actors": [
-      "Adam Sandler",
-      "Jack Nicholson",
-      "Marisa Tomei"
-    ],
-    "rating": "6.2",
-    "thumb": "https://image.tmdb.org/t/p/w342/8izWfHg7Ta9DcRvdLN4eWNHpCPC.jpg",
-    "genres_list": [
-      "Komödie"
-    ],
-    "channel": "ZDFneo",
-    "timestamp": 1768683900,
-    "isNew": false,
-    "tmdb_id": 9506,
-    "tmdb_type": "movie"
-  },
-  {
     "title": "Die Zeit mit Euch",
     "search": "Die Zeit mit Euch",
     "year": "2014",
@@ -11871,7 +11899,7 @@
       "Komödie"
     ],
     "channel": "ZDF",
-    "timestamp": 1793870720,
+    "timestamp": 1794643978,
     "isNew": true,
     "tmdb_id": 862252,
     "tmdb_type": "movie",
@@ -13314,8 +13342,8 @@
       "Familie"
     ],
     "channel": "ARD",
-    "timestamp": 1784764200,
-    "isNew": false,
+    "timestamp": 1795253400,
+    "isNew": true,
     "tmdb_id": 304251,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyNC0wMi0yNl8wMi0xNS1NRVo"
@@ -14850,6 +14878,33 @@
     "tmdb_id": 1649854,
     "tmdb_type": "movie",
     "url_website": "https://www.zdf.de/filme/fast-perfekte-frauen-movie-100"
+  },
+  {
+    "title": "Fedora",
+    "search": "Fedora",
+    "original_title": "Fedora",
+    "year": "1978",
+    "video_url": "https://manifest-arte.akamaized.net/api/manifest/v1/Generate/81182c9a-21f7-4edf-beaa-2516addc0dfb/de/XQ+KS+CHEV1/PCA2956.m3u8",
+    "url_website": "https://www.arte.tv/de/videos/052395-000-A/fedora/",
+    "plot": "Fedora, einst ein von allen geliebter und umjubelter Hollywoodstar, hat sich aus dem Filmgeschäft zurückgezogen und weit weg von Los Angeles und seinem Treiben auf einer griechischen Insel niedergelassen. In ihrer luxuriösen Villa wird sie bewacht von der Gräfin Sobryanksi und deren Mann sowie von ihrem Arzt und einer Krankenschwester. Jeglicher Kontakt mit der Außenwelt ist ihr mehr oder weniger verwehrt. Eines Tages begeht sie Selbstmord. Bei dem pompösen Begräbnis erinnert sich der Filmproduzent Barry Detweiler an seine letzte Begegnung mit ihr, die nicht die einzige in seinem Leben war.",
+    "mediathek_desc": "Fedora, einst ein umjubelter Hollywoodstar, hat sich aus dem Filmgeschäft zurückgezogen und auf einer griechischen Insel niedergelassen. Jeglicher Kontakt mit der Außenwelt ist ihr verwehrt. – Billy Wilders tiefgründige Hommage an das goldene Zeitalter Hollywoods ist gleichzeitig ein bitterer Abgesang auf das Kino der alten Schule.",
+    "director": "Billy Wilder",
+    "actors": [
+      "William Holden",
+      "Marthe Keller",
+      "Hildegard Knef"
+    ],
+    "rating": "6.7",
+    "thumb": "https://image.tmdb.org/t/p/w342/ArU150uZXJ9IVa5puxZKotw54DP.jpg",
+    "genres_list": [
+      "Drama",
+      "Mystery"
+    ],
+    "channel": "ARTE.DE",
+    "timestamp": 1794770100,
+    "isNew": true,
+    "tmdb_id": 54000,
+    "tmdb_type": "movie"
   },
   {
     "title": "Feinde - Hostiles",
@@ -17472,7 +17527,7 @@
     "isNew": false,
     "tmdb_id": 265294,
     "tmdb_type": "movie",
-    "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2FyZC5kZS9wbGFuQVJEXzgzNjQyNTY5LTdlNzMtNDZlNy1hYTQ4LTY0N2EzM2FkNDhkNl9nYW56ZVNlbmR1bmcvYXVkaW9kZXNrcmlwdGlvbg"
+    "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2FyZC5kZS9wbGFuQVJEXzgzNjQyNTY5LTdlNzMtNDZlNy1hYTQ4LTY0N2EzM2FkNDhkNl9nYW56ZVNlbmR1bmc"
   },
   {
     "title": "Herzlichen Glückwunsch",
@@ -19179,7 +19234,7 @@
     ],
     "channel": "ARD",
     "timestamp": 1793706900,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 330268,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2FyZC5kZS9wbGFuQVJEX2JiZGNkNGIxLTE4M2EtNDkzYi1iODFhLTZlYTg5N2VkYTc5Yl9nYW56ZVNlbmR1bmc"
@@ -19752,7 +19807,7 @@
     "title": "Jericho Ridge - Unter Beschuss",
     "search": "Jericho Ridge - Unter Beschuss",
     "year": "2022",
-    "video_url": "https://nrodlzdf-a.akamaihd.net/dach/3sat/26/04/260417_jericho_ridge_unter_beschuss_spielfilm/1/260417_jericho_ridge_unter_beschuss_spielfilm_3360k_p36v17.mp4",
+    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/25/02/250224_2215_sendung_spf/1/250224_2215_sendung_spf_a3a4_3360k_p36v17.mp4",
     "plot": "Eine schwer am Fuß verletzte Polizistin muss ein entlegenes Sheriff-Office mitsamt Gefängnis fast im Alleingang gegen eine Meute schießwütiger Gangster verteidigen.",
     "mediathek_desc": "Eine schwer am Fuß verletzte Polizistin muss ein entlegenes Sheriff-Office mitsamt Gefängnis fast im Alleingang gegen eine Meute schießwütiger Gangster verteidigen.",
     "director": "Will Gilbey",
@@ -19772,7 +19827,7 @@
     "isNew": false,
     "tmdb_id": 969926,
     "tmdb_type": "movie",
-    "url_website": "https://www.3sat.de/film/spielfilm/jericho-ridge---unter-beschuss-100.html"
+    "url_website": "https://www.zdf.de/video/filme/jericho-ridge---unter-beschuss-movie-100/jericho-ridge---unter-beschuss-100"
   },
   {
     "title": "Jo Nesbø's Headhunters",
@@ -20382,7 +20437,7 @@
     "original_title": "Kindsköpfe",
     "year": "2010",
     "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/24/05/240519_sony_1840_sendung_nsf/1/240519_sony_1840_sendung_nsf_3360k_p36v17.mp4",
-    "url_website": "https://www.zdf.de/video/filme/kindskoepfe-movie-100/kindskoepfe-100",
+    "url_website": "https://www.zdf.de/filme/kindskoepfe-movie-100",
     "plot": "Fünf alte Freunde und ehemalige Sportkameraden treffen sich nach vielen Jahren wieder, um ihrem verstorbenen Basketball-Trainer aus Kindheitstagen die letzte Ehre zu erweisen. Zusammen mit ihren Ehefrauen und Kindern verbringen sie das lange Feiertagswochenende rund um den 4. Juli in einem Haus am See, wo sie vor langer Zeit einmal ihre Meisterschaft gefeiert haben. Die Freunde versuchen, da anzuknüpfen, wo sie damals aufgehört haben, und stellen fest, dass Älterwerden nicht automatisch auch Erwachsenwerden bedeutet.",
     "mediathek_desc": "Lenny Feder und seine Freunde Eric, Marcus, Kurt und Rob wollen ihrem verstorbenen Basketballcoach die letzte Ehre erweisen. Lenny mietet eine Waldhütte für alle, was im Chaos endet.",
     "director": "Tim Herlihy",
@@ -20397,8 +20452,8 @@
       "Komödie"
     ],
     "channel": "ZDFneo",
-    "timestamp": 1716136800,
-    "isNew": false,
+    "timestamp": 1794086700,
+    "isNew": true,
     "tmdb_id": 38365,
     "tmdb_type": "movie"
   },
@@ -21109,6 +21164,34 @@
     "url_website": "https://www.arte.tv/de/videos/132072-000-A/lach-doch-mal/"
   },
   {
+    "title": "Lakeview Terrace",
+    "search": "Lakeview Terrace",
+    "original_title": "Lakeview Terrace",
+    "year": "2008",
+    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/25/05/250524_sony_2015_sendung_nsf/1/250524_sony_2015_sendung_nsf_3360k_p36v17.mp4",
+    "url_website": "https://www.zdf.de/video/filme/lakeview-terrace-movie-100/lakeview-terrace-100",
+    "plot": "Das Ehepaar Chris und Lisa Mattson sind frisch verheiratet und in ihr Traumhaus eingezogen. Doch das Glück währt nicht lang, denn auf Grund ihrer verschiedenen Hautfarben geraten die beiden ins Fadenkreuz ihrer konservativen Nachbarn. Abel Turner, ein strenger, alleinerziehender Vater und Polizist, ist selbst erklärter Wachhund der Nachbarschaft. Durch seine regelmäßigen Streifzüge gibt er den Leuten die nötige Sicherheit, doch aufgrund seiner Schikanen gegen die Mattsons entwickelt sich der Polizist immer mehr zum Dorn im Auge des Paares. Diese beschließen schließlich, den Kampf aufzunehmen.",
+    "mediathek_desc": "Das Ehepaar Chris und Lisa Mattson zieht in ein neues Haus. Nebenan wohnt der verwitwete Cop Abel Turner mit seinen zwei Kindern. Der Nachbar entpuppt sich als schwieriger Zeitgenosse.",
+    "director": "David Loughery",
+    "actors": [
+      "Samuel L. Jackson",
+      "Patrick Wilson",
+      "Kerry Washington"
+    ],
+    "rating": "6.0",
+    "thumb": "https://image.tmdb.org/t/p/w342/n37riS95WFOAkr98eI8GGz17lpN.jpg",
+    "genres_list": [
+      "Drama",
+      "Krimi",
+      "Thriller"
+    ],
+    "channel": "ZDFneo",
+    "timestamp": 1679771700,
+    "isNew": false,
+    "tmdb_id": 13279,
+    "tmdb_type": "movie"
+  },
+  {
     "title": "Landfrauen - Wir können auch anders!",
     "search": "Landfrauen - Wir können auch anders!",
     "year": "2023",
@@ -21161,6 +21244,34 @@
     "timestamp": 1465417500,
     "isNew": false,
     "tmdb_id": 14400,
+    "tmdb_type": "movie"
+  },
+  {
+    "title": "Largo Winch: Die Burma Verschwörung",
+    "search": "Largo Winch: Die Burma Verschwörung",
+    "original_title": "Largo Winch: Die Burma Verschwörung",
+    "year": "2011",
+    "video_url": "https://nrodlzdf-a.akamaihd.net/dach/3sat/26/11/261115_largo_winch_die_burma_verschwoerung_pp_tafel_spielfilm/1/261115_largo_winch_die_burma_verschwoerung_pp_tafel_spielfilm_3360k_p36v15.mp4",
+    "url_website": "https://www.3sat.de/film/spielfilm/largo-winch-die-burma-verschwoerung-100.html",
+    "plot": "Nach dem Tod seines Adoptivvaters wird Largo Winch für ihn selbst völlig überraschend zum Vorstand der milliardenschweren W Group ernannt. Mit seiner Entscheidung, seinen neuen Reichtum für die Gründung einer gemeinnützigen Einrichtung zu nutzen, stößt er dem Aufsichtsrat und den Aktionären vor den Kopf. Kurz darauf wird er auf dubiose Weise eines Verbrechens an der Menschheit beschuldigt, das er in seiner Vergangenheit begangen haben soll, und muss fliehen. Im Dschungel von Burma will er den Beweis seiner Unschuld erbringen.",
+    "mediathek_desc": "Kaum hat Largo Winch sein Milliardenerbe gegen eine Intrige aus den eigenen Reihen verteidigt, führt ein neues, gefährliches Abenteuer ihn in den Dschungel Südostasiens.",
+    "director": "Jérôme Salle",
+    "actors": [
+      "Tomer Sisley",
+      "Sharon Stone",
+      "Ulrich Tukur"
+    ],
+    "rating": "5.8",
+    "thumb": "https://image.tmdb.org/t/p/w342/2UtLmyOuGe97FQ3rxlhcIdRvuu2.jpg",
+    "genres_list": [
+      "Action",
+      "Abenteuer",
+      "Thriller"
+    ],
+    "channel": "3Sat",
+    "timestamp": 1526943120,
+    "isNew": false,
+    "tmdb_id": 57331,
     "tmdb_type": "movie"
   },
   {
@@ -21458,7 +21569,7 @@
     "search": "Liberace - Zu viel des Guten ist wundervoll",
     "original_title": "Liberace - Zu viel des Guten ist wundervoll",
     "year": "None",
-    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/26/09/260908_0125_sendung_spf/1/260908_0125_sendung_spf_a3a4_3360k_p36v17.mp4",
+    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/26/09/260908_0125_sendung_spf/1/260908_0125_sendung_spf_a1a2_3360k_p36v17.mp4",
     "url_website": "https://www.zdf.de/video/filme/liberace--zu-viel-des-guten-ist-wundervoll-movie-100/liberace--zu-viel-des-guten-ist-wundervoll-100",
     "plot": "Als ein junger Mann zufällig einen weltberühmten Entertainer kennenlernt, verändert sich sein Leben komplett. Zwischen den unterschiedlichen Männern entwickelt sich eine Affäre.",
     "mediathek_desc": "Als ein junger Mann zufällig einen weltberühmten Entertainer kennenlernt, verändert sich sein Leben komplett. Zwischen den unterschiedlichen Männern entwickelt sich eine Affäre.",
@@ -24601,6 +24712,33 @@
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL21vcmRuYWNodC8yMDI1LTA4LTA5XzIxLTQ1LU1FU1o"
   },
   {
+    "title": "Mr. Brooks - Der Mörder in dir",
+    "search": "Mr. Brooks - Der Mörder in dir",
+    "original_title": "Mr. Brooks - Der Mörder in dir",
+    "year": "2007",
+    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/20/11/201129_2315_sendung_nsf/1/201129_2315_sendung_nsf_3360k_p36v17.mp4",
+    "url_website": "https://www.zdf.de/filme/spielfilme/mr-brooks---der-moerder-in-dir-100.html",
+    "plot": "Mr. Brooks führt seit Jahren unerkannt ein Doppelleben als Killer. Tagsüber ist er erfolgreicher Geschäftsmann und Nachts ein eiskalter Serienmörder. Doch als Mr. Brooks bei einem Mord von einem Fotografen beobachtet wird, zwingt dieser ihn auf seinem nächsten Mord zu begleiten. Langsam aber sicher bröckelt Mr. Brooks Fassade und sein Leben gerät außer Kontrolle.",
+    "mediathek_desc": "Earl Brooks ist ein Serienkiller, der auf seinen nächtlichen Streifzügen willkürlich fremde Menschen tötet. Ihm eng auf den Fersen ist die couragierte Polizistin Tracy Atwood.",
+    "director": "Bruce A. Evans",
+    "actors": [
+      "Kevin Costner",
+      "Demi Moore",
+      "Dane Cook"
+    ],
+    "rating": "6.9",
+    "thumb": "https://image.tmdb.org/t/p/w342/zzWkEjuBL9RCOSflQFyc7ChAjXy.jpg",
+    "genres_list": [
+      "Krimi",
+      "Thriller"
+    ],
+    "channel": "ZDFneo",
+    "timestamp": 1606688100,
+    "isNew": false,
+    "tmdb_id": 3432,
+    "tmdb_type": "movie"
+  },
+  {
     "title": "Mr. Holmes",
     "search": "Mr. Holmes",
     "year": "2015",
@@ -25301,7 +25439,7 @@
     ],
     "channel": "ZDF",
     "timestamp": 1793690222,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 1481869,
     "tmdb_type": "movie"
   },
@@ -25541,6 +25679,33 @@
     "tmdb_id": 6215,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2FyZC5kZS9wbGFuQVJEX2ZkYjgzODc3LTNlZTgtNDI4Yi1hNGIxLTU4ODI5YTkzZjhmZV9nYW56ZVNlbmR1bmc"
+  },
+  {
+    "title": "Nightwatch - Nachtwache",
+    "search": "Nightwatch - Nachtwache",
+    "original_title": "Nightwatch - Nachtwache",
+    "year": "1994",
+    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/25/09/250922_0225_sendung_spf/4/250922_0225_sendung_spf_a1a2_3360k_p36v17.mp4",
+    "url_website": "https://www.zdf.de/video/filme/nightwatch--nachtwache-movie-100/nightwatch--nachtwache-100",
+    "plot": "Der Student Martin jobbt als Nachtwächter in der gerichtsmedizinischen Abteilung eines Kopenhagener Krankenhauses, sprich: Er passt auf die Leichen Ermordeter auf. Als Martin die Prostituierte Joyce kennenlernt, verrät ihm diese, dass derzeitig ein Serienmörder in der Stadt sein Unwesen treibt. Nach und nach werden die Opfer des Killers in die Pathologie eingeliefert. Von da an häufen sich die unheimlichen Zwischenfälle an Martins Arbeitsplatz. Doch es kommt noch schlimmer: Der Student gerät selbst in den Verdacht, der Mörder der Prostituierten zu sein. Schließlich beginnen sogar seine Freundin Kalinka und sein Kumpel Jens an ihm zu zweifeln. Und auch für den ermittelnden Polizisten Inspektor Wörmer steht bald fest, dass nur Martin der Täter sein kann...",
+    "mediathek_desc": "Für einen Jurastudenten scheint die Stelle als Nachtwächter in der Gerichtsmedizin der ideale Nebenjob zu sein. Doch dann häufen sich äußerst beunruhigende Ereignisse.",
+    "director": "Ole Bornedal",
+    "actors": [
+      "Nikolaj Coster-Waldau",
+      "Sofie Gråbøl",
+      "Kim Bodnia"
+    ],
+    "rating": "6.9",
+    "thumb": "https://image.tmdb.org/t/p/w342/yZzWFrTRnMlXdWtPlgeCzs4mtdT.jpg",
+    "genres_list": [
+      "Horror",
+      "Thriller"
+    ],
+    "channel": "ZDF",
+    "timestamp": 1758500700,
+    "isNew": false,
+    "tmdb_id": 6498,
+    "tmdb_type": "movie"
   },
   {
     "title": "Nikita",
@@ -26159,7 +26324,7 @@
     ],
     "channel": "ARD",
     "timestamp": 1793705400,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 333152,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyNS0xMC0wM18xMi0wMC1NRVNa"
@@ -26191,6 +26356,34 @@
     "tmdb_id": 1174931,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2FyZC5kZS9wbGFuQVJEXzJiNmFkY2YzLTUzODItNGE4NC1iMGE0LTIzMWEyM2Q1YzdlNV9nYW56ZVNlbmR1bmc"
+  },
+  {
+    "title": "Paddington 2",
+    "search": "Paddington 2",
+    "original_title": "Paddington 2",
+    "year": "2017",
+    "video_url": "https://nrodlzdf-a.akamaihd.net/dach/3sat/24/12/241225_paddington_2_prodhilfetafel_spielfilm/1/241225_paddington_2_prodhilfetafel_spielfilm_a1a2_3360k_p36v17.mp4",
+    "url_website": "https://www.3sat.de/film/spielfilm/paddington-2-106.html",
+    "plot": "Der liebenswerte Bär Paddington mit Schlapphut und Dufflecoat hat nicht nur bei Familie Brown ein Zuhause gefunden, er ist auch in der Nachbarschaft ein geschätztes Mitglied: Höflich, zuvorkommend und immer fröhlich – außerdem lieben alle seine Marmeladenbrote, ohne die er nie das Haus verlässt. Als der 100. Geburtstag von Tante Lucy ansteht, sucht Paddington nach einem geeigneten Geschenk. Fündig wird er im Antiquitätenladen des liebenswerten Mr. Gruber, der allerlei Schätze birgt: Ein einzigartiges Pop-up-Bilderbuch hat es Paddington angetan. Allerdings muss der kleine, tollpatschige Bär dafür ein paar Nebenjobs antreten – das Chaos ist vorprogrammiert. Und dann wird das Buch auch noch gestohlen! Paddington und die Browns setzen sich auf die Spuren des Diebs, der ein Meister der Verkleidung zu sein scheint …",
+    "mediathek_desc": "Paddington, der kleine Bär aus Peru, hat sich gut in London eingelebt. Als aus Mr. Grubers Antikladen ein altes Klapp-Bilderbuch verschwindet, gerät er in Verdacht, ein Dieb zu sein.",
+    "director": "Paul King",
+    "actors": [
+      "Ben Whishaw",
+      "Sally Hawkins",
+      "Hugh Bonneville"
+    ],
+    "rating": "7.5",
+    "thumb": "https://image.tmdb.org/t/p/w342/A4HbS3Tl2RAmnDvDeUcHWr3OfJc.jpg",
+    "genres_list": [
+      "Abenteuer",
+      "Komödie",
+      "Familie"
+    ],
+    "channel": "3Sat",
+    "timestamp": 1608913200,
+    "isNew": false,
+    "tmdb_id": 346648,
+    "tmdb_type": "movie"
   },
   {
     "title": "Pakt der Wölfe - Director's Cut",
@@ -29559,34 +29752,6 @@
     "tmdb_id": 1063879,
     "tmdb_type": "movie",
     "url_website": "https://www.zdf.de/filme/spiders---ihr-biss-ist-der-tod-movie-100"
-  },
-  {
-    "title": "Spiel ohne Regeln",
-    "search": "Spiel ohne Regeln",
-    "original_title": "Spiel ohne Regeln",
-    "year": "2005",
-    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/25/10/251029_sony_0420_sendung_nsf/1/251029_sony_0420_sendung_nsf_3360k_p36v17.mp4",
-    "url_website": "https://www.zdf.de/video/filme/spiel-ohne-regeln-movie-100/spiel-ohne-regeln-100",
-    "plot": "Als der frühere Profi-Quarterback Paul “Wrecking” Crewe eine Haftstrafe wegen Körperverletzung abzusitzen hat, trifft er im Gefängnis auf den ehemaligen College-Champion und Trainer Nate Scarborough. Auf Weisung eines ebenso korrupten wie sadistischen Aufsehers muss Paul aus den Insassen ein Football-Team zusammenstellen, das bei einem Wettkampf Wärter gegen Gefangene antreten und um einen hohen Einsatz spielen soll. Doch schon bald muss der verwöhnte Ex-Profi feststellen, dass sich aus einem Haufen Rowdys so leicht keine Mannschaft formen lässt – zumal der Ausgang des großen Spiels bereits beschlossene Sache zu sein scheint. Also bittet er Nate um Hilfe. Gemeinsam wollen sie ihren Mitgefangenen und vor allem den Wärtern zeigen, wo der Hammer hängt!",
-    "mediathek_desc": "Während eines Footballspiels in einem Hochsicherheitsgefängnis wird der ehemalige NFL-Star Paul Crewe gezwungen, ein Team aus Häftlingen gegen die brutalen Wärter aufzustellen.",
-    "director": "Peter Segal",
-    "actors": [
-      "Adam Sandler",
-      "Chris Rock",
-      "Burt Reynolds"
-    ],
-    "rating": "6.7",
-    "thumb": "https://image.tmdb.org/t/p/w342/neLhsbydVMkbl9FxYoKSvHXe7vo.jpg",
-    "genres_list": [
-      "Drama",
-      "Komödie",
-      "Krimi"
-    ],
-    "channel": "ZDFneo",
-    "timestamp": 1761708000,
-    "isNew": false,
-    "tmdb_id": 9291,
-    "tmdb_type": "movie"
   },
   {
     "title": "Spinning Man - Mörderischer Zweifel",
@@ -35280,7 +35445,7 @@
       "Drama"
     ],
     "channel": "ARTE.DE",
-    "timestamp": 1792292400,
+    "timestamp": 1122922237,
     "isNew": false,
     "tmdb_id": 2721,
     "tmdb_type": "movie",
