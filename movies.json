@@ -415,7 +415,7 @@
       "TV-Film"
     ],
     "channel": "ZDF",
-    "timestamp": 1794298547,
+    "timestamp": 1794720653,
     "isNew": true,
     "tmdb_id": 1451030,
     "tmdb_type": "movie",
@@ -1372,6 +1372,32 @@
     "url_website": "https://www.3sat.de/film/spielfilm/american-hustle-100.html"
   },
   {
+    "title": "An Unfinished Film",
+    "search": "An Unfinished Film",
+    "original_title": "An Unfinished Film",
+    "year": "2024",
+    "video_url": "https://manifest-arte.akamaized.net/api/manifest/v1/Generate/66661668-47a7-4e97-9e19-7290e073324e/de/XQ+KS+CHEV1/120016-000-A.m3u8",
+    "url_website": "https://www.arte.tv/de/videos/120016-000-A/an-unfinished-film/",
+    "plot": "Im Januar 2020 überredet Regisseur Xiaorui seine Darsteller und sein Team, die Dreharbeiten zu einem Film wieder aufzunehmen, die ein Jahrzehnt zuvor unterbrochen wurden. Als die Dreharbeiten fast abgeschlossen sind, machen Gerüchte über eine Krankheit die Runde. Einigen Darstellern und Mitarbeitern gelingt es, das Hotel zu verlassen, bevor es abgeriegelt wird. Der Regisseur muss entscheiden, ob er die Dreharbeiten noch einmal unterbrechen will, da Wuhan in den ersten Tagen einer schrecklichen Pandemie stillgelegt wird.",
+    "mediathek_desc": "Ein chinesisches Filmteam nimmt Anfang 2020 die Dreharbeiten an einem zuvor abgebrochenen Projekt wieder auf. Als sich ein rätselhaftes Virus ausbreitet, wird ihr Hotel abgeriegelt. Regisseur, Darsteller und Crew sind getrennt in ihren Zimmern eingeschlossen ... – Der Film des renommierten chinesischen Regisseurs Lou Ye führt zurück in die frühen Tage der Corona-Pandemie.",
+    "director": "娄烨",
+    "actors": [
+      "秦昊",
+      "毛小睿",
+      "齐溪"
+    ],
+    "rating": "7.7",
+    "thumb": "https://image.tmdb.org/t/p/w342/dH8wwhvPXviaqV1FVj5DmRvXDRX.jpg",
+    "genres_list": [
+      "Drama"
+    ],
+    "channel": "ARTE.DE",
+    "timestamp": 1795649648,
+    "isNew": true,
+    "tmdb_id": 878607,
+    "tmdb_type": "movie"
+  },
+  {
     "title": "An einem Tag im September",
     "search": "An einem Tag im September",
     "year": "2025",
@@ -1926,7 +1952,7 @@
     "isNew": false,
     "tmdb_id": 570356,
     "tmdb_type": "movie",
-    "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyMS0xMS0yN18xNC0zMC1NRVo"
+    "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyMS0xMS0yN18xNC0zMC1NRVovYXVkaW9kZXNrcmlwdGlvbg"
   },
   {
     "title": "Aus lauter Liebe zu dir",
@@ -2497,8 +2523,8 @@
       "Drama"
     ],
     "channel": "ARD",
-    "timestamp": 1778720700,
-    "isNew": false,
+    "timestamp": 1795349700,
+    "isNew": true,
     "tmdb_id": 381168,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyMi0wNy0wMl8xMy0wMC1NRVNa"
@@ -2812,7 +2838,7 @@
     ],
     "channel": "ZDF",
     "timestamp": 1793878702,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 1191945,
     "tmdb_type": "movie",
     "url_website": "https://www.zdf.de/filme/blindspot-movie-100"
@@ -4354,7 +4380,7 @@
       "Romanze"
     ],
     "channel": "ZDF",
-    "timestamp": 1794494087,
+    "timestamp": 1794750019,
     "isNew": true,
     "tmdb_id": 284061,
     "tmdb_type": "movie",
@@ -7197,7 +7223,7 @@
     ],
     "channel": "ZDF",
     "timestamp": 1793916563,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 1084863,
     "tmdb_type": "movie"
   },
@@ -9167,7 +9193,7 @@
     ],
     "channel": "ARTE.DE",
     "timestamp": 1793819757,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 803694,
     "tmdb_type": "movie"
   },
@@ -11356,7 +11382,7 @@
     "original_title": "Domino",
     "year": "1988",
     "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/26/11/261108_0105_sendung_nsf/3/261108_0105_sendung_nsf_3360k_p36v17.mp4",
-    "url_website": "https://www.zdf.de/filme/spielfilme/domino-100.html",
+    "url_website": "https://www.zdf.de/filme/domino-movie-100",
     "plot": "Domino hat sich gerade von ihrem Geliebten getrennt. Sie arbeitet an einem Video über die Sängerin Billie Holiday. Ebenso wie diese leidet Domino an der Liebe und ist auf der Suche nach ihrer Identität als Frau und Künstlerin. Ein geheimnisvoller Anrufer weckt ihr Interesse, doch ihr Kontakt beschränkt sich auf das Sprechen. Kurze, heftige Affären, u.a. mit dem Toningenieur des Studios, sind für Domino erst in der Erinnerung erregend. Als sie ihren Anrufer treffen möchte, gibt dieser zu erkennen, daß er genau wie Domino nur aus der Distanz lieben kann. Er wird in Zukunft eine andere Frau anrufen.",
     "mediathek_desc": "Domino Harvey wächst in wohlhabenden und privilegierten Verhältnissen auf. Doch statt den vorgezeichneten Weg zu gehen, entscheidet sie sich für ein gefährliches Leben als Kopfgeldjägerin.",
     "director": "Ivana Massetti",
@@ -11371,7 +11397,7 @@
       "Drama"
     ],
     "channel": "ZDFneo",
-    "timestamp": 1794096300,
+    "timestamp": 1794099900,
     "isNew": true,
     "tmdb_id": 244122,
     "tmdb_type": "movie"
@@ -14374,8 +14400,8 @@
       "Drama"
     ],
     "channel": "ZDF",
-    "timestamp": 1787629057,
-    "isNew": false,
+    "timestamp": 1794772800,
+    "isNew": true,
     "tmdb_id": 339633,
     "tmdb_type": "movie",
     "url_website": "https://www.zdf.de/filme/es-kommt-noch-besser-movie-100"
@@ -14884,7 +14910,7 @@
     "search": "Fedora",
     "original_title": "Fedora",
     "year": "1978",
-    "video_url": "https://manifest-arte.akamaized.net/api/manifest/v1/Generate/81182c9a-21f7-4edf-beaa-2516addc0dfb/de/XQ+KS+CHEV1/PCA2956.m3u8",
+    "video_url": "https://manifest-arte.akamaized.net/api/manifest/v1/Generate/e8e295c6-6cdc-4317-ae84-94ca6b24f6e3/de/XQ+KS+CHEV1/052395-000-B.m3u8",
     "url_website": "https://www.arte.tv/de/videos/052395-000-A/fedora/",
     "plot": "Fedora, einst ein von allen geliebter und umjubelter Hollywoodstar, hat sich aus dem Filmgeschäft zurückgezogen und weit weg von Los Angeles und seinem Treiben auf einer griechischen Insel niedergelassen. In ihrer luxuriösen Villa wird sie bewacht von der Gräfin Sobryanksi und deren Mann sowie von ihrem Arzt und einer Krankenschwester. Jeglicher Kontakt mit der Außenwelt ist ihr mehr oder weniger verwehrt. Eines Tages begeht sie Selbstmord. Bei dem pompösen Begräbnis erinnert sich der Filmproduzent Barry Detweiler an seine letzte Begegnung mit ihr, die nicht die einzige in seinem Leben war.",
     "mediathek_desc": "Fedora, einst ein umjubelter Hollywoodstar, hat sich aus dem Filmgeschäft zurückgezogen und auf einer griechischen Insel niedergelassen. Jeglicher Kontakt mit der Außenwelt ist ihr verwehrt. – Billy Wilders tiefgründige Hommage an das goldene Zeitalter Hollywoods ist gleichzeitig ein bitterer Abgesang auf das Kino der alten Schule.",
@@ -15301,6 +15327,33 @@
     "tmdb_id": 1788,
     "tmdb_type": "movie",
     "url_website": "https://www.3sat.de/film/spielfilm/footloose-104.html"
+  },
+  {
+    "title": "Frau Holles Garten",
+    "search": "Frau Holles Garten",
+    "original_title": "Frau Holles Garten",
+    "year": "2019",
+    "video_url": "https://nrodlzdf-a.akamaihd.net/none/zdf/20/12/201213_0405_sendung_sof/5/201213_0405_sendung_sof_a1a2_3360k_p36v15.mp4",
+    "url_website": "https://www.zdf.de/filme/frau-holles-garten-movie-100",
+    "plot": "Mia Goldig liebt ihren Job im Botanischen Garten. Doch ihre Mutter, die scheidende Leiterin des Gartens, zieht ihre Schwester als Nachfolgerin vor. Kann Frau Holle für die richtige Entscheidung sorgen? Die neue Leiterin muss vor allem finanzkräftige Sponsoren finden, da sich der Garten in finanziellen Nöten befindet. Eine Aufgabe, die sich die zurückhaltende Chefgärtnerin Mia selbst nicht zutraut. Sie liebt die Pflanzen, nicht aber den großen Auftritt. Ganz im Gegensatz zu ihrer selbstsicheren Schwester Marissa.Auch ihre Mutter Helene sieht in Mia, die stottert, wenn sie vor mehreren Menschen sprechen muss, nicht die richtige Wahl für diesen repräsentativen Posten. Dagegen scheint ihr die zielstrebige Marissa wie geschaffen für die Stelle. Dass Marissa der Garten völlig egal ist und sie ein intrigantes Spiel treibt, entgeht Helene.Aber Frau Holle, der guten Seele des Gartens, die dort einen Laden betreibt, bleibt nichts verborgen.",
+    "mediathek_desc": "Mia liebt ihren Job im botanischen Garten. Doch ihre Mutter, die Leiterin des Gartens, zieht ihre Schwester als Nachfolgerin vor. Kann Frau Holle für die richtige Entscheidung sorgen?",
+    "director": "Seyhan Derin",
+    "actors": [
+      "Cornelia Froboess",
+      "Klara Deutschmann",
+      "Lavinia Wilson"
+    ],
+    "rating": "8.0",
+    "thumb": "https://image.tmdb.org/t/p/w342/h8I6m9dOSV5AXJvdNEY2GAsRFci.jpg",
+    "genres_list": [
+      "Drama",
+      "Romanze"
+    ],
+    "channel": "ZDF",
+    "timestamp": 1794476346,
+    "isNew": true,
+    "tmdb_id": 652614,
+    "tmdb_type": "movie"
   },
   {
     "title": "Frau Pfarrer & Herr Priester",
@@ -15800,6 +15853,33 @@
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyNC0wMy0wM18xNS0zMC1NRVo"
   },
   {
+    "title": "Für immer hier",
+    "search": "Für immer hier",
+    "original_title": "Für immer hier",
+    "year": "2024",
+    "video_url": "https://manifest-arte.akamaized.net/api/manifest/v1/Generate/9860c626-aec8-418e-935f-5633914bc4be/de/XQ+KS+CHEV1/128668-000-A.m3u8",
+    "url_website": "https://www.arte.tv/de/videos/128668-000-A/fuer-immer-hier/",
+    "plot": "Rio de Janeiro, Anfang der 1970er Jahre. In einem gemieteten Haus am Strand lebt die Familie Paiva: Vater Rubens, Mutter Eunice und ihre fünf Kinder.  Auch mit der allgegenwärtigen Unterdrückung bewahren sie in ihrem Zuhause eine Atmosphäre der Liebe, des Humors und der Offenheit. Ihre Zuneigung zueinander wird zu einem stillen Akt des Widerstands gegen die Diktatur, die ihr Leben radikal verändert. Als Rubens verschwindet, wird Eunice zur treibenden Kraft, um ihrer Familie eine neue Zukunft aufzubauen. Den Herausforderungen dieser dunklen Zeit begegnet sie mit Mut, Entschlossenheit und dem unerschütterlichen Glauben an ihre Kinder. Diese bewegende Geschichte wirft ein Licht auf die verschwiegenen Kapitel der brasilianischen Geschichte und würdigt die Stärke einer Frau, die trotz widrigster Umstände niemals aufgibt.",
+    "mediathek_desc": "Rio de Janeiro in den 70er Jahren. In einem Mietshaus am Strand lebt die Familie Paiva: Vater Rubens, Mutter Eunice und ihre fünf Kinder. Unter der Militärdiktatur bewahren sie eine Atmosphäre der Liebe und des Humors. Als Rubens verschwindet, muss Eunice für ihre Familie stark bleiben. \"Für immer hier\" von Walter Salles gewann 2025 den Oscar als bester internationaler Film.",
+    "director": "Walter Salles",
+    "actors": [
+      "Fernanda Torres",
+      "Fernanda Montenegro",
+      "Selton Mello"
+    ],
+    "rating": "7.9",
+    "thumb": "https://image.tmdb.org/t/p/w342/saC3QJopNnyMQ7V8YnRQBIPx24T.jpg",
+    "genres_list": [
+      "Drama",
+      "Historie"
+    ],
+    "channel": "ARTE.DE",
+    "timestamp": 1795461300,
+    "isNew": true,
+    "tmdb_id": 1000837,
+    "tmdb_type": "movie"
+  },
+  {
     "title": "Für immer im Herzen",
     "search": "Für immer im Herzen",
     "year": "2004",
@@ -16087,6 +16167,33 @@
     "tmdb_id": 370929,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyNC0wNi0yMF8xNS0zMC1NRVNa"
+  },
+  {
+    "title": "Geheimkommando Familie",
+    "search": "Geheimkommando Familie",
+    "original_title": "Geheimkommando Familie",
+    "year": "2023",
+    "video_url": "https://ctv-videos.daserste.de/int/2026/11/13/DEGSM302183/DEGSM302183_3893275_sendeton_1280x720-50p-3200kbit.mp4",
+    "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2FyZC5kZS9wbGFuQVJEX2YxNWJhZDZkLTVmODUtNDJjMy05MDUyLTBmNWViMGU3ODQxN19nYW56ZVNlbmR1bmc",
+    "plot": "Frisch pensioniert will Marineoffizier Klaus Gremme Versäumtes nachholen und den seit langem abgebrochenen Kontakt zu seinem Sohn wieder aufnehmen. Er quartiert sich am Bodensee bei der alleinerziehenden Mona Tauber ein, die in Sichtweite zu Thomas Gremme und seiner Familie wohnt.",
+    "mediathek_desc": "Spielfilm Deutschland 2022 Frisch pensioniert hat Marineoffizier Klaus Gremme (Alexander Held) plötzlich die Zeit, über Versäumtes nachzudenken. Über den lange verloren gegangenen Kontakt zu seinem Sohn Thomas (Nico Rogner) zum Beispiel. Gremme fährt an den Bodensee und quartiert sich bei der alleinerziehenden Mona Tauber (Lisa Hagmeister) ein, die in Sichtweite zu Thomas Gremme und dessen Familie wohnt....",
+    "director": "Christina Adler",
+    "actors": [
+      "Alexander Held",
+      "Lisa Hagmeister",
+      "Nico Rogner"
+    ],
+    "rating": "6.5",
+    "thumb": "https://image.tmdb.org/t/p/w342/nz5Zw2b9kuEiHfspgfhh4NIrCed.jpg",
+    "genres_list": [
+      "Drama",
+      "TV-Film"
+    ],
+    "channel": "ARD",
+    "timestamp": 1767732300,
+    "isNew": false,
+    "tmdb_id": 1006297,
+    "tmdb_type": "movie"
   },
   {
     "title": "Geheimnis eines Lebens",
@@ -17927,7 +18034,7 @@
       "TV-Film"
     ],
     "channel": "ZDF",
-    "timestamp": 1794597852,
+    "timestamp": 1794780781,
     "isNew": true,
     "tmdb_id": 948182,
     "tmdb_type": "movie"
@@ -20432,32 +20539,6 @@
     "url_website": "https://www.3sat.de/film/spielfilm/kindeswohl-100.html"
   },
   {
-    "title": "Kindsköpfe",
-    "search": "Kindsköpfe",
-    "original_title": "Kindsköpfe",
-    "year": "2010",
-    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/24/05/240519_sony_1840_sendung_nsf/1/240519_sony_1840_sendung_nsf_3360k_p36v17.mp4",
-    "url_website": "https://www.zdf.de/filme/kindskoepfe-movie-100",
-    "plot": "Fünf alte Freunde und ehemalige Sportkameraden treffen sich nach vielen Jahren wieder, um ihrem verstorbenen Basketball-Trainer aus Kindheitstagen die letzte Ehre zu erweisen. Zusammen mit ihren Ehefrauen und Kindern verbringen sie das lange Feiertagswochenende rund um den 4. Juli in einem Haus am See, wo sie vor langer Zeit einmal ihre Meisterschaft gefeiert haben. Die Freunde versuchen, da anzuknüpfen, wo sie damals aufgehört haben, und stellen fest, dass Älterwerden nicht automatisch auch Erwachsenwerden bedeutet.",
-    "mediathek_desc": "Lenny Feder und seine Freunde Eric, Marcus, Kurt und Rob wollen ihrem verstorbenen Basketballcoach die letzte Ehre erweisen. Lenny mietet eine Waldhütte für alle, was im Chaos endet.",
-    "director": "Tim Herlihy",
-    "actors": [
-      "Adam Sandler",
-      "Kevin James",
-      "Chris Rock"
-    ],
-    "rating": "6.4",
-    "thumb": "https://image.tmdb.org/t/p/w342/573nvW3wF8eWFLIxDuINosyk5Sx.jpg",
-    "genres_list": [
-      "Komödie"
-    ],
-    "channel": "ZDFneo",
-    "timestamp": 1794086700,
-    "isNew": true,
-    "tmdb_id": 38365,
-    "tmdb_type": "movie"
-  },
-  {
     "title": "Kings of Hollywood",
     "search": "Kings of Hollywood",
     "year": "2020",
@@ -21054,7 +21135,7 @@
     ],
     "channel": "ARTE.DE",
     "timestamp": 1793829078,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 837335,
     "tmdb_type": "movie"
   },
@@ -21538,6 +21619,33 @@
     "url_website": "https://www.zdf.de/filme/leo-und-marie---eine-weihnachtsliebe-movie-100"
   },
   {
+    "title": "Leonora im Morgenlicht",
+    "search": "Leonora im Morgenlicht",
+    "original_title": "Leonora im Morgenlicht",
+    "year": "2025",
+    "video_url": "https://manifest-arte.akamaized.net/api/manifest/v1/Generate/2805b275-a4cc-4d6c-9edc-b365b882382d/de/XQ+KS+CHEV1/105543-000-A.m3u8",
+    "url_website": "https://www.arte.tv/de/videos/105543-000-A/leonora-im-morgenlicht/",
+    "plot": "Im Zentrum des Films die Malerin und Schriftstellerin Leonora Carrington, die zu den bedeutendsten Künstlerinnen des Surrealismus zählt. Nach Frida Kahlo ist sie die populärste Malerin in Mexiko. Die langjährige Geliebte von Max Ernst und Weggefährtin von André Breton und Jean Miró ringt zeitlebens mit ihrer visionären Vorstellungskraft, die bei ihr immer wieder auch schwere psychische Krisen auslöst. Der Film begleitet die Künstlerin Leonora Carrington auf ihrer Reise durch das kriegszerrüttete Europa bis in die Tiefen des mexikanischen Dschungels.",
+    "mediathek_desc": "Zur Heilung ihres Geistes reist die Künstlerin Leonora Carrington in das Dschungel-Domizil eines Mäzens und setzt sich mit Schlüsselerlebnissen ihres Lebens auseinander: der patriarchal geprägten Kindheit, der Selbstbehauptung im männlich dominierten Surrealisten-Kreis, der Liebe zu Max Ernst und dem Exil. Biopic über die britische Surrealistin Leonora Carrington (1917-2011)",
+    "director": "Thor Klein",
+    "actors": [
+      "Olivia Vinall",
+      "Alexander Scheer",
+      "Cassandra Ciangherotti"
+    ],
+    "rating": "10.0",
+    "thumb": "https://image.tmdb.org/t/p/w342/AcV9EzcEBJwRJODqy96QOq2wOdT.jpg",
+    "genres_list": [
+      "Drama",
+      "Historie"
+    ],
+    "channel": "ARTE.DE",
+    "timestamp": 1795469096,
+    "isNew": true,
+    "tmdb_id": 1207627,
+    "tmdb_type": "movie"
+  },
+  {
     "title": "Letzte Ausfahrt Sauerland",
     "search": "Letzte Ausfahrt Sauerland",
     "year": "2015",
@@ -21792,7 +21900,7 @@
     ],
     "channel": "ARD",
     "timestamp": 1793749500,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 374434,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyNS0wNC0yMF8xMi0zMC1NRVNa"
@@ -22477,8 +22585,8 @@
       "Drama"
     ],
     "channel": "ARD",
-    "timestamp": 1782907380,
-    "isNew": false,
+    "timestamp": 1795395600,
+    "isNew": true,
     "tmdb_id": 287942,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAxNy0wNC0xN18xNS0yMC1NRVNa"
@@ -25206,33 +25314,6 @@
     "url_website": "https://www.3sat.de/film/spielfilm/nacht-ueber-berlin-spielfilm-100.html"
   },
   {
-    "title": "Nackt unter Wölfen",
-    "search": "Nackt unter Wölfen",
-    "year": "1960",
-    "video_url": "https://arteptweb-a.akamaihd.net/am/ptweb/019000/019400/019497-000-B_EQ_0_VOA-STF_11377366_MP4-1500_AMM-PTWEB-60453355272484_sDAUE.mp4",
-    "plot": "1945. Das Konzentrationslager Buchenwald kurz vor der Befreiung: Der polische Häftling Janowski rettet ein kleines Kind, versteckt in einem Koffer. Ein Kind in der Welt des Todes bedeutet Hoffnung und Gefährdung zugleich.\r Als die Mithäftlinge und Mitglieder der geheimen Widerstandsgruppe den Jungen entdecken, stehen sie vor einer schweren Entscheidung. Doch letztlich siegt die Menschlichkeit. Das Original und erster deutscher Spielfilm über Leben und Sterben im Konzentrationslager. Nach einer authentischen Geschichte.",
-    "mediathek_desc": "Konzentrationslager Buchenwald, 1945. Ein Gefangener hat ein kleines Kind gerettet, versteckt in einem Koffer. Als die Mithäftlinge den Jungen entdecken, stehen sie vor einer schweren Entscheidung. – Der DDR-Spielfilm über Leben und Sterben in einem KZ beruht auf wahren Ereignissen und ist mit Ausnahme des propagandistischen Endes unpathetisch und doch ergreifend. Mit Armin Mueller-Stahl.",
-    "director": "Georg Leopold",
-    "actors": [
-      "Johannes Wieke",
-      "Manfred Borges",
-      "Edwin Marian"
-    ],
-    "rating": "N/A",
-    "thumb": "placeholder.png",
-    "genres_list": [
-      "Drama",
-      "TV-Film",
-      "Krieg"
-    ],
-    "channel": "ARTE.DE",
-    "timestamp": 1786990490,
-    "isNew": false,
-    "tmdb_id": 967153,
-    "tmdb_type": "movie",
-    "url_website": "https://www.arte.tv/de/videos/019497-000-A/nackt-unter-woelfen/"
-  },
-  {
     "title": "Nahschuss",
     "search": "Nahschuss",
     "year": "2021",
@@ -25988,7 +26069,7 @@
     ],
     "channel": "ARD",
     "timestamp": 1793793300,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 330597,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyNS0wNy0yMV8xNC0wMy1NRVNa"
@@ -26195,7 +26276,7 @@
       "Drama"
     ],
     "channel": "ZDF",
-    "timestamp": 1794502933,
+    "timestamp": 1794720656,
     "isNew": true,
     "tmdb_id": 1447875,
     "tmdb_type": "movie",
@@ -27773,8 +27854,8 @@
     "search": "Rogue Agent - Er liebt nur dich",
     "original_title": "Rogue Agent - Er liebt nur dich",
     "year": "None",
-    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/25/08/250818_2215_sendung_spf/1/250818_2215_sendung_spf_a1a2_3360k_p36v17.mp4",
-    "url_website": "https://www.zdf.de/video/filme/rogue-agent---er-liebt-nur-dich-movie-100/rogue-agent---er-liebt-nur-dich-100",
+    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/25/08/250818_2215_sendung_spf/1/250818_2215_sendung_spf_a3a4_3360k_p36v17.mp4",
+    "url_website": "https://www.zdf.de/filme/rogue-agent---er-liebt-nur-dich-movie-100",
     "plot": "Die Londoner Rechtsanwältin Alice hat sich in Robert verliebt, doch etwas stimmt nicht mit ihm. Angesprochen auf seine Geheimniskrämerei, gibt er sich ihr als Geheimagent zu erkennen.",
     "mediathek_desc": "Die Londoner Rechtsanwältin Alice hat sich in Robert verliebt, doch etwas stimmt nicht mit ihm. Angesprochen auf seine Geheimniskrämerei, gibt er sich ihr als Geheimagent zu erkennen.",
     "director": "",
@@ -27785,8 +27866,8 @@
       "Sonstige"
     ],
     "channel": "ZDF",
-    "timestamp": 1755548400,
-    "isNew": false
+    "timestamp": 1794262287,
+    "isNew": true
   },
   {
     "title": "Ronja, die Räubertochter",
@@ -29990,7 +30071,7 @@
     "title": "Sterben",
     "search": "Sterben",
     "year": "2023",
-    "video_url": "https://nrodlzdf-a.akamaihd.net/dach/3sat/26/10/261007_kinofilm_sterben/1/261007_kinofilm_sterben_a1a2_3360k_p36v17.mp4",
+    "video_url": "https://nrodlzdf-a.akamaihd.net/none/zdf/25/05/250505_2015_sendung_fdw/1/250505_2015_sendung_fdw_a1a2_3360k_p36v17.mp4",
     "plot": "Nachdem Arthur versucht hat, sich das Leben zu nehmen, beginnt in der Freundesgruppe eine Zeit voller unange- nehmer Gespräche und stiller Momente. Doch als wäre das nicht genug, müssen sie auch noch ein Riesenkaninchen unter die Erden bringen.",
     "mediathek_desc": "Familie Lunies ist schon lange keine Familie mehr. Erst als der Tod, der alte Bastard, auftaucht, begegnen sie sich wieder.",
     "director": "Pauline Schläger",
@@ -30005,11 +30086,11 @@
       "Komödie"
     ],
     "channel": "3Sat",
-    "timestamp": 1791405000,
-    "isNew": false,
+    "timestamp": 1794750016,
+    "isNew": true,
     "tmdb_id": 1121839,
     "tmdb_type": "movie",
-    "url_website": "https://www.3sat.de/film/spielfilm/sterben-104.html"
+    "url_website": "https://www.zdf.de/filme/sterben-fuer-beginner-movie-100"
   },
   {
     "title": "Sterben ist auch keine Lösung",
@@ -32632,7 +32713,7 @@
     ],
     "channel": "ZDF",
     "timestamp": 1793878288,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 1275128,
     "tmdb_type": "movie",
     "url_website": "https://www.zdf.de/filme/unsichtbarer-angreifer-movie-100"
@@ -33504,26 +33585,6 @@
     "tmdb_id": 23487,
     "tmdb_type": "movie",
     "url_website": "https://www.3sat.de/film/spielfilm/verso---die-dunkle-seite-100.html"
-  },
-  {
-    "title": "Vertical Limit - In größter Gefahr",
-    "search": "Vertical Limit - In größter Gefahr",
-    "original_title": "Vertical Limit - In größter Gefahr",
-    "year": "None",
-    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/25/06/250621_sony_2015_sendung_spf/1/250621_sony_2015_sendung_spf_3360k_p36v17.mp4",
-    "url_website": "https://www.zdf.de/video/filme/vertical-limit---in-groesster-gefahr-movie-100/vertical-limit---in-groesster-gefahr-100",
-    "plot": "Annie, routinierte Bergsteigerin, stürzt auf dem K2 mit ihren Begleitern in eine Gletscherspalte. In über 8000 Metern Höhe gefangen, können sie ohne Hilfe nur 36 Stunden überleben.",
-    "mediathek_desc": "Annie, routinierte Bergsteigerin, stürzt auf dem K2 mit ihren Begleitern in eine Gletscherspalte. In über 8000 Metern Höhe gefangen, können sie ohne Hilfe nur 36 Stunden überleben.",
-    "director": "",
-    "actors": [],
-    "rating": "N/A",
-    "thumb": "placeholder.png",
-    "genres_list": [
-      "Sonstige"
-    ],
-    "channel": "ZDFneo",
-    "timestamp": 1643483700,
-    "isNew": false
   },
   {
     "title": "Viele Kühe und ein schwarzes Schaf",
@@ -34456,7 +34517,7 @@
     ],
     "channel": "ARD",
     "timestamp": 1793839500,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 423612,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2FyZC5kZS9wbGFuQVJEXzlmMThiOWM4LWRhOGEtNDUwMy1iYjNhLTZkMDc4MTBhOWU4ZV9nYW56ZVNlbmR1bmc"
@@ -34911,7 +34972,7 @@
     "title": "Wind River - Tod im Schnee",
     "search": "Wind River - Tod im Schnee",
     "year": "2016",
-    "video_url": "https://rodlzdf-a.akamaihd.net/dach/3sat/23/08/230827_wind_river_tod_im_schnee_spielfilm/1/230827_wind_river_tod_im_schnee_spielfilm_2360k_p35v17.mp4",
+    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/19/12/191230_2215_sendung_spf/1/191230_2215_sendung_spf_3360k_p36v17.mp4",
     "plot": "Cory Lambert arbeitet für den United States Fish and Wildlife Service und macht vor allem Jagd auf Kojoten und andere Raubtiere im Indianer-Reservat Wind River. Den kürzlichen Tod seiner Teenager-Tochter hat er noch nicht überwunden, da stolpert er in der Wildnis über die Leiche einer vergewaltigten und erfrorenen Jugendlichen. Um den Täter zu fassen, wird die noch sehr junge FBI-Agentin Jane Banner auf den Fall angesetzt. Weil sie sich in dem rauen Gelände und mit den schwierigen Wetterverhältnissen vor Ort allerdings nicht auskennt, bittet sie Cory um Hilfe bei ihren Ermittlungen und gemeinsam brechen sie auf ins Ungewisse.",
     "mediathek_desc": "Ein Indianerreservat im tief verschneiten Wyoming: Im Schnee findet der Jäger Cory Lambert die Leiche einer jungen Frau. Sie trägt keine Schuhe. Jane Banner vom FBI ermittelt.",
     "director": "Taylor Sheridan",
@@ -34928,9 +34989,9 @@
       "Thriller"
     ],
     "channel": "3Sat",
-    "timestamp": 1577740500,
+    "timestamp": 1643062500,
     "isNew": false,
-    "url_website": "https://www.3sat.de/film/spielfilm/wind-river---tod-im-schnee-100.html",
+    "url_website": "https://www.zdf.de/video/filme/wind-river---tod-im-schnee-movie-100/wind-river---tod-im-schnee-100",
     "tmdb_id": 395834,
     "tmdb_type": "movie"
   },
@@ -35066,7 +35127,7 @@
     "title": "Winterwalzer",
     "search": "Winterwalzer",
     "year": "2023",
-    "video_url": "https://pd-videos.daserste.de/dach/2023/11/29/d95dae01-906e-4d8a-94fc-4ffeb837c915/JOB_408030_sendeton_1280x720-50p-3200kbit.mp4",
+    "video_url": "https://ctv-videos.daserste.de/dach/2023/11/29/d95dae01-906e-4d8a-94fc-4ffeb837c915/JOB_408030_sendeton_1280x720-50p-3200kbit.mp4",
     "plot": "Nie wieder will Albert den langsamen Walzer tanzen! Der langsame Walzer gehörte seiner Frau Martha und ihm. Albert Gottwald ist Tanzlehrer im Ruhestand und seit drei Jahren Witwer. Seine Frau fehlt ihm so sehr, dass er jeden Lebensmut verloren hat, sich in seiner Doppelhaushälfte vergräbt – und akribisch sein Ableben plant.",
     "mediathek_desc": "Spielfilm Deutschland 2023\r\n\r\nNie wieder will Albert den Langsamen Walzer tanzen! Der Langsame Walzer gehörte seiner Frau Martha und ihm. Albert ist Tanzlehrer im Ruhestand und seit drei Jahren Witwer. Seine Frau fehlt ihm so sehr, dass er jeden Lebensmut verloren hat.\r\n\r\nMit Ulrich Matthes, Nina Kunzendorf, Antonia Bill, Virginia Leithäuser, Petra Kleinert u.a. | Buch: Edda Leesch | Regie: Ingo R\n.....",
     "director": "Ingo Rasper",
@@ -35082,7 +35143,7 @@
       "Drama"
     ],
     "channel": "ARD",
-    "timestamp": 1702062900,
+    "timestamp": 1766326500,
     "isNew": false,
     "tmdb_id": 1088483,
     "tmdb_type": "movie",
