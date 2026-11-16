@@ -3955,17 +3955,25 @@
     "title": "Dark Water - Besuch aus dem Jenseits",
     "search": "Dark Water - Besuch aus dem Jenseits",
     "original_title": "Dark Water - Besuch aus dem Jenseits",
-    "year": "None",
+    "year": "2002",
     "video_url": "https://manifest-arte.akamaized.net/api/manifest/v1/Generate/a1a1e37c-24c3-4eda-b408-7eb688079b56/de/XQ+KS+CHEV1/133122-000-A.m3u8",
     "url_website": "https://www.arte.tv/de/videos/133122-000-A/dark-water/",
     "plot": "Zermürbt von Sorgerechtsstreit und Geldnöten zieht Yoshimi mit ihrer Tochter in ein verwahrlostes Mietshaus am Rande von Tokio. Vom Dach dringt Wasser in die Wohnung. Pfützen breiten sich aus ... Der Geist eines kleinen Mädchens, das ganz in der Nähe ertrunken ist, spukt durch die Wohnung. Und das unglückliche Geistermädchen will Yoshimis ungeteilte Aufmerksamkeit. Sofort!",
     "mediathek_desc": "Zermürbt von Sorgerechtsstreit und Geldnöten zieht Yoshimi mit ihrer Tochter in ein verwahrlostes Mietshaus am Rande von Tokio. Vom Dach dringt Wasser in die Wohnung. Pfützen breiten sich aus ... Der Geist eines kleinen Mädchens, das ganz in der Nähe ertrunken ist, spukt durch die Wohnung. Und das unglückliche Geistermädchen will Yoshimis ungeteilte Aufmerksamkeit. Sofort!",
-    "director": "",
-    "actors": [],
-    "rating": "N/A",
-    "thumb": "placeholder.png",
+    "director": "Hideo Nakata",
+    "actors": [
+      "Fumiyo Kohinata",
+      "Asami Mizukawa",
+      "Mirei Oguchi",
+      "Rio Kanno",
+      "Hitomi Kuroki"
+    ],
+    "rating": "6.8",
+    "thumb": "https://image.tmdb.org/t/p/original/hL21zDyeTphGaK7Bx5E9nxlQ2BD.jpg",
     "genres_list": [
-      "Sonstige"
+      "Horror", 
+      "Mystery", 
+      "Thriller"
     ],
     "channel": "ARTE.DE",
     "timestamp": 1793398101,
@@ -16782,7 +16790,8 @@
     "rating": "5.8",
     "thumb": "https://image.tmdb.org/t/p/w342/uCRLMnSfCXWAnM6LQrqrHPHlqxs.jpg",
     "genres_list": [
-      "Sonstige"
+      "TV-Film",
+      "Drama"
     ],
     "channel": "ZDF",
     "timestamp": 1792553906,
@@ -19453,17 +19462,24 @@
     "title": "In Sachen Sohee",
     "search": "In Sachen Sohee",
     "original_title": "In Sachen Sohee",
-    "year": "None",
+    "year": "2022",
     "video_url": "https://manifest-arte.akamaized.net/api/manifest/v1/Generate/dfb45f7a-faaf-4ea5-8387-6374be133006/de/XQ+KS+CHEV1/120917-000-A.m3u8",
     "url_website": "https://www.arte.tv/de/videos/120917-000-A/in-sachen-sohee/",
     "plot": "Sohee absolviert ein Praktikum in einem Callcenter. Die Zielvorgaben der Vorgesetzten sind unmöglich zu erfüllen. Gleichzeitig sieht sie sich am Telefon sexueller Gewalt ausgesetzt. Als ein Mitarbeiter Suizid begeht, tritt Kommissarin Yoon-jin auf den Plan ... – Das Drama ist eine Anklage gegen ein ausbeuterisches, korruptes System. Mit Bae Doona (\"The Host\", \"Cloud Atlas\")",
     "mediathek_desc": "Sohee absolviert ein Praktikum in einem Callcenter. Die Zielvorgaben der Vorgesetzten sind unmöglich zu erfüllen. Gleichzeitig sieht sie sich am Telefon sexueller Gewalt ausgesetzt. Als ein Mitarbeiter Suizid begeht, tritt Kommissarin Yoon-jin auf den Plan ... – Das Drama ist eine Anklage gegen ein ausbeuterisches, korruptes System. Mit Bae Doona (\"The Host\", \"Cloud Atlas\")",
-    "director": "",
-    "actors": [],
-    "rating": "N/A",
-    "thumb": "placeholder.png",
+    "director": "Jung July",
+    "actors": [
+      "Bae Doona",
+      "Kim Si-eun",
+      "Heo Jung-do",
+      "Park Seo-Kyung",
+      "Park Soo-young"         
+    ],
+    "rating": "7.3",
+    "thumb": "https://image.tmdb.org/t/p/original/xc4AWEfXt1jwUurjli2bYZcBMx2.jpg",
     "genres_list": [
-      "Sonstige"
+      "Drama",
+      "Thriller"
     ],
     "channel": "ARTE.DE",
     "timestamp": 1794263626,
@@ -21676,17 +21692,22 @@
     "title": "Liberace - Zu viel des Guten ist wundervoll",
     "search": "Liberace - Zu viel des Guten ist wundervoll",
     "original_title": "Liberace - Zu viel des Guten ist wundervoll",
-    "year": "None",
+    "year": "2013",
     "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/26/09/260908_0125_sendung_spf/1/260908_0125_sendung_spf_a1a2_3360k_p36v17.mp4",
     "url_website": "https://www.zdf.de/video/filme/liberace--zu-viel-des-guten-ist-wundervoll-movie-100/liberace--zu-viel-des-guten-ist-wundervoll-100",
     "plot": "Als ein junger Mann zufällig einen weltberühmten Entertainer kennenlernt, verändert sich sein Leben komplett. Zwischen den unterschiedlichen Männern entwickelt sich eine Affäre.",
     "mediathek_desc": "Als ein junger Mann zufällig einen weltberühmten Entertainer kennenlernt, verändert sich sein Leben komplett. Zwischen den unterschiedlichen Männern entwickelt sich eine Affäre.",
-    "director": "",
-    "actors": [],
-    "rating": "N/A",
-    "thumb": "placeholder.png",
+    "director": "Steven Soderbergh",
+    "actors": [
+      "Michael Douglas",
+      "Matt Damon",
+      "Scott Bakula"
+    ],
+    "rating": "7.0",
+    "thumb": "https://image.tmdb.org/t/p/original/6hMnehn1hQcpORTQm3GZsDQ9UOx.jpg",
     "genres_list": [
-      "Sonstige"
+      "Drama",
+      "Romanze"
     ],
     "channel": "ZDF",
     "timestamp": 1788827400,
@@ -26786,17 +26807,21 @@
     "title": "Paris wiedersehen",
     "search": "Paris wiedersehen",
     "original_title": "Paris wiedersehen",
-    "year": "None",
+    "year": "2026",
     "video_url": "https://secure-manifest-arte.akamaized.net/api/manifest/v1/Generate/9422d65e-dd83-47d3-9acd-995198f00894/de/XQ+KS+CHEV1/127947-000-A.m3u8",
     "url_website": "https://www.arte.tv/de/videos/127947-000-A/paris-wiedersehen/",
     "plot": "Dolmetscherin Mia flieht bei Regen in ein Restaurant. Dann wird dort ein Anschlag verübt. Mia überlebt, kann sich aber kaum an etwas erinnern. Sie versteht, dass sie die Erinnerung zurückgewinnen muss, um zu heilen ... – Der Film ist dem Bruder der Regisseurin Alice Winocour gewidmet. Jérémie Winocour hat den Terroranschlag auf das Pariser Bataclan am 13. November 2015 überlebt.",
     "mediathek_desc": "Dolmetscherin Mia flieht bei Regen in ein Restaurant. Dann wird dort ein Anschlag verübt. Mia überlebt, kann sich aber kaum an etwas erinnern. Sie versteht, dass sie die Erinnerung zurückgewinnen muss, um zu heilen ... – Der Film ist dem Bruder der Regisseurin Alice Winocour gewidmet. Jérémie Winocour hat den Terroranschlag auf das Pariser Bataclan am 13. November 2015 überlebt.",
     "director": "",
-    "actors": [],
-    "rating": "N/A",
-    "thumb": "placeholder.png",
+    "actors": [
+    "Grégoire Colin",
+    "Benoît Magimel",
+    "Virginie Efira"
+    ],
+    "rating": "7.0",
+    "thumb": "https://image.tmdb.org/t/p/original/zaNVTXH3woUs1LGUEeMMntDs3oM.jpg",
     "genres_list": [
-      "Sonstige"
+      "Drama"
     ],
     "channel": "ARTE.DE",
     "timestamp": 1794251677,
@@ -27853,17 +27878,22 @@
     "title": "Rogue Agent - Er liebt nur dich",
     "search": "Rogue Agent - Er liebt nur dich",
     "original_title": "Rogue Agent - Er liebt nur dich",
-    "year": "None",
+    "year": "2026",
     "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/25/08/250818_2215_sendung_spf/1/250818_2215_sendung_spf_a3a4_3360k_p36v17.mp4",
     "url_website": "https://www.zdf.de/filme/rogue-agent---er-liebt-nur-dich-movie-100",
     "plot": "Die Londoner Rechtsanwältin Alice hat sich in Robert verliebt, doch etwas stimmt nicht mit ihm. Angesprochen auf seine Geheimniskrämerei, gibt er sich ihr als Geheimagent zu erkennen.",
     "mediathek_desc": "Die Londoner Rechtsanwältin Alice hat sich in Robert verliebt, doch etwas stimmt nicht mit ihm. Angesprochen auf seine Geheimniskrämerei, gibt er sich ihr als Geheimagent zu erkennen.",
-    "director": "",
-    "actors": [],
-    "rating": "N/A",
-    "thumb": "placeholder.png",
+    "director": "Adam Patterson",
+    "actors": [
+      "Marisa Abela",
+      "James Norton",
+      "Gemma Arterton"
+    ],
+    "rating": "6.3",
+    "thumb": "https://image.tmdb.org/t/p/original/dSp9I8D698uGcW9EDu6kluN1gNl.jpg",
     "genres_list": [
-      "Sonstige"
+      "Thriller",
+      "Drama"
     ],
     "channel": "ZDF",
     "timestamp": 1794262287,
@@ -28007,20 +28037,24 @@
     "url_website": "https://www.3sat.de/film/spielfilm/roter-himmel-100.html"
   },
   {
-    "title": "Rotzbub - Animationsfilm",
-    "search": "Rotzbub - Animationsfilm",
-    "original_title": "Rotzbub - Animationsfilm",
+    "title": "Rotzbub - Willkommen in Siegheilkirchen",
+    "search": "Rotzbub - Willkommen in Siegheilkirchen",
+    "original_title": "Rotzbub - Willkommen in Siegheilkirchen",
     "year": "2021",
     "video_url": "https://nrodlzdf-a.akamaihd.net/none/3sat/26/10/261025_rotzbub_ad_neu_spielfilm/1/261025_rotzbub_ad_neu_spielfilm_a1a2_3360k_p36v17.mp4",
     "url_website": "https://www.3sat.de/film/spielfilm/rotzbub-106.html",
     "plot": "\"Rotzbub\" erzählt, wie aus einem kaum beachteten Schankbuben ein ganzer Kerl und zudem ein scharfsinniger und legendärer \"Triebzeichner\" und \"satirischer Scharfschütze\" wird.",
     "mediathek_desc": "\"Rotzbub\" erzählt, wie aus einem kaum beachteten Schankbuben ein ganzer Kerl und zudem ein scharfsinniger und legendärer \"Triebzeichner\" und \"satirischer Scharfschütze\" wird.",
-    "director": "",
-    "actors": [],
-    "rating": "N/A",
-    "thumb": "placeholder.png",
+    "director": "Santiago López Jover",
+    "actors": [
+      "Mario Canedo",
+      "Gerti Drassl",
+      "Markus Freistätter"
+    ],
+    "rating": "6.5",
+    "thumb": "https://image.tmdb.org/t/p/original/tqJyMn7iMboUXBsaglgitBfLbmx.jpg",
     "genres_list": [
-      "Sonstige"
+      "Animation"
     ],
     "channel": "3Sat",
     "timestamp": 1792966200,
@@ -31997,7 +32031,7 @@
     "title": "Trautes Heim",
     "search": "Trautes Heim",
     "original_title": "Trautes Heim",
-    "year": "None",
+    "year": "1973",
     "video_url": "https://arteptweb-a.akamaihd.net/am/ptweb/131000/131500/131537-000-A_EQ_0_VOF-STA_11222886_MP4-1500_AMM-PTWEB-40521046236653_24bFLNftwFn.mp4",
     "url_website": "https://www.arte.tv/de/videos/131537-000-A/trautes-heim/",
     "plot": "Ein Mann lädt eine Prostituierte zu sich nachhause ein.",
@@ -32007,10 +32041,11 @@
       "Thomas Arnold",
       "Ines Nieri"
     ],
-    "rating": "N/A",
-    "thumb": "placeholder.png",
+    "rating": "7.0",
+    "thumb": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCgzqp2WcGY51zKlse72EMhoy49oV54uzoLECHV1vIfvBnQvdIvTS6oV0&s",
     "genres_list": [
-      "Sonstige"
+      "Komödie",
+      "Drama"
     ],
     "channel": "ARTE.DE",
     "timestamp": 1780065284,
@@ -34322,17 +34357,26 @@
     "title": "Wenn du nach dem Tod erwachst",
     "search": "Wenn du nach dem Tod erwachst",
     "original_title": "Wenn du nach dem Tod erwachst",
-    "year": "None",
+    "year": "2022",
     "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/25/01/250102_0055_sendung_spf/1/250102_0055_sendung_spf_a1a2_3360k_p36v15.mp4",
     "url_website": "https://www.zdf.de/video/filme/wenn-du-nach-dem-tod-erwachst-movie-100/wenn-du-nach-dem-tod-erwachst-100",
     "plot": "Russ Potter hat zahlreichen Nachbarn schlechte Anlagetipps gegeben, wodurch diese Geld verloren haben. Der Broker gerät ins Abseits der Gemeinschaft und erhält beunruhigende Drohanrufe.",
     "mediathek_desc": "Russ Potter hat zahlreichen Nachbarn schlechte Anlagetipps gegeben, wodurch diese Geld verloren haben. Der Broker gerät ins Abseits der Gemeinschaft und erhält beunruhigende Drohanrufe.",
-    "director": "",
-    "actors": [],
-    "rating": "N/A",
-    "thumb": "placeholder.png",
+    "director": "Michael Mailer",
+    "actors": [
+      "Andrew Stevens",
+      "Darren Mann",
+      "Morgan Freeman",
+      "Jaimie Alexander",
+      "Cole Hauser"
+    ],
+    "rating": "4.5",
+    "thumb": "https://www.zdf.de/assets/teaser-mit-logo-wenn-du-nach-dem-tod-erwachst-100~640x720?cb=1793976579334.jpg",
     "genres_list": [
-      "Sonstige"
+      "Drama", 
+      "Mystery",
+      "Thriller", 
+      "Krimi"
     ],
     "channel": "ZDF",
     "timestamp": 1735775700,
