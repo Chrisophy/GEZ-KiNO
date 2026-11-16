@@ -5,8 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>[GEZ] KiNO</title>
     
+    <script>
+        const MOVIES_JSON_URL = 'https://raw.githubusercontent.com/Chrisophy/GEZ-KiNO/refs/heads/main/movies.json';
+        window.__moviesFetch = fetch(MOVIES_JSON_URL, { cache: 'no-cache' });
+        window.__moviesFetch.catch(() => {});
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@1" defer></script>
 
     <script>
         (function() {
@@ -239,6 +244,33 @@
             visibility: visible;
             opacity: 1;
         }
+
+        html body button.credit-link {
+            background: transparent !important;
+            border: none !important;
+            box-shadow: none !important;
+            backdrop-filter: none !important;
+            -webkit-backdrop-filter: none !important;
+            transform: none !important;
+            padding: 0 !important;
+            transition: color 0.2s ease !important;
+        }
+        html body button.credit-link:hover { text-decoration: underline; }
+        html body button.credit-link:focus-visible {
+            outline: 2px solid #3b82f6 !important;
+            outline-offset: 2px;
+            border-radius: 4px;
+        }
+
+        #movieGrid button {
+            backdrop-filter: none !important;
+            -webkit-backdrop-filter: none !important;
+        }
+
+        .movie-card {
+            content-visibility: auto;
+            contain-intrinsic-size: auto 520px;
+        }
     </style>    
 
     <link rel="manifest" href="manifest.json">
@@ -280,7 +312,7 @@
                 
                 <div class="w-full sm:w-80 md:w-96 flex gap-2">
                     <div class="relative w-full">
-                        <input type="text" id="searchBar" oninput="filterResults()" placeholder="Film | Regie | Schauspieler..." class="bg-gray-900/90 text-white pl-4 pr-10 py-2.5 rounded-2xl w-full focus:outline-none focus:ring-2 focus:ring-blue-500 border border-gray-800 shadow-inner text-xs sm:text-sm transition-all placeholder:text-gray-500">
+                        <input type="text" id="searchBar" oninput="debouncedFilter()" placeholder="Film | Regie | Schauspieler..." class="bg-gray-900/90 text-white pl-4 pr-10 py-2.5 rounded-2xl w-full focus:outline-none focus:ring-2 focus:ring-blue-500 border border-gray-800 shadow-inner text-xs sm:text-sm transition-all placeholder:text-gray-500">
                     </div>
                     <button id="btnThemeToggle" onclick="toggleTheme()" type="button" aria-label="Design-Modus wechseln" title="Tag / Nacht Modus umschalten" class="px-2.5 py-2.0 rounded-2xl bg-gray-900/90 border border-gray-800 text-yellow-400 hover:text-yellow-300 transition-all cursor-pointer flex items-center justify-center shadow-inner flex-shrink-0">
                         <span id="themeToggleIcon" class="text-base sm:text-lg select-none">☀️</span>
@@ -437,7 +469,12 @@
         let liveTvChannels = [];
         let newsArticles = []; 
         let moviesToRender = []; 
-        let favoriteUrls = JSON.parse(localStorage.getItem('gez_kino_favs') || '[]');
+        let favoriteUrls = (() => {
+            try {
+                const v = JSON.parse(localStorage.getItem('gez_kino_favs') || '[]');
+                return Array.isArray(v) ? v : [];
+            } catch (e) { return []; }
+        })();
         let hideTvMovies = localStorage.getItem('gez_kino_hide_tv') === 'true';
         let currentNewsSource = 'ÖRR';
         let currentGenre = 'Alle';
@@ -445,7 +482,43 @@
         let chunkObserver = null;
         let hlsInstance = null;
         let deferredPrompt = null; 
-        const CHUNK_SIZE = 50; 
+        const CHUNK_SIZE = 50;
+        const collator = new Intl.Collator('de');
+        let renderedCount = 0;
+        let searchTimer = null;
+        let backTopVisible = false;
+
+        function esc(value) {
+            return String(value ?? '').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+        }
+
+        function normalizeItems(list, buildSearch) {
+            list.forEach(m => {
+                m.title = m.title ? String(m.title) : 'Ohne Titel';
+                m.plot = m.plot ? String(m.plot) : '';
+                m.channel = m.channel ? String(m.channel) : '';
+                m.year = (m.year === undefined || m.year === null) ? '' : String(m.year);
+                m.video_url = m.video_url ? String(m.video_url) : '';
+                m.director = m.director ? String(m.director) : '';
+                m.actors = Array.isArray(m.actors) ? m.actors : [];
+                m.genres_list = Array.isArray(m.genres_list) ? m.genres_list : ['Sonstige'];
+                m._s = buildSearch(m);
+            });
+            return list;
+        }
+
+        const movieSearch = m => [m.title, m.plot, m.director, m.actors.join('\n')].join('\n').toLowerCase();
+
+        function isTvFilm(m) {
+            if (m._tvFilm === undefined) {
+                const t = m.title.toLowerCase();
+                const d = m.mediathek_desc ? String(m.mediathek_desc).toLowerCase() : '';
+                m._tvFilm = t.includes('tv-film') || t.includes('tv film') ||
+                            d.includes('tv-film') || d.includes('tv film') ||
+                            m.genres_list.some(g => String(g).toLowerCase() === 'tv-film');
+            }
+            return m._tvFilm;
+        } 
 
         function toggleTheme() {
             const html = document.documentElement;
@@ -495,7 +568,8 @@
                 video.currentTime = Math.max(0, video.currentTime + seconds);
                 showHUD(`⏪ ${seconds}s`);
             } else {
-                video.currentTime = Math.min(video.duration || 0, video.currentTime + seconds);
+                const target = video.currentTime + seconds;
+                video.currentTime = isFinite(video.duration) ? Math.min(video.duration, target) : target;
                 showHUD(`⏩ +${seconds}s`);
             }
         }
@@ -536,24 +610,25 @@
             filterResults();
         }
 
-        const MOVIES_JSON_URL = 'https://raw.githubusercontent.com/Chrisophy/GEZ-KiNO/refs/heads/main/movies.json';
-
         async function fetchAllData() {
             document.getElementById('scanner')?.classList.remove('hidden');
             try {
-                const res = await fetch(MOVIES_JSON_URL + '?t=' + Date.now());
+                const res = await (window.__moviesFetch || fetch(MOVIES_JSON_URL, { cache: 'no-cache' }));
                 if (!res.ok) throw new Error("movies.json nicht gefunden");
-                
-                allMovies = await res.json();
+
+                const data = await res.json();
+                allMovies = normalizeItems(data, movieSearch);
+                allMovies.sort((a, b) => collator.compare(a.title, b.title));
                 document.getElementById('scanner')?.classList.add('hidden');
-                
+
                 renderGenreLeiste();
                 filterResults();
                 console.log(`${allMovies.length} Filme erfolgreich von GitHub geladen.`);
             } catch (err) {
                 console.error("Fehler beim Laden der movies.json:", err);
                 document.getElementById('scanner')?.classList.add('hidden');
-                document.getElementById('statusMessage').innerText = "Fehler beim Laden der Filmdaten.";
+                const status = document.getElementById('statusMessage');
+                if (status) status.innerText = "Fehler beim Laden der Filmdaten.";
             }
         }
 
@@ -563,6 +638,7 @@
             
             try {
                 const res = await fetch(IPTV_URL);
+                if (!res.ok) throw new Error("IPTV-Liste nicht erreichbar");
                 const text = await res.text();
                 const lines = text.split(/\r?\n/);
                 let currentChannel = null;
@@ -592,7 +668,8 @@
                         currentChannel = null;
                     }
                 }
-                liveTvChannels.sort((a, b) => a.title.localeCompare(b.title));
+                normalizeItems(liveTvChannels, m => m.title.toLowerCase());
+                liveTvChannels.sort((a, b) => collator.compare(a.title, b.title));
             } catch (err) {
                 console.error("Fehler beim IPTV-Parsing:", err);
             } finally {
@@ -606,6 +683,7 @@
             
             try {
                 const res = await fetch(NEWS_URL);
+                if (!res.ok) throw new Error("News nicht erreichbar");
                 const data = await res.json();
                 
                 newsArticles = data.map((item, index) => {
@@ -629,6 +707,7 @@
                         source: item.source || item.channel || 'ÖRR'
                     };
                 });
+                normalizeItems(newsArticles, m => `${m.title}\n${m.plot}`.toLowerCase());
             } catch (err) {
                 console.error("Fehler beim News-Abruf:", err);
             } finally {
@@ -669,6 +748,7 @@
                 searchBar.placeholder = "Sender suchen...";
                 grid.innerHTML = `<div id="statusMessage" class="text-center col-span-full py-20 text-gray-400 animate-pulse font-medium">Lade Live TV Sender...</div>`;
                 await fetchLiveTvData();
+                if (currentView !== view) return;
                 renderGenreLeiste();
                 filterResults();
             } else if (view === 'news') { 
@@ -676,6 +756,7 @@
                 searchBar.placeholder = "News suchen...";
                 grid.innerHTML = `<div id="statusMessage" class="text-center col-span-full py-20 text-gray-400 animate-pulse font-medium">Lade aktuelle News...</div>`;
                 await fetchNewsData();
+                if (currentView !== view) return;
                 renderGenreLeiste();
                 filterResults();
             }
@@ -684,40 +765,28 @@
         function getGenreCounts() {
             const counts = { "Alle": 0, "Neu hinzugefügt": 0, "Sonstige": 0, "Nach Jahren": 0, "Nach Bewertung": 0, "⭐ Favoriten": 0 };
             Object.values(GENRES_MAP).forEach(g => counts[g] = 0);
-        
+
             let currentSet = allMovies;
             if (currentView === 'livetv') currentSet = liveTvChannels;
             if (currentView === 'news') currentSet = newsArticles;
-        
+
             currentSet.forEach(m => {
-                if (hideTvMovies && currentView === 'mediathek') {
-                    const titleLower = m.title.toLowerCase();
-                    const descLower = m.mediathek_desc ? m.mediathek_desc.toLowerCase() : '';
-                    const genresLower = m.genres_list ? m.genres_list.map(g => g.toLowerCase()) : [];
-        
-                    if (titleLower.includes('tv-film') || titleLower.includes('tv film') || 
-                        descLower.includes('tv-film') || descLower.includes('tv film') || 
-                        genresLower.includes('tv-film')) {
-                        return;
-                    }
-                }                
-        
+                if (hideTvMovies && currentView === 'mediathek' && isTvFilm(m)) return;
+
                 if (currentView === 'news') {
                     const source = (m.source || m.channel || '').trim().toLowerCase();
                     const isBild = source.includes('bild');
-    
+
                     if (currentNewsSource === 'Bild.de' && !isBild) return;
                     if (currentNewsSource === 'ÖRR' && isBild) return;
 
                     counts["Alle"]++;
                     if (favoriteUrls.includes(m.video_url)) counts["⭐ Favoriten"]++;
 
-                    if (m.genres_list && Array.isArray(m.genres_list)) {
-                        m.genres_list.forEach(g => {
-                            if (!counts[g]) counts[g] = 0;
-                            counts[g]++;
-                        });
-                    }
+                    m.genres_list.forEach(g => {
+                        if (!counts[g]) counts[g] = 0;
+                        counts[g]++;
+                    });
                 } else {
                     counts["Alle"]++;
                     if (favoriteUrls.includes(m.video_url)) {
@@ -731,9 +800,9 @@
                             counts["Nach Jahren"]++;
                         }
                         if (m.rating && m.rating !== 'N/A' && parseFloat(m.rating) > 0) {
-                             counts["Nach Bewertung"]++;
+                            counts["Nach Bewertung"]++;
                         }
-                        if (!m.genres_list || m.genres_list.includes('Sonstige')) {
+                        if (m.genres_list.includes('Sonstige')) {
                             counts["Sonstige"]++;
                         } else {
                             m.genres_list.forEach(g => { if (g in counts) counts[g]++; });
@@ -852,6 +921,7 @@
             
             genreButtons.forEach(btn => {
                 const g = btn.getAttribute('data-genre');
+                if (g === 'TV-Filme-Umschalter' || g === 'News-Quelle-Umschalter') return;
                 const isActive = currentGenre === g || (g === 'Nach Jahren' && currentGenre.startsWith('Jahr: ')) || (g === 'Nach Bewertung' && currentGenre.startsWith('Rating: '));
                 const labelSpan = btn.querySelector('span');
         
@@ -873,6 +943,16 @@
                         if (g === 'Nach Bewertung') labelSpan.innerText = 'Nach Bewertung';
                     }
                 }
+            });
+        }
+
+        function updateGenreCounts() {
+            const counts = getGenreCounts();
+            document.querySelectorAll('#genreLeiste button[data-genre]').forEach(btn => {
+                const span = btn.querySelector('.genre-count');
+                if (!span) return;
+                const g = btn.getAttribute('data-genre');
+                span.innerText = `(${counts[g] !== undefined ? counts[g] : 0})`;
             });
         }
 
@@ -1046,118 +1126,107 @@
         }
 
         function generateCreditsHtml(director, actors) {
-            if (!director && (!actors || actors.length === 0)) return '';
-            
+            actors = Array.isArray(actors) ? actors : [];
+            if (!director && actors.length === 0) return '';
+
+            const link = (name) => `<button type="button" tabindex="0" data-person="${esc(name)}" class="credit-link text-blue-400 cursor-pointer text-left focus:outline-none font-medium">${esc(name)}</button>`;
+
             let html = '<div class="space-y-0.5 font-normal text-gray-300">';
             if (director) {
-                html += `<div><span class="text-gray-500 font-semibold">Regie:</span> <button tabindex="0" onclick="searchPerson('${director.replace(/'/g, "\\'")}')" class="text-blue-400 hover:underline cursor-pointer text-left focus:outline-none font-medium">${director}</button></div>`;
+                html += `<div><span class="text-gray-500 font-semibold">Regie:</span> ${link(director)}</div>`;
             }
-            if (actors && actors.length > 0) {
-                const actorsLinks = actors.map(a => `<button tabindex="0" onclick="searchPerson('${a.replace(/'/g, "\\'")}')" class="text-blue-400 hover:underline cursor-pointer text-left focus:outline-none font-medium">${a}</button>`).join(', ');
-                html += `<div><span class="text-gray-500 font-semibold">Besetzung:</span> ${actorsLinks}</div>`;
+            if (actors.length > 0) {
+                html += `<div><span class="text-gray-500 font-semibold">Besetzung:</span> ${actors.map(link).join(', ')}</div>`;
             }
             html += '</div>';
             return html;
         }
 
+        function debouncedFilter() {
+            clearTimeout(searchTimer);
+            searchTimer = setTimeout(filterResults, 200);
+        }
+
         function filterResults() {
+            clearTimeout(searchTimer);
             const query = document.getElementById('searchBar').value.toLowerCase().trim();
+
             let currentSet = allMovies;
-            
             if (currentView === 'livetv') currentSet = liveTvChannels;
             if (currentView === 'news') currentSet = newsArticles;
-            
+
+            const isMedia = currentView === 'mediathek';
+            const isNewsView = currentView === 'news';
+            const wantBild = currentNewsSource === 'Bild.de';
+            const targetGenre = currentGenre.trim().toLowerCase();
+            const isRating = currentGenre.startsWith('Rating: ');
+            const yearFilter = currentGenre.startsWith('Jahr: ') ? currentGenre.replace('Jahr: ', '') : null;
+            let ratingMin = 0, ratingMax = 10;
+            if (isRating) {
+                const range = currentGenre.replace('Rating: ', '').split('-');
+                ratingMin = parseFloat(range[0]);
+                ratingMax = parseFloat(range[1]);
+            }
+
             moviesToRender = currentSet.filter(m => {
-                if (hideTvMovies && currentView === 'mediathek') {
-                    const titleLower = m.title.toLowerCase();
-                    const descLower = m.mediathek_desc ? m.mediathek_desc.toLowerCase() : '';
-                    const genresLower = m.genres_list ? m.genres_list.map(g => g.toLowerCase()) : [];
-        
-                    if (titleLower.includes('tv-film') || titleLower.includes('tv film') || 
-                        descLower.includes('tv-film') || descLower.includes('tv film') || 
-                        genresLower.includes('tv-film')) {
-                        return false;
-                    }
-                }
-        
-                if (currentView === 'news') {
-                    const itemSource = (m.source || m.channel || '').trim();
-    
-                    if (currentNewsSource === 'Bild.de') {
-                        if (!itemSource.toLowerCase().includes('bild')) return false;
-                    } else {
-                        if (itemSource.toLowerCase().includes('bild')) return false;
-                    }
+                if (hideTvMovies && isMedia && isTvFilm(m)) return false;
+
+                if (isNewsView) {
+                    const isBild = (m.source || m.channel || '').toLowerCase().includes('bild');
+                    if (wantBild !== isBild) return false;
 
                     if (currentGenre !== 'Alle' && currentGenre !== '⭐ Favoriten') {
-                        if (!m.genres_list || !Array.isArray(m.genres_list)) return false;
-        
-                        const targetGenre = currentGenre.trim().toLowerCase();
-                        const hasGenre = m.genres_list.some(g => g.trim().toLowerCase() === targetGenre);
-        
-                        if (!hasGenre) return false;
+                        if (!m.genres_list.some(g => String(g).trim().toLowerCase() === targetGenre)) return false;
                     }
                 }
-        
-                let matchQuery = true;
-                if (query) {
-                    const matchesTitle = m.title.toLowerCase().includes(query);
-                    const matchesPlot = m.plot.toLowerCase().includes(query);
-                    const matchesDirector = m.director ? m.director.toLowerCase().includes(query) : false;
-                    const matchesActors = m.actors ? m.actors.some(a => a.toLowerCase().includes(query)) : false;
-                    matchQuery = matchesTitle || matchesPlot || matchesDirector || matchesActors;
-                }
-                if (!matchQuery) return false;
-        
+
+                if (query && !m._s.includes(query)) return false;
+
                 if (currentGenre === 'Alle') return true;
-                
-                if (currentGenre.startsWith('Rating: ')) {
-                    const range = currentGenre.replace('Rating: ', '').split('-');
-                    const min = parseFloat(range[0]);
-                    const max = parseFloat(range[1]);
+
+                if (isRating) {
                     const rat = parseFloat(m.rating);
-                    return !isNaN(rat) && rat >= min && rat <= max;
+                    return !isNaN(rat) && rat >= ratingMin && rat <= ratingMax;
                 }
-                
+
                 if (currentGenre === '⭐ Favoriten') return favoriteUrls.includes(m.video_url);
-                if (currentGenre === 'Neu hinzugefügt') return m.isNew;
-                
-                if (currentView === 'mediathek') {
-                    if (currentGenre === 'Sonstige') return !m.genres_list || m.genres_list.includes('Sonstige');
-                    if (currentGenre.startsWith('Jahr: ')) {
-                        return m.year === currentGenre.replace('Jahr: ', '');
-                    }
-                    return m.genres_list && m.genres_list.includes(currentGenre);
+                if (currentGenre === 'Neu hinzugefügt') return !!m.isNew;
+
+                if (isMedia) {
+                    if (currentGenre === 'Sonstige') return m.genres_list.includes('Sonstige');
+                    if (yearFilter !== null) return m.year === yearFilter;
+                    return m.genres_list.includes(currentGenre);
                 }
-        
+
                 return true;
             });
-        
+
             if (currentGenre === 'Neu hinzugefügt') {
-                moviesToRender.sort((a, b) => a.timestamp - b.timestamp);
-            } else if (currentGenre.startsWith('Rating: ') || currentGenre.startsWith('Jahr: ')) {
+                moviesToRender.sort((a, b) => (b.timestamp || 0) - (a.timestamp || 0));
+            } else if (isRating || yearFilter !== null) {
                 moviesToRender.sort((a, b) => (parseFloat(b.rating) || 0) - (parseFloat(a.rating) || 0));
-            } else if (currentView === 'mediathek') {
-                moviesToRender.sort((a, b) => a.title.localeCompare(b.title));
             }
-        
+
             const grid = document.getElementById('movieGrid');
             grid.innerHTML = '';
-        
+            renderedCount = 0;
+
             if (moviesToRender.length === 0) {
                 grid.innerHTML = `<div class="text-center col-span-full py-20 text-gray-500 font-medium">Keine Inhalte für diese Auswahl vorhanden.</div>`;
                 return;
             }
-        
+
             renderNextChunk(0);
             setupInfiniteScroll();
         }
 
         function togglePlot(element) {
-            element.classList.toggle('line-clamp-3');
-            const inlineCredits = element.nextElementSibling;
-            if(inlineCredits && inlineCredits.classList.contains('movie-credits-box')) {
-                inlineCredits.classList.toggle('hidden');
+            const collapsed = element.classList.toggle('line-clamp-2');
+            element.setAttribute('aria-expanded', String(!collapsed));
+
+            const credits = element.nextElementSibling;
+            if (credits && credits.classList.contains('movie-credits-box')) {
+                credits.classList.toggle('hidden', collapsed);
             }
         }
 
@@ -1178,179 +1247,192 @@
             });
         }
 
+        function buildCardHtml(m, i) {
+            const isTv = currentView === 'livetv';
+            const isNews = currentView === 'news';
+            const isFav = favoriteUrls.includes(m.video_url);
+            const isDirectVideo = /\.(mp4|m3u8|mkv|avi)(\?.*)?$/i.test(m.video_url);
+            const opensArticle = isNews && !isDirectVideo;
+
+            let badgeClass = "text-yellow-400 border-yellow-500/30";
+            let badgeText = `★ ${esc(m.rating)}`;
+            if (isTv) { badgeClass = "text-red-400 border-red-500/30"; badgeText = "🔴 LIVE"; }
+            if (isNews) { badgeClass = "text-blue-400 border-blue-500/30"; badgeText = esc(m.source || m.channel || "News"); }
+
+            const plotAction = isNews ? 'news' : 'plot';
+            const plotAria = isNews ? '' : ' aria-expanded="false"';
+            const plotTitleHint = isNews ? 'Klicken, um den ganzen Artikel zu lesen' : 'Klicken, um die Beschreibung & Credits zu erweitern';
+
+            let creditsHtml = '';
+            if (!isTv && !isNews && (m.director || m.actors.length > 0)) {
+                creditsHtml = `<div class="movie-credits-box hidden text-[10px] text-gray-400 bg-gray-950/80 p-2 rounded-xl mt-2 border border-gray-800/60 font-medium">${generateCreditsHtml(m.director, m.actors)}</div>`;
+            }
+
+            const downloadBtnHtml = (!isTv && !isNews && m.video_url) ? `
+                <div class="dl-tooltip-wrapper">
+                    <span class="dl-tooltip-text">Zum Speichern: Lange drücken oder Rechtsklick & 'Link herunterladen'</span>
+                    <a href="${esc(m.video_url)}" target="_blank" rel="noopener noreferrer" data-action="dl"
+                       class="bg-gray-800 hover:bg-gray-700 text-gray-300 hover:text-white font-bold p-2 rounded-xl transition-all text-xs flex items-center justify-center border border-gray-700 active:scale-95">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                        </svg>
+                    </a>
+                </div>` : '';
+
+            const favClass = isFav ? 'text-yellow-400 hover:text-gray-400' : 'text-gray-400 hover:text-yellow-400';
+            const imgAttrs = `src="${esc(m.thumb)}" alt="" loading="lazy" decoding="async" onerror="if(!this.src.includes('placeholder.png'))this.src='placeholder.png';"`;
+
+            let imageContainerHtml;
+            if (isNews) {
+                imageContainerHtml = `
+                    <div class="relative aspect-video w-full bg-gray-950 overflow-hidden flex items-center justify-center">
+                        <button type="button" tabindex="0" data-action="fav" aria-label="Favorit"
+                                class="fav-btn absolute top-1.5 left-1.5 bg-black/75 px-1.5 py-0.5 text-[10px] font-bold rounded-md transition-colors cursor-pointer ${favClass} z-10 border border-white/10">${isFav ? '★' : '☆'}</button>
+                        <img ${imgAttrs} class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out">
+                        <span class="absolute top-1.5 right-1.5 bg-black/75 px-2 py-0.5 text-[9px] font-bold ${badgeClass} rounded-md border">${badgeText}</span>
+                    </div>`;
+            } else {
+                imageContainerHtml = `
+                    <div class="relative ${isTv ? 'aspect-[4/3]' : 'aspect-[2/3]'} w-full bg-gray-950 overflow-hidden flex items-center justify-center p-2">
+                        <button type="button" tabindex="0" data-action="fav" aria-label="Favorit"
+                                class="fav-btn absolute top-2 left-2 bg-black/75 px-2 py-0.5 text-xs font-bold rounded-lg transition-colors cursor-pointer ${favClass} z-10 border border-white/10">${isFav ? '★' : '☆'}</button>
+                        <img ${imgAttrs} class="${isTv ? 'max-w-full max-h-full object-contain' : 'w-full h-full object-cover'} group-hover:scale-105 transition-transform duration-500 ease-out">
+                        <span class="absolute top-2 right-2 bg-black/75 px-2 py-0.5 text-[10px] font-bold ${badgeClass} rounded-lg border">${badgeText}</span>
+                    </div>`;
+            }
+
+            const genresHtml = m.genres_list.map(g => `<span class="bg-gray-800/80 text-gray-300 text-[9px] px-1.5 py-0.5 rounded-md font-medium border border-gray-700/40">${esc(g)}</span>`).join('');
+
+            return `
+            <div data-i="${i}" class="movie-card bg-gray-900/90 rounded-2xl overflow-hidden shadow-lg border border-gray-800/80 flex flex-col justify-between hover:border-blue-500/80 hover:shadow-blue-500/10 transition-all duration-300 group h-full">
+                ${imageContainerHtml}
+                <div class="p-2.5 sm:p-3 flex-1 flex flex-col justify-between">
+                    <div>
+                        <h3 class="font-bold text-xs sm:text-sm text-gray-100 line-clamp-2 mb-1 group-hover:text-blue-400 transition-colors" title="${esc(m.title)}">${esc(m.title)}</h3>
+                        <p class="text-gray-400 text-[10px] sm:text-[11px] mb-1.5 font-medium flex items-center gap-1.5">
+                            <span class="text-blue-400 font-semibold">${esc(m.channel)}</span>
+                            <span class="text-gray-600">·</span>
+                            <span>${esc(m.year)}</span>
+                        </p>
+                        <p tabindex="0" data-action="${plotAction}"${plotAria}
+                           class="text-gray-300 text-[11px] sm:text-xs line-clamp-2 mb-2 font-normal cursor-pointer hover:text-white transition-colors leading-relaxed"
+                           title="${plotTitleHint}">${esc(m.plot || 'Keine Beschreibung verfügbar.')}</p>
+                        ${creditsHtml}
+                    </div>
+                    <div class="space-y-2 mt-auto pt-1">
+                        <div class="flex flex-wrap gap-1">${genresHtml}</div>
+                        <div class="flex gap-1.5">
+                            <button type="button" tabindex="0" data-action="${opensArticle ? 'news' : 'play'}"
+                                    class="flex-1 bg-blue-600 hover:bg-blue-500 text-white font-bold py-1.5 px-2.5 rounded-xl transition-all text-[11px] tracking-wider cursor-pointer shadow-md active-glow">${opensArticle ? 'LESEN' : 'ABSPIELEN'}</button>
+                            ${downloadBtnHtml}
+                        </div>
+                    </div>
+                </div>
+            </div>`;
+        }
+
         function renderNextChunk(startIndex) {
             const grid = document.getElementById('movieGrid');
             const oldSentinel = document.getElementById('scrollSentinel');
-            if (oldSentinel) oldSentinel.remove();
+            if (oldSentinel) {
+                if (chunkObserver) chunkObserver.unobserve(oldSentinel);
+                oldSentinel.remove();
+            }
 
             const endIndex = Math.min(startIndex + CHUNK_SIZE, moviesToRender.length);
-            const chunk = moviesToRender.slice(startIndex, endIndex);
-            const fragment = document.createDocumentFragment();
-
-            chunk.forEach(m => {
-                const card = document.createElement('div');
-                const uniqueCardId = m.id || btoa(encodeURIComponent(m.video_url)).replace(/=/g, '');
-                card.id = `movie-${uniqueCardId}`;
-                card.className = "bg-gray-900/90 rounded-2xl overflow-hidden shadow-lg border border-gray-800/80 flex flex-col justify-between hover:border-blue-500/80 hover:shadow-blue-500/10 transition-all duration-300 group h-full";
-                
-                const escapedTitle = m.title.replace(/'/g, "\\'").replace(/"/g, '&quot;');
-                const isTv = currentView === 'livetv';
-                const isNews = currentView === 'news'; 
-                const isFav = favoriteUrls.includes(m.video_url);
-                const isDirectVideo = m.video_url.match(/\.(mp4|m3u8|mkv|avi)(\?.*)?$/i);
-                
-                const clickAction = (isNews && !isDirectVideo) 
-                    ? `openNewsModal('${m.id}')` 
-                    : `openPlayer('${m.video_url}', '${escapedTitle}')`;
-                const buttonText = (isNews && !isDirectVideo) ? 'LESEN' : 'ABSPIELEN';
-
-                let badgeClass = "text-yellow-400 border-yellow-500/30";
-                let badgeText = `★ ${m.rating}`;
-                if (isTv) { badgeClass = "text-red-400 border-red-500/30"; badgeText = "🔴 LIVE"; }
-                if (isNews) { badgeClass = "text-blue-400 border-blue-500/30"; badgeText = m.source || m.channel || "News"; }
-
-                const plotClickAction = isNews ? `openNewsModal('${m.id}')` : 'togglePlot(this)';
-                const plotTitleHint = isNews ? 'Klicken, um den ganzen Artikel zu lesen' : 'Klicken, um die Beschreibung & Credits zu erweitern';
-
-                let creditsHtml = '';
-                if (!isTv && !isNews && (m.director || (m.actors && m.actors.length > 0))) {
-                    creditsHtml = `
-                        <div class="movie-credits-box hidden text-[10px] text-gray-400 bg-gray-950/80 p-2 rounded-xl mt-2 border border-gray-800/60 font-medium">
-                            ${generateCreditsHtml(m.director, m.actors)}
-                        </div>
-                    `;
-                }
-
-                const downloadBtnHtml = (!isTv && !isNews && m.video_url) ? `
-                    <div class="dl-tooltip-wrapper">
-                        <span class="dl-tooltip-text">Zum Speichern: Lange drücken oder Rechtsklick & 'Link herunterladen'</span>
-                        <a href="${m.video_url}" target="_blank" rel="noopener noreferrer" 
-                           onclick="toggleTooltip(this, event);" 
-                           class="bg-gray-800 hover:bg-gray-700 text-gray-300 hover:text-white font-bold p-2 rounded-xl transition-all text-xs flex items-center justify-center border border-gray-700 active:scale-95">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-                            </svg>
-                        </a>
-                    </div>
-                ` : '';
-
-                let imageContainerHtml = '';
-                if (isNews) {
-                    imageContainerHtml = `
-                        <div class="relative aspect-video w-full bg-gray-950 overflow-hidden flex items-center justify-center">
-                            <button tabindex="0" onclick="toggleFavorite('${m.video_url}', '${uniqueCardId}', event)" 
-                                    class="fav-btn absolute top-1.5 left-1.5 bg-black/70 backdrop-blur-md px-1.5 py-0.5 text-[10px] font-bold rounded-md transition-colors cursor-pointer ${isFav ? 'text-yellow-400 hover:text-gray-400' : 'text-gray-400 hover:text-yellow-400'} z-10 border border-white/10">
-                                ${isFav ? '★' : '☆'}
-                            </button>
-                            <img src="${m.thumb}" alt="" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out"                                  
-                                 onerror="if(!this.src.includes('placeholder.png'))this.src='placeholder.png';">
-                            <span class="absolute top-1.5 right-1.5 bg-black/70 backdrop-blur-md px-2 py-0.5 text-[9px] font-bold ${badgeClass} rounded-md border">
-                                ${badgeText}
-                            </span>
-                        </div>
-                    `;
-                } else {
-                    imageContainerHtml = `
-                        <div class="relative ${isTv ? 'aspect-[4/3]' : 'aspect-[2/3]'} w-full bg-gray-950 overflow-hidden flex items-center justify-center p-2">
-                            <button tabindex="0" onclick="toggleFavorite('${m.video_url}', '${uniqueCardId}', event)" 
-                                    class="fav-btn absolute top-2 left-2 bg-black/70 backdrop-blur-md px-2 py-0.5 text-xs font-bold rounded-lg transition-colors cursor-pointer ${isFav ? 'text-yellow-400 hover:text-gray-400' : 'text-gray-400 hover:text-yellow-400'} z-10 border border-white/10">
-                                ${isFav ? '★' : '☆'}
-                            </button>
-                            <img src="${m.thumb}" alt="" class="${isTv ? 'max-w-full max-h-full object-contain' : 'w-full h-full object-cover'} group-hover:scale-105 transition-transform duration-500 ease-out"                                  
-                                 onerror="if(!this.src.includes('placeholder.png'))this.src='placeholder.png';">
-                            <span class="absolute top-2 right-2 bg-black/70 backdrop-blur-md px-2 py-0.5 text-[10px] font-bold ${badgeClass} rounded-lg border">
-                                ${badgeText}
-                            </span>
-                        </div>
-                    `;
-                }
-                
-                card.innerHTML = `
-                    ${imageContainerHtml}
-                    <div class="p-2.5 sm:p-3 flex-1 flex flex-col justify-between">
-                        <div>
-                            <h3 class="font-bold text-xs sm:text-sm text-gray-100 line-clamp-2 mb-1 group-hover:text-blue-400 transition-colors" title="${m.title}">${m.title}</h3>
-                            <p class="text-gray-400 text-[10px] sm:text-[11px] mb-1.5 font-medium flex items-center gap-1.5">
-                                <span class="text-blue-400 font-semibold">${m.channel}</span>
-                                <span class="text-gray-600">·</span>
-                                <span>${m.year}</span>
-                            </p>
-                            <p tabindex="0" onclick="${plotClickAction}" 
-                               class="text-gray-300 text-[11px] sm:text-xs line-clamp-2 mb-2 font-normal cursor-pointer hover:text-white transition-colors leading-relaxed" 
-                               title="${plotTitleHint}">
-                               ${m.plot}
-                            </p>
-                            ${creditsHtml}
-                        </div>
-                        <div class="space-y-2 mt-auto pt-1">
-                            <div class="flex flex-wrap gap-1">
-                                ${m.genres_list.map(g => `<span class="bg-gray-800/80 text-gray-300 text-[9px] px-1.5 py-0.5 rounded-md font-medium border border-gray-700/40">${g}</span>`).join('')}
-                            </div>
-                            <div class="flex gap-1.5">
-                                <button tabindex="0" onclick="${clickAction}" 
-                                        class="flex-1 bg-blue-600 hover:bg-blue-500 text-white font-bold py-1.5 px-2.5 rounded-xl transition-all text-[11px] tracking-wider cursor-pointer shadow-md active-glow">
-                                    ${buttonText}
-                                </button>
-                                ${downloadBtnHtml}
-                            </div>
-                        </div>
-                    </div>
-                `;
-                fragment.appendChild(card);
-            });
-
-            grid.appendChild(fragment);
+            let html = '';
+            for (let i = startIndex; i < endIndex; i++) {
+                html += buildCardHtml(moviesToRender[i], i);
+            }
+            grid.insertAdjacentHTML('beforeend', html);
+            renderedCount = endIndex;
 
             if (endIndex < moviesToRender.length) {
                 const sentinel = document.createElement('div');
                 sentinel.id = 'scrollSentinel';
                 sentinel.className = 'w-full h-12 col-span-full flex justify-center items-center';
                 grid.appendChild(sentinel);
-                
+
                 if (chunkObserver) chunkObserver.observe(sentinel);
             }
         }
 
         function setupInfiniteScroll() {
-            if (chunkObserver) chunkObserver.disconnect();
-
-            chunkObserver = new IntersectionObserver((entries) => {
-                if (entries[0].isIntersecting) {
-                    const currentCount = document.querySelectorAll('#movieGrid > div:not(#scrollSentinel)').length;
-                    if (currentCount < moviesToRender.length) {
-                        renderNextChunk(currentCount);
+            if (!chunkObserver) {
+                chunkObserver = new IntersectionObserver((entries) => {
+                    if (entries.some(e => e.isIntersecting) && renderedCount < moviesToRender.length) {
+                        renderNextChunk(renderedCount);
                     }
-                }
-            }, { rootMargin: '400px' });
+                }, { rootMargin: '800px' });
+            }
+            chunkObserver.disconnect();
 
             const sentinel = document.getElementById('scrollSentinel');
             if (sentinel) chunkObserver.observe(sentinel);
         }
 
-        function toggleFavorite(url, cardId, event) {
+        function handleGridClick(e) {
+            const personEl = e.target.closest('[data-person]');
+            if (personEl) {
+                searchPerson(personEl.dataset.person);
+                return;
+            }
+
+            const el = e.target.closest('[data-action]');
+            if (!el) return;
+            const card = el.closest('[data-i]');
+            const m = card ? moviesToRender[Number(card.dataset.i)] : null;
+            if (!m) return;
+
+            switch (el.dataset.action) {
+                case 'play': openPlayer(m.video_url, m.title); break;
+                case 'news': openNewsModal(m.id); break;
+                case 'plot': togglePlot(el); break;
+                case 'fav':  toggleFavorite(m.video_url, card, e); break;
+                case 'dl':   toggleTooltip(el, e); break;
+            }
+        }
+
+        function handleGridKey(e) {
+            if (e.key !== 'Enter' && e.key !== ' ') return;
+            const el = e.target.closest('p[data-action]');
+            if (el) {
+                e.preventDefault();
+                el.click();
+            }
+        }
+
+        function toggleFavorite(url, card, event) {
             if (event) event.stopPropagation();
             const index = favoriteUrls.indexOf(url);
-            
-            if (index > -1) {
-                favoriteUrls.splice(index, 1);
-            } else {
+            const isFav = index === -1;
+
+            if (isFav) {
                 favoriteUrls.push(url);
+            } else {
+                favoriteUrls.splice(index, 1);
             }
-            
-            localStorage.setItem('gez_kino_favs', JSON.stringify(favoriteUrls));
-            
-            const card = document.getElementById(`movie-${cardId}`);
-            if (card) {
-                const btn = card.querySelector('.fav-btn');
-                const isFav = favoriteUrls.includes(url);
-                if (btn) {
-                    btn.innerText = isFav ? '★' : '☆';
-                    btn.className = `fav-btn absolute top-1.5 left-1.5 bg-black/70 backdrop-blur-md px-1.5 py-0.5 text-[10px] font-bold rounded-md transition-colors cursor-pointer ${isFav ? 'text-yellow-400 hover:text-gray-400' : 'text-gray-400 hover:text-yellow-400'} z-10 border border-white/10`;
+
+            try { localStorage.setItem('gez_kino_favs', JSON.stringify(favoriteUrls)); } catch (e) {}
+
+            const btn = card ? card.querySelector('.fav-btn') : null;
+            if (btn) {
+                btn.textContent = isFav ? '★' : '☆';
+                btn.classList.toggle('text-yellow-400', isFav);
+                btn.classList.toggle('hover:text-gray-400', isFav);
+                btn.classList.toggle('text-gray-400', !isFav);
+                btn.classList.toggle('hover:text-yellow-400', !isFav);
+            }
+
+            updateGenreCounts();
+
+            if (currentGenre === '⭐ Favoriten' && !isFav && card) {
+                card.remove();
+                const grid = document.getElementById('movieGrid');
+                if (!grid.querySelector('[data-i]') && !document.getElementById('scrollSentinel')) {
+                    grid.innerHTML = `<div class="text-center col-span-full py-20 text-gray-500 font-medium">Keine Inhalte für diese Auswahl vorhanden.</div>`;
                 }
             }
-            
-            updateGenreCounts();
-            if (currentGenre === '⭐ Favoriten') filterResults();
         }
 
         function scrollNewsModal(amount) {
@@ -1460,7 +1542,7 @@
                     const genreContainer = document.getElementById('rouletteModalGenres');
                     if (luckyMovie.genres_list && luckyMovie.genres_list.length > 0) {
                         genreContainer.innerHTML = luckyMovie.genres_list
-                            .map(g => `<span class="bg-gray-800 text-gray-400 text-[10px] px-1.5 py-0.5 rounded font-medium">#${g}</span>`)
+                            .map(g => `<span class="bg-gray-800 text-gray-400 text-[10px] px-1.5 py-0.5 rounded font-medium">#${esc(g)}</span>`)
                             .join('');
                     } else {
                         genreContainer.innerHTML = '<span class="bg-gray-800 text-gray-400 text-[10px] px-1.5 py-0.5 rounded font-medium">Sonstige</span>';
@@ -1529,8 +1611,7 @@
                 hlsInstance = null;
             }
         
-            // FIX: HLS.js-Integration für flüssige Wiedergabe (kein Stottern mehr)
-            if (url.includes('.m3u8') && Hls.isSupported()) {
+            if (url.includes('.m3u8') && typeof Hls !== 'undefined' && Hls.isSupported()) {
                 hlsInstance = new Hls({
                     maxBufferLength: 30,
                     maxMaxBufferLength: 60,
@@ -1554,7 +1635,6 @@
                 });
             }
         
-            // FIX: Direkt automatisch in den Vollbildmodus wechseln
             if (modal.requestFullscreen) {
                 modal.requestFullscreen().catch(err => console.log("Vollbild blockiert:", err));
             } else if (modal.webkitRequestFullscreen) {
@@ -1569,6 +1649,7 @@
         function closePlayer(fromPopState = false) {
             const modal = document.getElementById('videoModal');
             const video = document.getElementById('mainVideoPlayer');
+            if (!modal || !video) return;
             video.removeEventListener('timeupdate', updateHudTime);
             video.removeEventListener('loadedmetadata', updateHudTime);            
             if (!modal || !video) return;
@@ -1583,7 +1664,6 @@
 
             modal.classList.add('hidden');
 
-            // Vollbild automatisch verlassen, falls aktiv
             if (document.fullscreenElement) {
                 document.exitFullscreen().catch(() => {});
             }
@@ -1603,9 +1683,15 @@
         });       
 
         window.addEventListener('keydown', (e) => {
-            if (!isPlayerOpen) return;
-            
-            if (e.key === 'Escape' || e.key === 'BackSpace') {
+            if (!isPlayerOpen) {
+                if (e.key === 'Escape') {
+                    if (document.getElementById('newsModal').style.display === 'flex') closeNewsModal();
+                    else if (document.getElementById('rouletteModal').style.display === 'flex') closeRouletteModal();
+                }
+                return;
+            }
+
+            if (e.key === 'Escape' || e.key === 'Backspace') {
                 closePlayer();
             } else if (e.key === ' ' || e.key === 'Enter' || e.key === 'Select') {
                 e.preventDefault();
@@ -1637,14 +1723,14 @@
             }
         });
 
+        const backTopBtn = document.getElementById('btnBackToTop');
         window.addEventListener('scroll', () => {
-            const btn = document.getElementById('btnBackToTop');
-            if (window.scrollY > 300) {
-                btn.classList.remove('hidden');
-            } else {
-                btn.classList.add('hidden');
+            const show = window.scrollY > 300;
+            if (show !== backTopVisible) {
+                backTopVisible = show;
+                backTopBtn.classList.toggle('hidden', !show);
             }
-        });
+        }, { passive: true });
 
         window.addEventListener('beforeinstallprompt', (e) => {
             e.preventDefault();
@@ -1665,7 +1751,7 @@
         });
 
         window.addEventListener('keydown', (e) => {
-            if (e.key === 'ArrowDown') {
+            if (e.key === 'ArrowDown' && !isPlayerOpen) {
                 const activeElement = document.activeElement;
                 const headerElements = ['searchBar', 'btnThemeToggle', 'btnMediathek', 'btnLiveTv', 'btnNews', 'btnInstallPWA', 'btnRoulette'];
         
@@ -1679,6 +1765,10 @@
                 }
             }
         });
+
+        document.getElementById('movieGrid').addEventListener('click', handleGridClick);
+        document.getElementById('movieGrid').addEventListener('keydown', handleGridKey);
+        document.getElementById('rouletteModal').addEventListener('click', handleGridClick);
 
         document.addEventListener('DOMContentLoaded', () => {
             updateThemeUI();
