@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 # IT('s) Possible 
-# 2026.10.19
+# 2026.11.16
 # GEZ-KiNO GitHub Scraper gezscraper.py
 import os
 import json
@@ -294,7 +294,7 @@ def main():
                     continue
                 if re.search(r'audiodeskription|audio description|ad version|hörfilm|deskription|gebärdensprache|barrierefrei', title.lower()):
                     continue
-                if any(x in title for x in ['(englisch)', '(französisch)', '(engl.)', '(zho)', '(jpn)', '(originalversion mit untertitel)', '(mit untertitel)', '(originalversion)']):
+                if any(x in title for x in ['(englisch)', '(französisch)', '(engl.)', '(zho)', '(jpn)', '(Originalversion mit Untertitel)', '(mit Untertitel)', '(Originalversion)']):
                     continue
                 if re.search(r'\b(folge|staffel|episode|ep\.|teil)\b', title, re.IGNORECASE):
                     continue
