@@ -415,11 +415,11 @@
       "TV-Film"
     ],
     "channel": "ZDF",
-    "timestamp": 1794720653,
-    "isNew": true,
+    "timestamp": 1785953700,
+    "isNew": false,
     "tmdb_id": 1451030,
     "tmdb_type": "movie",
-    "url_website": "https://www.zdf.de/filme/acht-movie-100"
+    "url_website": "https://www.zdf.de/video/filme/acht-movie-100/acht-104"
   },
   {
     "title": "Aber jetzt erst recht",
@@ -1922,11 +1922,11 @@
       "Romanze"
     ],
     "channel": "RBB",
-    "timestamp": 1791615600,
-    "isNew": false,
+    "timestamp": 1798076700,
+    "isNew": true,
     "tmdb_id": 570356,
     "tmdb_type": "movie",
-    "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyMS0xMS0yN18xNC0zMC1NRVo"
+    "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyMS0xMS0yN18xNC0zMC1NRVovYXVkaW9kZXNrcmlwdGlvbg"
   },
   {
     "title": "Aus lauter Liebe zu dir",
@@ -3139,7 +3139,7 @@
     "search": "Breaking Surface - Tödliche Tiefen",
     "original_title": "Breaking Surface - Tödliche Tiefen",
     "year": "2020",
-    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/22/01/220110_2215_sendung_spf/1/220110_2215_sendung_spf_a3a4_3360k_p36v15.mp4",
+    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/22/01/220110_2215_sendung_spf/1/220110_2215_sendung_spf_a1a2_3360k_p36v15.mp4",
     "url_website": "https://www.zdf.de/filme/breaking-surface---toedliche-tiefen-movie-102",
     "plot": "Einige Tage nach Weihnachten machen sich die schwedisch-norwegischen Halbschwestern Ida und Tuva auf den Weg zu einem Wintertauchgang in einem abgelegenen Teil der norwegischen Küste. Gegen Ende des Tauchgangs schließt ein Steinschlag Tuva unter Wasser ein. Als Ida auftaucht, um um Hilfe zu rufen, entdeckt sie, dass der Steinschlag auch über Wasser einschlug und ihre Ausrüstung, Telefone und Autoschlüssel vergraben hat. Sie sind von jeder Möglichkeit einer Rettung von außen abgeschnitten...",
     "mediathek_desc": "Kurz vor Weihnachten gehen die Schwestern Ida und Tuva auf Tauchgang. Nach einem Felsrutsch ist Tuva unter Wasser eingeklemmt, und Ida ist mit der Rettung auf sich allein gestellt.",
@@ -3156,7 +3156,7 @@
       "Thriller"
     ],
     "channel": "ZDF",
-    "timestamp": 1794435037,
+    "timestamp": 1794927771,
     "isNew": true,
     "tmdb_id": 616803,
     "tmdb_type": "movie"
@@ -5591,8 +5591,8 @@
       "TV-Film"
     ],
     "channel": "ARD",
-    "timestamp": 1782739800,
-    "isNew": false,
+    "timestamp": 1795518300,
+    "isNew": true,
     "tmdb_id": 342909,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyMy0xMi0yOV8xNC0wMy1NRVo"
@@ -5904,34 +5904,6 @@
     "tmdb_id": 346658,
     "tmdb_type": "movie",
     "url_website": "https://www.3sat.de/film/spielfilm/der-eid-100.html"
-  },
-  {
-    "title": "Der Eisenhans",
-    "search": "Der Eisenhans",
-    "original_title": "Der Eisenhans",
-    "year": "2011",
-    "video_url": "https://nrodlzdf-a.akamaihd.net/none/tivi/14/12/141219_der_eisenhans_mae/25/141219_der_eisenhans_mae_a1a2_3360k_p36v17.mp4",
-    "url_website": "https://www.3sat.de/film/spielfilm/der-eisenhans-102.html",
-    "plot": "Der zaubermächtige Naturgeist Eisenhans lebt seit Menschengedenken im Wald und verbreitet Angst und Schrecken. Als der verwegene Schwarze Ritter den Eisenhans eines Tages gefangen nimmt und an den Königshof bringt, verwehren der König und die Königin ihm jedoch den verlangten Lohn. Der Schwarze Ritter beraubt daraufhin die erstaunte Hofgesellschaft und verschwindet. Den Eisenhans lässt er im Kerker zurück. Der kleine Prinz Johannes ist sofort fasziniert von dem wilden Mann. In der Nacht befreit er den Gefangenen und folgt ihm in den dunklen Wald. An der ihm vom Eisenhans gestellten Aufgabe, den Zauberbrunnen rein zu halten, scheitert der Prinz jedoch kläglich. Ein Moment der Unaufmerksamkeit genügt, schon fallen seine Haare ins Brunnenwasser und färben sich unauslöschlich golden. Der Prinz wird zur Bestrafung vom Eisenhans aus dem Wald vertrieben …",
-    "mediathek_desc": "Im wilden Wald eines Königreiches haust ein geheimnisvoller Naturgeist - der Eisenhans. Weil schon viele Jäger im Wald verschwunden sind, darf niemand den Wald betreten.",
-    "director": "Manuel Siebenmann",
-    "actors": [
-      "Laurence Rupp",
-      "Paula Schramm",
-      "Michael Mendl"
-    ],
-    "rating": "5.0",
-    "thumb": "https://image.tmdb.org/t/p/w342/23hkauzOD4NZM5ydf4KbcrOEwXk.jpg",
-    "genres_list": [
-      "Familie",
-      "Fantasy",
-      "TV-Film"
-    ],
-    "channel": "3Sat",
-    "timestamp": 1608474900,
-    "isNew": false,
-    "tmdb_id": 111550,
-    "tmdb_type": "movie"
   },
   {
     "title": "Der Engel mit der Posaune",
@@ -7511,32 +7483,6 @@
     "url_website": "https://www.arte.tv/de/videos/129839-000-A/der-andere-liebhaber/"
   },
   {
-    "title": "Der beste Film aller Zeiten",
-    "search": "Der beste Film aller Zeiten",
-    "year": "2021",
-    "video_url": "https://manifest-arte.akamaized.net/api/manifest/v1/Generate/bd7500c3-6a02-4f26-b69a-a0827b026be8/de/XQ+KS+CHEV1/132042-000-A.m3u8",
-    "plot": "Wenn ein milliardenschwerer Unternehmer impulsiv beschließt, einen Kultfilm zu drehen, verlangt er das Beste. Die renommierte Filmemacherin Lola Cuevas wird angeworben, um dieses ehrgeizige Unterfangen zu leiten. Abgerundet wird das All-Star-Team durch zwei Schauspieler mit enormem Talent, aber noch größeren Egos: Hollywood-Herzensbrecher Félix Rivero und der radikale Theaterschauspieler Iván Torres. Beide sind Legenden, aber nicht gerade beste Freunde. Durch eine Reihe von immer exzentrischeren Prüfungen, die von Lola gestellt werden, müssen Félix und Iván nicht nur einander, sondern auch ihre eigenen Hinterlassenschaften konfrontieren. Wer bleibt übrig, wenn endlich die Kameras laufen?",
-    "mediathek_desc": "Im Designer-Bungalow zwischen Sichtbeton und gekränkten Eitelkeiten entfaltet sich eine Komödie: Für \"den besten Film aller Zeiten\" muss Penélope Cruz als überspannte Star-Regisseurin zwei egozentrische Schauspiel-Legenden, dargestellt von Antonio Banderas und Oscar Martínez, zu Höchstleistungen bringen.",
-    "director": "Javier Méndez",
-    "actors": [
-      "Penélope Cruz",
-      "Antonio Banderas",
-      "Oscar Martínez"
-    ],
-    "rating": "6.6",
-    "thumb": "https://image.tmdb.org/t/p/w342/yMPL4fluo9hdmoySc9uiHxAJck9.jpg",
-    "genres_list": [
-      "Komödie",
-      "Drama"
-    ],
-    "channel": "ARTE.DE",
-    "timestamp": 1792001772,
-    "isNew": false,
-    "tmdb_id": 668640,
-    "tmdb_type": "movie",
-    "url_website": "https://www.arte.tv/de/videos/132042-000-A/der-beste-film-aller-zeiten/"
-  },
-  {
     "title": "Der brave Soldat Schwejk",
     "search": "Der brave Soldat Schwejk",
     "year": "1960",
@@ -8577,6 +8523,33 @@
     "tmdb_id": 264782,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyNC0wNC0wN18xNC0wMy1NRVNa"
+  },
+  {
+    "title": "Die Geschichte von Jim",
+    "search": "Die Geschichte von Jim",
+    "original_title": "Die Geschichte von Jim",
+    "year": "2024",
+    "video_url": "https://manifest-arte.akamaized.net/api/manifest/v1/Generate/fdbc018b-e5e7-4e30-88b4-38178532880f/VA-STA/XQ+KS+CHEV1/126143-000-A.m3u8",
+    "url_website": "https://www.arte.tv/de/videos/126143-000-A/die-geschichte-von-jim/",
+    "plot": "Aymeric lernt die schwangere Florence kennen. Sie bringt ihren Sohn Jim auf die Welt, Aymeric erzieht ihn wie seinen eigenen und findet darin sein Glück. Bis der leibliche Vater zurückkehrt und Aymeric beschließt zu gehen. Jahre später steht der erwachsene Jim vor Aymerics Tür. Ein Film der Brüder Arnaud und Jean-Marie Larrieu mit Karim Leklou",
+    "mediathek_desc": "Aymeric lernt die schwangere Florence kennen. Sie bringt ihren Sohn Jim auf die Welt, Aymeric erzieht ihn wie seinen eigenen und findet darin sein Glück. Bis der leibliche Vater zurückkehrt und Aymeric beschließt zu gehen. Jahre später steht der erwachsene Jim vor Aymerics Tür. Ein Film der Brüder Arnaud und Jean-Marie Larrieu mit Karim Leklou",
+    "director": "Jean-Marie Larrieu",
+    "actors": [
+      "Karim Leklou",
+      "Laetitia Dosch",
+      "Sara Giraudeau"
+    ],
+    "rating": "6.9",
+    "thumb": "https://image.tmdb.org/t/p/w342/4KKoLrfblH2AydjwI2vJS8tE3P2.jpg",
+    "genres_list": [
+      "Komödie",
+      "Drama"
+    ],
+    "channel": "ARTE.DE",
+    "timestamp": 1795634100,
+    "isNew": true,
+    "tmdb_id": 1102938,
+    "tmdb_type": "movie"
   },
   {
     "title": "Die Gipfelstürmerin",
@@ -10107,6 +10080,33 @@
     "tmdb_id": 16003,
     "tmdb_type": "movie",
     "url_website": "https://www.3sat.de/film/spielfilm/die-spur-der-jaeger-100.html"
+  },
+  {
+    "title": "Die Spur der Knochen",
+    "search": "Die Spur der Knochen",
+    "original_title": "Die Spur der Knochen",
+    "year": "2022",
+    "video_url": "https://nrodlzdf-a.akamaihd.net/dach/zdf/24/04/240429_2215_sendung_spf/1/240429_2215_sendung_spf_3360k_p36v17.mp4",
+    "url_website": "https://www.zdf.de/filme/die-spur-der-knochen-movie-100",
+    "plot": "Mario arbeitet in einem Fundbüro. Er ist ein Einzelgänger, der sich so gut es geht von anderen Menschen fernhält. Allein Helena, eine junge Polizistin, die das Lagerhaus häufig besucht, lässt er etwas näher an sich heran. Seine Freizeit verbringt Mario damit, die Herkunft von besonders interessanten oder kuriosen Gegenständen aus seinen Regalen zu ergründen. Er hofft, so ihren Besitzern einen verlorenen Teil ihres Lebens und vielleicht auch ein Stück Seelenfrieden zurückgeben zu können. Eines Tages kommt ein alter Koffer bei ihm an, der aus dem lokalen Fluss gefischt wurde. Im Inneren des Objektes findet Mario Babykleidung und zu seinem Entsetzen auch das Skelett eines Kleinkindes. Er beschließt, auf eigene Faust Nachforschungen anzustellen. Dabei stößt er auf Sara, eine junge Frau, die sich seit früher Kindheit in den Fängen einer Menschenhandelsorganisation befindet …",
+    "mediathek_desc": "In einem Fundbüro taucht ein verschmutzter kleiner Koffer auf. Der Angestellte Mario öffnet das nasse Objekt und findet zu seinem großen Entsetzen die Knochen eines Babys.",
+    "director": "Jorge Dorado",
+    "actors": [
+      "Álvaro Morte",
+      "Eugenia Suárez",
+      "Verónica Echegui"
+    ],
+    "rating": "6.0",
+    "thumb": "https://image.tmdb.org/t/p/w342/2hnXqaSX2AmEnppr7zxuFH0PpL9.jpg",
+    "genres_list": [
+      "Mystery",
+      "Thriller"
+    ],
+    "channel": "ZDF",
+    "timestamp": 1782878143,
+    "isNew": false,
+    "tmdb_id": 946706,
+    "tmdb_type": "movie"
   },
   {
     "title": "Die Standesbeamtin",
@@ -12153,8 +12153,8 @@
       "Familie"
     ],
     "channel": "ARD",
-    "timestamp": 1786276980,
-    "isNew": false,
+    "timestamp": 1796684700,
+    "isNew": true,
     "tmdb_id": 264546,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2FyZC5kZS9wbGFuQVJEXzY1ODg2MmY3LWJmNzUtNDAzMS04MmVmLTE3N2I2OTNhOWZlNF9nYW56ZVNlbmR1bmc"
@@ -12523,34 +12523,6 @@
     "timestamp": 1794383297,
     "isNew": true,
     "tmdb_id": 1056535,
-    "tmdb_type": "movie"
-  },
-  {
-    "title": "Ein Ticket zur Bescherung",
-    "search": "Ein Ticket zur Bescherung",
-    "original_title": "Ein Ticket zur Bescherung",
-    "year": "2026",
-    "video_url": "https://nrodlzdf-a.akamaihd.net/none/zdf/26/12/261207_2015_sendung_fdw/1/261207_2015_sendung_fdw_a1a2_3360k_p36v17.mp4",
-    "url_website": "https://www.zdf.de/filme/ein-ticket-zur-bescherung-movie-100",
-    "plot": "Neun Reisende steigen am 24.12. in einen besonderen Zug. Bald sind alle Reisepläne durchkreuzt und Heiligabend scheint verloren. Doch es wird zu einer Nacht, die so niemand erwartet hat. Richtig rund scheint das Fest für niemanden von ihnen zu werden. Nur der achtzigjährige Dietrich, den die Gruppe noch treffen wird, ist bekennender Weihnachtsfan. Dabei ist gerade seine Situation nach dem kürzlichen Tod seiner Frau alles andere als rosig. Der Gitarrist Fabian wollte eigentlich nur seinen entlaufenen Hund einfangen und dann seinen Liebeskummer in Whiskey ertränken. Die Rentner Gabi und Hans-Jürgen hätten Weihnachten lieber bei sich als bei den Kindern gefeiert. Die hochschwangere Nelly will es zum Schrecken ihrer Frau Sarah noch mal richtig krachen lassen, bevor sie das Kind bekommt. Anna und Jan entdecken auf der Reise plötzlich, dass ihre Lebenspläne gar nicht zueinander passen.",
-    "mediathek_desc": "Neun Reisende steigen am 24.12. in einen besonderen Zug. Bald sind alle Reisepläne durchkreuzt und Heiligabend scheint verloren. Doch es wird zu einer Nacht, die so niemand erwartet hat.",
-    "director": "Felix Ahrens",
-    "actors": [
-      "Friedrich von Thun",
-      "Tanja Wedhorn",
-      "Cristina do Rego"
-    ],
-    "rating": "N/A",
-    "thumb": "https://image.tmdb.org/t/p/w342/vM0ZnjubfO68YpZ493cTMsBf4Tg.jpg",
-    "genres_list": [
-      "TV-Film",
-      "Komödie",
-      "Drama"
-    ],
-    "channel": "ZDF",
-    "timestamp": 1794556802,
-    "isNew": true,
-    "tmdb_id": 1824857,
     "tmdb_type": "movie"
   },
   {
@@ -14522,7 +14494,7 @@
       "Mystery"
     ],
     "channel": "ARTE.DE",
-    "timestamp": 1794770100,
+    "timestamp": 1794770096,
     "isNew": true,
     "tmdb_id": 54000,
     "tmdb_type": "movie"
@@ -14922,33 +14894,6 @@
     "tmdb_id": 1788,
     "tmdb_type": "movie",
     "url_website": "https://www.3sat.de/film/spielfilm/footloose-104.html"
-  },
-  {
-    "title": "Frau Holles Garten",
-    "search": "Frau Holles Garten",
-    "original_title": "Frau Holles Garten",
-    "year": "2019",
-    "video_url": "https://nrodlzdf-a.akamaihd.net/none/zdf/20/12/201213_0405_sendung_sof/5/201213_0405_sendung_sof_a1a2_3360k_p36v15.mp4",
-    "url_website": "https://www.zdf.de/filme/frau-holles-garten-movie-100",
-    "plot": "Mia Goldig liebt ihren Job im Botanischen Garten. Doch ihre Mutter, die scheidende Leiterin des Gartens, zieht ihre Schwester als Nachfolgerin vor. Kann Frau Holle für die richtige Entscheidung sorgen? Die neue Leiterin muss vor allem finanzkräftige Sponsoren finden, da sich der Garten in finanziellen Nöten befindet. Eine Aufgabe, die sich die zurückhaltende Chefgärtnerin Mia selbst nicht zutraut. Sie liebt die Pflanzen, nicht aber den großen Auftritt. Ganz im Gegensatz zu ihrer selbstsicheren Schwester Marissa.Auch ihre Mutter Helene sieht in Mia, die stottert, wenn sie vor mehreren Menschen sprechen muss, nicht die richtige Wahl für diesen repräsentativen Posten. Dagegen scheint ihr die zielstrebige Marissa wie geschaffen für die Stelle. Dass Marissa der Garten völlig egal ist und sie ein intrigantes Spiel treibt, entgeht Helene.Aber Frau Holle, der guten Seele des Gartens, die dort einen Laden betreibt, bleibt nichts verborgen.",
-    "mediathek_desc": "Mia liebt ihren Job im botanischen Garten. Doch ihre Mutter, die Leiterin des Gartens, zieht ihre Schwester als Nachfolgerin vor. Kann Frau Holle für die richtige Entscheidung sorgen?",
-    "director": "Seyhan Derin",
-    "actors": [
-      "Cornelia Froboess",
-      "Klara Deutschmann",
-      "Lavinia Wilson"
-    ],
-    "rating": "8.0",
-    "thumb": "https://image.tmdb.org/t/p/w342/h8I6m9dOSV5AXJvdNEY2GAsRFci.jpg",
-    "genres_list": [
-      "Drama",
-      "Romanze"
-    ],
-    "channel": "ZDF",
-    "timestamp": 1794476346,
-    "isNew": true,
-    "tmdb_id": 652614,
-    "tmdb_type": "movie"
   },
   {
     "title": "Frau Pfarrer & Herr Priester",
@@ -15992,8 +15937,8 @@
       "TV-Film"
     ],
     "channel": "ARD",
-    "timestamp": 1767483900,
-    "isNew": false,
+    "timestamp": 1795527000,
+    "isNew": true,
     "tmdb_id": 264949,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyMS0wOS0yM18wMi0wMC1NRVNa"
@@ -20329,32 +20274,6 @@
     "url_website": "https://www.3sat.de/film/spielfilm/kommt-ein-vogel-geflogen-100.html"
   },
   {
-    "title": "Kompromat - Die Macht der Lüge",
-    "search": "Kompromat - Die Macht der Lüge",
-    "year": "2022",
-    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/23/09/230925_2215_sendung_spf/1/230925_2215_sendung_spf_a3a4_3360k_p36v17.mp4",
-    "plot": "Sibirien, 2017: Der französische Diplomat Mathieu wird Opfer einer Intrige des russischen Geheimdienstes. Vor den Augen seiner Tochter wird er verhaftet, inhaftiert und isoliert. Ohne Chance auf Verteidigung oder Hilfe von der eigenen Regierung bleibt dem Staatsfeind nur ein Ausweg, wenn er seine Familie je wiedersehen will: die abenteuerliche Flucht auf eigene Faust durch ein fremdes und feindseliges Land.",
-    "mediathek_desc": "Der Franzose Mathieu Roussel wird in Russland beschuldigt, ein Kinderschänder zu sein. Ihm drohen 15 Jahre Lagerhaft. Selbst sein Anwalt rät ihm zur Flucht.",
-    "director": "Jérôme Salle",
-    "actors": [
-      "Gilles Lellouche",
-      "Joanna Kulig",
-      "Michail Witaljewitsch Gorewoi"
-    ],
-    "rating": "6.3",
-    "thumb": "https://image.tmdb.org/t/p/w342/xBvKTy7QZkhMAFe4JlN1vIyrx6K.jpg",
-    "genres_list": [
-      "Thriller",
-      "Drama"
-    ],
-    "channel": "ZDF",
-    "timestamp": 1794311985,
-    "isNew": true,
-    "tmdb_id": 852427,
-    "tmdb_type": "movie",
-    "url_website": "https://www.zdf.de/filme/kompromat---die-macht-der-luege-movie-100"
-  },
-  {
     "title": "Krach im Standesamt - Der 42. Himmel",
     "search": "Krach im Standesamt",
     "year": "1963",
@@ -21092,33 +21011,6 @@
     "tmdb_id": 457102,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyMy0wOS0yM18xNS0zMC1NRVNa"
-  },
-  {
-    "title": "Leo und Marie - Eine Weihnachtsliebe",
-    "search": "Leo und Marie - Eine Weihnachtsliebe",
-    "year": "2008",
-    "video_url": "https://nrodlzdf-a.akamaihd.net/none/zdf/20/12/201226_0400_sendung_fis/3/201226_0400_sendung_fis_a1a2_3360k_p36v17.mp4",
-    "plot": "Seit 19 Jahren arbeitet Leo bei der Versicherung, ohne Krankentag, ohne Verspätung, ohne je aufgefallen zu sein. Jetzt herrscht im Büro Panik: Entlassungen stehen bevor. Die Weihnachtsfeier findet dennoch statt - für manche eher eine Abschiedsparty. Leo nimmt seinen Mut zusammen und bittet die scheue neue Kollegin Marie zum Tanz. Aber ist er der Richtige, um Maries verletztes Herz zu erobern?",
-    "mediathek_desc": "Leo und Marie sind zwei unscheinbare, von ihrer Umwelt kaum beachtete Versicherungsangestellte. Beiden leben ein ungestörtes, sehr einsames Leben - bis sie sich ineinander verlieben.",
-    "director": "Rolf Schübel",
-    "actors": [
-      "Wotan Wilke Möhring",
-      "Bernadette Heerwagen",
-      "Uwe Bohm"
-    ],
-    "rating": "4.3",
-    "thumb": "https://image.tmdb.org/t/p/w342/6Zpyql75eUECmmShw2ZBSBoZ8Hs.jpg",
-    "genres_list": [
-      "Drama",
-      "Romanze",
-      "TV-Film"
-    ],
-    "channel": "ZDF",
-    "timestamp": 1785500647,
-    "isNew": false,
-    "tmdb_id": 266169,
-    "tmdb_type": "movie",
-    "url_website": "https://www.zdf.de/filme/leo-und-marie---eine-weihnachtsliebe-movie-100"
   },
   {
     "title": "Leonora im Morgenlicht",
@@ -23362,8 +23254,8 @@
       "Komödie"
     ],
     "channel": "ARD",
-    "timestamp": 1777635900,
-    "isNew": false,
+    "timestamp": 1795519800,
+    "isNew": true,
     "tmdb_id": 568516,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2FyZC5kZS9wbGFuQVJEX2FiZGNjYjgzLTgwMzYtNGE2Yi04YTgyLTFhYzcyYmI1YjA2Nl9nYW56ZVNlbmR1bmc"
@@ -24828,6 +24720,33 @@
     "url_website": "https://www.arte.tv/de/videos/130524-000-A/nebraska/"
   },
   {
+    "title": "Nestwochen",
+    "search": "Nestwochen",
+    "original_title": "Nestwochen",
+    "year": "2021",
+    "video_url": "https://nrodlzdf-a.akamaihd.net/none/zdf/21/08/210819_2015_sendung_fis/6/210819_2015_sendung_fis_a1a2_3360k_p36v15.mp4",
+    "url_website": "https://www.zdf.de/filme/nestwochen-movie-100",
+    "plot": "Nach der Trennung versuchen es Julia und Robert mit \"Nesting\". Doch was zunächst gut für die Kinder scheint, macht die Sache für die ganze Familie nur noch komplizierter. Die zwölfjährige Marie und der siebenjährige Maxi wohnen weiter im Haus, während die Eltern sich wochenweise ablösen. Doch Robert verfolgt mit seinem Vorschlag einzig das Ziel, das Haus zu retten und Zeit zu gewinnen, damit Julia endlich wieder zur Vernunft kommt. Julia allerdings hält nicht viel davon, abzuwarten.",
+    "mediathek_desc": "Nach der Trennung versuchen es Julia und Robert mit \"Nesting\". Doch was zunächst gut für die Kinder scheint, macht die Sache für die ganze Familie nur noch komplizierter.",
+    "director": "Tobi Baumann",
+    "actors": [
+      "Matthias Koeberlin",
+      "Bettina Lamprecht",
+      "Tom Beck"
+    ],
+    "rating": "4.0",
+    "thumb": "https://image.tmdb.org/t/p/w342/2z0rHiAtrX1iwYeNVexl1bsjTYR.jpg",
+    "genres_list": [
+      "TV-Film",
+      "Komödie"
+    ],
+    "channel": "ZDF",
+    "timestamp": 1782877592,
+    "isNew": false,
+    "tmdb_id": 860995,
+    "tmdb_type": "movie"
+  },
+  {
     "title": "Neu in unserer Familie - Ein Baby für alle",
     "search": "Neu in unserer Familie - Ein Baby für alle",
     "year": "2017",
@@ -24928,7 +24847,7 @@
       "Drama"
     ],
     "channel": "ZDF",
-    "timestamp": 1794823574,
+    "timestamp": 1794893415,
     "isNew": true,
     "tmdb_id": 1481869,
     "tmdb_type": "movie"
@@ -27810,7 +27729,7 @@
     ],
     "channel": "ARD",
     "timestamp": 1794049200,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 267598,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyNC0xMC0xM18xNC0wMy1NRVNa"
@@ -29516,35 +29435,6 @@
     "url_website": "https://www.3sat.de/film/spielfilm/still-alice---mein-leben-ohne-gestern-100.html"
   },
   {
-    "title": "Stille Nacht, raue Nacht",
-    "search": "Stille Nacht, raue Nacht",
-    "original_title": "Stille Nacht, raue Nacht",
-    "year": "2024",
-    "video_url": "https://nrodlzdf-a.akamaihd.net/none/zdf/24/12/241201_2015_sendung_sof/1/241201_2015_sendung_sof_a1a2_3360k_p36v17.mp4",
-    "url_website": "https://www.zdf.de/filme/stille-nacht-raue-nacht-movie-100",
-    "plot": "Liane, Wissenschaftlerin und Klimaforscherin, trifft auf der Wintersonnenwende-Party ihrer älteren Schwester Svea kurz vor Heiligabend auf Mani, einen faszinierenden und spirituell veranlagen Mann. Sie selbst fühlt sich etwas fremd auf der Feier, denn Liane ist ein rationaler Mensch. Von Räucher-Reinigungsritualen, Wunschzetteln, die in die Feuerschale geworfen werden sollen, und derlei esoterischem Hokuspokus bekommt sie Schnappatmung. Das ganze Raunachtstrara stammt aus Zeiten, in denen der Homo sapiens noch Eis und Schnee fürchten mussten und nicht Starkregen an Weihnachten. Trotzdem werden die stillen Tage und rauen Nächte zwischen dem 21. Dezember und dem Dreikönigstag für Liane zur echten Herausforderung: Ihr Freund Philipp fliegt nach einem Streit alleine nach Gomera. Trennen möchten sie sich nicht, aber bleiben, wie es ist, kann es auch nicht. Und tatsächlich beginnen das Schicksal und das Wetter die zurückbleibende Liane kräftig durchzuschütteln.",
-    "mediathek_desc": "Kurz vor Weihnachten trifft die Klimaforscherin Liane auf der Wintersonnenwende-Party ihrer Schwester Svea auf den rätselhaften Mani – ein faszinierender, seltsamer Mann.",
-    "director": "Sophie Averkamp",
-    "actors": [
-      "Maria Ehrich",
-      "Benito Bause",
-      "Antoine Monot Jr."
-    ],
-    "rating": "5.7",
-    "thumb": "https://image.tmdb.org/t/p/w342/gEqz5jKPVUctkPnFtyrZBHbiIPd.jpg",
-    "genres_list": [
-      "TV-Film",
-      "Drama",
-      "Romanze",
-      "Komödie"
-    ],
-    "channel": "ZDF",
-    "timestamp": 1794495282,
-    "isNew": true,
-    "tmdb_id": 1389664,
-    "tmdb_type": "movie"
-  },
-  {
     "title": "Stiller Abschied",
     "search": "Stiller Abschied",
     "year": "2013",
@@ -30227,7 +30117,7 @@
     "search": "The Founder",
     "original_title": "The Founder",
     "year": "2016",
-    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/26/09/260911_0100_sendung_spf/2/260911_0100_sendung_spf_a3a4_3360k_p36v17.mp4",
+    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/26/09/260911_0100_sendung_spf/2/260911_0100_sendung_spf_a1a2_3360k_p36v17.mp4",
     "url_website": "https://www.zdf.de/filme/the-founder-movie-100",
     "plot": "Ray Kroc ist als Vertreter für Milkshake-Maschinen in Illinois unterwegs und hat wenig Erfolg – bis er bei seinen Touren auf die Brüder Mac und Dick McDonald und ihr kleines Burger-Restaurant trifft. Die Brüder McDonald haben die Arbeitsprozesse so optimiert, dass der bestellte Burger nur wenige Sekunden später beim Kunden ist. Ray ist begeistert und sieht das enorme Potential der Idee: McDonald’s soll zum Franchise werden. Zum Entsetzen seiner Frau Ethel riskiert er sein ganzes Vermögen und sogar das geliebte Eigenheim. Und doch läuft sein Vorhaben nicht richtig an, bis ihm schließlich eine zündende Idee kommt – von nichts und niemandem lässt sich Ray von seinem ambitionierten Plan, ein Imperium zu erschaffen, abhalten, nicht einmal von den eigentlichen McDonald’s-Gründern…",
     "mediathek_desc": "Der erfolglose Vertreter Ray Kroc verfolgt den amerikanischen Traum. Als er einen beliebten Schnellimbiss besucht, entwickelt er einen visionären Plan. Er will Franchiserechte erwerben.",
@@ -31648,6 +31538,34 @@
     "tmdb_id": 1222487,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyMy0xMi0xN18xNS0wMC1NRVo"
+  },
+  {
+    "title": "Umständlich verliebt",
+    "search": "Umständlich verliebt",
+    "original_title": "Umständlich verliebt",
+    "year": "2010",
+    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/25/09/250927_2015_sendung_nsf/1/250927_2015_sendung_nsf_3360k_p36v17.mp4",
+    "url_website": "https://www.zdf.de/video/filme/umstaendlich-verliebt-movie-100/umstaendlich-verliebt-100",
+    "plot": "Die Single-Frau Kassie entschließt sich, trotz Einwände ihres besten, durchaus neurotischen Freundes Wally schwanger zu werden - auch wenn das bedeutet, es auf eigene Faust zu tun und zwar mit Hilfe eines sympathischen und überaus gutaussehenden Samenspenders. Ohne dass Kassie es ahnt, läuft bei der Befruchtung jedoch etwas schief, was allerdings erst sieben Jahre später ans Licht tritt, als Wally den süßen - durchaus leicht neurotischen - Sohn von Kassie kennenlernt…",
+    "mediathek_desc": "Kassie will ein Kind – ohne Partner. Ihr bester Freund Wally soll sie dabei unterstützen. Doch eine chaotische Nacht bringt alles durcheinander.",
+    "director": "Josh Gordon",
+    "actors": [
+      "Jennifer Aniston",
+      "Jason Bateman",
+      "Patrick Wilson"
+    ],
+    "rating": "6.2",
+    "thumb": "https://image.tmdb.org/t/p/w342/jHFnfBBPmOzMdU7tPlMTsNunPkW.jpg",
+    "genres_list": [
+      "Komödie",
+      "Romanze",
+      "Drama"
+    ],
+    "channel": "ZDFneo",
+    "timestamp": 1758996900,
+    "isNew": false,
+    "tmdb_id": 41210,
+    "tmdb_type": "movie"
   },
   {
     "title": "Unaufhaltsam",
