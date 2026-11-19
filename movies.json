@@ -1156,7 +1156,7 @@
     ],
     "channel": "ARD",
     "timestamp": 1794142980,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 377338,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyMy0wNS0wN18xNC0wMy1NRVNa"
@@ -1266,33 +1266,6 @@
     "tmdb_id": 73848,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyMy0wMy0xMV8wMy0yNS1NRVo"
-  },
-  {
-    "title": "Am Ende siegt die Liebe",
-    "search": "Am Ende siegt die Liebe",
-    "year": "2000",
-    "video_url": "https://pd-videos.daserste.de/int/2021/03/02/2f1fbe2e-ffb0-44e1-ab35-425119c6d930/JOB_503791__sendeton_1280x720-50p-3200kbit.mp4",
-    "plot": "Aus Mutterliebe nimmt Anna Linke die Schuld für einen von ihrer Tochter Lilli verursachten tödlichen Unfall auf sich und geht ins Gefängnis. Lilli macht unterdessen Karriere als Fotomodell, doch sie leidet unter starken Schuldgefühlen. Als Anna entlassen wird und zu ihr zieht, fühlt sich Lilli von ihrer Fürsorge erdrückt, und Anna vergisst vor lauter Sorge um ihr Kind sich selbst und ihren stillen Verehrer Max.",
-    "mediathek_desc": "Spielfilm Deutschland 1999\r\n\r\nDie 19-jährige Lilli Linke (Denise Zich) überfährt eines Nachts auf einer bayrischen Landstraße einen Radfahrer und begeht Fahrerflucht. Ihre Mutter Anna (Marianne Sägebrecht) nimmt die Tat aus Liebe zu ihrem Kind auf sich und wird zu zwei Jahren Gefängnis verurteilt. Lilli macht derweil in Hamburg Karriere als Fotomodell, unterstützt von ihrem ehrgeizigen Manager Fra\n.....",
-    "director": "Peter Weck",
-    "actors": [
-      "Marianne Sägebrecht",
-      "Rolf Hoppe",
-      "Denise Zich"
-    ],
-    "rating": "3.2",
-    "thumb": "https://image.tmdb.org/t/p/w342/17BixyYdPaBSccHSLMTIHXV0L2d.jpg",
-    "genres_list": [
-      "TV-Film",
-      "Drama",
-      "Familie"
-    ],
-    "channel": "ARD",
-    "timestamp": 1615424400,
-    "isNew": false,
-    "tmdb_id": 262941,
-    "tmdb_type": "movie",
-    "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyMS0wMy0xMV8wMi0wMC1NRVo"
   },
   {
     "title": "Am Kap der Liebe",
@@ -1580,7 +1553,7 @@
       "Fantasy"
     ],
     "channel": "ZDF",
-    "timestamp": 1794788100,
+    "timestamp": 1794979831,
     "isNew": true,
     "tmdb_id": 461928,
     "tmdb_type": "movie"
@@ -1634,8 +1607,8 @@
       "Familie"
     ],
     "channel": "ARD",
-    "timestamp": 1786353600,
-    "isNew": false,
+    "timestamp": 1795613400,
+    "isNew": true,
     "tmdb_id": 328454,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyNS0wOC0zMV8xNC0wMy1NRVNa"
@@ -1747,6 +1720,35 @@
     "tmdb_id": 453755,
     "tmdb_type": "movie",
     "url_website": "https://www.3sat.de/film/spielfilm/arctic-100.html"
+  },
+  {
+    "title": "Arlington Road",
+    "search": "Arlington Road",
+    "original_title": "Arlington Road",
+    "year": "1999",
+    "video_url": "https://ctv-videos.daserste.de/de/2026/11/10/1285/1285_31778_originalversion_1280x720-50p-3200kbit.mp4",
+    "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2FyZC5kZS9wbGFuQVJEXzgxNjQ5MWNiLTM3MTUtNDM0My05NGIwLWY1ZWFjNzJmMmIwNl9nYW56ZVNlbmR1bmc",
+    "plot": "Michael Faraday führt ein mehr oder weniger beschauliches Leben in einem Vorort von Washington. Umgeben von “normalen” Menschen und netten Nachbarn. Einer davon ist Oliver Lang. Aber irgendwann kommen Michael Zweifel an dem dreifachen Familienvater. Ist Oliver ein wahnsinniger Killer? Ein Terrorist? Ein Agent? Oder ist es Michael selbst, der die Realität nicht mehr von seiner paranoiden Phantasie unterscheiden kann? Ein mörderischer Wettlauf beginnt, an dessen Ende eins klar ist: In der Arlington Road wird das Leben nie mehr so sein, wie es einmal war. Oder war es nie so?",
+    "mediathek_desc": "Spielfilm USA 1999 Oliver Lang hat eine Frau und drei Kinder, ein Haus und einen Minivan, also alles, was einen Durchschnittsamerikaner ausmacht. Und dennoch: Etwas scheint mit dieser Familie nicht zu stimmen. Das denkt sich jedenfalls der Nachbar Michael Faraday. Faradays Recherchen ergeben: Lang ist wegen eines Bombenattentats schon einmal rechtskräftig verurteilt worden und hat seinen Namen erst vor einigen Jahren angenommen....",
+    "director": "Sigurjón Sighvatsson",
+    "actors": [
+      "Jeff Bridges",
+      "Tim Robbins",
+      "Joan Cusack"
+    ],
+    "rating": "7.0",
+    "thumb": "https://image.tmdb.org/t/p/w342/3luGsMtaoZ5uLtSlCi8Tr7PDbzk.jpg",
+    "genres_list": [
+      "Krimi",
+      "Drama",
+      "Thriller",
+      "Mystery"
+    ],
+    "channel": "ARD",
+    "timestamp": 1795042500,
+    "isNew": true,
+    "tmdb_id": 1073,
+    "tmdb_type": "movie"
   },
   {
     "title": "Arrhythmia",
@@ -1926,7 +1928,7 @@
     "isNew": true,
     "tmdb_id": 570356,
     "tmdb_type": "movie",
-    "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyMS0xMS0yN18xNC0zMC1NRVovYXVkaW9kZXNrcmlwdGlvbg"
+    "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyMS0xMS0yN18xNC0zMC1NRVo"
   },
   {
     "title": "Aus lauter Liebe zu dir",
@@ -2057,6 +2059,32 @@
     "url_website": "https://www.3sat.de/film/spielfilm/bad-fucking-100.html"
   },
   {
+    "title": "Bad Tales - Es war einmal ein Traum",
+    "search": "Bad Tales - Es war einmal ein Traum",
+    "original_title": "Bad Tales - Es war einmal ein Traum",
+    "year": "2020",
+    "video_url": "https://manifest-arte.akamaized.net/api/manifest/v1/Generate/2d973813-dc08-4c02-960c-718acd214a27/VA/XQ+KS+CHEV1/110255-000-A.m3u8",
+    "url_website": "https://www.arte.tv/de/videos/110255-000-A/bad-tales-es-war-einmal-ein-traum/",
+    "plot": "Es war einmal... in einem kleinen Vorort am Rande Roms. Die sommerliche Leichtigkeit ist von einer rätselhaften Stimmung der Beklommenheit durchzogen. Aus der Ferne betrachtet wohnen hier ganz normale Familien und führen ein ruhiges Leben in Häusern, Höfen und Gärten, aber der äußere Schein trügt. Die fahle Hitze des Sommers liegt wie eine Glocke über einer Atmosphäre der Entfremdung. Das Schweigen überdeckt die mühsam gebändigte Aggression der Väter und die Passivität der Mütter. Die verständnislosen Erwachsenen verfolgen hartnäckig ihre Illusion eines bürgerlichen Lebens und scheinbar spielen die Kinder den ihnen zugedachten Part. Doch hinter der Fassade verfolgen sie konsequent ihre eigenen, dunklen Pläne und schließlich werden es die Kinder sein, die den Ort in seinen Grundfesten erschüttern...",
+    "mediathek_desc": "Es war einmal in einem kleinen Vorort von Rom: Hier wohnen scheinbar ganz normale Familien und führen ein ruhiges Leben. Doch hinter der aufgeräumten Fassade verfolgen die frustrierten Kinder konsequent ihre eigenen, dunklen Pläne ... – Damiano und Fabio D'Innocenzos Film (2020) erzählt von Menschen, die allzu früh erleben, wie ihre Träume auf der Strecke bleiben.",
+    "director": "Fabio D'Innocenzo",
+    "actors": [
+      "Elio Germano",
+      "Tommaso Di Cola",
+      "Giulietta Rebeggiani"
+    ],
+    "rating": "6.7",
+    "thumb": "https://image.tmdb.org/t/p/w342/c6DHVbrdcpZB9aG1nULdXaM3BzE.jpg",
+    "genres_list": [
+      "Drama"
+    ],
+    "channel": "ARTE.DE",
+    "timestamp": 1795046402,
+    "isNew": true,
+    "tmdb_id": 614292,
+    "tmdb_type": "movie"
+  },
+  {
     "title": "Baghdad in my shadow",
     "search": "Baghdad in my shadow",
     "year": "2019",
@@ -2103,7 +2131,7 @@
     ],
     "channel": "ARD",
     "timestamp": 1794084300,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 3172,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2FyZC5kZS9wbGFuQVJEX2MwNjNhYjU0LWY5NmEtNDZjMi05NGIzLWI1YmI2MmU3ZGRmM19nYW56ZVNlbmR1bmc"
@@ -2509,7 +2537,7 @@
     "original_title": "Better Watch Out",
     "year": "2017",
     "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/25/11/251110_0000_sendung_nsf/1/251110_0000_sendung_nsf_3360k_p36v17.mp4",
-    "url_website": "https://www.zdf.de/video/filme/better-watch-out-movie-100/better-watch-out-100",
+    "url_website": "https://www.zdf.de/filme/better-watch-out-movie-100",
     "plot": "Weihnachten steht vor der Tür und auch in einem kleinen, ruhigen Vorort stimmt man sich schon mal auf die Festzeit ein. Die beiden Jungs Luke und Garrett haben jedoch anderes im Sinn: Die möchten am liebsten gruselige Horrorfilme mit ihrer Babysitterin Ashley schauen, als sie für einen Abend allein gelassen werden. Und alles deutet darauf hin, dass der Abend tatsächlich so verläuft, wie sie es sich vorgestellt haben. Doch dann verschafft sich ein ungebetener Gast Zugang zum Haus und droht damit, für Chaos zu sorgen. Der Eindringling hat allerdings die Rechnung ohne Luke und Garrett gemacht – die zwei Knirpse drehen nämlich den Spieß kurzerhand um und nehmen ihn gefangen. Kurz darauf verwandelt sich das festlich dekorierte Heim in ein blutiges Schlachtfeld voll tückischer Fallen…",
     "mediathek_desc": "Luke ist heimlich in seine Babysitterin Ashley verliebt, die am Abend vor Weihnachten auf ihn aufpassen soll. Doch die Nacht verläuft alles andere als friedlich.",
     "director": "Chris Peckover",
@@ -2526,8 +2554,8 @@
       "Komödie"
     ],
     "channel": "ZDFneo",
-    "timestamp": 1762729500,
-    "isNew": false,
+    "timestamp": 1794468464,
+    "isNew": true,
     "tmdb_id": 406994,
     "tmdb_type": "movie"
   },
@@ -5845,8 +5873,8 @@
       "Drama"
     ],
     "channel": "ARD",
-    "timestamp": 1791702000,
-    "isNew": false,
+    "timestamp": 1795604400,
+    "isNew": true,
     "tmdb_id": 289228,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyNC0xMS0xMF8xMy0xNS1NRVo"
@@ -6347,32 +6375,6 @@
     "tmdb_id": 306594,
     "tmdb_type": "movie",
     "url_website": "https://www.arte.tv/de/videos/130956-000-A/der-kardinal/"
-  },
-  {
-    "title": "Der Kotzbrocken",
-    "search": "Der Kotzbrocken",
-    "year": "2015",
-    "video_url": "https://pd-videos.daserste.de/int/2021/04/23/134eeec4-d4e6-4d6e-a80e-c9f62fcabfae/JOB_528070__sendeton_1280x720-50p-3200kbit.mp4",
-    "plot": "Mein Reich, meine Regeln!\" Wenn Georg grantig ist, schmeißt er schon mal mit Aschenbechern um sich. Und Georg ist eigentlich immer grantig. Seit einem Autounfall sitzt der ehemalige Triathlet im Rollstuhl. In der stationären Pflegeeinrichtung übt sich der verbitterte Paraplegiker in drei neuen Disziplinen: Zorn, Zynismus und Verweigerung. Die alleinerziehende Sophie vom Gericht zu 300 Sozialstunden verdonnert, weil sie 47 Parktickets nicht bezahlt hat, soll nun versuchen, an ihn \"ranzukommen\". Wahrlich kein leichtes Unterfangen - doch nach Anlaufschwierigkeiten klappt es sogar. Sophies Chef und neuer Freund Jacques schmeckt dieses Engagement allerdings nicht",
-    "mediathek_desc": "Spielfilm Deutschland 2015\r\n\r\nSophie Brand (Aglaia Szyszkowitz) hat als alleinerziehende Mutter alles bestens im Griff – glaubt sie jedenfalls. Doch ihr kleiner Sohn Linus (Arsseni Bultmann) und ihre pubertierende Tochter Laura (Emilie Neumeister) sehen das ganz anders. Denn neben dem Haushalt muss sie auch noch zwei Jobs wuppen: Zweimal in der Woche räumt sie im Supermarkt die Regale ein, zudem a\n.....",
-    "director": "Tomy Wigand",
-    "actors": [
-      "Aglaia Szyszkowitz",
-      "Roeland Wiesnekker",
-      "Martin Rapold"
-    ],
-    "rating": "5.5",
-    "thumb": "https://image.tmdb.org/t/p/w342/tgQhJbiGgEJvDAW5TglVcdvTpyV.jpg",
-    "genres_list": [
-      "Komödie",
-      "TV-Film"
-    ],
-    "channel": "ARD",
-    "timestamp": 1619884200,
-    "isNew": false,
-    "tmdb_id": 326952,
-    "tmdb_type": "movie",
-    "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyMS0wNS0wMV8xNy01MC1NRVNa"
   },
   {
     "title": "Der König von Berlin",
@@ -7605,7 +7607,7 @@
     ],
     "channel": "ARD",
     "timestamp": 1794136200,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 370402,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAxOS0wMy0xN18xNC01NS1NRVo"
@@ -8814,32 +8816,6 @@
     "tmdb_id": 593772,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2FyZC5kZS9wbGFuQVJEXzE5ZDA0NTJiLTdiZWMtNGJkOS1hNmNkLTMyNTNjYjI4OGZmMF9nYW56ZVNlbmR1bmc"
-  },
-  {
-    "title": "Die Insassen",
-    "search": "Die Insassen",
-    "year": "2015",
-    "video_url": "https://nrodlzdf-a.akamaihd.net/none/zdf/15/09/150917_2015_sendung_fis/1/150917_2015_sendung_fis_3360k_p36v17.mp4",
-    "plot": "Nach einem Nervenzusammenbruch wird der erfolgsverwöhnte Finanzmanager Wilhelm Löring in eine psychiatrische Klinik eingewiesen. Fern aller Einsicht in seine Krankheit, beginnt er im Kreis seiner Therapiegruppe Menschen mit speziellen Fähigkeiten zu rekrutieren, um die Klinik an die Börse zu bringen. Nach und nach wachsen ihm seine Mitstreiter ans Herz, und der Finanzplan wird zur Nebensache.",
-    "mediathek_desc": "Der Tag, an dem sich Burnout und Paranoia die Hand reichen, ist der Tag, an dem Wilhelm Löhring vor Publikum einen spektakulären Nervenzusammenbruch erleidet.",
-    "director": "Franziska Meyer Price",
-    "actors": [
-      "Wolfgang Stumph",
-      "Maximilian Brückner",
-      "Thomas Kügel"
-    ],
-    "rating": "6.0",
-    "thumb": "https://image.tmdb.org/t/p/w342/vf3SG3efZBHnFqSnVNZFM0l0ab1.jpg",
-    "genres_list": [
-      "Drama",
-      "Komödie"
-    ],
-    "channel": "ZDF",
-    "timestamp": 1782879394,
-    "isNew": false,
-    "tmdb_id": 360500,
-    "tmdb_type": "movie",
-    "url_website": "https://www.zdf.de/filme/die-insassen-movie-100"
   },
   {
     "title": "Die Kamine von Green Knowe",
@@ -10082,33 +10058,6 @@
     "url_website": "https://www.3sat.de/film/spielfilm/die-spur-der-jaeger-100.html"
   },
   {
-    "title": "Die Spur der Knochen",
-    "search": "Die Spur der Knochen",
-    "original_title": "Die Spur der Knochen",
-    "year": "2022",
-    "video_url": "https://nrodlzdf-a.akamaihd.net/dach/zdf/24/04/240429_2215_sendung_spf/1/240429_2215_sendung_spf_3360k_p36v17.mp4",
-    "url_website": "https://www.zdf.de/filme/die-spur-der-knochen-movie-100",
-    "plot": "Mario arbeitet in einem Fundbüro. Er ist ein Einzelgänger, der sich so gut es geht von anderen Menschen fernhält. Allein Helena, eine junge Polizistin, die das Lagerhaus häufig besucht, lässt er etwas näher an sich heran. Seine Freizeit verbringt Mario damit, die Herkunft von besonders interessanten oder kuriosen Gegenständen aus seinen Regalen zu ergründen. Er hofft, so ihren Besitzern einen verlorenen Teil ihres Lebens und vielleicht auch ein Stück Seelenfrieden zurückgeben zu können. Eines Tages kommt ein alter Koffer bei ihm an, der aus dem lokalen Fluss gefischt wurde. Im Inneren des Objektes findet Mario Babykleidung und zu seinem Entsetzen auch das Skelett eines Kleinkindes. Er beschließt, auf eigene Faust Nachforschungen anzustellen. Dabei stößt er auf Sara, eine junge Frau, die sich seit früher Kindheit in den Fängen einer Menschenhandelsorganisation befindet …",
-    "mediathek_desc": "In einem Fundbüro taucht ein verschmutzter kleiner Koffer auf. Der Angestellte Mario öffnet das nasse Objekt und findet zu seinem großen Entsetzen die Knochen eines Babys.",
-    "director": "Jorge Dorado",
-    "actors": [
-      "Álvaro Morte",
-      "Eugenia Suárez",
-      "Verónica Echegui"
-    ],
-    "rating": "6.0",
-    "thumb": "https://image.tmdb.org/t/p/w342/2hnXqaSX2AmEnppr7zxuFH0PpL9.jpg",
-    "genres_list": [
-      "Mystery",
-      "Thriller"
-    ],
-    "channel": "ZDF",
-    "timestamp": 1782878143,
-    "isNew": false,
-    "tmdb_id": 946706,
-    "tmdb_type": "movie"
-  },
-  {
     "title": "Die Standesbeamtin",
     "search": "Die Standesbeamtin",
     "year": "2008",
@@ -10553,6 +10502,34 @@
     "timestamp": 1766955600,
     "isNew": false,
     "tmdb_id": 796185,
+    "tmdb_type": "movie"
+  },
+  {
+    "title": "Die drei Musketiere - Milady",
+    "search": "Die drei Musketiere - Milady",
+    "original_title": "Die drei Musketiere - Milady",
+    "year": "2023",
+    "video_url": "https://nrodlzdf-a.akamaihd.net/dach/zdf/25/12/251229_2215_sendung_spf/4/251229_2215_sendung_spf_a3a4_3360k_p36v17.mp4",
+    "url_website": "https://www.zdf.de/filme/die-drei-musketiere---milady-movie-100",
+    "plot": "Das französische Königreich ist in zwei Lager gespalten, als sich zwischen den katholischen Royalisten und den protestantischen Republikanern ein Bürgerkrieg abzeichnet. Die royalen Musketiere Athos, Aramis und Porthos müssen mitsamt ihres neuen Rekruten D'Artagnan inmitten dieses Tumults besonders auf der Hut sein und jederzeit mit einem Anschlag auf Ludwig XIII. rechnen. Zudem werden vom machthungrigen Kardinal Richelieu und seiner Spionin Milady de Winter jede Menge Intrigen am Hofe des Monarchen gesponnen. So arbeitet das Duo an einem Komplott, das das alles andere als kampfbereite Land in einen Krieg mit England stürzen soll ...",
+    "mediathek_desc": "D'Artagnan wird entführt und wacht in einem Versteck auf. Doch er gibt nicht auf und macht sich auf die Suche nach Constance - dabei trifft er überraschend auf die geheimnisvolle Milady.",
+    "director": "Martin Bourboulon",
+    "actors": [
+      "François Civil",
+      "Vincent Cassel",
+      "Romain Duris"
+    ],
+    "rating": "6.4",
+    "thumb": "https://image.tmdb.org/t/p/w342/3kRSwe1PJq8xI2qqD6BiEmJBVH4.jpg",
+    "genres_list": [
+      "Abenteuer",
+      "Action",
+      "Drama"
+    ],
+    "channel": "ZDF",
+    "timestamp": 1794988802,
+    "isNew": true,
+    "tmdb_id": 845111,
     "tmdb_type": "movie"
   },
   {
@@ -11047,7 +11024,7 @@
     ],
     "channel": "ZDFneo",
     "timestamp": 1794099900,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 244122,
     "tmdb_type": "movie"
   },
@@ -12520,7 +12497,7 @@
       "Romanze"
     ],
     "channel": "ZDF",
-    "timestamp": 1794383297,
+    "timestamp": 1794957355,
     "isNew": true,
     "tmdb_id": 1056535,
     "tmdb_type": "movie"
@@ -12574,7 +12551,7 @@
     ],
     "channel": "ARD",
     "timestamp": 1794094500,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 981336,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyNS0wNi0yMV8xNS0zMC1NRVNa"
@@ -13204,6 +13181,34 @@
     "tmdb_id": 1503103,
     "tmdb_type": "movie",
     "url_website": "https://www.zdf.de/filme/eine-bessere-welt-movie-100"
+  },
+  {
+    "title": "Eine fast perfekte Bescherung",
+    "search": "Eine fast perfekte Bescherung",
+    "original_title": "Eine fast perfekte Bescherung",
+    "year": "2025",
+    "video_url": "https://nrodlzdf-a.akamaihd.net/none/zdf/25/12/251214_2015_sendung_sof/1/251214_2015_sendung_sof_a1a2_3360k_p36v17.mp4",
+    "url_website": "https://www.zdf.de/filme/eine-fast-perfekte-bescherung-movie-100",
+    "plot": "Als an Heiligabend eine Weltkriegsbombe entschärft werden muss, werden die Leute aus der Umgebung in einer Turnhalle untergebracht. Dort treffen nun Menschen aufeinander, die sich sonst nie begegnet wären. Aufgrund der vielen Schicksale etwas episodisch, aber gerade wegen des gut zusammengestellten Ensembles  sehenswert.",
+    "mediathek_desc": "Ausgerechnet an Weihnachten müssen die Anwohner des Berliner Landwehrkanals wegen eines Bombenfunds evakuiert werden und Heiligabend in einer kalten Turnhalle verbringen.",
+    "director": "Ulli Baumann",
+    "actors": [
+      "Christine Eixenberger",
+      "Steve Windolf",
+      "Andrea L'Arronge"
+    ],
+    "rating": "8.0",
+    "thumb": "https://image.tmdb.org/t/p/w342/rRgh3cOwkZG6MVrLmsEMHOWHRtG.jpg",
+    "genres_list": [
+      "Komödie",
+      "Romanze",
+      "Drama"
+    ],
+    "channel": "ZDF",
+    "timestamp": 1794991144,
+    "isNew": true,
+    "tmdb_id": 1580654,
+    "tmdb_type": "movie"
   },
   {
     "title": "Eine ganz private Affäre",
@@ -15053,32 +15058,6 @@
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyNS0wNC0xOF8xMy0wMC1NRVNa"
   },
   {
-    "title": "Frischer Wind",
-    "search": "Frischer Wind",
-    "year": "2009",
-    "video_url": "https://pd-videos.daserste.de/int/2022/02/02/3b9de428-e05f-48ab-95f2-f75bb9991faf/JOB_558757__sendeton_1280x720-50p-3200kbit.mp4",
-    "plot": "Ein halbes Jahr ist es jetzt her, seit seine geliebte Frau starb, und noch immer kann Kurt Tobaben den Verlust nicht überwinden. Der wohlhabende Handschuhfabrikant aus Hamburg vernachlässigt seine Firma, verschanzt sich in seiner Villa und trauert der Vergangenheit nach. Erst ein Ausflug nach Travemünde bringt den verzweifelten Witwer auf andere Gedanken: In einer Hotelbar lernt er Luzy Ditten kennen, die dort als Serviererin arbeitet und ihn mit ihrer offenen, verständnisvollen Art sofort in ihren Bann zieht.",
-    "mediathek_desc": "Spielfilm Deutschland 2011 \r\n\r\nDer Tod seiner geliebten Frau hat den Hamburger Handschuhfabrikanten Kurt Tobaben aus der Bahn geworfen. Einsam und verzweifelt reist er an den Ort, an dem er mit ihr glückliche Stunden verbrachte: Travemünde.\r\n\r\nMit Günther Maria Halmer, Teresa Weißbach, Floriane Daniel, Ingeborg Westphal, Dirk Martens u. a. | Buch: Gabriele Kreis | Regie: Imogen Kimmel",
-    "director": "Imogen Kimmel",
-    "actors": [
-      "Günther Maria Halmer",
-      "Teresa Weißbach",
-      "Floriane Daniel"
-    ],
-    "rating": "6.0",
-    "thumb": "https://image.tmdb.org/t/p/w342/qxmplHxyba9ob2CFxa0858JBTV4.jpg",
-    "genres_list": [
-      "TV-Film",
-      "Drama"
-    ],
-    "channel": "ARD",
-    "timestamp": 1644667200,
-    "isNew": false,
-    "tmdb_id": 408717,
-    "tmdb_type": "movie",
-    "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyMi0wMi0xMl8xMy0wMC1NRVo"
-  },
-  {
     "title": "Fräulein Smillas Gespür für Schnee",
     "search": "Fräulein Smillas Gespür für Schnee",
     "year": "1997",
@@ -15397,7 +15376,7 @@
     "search": "Für immer hier",
     "original_title": "Für immer hier",
     "year": "2024",
-    "video_url": "https://manifest-arte.akamaized.net/api/manifest/v1/Generate/9860c626-aec8-418e-935f-5633914bc4be/VA-STA/XQ+KS+CHEV1/128668-000-A.m3u8",
+    "video_url": "https://manifest-arte.akamaized.net/api/manifest/v1/Generate/f0ee7ec6-87c5-4ae0-a3cd-26180f994e28/VA-STA/XQ+KS+CHEV1/128668-000-A.m3u8",
     "url_website": "https://www.arte.tv/de/videos/128668-000-A/fuer-immer-hier/",
     "plot": "Rio de Janeiro, Anfang der 1970er Jahre. In einem gemieteten Haus am Strand lebt die Familie Paiva: Vater Rubens, Mutter Eunice und ihre fünf Kinder.  Auch mit der allgegenwärtigen Unterdrückung bewahren sie in ihrem Zuhause eine Atmosphäre der Liebe, des Humors und der Offenheit. Ihre Zuneigung zueinander wird zu einem stillen Akt des Widerstands gegen die Diktatur, die ihr Leben radikal verändert. Als Rubens verschwindet, wird Eunice zur treibenden Kraft, um ihrer Familie eine neue Zukunft aufzubauen. Den Herausforderungen dieser dunklen Zeit begegnet sie mit Mut, Entschlossenheit und dem unerschütterlichen Glauben an ihre Kinder. Diese bewegende Geschichte wirft ein Licht auf die verschwiegenen Kapitel der brasilianischen Geschichte und würdigt die Stärke einer Frau, die trotz widrigster Umstände niemals aufgibt.",
     "mediathek_desc": "Rio de Janeiro in den 70er Jahren. In einem Mietshaus am Strand lebt die Familie Paiva: Vater Rubens, Mutter Eunice und ihre fünf Kinder. Unter der Militärdiktatur bewahren sie eine Atmosphäre der Liebe und des Humors. Als Rubens verschwindet, muss Eunice für ihre Familie stark bleiben. \"Für immer hier\" von Walter Salles gewann 2025 den Oscar als bester internationaler Film.",
@@ -16411,7 +16390,7 @@
     ],
     "channel": "ZDF",
     "timestamp": 1794055345,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 1371536,
     "tmdb_type": "movie"
   },
@@ -17125,7 +17104,7 @@
     "isNew": false,
     "tmdb_id": 265294,
     "tmdb_type": "movie",
-    "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2FyZC5kZS9wbGFuQVJEXzgzNjQyNTY5LTdlNzMtNDZlNy1hYTQ4LTY0N2EzM2FkNDhkNl9nYW56ZVNlbmR1bmc"
+    "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2FyZC5kZS9wbGFuQVJEXzgzNjQyNTY5LTdlNzMtNDZlNy1hYTQ4LTY0N2EzM2FkNDhkNl9nYW56ZVNlbmR1bmcvYXVkaW9kZXNrcmlwdGlvbg"
   },
   {
     "title": "Herzlichen Glückwunsch",
@@ -19820,7 +19799,7 @@
     ],
     "channel": "ARD",
     "timestamp": 1794056400,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 433260,
     "tmdb_type": "movie"
   },
@@ -20823,7 +20802,7 @@
     ],
     "channel": "ZDF",
     "timestamp": 1794089479,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 938614,
     "tmdb_type": "movie"
   },
@@ -21779,7 +21758,7 @@
     ],
     "channel": "ARD",
     "timestamp": 1794091200,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 404717,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyNS0wOC0xMV8xNC0wMy1NRVNa"
@@ -24720,33 +24699,6 @@
     "url_website": "https://www.arte.tv/de/videos/130524-000-A/nebraska/"
   },
   {
-    "title": "Nestwochen",
-    "search": "Nestwochen",
-    "original_title": "Nestwochen",
-    "year": "2021",
-    "video_url": "https://nrodlzdf-a.akamaihd.net/none/zdf/21/08/210819_2015_sendung_fis/6/210819_2015_sendung_fis_a1a2_3360k_p36v15.mp4",
-    "url_website": "https://www.zdf.de/filme/nestwochen-movie-100",
-    "plot": "Nach der Trennung versuchen es Julia und Robert mit \"Nesting\". Doch was zunächst gut für die Kinder scheint, macht die Sache für die ganze Familie nur noch komplizierter. Die zwölfjährige Marie und der siebenjährige Maxi wohnen weiter im Haus, während die Eltern sich wochenweise ablösen. Doch Robert verfolgt mit seinem Vorschlag einzig das Ziel, das Haus zu retten und Zeit zu gewinnen, damit Julia endlich wieder zur Vernunft kommt. Julia allerdings hält nicht viel davon, abzuwarten.",
-    "mediathek_desc": "Nach der Trennung versuchen es Julia und Robert mit \"Nesting\". Doch was zunächst gut für die Kinder scheint, macht die Sache für die ganze Familie nur noch komplizierter.",
-    "director": "Tobi Baumann",
-    "actors": [
-      "Matthias Koeberlin",
-      "Bettina Lamprecht",
-      "Tom Beck"
-    ],
-    "rating": "4.0",
-    "thumb": "https://image.tmdb.org/t/p/w342/2z0rHiAtrX1iwYeNVexl1bsjTYR.jpg",
-    "genres_list": [
-      "TV-Film",
-      "Komödie"
-    ],
-    "channel": "ZDF",
-    "timestamp": 1782877592,
-    "isNew": false,
-    "tmdb_id": 860995,
-    "tmdb_type": "movie"
-  },
-  {
     "title": "Neu in unserer Familie - Ein Baby für alle",
     "search": "Neu in unserer Familie - Ein Baby für alle",
     "year": "2017",
@@ -27077,31 +27029,6 @@
     "url_website": "https://www.3sat.de/film/spielfilm/rivale-100.html"
   },
   {
-    "title": "Rivalinnen der Liebe",
-    "search": "Rivalinnen der Liebe",
-    "year": "1999",
-    "video_url": "https://pd-videos.daserste.de/int/2021/07/21/a8da1a83-472f-40c6-b05b-ed410181726d/JOB_564268__sendeton_1280x720-50p-3200kbit.mp4",
-    "plot": "Aus Eifersucht schwört die verwöhnte Leonora ihrer Mitschülerin Cassie ewige Rache und sorgt dafür, dass das Waisenmädchen des Internats verwiesen wird. Jahre später heiratet Cassie den Gestütsbesitzer Tyrone, den ehemaligen Liebhaber von Leonoras Mutter. Leonora spinnt eine Intrige, die Tyrone beinahe ruiniert und seine Ehe schwer belastet. Cassie erleidet eine Fehlgeburt. Nach Tyrones Unfalltod fordert sie ihre Rivalin zu einem alles entscheidenden Pferderennen heraus.",
-    "mediathek_desc": "Spielfilm Deutschland 1999 \r\n\r\nDie verwöhnte Leonora von Wagner schwört ihrer Mitschülerin Cassie McGann aus Eifersucht ewige Rache und sorgt dafür, dass das Waisenmädchen aus dem Internat fliegt. Jahre später kreuzen sich ihre Wege erneut. \r\n\r\nMit Katja Woywood, Tina Ruland, Walter Sittler, Manou Lubowski, Rolf Becker, Gila von Weitershausen, Jana Leipziger u. a. | Regie: Karola Zeisberg-Meeder I\n.....",
-    "director": "Karola Meeder",
-    "actors": [
-      "Katja Woywood",
-      "Walter Sittler",
-      "Tina Ruland"
-    ],
-    "rating": "8.0",
-    "thumb": "https://image.tmdb.org/t/p/w342/tIyhDAwyXyrf96mvmrl3DHj5LiW.jpg",
-    "genres_list": [
-      "Drama"
-    ],
-    "channel": "ARD",
-    "timestamp": 1627780800,
-    "isNew": false,
-    "tmdb_id": 285183,
-    "tmdb_type": "movie",
-    "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyMS0wOC0wMV8wMy0yMC1NRVNa"
-  },
-  {
     "title": "Robbi, Tobbi und das Fliewatüüt",
     "search": "Robbi, Tobbi und das Fliewatüüt",
     "year": "2016",
@@ -29171,7 +29098,7 @@
     ],
     "channel": "ARD",
     "timestamp": 1794145500,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 874921,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2FyZC5kZS9wbGFuQVJEXzUwMDE3NWRlLWE3ZTktNDRiNi04YWJhLTc5ODIxNWVjMmRiN19nYW56ZVNlbmR1bmc"
@@ -29203,30 +29130,30 @@
     "tmdb_type": "movie"
   },
   {
-    "title": "Stankowskis Millionen",
-    "search": "Stankowskis Millionen",
-    "year": "2011",
-    "video_url": "https://nrodlzdf-a.akamaihd.net/none/zdf/18/10/181003_1115_sendung_fis/1/181003_1115_sendung_fis_3360k_p36v17.mp4",
-    "plot": "Im Jahr 1991 herrscht Katerstimmung in Ostdeutschland. Die Wirtschaft in der ehemaligen DDR ist am Ende. Die Arbeitslosigkeit und die Armut unter der Bevölkerung sind groß. Viele Menschen geben der Treuhand die Schuld an der Misere.  Werner Stankowski, ein gelernter Informatiker und Computerspezialist, findet trotz hunderter Bewerbungen keine Arbeit. Seine Frau hält ihn für einen Versager und verlässt ihn für einen reichen Mann aus dem Westen. Nur sein bester Freund Rudi, der ebenfalls arbeitslos ist, hält noch zu ihm. Rudis Frau Gerda hält die Familie mit einem schlecht laufenden Erotik-Versand über Wasser. Werner erhält darauf ein Bewerbungsgespräch bei einer Computerfirma in München. Die Wessis denunzieren Werner während des Gesprächs und demütigen ihn mit Stasi-Sprüchen.....",
-    "mediathek_desc": "1991: Den arbeitslosen Robotnik-Entwickler Stankowski hat seine Frau verlassen und gegen einen \"Wessi\"-Arzt eingetauscht. Doch das Glück scheint zum Loser Stankowski zurückzukehren.",
-    "director": "Franziska Meyer Price",
+    "title": "St. Josef am Berg - Stürmische Zeiten",
+    "search": "St. Josef am Berg - Stürmische Zeiten",
+    "original_title": "St. Josef am Berg - Stürmische Zeiten",
+    "year": "2018",
+    "video_url": "https://ctv-videos.daserste.de/de/2026/10/20/10315/10315_30104_sendeton_1280x720-50p-3200kbit.mp4",
+    "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2FyZC5kZS9wbGFuQVJEX2QwMzUwNGExLTY3ZmUtNDVmOC1iZWQ5LWNjZDAyYmE1NWJhNl9nYW56ZVNlbmR1bmc",
+    "plot": "Svea und Peter sind mittlerweile Eltern eines Mädchens. Svea wurde zur Bürgermeisterin der Nachbargemeinde Klamm gewählt und kämpft als solche für die Interessen der Bergbauern. Mit dem Münchner Naturschutz-Experten Martin Gollan und ihrem Assistenten Igor entwickelt Svea ein alternatives Konzept für den Nationalpark. Joseph hingegen sorgt dafür, dass ihr bei einer Anhörung Peter als Chefveterinär in den Rücken fällt. Peter reicht es, er hat es satt von seinem Vater wieder instrumentalisiert zu werden und ist bereit mit Tochter Josefine und Svea nach Stralsund zurückzukehren.",
+    "mediathek_desc": "Spielfilm Deutschland 2018 Svea Classen (Paula Kalenberg) nimmt den Kampf gegen die Machenschaften ihres Schwiegervaters Joseph (Harald Krassnitzer) auf: Als frisch gekürte Bürgermeisterin der Gemeinde Klamm kämpft die Hanseatin für die Interessen der betrogenen Bergbauern....",
+    "director": "Lars Montag",
     "actors": [
-      "Wolfgang Stumph",
-      "Christian Tramitz",
-      "Jörg Schüttauf"
+      "Harald Krassnitzer",
+      "Paula Kalenberg",
+      "Sebastian Wendelin"
     ],
     "rating": "6.3",
-    "thumb": "https://image.tmdb.org/t/p/w342/quB9E0kFh1SUMc7YGrP6clZkAI7.jpg",
+    "thumb": "https://image.tmdb.org/t/p/w342/wIZZcj8zsIZj3CGLylEyLjhAtx1.jpg",
     "genres_list": [
-      "TV-Film",
-      "Komödie"
+      "Drama"
     ],
-    "channel": "ZDF",
-    "timestamp": 1782878871,
-    "isNew": false,
-    "tmdb_id": 141583,
-    "tmdb_type": "movie",
-    "url_website": "https://www.zdf.de/filme/stankowskis-millionen-movie-100"
+    "channel": "ARD",
+    "timestamp": 1795263600,
+    "isNew": true,
+    "tmdb_id": 950681,
+    "tmdb_type": "movie"
   },
   {
     "title": "Starve Acre",
@@ -29326,7 +29253,7 @@
       "Komödie"
     ],
     "channel": "ARD",
-    "timestamp": 1796481000,
+    "timestamp": 1797334200,
     "isNew": true,
     "tmdb_id": 657316,
     "tmdb_type": "movie",
@@ -31690,8 +31617,8 @@
       "TV-Film"
     ],
     "channel": "ARD",
-    "timestamp": 1791030600,
-    "isNew": false,
+    "timestamp": 1795607700,
+    "isNew": true,
     "tmdb_id": 606786,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyMy0xMi0zMV8xNS0xNS1NRVo"
@@ -33270,32 +33197,6 @@
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyMi0xMi0xMV8xNS0zMC1NRVo"
   },
   {
-    "title": "Weihnachten im Morgenland",
-    "search": "Weihnachten im Morgenland",
-    "original_title": "Weihnachten im Morgenland",
-    "year": "2010",
-    "video_url": "https://nrodlzdf-a.akamaihd.net/none/zdf/21/12/211213_sendung_fis/1/211213_sendung_fis_a1a2_3360k_p36v17.mp4",
-    "url_website": "https://www.zdf.de/filme/weihnachten-im-morgenland-movie-100",
-    "plot": "Alle Jahre wieder ordert Scheich Scharif eine Tanne bei Förster Droste im Sauerland. In diesem Jahr will der Araber gleich einen ganzen Wald. Obwohl Tannen in der Wüste keine Chance haben, düst der verwitwete Droste mit der Scheichvertrauten Milena nach Dubai. Denn lieber in der Wüste darben, als mit der nervigen Verwandtschaft Weihnachten feiern.",
-    "mediathek_desc": "Florian Droste, Forstwirt im Sauerland, lebt ein Jahr nach dem Tod seiner Frau zurückgezogen in seinem Forsthaus und widmet sich nur noch \"seinem\" Wald und seiner Trauer.",
-    "director": "Martin Gies",
-    "actors": [
-      "Walter Sittler",
-      "Anica Dobra",
-      "Anja Boche"
-    ],
-    "rating": "5.5",
-    "thumb": "https://image.tmdb.org/t/p/w342/wmjPKJhE5wdtldjWHevItsSG5ul.jpg",
-    "genres_list": [
-      "Komödie"
-    ],
-    "channel": "ZDF",
-    "timestamp": 1794229438,
-    "isNew": true,
-    "tmdb_id": 292282,
-    "tmdb_type": "movie"
-  },
-  {
     "title": "Weihnachts-Männer",
     "search": "Weihnachts-Männer",
     "year": "2015",
@@ -33511,8 +33412,8 @@
     "search": "Wenn du nach dem Tod erwachst",
     "original_title": "Wenn du nach dem Tod erwachst",
     "year": "2022",
-    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/25/01/250102_0055_sendung_spf/1/250102_0055_sendung_spf_a1a2_3360k_p36v15.mp4",
-    "url_website": "https://www.zdf.de/video/filme/wenn-du-nach-dem-tod-erwachst-movie-100/wenn-du-nach-dem-tod-erwachst-100",
+    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/25/01/250102_0055_sendung_spf/1/250102_0055_sendung_spf_a3a4_3360k_p36v15.mp4",
+    "url_website": "https://www.zdf.de/filme/wenn-du-nach-dem-tod-erwachst-movie-100",
     "plot": "Russ Potter hat zahlreichen Nachbarn schlechte Anlagetipps gegeben, wodurch diese Geld verloren haben. Der Broker gerät ins Abseits der Gemeinschaft und erhält beunruhigende Drohanrufe.",
     "mediathek_desc": "Russ Potter hat zahlreichen Nachbarn schlechte Anlagetipps gegeben, wodurch diese Geld verloren haben. Der Broker gerät ins Abseits der Gemeinschaft und erhält beunruhigende Drohanrufe.",
     "director": "Michael Mailer",
@@ -33532,8 +33433,8 @@
       "Krimi"
     ],
     "channel": "ZDF",
-    "timestamp": 1735775700,
-    "isNew": false
+    "timestamp": 1794379900,
+    "isNew": true
   },
   {
     "title": "Wenn wir uns begegnen",
@@ -34790,6 +34691,32 @@
     "url_website": "https://www.3sat.de/film/spielfilm/zeit-der-unschuld-100.html"
   },
   {
+    "title": "Zikaden",
+    "search": "Zikaden",
+    "original_title": "Zikaden",
+    "year": "2025",
+    "video_url": "https://manifest-arte.akamaized.net/api/manifest/v1/Generate/1d9258e2-c41d-4bf5-8c5a-6b9950703bd6/VOA-STA/XQ+KS+CHEV1/117142-000-A.m3u8",
+    "url_website": "https://www.arte.tv/de/videos/117142-000-A/zikaden/",
+    "plot": "Als Isabell erkennt, dass ihre alten Eltern nicht länger alleine für sich sorgen können, nimmt ihr Leben eine Wendung. Die Suche nach Pflegepersonal gestaltet sich schwierig und auch in ihrer Ehe gibt es Probleme; sie pendelt zwischen Berlin und dem Wochenendhaus ihrer Eltern, einem eindrucksvollen modernistischen Bau, den ihr prominenter Vater in seinen besseren Zeiten selbst entworfen hat. Hier trifft sie mehrmals auf die geheimnisvolle Anja, eine alleinerziehende Mutter, die gerade so über die Runden kommt. Eine unerwartete Beziehung entsteht. Je mehr Anja und ihre Tochter Greta Teil von Isabells Leben werden, desto unsicherer wird sie in Bezug auf alles vermeintlich Bekannte, das sie sich so sorgfältig aufgebaut hat. Isabell spürt, wie sich der Boden unter ihr auftut, während sie zunehmend die Kontrolle verliert.\"",
+    "mediathek_desc": "Isabell pflegt ihre kranken Eltern und kämpft gleichzeitig um ihre Ehe. Da lernt sie die rätselhafte Anja kennen, eine alleinerziehende Mutter, die sich mühsam durchschlägt. Eine unerwartete Freundschaft entsteht. Doch je näher sich die Frauen kommen, desto mehr gerät Isabells Leben aus den Fugen. Spielfilm unter der Regie von Ina Weisse mit Nina Hoss und Saskia Rosendahl",
+    "director": "Ina Weisse",
+    "actors": [
+      "Nina Hoss",
+      "Saskia Rosendahl",
+      "Vincent Macaigne"
+    ],
+    "rating": "6.1",
+    "thumb": "https://image.tmdb.org/t/p/w342/i0grAX3DZugtLQIyAJViFZUfrG9.jpg",
+    "genres_list": [
+      "Drama"
+    ],
+    "channel": "ARTE.DE",
+    "timestamp": 1795202100,
+    "isNew": true,
+    "tmdb_id": 1339234,
+    "tmdb_type": "movie"
+  },
+  {
     "title": "Zimtstern und Halbmond",
     "search": "Zimtstern und Halbmond",
     "year": "2010",
@@ -34968,7 +34895,7 @@
       "Romanze"
     ],
     "channel": "BR",
-    "timestamp": 1791661500,
+    "timestamp": 1775493000,
     "isNew": false,
     "tmdb_id": 669107,
     "tmdb_type": "movie",
