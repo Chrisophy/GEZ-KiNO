@@ -3630,7 +3630,7 @@
     ],
     "channel": "ZDF",
     "timestamp": 1794177297,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 1161617,
     "tmdb_type": "movie"
   },
@@ -5900,8 +5900,8 @@
       "Romanze"
     ],
     "channel": "ARD",
-    "timestamp": 1792226400,
-    "isNew": false,
+    "timestamp": 1795691100,
+    "isNew": true,
     "tmdb_id": 310915,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyNS0wMS0wNV8xMi0xNS1NRVo"
@@ -7078,38 +7078,10 @@
     ],
     "channel": "ARD",
     "timestamp": 1794148200,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 381466,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyNS0wOC0yNF8xNS0zMC1NRVNa"
-  },
-  {
-    "title": "Der Sternwanderer",
-    "search": "Der Sternwanderer",
-    "year": "2007",
-    "video_url": "https://manifest-arte.akamaized.net/api/manifest/v1/Generate/ee6d1648-209f-4574-b2f9-04b5b28a4953/de/XQ+KS+CHEV1/101328-000-A.m3u8",
-    "plot": "Der junge Engländer Tristan hält um die Hand von Victoria an. Er verspricht, ihr eine Sternschnuppe zu Füßen zu legen. Dazu bricht er in das durch eine Mauer getrennte magische Königreich Stormhold auf und findet den gefallenen Stern Yvaine. Doch die Hexe Lamia will ihr Herz und Thronfolger Septimus ihren Schmuck. Bei der abenteuerlichen Flucht vor den Verfolgern sind Gefährten rar gesät. Nur der tuntige Captain Shakespeare ist auf ihrer Seite.",
-    "mediathek_desc": "Wall ist ein verschlafenes englisches Dorf. Hier gibt der junge Tristan Thorne dem hübschesten Mädchen, dessen Liebe er zu gewinnen hofft, ein gewagtes Versprechen: Er wird ihr einen herabgefallenen Stern bringen. Dazu muss er jedoch gegen alle Verbote verstoßen ... – Verfilmung (2007) des gleichnamigen Romans von Neil Gaiman. Regie: Matthew Vaughn.",
-    "director": "Matthew Vaughn",
-    "actors": [
-      "Charlie Thomas Cox",
-      "Claire Danes",
-      "Michelle Pfeiffer"
-    ],
-    "rating": "7.3",
-    "thumb": "https://image.tmdb.org/t/p/w342/xqpu4sRJ2dU3JiI3cKS1Q4qtykd.jpg",
-    "genres_list": [
-      "Abenteuer",
-      "Fantasy",
-      "Romanze",
-      "Familie"
-    ],
-    "channel": "ARTE.DE",
-    "timestamp": 1791742512,
-    "isNew": false,
-    "tmdb_id": 2270,
-    "tmdb_type": "movie",
-    "url_website": "https://www.arte.tv/de/videos/101328-000-A/der-sternwanderer/"
   },
   {
     "title": "Der Taucher",
@@ -8818,6 +8790,33 @@
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2FyZC5kZS9wbGFuQVJEXzE5ZDA0NTJiLTdiZWMtNGJkOS1hNmNkLTMyNTNjYjI4OGZmMF9nYW56ZVNlbmR1bmc"
   },
   {
+    "title": "Die Insassen",
+    "search": "Die Insassen",
+    "original_title": "Die Insassen",
+    "year": "2015",
+    "video_url": "https://nrodlzdf-a.akamaihd.net/none/zdf/15/09/150917_2015_sendung_fis/1/150917_2015_sendung_fis_3360k_p36v17.mp4",
+    "url_website": "https://www.zdf.de/filme/die-insassen-movie-100",
+    "plot": "Nach einem Nervenzusammenbruch wird der erfolgsverwöhnte Finanzmanager Wilhelm Löring in eine psychiatrische Klinik eingewiesen. Fern aller Einsicht in seine Krankheit, beginnt er im Kreis seiner Therapiegruppe Menschen mit speziellen Fähigkeiten zu rekrutieren, um die Klinik an die Börse zu bringen. Nach und nach wachsen ihm seine Mitstreiter ans Herz, und der Finanzplan wird zur Nebensache.",
+    "mediathek_desc": "Der Tag, an dem sich Burnout und Paranoia die Hand reichen, ist der Tag, an dem Wilhelm Löhring vor Publikum einen spektakulären Nervenzusammenbruch erleidet.",
+    "director": "Franziska Meyer Price",
+    "actors": [
+      "Wolfgang Stumph",
+      "Maximilian Brückner",
+      "Thomas Kügel"
+    ],
+    "rating": "6.0",
+    "thumb": "https://image.tmdb.org/t/p/w342/vf3SG3efZBHnFqSnVNZFM0l0ab1.jpg",
+    "genres_list": [
+      "Drama",
+      "Komödie"
+    ],
+    "channel": "ZDF",
+    "timestamp": 1782879394,
+    "isNew": false,
+    "tmdb_id": 360500,
+    "tmdb_type": "movie"
+  },
+  {
     "title": "Die Kamine von Green Knowe",
     "search": "Die Kamine von Green Knowe",
     "year": "2010",
@@ -9374,31 +9373,6 @@
     "tmdb_id": 371357,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAxOS0xMC0yNV8wMi0xMC1NRVNa"
-  },
-  {
-    "title": "Die Macht und ihr Preis",
-    "search": "Die Macht und ihr Preis",
-    "year": "1976",
-    "video_url": "https://manifest-arte.akamaized.net/api/manifest/v1/Generate/ded64fb6-1ed7-45b2-8ecb-3cf525562bcc/de/XQ+KS+CHEV1/026377-000-B.m3u8",
-    "plot": "Der römische Polizeiinspektor Rogas übernimmt die Ermittlungen, nachdem der gefürchtete Staatsanwalt Varga auf offener Straße erschossen wurde. Nach Morden an weiteren hohen Justizbeamten in Sütitalien kommt Rogas einer gigantischen Verschwörung auf die Spur. Seine Vorgesetzten versuchen schließlich, ihn zurückzupfeifen...",
-    "mediathek_desc": "Inspektor Rogas findet bei seinen Vorgesetzten wenig Unterstützung, als er eine spektakuläre Mordserie untersucht. Alle Opfer sind Justizbeamte. Bei seinen Ermittlungen kommt Rogas ein Verdacht: Der Täter, den er sucht, könnte für ein politisches Komplott missbraucht werden. Francesco Rosis berühmter Thriller von 1975 mit Lino Ventura in der Hauptrolle.",
-    "director": "Francesco Rosi",
-    "actors": [
-      "Lino Ventura",
-      "Tino Carraro",
-      "Marcel Bozzuffi"
-    ],
-    "rating": "6.8",
-    "thumb": "https://image.tmdb.org/t/p/w342/nGJ48PIKsTzNcXw3b0lGnZ4gLcv.jpg",
-    "genres_list": [
-      "Thriller"
-    ],
-    "channel": "ARTE.DE",
-    "timestamp": 1792433661,
-    "isNew": false,
-    "tmdb_id": 62789,
-    "tmdb_type": "movie",
-    "url_website": "https://www.arte.tv/de/videos/026377-000-A/die-macht-und-ihr-preis/"
   },
   {
     "title": "Die Meute der Erben",
@@ -10510,7 +10484,7 @@
     "original_title": "Die drei Musketiere - Milady",
     "year": "2023",
     "video_url": "https://nrodlzdf-a.akamaihd.net/dach/zdf/25/12/251229_2215_sendung_spf/4/251229_2215_sendung_spf_a3a4_3360k_p36v17.mp4",
-    "url_website": "https://www.zdf.de/filme/die-drei-musketiere---milady-movie-100",
+    "url_website": "https://www.zdf.de/video/filme/die-drei-musketiere---milady-movie-100/die-drei-musketiere---milady-100",
     "plot": "Das französische Königreich ist in zwei Lager gespalten, als sich zwischen den katholischen Royalisten und den protestantischen Republikanern ein Bürgerkrieg abzeichnet. Die royalen Musketiere Athos, Aramis und Porthos müssen mitsamt ihres neuen Rekruten D'Artagnan inmitten dieses Tumults besonders auf der Hut sein und jederzeit mit einem Anschlag auf Ludwig XIII. rechnen. Zudem werden vom machthungrigen Kardinal Richelieu und seiner Spionin Milady de Winter jede Menge Intrigen am Hofe des Monarchen gesponnen. So arbeitet das Duo an einem Komplott, das das alles andere als kampfbereite Land in einen Krieg mit England stürzen soll ...",
     "mediathek_desc": "D'Artagnan wird entführt und wacht in einem Versteck auf. Doch er gibt nicht auf und macht sich auf die Suche nach Constance - dabei trifft er überraschend auf die geheimnisvolle Milady.",
     "director": "Martin Bourboulon",
@@ -10527,8 +10501,8 @@
       "Drama"
     ],
     "channel": "ZDF",
-    "timestamp": 1794988802,
-    "isNew": true,
+    "timestamp": 1767042900,
+    "isNew": false,
     "tmdb_id": 845111,
     "tmdb_type": "movie"
   },
@@ -12211,7 +12185,7 @@
       "Drama"
     ],
     "channel": "ZDF",
-    "timestamp": 1794784555,
+    "timestamp": 1795080999,
     "isNew": true,
     "tmdb_id": 492390,
     "tmdb_type": "movie"
@@ -15584,32 +15558,6 @@
     "tmdb_type": "movie"
   },
   {
-    "title": "Geerbtes Glück",
-    "search": "Geerbtes Glück",
-    "year": "2004",
-    "video_url": "https://pd-videos.daserste.de/int/2022/09/06/b4d6b4c8-b397-411f-b2da-7304100c10e5/JOB_514361__sendeton_1280x720-50p-3200kbit.mp4",
-    "plot": "Die Hamburger Landschaftsarchitektin Ulrike erbt ein Weingut bei Barcelona, wo sie sich in Pablo verliebt. Ihr väterli­cher Freund Joe rät zur Vorsicht, denn Pablo ist der Sohn eines Immobilien­hais. Hat es der Spanier nur auf ihr Grundstück abgesehen?  Bis das geklärt ist, nimmt das Dramolett so manch holprige Wendung.",
-    "mediathek_desc": "Spielfilm Deutschland 2004 \r\n\r\nAls Ulrike Bongart ein Weingut erbt, lernt sie Pablo kennen und lieben. Sie beschließt auf ihrem Weingut ein neues Leben zu beginnen. Doch Pablo ist der Sohn eines skrupellosen Geschäftsmannes, der es auf ihr Grundstück abgesehen hat. \r\n\r\nMit Jennifer Nitsch, Francis Fulton-Smith, Ursela Monn, Gerd Silberbauer, Michael Mendl u. a. | Buch:\tBarbara Engelke I Regie: Hei\n.....",
-    "director": "Heidi Kranz",
-    "actors": [
-      "Jennifer Nitsch",
-      "Francis Fulton-Smith",
-      "Ursela Monn"
-    ],
-    "rating": "3.8",
-    "thumb": "https://image.tmdb.org/t/p/w342/Ad4qKpLTvtSe6kKu08FHKXkopp5.jpg",
-    "genres_list": [
-      "Romanze",
-      "Drama"
-    ],
-    "channel": "ARD",
-    "timestamp": 1663414200,
-    "isNew": false,
-    "tmdb_id": 311965,
-    "tmdb_type": "movie",
-    "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyMi0wOS0xN18xMy0zMC1NRVNa"
-  },
-  {
     "title": "Gefühle im Sturm",
     "search": "Gefühle im Sturm",
     "year": "2002",
@@ -15841,6 +15789,33 @@
     "tmdb_id": 11441,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2FyZC5kZS9wbGFuQVJEX2VkMDFmYTQ0LTJlYTctNGM3Zi05OTg4LTFhODJmMDVlZWRjOF9nYW56ZVNlbmR1bmc"
+  },
+  {
+    "title": "Gloria - Das Leben wartet nicht",
+    "search": "Gloria - Das Leben wartet nicht",
+    "original_title": "Gloria - Das Leben wartet nicht",
+    "year": "2019",
+    "video_url": "https://ctv-videos.daserste.de/de/2026/10/20/5617/5617_30108_sendeton_1280x720-50p-3200kbit.mp4",
+    "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2FyZC5kZS9wbGFuQVJEX2E1N2ZlNjQ3LTRhY2MtNDY4YS04YmI1LWYwYmY2NDMwZjZiY19nYW56ZVNlbmR1bmc",
+    "plot": "Die Mittfünfzigerin Gloria fühlt sich seit ihrer Scheidung einsam. Ihre Kinder Anne und Peter haben längst ein eigenes Leben - er mit seinem neugeborenen Baby, sie mit ihren Yoga-Kursen und dem heißen neuen Surfer-Freund. Gloria, die das Tanzen liebt, beginnt deswegen, auf Single-Partys überall in Los Angeles zu gehen. Tagsüber kämpft sie sich durch ihren langweiligen Alltag im Büro und nachts schlägt sie sich die Nächte um die Ohren. Bei einer dieser nächtlichen Streifzüge lernt sie Arnold kennen. Zunächst scheint es für Gloria nun bergauf zu gehen, doch sie ist sich nicht sicher, ob sie ihrem neu gefundenen Glück trauen kann – vor allem. als sie herausfindet, dass der ebenfalls geschiedene Arnold sie vor seinen Töchtern verheimlicht ...",
+    "mediathek_desc": "Spielfilm USA 2018 (Gloria Bell) Gloria (Julianne Moore), temperamentvolle Best-Agerin und seit 14 Jahren glücklich geschieden, kann mit ihrem Leben zufrieden sein. Zu ihren erwachsenen Kindern Anne (Caren Pistorius) und Peter (Michael Cera) hat sie ein gutes Verhältnis. Sie könnten sie zwar öfters anrufen, aber Gloria kommt damit zurecht....",
+    "director": "Sebastián Lelio",
+    "actors": [
+      "Julianne Moore",
+      "John Turturro",
+      "Michael Cera"
+    ],
+    "rating": "5.9",
+    "thumb": "https://image.tmdb.org/t/p/w342/6KsZAu0QPfbp3AkYEi4cSBgwSHP.jpg",
+    "genres_list": [
+      "Drama",
+      "Romanze"
+    ],
+    "channel": "ARD",
+    "timestamp": 1795128300,
+    "isNew": true,
+    "tmdb_id": 491473,
+    "tmdb_type": "movie"
   },
   {
     "title": "Gloria, die schönste Kuh meiner Schwester",
@@ -16972,34 +16947,6 @@
     "tmdb_id": 330262,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyNC0wOC0xOF8xNC0xMC1NRVNa"
-  },
-  {
-    "title": "Hell",
-    "search": "Hell",
-    "year": "2011",
-    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/24/08/240827_0350_sendung_spf/1/240827_0350_sendung_spf_3360k_p36v17.mp4",
-    "plot": "Seitdem die Strahlkraft der Sonne zugenommen hat, ist die Erde ein verdörrter, mörderischer Ort geworden. Nur wenige Überlebende sind verblieben, die sich notdürftig gegen die Sonnenstrahlen schützen und deren Leben von der Suche nach Wasser und Benzin bestimmt ist. Dazu gehört die Zweckgemeinschaft von Phillip und den Schwestern Marie und Leonie. Auf dem Weg in die Berge, wo es angeblich Leben geben soll, lesen sie Tom auf, ohne sich sicher sein zu können, dass er ihnen wohlgesonnen ist. Als sie in einen Hinterhalt geraten, beginnt der Kampf.",
-    "mediathek_desc": "Nach einer starken Erwärmung der Erdatmosphäre ist die Welt zur Einöde verkommen. Das Paar Marie und Phillip kämpft gemeinsam mit Maries junger Schwester Leonie ums Überleben.",
-    "director": "Tim Fehlbaum",
-    "actors": [
-      "Hannah Herzsprung",
-      "Lars Eidinger",
-      "Stipe Erceg"
-    ],
-    "rating": "5.8",
-    "thumb": "https://image.tmdb.org/t/p/w342/fV97pxlmMfWPMSsYumj6Yghgi62.jpg",
-    "genres_list": [
-      "Horror",
-      "Sci-Fi",
-      "Thriller",
-      "Mystery"
-    ],
-    "channel": "ZDF",
-    "timestamp": 1792527156,
-    "isNew": false,
-    "tmdb_id": 73262,
-    "tmdb_type": "movie",
-    "url_website": "https://www.zdf.de/filme/hell-movie-100"
   },
   {
     "title": "Herr Lenz reist in den Frühling",
@@ -24673,32 +24620,6 @@
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyNS0wNi0xNF8xNS0zMC1NRVNa"
   },
   {
-    "title": "Nebraska",
-    "search": "Nebraska",
-    "year": "2013",
-    "video_url": "https://manifest-arte.akamaized.net/api/manifest/v1/Generate/d3c1aff5-5911-467b-8962-b80d8ea1f60c/de/XQ+KS+CHEV1/130524-000-A.m3u8",
-    "plot": "Woody Grant leidet an Demenz. Da er glaubt, dass er bei einem Gewinnspiel eine Million Dollar gewonnen hat, will er nun von seinem Haus in Billings nach Lincoln reisen, um das Geld abzuholen. Nach langem hin und her erklärt sich sein entfremdeter Sohn David dazu bereit, ihn zu fahren. Doch durch einen Unfall sind die beiden dazu gezwungen, einen Zwischenstopp in Hawthorne, einem Städtchen in Nebraska, einzulegen: Woodys Geburtsstadt.",
-    "mediathek_desc": "Ein Vater und sein erwachsener Sohn begeben sich auf eine Reise, um einen vermeintlichen Millionen-Dollar-Gewinn abzuholen. Was als mühsamer, aber vergeblicher Roadtrip beginnt, wird schließlich zur Suche nach einem Weg zur Wiedergutmachung. Ein ergreifendes Roadmovie von Alexander Payne über Würde, das Älterwerden und eine tiefe Vater-Sohn-Beziehung.",
-    "director": "Doug Mankoff",
-    "actors": [
-      "Bruce Dern",
-      "Will Forte",
-      "June Squibb"
-    ],
-    "rating": "7.4",
-    "thumb": "https://image.tmdb.org/t/p/w342/o1t2Mw18EEBnl8v4Nby3PFjxnM1.jpg",
-    "genres_list": [
-      "Drama",
-      "Abenteuer"
-    ],
-    "channel": "ARTE.DE",
-    "timestamp": 1791396934,
-    "isNew": false,
-    "tmdb_id": 129670,
-    "tmdb_type": "movie",
-    "url_website": "https://www.arte.tv/de/videos/130524-000-A/nebraska/"
-  },
-  {
     "title": "Neu in unserer Familie - Ein Baby für alle",
     "search": "Neu in unserer Familie - Ein Baby für alle",
     "year": "2017",
@@ -25511,31 +25432,6 @@
     "tmdb_id": 9627,
     "tmdb_type": "movie",
     "url_website": "https://www.3sat.de/film/spielfilm/old-surehand-100.html"
-  },
-  {
-    "title": "Olivia",
-    "search": "Olivia",
-    "year": "2025",
-    "video_url": "https://nrodlzdf-a.akamaihd.net/none/zdf/26/05/260513_2015_sendung_fis/1/260513_2015_sendung_fis_a1a2_3360k_p36v17.mp4",
-    "plot": "Springe, eine spießige Kleinstadt in Niedersachsen in den 1970er- und 1980er-Jahren. Evelin ringt zwischen Scham, Sorge und gesellschaftlichem Druck mit dem Anderssein ihres Sohnes Oliver, der schließlich nach Hamburg auf den Kiez flieht. Durch sein großes Herz, seinen nicht zu bezwingenden Humor und die Fähigkeit, nach jedem Sturz wieder aufzustehen, gelingt Oliver die Transformation zu Olivia Jones, der erfolgreichen Travestie-Ikone, Entertainerin und Kiez-Gastronomin.",
-    "mediathek_desc": "Mit unerschütterlichem Mut, Durchhaltevermögen und Humor bricht Oliver aus der Provinz auf, um in Hamburg St. Pauli zur schillernden Travestie-Ikone Olivia Jones aufzusteigen.",
-    "director": "Till Endemann",
-    "actors": [
-      "Johannes Hegemann",
-      "Annette Frier",
-      "Angelina Häntsch"
-    ],
-    "rating": "7.6",
-    "thumb": "https://image.tmdb.org/t/p/w342/njLeFen5DO62pBk6yCmvpc0ROa7.jpg",
-    "genres_list": [
-      "Drama"
-    ],
-    "channel": "ZDF",
-    "timestamp": 1794720656,
-    "isNew": true,
-    "tmdb_id": 1447875,
-    "tmdb_type": "movie",
-    "url_website": "https://www.zdf.de/filme/olivia-movie-100"
   },
   {
     "title": "Oma ist verknallt",
@@ -26505,31 +26401,6 @@
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyMy0xMi0xNl8xNC0wMC1NRVo"
   },
   {
-    "title": "Poison - Eine Liebesgeschichte",
-    "search": "Poison - Eine Liebesgeschichte",
-    "year": "2024",
-    "video_url": "https://manifest-arte.akamaized.net/api/manifest/v1/Generate/531e92c9-b21b-4ab4-983e-e3bfd7f5d8be/de/XQ+KS+CHEV1/109098-000-A.m3u8",
-    "plot": "Einst waren Lucas und Edith verheiratet, doch seit Lucas sie verlassen hat, sind sie sich seit zehn Jahren fremd. Auf Ediths Wunsch hin treffen sie sich auf dem Friedhof, auf dem ihr einziges Kind begraben ist. Während des langen Wartens kommen sie miteinander ins Gespräch, lassen ihre gemeinsame Vergangenheit Revue passieren und entwickeln neue Perspektiven für ihre Zukunft.",
-    "mediathek_desc": "Der Tod ihres Sohnes brachte sie einst auseinander und bringt sie heute an seinem Grab wieder zusammen: Edith und Lucas sehen sich nach zehn Jahren Funkstille wieder. Ihr Treffen ist geprägt von alten Wunden, unverarbeiteten Gefühlen und Trauer. Désirée Nosbusch verfilmt in ihrem Regiedebüt ein Theaterstück mit Tim Roth und Trine Dyholm in den Hauptrollen.",
-    "director": "Désirée Nosbusch",
-    "actors": [
-      "Tim Roth",
-      "Trine Dyrholm"
-    ],
-    "rating": "6.2",
-    "thumb": "https://image.tmdb.org/t/p/w342/95vJB6EuY0meayEe6mIYcYZSa58.jpg",
-    "genres_list": [
-      "Drama",
-      "Thriller"
-    ],
-    "channel": "ARTE.DE",
-    "timestamp": 1792443957,
-    "isNew": false,
-    "tmdb_id": 983521,
-    "tmdb_type": "movie",
-    "url_website": "https://www.arte.tv/de/videos/109098-000-A/poison-eine-liebesgeschichte/"
-  },
-  {
     "title": "Police Python 357",
     "search": "Police Python 357",
     "year": "1976",
@@ -26689,6 +26560,33 @@
     "timestamp": 1344283857,
     "isNew": false,
     "tmdb_id": 9682,
+    "tmdb_type": "movie"
+  },
+  {
+    "title": "Rabia - Der verlorene Traum",
+    "search": "Rabia - Der verlorene Traum",
+    "original_title": "Rabia - Der verlorene Traum",
+    "year": "2024",
+    "video_url": "https://manifest-arte.akamaized.net/api/manifest/v1/Generate/20bac932-7b90-4fb8-93a7-86b5dd6fda4c/VA-STA/XQ+KS+CHEV1/128687-000-A.m3u8",
+    "url_website": "https://www.arte.tv/de/videos/128687-000-A/rabia-der-verlorene-traum/",
+    "plot": "Von dem Versprechen eines besseren Lebens gelockt verlassen die 19-jährige Französin Jessica und ihre beste Freundin Laïla ihre Heimat, um sich in Syrien dem Islamischen Staat anzuschließen. In Raqqa angekommen, werden Pässe, Handys, Schmuck und Kleidung konfisziert und die Frauen in eine „Madafa“ geführt, ein Haus, das für zukünftige Ehefrauen von IS-Kämpfern bestimmt ist. Gemeinsam mit Frauen aus verschiedenen Ländern unterwerfen sie sich strengen Regeln",
+    "mediathek_desc": "Erschütterndes Drama über zwei junge Frauen: Sie glaubten, im sogenannten Islamischen Staat Respekt und Anerkennung, vielleicht sogar privates Glück zu finden. Für diesen Irrtum zahlen sie einen hohen Preis. Französisch-deutsch-belgischer Film von Mareike Engelhardt, der 2025 in Deutschland in die Kinos kam. Inspiriert von wahren Begebenheiten",
+    "director": "Mareike Engelhardt",
+    "actors": [
+      "Megan Northam",
+      "Lubna Azabal",
+      "Natacha Krief"
+    ],
+    "rating": "6.3",
+    "thumb": "https://image.tmdb.org/t/p/w342/dEwcEWbaAQ5U3Znva1rXiHXAg73.jpg",
+    "genres_list": [
+      "Drama",
+      "Thriller"
+    ],
+    "channel": "ARTE.DE",
+    "timestamp": 1795812185,
+    "isNew": true,
+    "tmdb_id": 999142,
     "tmdb_type": "movie"
   },
   {
@@ -27403,31 +27301,6 @@
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyNC0wOS0wNV8wMC0xNS1NRVNa"
   },
   {
-    "title": "Sanfte Monster",
-    "search": "Sanfte Monster",
-    "year": "2023",
-    "video_url": "https://manifest-arte.akamaized.net/api/manifest/v1/Generate/7f8813a3-3cc7-41ad-ad28-7488bd526b27/de/XQ+KS+CHEV1/097471-000-A.m3u8",
-    "plot": "Edina, eine Bodybuilderin, ist bereit, alles für den Traum zu opfern, den sie mit Adam, ihrem Partner und Trainer, teilt: den Miss Olympia-Wettbewerb zu gewinnen. Die seltsame Liebe, die sie auf ihrem Weg dorthin findet, lässt sie den Unterschied zwischen ihren Träumen und ihrem wahren Selbst erkennen",
-    "mediathek_desc": "Die Bodybuilderin Edina gewinnt unter den Blicken ihres Partners, Trainers und Ex-Bodybuilders Adam einen Wettbewerb, mit dem sie sich für das \"Miss Olympia\"-Turnier qualifiziert. Adam möchte durch sie seine glorreichen Jahre neu durchleben und zwingt Edina in eine Welt aus Doping, Diät und Escort. \"Sanfte Monster\" ist ein Drama von Laszlo Csuja und Anna Nemes aus dem Jahr 2021.",
-    "director": "László Csuja",
-    "actors": [
-      "Eszter Csonka",
-      "György Turós",
-      "Csaba Krisztik"
-    ],
-    "rating": "6.4",
-    "thumb": "https://image.tmdb.org/t/p/w342/gQj5UXiJmp0ZoAiFFchTMCGzX0O.jpg",
-    "genres_list": [
-      "Drama"
-    ],
-    "channel": "ARTE.DE",
-    "timestamp": 1792448901,
-    "isNew": false,
-    "tmdb_id": 913815,
-    "tmdb_type": "movie",
-    "url_website": "https://www.arte.tv/de/videos/097471-000-A/sanfte-monster/"
-  },
-  {
     "title": "Saturday Night Fever - Nur Samstag Nacht",
     "search": "Saturday Night Fever - Nur Samstag Nacht",
     "year": "1977",
@@ -28101,8 +27974,8 @@
       "TV-Film"
     ],
     "channel": "ARD",
-    "timestamp": 1792492200,
-    "isNew": false,
+    "timestamp": 1795699800,
+    "isNew": true,
     "tmdb_id": 289013,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyMy0wNS0wMV8xNi01NS1NRVNa"
@@ -29153,6 +29026,33 @@
     "timestamp": 1795263600,
     "isNew": true,
     "tmdb_id": 950681,
+    "tmdb_type": "movie"
+  },
+  {
+    "title": "Stankowskis Millionen",
+    "search": "Stankowskis Millionen",
+    "original_title": "Stankowskis Millionen",
+    "year": "2011",
+    "video_url": "https://nrodlzdf-a.akamaihd.net/none/zdf/18/10/181003_1115_sendung_fis/1/181003_1115_sendung_fis_3360k_p36v17.mp4",
+    "url_website": "https://www.zdf.de/filme/stankowskis-millionen-movie-100",
+    "plot": "Im Jahr 1991 herrscht Katerstimmung in Ostdeutschland. Die Wirtschaft in der ehemaligen DDR ist am Ende. Die Arbeitslosigkeit und die Armut unter der Bevölkerung sind groß. Viele Menschen geben der Treuhand die Schuld an der Misere.  Werner Stankowski, ein gelernter Informatiker und Computerspezialist, findet trotz hunderter Bewerbungen keine Arbeit. Seine Frau hält ihn für einen Versager und verlässt ihn für einen reichen Mann aus dem Westen. Nur sein bester Freund Rudi, der ebenfalls arbeitslos ist, hält noch zu ihm. Rudis Frau Gerda hält die Familie mit einem schlecht laufenden Erotik-Versand über Wasser. Werner erhält darauf ein Bewerbungsgespräch bei einer Computerfirma in München. Die Wessis denunzieren Werner während des Gesprächs und demütigen ihn mit Stasi-Sprüchen.....",
+    "mediathek_desc": "1991: Den arbeitslosen Robotnik-Entwickler Stankowski hat seine Frau verlassen und gegen einen \"Wessi\"-Arzt eingetauscht. Doch das Glück scheint zum Loser Stankowski zurückzukehren.",
+    "director": "Franziska Meyer Price",
+    "actors": [
+      "Wolfgang Stumph",
+      "Christian Tramitz",
+      "Jörg Schüttauf"
+    ],
+    "rating": "6.3",
+    "thumb": "https://image.tmdb.org/t/p/w342/quB9E0kFh1SUMc7YGrP6clZkAI7.jpg",
+    "genres_list": [
+      "TV-Film",
+      "Komödie"
+    ],
+    "channel": "ZDF",
+    "timestamp": 1782878871,
+    "isNew": false,
+    "tmdb_id": 141583,
     "tmdb_type": "movie"
   },
   {
@@ -33277,32 +33177,6 @@
     "url_website": "https://www.arte.tv/de/videos/132065-000-A/wen-die-geister-lieben/"
   },
   {
-    "title": "Wen die Liebe trifft",
-    "search": "Wen die Liebe trifft",
-    "year": "2005",
-    "video_url": "https://pd-videos.daserste.de/int/2022/10/13/f55fb357-b4e6-49f3-bc9c-27d350d9924e/JOB_504542__sendeton_1280x720-50p-3200kbit.mp4",
-    "plot": "Für Franka ist die Leitung der elterlichen Geschirrmanufaktur eine wahre Herzensangelegenheit. Doch zum wahren Glück fehlt ihr noch ein Mann. Leider lernt sie den Charmeur Luca  erst auf dessen eigener Hochzeit kennen. Kriegen sie sich trotzdem?",
-    "mediathek_desc": "Spielfilm Deutschland 2005 \r\n\r\nDie attraktive junge Franka leitet mit ihrem Vater die traditionsreiche Porzellanmanufaktur Rhomberg. Im Gegensatz zu ihrer lebenslustigen Schwester Joe hat die vernünftige Franka für Männer keine Zeit. Das ändert sich, als sie den sensiblen, gut aussehenden Luca kennenlernt - der aber leider gerade ihre „beste Feindin\" Nathalie geheiratet hat. Franka muss plötzlich \n.....",
-    "director": "Dagmar Damek",
-    "actors": [
-      "Franziska Petri",
-      "Bettina Zimmermann",
-      "Diana Amft"
-    ],
-    "rating": "6.2",
-    "thumb": "https://image.tmdb.org/t/p/w342/uNmXFQ5YluZjnbgpsee85jRYe3Q.jpg",
-    "genres_list": [
-      "TV-Film",
-      "Drama"
-    ],
-    "channel": "ARD",
-    "timestamp": 1667041200,
-    "isNew": false,
-    "tmdb_id": 330728,
-    "tmdb_type": "movie",
-    "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyMi0xMC0yOV8xMy0wMC1NRVNa"
-  },
-  {
     "title": "Weniger ist mehr",
     "search": "Weniger ist mehr",
     "year": "2013",
@@ -34895,7 +34769,7 @@
       "Romanze"
     ],
     "channel": "BR",
-    "timestamp": 1775493000,
+    "timestamp": 1791661500,
     "isNew": false,
     "tmdb_id": 669107,
     "tmdb_type": "movie",
