@@ -607,6 +607,32 @@
     "tmdb_type": "movie"
   },
   {
+    "title": "Alle Nadeln an der Tanne",
+    "search": "Alle Nadeln an der Tanne",
+    "original_title": "Alle Nadeln an der Tanne",
+    "year": "2020",
+    "video_url": "https://nrodlzdf-a.akamaihd.net/none/zdf/20/12/201217_2015_sendung_fis/5/201217_2015_sendung_fis_a1a2_3360k_p36v15.mp4",
+    "url_website": "https://www.zdf.de/filme/alle-nadeln-an-der-tanne-movie-100",
+    "plot": "Maria Koslowskis Leben gerät völlig durcheinander, als kurz vor Weihnachten überraschend ihr Bruder Moritz auftaucht, zu dem sie seit Jahren keinen Kontakt mehr hatte. Moritz ist als Fotograf durch die Welt gezogen, bis er bei einem Autounfall mit einem Kamel kollidierte. Er erlitt ein schweres Schädel-Hirn-Trauma, das eine unkontrollierte Persönlichkeitsstörung zur Folge hat. Er ist dringend auf Hilfe angewiesen. Dabei hat Maria gerade eigene Probleme: In der Ehe mit ihrem langweiligen Mann Kurt kriselt es gewaltig, ihr Sohn Felix findet Familie doof, und die pubertierende Tochter Emily will nach Indien, die Welt retten. Und nun muss sie sich auch noch intensiv um Moritz kümmern, der scheinbar nicht mehr \"alle Nadeln an der Tanne\" hat. Turbulenzen sind programmiert.",
+    "mediathek_desc": "Maria Koslowskis Leben gerät völlig durcheinander, als kurz vor Weihnachten überraschend ihr Bruder Moritz auftaucht, zu dem sie seit Jahren keinen Kontakt mehr hatte.",
+    "director": "Mirjam Unger",
+    "actors": [
+      "Anna Loos",
+      "Marcus Mittermeier",
+      "Simon Schwarz"
+    ],
+    "rating": "5.1",
+    "thumb": "https://image.tmdb.org/t/p/w342/8BkJ7eSeIHDof4kibEhFsPKFJlJ.jpg",
+    "genres_list": [
+      "Sonstige"
+    ],
+    "channel": "ZDF",
+    "timestamp": 1795163681,
+    "isNew": true,
+    "tmdb_id": 770409,
+    "tmdb_type": "movie"
+  },
+  {
     "title": "Alle Sehnsucht dieser Erde",
     "search": "Alle Sehnsucht dieser Erde",
     "year": "2009",
@@ -654,7 +680,7 @@
     ],
     "channel": "ARD",
     "timestamp": 1794265200,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 262663,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAxNy0xMC0yMV8xNC0zMC1NRVNa"
@@ -680,7 +706,7 @@
       "Drama"
     ],
     "channel": "ARTE.DE",
-    "timestamp": 1795029300,
+    "timestamp": 1795029359,
     "isNew": true,
     "tmdb_id": 594640,
     "tmdb_type": "movie"
@@ -1468,8 +1494,8 @@
       "Drama"
     ],
     "channel": "ARD",
-    "timestamp": 1789469700,
-    "isNew": false,
+    "timestamp": 1795777200,
+    "isNew": true,
     "tmdb_id": 355444,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyMy0wOC0xOV8xNC0wMC1NRVNa"
@@ -1726,7 +1752,7 @@
     "search": "Arlington Road",
     "original_title": "Arlington Road",
     "year": "1999",
-    "video_url": "https://ctv-videos.daserste.de/de/2026/11/10/1285/1285_31778_originalversion_1280x720-50p-3200kbit.mp4",
+    "video_url": "https://ctv-videos.daserste.de/de/2026/11/10/1285/1285_31778_sendeton_1280x720-50p-3200kbit.mp4",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2FyZC5kZS9wbGFuQVJEXzgxNjQ5MWNiLTM3MTUtNDM0My05NGIwLWY1ZWFjNzJmMmIwNl9nYW56ZVNlbmR1bmc",
     "plot": "Michael Faraday führt ein mehr oder weniger beschauliches Leben in einem Vorort von Washington. Umgeben von “normalen” Menschen und netten Nachbarn. Einer davon ist Oliver Lang. Aber irgendwann kommen Michael Zweifel an dem dreifachen Familienvater. Ist Oliver ein wahnsinniger Killer? Ein Terrorist? Ein Agent? Oder ist es Michael selbst, der die Realität nicht mehr von seiner paranoiden Phantasie unterscheiden kann? Ein mörderischer Wettlauf beginnt, an dessen Ende eins klar ist: In der Arlington Road wird das Leben nie mehr so sein, wie es einmal war. Oder war es nie so?",
     "mediathek_desc": "Spielfilm USA 1999 Oliver Lang hat eine Frau und drei Kinder, ein Haus und einen Minivan, also alles, was einen Durchschnittsamerikaner ausmacht. Und dennoch: Etwas scheint mit dieser Familie nicht zu stimmen. Das denkt sich jedenfalls der Nachbar Michael Faraday. Faradays Recherchen ergeben: Lang ist wegen eines Bombenattentats schon einmal rechtskräftig verurteilt worden und hat seinen Namen erst vor einigen Jahren angenommen....",
@@ -1928,7 +1954,7 @@
     "isNew": true,
     "tmdb_id": 570356,
     "tmdb_type": "movie",
-    "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyMS0xMS0yN18xNC0zMC1NRVo"
+    "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyMS0xMS0yN18xNC0zMC1NRVovYXVkaW9kZXNrcmlwdGlvbg"
   },
   {
     "title": "Aus lauter Liebe zu dir",
@@ -1954,32 +1980,6 @@
     "tmdb_id": 345591,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyMy0wNy0xM18wMS01MC1NRVNa"
-  },
-  {
-    "title": "Ausgerechnet Sylt",
-    "search": "Ausgerechnet Sylt",
-    "year": "2018",
-    "video_url": "https://nrodlzdf-a.akamaihd.net/none/zdf/19/07/190725_2015_sendung_fis/7/190725_2015_sendung_fis_a1a2_3360k_p36v15.mp4",
-    "plot": "Als die Sylter Rettungsschwimmerin Bente den Architekten Kevin aus dem Wasser holt, ist ihr noch nicht klar, was für ein Problem sie sich da an Land gezogen hat. Denn wie sich herausstellt, gehört Bente auf Sylt das letzte Haus, das Kevin kaufen muss, um für seine Firma eine lukrative Ferienanlage zu bauen. Und ausgerechnet Bente ist die Anführerin des Widerstands gegen den Ausverkauf von Sylt.",
-    "mediathek_desc": "Als die Sylter Rettungsschwimmerin Bente den Architekten Kevin aus dem Wasser holt, ist ihr noch nicht klar, was für ein Problem sie sich da an Land gezogen hat.",
-    "director": "Sibylle Maddauss",
-    "actors": [
-      "Katja Studt",
-      "Fabian Busch",
-      "Paula Hartmann"
-    ],
-    "rating": "5.3",
-    "thumb": "https://image.tmdb.org/t/p/w342/5WsY3HVMWbYH77EPDbIlH5gtGwz.jpg",
-    "genres_list": [
-      "Drama",
-      "Romanze"
-    ],
-    "channel": "ZDF",
-    "timestamp": 1782965332,
-    "isNew": false,
-    "tmdb_id": 513194,
-    "tmdb_type": "movie",
-    "url_website": "https://www.zdf.de/filme/ausgerechnet-sylt-movie-100"
   },
   {
     "title": "Babai - Mein Vater",
@@ -2500,7 +2500,7 @@
       "TV-Film"
     ],
     "channel": "ZDF",
-    "timestamp": 1794405437,
+    "timestamp": 1795169679,
     "isNew": true,
     "tmdb_id": 243739,
     "tmdb_type": "movie"
@@ -3817,7 +3817,7 @@
     ],
     "channel": "ZDF",
     "timestamp": 1794294123,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 1476281,
     "tmdb_type": "movie"
   },
@@ -4054,7 +4054,7 @@
       "Drama"
     ],
     "channel": "ARTE.DE",
-    "timestamp": 1795034871,
+    "timestamp": 1795035053,
     "isNew": true,
     "tmdb_id": 295547,
     "tmdb_type": "movie"
@@ -5238,32 +5238,6 @@
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyMy0xMC0yMl8xNC0wMC1NRVNa"
   },
   {
-    "title": "Das beste Jahr meines Lebens",
-    "search": "Das beste Jahr meines Lebens",
-    "year": "2006",
-    "video_url": "https://pd-videos.daserste.de/int/2022/11/02/9fc1044b-7463-472e-91c6-ae58c44cd9e9/JOB_580754__sendeton_1280x720-50p-3200kbit.mp4",
-    "plot": "Ehemann Niklas hockt als Bilanz-fälscher im Knast, seine Tischlerei wird von den Banken geschlachtet, nun hockt Laura Vandenberg  mit den verwöhnten Blagen in einer tristen Etagenwohnung. Sie muss dringend Geld verdienen. Aber wer will heutzutage schon eine 41-Jährige einstellen?",
-    "mediathek_desc": "Spielfilm Deutschland 2005\r\n\r\nDer Kreditbetrug ihres Mannes Niklas, Besitzer einer mittelständischen Möbelschreinerei, stürzt Hausfrau Laura Vandenberg in die Katastrophe.\r\n\r\nMit Christine Neubauer, Huub Stapel, Ella Risin, Moritz Basilico, Stefan Merki u. a. | Regie: Olaf Kreinsen I Buch: Georg Heinzen",
-    "director": "Olaf Kreinsen",
-    "actors": [
-      "Christine Neubauer",
-      "Huub Stapel",
-      "Sandra Borgmann"
-    ],
-    "rating": "4.4",
-    "thumb": "https://image.tmdb.org/t/p/w342/xudmDTK1zGHgNtfALYST54TrjDl.jpg",
-    "genres_list": [
-      "Drama",
-      "TV-Film"
-    ],
-    "channel": "ARD",
-    "timestamp": 1668259800,
-    "isNew": false,
-    "tmdb_id": 294320,
-    "tmdb_type": "movie",
-    "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyMi0xMS0xMl8xNC0zMC1NRVo"
-  },
-  {
     "title": "Das beste Stück vom Braten",
     "search": "Das beste Stück vom Braten",
     "year": "2016",
@@ -5317,31 +5291,6 @@
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAxOS0wNC0yOF8xMy0zMC1NRVNa"
   },
   {
-    "title": "Das blaue Wunder",
-    "search": "Das blaue Wunder",
-    "year": "2004",
-    "video_url": "https://nrodlzdf-a.akamaihd.net/none/zdf/26/01/260124_1725_sendung_fis/1/260124_1725_sendung_fis_a1a2_3360k_p36v17.mp4",
-    "plot": "Haus und Grundstück hat Rüdiger Stolze für seinen Lebenstraum, eine eigene Elbfähre, verpfändet – und ist dabei dem betrügerischen Geschäftsmann Gernot Rudich aufgesessen. Als ihm der heiß geliebte Kahn nun auch noch gepfändet zu werden droht, macht sich Stolze daran, seinem Leben ein Ende zu setzen, ehrenvoll unterzugehen als Kapitän an Bord seines Schiffs. Aber nichts da: Kumpel Manni weiß Rat! „Lass den Quatsch“, unterbricht sein alter Freund Manni, wie immer weder um Worte noch um Einfälle verlegen, den viele kleine Löcher in die Schiffswand bohrenden Stolze. Manni hat eine viel bessere Idee: Wenn Stolze endlich Kapital schlägt, meint Manni, aus seinem Kapital – seinem Charme, seiner Kapitänsmütze und überhaupt – dann werden ihm die Herzen alleinstehender Frauen nur so zufliegen.",
-    "mediathek_desc": "Haus und Grundstück hat Rüdiger Stolze für seinen Lebenstraum, eine eigene Elbfähre, verpfändet - und ist dabei dem betrügerischen Geschäftsmann Gernot Rudich aufgesessen.",
-    "director": "Peter Kahane",
-    "actors": [
-      "Wolfgang Stumph",
-      "Martina Gedeck",
-      "Michael Gwisdek"
-    ],
-    "rating": "7.0",
-    "thumb": "https://image.tmdb.org/t/p/w342/wiI6p6jSfiTJlROixHswdUosFCV.jpg",
-    "genres_list": [
-      "Komödie"
-    ],
-    "channel": "ZDF",
-    "timestamp": 1782881011,
-    "isNew": false,
-    "tmdb_id": 313239,
-    "tmdb_type": "movie",
-    "url_website": "https://www.zdf.de/filme/das-blaue-wunder-movie-100"
-  },
-  {
     "title": "Das finstere Tal",
     "search": "Das finstere Tal",
     "year": "2014",
@@ -5391,6 +5340,34 @@
     "tmdb_id": 11642,
     "tmdb_type": "movie",
     "url_website": "https://www.3sat.de/film/spielfilm/das-fliegende-klassenzimmer-106.html"
+  },
+  {
+    "title": "Das goldene Ufer",
+    "search": "Das goldene Ufer",
+    "original_title": "Das goldene Ufer",
+    "year": "2015",
+    "video_url": "https://nrodlzdf-a.akamaihd.net/dach/zdf/20/12/201223_2315_sendung_fis/5/201223_2315_sendung_fis_3360k_p36v15.mp4",
+    "url_website": "https://www.zdf.de/filme/das-goldene-ufer-movie-100",
+    "plot": "In der Zeit zwischen den Napoleonischen Kriegen und der 1848er-Revolution begehrt die Jugend auf. Gefangen in den starren Strukturen des deutschen Vormärz wachsen Walther und Gisela als Bedienstete auf dem Gutshof des Grafen von Rennitz und seiner Frau Gräfin Elfreda auf. Hier gelten die unanfechtbaren Regeln von Herrschaft und Gesinde. Von Oben und Unten, von Geburtsrecht und lebenslanger Knechtschaft.",
+    "mediathek_desc": "In der Zeit zwischen den Napoleonischen Kriegen und der 1848er-Revolution begehrt die Jugend auf - Verfilmung einer Auswanderer-Saga vor dem Hintergrund des deutschen Vormärzes.",
+    "director": "Christoph Schrewe",
+    "actors": [
+      "Miriam Stein",
+      "Volker Bruch",
+      "Ulrike Folkerts"
+    ],
+    "rating": "4.8",
+    "thumb": "https://image.tmdb.org/t/p/w342/fixAV91Zf8RnjOp5GVC7dviEnTf.jpg",
+    "genres_list": [
+      "TV-Film",
+      "Drama",
+      "Historie"
+    ],
+    "channel": "ZDF",
+    "timestamp": 1795198500,
+    "isNew": true,
+    "tmdb_id": 334905,
+    "tmdb_type": "movie"
   },
   {
     "title": "Das indische Grabmal",
@@ -5934,6 +5911,34 @@
     "url_website": "https://www.3sat.de/film/spielfilm/der-eid-100.html"
   },
   {
+    "title": "Der Eisenhans",
+    "search": "Der Eisenhans",
+    "original_title": "Der Eisenhans",
+    "year": "2011",
+    "video_url": "https://nrodlzdf-a.akamaihd.net/none/tivi/14/12/141219_der_eisenhans_mae/25/141219_der_eisenhans_mae_a1a2_3360k_p36v17.mp4",
+    "url_website": "https://www.3sat.de/film/spielfilm/der-eisenhans-102.html",
+    "plot": "Der zaubermächtige Naturgeist Eisenhans lebt seit Menschengedenken im Wald und verbreitet Angst und Schrecken. Als der verwegene Schwarze Ritter den Eisenhans eines Tages gefangen nimmt und an den Königshof bringt, verwehren der König und die Königin ihm jedoch den verlangten Lohn. Der Schwarze Ritter beraubt daraufhin die erstaunte Hofgesellschaft und verschwindet. Den Eisenhans lässt er im Kerker zurück. Der kleine Prinz Johannes ist sofort fasziniert von dem wilden Mann. In der Nacht befreit er den Gefangenen und folgt ihm in den dunklen Wald. An der ihm vom Eisenhans gestellten Aufgabe, den Zauberbrunnen rein zu halten, scheitert der Prinz jedoch kläglich. Ein Moment der Unaufmerksamkeit genügt, schon fallen seine Haare ins Brunnenwasser und färben sich unauslöschlich golden. Der Prinz wird zur Bestrafung vom Eisenhans aus dem Wald vertrieben …",
+    "mediathek_desc": "Im wilden Wald eines Königreiches haust ein geheimnisvoller Naturgeist - der Eisenhans. Weil schon viele Jäger im Wald verschwunden sind, darf niemand den Wald betreten.",
+    "director": "Manuel Siebenmann",
+    "actors": [
+      "Laurence Rupp",
+      "Paula Schramm",
+      "Michael Mendl"
+    ],
+    "rating": "5.0",
+    "thumb": "https://image.tmdb.org/t/p/w342/23hkauzOD4NZM5ydf4KbcrOEwXk.jpg",
+    "genres_list": [
+      "Familie",
+      "Fantasy",
+      "TV-Film"
+    ],
+    "channel": "3Sat",
+    "timestamp": 1608474900,
+    "isNew": false,
+    "tmdb_id": 111550,
+    "tmdb_type": "movie"
+  },
+  {
     "title": "Der Engel mit der Posaune",
     "search": "Der Engel mit der Posaune",
     "original_title": "Der Engel mit der Posaune",
@@ -6037,32 +6042,6 @@
     "tmdb_id": 936117,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL3N3ci5kZS9hZXgvbzIzMjI3NDg"
-  },
-  {
-    "title": "Der Garmisch-Krimi - Wolfsmord",
-    "search": "Der Garmisch-Krimi - Wolfsmord",
-    "year": "2026",
-    "video_url": "https://nrodlzdf-a.akamaihd.net/none/zdf/26/02/260228_2015_sendung_fis/1/260228_2015_sendung_fis_a1a2_3360k_p36v17.mp4",
-    "plot": "Ex-Kommissarin Ira Zach und ihre junge Nachfolgerin Daphne Meindl bilden ein ungleiches Ermittlerduo in Garmisch – vor allem, weil eine von beiden gar nicht mehr ermitteln darf, sondern neuerdings im Baumarkt arbeitet. In der Region sorgt ein Wolf für Aufregung",
-    "mediathek_desc": "Ein abgetrennter Wolfskopf wird per Post an einen Naturschützer geschickt. Eine Morddrohung? Davon müssen die Ermittlerinnen in Garmisch ausgehen, als die Leiche des Mannes gefunden wird.",
-    "director": "Saralisa Volm",
-    "actors": [
-      "Lavinia Wilson",
-      "Philine Schmölzer",
-      "Sevda Polat"
-    ],
-    "rating": "6.2",
-    "thumb": "https://image.tmdb.org/t/p/w342/4lyGXukL0lqCutDzELMTLHzdx2W.jpg",
-    "genres_list": [
-      "TV-Film",
-      "Krimi"
-    ],
-    "channel": "ZDF",
-    "timestamp": 1782965359,
-    "isNew": false,
-    "tmdb_id": 1457048,
-    "tmdb_type": "movie",
-    "url_website": "https://www.zdf.de/filme/wolfsmord-movie-100"
   },
   {
     "title": "Der Geruch von Erde",
@@ -8573,7 +8552,7 @@
       "TV-Film"
     ],
     "channel": "ZDF",
-    "timestamp": 1794556805,
+    "timestamp": 1795160325,
     "isNew": true,
     "tmdb_id": 422154,
     "tmdb_type": "movie"
@@ -8706,7 +8685,7 @@
     ],
     "channel": "ZDF",
     "timestamp": 1794232002,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 265401,
     "tmdb_type": "movie"
   },
@@ -8788,33 +8767,6 @@
     "tmdb_id": 593772,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2FyZC5kZS9wbGFuQVJEXzE5ZDA0NTJiLTdiZWMtNGJkOS1hNmNkLTMyNTNjYjI4OGZmMF9nYW56ZVNlbmR1bmc"
-  },
-  {
-    "title": "Die Insassen",
-    "search": "Die Insassen",
-    "original_title": "Die Insassen",
-    "year": "2015",
-    "video_url": "https://nrodlzdf-a.akamaihd.net/none/zdf/15/09/150917_2015_sendung_fis/1/150917_2015_sendung_fis_3360k_p36v17.mp4",
-    "url_website": "https://www.zdf.de/filme/die-insassen-movie-100",
-    "plot": "Nach einem Nervenzusammenbruch wird der erfolgsverwöhnte Finanzmanager Wilhelm Löring in eine psychiatrische Klinik eingewiesen. Fern aller Einsicht in seine Krankheit, beginnt er im Kreis seiner Therapiegruppe Menschen mit speziellen Fähigkeiten zu rekrutieren, um die Klinik an die Börse zu bringen. Nach und nach wachsen ihm seine Mitstreiter ans Herz, und der Finanzplan wird zur Nebensache.",
-    "mediathek_desc": "Der Tag, an dem sich Burnout und Paranoia die Hand reichen, ist der Tag, an dem Wilhelm Löhring vor Publikum einen spektakulären Nervenzusammenbruch erleidet.",
-    "director": "Franziska Meyer Price",
-    "actors": [
-      "Wolfgang Stumph",
-      "Maximilian Brückner",
-      "Thomas Kügel"
-    ],
-    "rating": "6.0",
-    "thumb": "https://image.tmdb.org/t/p/w342/vf3SG3efZBHnFqSnVNZFM0l0ab1.jpg",
-    "genres_list": [
-      "Drama",
-      "Komödie"
-    ],
-    "channel": "ZDF",
-    "timestamp": 1782879394,
-    "isNew": false,
-    "tmdb_id": 360500,
-    "tmdb_type": "movie"
   },
   {
     "title": "Die Kamine von Green Knowe",
@@ -12324,31 +12276,6 @@
     "url_website": "https://www.zdf.de/filme/ein-regenbogen-zu-weihnachten-movie-100"
   },
   {
-    "title": "Ein Reihenhaus steht selten allein",
-    "search": "Ein Reihenhaus steht selten allein",
-    "year": "2014",
-    "video_url": "https://nrodlzdf-a.akamaihd.net/none/zdf/18/05/180513_sendung_neo_fdw/5/180513_sendung_neo_fdw_3328k_p36v13.mp4",
-    "plot": "Jeder kennt sie, die moderne Reihenhaussiedlung am Stadtrand – oder wie man so schön sagt: im Grüngürtel. Verkehrsberuhigt, mit Kita, Siedlungsgemeinschaftsraum, einem Supermarkt und einem Autobahnanschluss in Reichweite. Mit klangvollen Namen wie “Vogelsang” oder “Sonnenhügel”. Zielgruppe: junge Familien und solche, die es werden wollen.  Doch als sich das Traumpaar Jan und Anne Börnernach schlaflosen Nächten dazu entschlossen hat, den teuren Kauf eines 125 Quadratmeter großen Hauses zu wagen, erwarten die beiden zahlreiche Überraschungen. Leider hat man keinen Einfluss darauf, wer das Anwesen direkt neben einem erwirbt.",
-    "mediathek_desc": "Als sich das Traumpaar Jan und Anne dazu entschließt, den teuren Kauf eines 125 Quadratmeter großen Hauses in einer Reihenhaussiedlung zu wagen, erwarten die beiden zahlreiche Überraschungen.",
-    "director": "Titus Selge",
-    "actors": [
-      "Stephan Luca",
-      "Felicitas Woll",
-      "Michelle Barthel"
-    ],
-    "rating": "2.5",
-    "thumb": "https://image.tmdb.org/t/p/w342/f16Rgskgopg1jqqhHrPp9OCqQc4.jpg",
-    "genres_list": [
-      "Komödie"
-    ],
-    "channel": "ZDF",
-    "timestamp": 1782966514,
-    "isNew": false,
-    "tmdb_id": 306931,
-    "tmdb_type": "movie",
-    "url_website": "https://www.zdf.de/filme/ein-reihenhaus-steht-selten-allein-movie-100"
-  },
-  {
     "title": "Ein Schloss am Wörthersee - Der Film - Kinofilm",
     "search": "Ein Schloss am Wörthersee - Der Film - Kinofilm",
     "year": "1992",
@@ -12474,6 +12401,34 @@
     "timestamp": 1794957355,
     "isNew": true,
     "tmdb_id": 1056535,
+    "tmdb_type": "movie"
+  },
+  {
+    "title": "Ein Ticket zur Bescherung",
+    "search": "Ein Ticket zur Bescherung",
+    "original_title": "Ein Ticket zur Bescherung",
+    "year": "2026",
+    "video_url": "https://nrodlzdf-a.akamaihd.net/none/zdf/26/12/261207_2015_sendung_fdw/1/261207_2015_sendung_fdw_a1a2_3360k_p36v17.mp4",
+    "url_website": "https://www.zdf.de/filme/ein-ticket-zur-bescherung-movie-100",
+    "plot": "Neun Reisende steigen am 24.12. in einen besonderen Zug. Bald sind alle Reisepläne durchkreuzt und Heiligabend scheint verloren. Doch es wird zu einer Nacht, die so niemand erwartet hat. Richtig rund scheint das Fest für niemanden von ihnen zu werden. Nur der achtzigjährige Dietrich, den die Gruppe noch treffen wird, ist bekennender Weihnachtsfan. Dabei ist gerade seine Situation nach dem kürzlichen Tod seiner Frau alles andere als rosig. Der Gitarrist Fabian wollte eigentlich nur seinen entlaufenen Hund einfangen und dann seinen Liebeskummer in Whiskey ertränken. Die Rentner Gabi und Hans-Jürgen hätten Weihnachten lieber bei sich als bei den Kindern gefeiert. Die hochschwangere Nelly will es zum Schrecken ihrer Frau Sarah noch mal richtig krachen lassen, bevor sie das Kind bekommt. Anna und Jan entdecken auf der Reise plötzlich, dass ihre Lebenspläne gar nicht zueinander passen.",
+    "mediathek_desc": "Neun Reisende steigen am 24.12. in einen besonderen Zug. Bald sind alle Reisepläne durchkreuzt und Heiligabend scheint verloren. Doch es wird zu einer Nacht, die so niemand erwartet hat.",
+    "director": "Felix Ahrens",
+    "actors": [
+      "Friedrich von Thun",
+      "Tanja Wedhorn",
+      "Cristina do Rego"
+    ],
+    "rating": "N/A",
+    "thumb": "https://image.tmdb.org/t/p/w342/vM0ZnjubfO68YpZ493cTMsBf4Tg.jpg",
+    "genres_list": [
+      "TV-Film",
+      "Komödie",
+      "Drama"
+    ],
+    "channel": "ZDF",
+    "timestamp": 1794916898,
+    "isNew": true,
+    "tmdb_id": 1824857,
     "tmdb_type": "movie"
   },
   {
@@ -12707,7 +12662,7 @@
     ],
     "channel": "ARD",
     "timestamp": 1794225600,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 268511,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyNC0xMS0wM18xNC0wMy1NRVo"
@@ -13238,6 +13193,33 @@
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyMy0wNS0xOF8xMS01MC1NRVNa"
   },
   {
+    "title": "Eine unmögliche Liebe",
+    "search": "Eine unmögliche Liebe",
+    "original_title": "Eine unmögliche Liebe",
+    "year": "1995",
+    "video_url": "https://manifest-arte.akamaized.net/api/manifest/v1/Generate/550ead60-cf29-4a46-aa6b-5fca391cbd8c/VA-STA/XQ+KS+CHEV1/112512-000-A.m3u8",
+    "url_website": "https://www.arte.tv/de/videos/112512-000-A/eine-unmoegliche-liebe/",
+    "plot": "Châteauroux in den späten 50er Jahren: Rachel, eine Büroangestellte aus einfachen Verhältnissen, verliebt sich in Philippe, Spross einer bürgerlichen und einflussreichen Familie. Aus ihrer Affäre entsteht die kleine Chantal. Doch Philippe weigert sich, außerhalb seines Standes zu heiraten; er erkennt seine Tochter nicht an. - Feinfühliges Melodram (2018) mit Virginie Efira.",
+    "mediathek_desc": "Châteauroux in den späten 50er Jahren: Rachel, eine Büroangestellte aus einfachen Verhältnissen, verliebt sich in Philippe, Spross einer bürgerlichen und einflussreichen Familie. Aus ihrer Affäre entsteht die kleine Chantal. Doch Philippe weigert sich, außerhalb seines Standes zu heiraten; er erkennt seine Tochter nicht an. - Feinfühliges Melodram (2018) mit Virginie Efira.",
+    "director": "Indra Kumar",
+    "actors": [
+      "Madhuri Dixit",
+      "Sanjay Kapoor",
+      "Mukesh Khanna"
+    ],
+    "rating": "5.3",
+    "thumb": "https://image.tmdb.org/t/p/w342/1UDwr2CnaVRKKJ6UZh4jRbTVV2f.jpg",
+    "genres_list": [
+      "Action",
+      "Romanze"
+    ],
+    "channel": "ARTE.DE",
+    "timestamp": 1808936100,
+    "isNew": true,
+    "tmdb_id": 205075,
+    "tmdb_type": "movie"
+  },
+  {
     "title": "Eine verhängnisvolle Affäre",
     "search": "Eine verhängnisvolle Affäre",
     "year": "1987",
@@ -13574,7 +13556,7 @@
     ],
     "channel": "ARD",
     "timestamp": 1794231000,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 337743,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyNC0wNi0yNl8xNS0zMC1NRVNa"
@@ -14186,7 +14168,7 @@
     ],
     "channel": "ZDF",
     "timestamp": 1794218590,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 197973,
     "tmdb_type": "movie"
   },
@@ -14873,6 +14855,32 @@
     "tmdb_id": 1788,
     "tmdb_type": "movie",
     "url_website": "https://www.3sat.de/film/spielfilm/footloose-104.html"
+  },
+  {
+    "title": "Franky Five Star",
+    "search": "Franky Five Star",
+    "original_title": "Franky Five Star",
+    "year": "2023",
+    "video_url": "https://nrodlzdf-a.akamaihd.net/dach/zdf/24/12/241231_0015_sendung_dks/3/241231_0015_sendung_dks_a1a2_3360k_p36v17.mp4",
+    "url_website": "https://www.zdf.de/filme/franky-five-star-movie-100",
+    "plot": "Franky ist irgendwie anders. Ihr Kopf ist ein \"Hotel\", in dem vier Persönlichkeiten leben, die immer wieder ihr Leben in der realen Welt durcheinanderbringen.",
+    "mediathek_desc": "Franky ist irgendwie anders. Ihr Kopf ist ein \"Hotel\", in dem vier Persönlichkeiten leben, die immer wieder ihr Leben in der realen Welt durcheinanderbringen.",
+    "director": "Birgit Möller",
+    "actors": [
+      "Lena Urzendowsky",
+      "Cino Djavid",
+      "Meryem Öz"
+    ],
+    "rating": "5.2",
+    "thumb": "https://image.tmdb.org/t/p/w342/3c7aNO4krTdc1gs7laaTEVyp02V.jpg",
+    "genres_list": [
+      "Drama"
+    ],
+    "channel": "ZDF",
+    "timestamp": 1785129044,
+    "isNew": false,
+    "tmdb_id": 716936,
+    "tmdb_type": "movie"
   },
   {
     "title": "Frau Pfarrer & Herr Priester",
@@ -16678,8 +16686,8 @@
       "Krimi"
     ],
     "channel": "ZDF",
-    "timestamp": 1786030060,
-    "isNew": false,
+    "timestamp": 1795159684,
+    "isNew": true,
     "tmdb_id": 416976,
     "tmdb_type": "movie",
     "url_website": "https://www.zdf.de/filme/hattinger-und-der-nebel---ein-chiemseekrimi-movie-100"
@@ -17051,7 +17059,7 @@
     "isNew": false,
     "tmdb_id": 265294,
     "tmdb_type": "movie",
-    "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2FyZC5kZS9wbGFuQVJEXzgzNjQyNTY5LTdlNzMtNDZlNy1hYTQ4LTY0N2EzM2FkNDhkNl9nYW56ZVNlbmR1bmcvYXVkaW9kZXNrcmlwdGlvbg"
+    "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2FyZC5kZS9wbGFuQVJEXzgzNjQyNTY5LTdlNzMtNDZlNy1hYTQ4LTY0N2EzM2FkNDhkNl9nYW56ZVNlbmR1bmc"
   },
   {
     "title": "Herzlichen Glückwunsch",
@@ -17793,7 +17801,7 @@
     ],
     "channel": "ZDF",
     "timestamp": 1794221975,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 1390619,
     "tmdb_type": "movie"
   },
@@ -17978,32 +17986,6 @@
     "tmdb_id": 500895,
     "tmdb_type": "movie",
     "url_website": "https://www.3sat.de/film/spielfilm/ich-war-zuhause-aber-104.html"
-  },
-  {
-    "title": "Ich werde nicht schweigen",
-    "search": "Ich werde nicht schweigen",
-    "year": "2017",
-    "video_url": "https://nrodlzdf-a.akamaihd.net/none/zdf/18/05/180507_2015_sendung_fdw/8/180507_2015_sendung_fdw_a1a2_3360k_p36v15.mp4",
-    "plot": "1948 kämpft die junge Mutter Margarete Oelkers in Oldenburg um ihre Kriegswitwenrente. Dafür benötigt sie Papiere über die Dienstzeit ihres Mannes im Gesundheitsamt. Doch die junge Frau stößt überall auf verschlossene Türen. Als ihr auf dem Fürsorgeamt der Geduldsfaden reißt und sie randaliert, wird sie mit der Diagnose Schizophrenie in die Heil- und Pflegeanstalt in Wehnen eingewiesen. Nach ihrer Entlassung kämpft sie um das Sorgerecht für ihre beiden Söhne und ihre Rehabilitierung. Dabei stößt sie auf ein ungeheuerliches Geheimnis. Das Nachkriegsdrama \"Ich werde nicht schweigen\", beruht auf wahren Tatsachen.",
-    "mediathek_desc": "Oldenburg, 50er-Jahre: Die Kriegswitwe Margarete versucht, für sich und ihre Söhne eine Rente zu erhalten. Scheinbar ohne Grund wird sie vom Amtsarzt Dr. Ahrens in die Psychiatrie eingewiesen.",
-    "director": "Esther Gronenborn",
-    "actors": [
-      "Nadja Uhl",
-      "Martin Wuttke",
-      "Rudolf Kowalski"
-    ],
-    "rating": "5.9",
-    "thumb": "https://image.tmdb.org/t/p/w342/3ueAJupKQwaZhh7p8hNwHocRybh.jpg",
-    "genres_list": [
-      "Historie",
-      "Drama"
-    ],
-    "channel": "ZDF",
-    "timestamp": 1782967203,
-    "isNew": false,
-    "tmdb_id": 433272,
-    "tmdb_type": "movie",
-    "url_website": "https://www.zdf.de/filme/ich-werde-nicht-schweigen-movie-100"
   },
   {
     "title": "Ich will ein Kind von Dir",
@@ -18864,7 +18846,7 @@
     ],
     "channel": "ARTE.DE",
     "timestamp": 1794263626,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 923344,
     "tmdb_type": "movie"
   },
@@ -20997,8 +20979,8 @@
     "search": "Liberace - Zu viel des Guten ist wundervoll",
     "original_title": "Liberace - Zu viel des Guten ist wundervoll",
     "year": "2013",
-    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/26/09/260908_0125_sendung_spf/1/260908_0125_sendung_spf_a1a2_3360k_p36v17.mp4",
-    "url_website": "https://www.zdf.de/video/filme/liberace--zu-viel-des-guten-ist-wundervoll-movie-100/liberace--zu-viel-des-guten-ist-wundervoll-100",
+    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/26/09/260908_0125_sendung_spf/1/260908_0125_sendung_spf_a3a4_3360k_p36v17.mp4",
+    "url_website": "https://www.zdf.de/filme/liberace--zu-viel-des-guten-ist-wundervoll-movie-100",
     "plot": "Was heute Elton John und Lady Gaga sind, war in den 70er Jahren Liberace in einer Person. Als virtuoser Pianist, Entertainer in Las Vegas und Superstar der pompösen Shows lag ihm weltweit ein Millionenpublikum zu Füßen. Auf der Bühne und im Privaten erhob er Luxus und Glamour zu seinem Lebensstil. Lange Pelzmäntel, glitzernde Kostüme, goldene Kerzenständer und massenhaft teurer Schmuck waren seine Markenzeichen. Mehrere Rolls-Royce zählten zu seinem Fuhrpark, alleine 39 Flügel schmückten seine private Villa. Alles gab es im Überfluss - und er selber sagte einmal: „Too much of a good thing is wonderful“.",
     "mediathek_desc": "Als ein junger Mann zufällig einen weltberühmten Entertainer kennenlernt, verändert sich sein Leben komplett. Zwischen den unterschiedlichen Männern entwickelt sich eine Affäre.",
     "director": "Steven Soderbergh",
@@ -21014,8 +20996,8 @@
       "Romanze"
     ],
     "channel": "ZDF",
-    "timestamp": 1788827400,
-    "isNew": false,
+    "timestamp": 1794694256,
+    "isNew": true,
     "tmdb_id": 119675,
     "tmdb_type": "movie"
   },
@@ -21785,7 +21767,7 @@
     ],
     "channel": "ZDF",
     "timestamp": 1794303151,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 1226578,
     "tmdb_type": "movie"
   },
@@ -24620,6 +24602,33 @@
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyNS0wNi0xNF8xNS0zMC1NRVNa"
   },
   {
+    "title": "Nelly und das Weihnachtswunder",
+    "search": "Nelly und das Weihnachtswunder",
+    "original_title": "Nelly und das Weihnachtswunder",
+    "year": "2024",
+    "video_url": "https://nrodlzdf-a.akamaihd.net/none/zdf/24/12/241222_2015_sendung_sof/1/241222_2015_sendung_sof_a1a2_3360k_p36v17.mp4",
+    "url_website": "https://www.zdf.de/filme/nelly-und-das-weihnachtswunder-movie-100",
+    "plot": "Eine Paketbotin, die mit Weihnachten nichts am Hut hat, kreuzt zufällig die Wege eines Gelegenheitsdiebes und eines rätselhaften kleinen Jungen, der nicht spricht. Nelly ist verblüfft, als Filou Sonny an der Tankstelle, in der sie einen Zweitjob hat, zwei Whiskeyflaschen und einen Oldtimer klaut. Nick, der plötzlich zwischen den Verkaufsregalen auftaucht und kein Wort von sich gibt, lenkt Nelly während des Diebstahls ab. Da sie davon ausgehen muss, dass es sich bei Nick um Sonnys Komplizen handelt, schnappt sie sich den Jungen und nimmt ihn mit auf die Verfolgung.Dabei erhält sie Unterstützung von der betagten Taxifahrerin Gesine, die eben noch ihren Wagen an der Tankstelle betankt hatte. Als Nelly den gestohlenen Oldtimer zufällig vor einer Villa entdeckt, schickt sie Gesine zurück und bittet sie, sich während ihrer Abwesenheit um die Tankstelle zu kümmern.",
+    "mediathek_desc": "Eine Paketbotin, die mit Weihnachten nichts am Hut hat, kreuzt zufällig die Wege eines Gelegenheitsdiebes und eines rätselhaften kleinen Jungen, der nicht spricht.",
+    "director": "Katja Benrath",
+    "actors": [
+      "Anna Schudt",
+      "Rafael Gareisen",
+      "Joah Lion Goetze"
+    ],
+    "rating": "4.2",
+    "thumb": "https://image.tmdb.org/t/p/w342/2P18ZxyFzAe3Ov3JveEhrARaCXj.jpg",
+    "genres_list": [
+      "Komödie",
+      "TV-Film"
+    ],
+    "channel": "ZDF",
+    "timestamp": 1794556803,
+    "isNew": true,
+    "tmdb_id": 1390109,
+    "tmdb_type": "movie"
+  },
+  {
     "title": "Neu in unserer Familie - Ein Baby für alle",
     "search": "Neu in unserer Familie - Ein Baby für alle",
     "year": "2017",
@@ -25562,6 +25571,32 @@
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyNS0xMC0wM18xMi0wMC1NRVNa"
   },
   {
+    "title": "Oray",
+    "search": "Oray",
+    "original_title": "Oray",
+    "year": "2021",
+    "video_url": "https://nrodlzdf-a.akamaihd.net/dach/zdf/19/08/190827_0015_sendung_dks/4/190827_0015_sendung_dks_3360k_p36v15.mp4",
+    "url_website": "https://www.zdf.de/filme/oray-movie-100",
+    "plot": "Oray, ein junger Muslim, spricht im Streit mit seiner Ehefrau Burcu die islamische Scheidungsformel ’talaq’ aus. Nach der strengen Auslegung des Korans gilt er damit als von ihr geschieden und darf nicht mehr mit ihr zusammenleben, obwohl er sie noch liebt. Als ihm die dauerhafte Trennung von seiner Frau droht, will der impulsive Mann dies nicht ohne weiteres akzeptieren. Mit Humor, viel Drama und noch mehr Energie erzählt das darstellerisch beeindruckende Liebes- und Sozialdrama eine authentische Geschichte über die Sehnsüchte, Wünsche, Ängste und Widersprüche einer islamischen Gemeinschaft, die von außen meist als hermetisches Milieu wahrgenommen wird.",
+    "mediathek_desc": "Oray, ein junger Muslim aus Hagen, lebt bei seiner Ehefrau Burcu. Im Streit spricht er die islamische Scheidungsformel \"talaq\" aus. Daraufhin muss er sich für drei Monate von Burcu trennen.",
+    "director": "Mehmet Akif Büyükatalay",
+    "actors": [
+      "Zejhun Demirov",
+      "Deniz Orta",
+      "Cem Göktas"
+    ],
+    "rating": "5.2",
+    "thumb": "https://image.tmdb.org/t/p/w342/4W6tyAgXzbQBZdOsWK8ZpRC44Yn.jpg",
+    "genres_list": [
+      "Drama"
+    ],
+    "channel": "ZDF",
+    "timestamp": 1795186514,
+    "isNew": true,
+    "tmdb_id": 574704,
+    "tmdb_type": "movie"
+  },
+  {
     "title": "Ostsee für Sturköppe",
     "search": "Ostsee für Sturköppe",
     "year": "2023",
@@ -25955,7 +25990,7 @@
     ],
     "channel": "ARTE.DE",
     "timestamp": 1794251677,
-    "isNew": true
+    "isNew": false
   },
   {
     "title": "Passion Simple",
@@ -27003,7 +27038,7 @@
     ],
     "channel": "ZDF",
     "timestamp": 1794262287,
-    "isNew": true
+    "isNew": false
   },
   {
     "title": "Ronja, die Räubertochter",
@@ -27060,33 +27095,6 @@
     "tmdb_id": 327734,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyNC0wOC0wOV8wMi00NS1NRVNa"
-  },
-  {
-    "title": "Rosenthal",
-    "search": "Rosenthal",
-    "year": "2025",
-    "video_url": "https://nrodlzdf-a.akamaihd.net/dach/zdf/25/03/250331_2015_sendung_fdw/1/250331_2015_sendung_fdw_a1a2_3360k_p36v17.mp4",
-    "plot": "Hans Rosenthal ist auf dem Höhepunkt seiner Karriere: als Liebling der Nation. Die 75. Ausgabe seines Straßenfegers \"Dalli Dalli\" steht kurz vor der Ausstrahlung. Doch die Feierlaune wird durch eine Entscheidung des Senders getrübt: Seine Jubiläumsshow fällt ausgerechnet auf den 9. November – 40 Jahre zuvor fanden rund um den 9. November die antisemitischen Pogrome statt. Rosenthal steckt in einem moralischen Dilemma.",
-    "mediathek_desc": "Hans Rosenthal soll die 75. Sendung von \"Dalli Dalli\" ausgerechnet am 9. November 1978 live moderieren. Als jüdischer Holocaustüberlebender kaum denkbar. Wird er vor die Kamera treten?",
-    "director": "Oliver Haffner",
-    "actors": [
-      "Florian Lukas",
-      "Silke Bodenbender",
-      "Claude Heinrich"
-    ],
-    "rating": "7.3",
-    "thumb": "https://image.tmdb.org/t/p/w342/7pG4lNMwGjucidFagjBhO2aJzS.jpg",
-    "genres_list": [
-      "Drama",
-      "Historie",
-      "TV-Film"
-    ],
-    "channel": "ZDF",
-    "timestamp": 1782881270,
-    "isNew": false,
-    "tmdb_id": 1456432,
-    "tmdb_type": "movie",
-    "url_website": "https://www.zdf.de/filme/rosenthal-movie-100"
   },
   {
     "title": "Rote Sterne überm Feld",
@@ -27613,29 +27621,31 @@
     "url_website": "https://www.zdf.de/filme/schnee-von-gestern-movie-102"
   },
   {
-    "title": "Schneeweißchen & Rosenrot",
-    "search": "Schneeweißchen & Rosenrot",
-    "year": "1955",
-    "video_url": "https://nrodlzdf-a.akamaihd.net/none/zdf/20/12/201208_0355_sendung_sof/4/201208_0355_sendung_sof_a1a2_3360k_p36v17.mp4",
-    "plot": "Schneeweißchen und Rosenrot sind zwei fröhliche Schwestern, die ihrer Mutter bei der Arbeit helfen, wo sie nur können. Als die beiden eines Tages durch den Wald spazieren, treffen sie einen Zwerg, dessen Bart sich in einem umgestürzten Baumstumpf verfangen hat. Die Schwestern helfen ihm, doch der Zwerg zweigt sich undankbar und schimpft, weil sie seinen Bart einfach abgeschnitten haben. Die Tage verstreichen und Schneeweißchen und Rosenrot vergessen die Begegnung. Doch als eines kalten Wintertages ein Bär vor ihrem Haus auftaucht und der Königssohn nach wie vor vermisst wird, beginnen die Mädchen langsam zu begreifen, welch ein dunkles Geheimnis der schimpfende Zwerg hütet.",
-    "mediathek_desc": "Der Zusammenhalt zweier Schwestern wird auf die Probe gestellt.",
-    "director": "Erich Kobler",
+    "title": "Schneewittchen am See",
+    "search": "Schneewittchen am See",
+    "original_title": "Schneewittchen am See",
+    "year": "2020",
+    "video_url": "https://nrodlzdf-a.akamaihd.net/none/zdf/20/12/201220_2015_sendung_sof/5/201220_2015_sendung_sof_a1a2_3360k_p36v15.mp4",
+    "url_website": "https://www.zdf.de/filme/schneewittchen-am-see-movie-100",
+    "plot": "Smilla Witte träumte immer davon, im elterlichen Restaurant \"Schneewittchen am See\" als Köchin zu arbeiten. Doch nach dem Tod ihrer Mutter vor zehn Jahren ist sie von zu Hause geflohen. Nun holt Smilla bei einem Besuch in der Heimat die Vergangenheit ein. Sofort gerät sie mit ihrem Vater in Streit um Regina, seine neue Küchenchefin und Partnerin. Kurzerhand reist Smilla früher als geplant ab und besucht ihre Freundin Hedi auf deren Bauernhof. Auf dem Weg dorthin trifft Smilla ihre alte Liebe Jan wieder. Auch ihn hat sie vor zehn Jahren zurückgelassen und seitdem nicht mehr gesehen. Sie begegnen sich vorsichtig, aber die alte Anziehung ist sofort spürbar. Jan fährt Smilla zum \"Zwergenhof\". Hier wohnt ihre Freundin Hedi gemeinsam mit ihrem Bruder Victor und dessen Mann Lorenz.",
+    "mediathek_desc": "Smilla Witte träumte immer davon, im elterlichen Restaurant \"Schneewittchen am See\" als Köchin zu arbeiten. Doch nach dem Tod ihrer Mutter zehn Jahre zuvor ist sie von zu Hause geflohen.",
+    "director": "Alex Schmidt",
     "actors": [
-      "Rosemarie Seehofer",
-      "Ursula Herion",
-      "Ruth von Zerboni"
+      "Maria Ehrich",
+      "Andrea Sawatzki",
+      "Jürgen Tarrach"
     ],
-    "rating": "7.5",
-    "thumb": "https://image.tmdb.org/t/p/w342/gDa1CFERBRpow9lU6GjJQYVTriT.jpg",
+    "rating": "6.2",
+    "thumb": "https://image.tmdb.org/t/p/w342/rDVCd17MX718ocmksYQGwaqrt4u.jpg",
     "genres_list": [
-      "Fantasy"
+      "Drama",
+      "Romanze"
     ],
     "channel": "ZDF",
-    "timestamp": 1782888252,
-    "isNew": false,
-    "tmdb_id": 124126,
-    "tmdb_type": "movie",
-    "url_website": "https://www.zdf.de/filme/schneeweisschen--rosenrot-movie-100"
+    "timestamp": 1794556804,
+    "isNew": true,
+    "tmdb_id": 770220,
+    "tmdb_type": "movie"
   },
   {
     "title": "Schneewittchen und die sieben Gaukler",
@@ -29029,33 +29039,6 @@
     "tmdb_type": "movie"
   },
   {
-    "title": "Stankowskis Millionen",
-    "search": "Stankowskis Millionen",
-    "original_title": "Stankowskis Millionen",
-    "year": "2011",
-    "video_url": "https://nrodlzdf-a.akamaihd.net/none/zdf/18/10/181003_1115_sendung_fis/1/181003_1115_sendung_fis_3360k_p36v17.mp4",
-    "url_website": "https://www.zdf.de/filme/stankowskis-millionen-movie-100",
-    "plot": "Im Jahr 1991 herrscht Katerstimmung in Ostdeutschland. Die Wirtschaft in der ehemaligen DDR ist am Ende. Die Arbeitslosigkeit und die Armut unter der Bevölkerung sind groß. Viele Menschen geben der Treuhand die Schuld an der Misere.  Werner Stankowski, ein gelernter Informatiker und Computerspezialist, findet trotz hunderter Bewerbungen keine Arbeit. Seine Frau hält ihn für einen Versager und verlässt ihn für einen reichen Mann aus dem Westen. Nur sein bester Freund Rudi, der ebenfalls arbeitslos ist, hält noch zu ihm. Rudis Frau Gerda hält die Familie mit einem schlecht laufenden Erotik-Versand über Wasser. Werner erhält darauf ein Bewerbungsgespräch bei einer Computerfirma in München. Die Wessis denunzieren Werner während des Gesprächs und demütigen ihn mit Stasi-Sprüchen.....",
-    "mediathek_desc": "1991: Den arbeitslosen Robotnik-Entwickler Stankowski hat seine Frau verlassen und gegen einen \"Wessi\"-Arzt eingetauscht. Doch das Glück scheint zum Loser Stankowski zurückzukehren.",
-    "director": "Franziska Meyer Price",
-    "actors": [
-      "Wolfgang Stumph",
-      "Christian Tramitz",
-      "Jörg Schüttauf"
-    ],
-    "rating": "6.3",
-    "thumb": "https://image.tmdb.org/t/p/w342/quB9E0kFh1SUMc7YGrP6clZkAI7.jpg",
-    "genres_list": [
-      "TV-Film",
-      "Komödie"
-    ],
-    "channel": "ZDF",
-    "timestamp": 1782878871,
-    "isNew": false,
-    "tmdb_id": 141583,
-    "tmdb_type": "movie"
-  },
-  {
     "title": "Starve Acre",
     "search": "Starve Acre",
     "year": "2023",
@@ -29567,8 +29550,8 @@
       "Drama"
     ],
     "channel": "ZDFneo",
-    "timestamp": 1792569519,
-    "isNew": false,
+    "timestamp": 1795162843,
+    "isNew": true,
     "tmdb_id": 1041623,
     "tmdb_type": "movie",
     "url_website": "https://www.zdf.de/filme/sugar-movie-100"
@@ -29754,6 +29737,33 @@
     "timestamp": 1795207760,
     "isNew": true,
     "tmdb_id": 803690,
+    "tmdb_type": "movie"
+  },
+  {
+    "title": "Tatami",
+    "search": "Tatami",
+    "original_title": "Tatami",
+    "year": "2024",
+    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/26/09/260915_0230_sendung_spf/1/260915_0230_sendung_spf_a1a2_3360k_p36v17.mp4",
+    "url_website": "https://www.zdf.de/video/filme/tatami-movie-100/tatami-100",
+    "plot": "Die iranischen Judokas Leila und ihre Trainerin Maryam reisen zur Judo-Weltmeisterschaft mit der Absicht, Irans erste Goldmedaille mit nach Hause zu holen. Mitten in der Judo-Weltmeisterschaft erhalten sie von der Islamischen Republik ein Ultimatum, in dem Leila angewiesen wird, eine Verletzung vorzutäuschen und zu verlieren, sonst wird sie als Staatsverräterin gebrandmarkt. Da ihre eigene Freiheit und die ihrer Familie auf dem Spiel stehen, steht Leila vor einer unmöglichen Wahl: Sie muss sich dem iranischen Regime fügen, während ihre Trainerin Maryam sie anfleht, Gold zu gewinnen oder weiterzukämpfen.",
+    "mediathek_desc": "Die iranische Judoka Leila hat bei der WM gute Chancen auf Gold, doch als sich ein Duell mit der israelischen Favoritin abzeichnet, soll Leila auf Befehl ihres Landes das Turnier abbrechen.",
+    "director": "Guy Nattiv",
+    "actors": [
+      "Arienne Mandi",
+      "Zar Amir Ebrahimi",
+      "Jaime Ray Newman"
+    ],
+    "rating": "7.7",
+    "thumb": "https://image.tmdb.org/t/p/w342/k6rkXQLATrhdO9GGZJh44jnxnr1.jpg",
+    "genres_list": [
+      "Thriller",
+      "Drama"
+    ],
+    "channel": "ZDF",
+    "timestamp": 1789432200,
+    "isNew": false,
+    "tmdb_id": 1084066,
     "tmdb_type": "movie"
   },
   {
@@ -33097,6 +33107,34 @@
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyMi0xMi0xMV8xNS0zMC1NRVo"
   },
   {
+    "title": "Weihnachten im Schnee",
+    "search": "Weihnachten im Schnee",
+    "original_title": "Weihnachten im Schnee",
+    "year": "2019",
+    "video_url": "https://nrodlzdf-a.akamaihd.net/none/zdf/19/12/191215_2015_sendung_sof/7/191215_2015_sendung_sof_a1a2_3328k_p36v14.mp4",
+    "url_website": "https://www.zdf.de/filme/weihnachten-im-schnee-movie-100",
+    "plot": "Die erwachsenen Geschwister Annika, Sanne und Bastian fallen aus allen Wolken: Weihnachten soll dieses Jahr im Schnee stattfinden, genauer gesagt in einer Hütte in Norwegen. Eigentlich feiert die Familie das Fest der Liebe immer gemeinsam in Hamburg. Doch Gitta und Henri Johnen haben kurzerhand das Ferienhaus von Finja Lund gebucht. Die E-Mail, die sie ihren Kindern kurz vor den Feiertagen schicken, stellt die alljährliche Weihnachtsroutine erst mal auf den Kopf. Buchhalterin Annika, die gemeinsam mit Ehemann Christoph den 15-jährigen Sohn Simon hat, ist nicht gerade besinnlicher Stimmung",
+    "mediathek_desc": "Die erwachsenen Geschwister Annika, Sanne und Bastian fallen aus allen Wolken: Weihnachten soll dieses Jahr im Schnee stattfinden, genauer gesagt in einer Hütte in Norwegen.",
+    "director": "Till Franzen",
+    "actors": [
+      "Wencke Myhre",
+      "Katharina Schüttler",
+      "Ulrike Kriener"
+    ],
+    "rating": "3.5",
+    "thumb": "https://image.tmdb.org/t/p/w342/liubDHfrbqkjFLhSl6DtpEVmmuq.jpg",
+    "genres_list": [
+      "Romanze",
+      "Familie",
+      "Komödie"
+    ],
+    "channel": "ZDF",
+    "timestamp": 1794380191,
+    "isNew": true,
+    "tmdb_id": 652617,
+    "tmdb_type": "movie"
+  },
+  {
     "title": "Weihnachts-Männer",
     "search": "Weihnachts-Männer",
     "year": "2015",
@@ -33280,35 +33318,6 @@
     "isNew": false,
     "tmdb_id": 11715,
     "tmdb_type": "movie"
-  },
-  {
-    "title": "Wenn du nach dem Tod erwachst",
-    "search": "Wenn du nach dem Tod erwachst",
-    "original_title": "Wenn du nach dem Tod erwachst",
-    "year": "2022",
-    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/25/01/250102_0055_sendung_spf/1/250102_0055_sendung_spf_a3a4_3360k_p36v15.mp4",
-    "url_website": "https://www.zdf.de/filme/wenn-du-nach-dem-tod-erwachst-movie-100",
-    "plot": "Russ Potter hat zahlreichen Nachbarn schlechte Anlagetipps gegeben, wodurch diese Geld verloren haben. Der Broker gerät ins Abseits der Gemeinschaft und erhält beunruhigende Drohanrufe.",
-    "mediathek_desc": "Russ Potter hat zahlreichen Nachbarn schlechte Anlagetipps gegeben, wodurch diese Geld verloren haben. Der Broker gerät ins Abseits der Gemeinschaft und erhält beunruhigende Drohanrufe.",
-    "director": "Michael Mailer",
-    "actors": [
-      "Andrew Stevens",
-      "Darren Mann",
-      "Morgan Freeman",
-      "Jaimie Alexander",
-      "Cole Hauser"
-    ],
-    "rating": "4.5",
-    "thumb": "https://www.zdf.de/assets/teaser-mit-logo-wenn-du-nach-dem-tod-erwachst-100~640x720?cb=1793976579334.jpg",
-    "genres_list": [
-      "Drama",
-      "Mystery",
-      "Thriller",
-      "Krimi"
-    ],
-    "channel": "ZDF",
-    "timestamp": 1794379900,
-    "isNew": true
   },
   {
     "title": "Wenn wir uns begegnen",
@@ -34637,7 +34646,7 @@
       "Komödie"
     ],
     "channel": "ZDF",
-    "timestamp": 1794289570,
+    "timestamp": 1795169565,
     "isNew": true,
     "tmdb_id": 1390285,
     "tmdb_type": "movie",
