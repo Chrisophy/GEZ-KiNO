@@ -55,7 +55,7 @@
     "original_title": "2 Guns",
     "year": "2013",
     "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/23/12/231228_sony_2225_sendung_spf/1/231228_sony_2225_sendung_spf_3360k_p36v17.mp4",
-    "url_website": "https://www.zdf.de/video/filme/2-guns-movie-100/2-guns-100",
+    "url_website": "https://www.zdf.de/filme/2-guns-movie-100",
     "plot": "Seit 12 Monaten müssen der DEA Agent Bobby Trench und der U.S. Naval Intelligence Officer Michael Stigman nun schon gegen ihren Willen zusammenarbeiten, denn die beiden wurden undercover in ein Drogen-Syndikat eingeschleust. Jeder der beiden misstraut seinem Partner mindestens genauso sehr wie den Kriminellen, die sie zur Strecke bringen sollen. Als ihr Versuch, ein mexikanisches Drogenkartell zu unterwandern und Millionen von Dollar sicher zu stellen, schief geht, werden Trench und Stigman plötzlich von ihren Vorgesetzten fallen gelassen. Jetzt, da jeder sie im Gefängnis oder tot sehen will, gibt es nur noch eine Person, auf die sie sich verlassen können – auf den jeweils anderen. Zum Leidwesen ihrer Verfolger. Denn die müssen bald feststellen, dass gute Jungs, die jahrelang so getan haben, als wären sie böse Jungs, nebenbei auch ein paar entsprechende Tricks aufgeschnappt haben ...",
     "mediathek_desc": "Zwei Undercover-Agenten rächen sich am Boss eines mexikanischen Drogenkartells, geraten dabei aber auch einem korrupten CIA-Mann in die Quere.",
     "director": "Baltasar Kormákur",
@@ -72,8 +72,8 @@
       "Krimi"
     ],
     "channel": "ZDF",
-    "timestamp": 1703798700,
-    "isNew": false,
+    "timestamp": 1794698100,
+    "isNew": true,
     "tmdb_id": 136400,
     "tmdb_type": "movie"
   },
@@ -446,31 +446,6 @@
     "tmdb_id": 335931,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2FyZC5kZS9wbGFuQVJEXzhlYTJlM2RkLTE1NmMtNDYyZC1iMDY4LWJmYjU5YjRhOWNkYV9nYW56ZVNlbmR1bmc"
-  },
-  {
-    "title": "Abteil Nr. 6",
-    "search": "Abteil Nr. 6",
-    "year": "2021",
-    "video_url": "https://arteptweb-a.akamaihd.net/am/ptweb/092000/092900/092916-000-A_EQ_0_VA-STA_11437105_MP4-1500_AMM-PTWEB-101112892721008_G4I9dtZB9t.mp4",
-    "plot": "Nur wenige Menschen zieht es im Winter ins eisige Murmansk am nördlichen Polarkreis. Die schüchterne finnische Archäologiestudentin Laura aber ist fest entschlossen, die berühmten Felsenmalereien der Stadt zu besichtigen – eine unglückliche Romanze, die sie in Moskau hinter sich lässt, motiviert ihren Entschluss umso mehr. Die Aussicht auf eine beschauliche Eisenbahnreise zerschlägt sich schnell als Laura ihren Mitreisenden im Abteil Nr. 6 kennenlernt: Ljoha ist Bergarbeiter, trinkfest und laut, ein Typ, der keine Grenzen zu kennen scheint und Lauras schlichtweg ignoriert. Doch während der nächsten Tage ihrer gemeinsamen Reise müssen die ungleichen Passagiere auf engstem Raum miteinander auskommen lernen. Der Beginn einer unerwarteten Annäherung.",
-    "mediathek_desc": "Um eine Trennung zu verarbeiten, flieht die Finnin Laura mit dem Zug in den Norden Russlands. Im Abteil sitzt bereits der russische Minenarbeiter Ljoha. Die ungleichen Passagiere müssen nun auf engstem Raum miteinander auskommen ... – Ljoha wird von Yuriy Borisov gespielt, der durch seine Rolle in \"Anora\" internationale Popularität gewann. Ein Roadmovie-Drama von Juho Kuosmanen.",
-    "director": "Juho Kuosmanen",
-    "actors": [
-      "Seidi Haarla",
-      "Juri Borissow",
-      "Динара Друкарова"
-    ],
-    "rating": "7.0",
-    "thumb": "https://image.tmdb.org/t/p/w342/A5n5jCU6VMIhncsIbEk5EImDn1O.jpg",
-    "genres_list": [
-      "Drama"
-    ],
-    "channel": "ARTE.DE",
-    "timestamp": 1787527748,
-    "isNew": false,
-    "tmdb_id": 588182,
-    "tmdb_type": "movie",
-    "url_website": "https://www.arte.tv/de/videos/092916-000-A/abteil-nr-6/"
   },
   {
     "title": "Adagio - Erbarmungslose Stadt",
@@ -1051,7 +1026,7 @@
     ],
     "channel": "ARD",
     "timestamp": 1794395100,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 442904,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyMC0wMy0yMV8xMy0wMC1NRVo"
@@ -1557,34 +1532,6 @@
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyNS0xMS0xNV8wMy0yNS1NRVo"
   },
   {
-    "title": "Anna und die Apokalypse",
-    "search": "Anna und die Apokalypse",
-    "original_title": "Anna und die Apokalypse",
-    "year": "2018",
-    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/24/10/241004_0025_sendung_spf/3/241004_0025_sendung_spf_a3a4_3360k_p36v17.mp4",
-    "url_website": "https://www.zdf.de/filme/anna-und-die-apokalypse-movie-100",
-    "plot": "Anna kann es gar nicht erwarten, dass sie endlich mit der Schule fertig ist, denn sie will unbedingt aus ihrer kleinen Heimatstadt Little Haven weg. Sie möchte die Welt sehen und etwas erleben, gerade auch weil ihr Vater andere Plänen für seine Tochter hat. Ihr bester Freund John hat indes andere Probleme, denn er ist in Anna verliebt und weiß nicht, wie er ihr das sagen soll. Doch all das rückt auf einmal in den Hintergrund, als ihr Leben durch eine Zombie-Invasion auf den Kopf gestellt wird.",
-    "mediathek_desc": "Ausgerechnet am Weihnachtsvorabend bricht weltweit eine Zombie-Epidemie aus. Teenager Anna und ihre Freunde müssen um ihr Leben kämpfen – und zwar mit äußerst ungewöhnlichen Mitteln.",
-    "director": "John McPhail",
-    "actors": [
-      "Ella Hunt",
-      "Sarah Swire",
-      "Malcolm Cumming"
-    ],
-    "rating": "6.0",
-    "thumb": "https://image.tmdb.org/t/p/w342/7Tk15Xm2VAHsUbxGk4U6N7VB9NZ.jpg",
-    "genres_list": [
-      "Horror",
-      "Komödie",
-      "Fantasy"
-    ],
-    "channel": "ZDF",
-    "timestamp": 1794979831,
-    "isNew": true,
-    "tmdb_id": 461928,
-    "tmdb_type": "movie"
-  },
-  {
     "title": "Annas Erbe",
     "search": "Annas Erbe",
     "year": "2011",
@@ -1826,6 +1773,34 @@
     "tmdb_id": 618588,
     "tmdb_type": "movie",
     "url_website": "https://www.zdf.de/filme/arthur-der-grosse-movie-100"
+  },
+  {
+    "title": "Assignment - Der Auftrag",
+    "search": "Assignment - Der Auftrag",
+    "original_title": "Assignment - Der Auftrag",
+    "year": "1997",
+    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/25/04/250402_sony_2310_sendung_nsf/2/250402_sony_2310_sendung_nsf_3360k_p36v17.mp4",
+    "url_website": "https://www.zdf.de/video/filme/assignment---der-auftrag-movie-100/assignment-der-auftrag-102",
+    "plot": "Ein FBI-Agent, der Zeuge eines Bombenattentats des Terroristen Carlos wurde, erhält 15 Jahre nach der Tat die Gelegenheit, den Verbrecher dingfest zu machen. Ein US-Marineoffizier, der den Terroristen verblüffend ähnelt, soll diesen aus der Reserve locken. Doch je mehr sich der Offizier seine Rolle aneignet, desto mehr muß er das Böse in sich zulassen.",
+    "mediathek_desc": "Ein schrecklicher Terroranschlag erschüttert Paris. Der CIA-Mann Jack Shaw vermutet den weltweit berüchtigten Terroristen Carlos Sanchez als Drahtzieher.",
+    "director": "Christian Duguay",
+    "actors": [
+      "Aidan Quinn",
+      "Donald Sutherland",
+      "Ben Kingsley"
+    ],
+    "rating": "6.3",
+    "thumb": "https://image.tmdb.org/t/p/w342/lhuV5cvxFhUrB6F4smVZGmdSwbT.jpg",
+    "genres_list": [
+      "Thriller",
+      "Action",
+      "Krimi"
+    ],
+    "channel": "ZDFneo",
+    "timestamp": 1636855800,
+    "isNew": false,
+    "tmdb_id": 18355,
+    "tmdb_type": "movie"
   },
   {
     "title": "Astrid",
@@ -3427,6 +3402,34 @@
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2FyZC5kZS9wbGFuQVJEXzJkNjQ2YjUzLWZkOGQtNGNhMC05YzlmLWU5ZDI0ZWUxYTI5MV9nYW56ZVNlbmR1bmc"
   },
   {
+    "title": "Cash Truck - Montagskino Adrenalin",
+    "search": "Cash Truck - Montagskino Adrenalin",
+    "original_title": "Cash Truck - Montagskino Adrenalin",
+    "year": "2021",
+    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/23/10/231009_2215_sendung_spf/2/231009_2215_sendung_spf_3360k_p36v15.mp4",
+    "url_website": "https://www.zdf.de/video/filme/cash-truck-movie-100/cash-truck-100",
+    "plot": "Er nennt sich einfach nur „H“ und arbeitet bei einer Geldtransportfirma, die jede Woche Hunderte von Millionen Dollar in Los Angeles hin und her transportiert. Überfälle auf die rollenden Safes sind fast schon an der Tagesordnung. H und seine Kollegen dürfen dann nicht zimperlich sein, wenn es darum geht, das ihnen anvertraute Geld zu beschützen. Doch den wahren Grund, warum der so verschlossen wirkende H bei der Firma angeheuert hat, verrät er zunächst niemandem: Er hat eine ganz persönliche Motivation, die Drahtzieher hinter einer Reihe besonders brutaler Raubüberfälle, die zusammenhängen zu scheinen, zu finden. Und so genau, wie die Täter über die Routen der Transporter Bescheid wussten, müssen sie Insider-Infos aus dem Unternehmen bekommen. H nimmt die Sache in die eigene Hand, um die Kriminellen zur Strecke zu bringen. Er schürt mit seinen Alleingängen aber auch das Misstrauen seiner Kollegen …",
+    "mediathek_desc": "Ein wortkarger Einzelgänger heuert bei einer jüngst von einem schweren Raub getroffenen Sicherheitsfirma an. Bald vereitelt er mit ungeahnten Fertigkeiten einen neuerlichen Überfall.",
+    "director": "Steven Chasman",
+    "actors": [
+      "Jason Statham",
+      "Holt McCallany",
+      "Rocci Williams"
+    ],
+    "rating": "7.6",
+    "thumb": "https://image.tmdb.org/t/p/w342/3fJQeeF6sJ2xMtrVZecw1QowHdG.jpg",
+    "genres_list": [
+      "Thriller",
+      "Krimi",
+      "Drama"
+    ],
+    "channel": "ZDF",
+    "timestamp": 1696882500,
+    "isNew": false,
+    "tmdb_id": 637649,
+    "tmdb_type": "movie"
+  },
+  {
     "title": "Casino",
     "search": "Casino",
     "year": "1995",
@@ -3503,31 +3506,6 @@
     "tmdb_id": 6005,
     "tmdb_type": "movie",
     "url_website": "https://www.zdf.de/3sat/spielfilm/charleys-tante-102.html"
-  },
-  {
-    "title": "Charlotte, eine von uns",
-    "search": "Charlotte, eine von uns",
-    "year": "2025",
-    "video_url": "https://arteptweb-a.akamaihd.net/am/ptweb/109000/109700/109722-000-A_EQ_0_VOA-STA_11346240_MP4-1500_AMM-PTWEB-101162781594156_1W9WbYmrmMG.mp4",
-    "plot": "Die 42-jährige, psychisch erkrankte Charlotte lebt mit ihrem Vater abgeschieden im Trentino. Sie bewegt sich in der Welt ihrer eigenen Wahrnehmungen. Als ihr Vater nach einem Herzinfarkt ins Krankenhaus kommt, nimmt ihr nach Jahren zurückgekehrter Bruder Leo sie mit in die Schweiz. Die erste Reise ihres Lebens wird für beide zur herausfordernden Annäherung. Drama von Rolando Colla.",
-    "mediathek_desc": "Die 42-jährige, psychisch erkrankte Charlotte lebt mit ihrem Vater abgeschieden im Trentino. Sie bewegt sich in der Welt ihrer eigenen Wahrnehmungen. Als ihr Vater nach einem Herzinfarkt ins Krankenhaus kommt, nimmt ihr nach Jahren zurückgekehrter Bruder Leo sie mit in die Schweiz. Die erste Reise ihres Lebens wird für beide zur herausfordernden Annäherung. Drama von Rolando Colla.",
-    "director": "Rolando Colla",
-    "actors": [
-      "Linda Olsansky",
-      "Miro Lorenzo Maurer",
-      "Vilmar Bieri"
-    ],
-    "rating": "6.2",
-    "thumb": "https://image.tmdb.org/t/p/w342/3TnKUQeOYPwODBkDrOyQXIbuxzw.jpg",
-    "genres_list": [
-      "Drama"
-    ],
-    "channel": "ARTE.DE",
-    "timestamp": 1785532539,
-    "isNew": false,
-    "tmdb_id": 1099947,
-    "tmdb_type": "movie",
-    "url_website": "https://www.arte.tv/de/videos/109722-000-A/charlotte-eine-von-uns/"
   },
   {
     "title": "Chuzpe - Klops braucht der Mensch!",
@@ -4843,6 +4821,32 @@
     "tmdb_id": 316997,
     "tmdb_type": "movie",
     "url_website": "https://www.3sat.de/film/spielfilm/das-menschlein-matthias-100.html"
+  },
+  {
+    "title": "Das Milliarden-Dollar-Gehirn",
+    "search": "Das Milliarden-Dollar-Gehirn",
+    "original_title": "Das Milliarden-Dollar-Gehirn",
+    "year": "1967",
+    "video_url": "https://manifest-arte.akamaized.net/api/manifest/v1/Generate/13a36339-bec2-483f-95c9-07d31bd8996b/VA-STA/XQ+KS+CHEV1/134439-000-A.m3u8",
+    "url_website": "https://www.arte.tv/de/videos/134439-000-A/das-milliarden-dollar-gehirn/",
+    "plot": "Poppige Agentenkomödie im knalligen Sixties-Flair: Agent Harry Palmer soll in Skandinavien verhindern, dass mit Viren verseuchte Eier des texanischen Kommunistenhassers Midwinter in die Sowjetunion gelangen. Mit seiner Privatarmee will der Texananer dem Riesenstaat zu Leibe rücken. Wie gut, dass Palmer die toughe Anya  zur Seite steht.",
+    "mediathek_desc": "Harry Palmer, ehemaliger Secret-Service-Agent, ist nun Privatdetektiv. Ihm wird ein Umschlag mit 200 britischen Pfund und einem Schließfachschlüssel zugespielt. Das bedeutet für ihn einen neuen Fall, der ihn zum Milliardär Midwinter führt. Der bedroht die Welt mit einem gigantischen Computergehirn. Agentenfilm-Persiflage von Ken Russell aus den 1960ern mit Michael Caine",
+    "director": "Ken Russell",
+    "actors": [
+      "Michael Caine",
+      "Karl Malden",
+      "Ed Begley"
+    ],
+    "rating": "5.7",
+    "thumb": "https://image.tmdb.org/t/p/w342/izjVCcAE7X2obTr3X6WfLulmcSQ.jpg",
+    "genres_list": [
+      "Thriller"
+    ],
+    "channel": "ARTE.DE",
+    "timestamp": 1795349798,
+    "isNew": true,
+    "tmdb_id": 4889,
+    "tmdb_type": "movie"
   },
   {
     "title": "Das Mädchen aus dem Regenwald",
@@ -6951,6 +6955,33 @@
     "tmdb_id": 5636,
     "tmdb_type": "movie",
     "url_website": "https://www.3sat.de/film/spielfilm/der-schatz-im-silbersee-100.html"
+  },
+  {
+    "title": "Der Schneider von Panama",
+    "search": "Der Schneider von Panama",
+    "original_title": "Der Schneider von Panama",
+    "year": "2001",
+    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/24/05/240504_sony_2015_sendung_nsf/1/240504_sony_2015_sendung_nsf_3360k_p36v17.mp4",
+    "url_website": "https://www.zdf.de/video/filme/der-schneider-von-panama-movie-100/der-schneider-von-panama-100",
+    "plot": "Der High Society-Schneider Harry Pendel ist in Panama gleichermaßen bekannt für gut sitzende Anzüge wie für seine phantasievollen Geschichten. Sein Leben scheint sorgenfrei, bis eines Tages der gewissenlose, britische Spion Andrew Osnard in seinem Laden erscheint und Pendel mittels Erpressung dazu zwingt, das „Beichtgeheimnis“ des Schneiders aller hohen Herren zu brechen. Doch was tun, wenn es nichts zu berichten gibt? In seiner Not beginnt Harry Pendel eine Verschwörung zu erfinden, die sich durch alle Gesellschaftsschichten Panamas zieht und bald die Aufmerksamkeit der ausländischen Geheimdienste erweckt. Doch diese Geschichte des Schneiders von Panama gerät außer Kontrolle.",
+    "mediathek_desc": "Harry Pendel ist Schneider der Mächtigen von Panama. Er ist bekannt für sein Geschichtenerzählen und seine Anzüge. Doch schon bald haben seine Geschichten eine tödliche Wirkung.",
+    "director": "John Boorman",
+    "actors": [
+      "Pierce Brosnan",
+      "Geoffrey Rush",
+      "Jamie Lee Curtis"
+    ],
+    "rating": "6.0",
+    "thumb": "https://image.tmdb.org/t/p/w342/uetsWnectyibOsjkL2BwhdLoPma.jpg",
+    "genres_list": [
+      "Drama",
+      "Thriller"
+    ],
+    "channel": "ZDFneo",
+    "timestamp": 1692305700,
+    "isNew": false,
+    "tmdb_id": 2575,
+    "tmdb_type": "movie"
   },
   {
     "title": "Der Schut",
@@ -9791,8 +9822,8 @@
       "Romanze"
     ],
     "channel": "ARD",
-    "timestamp": 1781789400,
-    "isNew": false,
+    "timestamp": 1795858200,
+    "isNew": true,
     "tmdb_id": 267656,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAxOS0xMi0wOF8xNS0wMC1NRVo"
@@ -12115,34 +12146,6 @@
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2FyZC5kZS9wbGFuQVJEX2I3MjVmYjI3LWFjMTctNGZmNy1hMGY2LThhOTFhOWY3NjMzM19nYW56ZVNlbmR1bmc"
   },
   {
-    "title": "Ein Lächeln nachts um vier",
-    "search": "Ein Lächeln nachts um vier",
-    "original_title": "Ein Lächeln nachts um vier",
-    "year": "2017",
-    "video_url": "https://nrodlzdf-a.akamaihd.net/none/zdf/19/12/191226_1645_sendung_sof/7/191226_1645_sendung_sof_a1a2_3328k_p36v14.mp4",
-    "url_website": "https://www.zdf.de/filme/ein-laecheln-nachts-um-vier-movie-100",
-    "plot": "Dezember in Hamburg: Die Stadt erstrahlt im Lichterglanz. Jule hat ihr Jura-Examen endlich in der Tasche und einen genauen Plan für ihr Leben. Die charmante Zufallsbegegnung mit Max passt da so gar nicht rein.",
-    "mediathek_desc": "Jule hat einen genauen Plan für ihr Leben. Dann trifft sie Max.",
-    "director": "Jan Ruzicka",
-    "actors": [
-      "Natalia Belitski",
-      "August Wittgenstein",
-      "Cornelia Froboess"
-    ],
-    "rating": "6.0",
-    "thumb": "https://image.tmdb.org/t/p/w342/hnWSdKwRSHP9SfvDlohktB6aIcf.jpg",
-    "genres_list": [
-      "Komödie",
-      "Romanze",
-      "Drama"
-    ],
-    "channel": "ZDF",
-    "timestamp": 1795080999,
-    "isNew": true,
-    "tmdb_id": 492390,
-    "tmdb_type": "movie"
-  },
-  {
     "title": "Ein Mann namens Ove",
     "search": "Ein Mann namens Ove",
     "year": "2015",
@@ -12270,7 +12273,7 @@
     ],
     "channel": "ZDF",
     "timestamp": 1794381964,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 1204957,
     "tmdb_type": "movie",
     "url_website": "https://www.zdf.de/filme/ein-regenbogen-zu-weihnachten-movie-100"
@@ -17059,7 +17062,7 @@
     "isNew": false,
     "tmdb_id": 265294,
     "tmdb_type": "movie",
-    "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2FyZC5kZS9wbGFuQVJEXzgzNjQyNTY5LTdlNzMtNDZlNy1hYTQ4LTY0N2EzM2FkNDhkNl9nYW56ZVNlbmR1bmc"
+    "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2FyZC5kZS9wbGFuQVJEXzgzNjQyNTY5LTdlNzMtNDZlNy1hYTQ4LTY0N2EzM2FkNDhkNl9nYW56ZVNlbmR1bmcvYXVkaW9kZXNrcmlwdGlvbg"
   },
   {
     "title": "Herzlichen Glückwunsch",
@@ -17904,7 +17907,7 @@
     ],
     "channel": "ARD",
     "timestamp": 1794317400,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 294873,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2FyZC5kZS9wbGFuQVJEX2FmODJmY2ZhLTVlMDctNDYyNS04MzM3LTZjMzc5NzE5NGI5N19nYW56ZVNlbmR1bmc"
@@ -20574,34 +20577,6 @@
     "url_website": "https://www.3sat.de/film/spielfilm/la-belle-saison---eine-sommerliebe-100.html"
   },
   {
-    "title": "Lakeview Terrace",
-    "search": "Lakeview Terrace",
-    "original_title": "Lakeview Terrace",
-    "year": "2008",
-    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/25/05/250524_sony_2015_sendung_nsf/1/250524_sony_2015_sendung_nsf_3360k_p36v17.mp4",
-    "url_website": "https://www.zdf.de/video/filme/lakeview-terrace-movie-100/lakeview-terrace-100",
-    "plot": "Das Ehepaar Chris und Lisa Mattson sind frisch verheiratet und in ihr Traumhaus eingezogen. Doch das Glück währt nicht lang, denn auf Grund ihrer verschiedenen Hautfarben geraten die beiden ins Fadenkreuz ihrer konservativen Nachbarn. Abel Turner, ein strenger, alleinerziehender Vater und Polizist, ist selbst erklärter Wachhund der Nachbarschaft. Durch seine regelmäßigen Streifzüge gibt er den Leuten die nötige Sicherheit, doch aufgrund seiner Schikanen gegen die Mattsons entwickelt sich der Polizist immer mehr zum Dorn im Auge des Paares. Diese beschließen schließlich, den Kampf aufzunehmen.",
-    "mediathek_desc": "Das Ehepaar Chris und Lisa Mattson zieht in ein neues Haus. Nebenan wohnt der verwitwete Cop Abel Turner mit seinen zwei Kindern. Der Nachbar entpuppt sich als schwieriger Zeitgenosse.",
-    "director": "David Loughery",
-    "actors": [
-      "Samuel L. Jackson",
-      "Patrick Wilson",
-      "Kerry Washington"
-    ],
-    "rating": "6.0",
-    "thumb": "https://image.tmdb.org/t/p/w342/n37riS95WFOAkr98eI8GGz17lpN.jpg",
-    "genres_list": [
-      "Drama",
-      "Krimi",
-      "Thriller"
-    ],
-    "channel": "ZDFneo",
-    "timestamp": 1679771700,
-    "isNew": false,
-    "tmdb_id": 13279,
-    "tmdb_type": "movie"
-  },
-  {
     "title": "Landfrauen - Wir können auch anders!",
     "search": "Landfrauen - Wir können auch anders!",
     "year": "2023",
@@ -22703,6 +22678,33 @@
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2FyZC5kZS9wbGFuQVJEXzg2YWNmYmY4LTVjNWYtNGNiYS05ODRhLWZhN2Y1ZmI0Y2ZlMV9nYW56ZVNlbmR1bmc"
   },
   {
+    "title": "Mein Schwiegervater, der Stinkstiefel",
+    "search": "Mein Schwiegervater, der Stinkstiefel",
+    "original_title": "Mein Schwiegervater, der Stinkstiefel",
+    "year": "2015",
+    "video_url": "https://ctv-videos.daserste.de/int/2026/11/21/DEGSM287663/DEGSM287663_3899297_sendeton_1280x720-50p-3200kbit.mp4",
+    "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2FyZC5kZS9wbGFuQVJEXzhkMWY5ZDJiLWE0MTAtNGJjNi05NmNkLWQ3NzEzMDA1Y2U1MV9nYW56ZVNlbmR1bmc",
+    "plot": "„Das schöne Fleckchen Erde” hatte sich die Thailänderin Lamai anders vorgestellt, als sie bei Joe, ihrem frisch angetrauten Ehemann, im verschneiten Oberbayern ankommt. Statt eines warmen Empfanges, will Schwiegervater Hans sie vom Hof jagen. Es kommt noch schlimmer: Nach einer leidenschaftlichen Liebesnacht hat Joe zwar noch ein Lächeln im Gesicht, ist aber leider tot – Herzinfarkt. Nun muss die junge Witwe, die zur Überraschung aller Alleinerbin des gesamten Anwesens ist, mit dem kauzigen Hans klarkommen, der testamentarisch ein Wohnrecht auf Lebenszeit erhalten hat.",
+    "mediathek_desc": "Spielfilm Deutschland 2015 Nach seiner Trennung von Wiebke (Marlene Morreis) reist der Landwirt Joe (Stefan Murr) mit seinem Freund, Pfarrer Otmar (Simon Schwarz), nach Thailand und verliebt sich in Lamai (Mai Duong Kieu), mit der ihn Otmar am Strand traut. Zurück auf dem Hof, den er gemeinsam mit seinem verbitterten Vater Hans (Michael Gwisdek) bewirtschaftet, holt ihn der triste Alltag ein....",
+    "director": "Sven Bohse",
+    "actors": [
+      "Michael Gwisdek",
+      "Mai Duong Kieu",
+      "Stefan Murr"
+    ],
+    "rating": "6.2",
+    "thumb": "https://image.tmdb.org/t/p/w342/vabd8uUJZ9ZbdFxUhWpefsHBlbf.jpg",
+    "genres_list": [
+      "TV-Film",
+      "Komödie"
+    ],
+    "channel": "ARD",
+    "timestamp": 1795357800,
+    "isNew": true,
+    "tmdb_id": 372286,
+    "tmdb_type": "movie"
+  },
+  {
     "title": "Mein Sohn Helen",
     "search": "Mein Sohn Helen",
     "year": "2015",
@@ -24602,6 +24604,32 @@
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyNS0wNi0xNF8xNS0zMC1NRVNa"
   },
   {
+    "title": "Neid ist auch keine Lösung",
+    "search": "Neid ist auch keine Lösung",
+    "original_title": "Neid ist auch keine Lösung",
+    "year": "2016",
+    "video_url": "https://nrodlzdf-a.akamaihd.net/none/zdf/19/12/191228_0110_sendung_fis/6/191228_0110_sendung_fis_3328k_p36v14.mp4",
+    "url_website": "https://www.zdf.de/filme/neid-ist-auch-keine-loesung-movie-100",
+    "plot": "Die Einladung zum 40. Geburtstag einer alten Jugendfreundin wirbelt das bis dahin glückliche Leben der Baumgartners schwer durcheinander und lässt sie am bisherigen Lebenskonzept zweifeln.  Marie und Markus Baumgartner sind ein Bilderbuch-Paar. Doch beruflicher Alltag und zwei Kinder lassen die Eheleute kaum durchatmen. Wie gerufen kommt da die Einladung zum 40. Geburtstag von Maries ehemals bester Schulfreundin Heike, inklusive langem Wochenende.  Kurzerhand engagieren die Baumgartners Opa Walter als Babysitter und fahren in Maries  alte bayerische Heimat. Die Überraschung vor Ort ist groß: Heike hat alles erreicht, was die beiden Freundinnen früher für sich erträumt hatten. Aus dem pummeligen Entlein ist ein schöner Schwan geworden, sie lebt ihren Traumberuf Fotografin. Mit ihrem smarten Mann Hans bewohnt sie ein Traumhaus am See.",
+    "mediathek_desc": "Die Einladung zum 40. Geburtstag einer alten Jugendfreundin wirbelt das bis dahin glückliche Leben der Baumgartners schwer durcheinander und lässt sie an ihrem bisherigen Lebenskonzept zweifeln.",
+    "director": "Tobi Baumann",
+    "actors": [
+      "Bibiana Beglau",
+      "Matthias Koeberlin",
+      "Stephan Luca"
+    ],
+    "rating": "5.0",
+    "thumb": "https://image.tmdb.org/t/p/w342/n0wPAsXsmg96rbcHYvBnnp1LXsv.jpg",
+    "genres_list": [
+      "Komödie"
+    ],
+    "channel": "ZDF",
+    "timestamp": 1795158666,
+    "isNew": true,
+    "tmdb_id": 408828,
+    "tmdb_type": "movie"
+  },
+  {
     "title": "Nelly und das Weihnachtswunder",
     "search": "Nelly und das Weihnachtswunder",
     "original_title": "Nelly und das Weihnachtswunder",
@@ -24942,6 +24970,33 @@
     "timestamp": 1794435022,
     "isNew": true,
     "tmdb_id": 1746471,
+    "tmdb_type": "movie"
+  },
+  {
+    "title": "Nie zu spät",
+    "search": "Nie zu spät",
+    "original_title": "Nie zu spät",
+    "year": "2022",
+    "video_url": "https://ctv-videos.daserste.de/int/2026/11/21/DEGSM301744/DEGSM301744_3898924_sendeton_1280x720-50p-3200kbit.mp4",
+    "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2FyZC5kZS9wbGFuQVJEX2E1M2NjODA5LWVmOTYtNDNmOS05M2NlLWZhN2E0YTc3ZTI3Nl9nYW56ZVNlbmR1bmc",
+    "plot": "Flugkapitän Paul verfügt als Ehemann und Papa nicht über das gleiche Verantwortungsbewusstsein wie im Cockpit. Als er eine Vereinbarung mit seiner deutlich jüngeren Lebensgefährtin Susanne bricht, lässt die ihn mit dem gemeinsamen Sohn Franz sitzen und stellt ein Ultimatum. Ausgerechnet jetzt bestehen auch Pauls fast erwachsene Kinder aus früherer Ehe darauf, dass sich ihr Papa endlich Zeit für sie nimmt.",
+    "mediathek_desc": "Spielfilm Deutschland 2021 Der 59-jährige Flugkapitän Paul (Heino Ferch) ist stolz darauf, in seinem Traumberuf aus eigener Kraft ganz nach oben zu kommen....",
+    "director": "Tomy Wigand",
+    "actors": [
+      "Heino Ferch",
+      "Picco von Groote",
+      "Pablo Grant"
+    ],
+    "rating": "6.9",
+    "thumb": "https://image.tmdb.org/t/p/w342/tTTXJ99NivikxO7OWUTdA3XhJFg.jpg",
+    "genres_list": [
+      "Komödie",
+      "TV-Film"
+    ],
+    "channel": "ARD",
+    "timestamp": 1795266000,
+    "isNew": true,
+    "tmdb_id": 943319,
     "tmdb_type": "movie"
   },
   {
@@ -28437,6 +28492,33 @@
     "url_website": "https://www.3sat.de/film/spielfilm/silverado-100.html"
   },
   {
+    "title": "Sin City",
+    "search": "Sin City",
+    "original_title": "Sin City",
+    "year": "2005",
+    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/26/01/260102_2345_sendung_nsf/1/260102_2345_sendung_nsf_3360k_p36v17.mp4",
+    "url_website": "https://www.zdf.de/video/filme/sin-city-movie-100/sin-city-100",
+    "plot": "Basin City, genannt Sin City, ist ein düsteres Metropolis, in dem nichts und niemand wirklich sicher ist, in dem die Gewalt allgegenwärtig ist und die Schicksale sich kreuzen. Drei Geschichten aus den dunklen Winkeln der Stadt werden hier erzählt: da ist der muskulöse Schläger Marv, der sich auf einen beispiellosen Rachefeldzug begibt, als die einzige von ihm geliebte Frau Goldie nach einer gemeinsamen Nacht von einem Killer getötet wird. Dwight, der aus Gefühlsgründen für die nicht ganz so wehrlosen Prostituierten und Tänzerinnen eintritt, als ein brutaler Cop sie bedroht und damit selbst in immer gewalttätigere Schwierigkeiten gerät und schließlich und endlich die Story des ehrlichen Cops Hartigan, der allmählich seines Jobs müde geworden ist, aber noch einmal zur Tat schreiten muss...",
+    "mediathek_desc": "In dieser brutalen Comicverfilmung wird in drei Kapiteln das Leben unterschiedlicher Charaktere in der düsteren Basin City begleitet, wo Gewalt und Verbrechen an der Tagesordnung stehen.",
+    "director": "Robert Rodriguez",
+    "actors": [
+      "Bruce Willis",
+      "Jessica Alba",
+      "Clive Owen"
+    ],
+    "rating": "7.5",
+    "thumb": "https://image.tmdb.org/t/p/w342/bYT76Gqo58fNugswfzD2WtOfl8c.jpg",
+    "genres_list": [
+      "Krimi",
+      "Thriller"
+    ],
+    "channel": "ZDFneo",
+    "timestamp": 1767393900,
+    "isNew": false,
+    "tmdb_id": 187,
+    "tmdb_type": "movie"
+  },
+  {
     "title": "Sinn und Sinnlichkeit",
     "search": "Sinn und Sinnlichkeit",
     "year": "1995",
@@ -29816,6 +29898,35 @@
     "tmdb_id": 489430,
     "tmdb_type": "movie",
     "url_website": "https://www.3sat.de/film/spielfilm/terrified-102.html"
+  },
+  {
+    "title": "Teufel in Blau",
+    "search": "Teufel in Blau",
+    "original_title": "Teufel in Blau",
+    "year": "1995",
+    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/18/12/181230_sony_0110_sendung_spf/1/181230_sony_0110_sendung_spf_a3a4_3360k_p36v17.mp4",
+    "url_website": "https://www.zdf.de/video/filme/teufel-in-blau-movie-100/teufel-in-blau-102",
+    "plot": "Los Angeles: Easy Rawlins - momentan ohne Arbeit - weiß nicht, wie er die nächste Miete bezahlen soll. Da bietet ihm ein undurchsichtiger Typ namens Albright einen lukrativen Job an. Natürlich greift Easy sofort zu: er soll eine geheimnisvolle Lady aufspüren - Daphne Monet, die nach einer Affaire mit einem Politiker spurlos verschwunden ist. Easy taucht ab ins Milieu der neonschrillen Bars und dunklen Clubs und trifft auf Coretta, eine Freundin von Daphne. Eine kurze Romanze mit ihr endet jäh: Coretta wird brutal ermordet! Und schon ist Easy mitten drin im tödlichen Sumpf aus korrupter Politik, brutalen Cops, Erpressung und Mord. Jetzt ruft er seinen Freund Mouse zu Hilfe. Der kann mit dem Schießeisen umgehen wie kein anderer ...",
+    "mediathek_desc": "Los Angeles 1948. Der Weltkriegsveteran Easy Rawlins hat schon bessere Tage gesehen. Gerade hat er seine Arbeit in der Flugzeugindustrie verloren und sucht einen neuen Job.",
+    "director": "Carl Franklin",
+    "actors": [
+      "Denzel Washington",
+      "Tom Sizemore",
+      "Jennifer Beals"
+    ],
+    "rating": "6.5",
+    "thumb": "https://image.tmdb.org/t/p/w342/950iJcN4hmenOFsWoJu9pOad2yB.jpg",
+    "genres_list": [
+      "Thriller",
+      "Krimi",
+      "Drama",
+      "Mystery"
+    ],
+    "channel": "ZDFneo",
+    "timestamp": 1546128600,
+    "isNew": false,
+    "tmdb_id": 8512,
+    "tmdb_type": "movie"
   },
   {
     "title": "The Card Counter",
@@ -31329,7 +31440,7 @@
     "title": "Um Himmels Willen - Weihnachten in Kaltenthal",
     "search": "Um Himmels Willen - Weihnachten in Kaltenthal",
     "year": "2008",
-    "video_url": "https://pd-videos.daserste.de/dach/2023/12/14/32d7f3ff-775d-4578-9de1-cd8b1ae4c469/JOB_421684_sendeton_1280x720-50p-3200kbit.mp4",
+    "video_url": "https://ctv-videos.daserste.de/dach/2023/12/14/32d7f3ff-775d-4578-9de1-cd8b1ae4c469/JOB_421684_sendeton_1280x720-50p-3200kbit.mp4",
     "plot": "Kurz vor Weihnachten erhält Bürgermeister Wöller eine Audienz beim Papst. Da er nicht alleine nach Rom reisen will, muss ausgerechnet Schwester Hanna ihn begleiten – das kann natürlich nicht gutgehen. Prompt entpuppt sich Wöllers vermeintliche Privataudienz als Massenveranstaltung. In seiner Eitelkeit gekränkt, will Wöller sofort abreisen, doch ein Generalstreik hat den öffentlichen Verkehr lahmgelegt. Damit beginnt für Hanna und Wöller eine abenteuerliche Heimreise, in deren Verlauf sie auch noch eine hochschwangere, einsame junge Frau auflesen. Derweil laufen im Kloster die Weihnachtsvorbereitungen auf Hochtouren, und Hanna fehlt an allen Ecken und Enden. (Text: ARD)",
     "mediathek_desc": "Spielfilm Deutschland 2008\r\n\r\nBürgermeister Wöller (Fritz Wepper) fühlt sich geschmeichelt: Kurz vor Weihnachten erhält er überraschend und sehr kurzfristig eine Audienz beim Papst. Da die Einladung für zwei Personen gilt, bittet er seine Lieblingsfeindin, Schwester Hanna (Janina Hartwig), ihn nach Rom zu begleiten. Eigentlich hat Hanna überhaupt keine Zeit, denn im Kloster laufen die Vorbereitung\n.....",
     "director": "",
@@ -31344,7 +31455,7 @@
       "Familie"
     ],
     "channel": "ARD",
-    "timestamp": 1703461800,
+    "timestamp": 1703157256,
     "isNew": false,
     "tmdb_id": 913587,
     "tmdb_type": "movie",
@@ -31409,8 +31520,8 @@
     "search": "Unaufhaltsam",
     "original_title": "Unaufhaltsam",
     "year": "2024",
-    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/26/09/260911_0245_sendung_spf/1/260911_0245_sendung_spf_a1a2_3360k_p36v17.mp4",
-    "url_website": "https://www.zdf.de/video/filme/unaufhaltsam-movie-100/unaufhaltsam-100",
+    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/26/09/260911_0245_sendung_spf/1/260911_0245_sendung_spf_a3a4_3360k_p36v17.mp4",
+    "url_website": "https://www.zdf.de/filme/unaufhaltsam-movie-100",
     "plot": "Erzählt die inspirierende, wahre Geschichte von Anthony Robles, der mit nur einem Bein geboren wurde. Mit unbeirrbarem Kampfgeist und wilder Entschlossenheit trotzt er allen Hindernissen, um seine Träume zu verwirklichen.",
     "mediathek_desc": "Der junge Ringer Anthony möchte seinen Traum verwirklichen und eine Karriere im Profisport starten. Im Gegensatz zu seinen zahlreichen Konkurrenten hat er allerdings nur ein Bein.",
     "director": "William Goldenberg",
@@ -31426,8 +31537,8 @@
       "Historie"
     ],
     "channel": "ZDF",
-    "timestamp": 1789087800,
-    "isNew": false,
+    "timestamp": 1794780787,
+    "isNew": true,
     "tmdb_id": 1101448,
     "tmdb_type": "movie"
   },
@@ -31925,33 +32036,6 @@
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2FyZC5kZS9wbGFuQVJEX2I2ZTZmNDcwLTc2OTQtNDgxMC04MjMyLWMzNjE5MGIxNTczM19nYW56ZVNlbmR1bmc"
   },
   {
-    "title": "Unterm Eis",
-    "search": "Unterm Eis",
-    "year": "2015",
-    "video_url": "https://pd-videos.daserste.de/int/2022/11/08/07612b37-49c5-4233-a8a6-fa7222377010/JOB_514366__sendeton_1280x720-50p-3200kbit.mp4",
-    "plot": "Nach langer Zeit besucht Isak seine Familie im norwegischen Bergland, um der Taufe seiner Nichte beizuwohnen. Mit seinem Bruder Jonas versteht er sich prächtig, aber das Verhältnis zu seinem Vater ist angespannt. Dieser hat Isak nie verziehen, dass er nicht in den familiären Betrieb eingestiegen ist. Bei einer Bergtour kommt es zur Katastrophe: Jonas wird von einer Lawine verschüttet - es gibt keine Hoffnung. Der Schock stellt den Rest der Familie auf eine Zerreißprobe. Zugleich wird Isak gezwungen, sich den Konflikten aus seiner Vergangenheit zu stellen und eine Entscheidung über seine Zukunft zu treffen.",
-    "mediathek_desc": "Spielfilm Deutschland 2015 \r\n\r\nIsak besucht nach langer Zeit sein Elternhaus im norwegischen Bergland. Bei einer Bergtour mit seinem Bruder kommt es zur Katastrophe. Der Schock stellt den Rest der Familie auf eine Zerreißprobe. \r\n\r\nMit David Rott, Henry Hübchen, Renate Krößner, Lucas Prisor, Julia Hartmann u. a. | Buch: Silke Zertz I Regie: Jörg Grünler",
-    "director": "Jörg Grünler",
-    "actors": [
-      "David Rott",
-      "Henry Hübchen",
-      "Renate Krößner"
-    ],
-    "rating": "5.5",
-    "thumb": "https://image.tmdb.org/t/p/w342/xNLuUkUSR4s3oRaMjD3EWMejsYV.jpg",
-    "genres_list": [
-      "TV-Film",
-      "Familie",
-      "Drama"
-    ],
-    "channel": "ARD",
-    "timestamp": 1668859200,
-    "isNew": false,
-    "tmdb_id": 424659,
-    "tmdb_type": "movie",
-    "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyMi0xMS0xOV8xMy0wMC1NRVo"
-  },
-  {
     "title": "Unternehmen Petticoat",
     "search": "Unternehmen Petticoat",
     "year": "1959",
@@ -32246,7 +32330,7 @@
     "original_title": "Verblendung",
     "year": "2009",
     "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/25/06/250621_sony_2340_sendung_spf/1/250621_sony_2340_sendung_spf_3360k_p36v17.mp4",
-    "url_website": "https://www.zdf.de/video/filme/verblendung-movie-100/verblendung-102",
+    "url_website": "https://www.zdf.de/filme/verblendung-movie-100",
     "plot": "Harriet Vanger verschwindet spurlos während eines Familientreffens. Jahrzehnte bleibt ihr Schicksal ungeklärt. Was ist nur damals mit Harriet geschehen? Mittlerweile 82 Jahre alt, lässt Henrik Vanger diese Frage keine Ruhe. Ein letztes Mal versucht er, doch noch eine Antwort zu finden, und kontaktiert den renommierten Enthüllungsjournalisten Mikael Blomkvist. Gemeinsam mit der ebenso genialen wie kompromisslosen Hackerin Lisbeth Salander, von der er unerwartet Unterstützung erhält, stößt Blomkvist schnell auf erste Spuren. Schon bald tauchen die beiden immer tiefer in die Geschichte der einflussreichen Industriellenfamilie Vanger ein – und entdecken dabei Grausames.",
     "mediathek_desc": "Nach einem Presse-Skandal reist Journalist Mikael Blomkvist in Schwedens Norden, wo die Familie Vanger residiert. Mikael soll herausfinden, was mit Harriet Vanger passiert ist.",
     "director": "Niels Arden Oplev",
@@ -32264,8 +32348,8 @@
       "Mystery"
     ],
     "channel": "ZDFneo",
-    "timestamp": 1653076800,
-    "isNew": false,
+    "timestamp": 1795161313,
+    "isNew": true,
     "tmdb_id": 15472,
     "tmdb_type": "movie"
   },
@@ -32786,7 +32870,7 @@
     ],
     "channel": "ZDF",
     "timestamp": 1794304572,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 835363,
     "tmdb_type": "movie",
     "url_website": "https://www.zdf.de/filme/viva-forever-movie-100"
@@ -33130,7 +33214,7 @@
     ],
     "channel": "ZDF",
     "timestamp": 1794380191,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 652617,
     "tmdb_type": "movie"
   },
@@ -34227,7 +34311,7 @@
     ],
     "channel": "ZDF",
     "timestamp": 1794379897,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 1176282,
     "tmdb_type": "movie",
     "url_website": "https://www.zdf.de/filme/wir-haben-einen-deal-movie-100"
