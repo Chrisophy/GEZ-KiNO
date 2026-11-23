@@ -577,7 +577,7 @@
     ],
     "channel": "ARTE.DE",
     "timestamp": 1794424503,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 15196,
     "tmdb_type": "movie"
   },
@@ -2141,32 +2141,6 @@
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2JhcmZ1c3MtZHVyY2gtYXVzdHJhbGllbi8yMDI1LTA4LTI3XzIxLTQ1LU1FU1o"
   },
   {
-    "title": "Baumgeflüster",
-    "search": "Baumgeflüster",
-    "year": "2026",
-    "video_url": "https://nrodlzdf-a.akamaihd.net/none/zdf/26/03/260329_2015_sendung_sof/1/260329_2015_sendung_sof_a1a2_3360k_p36v17.mp4",
-    "plot": "Ein Forstwirt, der wider Willen eine Vertretungsstelle als Förster annimmt, erhält den Auftrag, einen Privatwald zu erwerben, der als Nationalpark genutzt werden könnte. Dazu gilt es, den Erben zu überzeugen, der sich als jener attraktive Fotograf herausstellt, in den sich der Forstwirt just verguckt hat. Eine Liebeskomödie in der \"Herzkino\"-Reihe, in deren Rahmen die homosexuelle Romanze Neuland bedeutet, ohne dass der Film den erzählerischen Klischees und der Harmlosigkeit entkommen könnte.",
-    "mediathek_desc": "Yascha Krüger, Förster wider Willen, übernimmt im Freisinger Wald eine Vertretungsstelle. Er verliebt sich in den Fotografen Mats Stein, verstrickt sich in Lügen und muss um die Liebe kämpfen.",
-    "director": "Dirk Kummer",
-    "actors": [
-      "Linus Schütz",
-      "Aaron Friesz",
-      "Robert Stadlober"
-    ],
-    "rating": "6.0",
-    "thumb": "https://image.tmdb.org/t/p/w342/cojIqNSmeZpxwPp6sAkkPJRhwWj.jpg",
-    "genres_list": [
-      "TV-Film",
-      "Komödie"
-    ],
-    "channel": "ZDF",
-    "timestamp": 1783051257,
-    "isNew": false,
-    "tmdb_id": 1652233,
-    "tmdb_type": "movie",
-    "url_website": "https://www.zdf.de/filme/baumgefluester-movie-100"
-  },
-  {
     "title": "Beate Uhse - Das Recht auf Liebe",
     "search": "Beate Uhse - Das Recht auf Liebe",
     "year": "2011",
@@ -2529,7 +2503,7 @@
       "Komödie"
     ],
     "channel": "ZDFneo",
-    "timestamp": 1794468464,
+    "timestamp": 1795383300,
     "isNew": true,
     "tmdb_id": 406994,
     "tmdb_type": "movie"
@@ -3142,7 +3116,7 @@
     "search": "Breaking Surface - Tödliche Tiefen",
     "original_title": "Breaking Surface - Tödliche Tiefen",
     "year": "2020",
-    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/22/01/220110_2215_sendung_spf/1/220110_2215_sendung_spf_a1a2_3360k_p36v15.mp4",
+    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/22/01/220110_2215_sendung_spf/1/220110_2215_sendung_spf_a3a4_3360k_p36v15.mp4",
     "url_website": "https://www.zdf.de/filme/breaking-surface---toedliche-tiefen-movie-102",
     "plot": "Einige Tage nach Weihnachten machen sich die schwedisch-norwegischen Halbschwestern Ida und Tuva auf den Weg zu einem Wintertauchgang in einem abgelegenen Teil der norwegischen Küste. Gegen Ende des Tauchgangs schließt ein Steinschlag Tuva unter Wasser ein. Als Ida auftaucht, um um Hilfe zu rufen, entdeckt sie, dass der Steinschlag auch über Wasser einschlug und ihre Ausrüstung, Telefone und Autoschlüssel vergraben hat. Sie sind von jeder Möglichkeit einer Rettung von außen abgeschnitten...",
     "mediathek_desc": "Kurz vor Weihnachten gehen die Schwestern Ida und Tuva auf Tauchgang. Nach einem Felsrutsch ist Tuva unter Wasser eingeklemmt, und Ida ist mit der Rettung auf sich allein gestellt.",
@@ -3159,7 +3133,7 @@
       "Thriller"
     ],
     "channel": "ZDF",
-    "timestamp": 1794927771,
+    "timestamp": 1795325471,
     "isNew": true,
     "tmdb_id": 616803,
     "tmdb_type": "movie"
@@ -3295,31 +3269,6 @@
     "tmdb_id": 329651,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2FyZC5kZS9wbGFuQVJEXzc3ZTc4MDBmLWIxZjctNDA3NS04YmFiLWRmZWJhY2ZiZTg2MV9nYW56ZVNlbmR1bmc"
-  },
-  {
-    "title": "Butter bei die Fische",
-    "search": "Butter bei die Fische",
-    "year": "2009",
-    "video_url": "https://nrodlzdf-a.akamaihd.net/none/zdf/16/12/161231_sendung_fdw/7/161231_sendung_fdw_a1a2_3360k_p36v15.mp4",
-    "plot": "Dorfpastor Hans-Uwe macht sich Sorgen um seinen Bruder Fiedje und seine Freunde Heinrich und Knud in seinem kleinen Dorf Toestrup in Schleswig-Holstein. Seit Jahren sind die Männer allein und weit und breit keine Frauen in Sicht, die passen könnten. Doch jetzt gibt es Hoffnung, denn er hat die drei überredet, eine Kontaktanzeige aufzugeben: \"Suche für drei liebevolle Männer die passenden Ehefrauen. Alter und Aussehen egal. Gerne tierlieb. Zuschriften unter Chiffre ...\"",
-    "mediathek_desc": "In einem Dorf in Schleswig-Holstein sorgt sich Dorfpastor Hans-Uwe um seinen Bruder Fiedje und seine zwei Freunde. Seit Jahren sind die Männer solo. Hans-Uwe hat einen Plan.",
-    "director": "Lars Jessen",
-    "actors": [
-      "Ulrike Kriener",
-      "Peter Heinrich Brix",
-      "Gerburg Jahnke"
-    ],
-    "rating": "5.3",
-    "thumb": "https://image.tmdb.org/t/p/w342/zIL27v4HMSspAvYW79LiE7mKpqD.jpg",
-    "genres_list": [
-      "TV-Film"
-    ],
-    "channel": "ZDF",
-    "timestamp": 1783048631,
-    "isNew": false,
-    "tmdb_id": 255508,
-    "tmdb_type": "movie",
-    "url_website": "https://www.zdf.de/filme/butter-bei-die-fische-movie-100"
   },
   {
     "title": "Böse Wetter - Das Geheimnis der Vergangenheit",
@@ -5708,31 +5657,6 @@
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyNS0wMS0wNV8xNS0zMC1NRVo"
   },
   {
-    "title": "Der Anfang von etwas",
-    "search": "Der Anfang von etwas",
-    "year": "2018",
-    "video_url": "https://nrodlzdf-a.akamaihd.net/none/zdf/19/10/191003_2015_sendung_fis/1/191003_2015_sendung_fis_a1a2_3360k_p36v17.mp4",
-    "plot": "Anne Hoppe, die als Meteorologin im Seewetteramt Hamburg arbeitet, trauert seit einem Jahr um ihren Ehemann Harry. Dieser kam am Neujahrsmorgen beim Untergang eines Containerschiffs ums Leben. Seine Leiche wurde allerdings nicht gefunden. Bei einer Gedenkfeier glaubt Anne, ihren für tot erklärten Mann unter den Gästen zu erkennen. Zunächst hält sie das nur für ein Hirngespinst, doch als nachts in ihr Haus eingebrochen wird und sie einen Blick auf den Einbrecher erhaschen kann, ist sie sicher: Der Einbrecher ist Harry. Anne stellt eigene Nachforschungen an. War Harry vielleicht gar nicht an Bord, als das Containerschiff ablegte? Doch welchen Grund hätte er haben sollen, sich ein Jahr lang zu verstecken?",
-    "mediathek_desc": "Die Meteorologin Anne Hoppe vom Seewetteramt Hamburg trauert seit einem Jahr um ihren Ehemann Harry. Dieser kam am Neujahrsmorgen beim Untergang eines Containerschiffes ums Leben.",
-    "director": "Thomas Berger",
-    "actors": [
-      "Ina Weisse",
-      "Juergen Maurer",
-      "Franziska Hartmann"
-    ],
-    "rating": "5.8",
-    "thumb": "https://image.tmdb.org/t/p/w342/7skjmWsSlOGK7M4fj7UyGNr5kdK.jpg",
-    "genres_list": [
-      "Drama"
-    ],
-    "channel": "ZDF",
-    "timestamp": 1783050003,
-    "isNew": false,
-    "tmdb_id": 577912,
-    "tmdb_type": "movie",
-    "url_website": "https://www.zdf.de/filme/der-anfang-von-etwas-movie-100"
-  },
-  {
     "title": "Der Appartement Schreck",
     "search": "Der Appartement Schreck",
     "year": "2003",
@@ -7725,6 +7649,35 @@
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyMS0xMS0wNl8xMy0wMC1NRVo"
   },
   {
+    "title": "Des Teufels Bad",
+    "search": "Des Teufels Bad",
+    "original_title": "Des Teufels Bad",
+    "year": "2024",
+    "video_url": "https://manifest-arte.akamaized.net/api/manifest/v1/Generate/553ed651-5342-4806-98ed-abcee89b3b8f/VOA-STA/XQ+KS+CHEV1/089931-000-A.m3u8",
+    "url_website": "https://www.arte.tv/de/videos/089931-000-A/des-teufels-bad/",
+    "plot": "Im 18. Jahrhundert gibt Agnes zu, ein Kind getötet zu haben und stellt sich freiwillig. Als Strafe wünscht die depressive Frau sich, hingerichtet zu werden, gilt ein Selbstmord doch als schlimmstes Verbrechen von allen. Denn seit langem schon fühlt sich die junge, verheiratete Frau isoliert von ihrem tief religiösen Mann, der keinen Platz für sie in seinem Leben zu haben scheint. Daher sieht sie den Akt der Gewalt als ihren einzigen Ausweg.",
+    "mediathek_desc": "Österreich, Mitte des 18. Jahrhunderts: Agnes verlässt ihr Heimatdorf und zieht zu ihrem Mann, dem Bauer Wolf. Der jungen Frau fällt es jedoch schwer, in der neuen Umgebung heimisch zu werden. Auch in ihrer Ehe fühlt sie sich unter Druck gesetzt, als die herbeigewünschte Schwangerschaft ausbleibt. Zunehmend verliert Agnes die Kontrolle über ihr Leben ...",
+    "director": "Veronika Franz",
+    "actors": [
+      "Anja Plaschg",
+      "Maria Hofstätter",
+      "David Scheid"
+    ],
+    "rating": "6.6",
+    "thumb": "https://image.tmdb.org/t/p/w342/pKXDD5LXPtWpXEBVTjWHi4x1eTQ.jpg",
+    "genres_list": [
+      "Drama",
+      "Mystery",
+      "Historie",
+      "Horror"
+    ],
+    "channel": "ARTE.DE",
+    "timestamp": 1795643065,
+    "isNew": true,
+    "tmdb_id": 931944,
+    "tmdb_type": "movie"
+  },
+  {
     "title": "Die Abräumer",
     "search": "Die Abräumer",
     "year": "2026",
@@ -8041,31 +7994,6 @@
     "tmdb_id": 422282,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2FyZC5kZS9wbGFuQVJEXzczMzVjYThiLTM1ZTQtNGI2Yi1hOTRlLWQyNTI1ZjBlYWJmOV9nYW56ZVNlbmR1bmc"
-  },
-  {
-    "title": "Die Bürgermeisterin",
-    "search": "Die Bürgermeisterin",
-    "year": "2022",
-    "video_url": "https://nrodlzdf-a.akamaihd.net/none/zdf/22/10/221024_2015_sendung_fdw/1/221024_2015_sendung_fdw_a1a2_3360k_p36v15.mp4",
-    "plot": "Claudia Voss, ehrenamtliche Ortsbürgermeisterin und sehr beliebt in ihrer Kleinstadt, wird vor vollendete Tatsachen gestellt: der Landkreis hat entschieden in Neustadt-Linden ein Flüchtlingsheim zu errichten",
-    "mediathek_desc": "Ortsbürgermeisterin Claudia Voss steht vor einer Herausforderung: Der Landkreis beschließt, ausgerechnet im beschaulichen Neustadt-Linden ein Heim für Geflüchtete einzurichten.",
-    "director": "Christiane Balthasar",
-    "actors": [
-      "Anna Schudt",
-      "Felix Klare",
-      "Jule Hermann"
-    ],
-    "rating": "8.0",
-    "thumb": "https://image.tmdb.org/t/p/w342/xOhlKnK8rQx3Y9UuYfYM2VwBnEZ.jpg",
-    "genres_list": [
-      "Drama"
-    ],
-    "channel": "ZDF",
-    "timestamp": 1783052216,
-    "isNew": false,
-    "tmdb_id": 983229,
-    "tmdb_type": "movie",
-    "url_website": "https://www.zdf.de/filme/die-buergermeisterin-movie-100"
   },
   {
     "title": "Die Caine war ihr Schicksal",
@@ -13217,7 +13145,7 @@
       "Romanze"
     ],
     "channel": "ARTE.DE",
-    "timestamp": 1808936100,
+    "timestamp": 1802891700,
     "isNew": true,
     "tmdb_id": 205075,
     "tmdb_type": "movie"
@@ -14064,7 +13992,7 @@
       "Thriller"
     ],
     "channel": "ZDF",
-    "timestamp": 1794823578,
+    "timestamp": 1795387004,
     "isNew": true,
     "tmdb_id": 1409383,
     "tmdb_type": "movie",
@@ -14490,34 +14418,6 @@
     "tmdb_id": 384680,
     "tmdb_type": "movie",
     "url_website": "https://www.3sat.de/film/spielfilm/feinde---hostiles-100.html"
-  },
-  {
-    "title": "Feinfühlige Vampirin sucht lebensmüdes Opfer",
-    "search": "Feinfühlige Vampirin sucht lebensmüdes Opfer",
-    "original_title": "Feinfühlige Vampirin sucht lebensmüdes Opfer",
-    "year": "2023",
-    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/25/10/251004_0305_sendung_spf/4/251004_0305_sendung_spf_a3a4_3360k_p36v17.mp4",
-    "url_website": "https://www.zdf.de/filme/feinfuehlige-vampirin-sucht-lebensmuedes-opfer-movie-100",
-    "plot": "Der Ernährungsplan von Vampiren ist naturgemäß sehr überschaubar – ohne menschliches Blut zu trinken, können sie nicht überleben. Für die junge Vampirin Sasha hat die Sache nur einen Haken: Aus Mitleid mit ihren Opfern bringt sie es nicht über sich, jemandem wehzutun, geschweige denn umzubringen. Doch die Geduld ihrer Eltern hat ein Ende: Sasha wird vor die Tür gesetzt und soll nun von ihrer skrupellosen Cousine die blutige Nahrungsbeschaffung lernen. Wie praktisch, dass sie Einzelgänger Paul begegnet, denn der will sowieso nicht mehr leben und meldet sich freiwillig als ihr erstes Opfer. Einen letzten Wunsch will Sasha ihm noch erfüllen, aber seine letzte Nacht läuft anders als geplant …",
-    "mediathek_desc": "Die Teenie-Vampirin Sasha soll nach Ansicht ihrer Familie endlich selbst auf die Jagd gehen, jedoch hemmt sie ihr Empathievermögen. Doch dann lernt Sasha den suizidgefährdeten Paul kennen.",
-    "director": "Ariane Louis-Seize",
-    "actors": [
-      "Sara Montpetit",
-      "Félix-Antoine Bénard",
-      "Steve Laplante"
-    ],
-    "rating": "7.5",
-    "thumb": "https://image.tmdb.org/t/p/w342/4QtHnJq3iqjiH2SAHepXuxGvsBQ.jpg",
-    "genres_list": [
-      "Komödie",
-      "Fantasy",
-      "Horror"
-    ],
-    "channel": "ZDF",
-    "timestamp": 1792648803,
-    "isNew": false,
-    "tmdb_id": 988402,
-    "tmdb_type": "movie"
   },
   {
     "title": "Femme",
@@ -15250,32 +15150,6 @@
     "tmdb_id": 318864,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyNC0wNi0yN18xNS0zMC1NRVNa"
-  },
-  {
-    "title": "Für immer Eltern",
-    "search": "Für immer Eltern",
-    "year": "2021",
-    "video_url": "https://nrodlzdf-a.akamaihd.net/none/zdf/21/09/210902_2015_sendung_fis/2/210902_2015_sendung_fis_a1a2_3360k_p36v15.mp4",
-    "plot": "Für Anja und Michael Wagner sieht es so aus, als könnten sie ab jetzt eine ganz neue Freiheit genießen. Tochter Stella hat einen Top-Job im Ausland, Sohn Niklas ein Referendariat sowie ein Zimmer in einer Wohngemeinschaft. Das Haus ist verkauft, eine kleinere, hübsche Wohnung nahe der Innenstadt bezogen, man freut sich auf das Leben zu zweit. Doch dann bittet Niklas überraschend wieder um Unterschlupf. Er bringt zugleich seine Freundin mit, und sehr bald kommt es zu Konflikten.",
-    "mediathek_desc": "Anja und Michael haben nach dem Auszug der Kinder gerade eine kleinere Wohnung in München gemietet. Da steht überraschend ihr erwachsener Sohn Niklas wieder vor der Tür.",
-    "director": "Florian Schwarz",
-    "actors": [
-      "Devid Striesow",
-      "Anja Schneider",
-      "Max Schimmelpfennig"
-    ],
-    "rating": "4.5",
-    "thumb": "https://image.tmdb.org/t/p/w342/sUS9hKrkrka8LfyKYhuQkhuJYi7.jpg",
-    "genres_list": [
-      "Komödie",
-      "TV-Film"
-    ],
-    "channel": "ZDF",
-    "timestamp": 1783049840,
-    "isNew": false,
-    "tmdb_id": 807630,
-    "tmdb_type": "movie",
-    "url_website": "https://www.zdf.de/filme/fuer-immer-eltern-movie-100"
   },
   {
     "title": "Für immer Freibad",
@@ -16349,7 +16223,7 @@
     ],
     "channel": "ARTE.DE",
     "timestamp": 1794430125,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 46326,
     "tmdb_type": "movie"
   },
@@ -17062,7 +16936,7 @@
     "isNew": false,
     "tmdb_id": 265294,
     "tmdb_type": "movie",
-    "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2FyZC5kZS9wbGFuQVJEXzgzNjQyNTY5LTdlNzMtNDZlNy1hYTQ4LTY0N2EzM2FkNDhkNl9nYW56ZVNlbmR1bmcvYXVkaW9kZXNrcmlwdGlvbg"
+    "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2FyZC5kZS9wbGFuQVJEXzgzNjQyNTY5LTdlNzMtNDZlNy1hYTQ4LTY0N2EzM2FkNDhkNl9nYW56ZVNlbmR1bmc"
   },
   {
     "title": "Herzlichen Glückwunsch",
@@ -18175,32 +18049,6 @@
     "url_website": "https://www.3sat.de/film/spielfilm/im-auge-des-hurrikans-100.html"
   },
   {
-    "title": "Im Feuer",
-    "search": "Im Feuer",
-    "year": "2021",
-    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/23/03/230320_0350_sendung_dks/1/230320_0350_sendung_dks_3360k_p36v17.mp4",
-    "plot": "Rojda, eine gebürtige irakische Kurdin und Soldatin der Bundeswehr, reist in ein Flüchtlingslager in Griechenland, wo sie ihre Mutter trifft, die schlechte Nachrichten über ihre Schwester Dilan hat.",
-    "mediathek_desc": "Rojda ist eine junge Bundeswehrsoldatin mit kurdisch-irakischen Wurzeln, die seit ihrer Kindheit in Deutschland lebt. Ihre Mutter und ihre Schwester sind noch in der alten Heimat.",
-    "director": "Daphne Charizani",
-    "actors": [
-      "Almila Bağrıaçık",
-      "Zübeyde Bulut",
-      "Maryam Boubani"
-    ],
-    "rating": "6.0",
-    "thumb": "https://image.tmdb.org/t/p/w342/ynuFG5RE32JiE7MAMLLjEe4EqUc.jpg",
-    "genres_list": [
-      "Drama",
-      "Krieg"
-    ],
-    "channel": "ZDF",
-    "timestamp": 1783051398,
-    "isNew": false,
-    "tmdb_id": 663991,
-    "tmdb_type": "movie",
-    "url_website": "https://www.zdf.de/filme/im-feuer-movie-100"
-  },
-  {
     "title": "Im Fluss des Lebens",
     "search": "Im Fluss des Lebens",
     "year": "2011",
@@ -18959,32 +18807,6 @@
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyNC0wOC0xM18xNC0xMC1NRVNa"
   },
   {
-    "title": "In fremden Händen",
-    "search": "In fremden Händen",
-    "year": "2026",
-    "video_url": "https://nrodlzdf-a.akamaihd.net/none/zdf/26/03/260302_2015_sendung_fdw/1/260302_2015_sendung_fdw_a1a2_3360k_p36v17.mp4",
-    "plot": "Mitreißender Thriller mit Désirée Nosbusch. Scheinbar selbstlos übernimmt sie die Pflege eines wohlhabenden Witwers (Robert Hunger-Bühler), der sich frisch in sie verliebt hat. Dessen Töchter werden zunehmend misstrauisch, denn bald steht mehr als die Harmonie in der Familie auf dem Spiel. Als der wohlhabende Witwer Wolfgang im Urlaub die attraktive Karola kennenlernt, verliebt er sich prompt in sie. Bei einer gemeinsamen Wanderung stürzt er dann aber schwer und ist fortan auf Krücken angewiesen. Kurzerhand zieht Karola bei ihm ein. Wolfgangs Töchter, Verena und Jana, freuen sich zunächst, dass sich jemand um ihren pflegebedürftigen Vater kümmert. Als sich dessen Zustand verschlechtert, wächst jedoch ihr Misstrauen an Karolas Absichten.",
-    "mediathek_desc": "Als die attraktive Karola in das Leben des wohlhabenden Wolfgang tritt, freuen sich seine beiden Töchter, dass sich jemand um den Vater kümmert. Doch führt Karola etwas im Schilde?",
-    "director": "Christian Bach",
-    "actors": [
-      "Désirée Nosbusch",
-      "Robert Hunger-Bühler",
-      "Picco von Groote"
-    ],
-    "rating": "6.7",
-    "thumb": "https://image.tmdb.org/t/p/w342/aNS4fubNI6NgLfnTqYnP72knKSD.jpg",
-    "genres_list": [
-      "TV-Film",
-      "Drama"
-    ],
-    "channel": "ZDF",
-    "timestamp": 1783048694,
-    "isNew": false,
-    "tmdb_id": 1624913,
-    "tmdb_type": "movie",
-    "url_website": "https://www.zdf.de/filme/in-fremden-haenden-movie-100"
-  },
-  {
     "title": "Inferno der Flammen",
     "search": "Inferno der Flammen",
     "year": "1998",
@@ -19298,7 +19120,7 @@
     "title": "Jericho Ridge - Unter Beschuss",
     "search": "Jericho Ridge - Unter Beschuss",
     "year": "2022",
-    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/25/02/250224_2215_sendung_spf/1/250224_2215_sendung_spf_a3a4_3360k_p36v17.mp4",
+    "video_url": "https://nrodlzdf-a.akamaihd.net/dach/3sat/26/04/260417_jericho_ridge_unter_beschuss_spielfilm/1/260417_jericho_ridge_unter_beschuss_spielfilm_3360k_p36v17.mp4",
     "plot": "Eine schwer am Fuß verletzte Polizistin muss ein entlegenes Sheriff-Office mitsamt Gefängnis fast im Alleingang gegen eine Meute schießwütiger Gangster verteidigen.",
     "mediathek_desc": "Eine schwer am Fuß verletzte Polizistin muss ein entlegenes Sheriff-Office mitsamt Gefängnis fast im Alleingang gegen eine Meute schießwütiger Gangster verteidigen.",
     "director": "Will Gilbey",
@@ -19318,7 +19140,7 @@
     "isNew": false,
     "tmdb_id": 969926,
     "tmdb_type": "movie",
-    "url_website": "https://www.zdf.de/video/filme/jericho-ridge---unter-beschuss-movie-100/jericho-ridge---unter-beschuss-100"
+    "url_website": "https://www.3sat.de/film/spielfilm/jericho-ridge---unter-beschuss-100.html"
   },
   {
     "title": "Jo Nesbø's Headhunters",
@@ -22595,8 +22417,8 @@
       "Komödie"
     ],
     "channel": "ARD",
-    "timestamp": 1778232000,
-    "isNew": false,
+    "timestamp": 1795946400,
+    "isNew": true,
     "tmdb_id": 328632,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2FyZC5kZS9wbGFuQVJEX2MwMDYzNGM1LTQ5MzEtNGY4OS1hOWUxLTNhYzVkYjllYjlmNV9nYW56ZVNlbmR1bmc"
@@ -23639,33 +23461,6 @@
     "tmdb_type": "movie"
   },
   {
-    "title": "Misericordia",
-    "search": "Misericordia",
-    "year": "2024",
-    "video_url": "https://manifest-arte.akamaized.net/api/manifest/v1/Generate/36748772-3321-4a5e-ace1-dd12ed870246/de/XQ+KS+CHEV1/128673-000-A.m3u8",
-    "plot": "Nach zehn Jahren kehrt Jérémie in seinen Heimatort Saint-Martial im Südosten Frankreichs zurück, um an der Beerdigung des Dorfbäckers Jean-Pierres teilzunehmen. Als Teenager war Jérémie dessen Lehrling – und vielleicht noch mehr. Von Vincent, dem latent gewalttätigen Sohn des Verstorbenen, wird Jérémie mit Argwohn empfangen, aber auch mit unterschwelligem Begehren. Die Bäckerswitwe Martine bietet ihm einen Schlafplatz an und sucht etwas direkter seine körperliche Nähe. Ambivalente sexuelle Spannungen erzeugt der mysteriöse Rückkehrer auch bei Bauer Walter und dem neugierigen Pfarrer Grisolles. Als Vincent spurlos verschwindet, fällt der Verdacht schnell auf Jérémie.",
-    "mediathek_desc": "Jérémie kehrt zur Beerdigung seines ehemaligen Arbeitgebers in ein abgelegenes Dorf zurück. Dessen Witwe nimmt ihn bei sich auf. Ihr Sohn Vincent glaubt, Jérémie wolle die Trauer seiner Mutter ausnutzen, um sich bei ihr einzuquartieren. Alain Guiraudies Psychothriller erzählt von Begehren, Eifersucht und einer Schuld, die ein Dorf vor eine ungewöhnliche moralische Prüfung stellt.",
-    "director": "Alain Guiraudie",
-    "actors": [
-      "Félix Kysyl",
-      "Catherine Frot",
-      "Jean-Baptiste Durand"
-    ],
-    "rating": "6.4",
-    "thumb": "https://image.tmdb.org/t/p/w342/dUQyy3NFzJdis7XuwvInhAiNORl.jpg",
-    "genres_list": [
-      "Drama",
-      "Thriller",
-      "Komödie"
-    ],
-    "channel": "ARTE.DE",
-    "timestamp": 1792011749,
-    "isNew": false,
-    "tmdb_id": 1063574,
-    "tmdb_type": "movie",
-    "url_website": "https://www.arte.tv/de/videos/128673-000-A/misericordia/"
-  },
-  {
     "title": "Missbrauch",
     "search": "Missbrauch",
     "year": "2013",
@@ -23791,7 +23586,7 @@
     ],
     "channel": "ARD",
     "timestamp": 1794398100,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 357805,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyMy0xMi0zMV8wMy0wMC1NRVo"
@@ -24085,7 +23880,7 @@
     "original_title": "Mr. Brooks - Der Mörder in dir",
     "year": "2007",
     "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/20/11/201129_2315_sendung_nsf/1/201129_2315_sendung_nsf_3360k_p36v17.mp4",
-    "url_website": "https://www.zdf.de/video/filme/mr-brooks---der-moerder-in-dir-movie-100/mr-brooks---der-moerder-in-dir-100",
+    "url_website": "https://www.zdf.de/filme/mr-brooks---der-moerder-in-dir-movie-100",
     "plot": "Mr. Brooks führt seit Jahren unerkannt ein Doppelleben als Killer. Tagsüber ist er erfolgreicher Geschäftsmann und Nachts ein eiskalter Serienmörder. Doch als Mr. Brooks bei einem Mord von einem Fotografen beobachtet wird, zwingt dieser ihn auf seinem nächsten Mord zu begleiten. Langsam aber sicher bröckelt Mr. Brooks Fassade und sein Leben gerät außer Kontrolle.",
     "mediathek_desc": "Earl Brooks ist ein Serienkiller, der auf seinen nächtlichen Streifzügen willkürlich fremde Menschen tötet. Ihm eng auf den Fersen ist die couragierte Polizistin Tracy Atwood.",
     "director": "Bruce A. Evans",
@@ -24101,8 +23896,8 @@
       "Thriller"
     ],
     "channel": "ZDFneo",
-    "timestamp": 1606688100,
-    "isNew": false,
+    "timestamp": 1794867030,
+    "isNew": true,
     "tmdb_id": 3432,
     "tmdb_type": "movie"
   },
@@ -24757,7 +24552,7 @@
       "Drama"
     ],
     "channel": "ZDF",
-    "timestamp": 1794893415,
+    "timestamp": 1795387003,
     "isNew": true,
     "tmdb_id": 1481869,
     "tmdb_type": "movie"
@@ -24968,7 +24763,7 @@
     ],
     "channel": "ZDF",
     "timestamp": 1794435022,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 1746471,
     "tmdb_type": "movie"
   },
@@ -25032,7 +24827,7 @@
     "original_title": "Nightwatch - Nachtwache",
     "year": "1994",
     "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/25/09/250922_0225_sendung_spf/4/250922_0225_sendung_spf_a1a2_3360k_p36v17.mp4",
-    "url_website": "https://www.zdf.de/video/filme/nightwatch--nachtwache-movie-100/nightwatch--nachtwache-100",
+    "url_website": "https://www.zdf.de/filme/nightwatch--nachtwache-movie-100",
     "plot": "Der Student Martin jobbt als Nachtwächter in der gerichtsmedizinischen Abteilung eines Kopenhagener Krankenhauses, sprich: Er passt auf die Leichen Ermordeter auf. Als Martin die Prostituierte Joyce kennenlernt, verrät ihm diese, dass derzeitig ein Serienmörder in der Stadt sein Unwesen treibt. Nach und nach werden die Opfer des Killers in die Pathologie eingeliefert. Von da an häufen sich die unheimlichen Zwischenfälle an Martins Arbeitsplatz. Doch es kommt noch schlimmer: Der Student gerät selbst in den Verdacht, der Mörder der Prostituierten zu sein. Schließlich beginnen sogar seine Freundin Kalinka und sein Kumpel Jens an ihm zu zweifeln. Und auch für den ermittelnden Polizisten Inspektor Wörmer steht bald fest, dass nur Martin der Täter sein kann...",
     "mediathek_desc": "Für einen Jurastudenten scheint die Stelle als Nachtwächter in der Gerichtsmedizin der ideale Nebenjob zu sein. Doch dann häufen sich äußerst beunruhigende Ereignisse.",
     "director": "Ole Bornedal",
@@ -25048,8 +24843,8 @@
       "Thriller"
     ],
     "channel": "ZDF",
-    "timestamp": 1758500700,
-    "isNew": false,
+    "timestamp": 1794867040,
+    "isNew": true,
     "tmdb_id": 6498,
     "tmdb_type": "movie"
   },
@@ -26032,20 +25827,22 @@
     "url_website": "https://www.arte.tv/de/videos/127947-000-A/paris-wiedersehen/",
     "plot": "Dolmetscherin Mia flieht bei Regen in ein Restaurant. Dann wird dort ein Anschlag verübt. Mia überlebt, kann sich aber kaum an etwas erinnern. Sie versteht, dass sie die Erinnerung zurückgewinnen muss, um zu heilen ... – Der Film ist dem Bruder der Regisseurin Alice Winocour gewidmet. Jérémie Winocour hat den Terroranschlag auf das Pariser Bataclan am 13. November 2015 überlebt.",
     "mediathek_desc": "Dolmetscherin Mia flieht bei Regen in ein Restaurant. Dann wird dort ein Anschlag verübt. Mia überlebt, kann sich aber kaum an etwas erinnern. Sie versteht, dass sie die Erinnerung zurückgewinnen muss, um zu heilen ... – Der Film ist dem Bruder der Regisseurin Alice Winocour gewidmet. Jérémie Winocour hat den Terroranschlag auf das Pariser Bataclan am 13. November 2015 überlebt.",
-    "director": "",
+    "director": "Alice Winocour",
     "actors": [
-      "Grégoire Colin",
+      "Virginie Efira",
       "Benoît Magimel",
-      "Virginie Efira"
+      "Grégoire Colin"
     ],
     "rating": "7.0",
-    "thumb": "https://image.tmdb.org/t/p/original/zaNVTXH3woUs1LGUEeMMntDs3oM.jpg",
+    "thumb": "https://image.tmdb.org/t/p/w342/yZshfKJXI8P6bv4LkmqJwDTU8Vl.jpg",
     "genres_list": [
       "Drama"
     ],
     "channel": "ARTE.DE",
     "timestamp": 1794251677,
-    "isNew": false
+    "isNew": false,
+    "tmdb_id": 915931,
+    "tmdb_type": "movie"
   },
   {
     "title": "Passion Simple",
@@ -27649,31 +27446,6 @@
     "tmdb_id": 295930,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2FyZC5kZS9wbGFuQVJEXzRiODcxMzZiLTUwMmQtNGM2ZC04MmRjLTAyM2I0NGNlN2YwMl9nYW56ZVNlbmR1bmc"
-  },
-  {
-    "title": "Schnee von gestern",
-    "search": "Schnee von gestern",
-    "year": "2024",
-    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/26/03/260304_2015_sendung_fis/1/260304_2015_sendung_fis_a1a2_3360k_p36v17.mp4",
-    "plot": "In einem Talsee in Tirol wird ein Toter entdeckt, der als Umweltlandesrat identifiziert wird. Bald ist klar, dass er nicht in dem See ertrunken ist, womit der Bergort ins Zentrum der Ermittlungen rückt, der das nächste Einsatzgebiet des Ermordeten gewesen wäre. Als der junge Chefermittler sich dort einquartiert, trifft er auf sich seltsam gebärdende und teils offen feindselige Einwohner...",
-    "mediathek_desc": "Chefinspektor Martin Steiner und Chefinspektorin Melanie Grandits haben einen Fall, bei dem zunächst nicht sicher ist, ob es sich um einen Mord handelt oder nicht.",
-    "director": "David Wagner",
-    "actors": [
-      "Simon Morzé",
-      "Marlene Hauser",
-      "Fanny Krausz"
-    ],
-    "rating": "6.0",
-    "thumb": "https://image.tmdb.org/t/p/w342/uPen2zKD2GmoWV7n9O0EFgt7vpC.jpg",
-    "genres_list": [
-      "Krimi"
-    ],
-    "channel": "ZDF",
-    "timestamp": 1783048938,
-    "isNew": false,
-    "tmdb_id": 264026,
-    "tmdb_type": "movie",
-    "url_website": "https://www.zdf.de/filme/schnee-von-gestern-movie-102"
   },
   {
     "title": "Schneewittchen am See",
@@ -29327,6 +29099,32 @@
     "url_website": "https://www.3sat.de/film/spielfilm/still-alice---mein-leben-ohne-gestern-100.html"
   },
   {
+    "title": "Stille Nächte",
+    "search": "Stille Nächte",
+    "original_title": "Stille Nächte",
+    "year": "2014",
+    "video_url": "https://ctv-videos.daserste.de/int/2014/12/04/72d57da6-57f6-4dd1-ae5c-eadece9abcda/JOB_508092__sendeton_1280x720-50p-3200kbit.mp4",
+    "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAxNi0xMi0yNF8yMC0xNS1NRVo",
+    "plot": "Obwohl sie schon lange getrennt leben, fahren Rita und ihr Ex-Mann Georg jedes Jahr zu Weihnachten weiterhin gemeinsam zu seinen Eltern, um ihnen vorzuspielen, sie seien noch immer glücklich verheiratet. Auch wenn es um seinen Beruf geht, will Georg seine Mutter Clara und seinen Vater Paul nicht enttäuschen und gaukelt ihnen vor, er sei Arzt, obwohl er in Wahrheit Krankenpfleger ist. Zudem erzählt er Rita, er hätte schon längst eine neue, glückliche Beziehung, wobei er eigentlich noch immer an ihr hängt. Doch auch Rita nimmt es mit der Wahrheit nicht so genau, besonders was ihre finanzielle Notlage betrifft. Bei ihrem alljährlichen Weihnachtsschauspiel ahnen die beiden aber nicht, dass Georgs Eltern schon längst hinter das Geheimnis der Trennung gekommen sind. Trotzdem spielen sie jedes Jahr aufs Neue mit, da sie hoffen, das ehemalige Pärchen so doch wieder zusammenbringen zu können...",
+    "mediathek_desc": "Fernsehfilm Deutschland 2014 Rita und Georg sind schon lange geschieden - eigentlich. Aber jedes Jahr an Weihnachten werden sie noch mal ein Paar. Dann nämlich spielen sie Georgs Eltern Clara und Paul die glücklichen Eheleute vor, weil Georg sich einfach nicht traut, ihnen endlich die Wahrheit zu sagen. Rita wiederum gaukelt er eine neue Beziehung vor, obwohl er in Wahrheit noch immer an ihr hängt....",
+    "director": "Horst Sczerba",
+    "actors": [
+      "Matthias Koeberlin",
+      "Katharina Schüttler",
+      "Katharina Thalbach"
+    ],
+    "rating": "5.8",
+    "thumb": "https://image.tmdb.org/t/p/w342/zI2DNyESyqp8ifcNkyz3piNULwS.jpg",
+    "genres_list": [
+      "Drama"
+    ],
+    "channel": "ARD",
+    "timestamp": 1733351400,
+    "isNew": false,
+    "tmdb_id": 308580,
+    "tmdb_type": "movie"
+  },
+  {
     "title": "Stiller Abschied",
     "search": "Stiller Abschied",
     "year": "2013",
@@ -30701,7 +30499,7 @@
     ],
     "channel": "ZDF",
     "timestamp": 1794435028,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 467244,
     "tmdb_type": "movie"
   },
@@ -33061,32 +32859,6 @@
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2FyZC5kZS9wbGFuQVJEX2EyYTdkZTUwLTA0NjgtNGY1Mi05M2FlLTJiMDRjZWQyNDEzN19nYW56ZVNlbmR1bmc"
   },
   {
-    "title": "Warum ich meinen Boss entführte",
-    "search": "Warum ich meinen Boss entführte",
-    "year": "2014",
-    "video_url": "https://pdvideosdaserste-a.akamaihd.net/int/2024/04/27/DEGSM679067/DEGSM679067_2941509_sendeton_1280x720-50p-3200kbit.mp4",
-    "plot": "Anna, 32 Jahre, schlägt sich als allein erziehende Mutter von zweijährigen Zwillingen mehr schlecht als recht durchs Leben. Der Vater hat sich vor einigen Monaten abgesetzt. Den Job als Aushilfskellnerin hat sie verloren, weil sie einem nörgelnden Gast die Nudeln im Zorn direkt auf das frisch gebügelte Hemd gekippt hat. Beim Bewerbungsgespräch für einen neuen Job in einer Design-Company sitzt ihr ausgerechnet der Herr mit den Nudeln gegenüber, Max Lehmann. Der erkennt sie nicht wieder und gibt ihr die Stelle – nachdem sie beteuert hat, keine Kinder zu haben und uneingeschränkt einsatzfähig zu sein. Als sie ihn eine Woche später zum Flughafen fährt, riskiert sie aber doch die Wahrheit. Max reagiert prompt – und kündigt ihr.",
-    "mediathek_desc": "Spielfilm Deutschland 2014\r\n\r\nAnna (Julia Hartmann), 32 Jahre, schlägt sich als alleinerziehende Mutter von zweijährigen Zwillingen mehr schlecht als recht durchs Leben. Der Vater hat sich vor einigen Monaten abgesetzt. Den Job als Aushilfskellnerin hat sie verloren, weil sie einem nörgelnden Gast die Nudeln im Zorn direkt auf das frisch gebügelte Hemd gekippt hat. Beim Bewerbungsgespräch für eine\n.....",
-    "director": "Peter Gersina",
-    "actors": [
-      "Julia Hartmann",
-      "Stephan Luca",
-      "Anja Nejarri"
-    ],
-    "rating": "6.9",
-    "thumb": "https://image.tmdb.org/t/p/w342/ntaPJcFzjmvMLEG3CjU1gjbRP9i.jpg",
-    "genres_list": [
-      "TV-Film",
-      "Komödie"
-    ],
-    "channel": "ARD",
-    "timestamp": 1714219200,
-    "isNew": false,
-    "tmdb_id": 304417,
-    "tmdb_type": "movie",
-    "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyNC0wNC0yN18xNC0wMC1NRVNa"
-  },
-  {
     "title": "Was glücklich macht",
     "search": "Was glücklich macht",
     "year": "2009",
@@ -33217,33 +32989,6 @@
     "isNew": false,
     "tmdb_id": 652617,
     "tmdb_type": "movie"
-  },
-  {
-    "title": "Weihnachts-Männer",
-    "search": "Weihnachts-Männer",
-    "year": "2015",
-    "video_url": "https://pd-videos.daserste.de/int/2020/12/04/eb065c44-3568-481d-9ae1-030e5e0fa2e6/JOB_392891_sendeton_1280x720-50p-3200kbit.mp4",
-    "plot": "Auf frischer Tat werden Fritz, Walter und Andi bei einem Wohnungseinbruch erwischt. Aber bilden die drei Freunde im Weihnachtsmann-Kostüm wirklich eine gesuchte Verbrecherbande? Das soll Kommissarin Bremer ausgerechnet an Heiligabend herausfinden. Während ihre Familie bereits zu Hause wartet, muss sie sich mehr ungewöhnliche Geständnisse anhören, als ihr lieb ist. Aber das Verhör abgeben geht nicht, denn ihr intriganter Kollege wartet nur darauf, den prestigeträchtigen Fall zu übernehmen.",
-    "mediathek_desc": "Spielfilm Deutschland 2015\r\n\r\nAuf frischer Tat werden Fritz, Walter und Andi bei einem Wohnungseinbruch erwischt. Aber bilden die drei im Weihnachtsmann-Kostüm wirklich eine gesuchte Verbrecherbande? Das soll Kommissarin Bremer herausfinden. Ausgerechnet an Heiligabend.\r\n\r\nMit Heiner Lauterbach, Oliver Korittke, Wolfgang Stumph, Annette Frier u. a. | Regie: Franziska Meyer Price",
-    "director": "Franziska Meyer Price",
-    "actors": [
-      "Heiner Lauterbach",
-      "Oliver Korittke",
-      "Wolfgang Stumph"
-    ],
-    "rating": "3.6",
-    "thumb": "https://image.tmdb.org/t/p/w342/gn4SZS2bWD3mwcRPMdsDEqkcFCF.jpg",
-    "genres_list": [
-      "TV-Film",
-      "Familie",
-      "Komödie"
-    ],
-    "channel": "ARD",
-    "timestamp": 1670763780,
-    "isNew": false,
-    "tmdb_id": 374364,
-    "tmdb_type": "movie",
-    "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyMi0xMi0xMV8xNC0wMy1NRVo"
   },
   {
     "title": "Weit hinter dem Horizont",
@@ -33633,7 +33378,7 @@
       "Drama"
     ],
     "channel": "ARTE.DE",
-    "timestamp": 1794865154,
+    "timestamp": 1794865367,
     "isNew": true,
     "tmdb_id": 1275374,
     "tmdb_type": "movie"
@@ -34687,7 +34432,7 @@
     "title": "Zimtstern und Halbmond",
     "search": "Zimtstern und Halbmond",
     "year": "2010",
-    "video_url": "https://pd-videos.daserste.de/int/2020/12/03/600d99dc-a685-41b4-9b9a-9bbc055fd5c0/JOB_577450__sendeton_1280x720-50p-3200kbit.mp4",
+    "video_url": "https://ctv-videos.daserste.de/int/2020/12/03/600d99dc-a685-41b4-9b9a-9bbc055fd5c0/JOB_577450__sendeton_1280x720-50p-3200kbit.mp4",
     "plot": "Schöne Bescherung: Als der norddeutsche Dampferkapitän Gottfried und seine bayerische Frau Lisbeth in ihrem Haus am Ammersee Weihnachten feiern, bringt die einzige Tochter Barbara ihren neuen Schwarm mit nach Hause. Ihr Freund kommt aus Betlehem, ist Palästinenser, Moslem und will Pilot werden. Ausgerechnet zum Fest der Liebe bricht ein Kampf der Kulturen aus. Als Barbara schwanger wird und Kamals bunte Verwandtschaft aus Betlehem anreist, kommt es zum interkulturellen GAU: katholische oder islamische Trauung? Während Kamal sich den gut gemeinten, aber dominanten Integrationsbemühungen von Lisbeth widersetzt, entdeckt Gottfried, dass der fremde Schwiegersohn ihm ähnlicher ist als er dachte. Auch Gottfried hat vor dreißig Jahren für seine Frau die norddeutsche Heimat verlassen und ist aus Liebe zum katholischen Glauben konvertiert. Gottfried begreift, dass es jetzt allein an ihm liegt, eine mutige Brücke über den kulturellen Abgrund zu bauen.",
     "mediathek_desc": "Spielfilm Deutschland 2010\r\n\r\nWir haben nichts gegen Ausländer – eigentlich. So könnte man die Haltung von Gottfried (Robert Atzorn) und Lisbeth Hinrichs (Gundi Ellert) beschreiben, die in einer kleinen bayerischen Gemeinde leben. Der erfahrene Dampferkapitän und seine Frau halten sich selbst für liberale Menschen. Allerdings zeigt sich, dass ihre Weltoffenheit an der eigenen Türschwelle endet: Au\n.....",
     "director": "Matthias Steurer",
@@ -34705,8 +34450,8 @@
       "TV-Film"
     ],
     "channel": "ARD",
-    "timestamp": 1765110600,
-    "isNew": false,
+    "timestamp": 1797113700,
+    "isNew": true,
     "tmdb_id": 297052,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyNS0xMi0wN18xMy0zMC1NRVo"
