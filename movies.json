@@ -1929,7 +1929,7 @@
     "isNew": true,
     "tmdb_id": 570356,
     "tmdb_type": "movie",
-    "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyMS0xMS0yN18xNC0zMC1NRVovYXVkaW9kZXNrcmlwdGlvbg"
+    "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyMS0xMS0yN18xNC0zMC1NRVo"
   },
   {
     "title": "Aus lauter Liebe zu dir",
@@ -2054,7 +2054,7 @@
       "Drama"
     ],
     "channel": "ARTE.DE",
-    "timestamp": 1795046402,
+    "timestamp": 1795046935,
     "isNew": true,
     "tmdb_id": 614292,
     "tmdb_type": "movie"
@@ -2632,8 +2632,8 @@
       "Drama"
     ],
     "channel": "ARD",
-    "timestamp": 1793100600,
-    "isNew": false,
+    "timestamp": 1796039700,
+    "isNew": true,
     "tmdb_id": 304414,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2FyZC5kZS9wbGFuQVJEX2QyYTM0ZjQ2LWE0OWEtNDc2My04MjMzLWJhN2UxMDg2ZDE0N19nYW56ZVNlbmR1bmc"
@@ -4792,7 +4792,7 @@
       "Thriller"
     ],
     "channel": "ARTE.DE",
-    "timestamp": 1795349798,
+    "timestamp": 1795351164,
     "isNew": true,
     "tmdb_id": 4889,
     "tmdb_type": "movie"
@@ -6094,7 +6094,7 @@
     ],
     "channel": "ARD",
     "timestamp": 1794446700,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 321784,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyNS0wNi0xOV8wMS01MC1NRVNa"
@@ -8916,7 +8916,7 @@
     "title": "Die Kinder meines Bruders",
     "search": "Die Kinder meines Bruders",
     "year": "2015",
-    "video_url": "https://pd-videos.daserste.de/int/2024/09/20/DEGSM878022/DEGSM878022_3072788_sendeton_1280x720-50p-3200kbit.mp4",
+    "video_url": "https://ctv-videos.daserste.de/int/2024/09/20/DEGSM878022/DEGSM878022_3072788_sendeton_1280x720-50p-3200kbit.mp4",
     "plot": "Was kostet die Welt? Nach diesem Motto genießt der unstete Eric Steiner in Berlin sein Leben. Er liebt seine Freundin Verena und will sie glücklich machen, kann jedoch mit deren kleiner Tochter so gar nichts anfangen. Überhaupt: Familie, Verantwortung und Verpflichtung sind für Eric Fremdwörter. Als er vom Tod seines Bruders Christoph erfährt, der als Milchbauer in Sachsen-Anhalt lebte, ist dies ein Schock. Trotzdem will er den Hof schnellstmöglich abwickeln und Christophs Kinder, den 16-jährigen Nico und die 11-jährige Leonie, zu Pflegeeltern abschieben. Verantwortung für die Kinder und den familiären Milchhof zu übernehmen, auf dem er selbst aufwuchs? Das kommt Eric nicht in den Sinn. Auch als er in seine alte Heimat zurückkehrt, will er nur eins: so schnell wie möglich wieder verschwinden...",
     "mediathek_desc": "Spielfilm Deutschland 2016 Was kostet die Welt? Nach diesem Motto genießt der unstete Eric Steiner (David Rott) in Berlin sein Leben. Er liebt seine Freundin Verena (Anna Thalbach) und will sie glücklich machen, kann jedoch mit deren kleiner Tochter so gar nichts anfangen. Überhaupt: Familie, Verantwortung und Verpflichtung sind für Eric Fremdwörter....",
     "director": "Ingo Rasper",
@@ -8931,7 +8931,7 @@
       "Drama"
     ],
     "channel": "ARD",
-    "timestamp": 1726925400,
+    "timestamp": 1726869604,
     "isNew": false,
     "tmdb_id": 379277,
     "tmdb_type": "movie",
@@ -9196,8 +9196,8 @@
       "Drama"
     ],
     "channel": "ARD",
-    "timestamp": 1791120600,
-    "isNew": false,
+    "timestamp": 1796031600,
+    "isNew": true,
     "tmdb_id": 280386,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2FyZC5kZS9wbGFuQVJEX2ZkNzNhM2UxLTNiN2QtNDc3ZC1hMzU1LTQ2ODlkNTkyZGNlNF9nYW56ZVNlbmR1bmc"
@@ -14606,7 +14606,7 @@
     "title": "Finn und die Magie der Musik",
     "search": "Finn und die Magie der Musik",
     "year": "2013",
-    "video_url": "https://pdodswr-a.akamaihd.net/kindernetz/geo/de-at-ch/sendungen/spielfilme/2066886.xl.mp4",
+    "video_url": "https://swr-pd.ard-mcdn.de/kindernetz/geo/de-at-ch/sendungen/spielfilme/2066886.xl.mp4",
     "plot": "Der neunjährige Finn lebt mit seinem Vater auf dem Land. Er spielt Fußball mit seinem besten Freund, Erik. Finn würde gerne Musik machen, aber sein Vater möchte, dass er Fußball spielt, so wie alle anderen Jungen. Finn versteht das nicht, aber sein Vater will nicht darüber sprechen. In der Nähe eines verlassenen Bauernhofs trifft Finn einen alten Mann, der so wunderschön Geige spielt, dass Finn wie verzaubert ist. Während sein Vater im beim Fußballspielen wähnt, geht Finn fortan heimlich zum Bauernhof, um zu üben. Sein bester Freund Erik hält ihn für verrückt. Ist Finn denn der einzige, der den Zauber der Musik erkennt? Oder was geht hier vor? - Frans Weisz’ Kinderfilm \"Finn und die Magie der Musik\" ist ein spannender und herzergreifender Film für die ganze Familie.",
     "mediathek_desc": "Finn würde gerne Musik machen, aber sein Vater möchte, dass er Fußball spielt, so wie alle anderen Jungen. Finn versteht das nicht, aber sein Vater will nicht darüber sprechen.\r\nIn der Nähe eines verlassenen Bauernhofs trifft Finn einen alten Mann, der so wunderschön Geige spielt, dass Finn wie verzaubert ist. Während sein Vater im beim Fußballspielen wähnt, geht Finn fortan heimlich zum Bauernhof\n.....",
     "director": "Frans Weisz",
@@ -14783,6 +14783,33 @@
     "timestamp": 1785129044,
     "isNew": false,
     "tmdb_id": 716936,
+    "tmdb_type": "movie"
+  },
+  {
+    "title": "Frau Holles Garten",
+    "search": "Frau Holles Garten",
+    "original_title": "Frau Holles Garten",
+    "year": "2019",
+    "video_url": "https://nrodlzdf-a.akamaihd.net/none/zdf/20/12/201213_0405_sendung_sof/5/201213_0405_sendung_sof_a1a2_3360k_p36v15.mp4",
+    "url_website": "https://www.zdf.de/filme/frau-holles-garten-movie-100",
+    "plot": "Mia Goldig liebt ihren Job im Botanischen Garten. Doch ihre Mutter, die scheidende Leiterin des Gartens, zieht ihre Schwester als Nachfolgerin vor. Kann Frau Holle für die richtige Entscheidung sorgen? Die neue Leiterin muss vor allem finanzkräftige Sponsoren finden, da sich der Garten in finanziellen Nöten befindet. Eine Aufgabe, die sich die zurückhaltende Chefgärtnerin Mia selbst nicht zutraut. Sie liebt die Pflanzen, nicht aber den großen Auftritt. Ganz im Gegensatz zu ihrer selbstsicheren Schwester Marissa.Auch ihre Mutter Helene sieht in Mia, die stottert, wenn sie vor mehreren Menschen sprechen muss, nicht die richtige Wahl für diesen repräsentativen Posten. Dagegen scheint ihr die zielstrebige Marissa wie geschaffen für die Stelle. Dass Marissa der Garten völlig egal ist und sie ein intrigantes Spiel treibt, entgeht Helene.Aber Frau Holle, der guten Seele des Gartens, die dort einen Laden betreibt, bleibt nichts verborgen.",
+    "mediathek_desc": "Mia liebt ihren Job im botanischen Garten. Doch ihre Mutter, die Leiterin des Gartens, zieht ihre Schwester als Nachfolgerin vor. Kann Frau Holle für die richtige Entscheidung sorgen?",
+    "director": "Seyhan Derin",
+    "actors": [
+      "Cornelia Froboess",
+      "Klara Deutschmann",
+      "Lavinia Wilson"
+    ],
+    "rating": "8.0",
+    "thumb": "https://image.tmdb.org/t/p/w342/h8I6m9dOSV5AXJvdNEY2GAsRFci.jpg",
+    "genres_list": [
+      "Drama",
+      "Romanze"
+    ],
+    "channel": "ZDF",
+    "timestamp": 1794892039,
+    "isNew": true,
+    "tmdb_id": 652614,
     "tmdb_type": "movie"
   },
   {
@@ -15235,7 +15262,7 @@
     "search": "Für immer hier",
     "original_title": "Für immer hier",
     "year": "2024",
-    "video_url": "https://manifest-arte.akamaized.net/api/manifest/v1/Generate/f0ee7ec6-87c5-4ae0-a3cd-26180f994e28/VA-STA/XQ+KS+CHEV1/128668-000-A.m3u8",
+    "video_url": "https://manifest-arte.akamaized.net/api/manifest/v1/Generate/5a25b3a4-3f6f-4125-aa1d-21238b20e9a5/VA-STA/XQ+KS+CHEV1/128668-000-A.m3u8",
     "url_website": "https://www.arte.tv/de/videos/128668-000-A/fuer-immer-hier/",
     "plot": "Rio de Janeiro, Anfang der 1970er Jahre. In einem gemieteten Haus am Strand lebt die Familie Paiva: Vater Rubens, Mutter Eunice und ihre fünf Kinder.  Auch mit der allgegenwärtigen Unterdrückung bewahren sie in ihrem Zuhause eine Atmosphäre der Liebe, des Humors und der Offenheit. Ihre Zuneigung zueinander wird zu einem stillen Akt des Widerstands gegen die Diktatur, die ihr Leben radikal verändert. Als Rubens verschwindet, wird Eunice zur treibenden Kraft, um ihrer Familie eine neue Zukunft aufzubauen. Den Herausforderungen dieser dunklen Zeit begegnet sie mit Mut, Entschlossenheit und dem unerschütterlichen Glauben an ihre Kinder. Diese bewegende Geschichte wirft ein Licht auf die verschwiegenen Kapitel der brasilianischen Geschichte und würdigt die Stärke einer Frau, die trotz widrigster Umstände niemals aufgibt.",
     "mediathek_desc": "Rio de Janeiro in den 70er Jahren. In einem Mietshaus am Strand lebt die Familie Paiva: Vater Rubens, Mutter Eunice und ihre fünf Kinder. Unter der Militärdiktatur bewahren sie eine Atmosphäre der Liebe und des Humors. Als Rubens verschwindet, muss Eunice für ihre Familie stark bleiben. \"Für immer hier\" von Walter Salles gewann 2025 den Oscar als bester internationaler Film.",
@@ -15446,7 +15473,7 @@
     "title": "Gefühle im Sturm",
     "search": "Gefühle im Sturm",
     "year": "2002",
-    "video_url": "https://pdvideosdaserste-a.akamaihd.net/int/2024/06/19/DEGSM683245/DEGSM683245_2995762_sendeton_1280x720-50p-3200kbit.mp4",
+    "video_url": "https://ctv-videos.daserste.de/int/2024/06/19/DEGSM683245/DEGSM683245_2995762_sendeton_1280x720-50p-3200kbit.mp4",
     "plot": "Stefanie von Nauenstedt scheint vom Schicksal verwöhnt: Sie hat einen erfolgreichen Mann, ein reizendes Kind und führt ein luxuriöses Leben auf einem Schloss nahe Hamburg. Aber als ihr leichtfertiger Schwager David nach zehnjähriger Abwesenheit wieder auftaucht, gerät die latent unzufriedene junge Frau in eine Krise. David war einmal ihr Liebhaber – und sie hat ihn nie vergessen ...",
     "mediathek_desc": "Spielfilm Deutschland 2001\r\n\r\nStefanie von Nauenstedt (Muriel Baumeister), genannt Nina, ist mit dem erfolgreichen Wirtschaftsanwalt Andre (Pierre Besson) verheiratet und hat einen Sohn, Philip (Pascal Andres). Auf den ersten Blick könnte sie kaum glücklicher sein: Die Familie lebt in der Nähe von Hamburg in einem malerisch gelegenen Herrenhaus, das zu Andres Erbe gehört; Nina kann sich alles leis\n.....",
     "director": "Anna Justice",
@@ -15463,7 +15490,7 @@
       "Romanze"
     ],
     "channel": "ARD",
-    "timestamp": 1718890200,
+    "timestamp": 1718834403,
     "isNew": false,
     "tmdb_id": 370929,
     "tmdb_type": "movie",
@@ -18850,7 +18877,7 @@
     ],
     "channel": "ARD",
     "timestamp": 1794490200,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 265619,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyMy0wMi0xMl8xNC0wMy1NRVo"
@@ -24320,32 +24347,6 @@
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyMy0wOS0xMF8xNS0zMC1NRVNa"
   },
   {
-    "title": "Nacht über Berlin",
-    "search": "Nacht über Berlin",
-    "year": "2013",
-    "video_url": "https://rodlzdf-a.akamaihd.net/dach/3sat/21/04/210430_nacht_ueber_berlin_fernsehfilm/2/210430_nacht_ueber_berlin_fernsehfilm_a1a2_2360k_p35v15.mp4",
-    "plot": "Die lebenslustige Sängerin Henny Dallgow lernt in Berlin Anfang der 1930er Jahre den SPD-Reichstagsabgeordneten Albert Goldmann kennen, der scheinbar so gar nicht zu ihr passt: Während der engagierte Arzt sich im Wedding um das Wohl der Arbeiter und sozial Schwachen kümmert, tritt die aus reichen Verhältnissen stammende Künstlerin in einem mondänen Nachtklub auf.",
-    "mediathek_desc": "Die Sängerin Henny Dallgow lernt in Berlin Anfang der 1930er-Jahre den SPD-Reichstagsabgeordneten Albert Goldmann kennen und lieben. Das ungleiche Paar gerät in den Strudel der Ereignisse.",
-    "director": "Friedemann Fromm",
-    "actors": [
-      "Anna Loos",
-      "Jan Josef Liefers",
-      "Sven Lehmann"
-    ],
-    "rating": "7.0",
-    "thumb": "https://image.tmdb.org/t/p/w342/cYiW4Q7aYU1oysYWyjQn63rvgSl.jpg",
-    "genres_list": [
-      "Drama",
-      "TV-Film"
-    ],
-    "channel": "3Sat",
-    "timestamp": 1520968560,
-    "isNew": false,
-    "tmdb_id": 170286,
-    "tmdb_type": "movie",
-    "url_website": "https://www.3sat.de/film/spielfilm/nacht-ueber-berlin-spielfilm-100.html"
-  },
-  {
     "title": "Nahschuss",
     "search": "Nahschuss",
     "year": "2021",
@@ -24447,7 +24448,7 @@
     ],
     "channel": "ZDF",
     "timestamp": 1794556803,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 1390109,
     "tmdb_type": "movie"
   },
@@ -26454,7 +26455,7 @@
     "search": "Rabia - Der verlorene Traum",
     "original_title": "Rabia - Der verlorene Traum",
     "year": "2024",
-    "video_url": "https://manifest-arte.akamaized.net/api/manifest/v1/Generate/20bac932-7b90-4fb8-93a7-86b5dd6fda4c/VA-STA/XQ+KS+CHEV1/128687-000-A.m3u8",
+    "video_url": "https://manifest-arte.akamaized.net/api/manifest/v1/Generate/ded0c0c3-6912-4e32-8d99-801beb7c302a/VA-STA/XQ+KS+CHEV1/128687-000-A.m3u8",
     "url_website": "https://www.arte.tv/de/videos/128687-000-A/rabia-der-verlorene-traum/",
     "plot": "Von dem Versprechen eines besseren Lebens gelockt verlassen die 19-jährige Französin Jessica und ihre beste Freundin Laïla ihre Heimat, um sich in Syrien dem Islamischen Staat anzuschließen. In Raqqa angekommen, werden Pässe, Handys, Schmuck und Kleidung konfisziert und die Frauen in eine „Madafa“ geführt, ein Haus, das für zukünftige Ehefrauen von IS-Kämpfern bestimmt ist. Gemeinsam mit Frauen aus verschiedenen Ländern unterwerfen sie sich strengen Regeln",
     "mediathek_desc": "Erschütterndes Drama über zwei junge Frauen: Sie glaubten, im sogenannten Islamischen Staat Respekt und Anerkennung, vielleicht sogar privates Glück zu finden. Für diesen Irrtum zahlen sie einen hohen Preis. Französisch-deutsch-belgischer Film von Mareike Engelhardt, der 2025 in Deutschland in die Kinos kam. Inspiriert von wahren Begebenheiten",
@@ -26970,7 +26971,7 @@
       "Drama"
     ],
     "channel": "ARTE.DE",
-    "timestamp": 1795213557,
+    "timestamp": 1795213928,
     "isNew": true,
     "tmdb_id": 1174023,
     "tmdb_type": "movie"
@@ -27470,7 +27471,7 @@
     ],
     "channel": "ZDF",
     "timestamp": 1794556804,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 770220,
     "tmdb_type": "movie"
   },
@@ -27838,8 +27839,8 @@
       "Komödie"
     ],
     "channel": "ARD",
-    "timestamp": 1770372900,
-    "isNew": false,
+    "timestamp": 1795654200,
+    "isNew": true,
     "tmdb_id": 370105,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyNS0wMS0yM18wMS01MC1NRVo"
@@ -28738,6 +28739,32 @@
     "url_website": "https://www.zdf.de/filme/spielfilm-highlights/sorry-we-missed-you-108.html"
   },
   {
+    "title": "Spencer",
+    "search": "Spencer",
+    "original_title": "Spencer",
+    "year": "2021",
+    "video_url": "https://ctv-videos.daserste.de/de/2026/10/28/10275/10275_30721_originalversion_1280x720-50p-3200kbit.mp4",
+    "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2FyZC5kZS8xZjE4NTM4Yi0wOGMyLTQ3N2UtYTQyYS1kZDk5M2I1MmNiNmVfZ2FuemVTZW5kdW5n",
+    "plot": "Dezember 1991: In der Ehe zwischen dem Prinzen und der Prinzessin von Wales herrscht seit Langem Eiszeit. Trotz der wilden Gerüchte über Affären und eine Scheidung wird für die Weihnachtsfeierlichkeiten auf dem königlichen Landsitz Sandringham ein Frieden verhängt. Es wird gegessen und getrunken, geschossen und gejagt. Diana kennt das Spiel. Dieses Jahr wird es eine ganz andere Wendung nehmen.",
+    "mediathek_desc": "Spielfilm Deutschland/USA/Großbritannien/Taiwan 2021 Die britischen Royals treffen sich an Weihnachten 1991 auf dem weitläufigen Schloss Sandringham House im ländlichen Norfolk. Lady Diana (Kristen Stewart) graut es vor dem mehrtägigen Familienfest, dessen strenges Protokoll von Major Alistar Gregory (Timothy Spall) überwacht wird. Alles ist auf Ihre Majestät Königin Elisabeth II....",
+    "director": "Steven Knight",
+    "actors": [
+      "Kristen Stewart",
+      "Timothy Spall",
+      "Jack Nielen"
+    ],
+    "rating": "6.7",
+    "thumb": "https://image.tmdb.org/t/p/w342/bH9pFk3C1MFZAN4afl1oSy6Gu7.jpg",
+    "genres_list": [
+      "Drama"
+    ],
+    "channel": "ARD",
+    "timestamp": 1795649700,
+    "isNew": true,
+    "tmdb_id": 716612,
+    "tmdb_type": "movie"
+  },
+  {
     "title": "Spiders - Ihr Biss ist der Tod",
     "search": "Spiders - Ihr Biss ist der Tod",
     "year": "2023",
@@ -29430,7 +29457,7 @@
       "Drama"
     ],
     "channel": "ZDFneo",
-    "timestamp": 1795162843,
+    "timestamp": 1795440224,
     "isNew": true,
     "tmdb_id": 1041623,
     "tmdb_type": "movie",
@@ -32472,7 +32499,7 @@
     "original_title": "Vermisst in den Highlands",
     "year": "2021",
     "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/25/01/250120_2215_sendung_spf/1/250120_2215_sendung_spf_a3a4_3360k_p36v17.mp4",
-    "url_website": "https://www.zdf.de/video/filme/vermisst-in-den-highlands-movie-100/vermisst-in-den-highlands-100",
+    "url_website": "https://www.zdf.de/filme/vermisst-in-den-highlands-movie-100",
     "plot": "Unterwegs im Herzen der Highlands, erhält Edmond Murray einen Anruf von seiner in Tränen aufgelösten Ex-Frau Joan. Ihr siebenjähriger Sohn ist auf einem Campingplatz verschwunden. Als Edmond am Campingplatz ankommt, trifft er auf Joan und den führenden Ermittler Inspector Roy. Nach aussichtlosen Einsätzen des Suchtrupps wird klar, dass es sich beim Verschwinden des Jungens um eine Entführung handelt. Eine unangenehmen Begegnung zwischen Edmond und Joans neuem Freund Frank schöpft bei Edmond Verdacht...",
     "mediathek_desc": "Der kleine Ethan wird aus einem Ferienlager in Schottland entführt. Als die Polizei nicht weiterhelfen kann, nimmt Ethans Vater Edmond eigene Ermittlungen auf.",
     "director": "Christian Carion",
@@ -32489,8 +32516,8 @@
       "Drama"
     ],
     "channel": "ZDF",
-    "timestamp": 1737407700,
-    "isNew": false,
+    "timestamp": 1795162842,
+    "isNew": true,
     "tmdb_id": 750253,
     "tmdb_type": "movie"
   },
@@ -32935,32 +32962,6 @@
     "tmdb_id": 1245,
     "tmdb_type": "movie",
     "url_website": "https://www.3sat.de/film/spielfilm/was-vom-tage-uebrig-blieb-100.html"
-  },
-  {
-    "title": "Weihnachten ... ohne mich, mein Schatz!",
-    "search": "Weihnachten ... ohne mich, mein Schatz!",
-    "year": "2012",
-    "video_url": "https://pd-videos.daserste.de/int/2020/12/15/56d3619f-4688-4afd-a2d5-43f928908904/JOB_510232__sendeton_1280x720-50p-3200kbit.mp4",
-    "plot": "Bügeln, Kaffee kochen, Weihnachtskarpfen organisieren! Der Hamburger Architekt Ruprecht kommandiert seine Frau Johanna nur noch herum. Als er sie nach dem Urlaub am Flughafen \"vergisst\", hat Johanna die Faxen dicke und quartiert sich kurzerhand bei der chaotischen Taxifahrerin Ellie ein. Die wohnt ausgerechnet in einem Haus, das für ein Bauprojekt von Ruprecht abgerissen werden soll…",
-    "mediathek_desc": "Spielfilm Deutschland 2011 +++\r\n\r\nJohanna Welser hat keine Lust mehr. Als ihr Mann Ruprecht sie am Taxistand vergisst und statt einer Entschuldigung nur den eigenen Vorteil im Sinn hat, probt die gut situierte Architektengattin nach 30 Ehejahren den Aufstand. +++\r\n\r\nMit Jutta Speidel, Henry Hübchen, Gesine Cukrowski, Angela Roy, Stephan Kampwirth u. a. | Regie: Dennis Satin",
-    "director": "Dennis Satin",
-    "actors": [
-      "Jutta Speidel",
-      "Henry Hübchen",
-      "Stephan Kampwirth"
-    ],
-    "rating": "5.8",
-    "thumb": "https://image.tmdb.org/t/p/w342/bRnJzMZ5s5M04Y1fxkCDaVT8HWY.jpg",
-    "genres_list": [
-      "TV-Film",
-      "Komödie"
-    ],
-    "channel": "ARD",
-    "timestamp": 1670769000,
-    "isNew": false,
-    "tmdb_id": 239158,
-    "tmdb_type": "movie",
-    "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyMi0xMi0xMV8xNS0zMC1NRVo"
   },
   {
     "title": "Weihnachten im Schnee",
@@ -33782,7 +33783,7 @@
     "title": "Wind River - Tod im Schnee",
     "search": "Wind River - Tod im Schnee",
     "year": "2016",
-    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/19/12/191230_2215_sendung_spf/1/191230_2215_sendung_spf_3360k_p36v17.mp4",
+    "video_url": "https://rodlzdf-a.akamaihd.net/dach/3sat/23/08/230827_wind_river_tod_im_schnee_spielfilm/1/230827_wind_river_tod_im_schnee_spielfilm_2360k_p35v17.mp4",
     "plot": "Cory Lambert arbeitet für den United States Fish and Wildlife Service und macht vor allem Jagd auf Kojoten und andere Raubtiere im Indianer-Reservat Wind River. Den kürzlichen Tod seiner Teenager-Tochter hat er noch nicht überwunden, da stolpert er in der Wildnis über die Leiche einer vergewaltigten und erfrorenen Jugendlichen. Um den Täter zu fassen, wird die noch sehr junge FBI-Agentin Jane Banner auf den Fall angesetzt. Weil sie sich in dem rauen Gelände und mit den schwierigen Wetterverhältnissen vor Ort allerdings nicht auskennt, bittet sie Cory um Hilfe bei ihren Ermittlungen und gemeinsam brechen sie auf ins Ungewisse.",
     "mediathek_desc": "Ein Indianerreservat im tief verschneiten Wyoming: Im Schnee findet der Jäger Cory Lambert die Leiche einer jungen Frau. Sie trägt keine Schuhe. Jane Banner vom FBI ermittelt.",
     "director": "Taylor Sheridan",
@@ -33799,9 +33800,9 @@
       "Thriller"
     ],
     "channel": "3Sat",
-    "timestamp": 1643062500,
+    "timestamp": 1577740500,
     "isNew": false,
-    "url_website": "https://www.zdf.de/video/filme/wind-river---tod-im-schnee-movie-100/wind-river---tod-im-schnee-100",
+    "url_website": "https://www.3sat.de/film/spielfilm/wind-river---tod-im-schnee-100.html",
     "tmdb_id": 395834,
     "tmdb_type": "movie"
   },
@@ -34423,7 +34424,7 @@
       "Drama"
     ],
     "channel": "ARTE.DE",
-    "timestamp": 1795202100,
+    "timestamp": 1795202152,
     "isNew": true,
     "tmdb_id": 1339234,
     "tmdb_type": "movie"
@@ -34948,33 +34949,6 @@
     "url_website": "https://www.zdf.de/filme/zwei-am-zug-movie-100"
   },
   {
-    "title": "Zwei an Weihnachten",
-    "search": "Zwei an Weihnachten",
-    "original_title": "Zwei an Weihnachten",
-    "year": "2026",
-    "video_url": "https://nrodlzdf-a.akamaihd.net/none/zdf/26/11/261129_2015_sendung_sof/1/261129_2015_sendung_sof_a1a2_3360k_p36v17.mp4",
-    "url_website": "https://www.zdf.de/filme/zwei-an-weihnachten-movie-100",
-    "plot": "Als Kinder versprechen sie sich, zu heiraten. Doch über drei Jahrzehnte finden Toni und Selma nicht zusammen. Bis Weihnachten ihnen eine letzte Chance bietet.",
-    "mediathek_desc": "Als Kinder versprechen sie sich, zu heiraten. Doch über drei Jahrzehnte finden Toni und Selma nicht zusammen. Bis Weihnachten ihnen eine letzte Chance bietet.",
-    "director": "Thorsten Schmidt",
-    "actors": [
-      "Merlin Rose",
-      "Dominique Devenport",
-      "Julia Brendler"
-    ],
-    "rating": "N/A",
-    "thumb": "https://image.tmdb.org/t/p/w342/fdyeUjPu5Z1ndHKoKqgXYlDaIRn.jpg",
-    "genres_list": [
-      "Drama",
-      "Romanze"
-    ],
-    "channel": "ZDF",
-    "timestamp": 1795976100,
-    "isNew": true,
-    "tmdb_id": 1824823,
-    "tmdb_type": "movie"
-  },
-  {
     "title": "Zwei auf der Flucht",
     "search": "Zwei auf der Flucht",
     "year": "2018",
@@ -35231,7 +35205,7 @@
     ],
     "channel": "ZDF",
     "timestamp": 1794491754,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 303148,
     "tmdb_type": "movie",
     "url_website": "https://www.zdf.de/filme/zwischen-den-zeiten-movie-100"
