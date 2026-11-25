@@ -73,7 +73,7 @@
     ],
     "channel": "ZDF",
     "timestamp": 1794698100,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 136400,
     "tmdb_type": "movie"
   },
@@ -207,33 +207,6 @@
     "tmdb_id": 295266,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyNS0wOC0wNl8xNC0wMy1NRVNa"
-  },
-  {
-    "title": "5 Zimmer Küche Sarg",
-    "search": "5 Zimmer Küche Sarg",
-    "original_title": "5 Zimmer Küche Sarg",
-    "year": "2014",
-    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/25/10/251025_0325_sendung_spf/1/251025_0325_sendung_spf_a1a2_3360k_p36v17.mp4",
-    "url_website": "https://www.zdf.de/filme/5-zimmer-kueche-sarg-movie-100",
-    "plot": "Die Vampire Viago, Vladislav, Deacon und Petyr teilen sich eine Villa in Wellington. Abgesehen vom fehlenden Spiegelbild, einseitiger Ernährung und gelegentlichen Auseinandersetzungen mit Werwölfen unterscheidet sich ihr Alltag kaum von dem einer ganz normalen WG: Streitereien um den Abwasch und gemeinsame Partynächte stehen täglich auf dem Programm. Als der 8000-jährige Petyr den coolen Mittzwanziger Nick zum Vampir macht, müssen die anderen Verantwortung für den impulsiven Frischling übernehmen und ihm die Grundregeln des ewigen Lebens beibringen. Im Gegenzug erklärt ihnen Nick die technischen Errungenschaften der modernen Gesellschaft. Als er aber seinen menschlichen Freund Stu anschleppt, gerät das beschauliche Leben der Vampir-Veteranen völlig aus den Fugen.",
-    "mediathek_desc": "Vier befreundete Vampire leben in Wellington in einer Wohngemeinschaft zusammen. Dabei ergeben sich allseits bekannte, aber auch ganz besondere Situationen und Probleme.",
-    "director": "Jemaine Clement",
-    "actors": [
-      "Jemaine Clement",
-      "Taika Waititi",
-      "Jonny Brugh"
-    ],
-    "rating": "7.5",
-    "thumb": "https://image.tmdb.org/t/p/w342/nokm5vVBgMHTxDzOfPFh44VJFy1.jpg",
-    "genres_list": [
-      "Komödie",
-      "Horror"
-    ],
-    "channel": "ZDF",
-    "timestamp": 1792798201,
-    "isNew": false,
-    "tmdb_id": 246741,
-    "tmdb_type": "movie"
   },
   {
     "title": "8 Mile",
@@ -1929,7 +1902,7 @@
     "isNew": true,
     "tmdb_id": 570356,
     "tmdb_type": "movie",
-    "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyMS0xMS0yN18xNC0zMC1NRVo"
+    "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyMS0xMS0yN18xNC0zMC1NRVovYXVkaW9kZXNrcmlwdGlvbg"
   },
   {
     "title": "Aus lauter Liebe zu dir",
@@ -3116,7 +3089,7 @@
     "search": "Breaking Surface - Tödliche Tiefen",
     "original_title": "Breaking Surface - Tödliche Tiefen",
     "year": "2020",
-    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/22/01/220110_2215_sendung_spf/1/220110_2215_sendung_spf_a3a4_3360k_p36v15.mp4",
+    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/22/01/220110_2215_sendung_spf/1/220110_2215_sendung_spf_a1a2_3360k_p36v15.mp4",
     "url_website": "https://www.zdf.de/filme/breaking-surface---toedliche-tiefen-movie-102",
     "plot": "Einige Tage nach Weihnachten machen sich die schwedisch-norwegischen Halbschwestern Ida und Tuva auf den Weg zu einem Wintertauchgang in einem abgelegenen Teil der norwegischen Küste. Gegen Ende des Tauchgangs schließt ein Steinschlag Tuva unter Wasser ein. Als Ida auftaucht, um um Hilfe zu rufen, entdeckt sie, dass der Steinschlag auch über Wasser einschlug und ihre Ausrüstung, Telefone und Autoschlüssel vergraben hat. Sie sind von jeder Möglichkeit einer Rettung von außen abgeschnitten...",
     "mediathek_desc": "Kurz vor Weihnachten gehen die Schwestern Ida und Tuva auf Tauchgang. Nach einem Felsrutsch ist Tuva unter Wasser eingeklemmt, und Ida ist mit der Rettung auf sich allein gestellt.",
@@ -3133,7 +3106,7 @@
       "Thriller"
     ],
     "channel": "ZDF",
-    "timestamp": 1795325471,
+    "timestamp": 1795529802,
     "isNew": true,
     "tmdb_id": 616803,
     "tmdb_type": "movie"
@@ -3801,31 +3774,6 @@
     "tmdb_id": 336572,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyMy0wMS0wOF8xNC0wMy1NRVo"
-  },
-  {
-    "title": "Danowski - Blutapfel",
-    "search": "Danowski - Blutapfel",
-    "year": "2019",
-    "video_url": "https://nrodlzdf-a.akamaihd.net/none/zdf/19/12/191209_2015_sendung_fdw/9/191209_2015_sendung_fdw_a1a2_3360k_p36v17.mp4",
-    "plot": "Ein dröhnender Schuss hallt durch den vollen Elbtunnel, ein Mann sackt über seinem Lenkrad zusammen und kein Täter ist in Sicht. Das Opfer, Oliver Wiebusch, führte am Stadtrand von Hamburg ein eher unauffälliges Leben – war der Mord also nur eine Verwechslung? Die Ermittlungen leiten die Kommissare Adam Danowski und Andreas „Finzi“ Finzel . Da beide aus gesundheitlichen Problemen aktuell in einem Karrieretief hängen, werden sie von ihrer stets regelkonformen Kollegin Meta Jurkschat unterstützt. Dabei stoßen sie nicht nur auf Verbindungen des Mordopfers zur Urban-Explorer-Szene und einem gewissen „Trickster“, sondern müssen sich neben den Entdeckern städtischer „Lost Places“ auch mit weiteren Morden und dem amerikanischen Geheimdienst rumschlagen.",
-    "mediathek_desc": "Im Elbtunnel stauen sich wie immer zur Rushhour die Autos. Plötzlich hallt ein Schuss durch die Tunnelröhre. Ein Mann sackt getroffen über seinem Lenkrad zusammen. Vom Täter keine Spur.",
-    "director": "Markus Imboden",
-    "actors": [
-      "Milan Peschel",
-      "Emily Cox",
-      "Bettina Stucky"
-    ],
-    "rating": "4.0",
-    "thumb": "https://image.tmdb.org/t/p/w342/f8xGOZ3aLAF5qYO4OWTjv0XWipR.jpg",
-    "genres_list": [
-      "Krimi"
-    ],
-    "channel": "ZDF",
-    "timestamp": 1783053361,
-    "isNew": false,
-    "tmdb_id": 577908,
-    "tmdb_type": "movie",
-    "url_website": "https://www.zdf.de/filme/blutapfel-movie-100"
   },
   {
     "title": "Danowski - Neunauge",
@@ -5317,7 +5265,7 @@
       "Historie"
     ],
     "channel": "ZDF",
-    "timestamp": 1795198500,
+    "timestamp": 1795515041,
     "isNew": true,
     "tmdb_id": 334905,
     "tmdb_type": "movie"
@@ -8309,31 +8257,6 @@
     "tmdb_id": 272543,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyNS0wOC0xOV8xNS0zMC1NRVNa"
-  },
-  {
-    "title": "Die Flut ist pünktlich",
-    "search": "Die Flut ist pünktlich",
-    "year": "2013",
-    "video_url": "https://nrodlzdf-a.akamaihd.net/none/zdf/26/03/260317_2015_sendung_fdw/1/260317_2015_sendung_fdw_a1a2_3360k_p36v17.mp4",
-    "plot": "Im Watt einer Nordseeinsel wird ein Toter gefunden. Wie sich herausstellt, war der Mann ein erfahrener Wattwanderer. Da die Leiche keinerlei Gewalteinwirkung aufweist, könnte Inselpolizistin Maike Harms die Sache auf sich beruhen lassen, aber irgendetwas lässt ihr keine Ruhe, zumal sie mit der Tochter des Toten befreundet ist. Als die Beamtin rausfindet, dass die schöne Witwe ein Verhältnis hat, wird sie hellhörig. Tatsächlich ist ein düsteres Geheimnis der Schlüssel zu dem Todesfall.",
-    "mediathek_desc": "Am Nordseestrand wird eine Leiche angespült. Der Tote ist Alexander, der Mann von Bettina Halbach. Alles spricht zunächst für einen Tod ohne Fremdeinwirkung.",
-    "director": "Thomas Berger",
-    "actors": [
-      "Ina Weisse",
-      "August Zirner",
-      "Bernadette Heerwagen"
-    ],
-    "rating": "3.0",
-    "thumb": "https://image.tmdb.org/t/p/w342/9WUPY5XYsIUX7jCntGhhM5plbVF.jpg",
-    "genres_list": [
-      "Drama"
-    ],
-    "channel": "ZDF",
-    "timestamp": 1783052859,
-    "isNew": false,
-    "tmdb_id": 257525,
-    "tmdb_type": "movie",
-    "url_website": "https://www.zdf.de/filme/die-flut-ist-puenktlich-movie-100"
   },
   {
     "title": "Die Frau am Strand",
@@ -11437,7 +11360,7 @@
     ],
     "channel": "ZDF",
     "timestamp": 1794643978,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 862252,
     "tmdb_type": "movie",
     "url_website": "https://www.zdf.de/filme/dreiraumwohnung-movie-100"
@@ -15279,7 +15202,7 @@
       "Historie"
     ],
     "channel": "ARTE.DE",
-    "timestamp": 1795461300,
+    "timestamp": 1795461292,
     "isNew": true,
     "tmdb_id": 1000837,
     "tmdb_type": "movie"
@@ -20821,7 +20744,7 @@
     ],
     "channel": "ZDF",
     "timestamp": 1794694256,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 119675,
     "tmdb_type": "movie"
   },
@@ -22736,6 +22659,33 @@
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAxOC0wNy0yOV8xNS0wMC1NRVNa"
   },
   {
+    "title": "Meine Braut, ihr Vater und ich",
+    "search": "Meine Braut, ihr Vater und ich",
+    "original_title": "Meine Braut, ihr Vater und ich",
+    "year": "2000",
+    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/26/03/260307_2150_sendung_nsf/1/260307_2150_sendung_nsf_3360k_p36v17.mp4",
+    "url_website": "https://www.zdf.de/video/filme/meine-braut-ihr-vater-und-ich-movie-100/meine-braut-ihr-vater-und-ich-100",
+    "plot": "Der Krankenpfleger Greg und seine Freundin Pam sind auf dem Weg nach Long Island, um ihre Eltern zu besuchen und Greg vorzustellen. Greg plant bei dieser Gelegenheit um Pams Hand anzuhalten. Doch ihr Vater Jack entpuppt sich als autoritärer Ex-CIA-Agent, für den Greg alles darstellt, was er an einem künftigen Schwiegersohn hassenswert findet.",
+    "mediathek_desc": "Greg Focker möchte seiner Freundin Pamela einen Heiratsantrag machen. Beim Kennenlernen ihrer Eltern läuft jedoch nichts wie geplant.",
+    "director": "Jay Roach",
+    "actors": [
+      "Ben Stiller",
+      "Robert De Niro",
+      "Teri Polo"
+    ],
+    "rating": "6.7",
+    "thumb": "https://image.tmdb.org/t/p/w342/hbTnBCzB0fqskEgbUUrMosz4vci.jpg",
+    "genres_list": [
+      "Komödie",
+      "Romanze"
+    ],
+    "channel": "ZDFneo",
+    "timestamp": 1772916600,
+    "isNew": false,
+    "tmdb_id": 1597,
+    "tmdb_type": "movie"
+  },
+  {
     "title": "Meine Heimat Afrika",
     "search": "Meine Heimat Afrika",
     "year": "2009",
@@ -24553,7 +24503,7 @@
       "Drama"
     ],
     "channel": "ZDF",
-    "timestamp": 1795387003,
+    "timestamp": 1795558264,
     "isNew": true,
     "tmdb_id": 1481869,
     "tmdb_type": "movie"
@@ -25079,8 +25029,8 @@
       "Musik"
     ],
     "channel": "ARD",
-    "timestamp": 1778974500,
-    "isNew": false,
+    "timestamp": 1796124600,
+    "isNew": true,
     "tmdb_id": 666473,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyMy0wMi0yNV8xNS0zMC1NRVo"
@@ -26455,7 +26405,7 @@
     "search": "Rabia - Der verlorene Traum",
     "original_title": "Rabia - Der verlorene Traum",
     "year": "2024",
-    "video_url": "https://manifest-arte.akamaized.net/api/manifest/v1/Generate/ded0c0c3-6912-4e32-8d99-801beb7c302a/VA-STA/XQ+KS+CHEV1/128687-000-A.m3u8",
+    "video_url": "https://manifest-arte.akamaized.net/api/manifest/v1/Generate/1822aadd-635a-4331-a178-0dd56355aec1/VA-STA/XQ+KS+CHEV1/128687-000-A.m3u8",
     "url_website": "https://www.arte.tv/de/videos/128687-000-A/rabia-der-verlorene-traum/",
     "plot": "Von dem Versprechen eines besseren Lebens gelockt verlassen die 19-jährige Französin Jessica und ihre beste Freundin Laïla ihre Heimat, um sich in Syrien dem Islamischen Staat anzuschließen. In Raqqa angekommen, werden Pässe, Handys, Schmuck und Kleidung konfisziert und die Frauen in eine „Madafa“ geführt, ein Haus, das für zukünftige Ehefrauen von IS-Kämpfern bestimmt ist. Gemeinsam mit Frauen aus verschiedenen Ländern unterwerfen sie sich strengen Regeln",
     "mediathek_desc": "Erschütterndes Drama über zwei junge Frauen: Sie glaubten, im sogenannten Islamischen Staat Respekt und Anerkennung, vielleicht sogar privates Glück zu finden. Für diesen Irrtum zahlen sie einen hohen Preis. Französisch-deutsch-belgischer Film von Mareike Engelhardt, der 2025 in Deutschland in die Kinos kam. Inspiriert von wahren Begebenheiten",
@@ -27581,33 +27531,6 @@
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyNi0wMi0wMV8xNC0wMy1NRVo"
   },
   {
-    "title": "Schweigeminute",
-    "search": "Schweigeminute",
-    "year": "2016",
-    "video_url": "https://nrodlzdf-a.akamaihd.net/dach/zdf/16/10/161031_schweigeminute_ps_fdw/11/161031_schweigeminute_ps_fdw_3328k_p36v13.mp4",
-    "plot": "„Schweigeminute“ nach der Novelle von Siegfried Lenz erzählt von der ersten großen Liebe und vom ganz großen Glück. Die männliche Hauptfigur lässt die aufregende Zeit zwischen der ersten Begegnung, einem tragischen Unfall und den Tagen danach noch einmal an ihrem inneren Auge vorbeiziehen.",
-    "mediathek_desc": "Die filmische Adaption der gleichnamigen Novelle von Siegfried Lenz erzählt die zeitlose Geschichte einer ersten großen Leidenschaft: die eines Schülers für seine Lehrerin.",
-    "director": "Thorsten Schmidt",
-    "actors": [
-      "Julia Koschitz",
-      "Jonas Nay",
-      "Uwe Preuss"
-    ],
-    "rating": "5.8",
-    "thumb": "https://image.tmdb.org/t/p/w342/z8s4mCYXY00iNEZ8FD5XuQQtyhj.jpg",
-    "genres_list": [
-      "Drama",
-      "Romanze",
-      "TV-Film"
-    ],
-    "channel": "ZDF",
-    "timestamp": 1783052835,
-    "isNew": false,
-    "tmdb_id": 400554,
-    "tmdb_type": "movie",
-    "url_website": "https://www.zdf.de/filme/schweigeminute-movie-100"
-  },
-  {
     "title": "Schweigend steht der Wald",
     "search": "Schweigend steht der Wald",
     "year": "2022",
@@ -28426,31 +28349,6 @@
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyNS0wMy0xNl8xNC0wMy1NRVo"
   },
   {
-    "title": "So laut du kannst",
-    "search": "So laut du kannst",
-    "year": "2022",
-    "video_url": "https://nrodlzdf-a.akamaihd.net/none/zdf/22/11/221114_2015_sendung_fdw/1/221114_2015_sendung_fdw_a1a2_3360k_p36v15.mp4",
-    "plot": "Die befreundeten Physiotherapeutinnen Kim und Maja planen, gemeinsam eine Praxis zu eröffnen. Zur Finanzierung ihres Traumes arbeiten sie nebenbei bei einer Hostessen-Agentur, die Jobs in der Gastronomie anbietet.",
-    "mediathek_desc": "Eine junge Frau versucht die Vergewaltigung ihrer Freundin aufzuklären und stößt überall auf Widerstand – auch beim Opfer selbst.",
-    "director": "Esther Bialas",
-    "actors": [
-      "Friederike Becht",
-      "Nina Gummich",
-      "Jan Krauter"
-    ],
-    "rating": "5.9",
-    "thumb": "https://image.tmdb.org/t/p/w342/um3qKthC8pbDC2zCLWDZ1mD0789.jpg",
-    "genres_list": [
-      "Drama"
-    ],
-    "channel": "ZDF",
-    "timestamp": 1783052502,
-    "isNew": false,
-    "tmdb_id": 982300,
-    "tmdb_type": "movie",
-    "url_website": "https://www.zdf.de/filme/so-laut-du-kannst-movie-100"
-  },
-  {
     "title": "Solange ich atme",
     "search": "Solange ich atme",
     "year": "2017",
@@ -29124,6 +29022,35 @@
     "tmdb_id": 284293,
     "tmdb_type": "movie",
     "url_website": "https://www.3sat.de/film/spielfilm/still-alice---mein-leben-ohne-gestern-100.html"
+  },
+  {
+    "title": "Stille Nacht, raue Nacht",
+    "search": "Stille Nacht, raue Nacht",
+    "original_title": "Stille Nacht, raue Nacht",
+    "year": "2024",
+    "video_url": "https://nrodlzdf-a.akamaihd.net/none/zdf/24/12/241201_2015_sendung_sof/1/241201_2015_sendung_sof_a1a2_3360k_p36v17.mp4",
+    "url_website": "https://www.zdf.de/filme/stille-nacht-raue-nacht-movie-100",
+    "plot": "Liane, Wissenschaftlerin und Klimaforscherin, trifft auf der Wintersonnenwende-Party ihrer älteren Schwester Svea kurz vor Heiligabend auf Mani, einen faszinierenden und spirituell veranlagen Mann. Sie selbst fühlt sich etwas fremd auf der Feier, denn Liane ist ein rationaler Mensch. Von Räucher-Reinigungsritualen, Wunschzetteln, die in die Feuerschale geworfen werden sollen, und derlei esoterischem Hokuspokus bekommt sie Schnappatmung. Das ganze Raunachtstrara stammt aus Zeiten, in denen der Homo sapiens noch Eis und Schnee fürchten mussten und nicht Starkregen an Weihnachten. Trotzdem werden die stillen Tage und rauen Nächte zwischen dem 21. Dezember und dem Dreikönigstag für Liane zur echten Herausforderung: Ihr Freund Philipp fliegt nach einem Streit alleine nach Gomera. Trennen möchten sie sich nicht, aber bleiben, wie es ist, kann es auch nicht. Und tatsächlich beginnen das Schicksal und das Wetter die zurückbleibende Liane kräftig durchzuschütteln.",
+    "mediathek_desc": "Liane, Wissenschaftlerin und Klimaforscherin, trifft auf der Wintersonnenwende-Party ihrer älteren Schwester Svea kurz vor Heiligabend auf Mani, einen seltsamen, faszinierenden Mann.",
+    "director": "Sophie Averkamp",
+    "actors": [
+      "Maria Ehrich",
+      "Benito Bause",
+      "Antoine Monot Jr."
+    ],
+    "rating": "5.7",
+    "thumb": "https://image.tmdb.org/t/p/w342/gEqz5jKPVUctkPnFtyrZBHbiIPd.jpg",
+    "genres_list": [
+      "TV-Film",
+      "Drama",
+      "Romanze",
+      "Komödie"
+    ],
+    "channel": "ZDF",
+    "timestamp": 1794921765,
+    "isNew": true,
+    "tmdb_id": 1389664,
+    "tmdb_type": "movie"
   },
   {
     "title": "Stille Nächte",
@@ -31318,7 +31245,7 @@
     "original_title": "Umständlich verliebt",
     "year": "2010",
     "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/25/09/250927_2015_sendung_nsf/1/250927_2015_sendung_nsf_3360k_p36v17.mp4",
-    "url_website": "https://www.zdf.de/video/filme/umstaendlich-verliebt-movie-100/umstaendlich-verliebt-100",
+    "url_website": "https://www.zdf.de/filme/umstaendlich-verliebt-movie-100",
     "plot": "Die Single-Frau Kassie entschließt sich, trotz Einwände ihres besten, durchaus neurotischen Freundes Wally schwanger zu werden - auch wenn das bedeutet, es auf eigene Faust zu tun und zwar mit Hilfe eines sympathischen und überaus gutaussehenden Samenspenders. Ohne dass Kassie es ahnt, läuft bei der Befruchtung jedoch etwas schief, was allerdings erst sieben Jahre später ans Licht tritt, als Wally den süßen - durchaus leicht neurotischen - Sohn von Kassie kennenlernt…",
     "mediathek_desc": "Kassie will ein Kind – ohne Partner. Ihr bester Freund Wally soll sie dabei unterstützen. Doch eine chaotische Nacht bringt alles durcheinander.",
     "director": "Josh Gordon",
@@ -31335,8 +31262,8 @@
       "Drama"
     ],
     "channel": "ZDFneo",
-    "timestamp": 1758996900,
-    "isNew": false,
+    "timestamp": 1795004752,
+    "isNew": true,
     "tmdb_id": 41210,
     "tmdb_type": "movie"
   },
@@ -32437,7 +32364,7 @@
     ],
     "channel": "ARD",
     "timestamp": 1794571200,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 280395,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyMi0wMS0yMF8wMi0xMC1NRVo"
@@ -32546,6 +32473,35 @@
     "tmdb_id": 23487,
     "tmdb_type": "movie",
     "url_website": "https://www.3sat.de/film/spielfilm/verso---die-dunkle-seite-100.html"
+  },
+  {
+    "title": "Vesper Chronicles",
+    "search": "Vesper Chronicles",
+    "original_title": "Vesper Chronicles",
+    "year": "2022",
+    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/26/08/260826_0015_sendung_spf/1/260826_0015_sendung_spf_a3a4_3360k_p36v17.mp4",
+    "url_website": "https://www.zdf.de/video/filme/vesper-chronicles-movie-100/vesper-chronicles-100",
+    "plot": "Nach dem Zusammenbruch des Ökosystems der Erde trifft Vesper, ein 13-jähriges Mädchen, das mit ihrem gelähmten Vater ums Überleben kämpft, auf eine mysteriöse Frau mit einem Geheimnis, das Vesper dazu zwingt, ihren Verstand, ihre Kraft und ihre Bio-Hacking-Fähigkeiten einzusetzen, um für die Möglichkeit einer Zukunft zu kämpfen.",
+    "mediathek_desc": "Nachdem das Ökosystem der Erde fast vollständig zerstört wurde, leben eine Jugendliche und ihr gelähmter Vater in katastrophalen Verhältnissen. Doch plötzlich scheint Rettung in Sicht.",
+    "director": "Kristina Buožytė",
+    "actors": [
+      "Raffiella Chapman",
+      "Eddie Marsan",
+      "Rosy McEwen"
+    ],
+    "rating": "6.2",
+    "thumb": "https://image.tmdb.org/t/p/w342/ogsofi7NVoVFZO2pneZyJzOBkL2.jpg",
+    "genres_list": [
+      "Sci-Fi",
+      "Drama",
+      "Abenteuer",
+      "Fantasy"
+    ],
+    "channel": "ZDF",
+    "timestamp": 1787696400,
+    "isNew": false,
+    "tmdb_id": 976720,
+    "tmdb_type": "movie"
   },
   {
     "title": "Viele Kühe und ein schwarzes Schaf",
@@ -35214,7 +35170,7 @@
     "title": "Zwischen uns der Fluss",
     "search": "Zwischen uns der Fluss",
     "year": "2023",
-    "video_url": "https://nrodlzdf-a.akamaihd.net/dach/3sat/25/11/251115_zwischen_uns_der_fluss_spielfilm/1/251115_zwischen_uns_der_fluss_spielfilm_a1a2_3360k_p36v17.mp4",
+    "video_url": "https://manifest-arte.akamaized.net/api/manifest/v1/Generate/a2feabbc-4fff-4420-ab7e-8f756ca8caee/VOA/XQ+KS+CHEV1/092946-000-A.m3u8",
     "plot": ".\"Alice wurde nach einer Umweltaktion des zivilen Ungehorsams beschuldigt und zum Sozialdienst verurteilt.",
     "mediathek_desc": "Alice wird zu Sozialstunden verurteilt und muss sich um die traumatisierte Cam kümmern. Im Dresdener Villenviertel entspinnt sich eine zarte Freundschaft zwischen den ungleichen Frauen.",
     "director": "Michael Klier",
@@ -35229,11 +35185,11 @@
       "Drama"
     ],
     "channel": "3Sat",
-    "timestamp": 1763245920,
-    "isNew": false,
+    "timestamp": 1796258264,
+    "isNew": true,
     "tmdb_id": 1187092,
     "tmdb_type": "movie",
-    "url_website": "https://www.3sat.de/film/spielfilm/zwischen-uns-der-fluss-100.html"
+    "url_website": "https://www.arte.tv/de/videos/092946-000-A/zwischen-uns/"
   },
   {
     "title": "Zwischen zwei Herzen",
