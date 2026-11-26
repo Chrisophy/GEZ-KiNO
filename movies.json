@@ -527,6 +527,33 @@
     "url_website": "https://www.zdf.de/filme/alice-im-weihnachtsland-movie-100"
   },
   {
+    "title": "Alle Kinder brauchen Liebe",
+    "search": "Alle Kinder brauchen Liebe",
+    "original_title": "Alle Kinder brauchen Liebe",
+    "year": "2000",
+    "video_url": "https://ctv-videos.daserste.de/int/2012/12/17/18735a6d-f6d4-4556-bce2-716659681e86/JOB_509233__sendeton_1280x720-50p-3200kbit.mp4",
+    "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAxMy0xMi0yMV8xMi0wMy1NRVo",
+    "plot": "Weihnachtszeit im Waisenhaus auf Schloss Westerheide. Zum Feiern ist Leiterin Anna Stolberg jedoch nicht zumute. Schlossherr Witt hat den Immobilienmakler Merkel angewiesen, die sofortige Räumung des renovierungsbedürftigen Gebäudes in die Wege zu leiten. Anna sucht mit dem Arzt Flimm nach einer Lösung. Doch die Kündigung ist rechtens ...",
+    "mediathek_desc": "Spielfilm Deutschland 2000 Die engagierte Heimleiterin Anna Stolberg bereitet mit ihren Waisenhausschützlingen das Weihnachtsfest vor. Da erfährt sie, dass der Gutsherr Friedrich Witt das alte Jagdschlösschen noch vor Heiligabend zwangsweise räumen lassen will. Anna und der mit ihr befreundete Landarzt Dr. Robert Flimm versuchen, das Schlimmste abzuwenden, stoßen bei Witt und dem Makler Wolfgang Merkel jedoch auf taube Ohren....",
+    "director": "Karsten Wichniarz",
+    "actors": [
+      "Witta Pohl",
+      "Franziska Troegner",
+      "Ulrich Pleitgen"
+    ],
+    "rating": "5.3",
+    "thumb": "https://image.tmdb.org/t/p/w342/fYyDYEsyaJKlzK0X0HSHLDP8Ciw.jpg",
+    "genres_list": [
+      "Drama",
+      "TV-Film"
+    ],
+    "channel": "ARD",
+    "timestamp": 1734044400,
+    "isNew": false,
+    "tmdb_id": 331467,
+    "tmdb_type": "movie"
+  },
+  {
     "title": "Alle Mörder sind schon da",
     "search": "Alle Mörder sind schon da",
     "original_title": "Alle Mörder sind schon da",
@@ -875,31 +902,6 @@
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyMC0wNS0yOF8wMi00MC1NRVNa"
   },
   {
-    "title": "Alles gelogen",
-    "search": "Alles gelogen",
-    "year": "2024",
-    "video_url": "https://nrodlzdf-a.akamaihd.net/none/zdf/24/09/240905_alles_gelogen_fis/1/240905_alles_gelogen_fis_a1a2_3360k_p36v17.mp4",
-    "plot": "Hajo Siewers lebt mit seiner Frau Vera und seinem  jugendlichen Sohn Marvin in einer Einfamilienhaussiedlung. Er neigt dazu, die Grenzen zwischen Wahrheit und Lüge auszudehnen. Eines Tages geht er zu weit und riskiert alles zu verlieren, was ihm lieb ist.",
-    "mediathek_desc": "Lügen gehören für Hajo Siewers zum Alltag. Seit Jahren gibt es für ihn keine Bredouille, aus der er sich nicht mit einer mehr oder weniger charmanten Unwahrheit herausgewunden hätte.",
-    "director": "Erik Haffner",
-    "actors": [
-      "Bastian Pastewka",
-      "Katrin Wichmann",
-      "Arthur Gropp"
-    ],
-    "rating": "6.6",
-    "thumb": "https://image.tmdb.org/t/p/w342/3YMtD7dMD0O4WD16HTC0SE9bFXI.jpg",
-    "genres_list": [
-      "Komödie"
-    ],
-    "channel": "ZDF",
-    "timestamp": 1783310484,
-    "isNew": false,
-    "tmdb_id": 1218233,
-    "tmdb_type": "movie",
-    "url_website": "https://www.zdf.de/filme/alles-gelogen-movie-100"
-  },
-  {
     "title": "Alles ist gut",
     "search": "Alles ist gut",
     "year": "2017",
@@ -1051,7 +1053,7 @@
     ],
     "channel": "ARD",
     "timestamp": 1794714600,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 446445,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAxNy0wNC0wMV8xMy0wMC1NRVNa"
@@ -1525,8 +1527,8 @@
       "Familie"
     ],
     "channel": "ARD",
-    "timestamp": 1786440000,
-    "isNew": false,
+    "timestamp": 1796218200,
+    "isNew": true,
     "tmdb_id": 335861,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyNS0wOC0zMV8xNS0zMC1NRVNa"
@@ -1923,7 +1925,7 @@
       "Komödie"
     ],
     "channel": "ARD",
-    "timestamp": 1793438700,
+    "timestamp": 1791203400,
     "isNew": false,
     "tmdb_id": 345591,
     "tmdb_type": "movie",
@@ -2112,32 +2114,6 @@
     "tmdb_id": 1068983,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2JhcmZ1c3MtZHVyY2gtYXVzdHJhbGllbi8yMDI1LTA4LTI3XzIxLTQ1LU1FU1o"
-  },
-  {
-    "title": "Beate Uhse - Das Recht auf Liebe",
-    "search": "Beate Uhse - Das Recht auf Liebe",
-    "year": "2011",
-    "video_url": "https://nrodlzdf-a.akamaihd.net/none/zdf/21/02/210222_0140_sendung_sof/4/210222_0140_sendung_sof_3360k_p36v15.mp4",
-    "plot": "Ihr Name steht für Herausforderung und Provokation. Sie gehört zu den großen Persönlichkeiten der jungen Bundesrepublik Deutschland, zu denen, die das Land und die Menschen ihrer Zeit geprägt haben. Sie war eine Abenteuerin, eine Kämpferin, Ehefrau und Mutter - vor allem aber war sie eine herausragende Unternehmerin, die die Welt verändern wollte. Heute ist \"Beate Uhse\" eine Weltmarke in Sachen \"sex sells\". Der Film erzählt von einer Frau, die ihr Leben dem Aufbau einer legendären Firma gewidmet hat und anhand von Ratgebern und Produkten den Menschen ihrer Zeit zur lustvolleren, freieren Sexualität verhelfen wollte. Die Produktion spannt einen Bogen vom Ende des Zweiten Weltkriegs über den Beginn von Beate Uhses Karriere, die legendäre \"Schrift X\" und den Verkauf der ersten Präservative bis zum Jahr 1972.",
-    "mediathek_desc": "In den letzten Tagen des Zweiten Weltkriegs landet Beate Uhse mit ihrem zweijährigen Sohn Klaus auf dem englisch besetzten Flughafen Leck in Schleswig-Holstein.",
-    "director": "Hansjörg Thurn",
-    "actors": [
-      "Franka Potente",
-      "Hans-Werner Meyer",
-      "Henry Hübchen"
-    ],
-    "rating": "6.1",
-    "thumb": "https://image.tmdb.org/t/p/w342/gD8O3uo5vlqnzVluzWoPV8W3yw3.jpg",
-    "genres_list": [
-      "Drama",
-      "TV-Film"
-    ],
-    "channel": "ZDF",
-    "timestamp": 1783312222,
-    "isNew": false,
-    "tmdb_id": 76934,
-    "tmdb_type": "movie",
-    "url_website": "https://www.zdf.de/filme/beate-uhse---das-recht-auf-liebe-movie-100"
   },
   {
     "title": "Beautiful Girl",
@@ -2476,7 +2452,7 @@
       "Komödie"
     ],
     "channel": "ZDFneo",
-    "timestamp": 1795383300,
+    "timestamp": 1795607453,
     "isNew": true,
     "tmdb_id": 406994,
     "tmdb_type": "movie"
@@ -3089,7 +3065,7 @@
     "search": "Breaking Surface - Tödliche Tiefen",
     "original_title": "Breaking Surface - Tödliche Tiefen",
     "year": "2020",
-    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/22/01/220110_2215_sendung_spf/1/220110_2215_sendung_spf_a1a2_3360k_p36v15.mp4",
+    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/22/01/220110_2215_sendung_spf/1/220110_2215_sendung_spf_a3a4_3360k_p36v15.mp4",
     "url_website": "https://www.zdf.de/filme/breaking-surface---toedliche-tiefen-movie-102",
     "plot": "Einige Tage nach Weihnachten machen sich die schwedisch-norwegischen Halbschwestern Ida und Tuva auf den Weg zu einem Wintertauchgang in einem abgelegenen Teil der norwegischen Küste. Gegen Ende des Tauchgangs schließt ein Steinschlag Tuva unter Wasser ein. Als Ida auftaucht, um um Hilfe zu rufen, entdeckt sie, dass der Steinschlag auch über Wasser einschlug und ihre Ausrüstung, Telefone und Autoschlüssel vergraben hat. Sie sind von jeder Möglichkeit einer Rettung von außen abgeschnitten...",
     "mediathek_desc": "Kurz vor Weihnachten gehen die Schwestern Ida und Tuva auf Tauchgang. Nach einem Felsrutsch ist Tuva unter Wasser eingeklemmt, und Ida ist mit der Rettung auf sich allein gestellt.",
@@ -3106,7 +3082,7 @@
       "Thriller"
     ],
     "channel": "ZDF",
-    "timestamp": 1795529802,
+    "timestamp": 1795589084,
     "isNew": true,
     "tmdb_id": 616803,
     "tmdb_type": "movie"
@@ -7230,34 +7206,6 @@
     "url_website": "https://www.3sat.de/film/spielfilm/der-wein-und-der-wind-100.html"
   },
   {
-    "title": "Der Wunschzettel",
-    "search": "Der Wunschzettel",
-    "year": "2018",
-    "video_url": "https://pd-videos.daserste.de/de/2020/12/15/39408eec-b045-4f2c-806f-a856464486cc/JOB_575436__sendeton_1280x720-50p-3200kbit.mp4",
-    "plot": "Pauline Schwebe ist Ordnungsbeamtin und Single. Sie ist gerührt, als sie an einer Ampel den handgeschriebenen Wunschzettel von Leo Golombeck entdeckt. In dem lädt der Siebenjährige eine einsame Seele zur Weihnachtsfeier im Kreis seiner Familie ein. Im Gegenzug hätte er nichts dagegen, wenn die einsame Seele ein paar Geschenke mitbringt. Pauline besucht Leo, der mit seiner Schwester Lotte und seinem Papa Daniel in einfachen Verhältnissen lebt. Da Paulines Eltern sie ständig damit nerven, dass sie immer noch Single ist, lädt sie kurzerhand Daniel mit Kindern zur familiären Weihnachtsfeier ein und stellt ihn als neuen Freund vor.",
-    "mediathek_desc": "Spielfilm Deutschland 2018 \r\n\r\nWenn man fest an den Weihnachtsmann glaubt, können Wünsche wahr werden! Der neunjährige Leo möchte endlich wieder ein richtiges Familienfest erleben und sein Wunschzettel gerät bei Pauline in die richtigen Hände. \r\n\r\nMit Anne Schäfer, Sebastian Ströbel, Lena Stolze, Hans-Uwe Bauer, Jasmin Schwiers u. a. | Buch: Martina Mouchot | Regie: Marc Rensing",
-    "director": "Marc Rensing",
-    "actors": [
-      "Anne Schäfer",
-      "Sebastian Ströbel",
-      "Lena Stolze"
-    ],
-    "rating": "7.2",
-    "thumb": "https://image.tmdb.org/t/p/w342/nZWcMv3TvKzUvX7dnlC1x78xxNP.jpg",
-    "genres_list": [
-      "Komödie",
-      "Drama",
-      "Familie",
-      "Romanze"
-    ],
-    "channel": "ARD",
-    "timestamp": 1671828900,
-    "isNew": false,
-    "tmdb_id": 567324,
-    "tmdb_type": "movie",
-    "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyMi0xMi0yM18yMS01NS1NRVo"
-  },
-  {
     "title": "Der Zauber des Regenbogens",
     "search": "Der Zauber des Regenbogens",
     "year": "2007",
@@ -7363,6 +7311,34 @@
     "tmdb_id": 11877,
     "tmdb_type": "movie",
     "url_website": "https://www.3sat.de/film/spielfilm/der-brave-soldat-schwejk-104.html"
+  },
+  {
+    "title": "Der eisige Tod",
+    "search": "Der eisige Tod",
+    "original_title": "Der eisige Tod",
+    "year": "2007",
+    "video_url": "https://nrodlzdf-a.akamaihd.net/de/zdf/25/11/251122_sony_2355_sendung_nsf/1/251122_sony_2355_sendung_nsf_3360k_p36v17.mp4",
+    "url_website": "https://www.zdf.de/video/filme/der-eisige-tod-movie-100/der-eisige-tod-100",
+    "plot": "Sie hat ein schlechtes Gefühl, als sie zu dem fremden Kommilitonen ins Auto steigt - und soll Recht behalten. Das, was ihr der Unbekannte so erzählt, ergibt keinen rechten Sinn. Richtig unheimlich wird er ihr allerdings erst, als sie nach einem Beinahe-Unfall auf einer abgelegenen Route, die er als Abkürzung bezeichnet hat, liegen bleiben. Und es kommt noch schlimmer: Bald sehen beide unheimliche Gestalten vor ihrem Auto vorbeihuschen...",
+    "mediathek_desc": "Eine junge Studentin möchte Weihnachten zuhause in Delaware sein. Sie nimmt eine Mitfahrgelegenheit vom Schwarzen Brett wahr, doch der unbekannte Kommilitone wird ihr zunehmend unheimlich.",
+    "director": "Gregory Jacobs",
+    "actors": [
+      "Emily Blunt",
+      "Ashton Holmes",
+      "Martin Donovan"
+    ],
+    "rating": "5.8",
+    "thumb": "https://image.tmdb.org/t/p/w342/icn6f76rs3CPbO5tjIkV4Pg4vvx.jpg",
+    "genres_list": [
+      "Drama",
+      "Horror",
+      "Thriller"
+    ],
+    "channel": "ZDFneo",
+    "timestamp": 1701645300,
+    "isNew": false,
+    "tmdb_id": 14223,
+    "tmdb_type": "movie"
   },
   {
     "title": "Der gezähmte Widerspenstige",
@@ -9998,32 +9974,6 @@
     "url_website": "https://www.zdf.de/filme/die-toten-vom-schwarzwald-movie-100"
   },
   {
-    "title": "Die Toten von Hameln",
-    "search": "Die Toten von Hameln",
-    "year": "2014",
-    "video_url": "https://nrodlzdf-a.akamaihd.net/none/zdf/19/02/190217_dietotenvonhameln_fdw/6/190217_dietotenvonhameln_fdw_a1a2_3360k_p36v17.mp4",
-    "plot": "Die Chorleiterin Johanna Bischoff fährt mit ihrem Mädchenchor zu einem Konzert in ihre Heimatstadt Hameln. Beim Besuch ihres Vaters und dessen Schwester wird sie von einer erschreckenden Vision heimgesucht: Sie sieht sich als Kind in ihrem Elternhaus einem Toten gegenüber.  Kurz vor dem geplanten Auftritt verschwinden bei einer Wanderung vier der Mädchen und der Organist David in einer Höhle des Ith – dem sagenumwobenen Berg, in den vor gut 700 Jahren der Rattenfänger die Kinder geführt haben soll. Hilfesuchend wendet sich Johanna an ihren Ex-Freund Jan Faber, Polizeirevierleiter in Hameln. Eine fieberhafte Suche nach den Verschollenen in den Höhlen und Wäldern des Ith beginnt. Johanna erkennt, dass das Rätsel um die Vermissten untrennbar mit ihrem eigenen tragischen Familiengeheimnis verbunden ist...",
-    "mediathek_desc": "Chorleiterin Johanna Bischoff fährt mit ihrem Mädchenchor zu einem Konzert in ihre Heimatstadt Hameln. Kurz vor dem geplanten Auftritt verschwinden vier der Mädchen und der Organist David.",
-    "director": "Christian von Castelberg",
-    "actors": [
-      "Julia Koschitz",
-      "Bjarne Mädel",
-      "Matthias Habich"
-    ],
-    "rating": "5.8",
-    "thumb": "https://image.tmdb.org/t/p/w342/6dj7f3uaj7qHV1Z1EMXXmKSzFuI.jpg",
-    "genres_list": [
-      "Mystery",
-      "Thriller"
-    ],
-    "channel": "ZDF",
-    "timestamp": 1783313115,
-    "isNew": false,
-    "tmdb_id": 270923,
-    "tmdb_type": "movie",
-    "url_website": "https://www.zdf.de/filme/die-toten-von-hameln-movie-100"
-  },
-  {
     "title": "Die Trapp-Familie - Ein Leben für die Musik",
     "search": "Die Trapp-Familie - Ein Leben für die Musik",
     "original_title": "Die Trapp-Familie - Ein Leben für die Musik",
@@ -10288,8 +10238,8 @@
     "search": "Die drei Musketiere - D'Artagnan",
     "original_title": "Die drei Musketiere - D'Artagnan",
     "year": "2023",
-    "video_url": "https://nrodlzdf-a.akamaihd.net/dach/zdf/25/12/251228_2200_sendung_spf/4/251228_2200_sendung_spf_a1a2_3360k_p36v17.mp4",
-    "url_website": "https://www.zdf.de/video/filme/die-drei-musketiere---dartagnan-movie-100/die-drei-musketiere---dartagnan-100",
+    "video_url": "https://nrodlzdf-a.akamaihd.net/dach/zdf/25/12/251228_2200_sendung_spf/4/251228_2200_sendung_spf_a3a4_3360k_p36v17.mp4",
+    "url_website": "https://www.zdf.de/filme/die-drei-musketiere---dartagnan-movie-100",
     "plot": "D’Artagnan zieht es aus der verschlafenen Gascogne im Südwesten Frankreichs ins Herz der Nation: Paris. Dort schließ er sich den drei Musketieren des Königs – Athos, Porthos und Aramis – an. Das Quartett will in einem von Religionskriegen gespaltenen und von der britischen Armee bedrohten Land für Stabilität Sorgen. Zunächst müssen sie aber gegen Kardinal Richelieu, der dunkle Pläne hegt, in die Spur gehen. Wirklich ernst wird es für D’Artagnan jedoch erst, als er sein Herz an Constance Bonacieux, eine Vertraute der Königin, verliert. Denn die Nähe zu ihr lässt auch zwielichtige Gestalten auf ihn aufmerksam werden. So hat es Milady de Winter schnell auf sein Leben abgesehen.",
     "mediathek_desc": "Der junge D'Artagnan kommt voller Mut nach Paris, um ein Musketier zu werden. Doch schon bald steckt er mitten in einem Abenteuer, das ihn mit drei tapferen Freunden zusammenbringt.",
     "director": "Martin Bourboulon",
@@ -10307,7 +10257,7 @@
       "Historie"
     ],
     "channel": "ZDF",
-    "timestamp": 1766955600,
+    "timestamp": 1794384001,
     "isNew": false,
     "tmdb_id": 796185,
     "tmdb_type": "movie"
@@ -12103,33 +12053,6 @@
     "url_website": "https://www.3sat.de/film/spielfilm/ein-mord-mit-aussicht-100.html"
   },
   {
-    "title": "Ein Regenbogen zu Weihnachten",
-    "search": "Ein Regenbogen zu Weihnachten",
-    "year": "2023",
-    "video_url": "https://nrodlzdf-a.akamaihd.net/none/zdf/23/12/231217_2015_sendung_sof/1/231217_2015_sendung_sof_a1a2_3360k_p36v17.mp4",
-    "plot": "Im Mittelpunkt steht die turbulente Romanze zwischen einem verwitweten Vater zweier Teenager und einer Tierärztin, die nach den traumatischen Erlebnissen mit ihrer unorthodoxen Mutter um Kinder eigentlich lieber einen großen Bogen macht. Ein gemeinsamer Skiurlaub soll die Patchwork-Familie zusammenbringen, droht dann aber die Fronten noch zu verhärten – es sei denn, es passiert noch ein Wunder an Heiligabend.",
-    "mediathek_desc": "Tierärztin Nicole und der alleinerziehende Vater Martin leben eine lockere Beziehung. Doch Nicole hat noch immer nicht Martins Kinder kennengelernt. Das soll sich jetzt ändern!",
-    "director": "Esther Gronenborn",
-    "actors": [
-      "Maximilian Brückner",
-      "Jasmin Gerat",
-      "Sabine Vitua"
-    ],
-    "rating": "4.9",
-    "thumb": "https://image.tmdb.org/t/p/w342/tBTrDFwvR4fHixmUEZyzBwHAuig.jpg",
-    "genres_list": [
-      "Familie",
-      "Romanze",
-      "Drama"
-    ],
-    "channel": "ZDF",
-    "timestamp": 1794381964,
-    "isNew": false,
-    "tmdb_id": 1204957,
-    "tmdb_type": "movie",
-    "url_website": "https://www.zdf.de/filme/ein-regenbogen-zu-weihnachten-movie-100"
-  },
-  {
     "title": "Ein Schloss am Wörthersee - Der Film - Kinofilm",
     "search": "Ein Schloss am Wörthersee - Der Film - Kinofilm",
     "year": "1992",
@@ -12226,35 +12149,6 @@
     "timestamp": 1787590244,
     "isNew": false,
     "tmdb_id": 433597,
-    "tmdb_type": "movie"
-  },
-  {
-    "title": "Ein Taxi zur Bescherung",
-    "search": "Ein Taxi zur Bescherung",
-    "original_title": "Ein Taxi zur Bescherung",
-    "year": "2022",
-    "video_url": "https://nrodlzdf-a.akamaihd.net/none/zdf/22/12/221218_2015_sendung_sof/1/221218_2015_sendung_sof_a1a2_3360k_p36v15.mp4",
-    "url_website": "https://www.zdf.de/filme/ein-taxi-zur-bescherung-movie-100",
-    "plot": "Den Hamburger Taxifahrer Axel Parschke verschlägt es kurz vor Heiligabend ins weihnachtliche Erzgebirge: Was als lukrativer Auftrag für den nach einem Unfall erblindeten IT-Analysten Jan Olsmer beginnt, der im kleinen Örtchen Bergroda seine Internetbekanntschaft Jenny Feller treffen möchte, wird für den nach langen Ehejahren Geschiedenen zu einer emotionalen Reise in ein neues Leben. Mit Fremden, die auf dem Weg zu Freunden werden, wie sein Fahrgast Jan oder die Abiturientin Linh Ngyuen, die unterwegs eingesammelt werden. Und da gibt es noch die Kfz-Mechanikerin Sofia Lieberwirth, in deren Werkstatt Axel und sein bei einem Unfall beschädigtes Taxi unfreiwillig stranden. Nach der Feier im Ort Mettenschicht und einem gemeinsamen Heiligabend wider Willen werden die Karten für alle noch einmal neu gemischt.",
-    "mediathek_desc": "Taxifahrer Axel Parschke wollte wie jedes Weihnachten durcharbeiten, doch am Bahnhof Hamburg-Dammtor macht ihm IT-Analyst Jan Olsmer ein verlockendes Angebot.",
-    "director": "Dirk Kummer",
-    "actors": [
-      "Dietmar Bär",
-      "Max Riemelt",
-      "Gabriele Völsch"
-    ],
-    "rating": "6.0",
-    "thumb": "https://image.tmdb.org/t/p/w342/3eMiUly10nlWdSIGEroN1VLpGd9.jpg",
-    "genres_list": [
-      "TV-Film",
-      "Komödie",
-      "Drama",
-      "Romanze"
-    ],
-    "channel": "ZDF",
-    "timestamp": 1794957355,
-    "isNew": true,
-    "tmdb_id": 1056535,
     "tmdb_type": "movie"
   },
   {
@@ -18018,35 +17912,10 @@
     ],
     "channel": "ARD",
     "timestamp": 1794736500,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 265558,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2FyZC5kZS9wbGFuQVJEX2I1ZGRlOTc2LTNiMzctNDZkYS05MGIzLWM2Y2ViOWI3NjMyZV9nYW56ZVNlbmR1bmc"
-  },
-  {
-    "title": "Im Grunde Mord - Blutsbande",
-    "search": "Im Grunde Mord - Blutsbande",
-    "year": "2026",
-    "video_url": "https://nrodlzdf-a.akamaihd.net/none/zdf/26/04/260420_2015_sendung_fdw/3/260420_2015_sendung_fdw_a1a2_3360k_p36v17.mp4",
-    "plot": "Ein junger Mann stürzt im Teutoburger Wald in die Tiefe und stirbt. Der Tote war Tourguide für die bei Touristen sehr beliebten Externsteine und kannte die Gefahren der Umgebung. Ein Unfall scheint daher ausgeschlossen – zudem gibt es eine seltsame Stichwunde an seinem Körper. Kriminalkommissarin Paula Schäfer, die erst vor Kurzem in ihre Heimatstadt Detmold zurückgekehrt ist, und ihr Bruder und Kollege Leon werden von Staatsanwältin Britta Everslage mit den Ermittlungen des mysteriösen Falls betraut.",
-    "mediathek_desc": "Ein Mann stürzt an den Externsteinen im Teutoburger Wald in die Tiefe und stirbt. Die Kriminalkommissarin Paula Schäfer ist erst vor kurzem in ihre Heimat Detmold zurückgekehrt.",
-    "director": "Bruno Grass",
-    "actors": [
-      "Hanna Plaß",
-      "Jakob Benkhofer",
-      "Ann-Kathrin Kramer"
-    ],
-    "rating": "5.0",
-    "thumb": "https://image.tmdb.org/t/p/w342/qH580sqKzIhiyFJQwPtbOsMCsPy.jpg",
-    "genres_list": [
-      "Krimi"
-    ],
-    "channel": "ZDF",
-    "timestamp": 1783310366,
-    "isNew": false,
-    "tmdb_id": 1652264,
-    "tmdb_type": "movie",
-    "url_website": "https://www.zdf.de/filme/im-grunde-mord---blutsbande-movie-100"
   },
   {
     "title": "Im Netz der Gewalt",
@@ -20031,32 +19900,6 @@
     "tmdb_id": 793718,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyNS0wOS0yMF8xNC0wMC1NRVNa"
-  },
-  {
-    "title": "Krokodil",
-    "search": "Krokodil",
-    "year": "2013",
-    "video_url": "https://nrodlzdf-a.akamaihd.net/none/zdf/20/09/200906_1500_sendung_fis/3/200906_1500_sendung_fis_3360k_p36v15.mp4",
-    "plot": "Richard, ein Schriftsteller, der sich zur Ruhe gesetzt hat, führt ein zurückgezogenes Leben in einem prächtigen Landhaus. Seine einzigen Kontakte scheinen Martha , seine Haushälterin, und sein Angel-Freund Gabriel zu sein. Seine einzige Leidenschaft gilt dem blank gewienerten Jaguar, einem historischen Schätzchen, Baujahr 1957, mit dem er die Landschaft unsicher macht. Als direkt vor seiner Haustür eine junge Frau mit ihrem fünfjährigen Sohn verunglückt und sich mit ihrem Auto überschlägt, gerät Richards geordnetes Leben durcheinander. Die attraktive Judith  hatte sich vor dem Unfall gerade von Christian getrennt und findet nun bei Richard Unterschlupf, bis sie selbst wieder gesund und ihr Auto repariert ist.",
-    "mediathek_desc": "Richard lebt in einem wunderschönen alten Haus. Scheinbar hat er mit seinem früheren Leben als erfolgreicher Schriftsteller und von Frauen umschwärmter Junggeselle abgeschlossen.",
-    "director": "Urs Egger",
-    "actors": [
-      "Mario Adorf",
-      "Alwara Höfels",
-      "Daan Lennard Liebrenz"
-    ],
-    "rating": "4.0",
-    "thumb": "https://image.tmdb.org/t/p/w342/6GqQDimdig2X9DA5czCWVxQjhBt.jpg",
-    "genres_list": [
-      "Drama",
-      "TV-Film"
-    ],
-    "channel": "ZDF",
-    "timestamp": 1783309452,
-    "isNew": false,
-    "tmdb_id": 379621,
-    "tmdb_type": "movie",
-    "url_website": "https://www.zdf.de/filme/krokodil-movie-100"
   },
   {
     "title": "Kurhotel Alpenglück",
@@ -24297,6 +24140,34 @@
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyMy0wOS0xMF8xNS0zMC1NRVNa"
   },
   {
+    "title": "Nackt unter Wölfen",
+    "search": "Nackt unter Wölfen",
+    "original_title": "Nackt unter Wölfen",
+    "year": "1960",
+    "video_url": "https://manifest-arte.akamaized.net/api/manifest/v1/Generate/dcd6d13d-f280-4c34-99ce-e69264929d79/VOA-STA/XQ+KS+CHEV1/019497-000-B.m3u8",
+    "url_website": "https://www.arte.tv/de/videos/019497-000-A/nackt-unter-woelfen/",
+    "plot": "1945. Das Konzentrationslager Buchenwald kurz vor der Befreiung: Der polische Häftling Janowski rettet ein kleines Kind, versteckt in einem Koffer. Ein Kind in der Welt des Todes bedeutet Hoffnung und Gefährdung zugleich.\r Als die Mithäftlinge und Mitglieder der geheimen Widerstandsgruppe den Jungen entdecken, stehen sie vor einer schweren Entscheidung. Doch letztlich siegt die Menschlichkeit. Das Original und erster deutscher Spielfilm über Leben und Sterben im Konzentrationslager. Nach einer authentischen Geschichte.",
+    "mediathek_desc": "Konzentrationslager Buchenwald, 1945. Ein Gefangener hat ein kleines Kind gerettet, versteckt in einem Koffer. Als die Mithäftlinge den Jungen entdecken, stehen sie vor einer schweren Entscheidung. – Der DDR-Film über Leben und Sterben in einem KZ beruht auf wahren Ereignissen. Er ist mit Ausnahme des propagandistischen Endes unpathetisch und ergreifend. Mit Armin Mueller-Stahl.",
+    "director": "Georg Leopold",
+    "actors": [
+      "Johannes Wieke",
+      "Manfred Borges",
+      "Edwin Marian"
+    ],
+    "rating": "N/A",
+    "thumb": "placeholder.png",
+    "genres_list": [
+      "Drama",
+      "TV-Film",
+      "Krieg"
+    ],
+    "channel": "ARTE.DE",
+    "timestamp": 1796907900,
+    "isNew": true,
+    "tmdb_id": 967153,
+    "tmdb_type": "movie"
+  },
+  {
     "title": "Nahschuss",
     "search": "Nahschuss",
     "year": "2021",
@@ -28110,32 +27981,6 @@
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyNS0wNy0wNF8xNS0zMC1NRVNa"
   },
   {
-    "title": "Sieben Tote hat die Woche",
-    "search": "Sieben Tote hat die Woche",
-    "year": "1963",
-    "video_url": "https://arteptweb-a.akamaihd.net/am/ptweb/131000/131500/131522-000-A_EQ_0_VA-STA_11448095_MP4-1500_AMM-PTWEB-60781921377903_xfCsLtloBh.mp4",
-    "plot": "Nach einem lukrativen Drogengeschäft geraten fünf Kriminelle in einen Strudel aus Verrat, Misstrauen und Gewalt. Was als gemeinsamer Coup beginnt, entwickelt sich zu einem tödlichen Machtkampf, bei dem jeder versucht, die Beute für sich zu sichern.",
-    "mediathek_desc": "Nach einem lukrativen Drogengeschäft geraten fünf Kriminelle in einen Strudel aus Verrat, Misstrauen und Gewalt. Was als gemeinsamer Coup beginnt, entwickelt sich zu einem tödlichen Machtkampf, bei dem jeder versucht, die Beute für sich zu sichern. Französischer Gangsterfilm von Jacques Deray (1963).",
-    "director": "Jacques Deray",
-    "actors": [
-      "Michel Auclair",
-      "Claude Dauphin",
-      "Charles Vanel"
-    ],
-    "rating": "6.7",
-    "thumb": "https://image.tmdb.org/t/p/w342/p6bgwNEerV5A8aUlK3N2vmmPfXy.jpg",
-    "genres_list": [
-      "Krimi",
-      "Drama"
-    ],
-    "channel": "ARTE.DE",
-    "timestamp": 1787595305,
-    "isNew": false,
-    "tmdb_id": 434050,
-    "tmdb_type": "movie",
-    "url_website": "https://www.arte.tv/de/videos/131522-000-A/sieben-tote-hat-die-woche/"
-  },
-  {
     "title": "Silberkiesel - Hunkeler tritt ab",
     "search": "Silberkiesel - Hunkeler tritt ab",
     "year": "2011",
@@ -28915,7 +28760,7 @@
       "Komödie"
     ],
     "channel": "ARD",
-    "timestamp": 1797334200,
+    "timestamp": 1797679800,
     "isNew": true,
     "tmdb_id": 657316,
     "tmdb_type": "movie",
@@ -28941,7 +28786,7 @@
     ],
     "channel": "3Sat",
     "timestamp": 1794750016,
-    "isNew": true,
+    "isNew": false,
     "tmdb_id": 1121839,
     "tmdb_type": "movie",
     "url_website": "https://www.zdf.de/filme/sterben-fuer-beginner-movie-100"
@@ -31161,32 +31006,6 @@
     "tmdb_id": 56953,
     "tmdb_type": "movie",
     "url_website": "https://www.3sat.de/film/spielfilm/uli-der-knecht-100.html"
-  },
-  {
-    "title": "Um Himmels Willen - Das Wunder von Fatima",
-    "search": "Um Himmels Willen - Das Wunder von Fatima",
-    "year": "2014",
-    "video_url": "https://pd-videos.daserste.de/dach/2022/12/14/20343b8c-cf62-4550-a940-afd00a837708/JOB_511405__sendeton_1280x720-50p-3200kbit.mp4",
-    "plot": "Das Weihnachtsfest steht vor der Tür und mit ihm die Zeit der guten Taten. So ist der „Engel von Kaltenthal“ zurück und beglückt die Bedürftigen mit anonymem Geldsegen. Für die wohlhabende Witwe Sonja Berger (Bibiana Zeller) bringen die Tage Aufregung pur. In der Zeitung entdeckt sie ein Bild, auf dem sie ihre verschwundene Jugendliebe Thomas (Peter Franke) vermutet: Offenbar arbeitet er als Stadtführer in Fatima. Um das herauszufinden, bittet sie Schwester Hanna (Janina Hartwig), sie in den portugiesischen Wallfahrtsort zu begleiten. Obwohl die Schwester mitten in den Vorbereitungen für die Feier zugunsten der Kriegswaisen steckt, stimmt sie schließlich der ungewöhnlichen Pilgerreise zu – vor allem dank der Überredungskünste von Bürgermeister Wöller (Fritz Wepper), der überraschend seinen Begleitschutz anbietet.",
-    "mediathek_desc": "Spielfilm Deutschland 2014 \r\n\r\nSchwester Hanna begleitet die wohlhabende Witwe Sonja Berger nach Fatima. Deren Jugendliebe soll in dem Wallfahrtsort als Fremdenführer arbeiten. Bürgermeister Wöller geht mit auf die Pilgerreise – natürlich nicht ohne Hintergedanken. \r\n\r\nMit Janina Hartwig, Fritz Wepper, Gaby Dohm, Bibiana Zeller, Peter Franke u. a. | Buch: Jürgen Werner | Regie: Dennis Satin",
-    "director": "Dennis Satin",
-    "actors": [
-      "Fritz Wepper",
-      "Janina Hartwig",
-      "Gaby Dohm"
-    ],
-    "rating": "7.8",
-    "thumb": "https://image.tmdb.org/t/p/w342/f35EVWcBFSkSLW3gFtAPjviqh8x.jpg",
-    "genres_list": [
-      "Familie",
-      "Komödie"
-    ],
-    "channel": "ARD",
-    "timestamp": 1671925200,
-    "isNew": false,
-    "tmdb_id": 1222492,
-    "tmdb_type": "movie",
-    "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyMi0xMi0yNV8wMC00MC1NRVo"
   },
   {
     "title": "Um Himmels Willen - Weihnachten in Kaltenthal",
@@ -33423,7 +33242,7 @@
     "title": "Wie ein Stern am Himmel",
     "search": "Wie ein Stern am Himmel",
     "year": "2010",
-    "video_url": "https://pd-videos.daserste.de/int/2025/02/20/DEGSM880869/DEGSM880869_3219595_sendeton_1280x720-50p-3200kbit.mp4",
+    "video_url": "https://ctv-videos.daserste.de/int/2025/02/20/DEGSM880869/DEGSM880869_3219595_sendeton_1280x720-50p-3200kbit.mp4",
     "plot": "Die medizinisch-technische Assistentin Marlen und ihr Mann Henning sind glücklich verheiratet, können jedoch keine Kinder bekommen. Sie entschließen sich, ein chilenisches Mädchen zu adoptieren und machen sich hoffnungsvoll nach Puerto Montt auf, wo das Kind in einem Waisenhaus lebt. Nachdem nach einiger Zeit das Eis zwischen ihnen endlich bricht, schockt ein dramatischer Zwischenfall die Eltern.",
     "mediathek_desc": "Spielfilm Deutschland 2010 \r\n\r\nDie medizinisch-technische Assistentin Marlen (Christine Neubauer) und ihr Mann Henning (David C. Bunners) sind glücklich verheiratet, können aber keine eigenen Kinder haben. Das Paar entschließt sich zur Adoption eines chilenischen Mädchens und bricht voller Hoffnungen nach Puerto Montt auf, wo das Kind in einem Waisenhaus lebt. Die Kontaktaufnahme mit dem verschlos\n.....",
     "director": "Hartmut Griesmayr",
@@ -33440,8 +33259,8 @@
       "Drama"
     ],
     "channel": "ARD",
-    "timestamp": 1740188100,
-    "isNew": false,
+    "timestamp": 1796259600,
+    "isNew": true,
     "tmdb_id": 51966,
     "tmdb_type": "movie",
     "url_website": "https://www.ardmediathek.de/video/Y3JpZDovL2Rhc2Vyc3RlLmRlL2Zlcm5zZWhmaWxtZSBpbSBlcnN0ZW4vMjAyNS0wMi0yMl8wMi0zNS1NRVo"
@@ -34484,8 +34303,8 @@
       "Romanze"
     ],
     "channel": "ZDF",
-    "timestamp": 1790244397,
-    "isNew": false,
+    "timestamp": 1795595488,
+    "isNew": true,
     "tmdb_id": 317003,
     "tmdb_type": "movie",
     "url_website": "https://www.zdf.de/filme/zu-mir-oder-zu-dir-movie-100"
